@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiplife Globe — 3D Prototype v2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4a574;
+            --gold-light: #e8c9a0;
+            --navy: #0a1628;
+            --navy-light: #152238;
+            --cream: #f5f0e8;
+            --coral: #e07a5f;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: radial-gradient(ellipse at center, #1a2a4a 0%, var(--navy) 70%);
+            color: var(--cream);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 2rem 3rem;
+            background: linear-gradient(180deg, rgba(10, 22, 40, 0.9) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+        }
+
+        .logo span {
+            color: var(--gold);
+        }
+
+        .tagline {
+            font-size: 0.7rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(245, 240, 232, 0.4);
+            margin-top: 0.25rem;
+        }
+
+        /* Instructions */
+        .instructions {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        .instructions p {
+            font-size: 0.8rem;
+            color: rgba(245, 240, 232, 0.5);
+            letter-spacing: 0.1em;
+        }
+
+        /* Location tooltip */
+        .tooltip {
+            position: fixed;
+            z-index: 200;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.2), 
+                rgba(224, 122, 95, 0.15));
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            max-width: 280px;
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+
+        .tooltip-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            color: var(--cream);
+            margin-bottom: 0.25rem;
+        }
+
+        .tooltip-tag {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .tooltip-desc {
+            font-size: 0.8rem;
+            color: rgba(245, 240, 232, 0.7);
+            line-height: 1.5;
+        }
+
+        /* Side panel for clicked location */
+        .side-panel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                rgba(10, 22, 40, 0.95) 0%, 
+                rgba(21, 34, 56, 0.95) 100%);
+            backdrop-filter: blur(30px);
+            border-left: 1px solid rgba(212, 165, 116, 0.2);
+            z-index: 150;
+            transform: translateX(100%);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto;
+        }
+
+        .side-panel.open {
+            transform: translateX(0);
+        }
+
+        .panel-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            font-size: 1.25rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .panel-close:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .panel-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .panel-content {
+            padding: 2rem;
+        }
+
+        .panel-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            background: rgba(212, 165, 116, 0.15);
+            padding: 0.4rem 0.8rem;
+            border-radius: 3px;
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            margin-bottom: 0.75rem;
+        }
+
+        .panel-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--cream);
+            margin-bottom: 1.5rem;
+        }
+
+        .panel-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: rgba(245, 240, 232, 0.85);
+        }
+
+        .panel-text p {
+            margin-bottom: 1rem;
+        }
+
+        /* Location list */
+        .location-list {
+            position: fixed;
+            left: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            max-height: 60vh;
+            overflow-y: auto;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.25rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .location-item:hover {
+            background: rgba(212, 165, 116, 0.1);
+        }
+
+        .location-item.door {
+            background: rgba(212, 165, 116, 0.08);
+        }
+
+        .location-item .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.3), 
+                rgba(224, 122, 95, 0.2));
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .location-item.door .icon {
+            width: 38px;
+            height: 38px;
+            font-size: 1.1rem;
+            border: 2px solid rgba(212, 165, 116, 0.5);
+            box-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .location-item .name {
+            font-size: 0.85rem;
+            color: var(--cream);
+        }
+
+        .location-item.door .name {
+            color: var(--gold);
+            font-weight: 500;
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.05);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(212, 165, 116, 0.3);
+            border-radius: 3px;
+        }
+
+        /* Stars background */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Loading */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--navy);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+
+        @media (max-width: 768px) {
+            .location-list {
+                display: none;
+            }
+            
+            .side-panel {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">Loading globe...</div>
+    </div>
+
+    <!-- Stars background -->
+    <canvas class="stars" id="stars"></canvas>
+    
+    <!-- Three.js Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">Ship<span>life</span></div>
+        <div class="tagline">12 Years at Sea — An Interactive Journey</div>
+    </div>
+
+    <!-- Location List -->
+    <div class="location-list" id="locationList"></div>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-tag" id="tooltipTag"></div>
+        <div class="tooltip-title" id="tooltipTitle"></div>
+        <div class="tooltip-desc" id="tooltipDesc"></div>
+    </div>
+
+    <!-- Side Panel -->
+    <div class="side-panel" id="sidePanel">
+        <button class="panel-close" onclick="closePanel()">×</button>
+        <img class="panel-image" id="panelImage" src="" alt="">
+        <div class="panel-content">
+            <div class="panel-tag" id="panelTag"></div>
+            <h2 class="panel-title" id="panelTitle"></h2>
+            <div class="panel-text" id="panelText"></div>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <p>Drag to rotate • Scroll to zoom • Click a location to explore</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+        // Location data
+        const locations = [
+            {
+                id: 1,
+                title: "Toledo, Ohio",
+                coords: [41.6528, -83.5379],
+                tag: "Door #1: Escape",
+                icon: "🚪",
+                isDoor: true,
+                shortDesc: "Breaking free from the cubicle.",
+                fullDesc: "This was Door #1.\n\nI had quite literally run out of excuses for calling in sick to my cubicle job. It wasn't something I was proud of, but no matter how I tried to fit in as a good employee, I was being pulled by a conflicting sensation that was telling me every morning when I woke that I was putting my energy into the wrong vocation.\n\nThe awful feeling of letting my boss and co-workers down was quickly replaced by a much stronger desire to create music.\n\nBack then in 2007, there was conflict so horrific in the Darfur region that I was compelled to write about it. This song captures where my heart truly was—not in spreadsheets, but in stories that needed to be told.\n\nI had to escape. And somehow, against all odds, I did.\n\nThis door opened the possibility of everything that came after.",
+                image: "https://images.unsplash.com/photo-1471623817296-aa07ae5c9ec9?w=1200"
+            },
+            {
+                id: 21,
+                title: "Brisbane, Australia",
+                coords: [-27.4705, 153.0260],
+                tag: "First Shore Leave",
+                icon: "☀️",
+                isDoor: false,
+                shortDesc: "First shore leave. The door stayed open.",
+                fullDesc: "Brisbane was my first real port of call once we left Auckland. I had performed the previous two nights in the same club where the previous soloist had lasted exactly two days. I was told before I boarded that this is just how it was—so don't be shocked if things don't work out.\n\nI had prepared myself for a call from the cruise director's office saying \"Thanks, but no thanks\" as he handed me a plane ticket home.\n\nIt was an anxious morning. I remember having breakfast with a few random crewmates, thinking about my boss back home who said I could probably come back and work the phones for him if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nI had my first shore leave.\n\nTurns out, this was my first of many shore leaves for the next 12 years of my life.\n\nThe door stayed open.",
+                image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200"
+            },
+            {
+                id: 22,
+                title: "Darwin, Australia",
+                coords: [-12.4634, 130.8456],
+                tag: "Door #2: The Breakthrough",
+                icon: "🚪",
+                isDoor: true,
+                shortDesc: "Where I knew I could make it anywhere.",
+                fullDesc: "This was Door #2.\n\nI bought my first mini-boomerang here.\n\nIt was one of the first trips outside of the usual Queensland run on P&O. Usually we'd leave Brisbane and run out for 7-10 days to Noumea, Port Vila, and a few of the smaller islands in that vicinity. The first few cruises I did were really a test—to see how I performed in the club as a solo act, and to see if I could hang with daily life.\n\nI was nervous the entire time. I really wanted to make this work. My previous job was particularly miserable. Math was never my strong suit, and neither was a cubicle.\n\nDarwin represents a kind of opening door to the rest of the world.\n\nI made it to Darwin. I could make it anywhere.\n\nAnd I did.",
+                image: "https://i.imgur.com/wv8ryAu.jpeg"
+            },
+            {
+                id: 4,
+                title: "Auckland, New Zealand",
+                coords: [-36.8509, 174.7645],
+                tag: "Where It All Began",
+                icon: "🚢",
+                isDoor: false,
+                shortDesc: "2009: My first ship, the Pacific Sun.",
+                fullDesc: "2009: I arrived from Detroit (via Hong Kong) a bundle of nerves. My first ship—the Pacific Sun. I didn't know if I'd last a week.\n\nAround Christmas that year, I walked along the port and spotted a very unique looking cruise ship. My friend told me it was a Seabourn vessel—one of the top cruise lines in the industry. I was slightly jealous as I imagined myself playing on the top deck as we passed by it.\n\nLittle did I know what was to come.",
+                image: "https://images.unsplash.com/photo-1507699622177-388898d9903d?w=1200"
+            },
+            {
+                id: 2,
+                title: "Reithi Rah, Maldives",
+                coords: [4.2925, 73.3670],
+                tag: "Shark-Infested Paradise",
+                icon: "🦈",
+                isDoor: false,
+                shortDesc: "A month as resident musician in an oligarch's playground.",
+                fullDesc: "Shark-infested paradise. That's what I called it.\n\nEvery day I'd take long walks through the forest. Rarely did I come upon anyone during these walks—just me, the dense tropical vegetation, and my thoughts. Until one day, I saw him walking towards me from a good distance. As he got closer, I became more uncomfortable with his presence.\n\nThe largest man I had ever seen. Not only tall, but in girth—not like a bodybuilder, but more like serious bone depth. His face was wretched in a grimace, which didn't help matters. His overall demeanor was one of intimidation.\n\nA few days later, our little trio was playing pool when we observed a large group of men sitting in a circle on the beach. A waiter told us they were betting millions of dollars on a card game.\n\nAnd then there was Tapasake—the restaurant where I had several memorable meals, including New Year's Eve dinner. The reef sharks hung out by the side door. Just another detail in the surreal tapestry of life at Reithi Rah.",
+                image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1200"
+            },
+            {
+                id: 3,
+                title: "Queen Victoria (Cunard)",
+                coords: [36.1408, -5.3536],
+                tag: "Luxury & Grandeur",
+                icon: "👑",
+                isDoor: false,
+                shortDesc: "Queen's Room Vocalist with a 9-piece orchestra.",
+                fullDesc: "In 2019, I accepted a prestigious position on the iconic Queen Victoria.\n\nThe Queen's Room was unlike anything I had experienced before. A grand ballroom where couples would waltz beneath crystal chandeliers while I performed with a nine-piece orchestra.\n\nThis was old-world elegance at sea—white gloves, formal attire, and the kind of sophistication that harked back to the golden age of ocean travel.",
+                image: "https://images.unsplash.com/photo-1559599238-308793637427?w=1200"
+            },
+            {
+                id: 5,
+                title: "Dubrovnik, Croatia",
+                coords: [42.6507, 18.0944],
+                tag: "Time Travel",
+                icon: "🏰",
+                isDoor: false,
+                shortDesc: "Stepping through ancient gates into the Middle Ages.",
+                fullDesc: "I had heard it was a walled city. By the time we arrived, I had seen a fair share of ancient ruins along both shores of the Adriatic.\n\nBut nothing prepared me for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture—it was the feeling. As if centuries collapsed the moment I stepped through that stone archway.",
+                image: "https://images.unsplash.com/photo-1555990538-1e6c3c10617e?w=1200"
+            },
+            {
+                id: 6,
+                title: "Bali, Indonesia",
+                coords: [-8.4095, 115.1889],
+                tag: "Temples & Jungles",
+                icon: "🥭",
+                isDoor: false,
+                shortDesc: "Spiritual awakenings and monkey forests.",
+                fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from how I'd imagined it. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
+                image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200"
+            },
+            {
+                id: 7,
+                title: "Ushuaia, Argentina",
+                coords: [-54.8019, -68.3030],
+                tag: "End of the World",
+                icon: "🗺️",
+                isDoor: false,
+                shortDesc: "The southernmost city on Earth.",
+                fullDesc: "At the end of the world, you reflect on how you got here.\n\nUshuaia is dramatic in every sense—the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon. We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.\n\nI saw passionately-worded signs about the Falkland Islands—'Las Malvinas Son Argentinas.' Little did I know I'd be visiting those contested shores just days later.",
+                image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200"
+            },
+            {
+                id: 8,
+                title: "Portofino, Italy",
+                coords: [44.3046, 9.2094],
+                tag: "Italian Riviera",
+                icon: "🚣",
+                isDoor: false,
+                shortDesc: "A postcard come to life.",
+                fullDesc: "I've never seen such concentrated beauty in such a small space.\n\nPortofino is tiny—you can walk the entire town in 15 minutes. But every corner is a photograph. Pastel buildings, super-yachts in the harbor, and espresso that costs as much as a meal anywhere else.",
+                image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200"
+            },
+            {
+                id: 9,
+                title: "Ephesus, Turkey",
+                coords: [37.9394, 27.3417],
+                tag: "Ancient Echoes",
+                icon: "🏛️",
+                isDoor: false,
+                shortDesc: "Walking where emperors walked.",
+                fullDesc: "These ruins felt different.\n\nMaybe it was the scale—the Library of Celsus towering overhead. Or maybe it was knowing that this was once one of the largest cities in the Roman Empire. Either way, Ephesus made ancient history feel immediate.",
+                image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200"
+            },
+            {
+                id: 10,
+                title: "Rome, Italy",
+                coords: [41.9028, 12.4964],
+                tag: "Colosseum Dreams",
+                icon: "🏟️",
+                isDoor: false,
+                shortDesc: "The eternal city never disappoints.",
+                fullDesc: "Every time I visited Rome, I found something new.\n\nThe Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.",
+                image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200"
+            },
+            {
+                id: 11,
+                title: "Sydney, Australia",
+                coords: [-33.8688, 151.2093],
+                tag: "New Year's Eve",
+                icon: "🎊",
+                isDoor: false,
+                shortDesc: "Fireworks over the Harbour Bridge.",
+                fullDesc: "We pulled into Sydney Harbour on New Year's Eve.\n\nThe ship anchored right in front of the Opera House. At midnight, the fireworks exploded off the Harbour Bridge while we watched from deck. It was like having the best seats to the greatest show on earth.",
+                image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200"
+            },
+            {
+                id: 12,
+                title: "Milford Sound, New Zealand",
+                coords: [-44.6414, 167.8974],
+                tag: "Eighth Wonder",
+                icon: "⛰️",
+                isDoor: false,
+                shortDesc: "Fjords that defy description.",
+                fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
+                image: "https://images.unsplash.com/photo-1508882189859-4d570e7b4030?w=1200"
+            },
+            {
+                id: 13,
+                title: "Akaroa, New Zealand",
+                coords: [-43.8037, 172.9686],
+                tag: "French Corner",
+                icon: "🍷",
+                isDoor: false,
+                shortDesc: "A slice of France in New Zealand.",
+                fullDesc: "This tiny town on Banks Peninsula has French street names and French bakeries.\n\nIt's the result of a quirky colonial history—French settlers arrived just days after the British claimed the islands. The French decided to stay anyway. Good choice.",
+                image: "https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?w=1200"
+            },
+            {
+                id: 14,
+                title: "Wellington, New Zealand",
+                coords: [-41.2865, 174.7762],
+                tag: "Coolest Little Capital",
+                icon: "🎉",
+                isDoor: false,
+                shortDesc: "The cool little capital.",
+                fullDesc: "New Zealand's capital lived up to its nickname—the coolest little capital in the world.\n\nCompact, walkable, with a thriving arts scene and some of the best craft beer in the Southern Hemisphere. Wellington felt like home.",
+                image: "https://images.unsplash.com/photo-1563806951900-5853e5e4fb06?w=1200"
+            },
+            {
+                id: 15,
+                title: "Picton, New Zealand",
+                coords: [-41.2930, 174.0079],
+                tag: "Rolling Green Hills",
+                icon: "🍇",
+                isDoor: false,
+                shortDesc: "Gateway to wine country.",
+                fullDesc: "To get here, we sailed through the stunning Queen Charlotte Sound.\n\nPicton itself is small, but it's the gateway to Marlborough—New Zealand's premier wine region. Sauvignon Blanc country, with rolling hills that glow golden in the afternoon light.",
+                image: "https://images.unsplash.com/photo-1589328223253-9a3b65d64827?w=1200"
+            },
+            {
+                id: 16,
+                title: "Napier, New Zealand",
+                coords: [-39.4928, 176.9120],
+                tag: "Classic Cars",
+                icon: "🚗",
+                isDoor: false,
+                shortDesc: "Vintage architecture and classic automobiles.",
+                fullDesc: "Napier is famous for its Art Deco architecture, rebuilt after an earthquake in 1931.\n\nWalking these streets feels like stepping back into the Great Gatsby era. Classic cars line the boulevards. The whole town is a time capsule.",
+                image: "https://images.unsplash.com/photo-1581489067667-27a695e20603?w=1200"
+            },
+            {
+                id: 17,
+                title: "Tauranga, New Zealand",
+                coords: [-37.6878, 176.1651],
+                tag: "Bay of Plenty",
+                icon: "🎸",
+                isDoor: false,
+                shortDesc: "Mount Maunganui and white sand beaches.",
+                fullDesc: "A short drive from the port takes you to Mount Maunganui.\n\nWe would hike to the top for incredible views or just relax on some of the best beaches in New Zealand. The Bay of Plenty earned its name.",
+                image: "https://images.unsplash.com/photo-1596503920704-585573420077?w=1200"
+            },
+            {
+                id: 18,
+                title: "Tonga",
+                coords: [-21.1393, -175.2018],
+                tag: "The King's Palace",
+                icon: "🏰",
+                isDoor: false,
+                shortDesc: "Kingdom of Tonga.",
+                fullDesc: "Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.\n\nIt is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here—slower, more intentional.",
+                image: "https://images.unsplash.com/photo-1589871162799-a864708764b8?w=1200"
+            },
+            {
+                id: 19,
+                title: "Bora Bora",
+                coords: [-16.5004, -151.7415],
+                tag: "Jetski Paradise",
+                icon: "🚤",
+                isDoor: false,
+                shortDesc: "The pearl of the Pacific.",
+                fullDesc: "The water here is a color I didn't know existed.\n\nWe anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.",
+                image: "https://images.unsplash.com/photo-1532408840135-2d8f2b3e8964?w=1200"
+            },
+            {
+                id: 20,
+                title: "Vanuatu",
+                coords: [-17.7333, 168.3273],
+                tag: "Coffee",
+                icon: "☕",
+                isDoor: false,
+                shortDesc: "Port Vila and tropical markets.",
+                fullDesc: "A stark contrast to the polished luxury of other stops, Vanuatu felt wild and vibrant.\n\nThe markets were full of color and the locals were incredibly welcoming. Sometimes the rougher edges make a place more memorable.",
+                image: "https://images.unsplash.com/photo-1570535787625-502a4392071d?w=1200"
+            },
+            {
+                id: 23,
+                title: "Airlie Beach, Australia",
+                coords: [-20.2688, 148.7166],
+                tag: "Climate Anxiety",
+                icon: "🌡️",
+                isDoor: false,
+                shortDesc: "The Whitsundays—where beauty meets foreboding.",
+                fullDesc: "I worried a lot. Every time I jumped onto the catamaran tender until the moment I left, a constant feeling droned its way around my brain. Something doesn't feel right.\n\nAgain I imagined an earlier time. When walking in the sand didn't burn my toes. When the glare of the sun while at sea wasn't so offensive. When one might have been able to take a deep breath of the world around them and be grateful, instead of being pulled in two directions by the beauty and the foreboding evidence of climate change.\n\nI've never been anywhere so consistently uncomfortable temperature-wise. You just know that something is going terribly wrong with the planet.",
+                image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200"
+            },
+            {
+                id: 24,
+                title: "Falkland Islands",
+                coords: [-51.7963, -59.5236],
+                tag: "Contested Territory",
+                icon: "🍺",
+                isDoor: false,
+                shortDesc: "Half a day in rough seas, a pub, and someone's problems.",
+                fullDesc: "We stopped here for half a day during rough seas. Had a beer in one of the pubs and listened to a friend tell me all of her woes.\n\nUnique, memorable, and exhausting.\n\nThe irony wasn't lost on me—just days earlier in Ushuaia, I'd been reading those passionate anti-British posters about this very place. Now here I was, having a pint on the disputed ground itself.",
+                image: "https://images.unsplash.com/photo-1564760290292-23341e4df6ec?w=1200"
+            }
+        ];
+
+        // Three.js setup
+        let scene, camera, renderer, globe, markers = [], markerSprites = [];
+        let raycaster, mouse;
+        let hoveredMarker = null;
+        let isUserInteracting = false;
+        let targetRotationX = 0, targetRotationY = 0;
+        let mouseXOnMouseDown = 0, mouseYOnMouseDown = 0;
+        let targetRotationXOnMouseDown = 0, targetRotationYOnMouseDown = 0;
+        
+        // Intro animation state
+        let introComplete = false;
+        let introStartTime = null;
+        const introDuration = 3000; // 3 seconds for the zoom in
+
+        // Panel state - controls whether globe auto-rotates
+        let panelIsOpen = false;
+        
+        // Bounce animation for focused icon
+        let bouncingMarkerId = null;
+        let bounceStartTime = null;
+        const bounceDuration = 1500; // 1.5 seconds of bouncing
+
+        // Zoom transition animation
+        let isTransitioning = false;
+        let transitionStartTime = null;
+        let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
+        let targetCameraZ = 1.8;
+        const zoomOutDistance = 3.5;
+        const zoomInDistance = 1.8;  // Was 2.5, now 2x closer
+        const zoomOutDuration = 600;  // ms
+        const zoomInDuration = 800;   // ms
+
+        const tooltip = document.getElementById('tooltip');
+        const sidePanel = document.getElementById('sidePanel');
+        
+        // Toledo: 41.6528° N, 83.5379° W
+        // FOUND: Y = -0.10 shows Toledo (lon = -83.5°)
+        // Formula: Y = -0.10 corresponds to -83.5° longitude
+        // So: Y = (lon - (-83.5)) * (PI/180) + (-0.10)
+        // Simplified: Y = (lon + 83.5) * (PI/180) - 0.10
+        const TOLEDO_Y = -0.10;
+        const TOLEDO_X = (41.6528 * Math.PI / 180); // positive for north
+
+        function init() {
+            // Scene
+            scene = new THREE.Scene();
+            
+            // Camera - start far away for intro
+            camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 8; // Start far away in space
+            
+            // Initialize rotation targets to Toledo
+            targetRotationY = TOLEDO_Y;
+            targetRotationX = TOLEDO_X;
+
+            // Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            // Raycaster for interaction
+            raycaster = new THREE.Raycaster();
+            mouse = new THREE.Vector2();
+
+            // Create globe
+            createGlobe();
+            
+            // Create markers
+            createMarkers();
+
+            // Enhanced lighting for high-res globe
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.35);
+            scene.add(ambientLight);
+
+            // Main sun light - warm white, positioned for nice terminator line
+            const sunLight = new THREE.DirectionalLight(0xfff5e6, 1.2);
+            sunLight.position.set(5, 2, 5);
+            scene.add(sunLight);
+            
+            // Subtle fill light from opposite side (simulates earth-shine/ambient)
+            const fillLight = new THREE.DirectionalLight(0x4477aa, 0.25);
+            fillLight.position.set(-5, -1, -5);
+            scene.add(fillLight);
+            
+            // Rim light for atmosphere edge highlighting
+            const rimLight = new THREE.DirectionalLight(0x88aaff, 0.15);
+            rimLight.position.set(0, 5, -3);
+            scene.add(rimLight);
+
+            // Event listeners
+            renderer.domElement.addEventListener('mousedown', onMouseDown, false);
+            renderer.domElement.addEventListener('mousemove', onMouseMove, false);
+            renderer.domElement.addEventListener('mouseup', onMouseUp, false);
+            renderer.domElement.addEventListener('mouseleave', onMouseUp, false);
+            renderer.domElement.addEventListener('wheel', onMouseWheel, false);
+            renderer.domElement.addEventListener('click', onClick, false);
+            window.addEventListener('resize', onWindowResize, false);
+
+            // Touch events
+            renderer.domElement.addEventListener('touchstart', onTouchStart, false);
+            renderer.domElement.addEventListener('touchmove', onTouchMove, false);
+            renderer.domElement.addEventListener('touchend', onTouchEnd, false);
+
+            // Build location list
+            buildLocationList();
+
+            // Hide loading screen
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+            }, 1000);
+
+            // Start animation
+            animate();
+            
+            // Stars
+            initStars();
+        }
+
+        function createGlobe() {
+            const textureLoader = new THREE.TextureLoader();
+            
+            // NASA Blue Marble 8K texture hosted on Imgur
+            const earthTexture = textureLoader.load(
+                'https://i.imgur.com/TIrHFCa.jpg',
+                function() { 
+                    console.log('Earth texture loaded');
+                }
+            );
+            
+            // Bump map for terrain elevation
+            const bumpMap = textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-topology.png'
+            );
+            
+            // Specular map - makes oceans shiny, land matte
+            const specularMap = textureLoader.load(
+                'https://unpkg.com/three-globe/example/img/earth-water.png'
+            );
+
+            // Higher polygon count for smoother sphere
+            const geometry = new THREE.SphereGeometry(1, 128, 128);
+            
+            // Enhanced material with specular highlights on water
+            const material = new THREE.MeshPhongMaterial({
+                map: earthTexture,
+                bumpMap: bumpMap,
+                bumpScale: 0.015,
+                specularMap: specularMap,
+                specular: new THREE.Color(0x666666),
+                shininess: 25
+            });
+
+            globe = new THREE.Mesh(geometry, material);
+            scene.add(globe);
+
+            // Enhanced atmosphere glow - multiple layers for depth
+            // Inner atmosphere (subtle blue rim)
+            const innerAtmoGeometry = new THREE.SphereGeometry(1.015, 64, 64);
+            const innerAtmoMaterial = new THREE.ShaderMaterial({
+                vertexShader: `
+                    varying vec3 vNormal;
+                    varying vec3 vPosition;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        vPosition = position;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.75 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.5);
+                        vec3 atmosphereColor = vec3(0.4, 0.7, 1.0);
+                        gl_FragColor = vec4(atmosphereColor, intensity * 0.8);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                transparent: true,
+                depthWrite: false
+            });
+            const innerAtmosphere = new THREE.Mesh(innerAtmoGeometry, innerAtmoMaterial);
+            globe.add(innerAtmosphere);
+            
+            // Outer atmosphere (soft glow extending further)
+            const outerAtmoGeometry = new THREE.SphereGeometry(1.12, 64, 64);
+            const outerAtmoMaterial = new THREE.ShaderMaterial({
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        float intensity = pow(0.65 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 3.0);
+                        vec3 glowColor = vec3(0.3, 0.5, 0.9);
+                        gl_FragColor = vec4(glowColor, intensity * 0.4);
+                    }
+                `,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                transparent: true,
+                depthWrite: false
+            });
+            const outerAtmosphere = new THREE.Mesh(outerAtmoGeometry, outerAtmoMaterial);
+            globe.add(outerAtmosphere);
+        }
+
+        function latLonToVector3(lat, lon, radius) {
+            const phi = (90 - lat) * (Math.PI / 180);
+            const theta = (lon + 180) * (Math.PI / 180);
+            
+            return new THREE.Vector3(
+                -radius * Math.sin(phi) * Math.cos(theta),
+                radius * Math.cos(phi),
+                radius * Math.sin(phi) * Math.sin(theta)
+            );
+        }
+
+        function createMarkers() {
+            locations.forEach((loc, index) => {
+                const position = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
+                
+                // Size - larger icons
+                const baseSize = 0.025;
+                
+                // Create emoji sprite as the marker itself
+                const canvas = document.createElement('canvas');
+                canvas.width = 256;
+                canvas.height = 256;
+                const ctx = canvas.getContext('2d');
+                
+                // Clear canvas with transparency
+                ctx.clearRect(0, 0, 256, 256);
+                
+                // Draw emoji - Firefox needs explicit emoji font
+                ctx.font = '160px serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText(loc.icon, 128, 128);
+                
+                const texture = new THREE.CanvasTexture(canvas);
+                const spriteMaterial = new THREE.SpriteMaterial({ 
+                    map: texture,
+                    transparent: true
+                });
+                const sprite = new THREE.Sprite(spriteMaterial);
+                
+                // Position sprite above surface
+                const direction = position.clone().normalize();
+                sprite.position.copy(position).add(direction.multiplyScalar(0.015));
+                sprite.scale.set(baseSize * 2, baseSize * 2, 1);
+                
+                // Store data on sprite for click handling
+                sprite.userData = loc;
+                sprite.userData.baseSize = baseSize;
+                
+                globe.add(sprite);
+                markers.push(sprite);
+            });
+        }
+
+        function buildLocationList() {
+            const list = document.getElementById('locationList');
+            
+            // Doors first
+            const doors = locations.filter(l => l.isDoor);
+            const others = locations.filter(l => !l.isDoor);
+            
+            [...doors, ...others].forEach(loc => {
+                const item = document.createElement('div');
+                item.className = `location-item ${loc.isDoor ? 'door' : ''}`;
+                item.innerHTML = `
+                    <div class="icon">${loc.icon}</div>
+                    <div class="name">${loc.title}</div>
+                `;
+                item.onclick = () => focusLocation(loc);
+                list.appendChild(item);
+            });
+        }
+
+        function focusLocation(loc) {
+            const lon = loc.coords[1]; // longitude (negative = west)
+            const lat = loc.coords[0]; // latitude (positive = north)
+            
+            // CALIBRATED VALUES (sorted by longitude):
+            // Toledo:       lon=-83.54,  Y=-0.10
+            // Búzios:       lon=-41.89,  Y=-0.87
+            // Marseille:    lon=5.37,    Y=-1.65
+            // Portofino:    lon=9.21,    Y=4.60
+            // Rome:         lon=12.50,   Y=4.50
+            // Malta:        lon=14.51,   Y=4.42
+            // Darwin:       lon=130.85,  Y=2.44
+            // Sydney:       lon=151.21,  Y=2.10
+            // Brisbane:     lon=153.03,  Y=8.30
+            // Milford:      lon=167.90,  Y=8.10
+            // Auckland:     lon=174.78,  Y=8.01
+            // Tauranga:     lon=176.17,  Y=7.93
+            // Napier:       lon=176.91,  Y=7.90
+            
+            let targetY;
+            
+            if (lon <= -83.54) {
+                // West of Toledo - extrapolate
+                const slope = (-0.87 - (-0.10)) / (-41.89 - (-83.54));
+                targetY = -0.10 + (lon - (-83.54)) * slope;
+            } else if (lon <= -41.89) {
+                // Toledo to Búzios
+                const t = (lon - (-83.54)) / (-41.89 - (-83.54));
+                targetY = -0.10 + t * (-0.87 - (-0.10));
+            } else if (lon <= 5.37) {
+                // Búzios to Marseille
+                const t = (lon - (-41.89)) / (5.37 - (-41.89));
+                targetY = -0.87 + t * (-1.65 - (-0.87));
+            } else if (lon <= 9.21) {
+                // Marseille to Portofino (wrap happens here)
+                const t = (lon - 5.37) / (9.21 - 5.37);
+                targetY = -1.65 + t * (4.60 - (-1.65));
+            } else if (lon <= 12.50) {
+                // Portofino to Rome
+                const t = (lon - 9.21) / (12.50 - 9.21);
+                targetY = 4.60 + t * (4.50 - 4.60);
+            } else if (lon <= 14.51) {
+                // Rome to Malta
+                const t = (lon - 12.50) / (14.51 - 12.50);
+                targetY = 4.50 + t * (4.42 - 4.50);
+            } else if (lon <= 130.85) {
+                // Malta to Darwin
+                const t = (lon - 14.51) / (130.85 - 14.51);
+                targetY = 4.42 + t * (2.44 - 4.42);
+            } else if (lon <= 151.21) {
+                // Darwin to Sydney
+                const t = (lon - 130.85) / (151.21 - 130.85);
+                targetY = 2.44 + t * (2.10 - 2.44);
+            } else if (lon <= 153.03) {
+                // Sydney to Brisbane (wrap happens here)
+                const t = (lon - 151.21) / (153.03 - 151.21);
+                targetY = 2.10 + t * (8.30 - 2.10);
+            } else if (lon <= 167.90) {
+                // Brisbane to Milford Sound
+                const t = (lon - 153.03) / (167.90 - 153.03);
+                targetY = 8.30 + t * (8.10 - 8.30);
+            } else if (lon <= 174.78) {
+                // Milford to Auckland
+                const t = (lon - 167.90) / (174.78 - 167.90);
+                targetY = 8.10 + t * (8.01 - 8.10);
+            } else if (lon <= 176.17) {
+                // Auckland to Tauranga
+                const t = (lon - 174.78) / (176.17 - 174.78);
+                targetY = 8.01 + t * (7.93 - 8.01);
+            } else {
+                // Tauranga to Napier and beyond
+                const t = (lon - 176.17) / (176.91 - 176.17);
+                targetY = 7.93 + t * (7.90 - 7.93);
+            }
+            
+            // Start zoom-out transition, then rotate, then zoom-in
+            isTransitioning = true;
+            transitionPhase = 'zoom-out';
+            transitionStartTime = Date.now();
+            
+            // Store target rotation for after zoom-out
+            pendingRotationY = targetY;
+            pendingRotationX = lat * (Math.PI / 180);
+            pendingLocation = loc;
+            
+            console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2));
+        }
+        
+        // Pending rotation values during transition
+        let pendingRotationY = 0;
+        let pendingRotationX = 0;
+        let pendingLocation = null;
+
+        function triggerBounce(locationId) {
+            bouncingMarkerId = locationId;
+            bounceStartTime = Date.now();
+        }
+
+        function openPanel(loc) {
+            document.getElementById('panelImage').src = loc.image;
+            document.getElementById('panelTag').textContent = loc.tag;
+            document.getElementById('panelTitle').textContent = loc.title;
+            
+            const paragraphs = loc.fullDesc.split('\n\n').map(p => `<p>${p}</p>`).join('');
+            document.getElementById('panelText').innerHTML = paragraphs;
+            
+            sidePanel.classList.add('open');
+            panelIsOpen = true; // Stop auto-rotation while reading
+        }
+
+        function closePanel() {
+            sidePanel.classList.remove('open');
+            panelIsOpen = false; // Resume auto-rotation
+        }
+
+        function onMouseDown(event) {
+            event.preventDefault();
+            isUserInteracting = true;
+            
+            mouseXOnMouseDown = event.clientX;
+            mouseYOnMouseDown = event.clientY;
+            
+            // Capture current TARGET rotation (not globe rotation) for smooth continuation
+            targetRotationXOnMouseDown = targetRotationX;
+            targetRotationYOnMouseDown = targetRotationY;
+        }
+
+        function onMouseMove(event) {
+            if (isUserInteracting) {
+                targetRotationY = targetRotationYOnMouseDown + (event.clientX - mouseXOnMouseDown) * 0.005;
+                targetRotationX = targetRotationXOnMouseDown + (event.clientY - mouseYOnMouseDown) * 0.005;
+                targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
+            }
+            
+            checkHover(event);
+        }
+
+        function onMouseUp() {
+            isUserInteracting = false;
+        }
+
+        function onMouseWheel(event) {
+            event.preventDefault();
+            camera.position.z += event.deltaY * 0.002;
+            camera.position.z = Math.max(1.2, Math.min(4, camera.position.z));
+        }
+
+        // Touch events
+        let touchStartX, touchStartY;
+        
+        function onTouchStart(event) {
+            if (event.touches.length === 1) {
+                isUserInteracting = true;
+                touchStartX = event.touches[0].clientX;
+                touchStartY = event.touches[0].clientY;
+                targetRotationXOnMouseDown = targetRotationX;
+                targetRotationYOnMouseDown = targetRotationY;
+            }
+        }
+
+        function onTouchMove(event) {
+            if (event.touches.length === 1 && isUserInteracting) {
+                targetRotationY = targetRotationYOnMouseDown + (event.touches[0].clientX - touchStartX) * 0.005;
+                targetRotationX = targetRotationXOnMouseDown + (event.touches[0].clientY - touchStartY) * 0.005;
+                targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
+            }
+        }
+
+        function onTouchEnd() {
+            isUserInteracting = false;
+        }
+
+        function onClick(event) {
+            if (hoveredMarker) {
+                openPanel(hoveredMarker.userData);
+            }
+        }
+
+        function checkHover(event) {
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects(markers);
+            
+            if (intersects.length > 0) {
+                const marker = intersects[0].object;
+                
+                if (marker.userData.title) {
+                    hoveredMarker = marker;
+                    showTooltip(marker.userData, event.clientX, event.clientY);
+                    document.body.style.cursor = 'pointer';
+                    
+                    // Highlight marker - scale up from original size
+                    const baseScale = marker.userData.baseSize * 2;
+                    marker.scale.set(baseScale * 1.3, baseScale * 1.3, 1);
+                }
+            } else {
+                if (hoveredMarker) {
+                    // Reset to original size
+                    const baseScale = hoveredMarker.userData.baseSize * 2;
+                    hoveredMarker.scale.set(baseScale, baseScale, 1);
+                }
+                hoveredMarker = null;
+                hideTooltip();
+                document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
+            }
+        }
+
+        function showTooltip(loc, x, y) {
+            document.getElementById('tooltipTag').textContent = loc.tag;
+            document.getElementById('tooltipTitle').textContent = loc.title;
+            document.getElementById('tooltipDesc').textContent = loc.shortDesc;
+            
+            tooltip.style.left = (x + 20) + 'px';
+            tooltip.style.top = (y - 20) + 'px';
+            tooltip.classList.add('visible');
+        }
+
+        function hideTooltip() {
+            tooltip.classList.remove('visible');
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+            
+            // Cinematic intro - just zoom, globe is already positioned
+            if (!introComplete) {
+                if (!introStartTime) {
+                    introStartTime = Date.now();
+                    // Set globe rotation immediately to Toledo
+                    globe.rotation.y = TOLEDO_Y;
+                    globe.rotation.x = TOLEDO_X;
+                    targetRotationY = TOLEDO_Y;
+                    targetRotationX = TOLEDO_X;
+                }
+                
+                const elapsed = Date.now() - introStartTime;
+                const progress = Math.min(elapsed / introDuration, 1);
+                
+                // Easing function for smooth deceleration
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                
+                // Zoom from far (8) to close (1.8)
+                camera.position.z = 8 - (6.2 * easeOutCubic);
+                
+                if (progress >= 1) {
+                    introComplete = true;
+                }
+            } else {
+                // Handle zoom transition animation
+                if (isTransitioning) {
+                    const elapsed = Date.now() - transitionStartTime;
+                    
+                    if (transitionPhase === 'zoom-out') {
+                        const progress = Math.min(elapsed / zoomOutDuration, 1);
+                        const easeOut = 1 - Math.pow(1 - progress, 2);
+                        
+                        // Zoom out
+                        const startZ = camera.position.z;
+                        camera.position.z = startZ + (zoomOutDistance - startZ) * easeOut * 0.1;
+                        
+                        if (progress >= 1) {
+                            // Switch to rotate phase - apply pending rotation
+                            targetRotationY = pendingRotationY;
+                            targetRotationX = pendingRotationX;
+                            transitionPhase = 'zoom-in';
+                            transitionStartTime = Date.now();
+                        }
+                    } else if (transitionPhase === 'zoom-in') {
+                        const progress = Math.min(elapsed / zoomInDuration, 1);
+                        const easeOut = 1 - Math.pow(1 - progress, 3);
+                        
+                        // Zoom in
+                        camera.position.z = zoomOutDistance - (zoomOutDistance - zoomInDistance) * easeOut;
+                        
+                        // Check if globe rotation has settled (close enough to target)
+                        const rotationSettled = 
+                            Math.abs(globe.rotation.y - targetRotationY) < 0.05 &&
+                            Math.abs(globe.rotation.x - targetRotationX) < 0.05;
+                        
+                        if (progress >= 1 && rotationSettled) {
+                            isTransitioning = false;
+                            transitionPhase = 'none';
+                            camera.position.z = zoomInDistance;
+                            
+                            // Trigger bounce animation for the target location
+                            if (pendingLocation) {
+                                triggerBounce(pendingLocation.id);
+                                openPanel(pendingLocation);
+                                pendingLocation = null;
+                            }
+                        }
+                    }
+                }
+                
+                // Normal interaction after intro
+                
+                // Only auto-rotate if:
+                // - User is not dragging
+                // - Panel is not open (user is not reading)
+                // - Not transitioning
+                if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
+                    targetRotationY += 0.0005;
+                }
+                
+                // Always smooth-lerp toward target rotation
+                // This handles: auto-rotate, user drag, and clicking to new location
+                globe.rotation.y += (targetRotationY - globe.rotation.y) * 0.05;
+                globe.rotation.x += (targetRotationX - globe.rotation.x) * 0.05;
+            }
+            
+            // Marker animations
+            markers.forEach((marker, i) => {
+                const isDoor = marker.userData.isDoor;
+                const baseScale = marker.userData.baseSize * 2; // Original scale
+                const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
+                
+                if (isBouncing && bounceStartTime) {
+                    // Bounce animation - up and down with decreasing amplitude
+                    const elapsed = Date.now() - bounceStartTime;
+                    const progress = elapsed / bounceDuration;
+                    
+                    if (progress < 1) {
+                        // Bouncing: scale pulses with decreasing amplitude
+                        const bounceFreq = 8; // Number of bounces
+                        const decay = 1 - progress; // Decreasing amplitude
+                        const bounce = 1 + Math.sin(progress * Math.PI * bounceFreq) * 0.4 * decay;
+                        marker.scale.set(baseScale * bounce, baseScale * bounce, 1);
+                    } else {
+                        // Animation complete
+                        bouncingMarkerId = null;
+                        bounceStartTime = null;
+                        marker.scale.set(baseScale, baseScale, 1);
+                    }
+                } else if (isDoor && !isBouncing) {
+                    // Subtle pulse effect for doors
+                    const pulse = 1 + Math.sin(Date.now() * 0.003 + i) * 0.1;
+                    if (!hoveredMarker || hoveredMarker !== marker) {
+                        marker.scale.set(baseScale * pulse, baseScale * pulse, 1);
+                    }
+                }
+            });
+            
+            renderer.render(scene, camera);
+        }
+
+        // Stars background
+        function initStars() {
+            const canvas = document.getElementById('stars');
+            const ctx = canvas.getContext('2d');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            const stars = [];
+            for (let i = 0; i < 300; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 1.5 + 0.5,
+                    opacity: Math.random() * 0.5 + 0.3,
+                    twinkle: Math.random() * Math.PI
+                });
+            }
+            
+            function drawStars() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                stars.forEach(star => {
+                    const opacity = star.opacity + Math.sin(Date.now() * 0.001 + star.twinkle) * 0.2;
+                    ctx.beginPath();
+                    ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(245, 240, 232, ${Math.max(0.1, opacity)})`;
+                    ctx.fill();
+                });
+                requestAnimationFrame(drawStars);
+            }
+            
+            drawStars();
+            
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
+
+        // Initialize
+        init();
+    </script>
+</body>
+</html>
