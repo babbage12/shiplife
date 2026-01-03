@@ -1568,13 +1568,8 @@
                 nextDoorText.textContent = `Continue to Door #${nextDoorNum}`;
                 nextDoorHint.style.display = '';
                 nextDoorHint.dataset.nextDoorId = nextDoor.id;
-            } else if (loc.isDoor && doorIndex === doors.length - 1) {
-                // This is the last door
-                nextDoorText.textContent = `Return to Door #1`;
-                nextDoorHint.style.display = '';
-                nextDoorHint.dataset.nextDoorId = doors[0].id;
             } else {
-                // Not a door - hide the button
+                // Last door or not a door - hide the next door button
                 nextDoorHint.style.display = 'none';
             }
         }
@@ -1585,10 +1580,10 @@
             const nextDoor = locations.find(l => l.id === nextDoorId);
             
             if (nextDoor) {
+                // Close panel and rotate globe to next door location
                 closePanel();
-                setTimeout(() => {
-                    focusLocation(nextDoor);
-                }, 300);
+                focusLocation(nextDoor);
+                // Panel stays closed - user must click icon to open story
             }
         }
         
