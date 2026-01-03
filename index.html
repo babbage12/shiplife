@@ -455,14 +455,6 @@
                 padding-bottom: 100px;
             }
             
-            .read-story-btn {
-                display: block !important;
-            }
-            
-            .side-panel.expanded .read-story-btn {
-                display: none !important;
-            }
-            
             .instructions {
                 bottom: 1.5rem;
                 left: 1rem;
@@ -492,27 +484,47 @@
             }
         }
         
-        /* Read Story Button - hidden on desktop by default */
-        .read-story-btn {
+        /* Panel preview text - shown on mobile before expanding */
+        .panel-preview {
             display: none;
-            width: 100%;
-            padding: 12px 20px;
-            margin-top: 10px;
-            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-            color: var(--navy);
-            border: none;
-            border-radius: 25px;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1rem;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            cursor: pointer;
-            transition: all 0.3s ease;
         }
         
-        .read-story-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(212, 165, 116, 0.4);
+        .swipe-hint {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .panel-preview {
+                display: block;
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 1rem;
+                line-height: 1.6;
+                color: rgba(245, 240, 232, 0.85);
+                margin-top: 0.5rem;
+            }
+            
+            .side-panel.expanded .panel-preview {
+                display: none;
+            }
+            
+            .swipe-hint {
+                display: block;
+                text-align: center;
+                font-size: 0.75rem;
+                color: var(--gold);
+                opacity: 0.7;
+                margin-top: 1rem;
+                animation: pulse-hint 2s ease-in-out infinite;
+            }
+            
+            .side-panel.expanded .swipe-hint {
+                display: none;
+            }
+            
+            @keyframes pulse-hint {
+                0%, 100% { opacity: 0.5; transform: translateY(0); }
+                50% { opacity: 1; transform: translateY(-3px); }
+            }
         }
         }
         
@@ -652,8 +664,9 @@
         <div class="panel-content">
             <div class="panel-tag" id="panelTag"></div>
             <h2 class="panel-title" id="panelTitle"></h2>
-            <button class="read-story-btn" onclick="expandPanel()">📖 Read Story</button>
+            <div class="panel-preview" id="panelPreview"></div>
             <div class="panel-text" id="panelText"></div>
+            <div class="swipe-hint">↑ Swipe up for full story</div>
         </div>
     </div>
 
@@ -1342,8 +1355,17 @@
             document.getElementById('panelTag').textContent = loc.tag;
             document.getElementById('panelTitle').textContent = loc.title;
             
-            const paragraphs = loc.fullDesc.split('\n\n').map(p => `<p>${p}</p>`).join('');
-            document.getElementById('panelText').innerHTML = paragraphs;
+            const paragraphs = loc.fullDesc.split('\n\n');
+            
+            // Show first paragraph as preview (truncated if too long)
+            let preview = paragraphs[0];
+            if (preview.length > 150) {
+                preview = preview.substring(0, 150) + '...';
+            }
+            document.getElementById('panelPreview').textContent = preview;
+            
+            // Full text for expanded view
+            document.getElementById('panelText').innerHTML = paragraphs.map(p => `<p>${p}</p>`).join('');
             
             // Reset expanded state when opening new location
             sidePanel.classList.remove('expanded');
@@ -1360,6 +1382,26 @@
         function expandPanel() {
             sidePanel.classList.add('expanded');
         }
+        
+        // Swipe up to expand panel on mobile
+        let panelTouchStartY = 0;
+        sidePanel.addEventListener('touchstart', function(e) {
+            panelTouchStartY = e.touches[0].clientY;
+        }, { passive: true });
+        
+        sidePanel.addEventListener('touchend', function(e) {
+            const touchEndY = e.changedTouches[0].clientY;
+            const swipeDistance = panelTouchStartY - touchEndY;
+            
+            // If swiped up more than 50px and panel is not expanded, expand it
+            if (swipeDistance > 50 && !sidePanel.classList.contains('expanded')) {
+                expandPanel();
+            }
+            // If swiped down more than 50px and panel is expanded, collapse it
+            else if (swipeDistance < -50 && sidePanel.classList.contains('expanded')) {
+                sidePanel.classList.remove('expanded');
+            }
+        }, { passive: true });
 
         function onMouseDown(event) {
             event.preventDefault();
