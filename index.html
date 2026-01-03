@@ -524,14 +524,16 @@
                 padding-bottom: 100px;
             }
             
-            /* Hide close link and locations hint in collapsed state */
-            .panel-close-link,
+            /* Show close link always, locations hint only when expanded */
+            .panel-close-link {
+                display: block;
+            }
+            
             .locations-hint {
                 display: none;
             }
             
-            /* Show them when expanded */
-            .side-panel.expanded .panel-close-link,
+            /* Show locations hint when expanded */
             .side-panel.expanded .locations-hint {
                 display: block;
             }
@@ -1088,7 +1090,7 @@
         let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
         let targetCameraZ = 1.8;
         const zoomOutDistance = 3.5;
-        const zoomInDistance = 1.8;  // Was 2.5, now 2x closer
+        const zoomInDistance = 1.5;  // Closer zoom on locations
         const zoomOutDuration = 600;  // ms
         const zoomInDuration = 800;   // ms
 
@@ -1790,7 +1792,7 @@
                 // - Panel is not open (user is not reading)
                 // - Not transitioning
                 if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
-                    targetRotationY += 0.0002;
+                    targetRotationY += 0.0001;
                 }
                 
                 // Always smooth-lerp toward target rotation
