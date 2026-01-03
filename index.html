@@ -1126,6 +1126,9 @@
         // Panel state - controls whether globe auto-rotates
         let panelIsOpen = false;
         
+        // Flag to prevent auto-opening panel when navigating
+        let skipPanelOpen = false;
+        
         // Bounce animation for focused icon
         let bouncingMarkerId = null;
         let bounceStartTime = null;
@@ -1514,7 +1517,6 @@
         let pendingRotationY = 0;
         let pendingRotationX = 0;
         let pendingLocation = null;
-        let skipPanelOpen = false; // Flag to prevent auto-opening panel
 
         function triggerBounce(locationId) {
             bouncingMarkerId = locationId;
@@ -1582,11 +1584,10 @@
             const nextDoor = locations.find(l => l.id === nextDoorId);
             
             if (nextDoor) {
-                // Close panel and rotate globe to next door location
+                // Close panel and rotate globe to next door
+                // User must click the icon to open the door
                 closePanel();
-                skipPanelOpen = true; // Prevent auto-opening panel
                 focusLocation(nextDoor);
-                // Panel stays closed - user must click icon to open story
             }
         }
         
@@ -1888,11 +1889,8 @@
                             // Trigger bounce animation for the target location
                             if (pendingLocation) {
                                 triggerBounce(pendingLocation.id);
-                                if (!skipPanelOpen) {
-                                    openPanel(pendingLocation);
-                                }
+                                // Panel no longer auto-opens - user must click icon
                                 pendingLocation = null;
-                                skipPanelOpen = false;
                             }
                         }
                     }
