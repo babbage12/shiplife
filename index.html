@@ -143,9 +143,8 @@
             width: 400px;
             height: 100%;
             background: linear-gradient(180deg, 
-                rgba(10, 22, 40, 0.95) 0%, 
-                rgba(21, 34, 56, 0.95) 100%);
-            backdrop-filter: blur(30px);
+                rgb(10, 22, 40) 0%, 
+                rgb(21, 34, 56) 100%);
             border-left: 1px solid rgba(212, 165, 116, 0.2);
             z-index: 150;
             transform: translateX(100%);
@@ -506,6 +505,7 @@
                 transform: translateY(100%);
                 overflow: hidden;
                 z-index: 300 !important;
+                background: linear-gradient(180deg, rgb(10, 22, 40) 0%, rgb(21, 34, 56) 100%) !important;
             }
             
             .side-panel.open {
@@ -1506,6 +1506,9 @@
         function openPanel(loc) {
             currentLocation = loc;
             
+            // Hide tooltip when opening panel
+            hideTooltip();
+            
             document.getElementById('panelImage').src = loc.image;
             document.getElementById('panelTag').textContent = loc.tag;
             document.getElementById('panelTitle').textContent = loc.title;
@@ -1605,6 +1608,9 @@
             event.preventDefault();
             isUserInteracting = true;
             
+            // Hide tooltip when user starts interacting
+            hideTooltip();
+            
             mouseXOnMouseDown = event.clientX;
             mouseYOnMouseDown = event.clientY;
             
@@ -1639,6 +1645,9 @@
         let initialCameraZ = null;
         
         function onTouchStart(event) {
+            // Hide tooltip when user starts interacting
+            hideTooltip();
+            
             if (event.touches.length === 1) {
                 isUserInteracting = true;
                 touchStartX = event.touches[0].clientX;
