@@ -221,30 +221,20 @@
             margin-bottom: 1rem;
         }
 
-        /* Close link at bottom of panel */
-        .panel-close-link {
+        /* Back to globe link - subtle secondary action */
+        .back-to-globe {
             display: none;
-            width: 100%;
-            padding: 12px 20px;
-            margin-top: 20px;
-            background: transparent;
-            color: rgba(245, 240, 232, 0.7);
-            border: 1px solid rgba(245, 240, 232, 0.2);
-            border-radius: 8px;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            color: rgba(245, 240, 232, 0.5);
+            font-size: 0.8rem;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: color 0.3s ease;
         }
         
-        .panel-close-link:hover {
-            background: rgba(245, 240, 232, 0.1);
-            color: var(--cream);
-        }
-        
-        .panel-close-link .close-icon {
-            margin-right: 8px;
-            opacity: 0.7;
+        .back-to-globe:hover {
+            color: rgba(245, 240, 232, 0.8);
         }
 
         /* Locations hint - visual link to panel below */
@@ -524,8 +514,8 @@
                 padding-bottom: 100px;
             }
             
-            /* Show close link always, locations hint only when expanded */
-            .panel-close-link {
+            /* Show back link always, locations hint only when expanded */
+            .back-to-globe {
                 display: block;
             }
             
@@ -775,14 +765,12 @@
             <div class="panel-preview" id="panelPreview"></div>
             <div class="panel-text" id="panelText"></div>
             <div class="swipe-hint">↑ Swipe up for full story</div>
-            <button class="panel-close-link" onclick="closePanel()">
-                <span class="close-icon">✕</span> Close Story
-            </button>
             <div class="locations-hint" onclick="closePanel(); setTimeout(toggleMobileMenu, 300);">
                 <span class="hint-arrow">↓</span>
                 <span class="hint-text">View All Locations</span>
                 <span class="hint-count" id="locationsCount">24 places</span>
             </div>
+            <a class="back-to-globe" onclick="closePanel()">← Back to globe</a>
         </div>
     </div>
 
