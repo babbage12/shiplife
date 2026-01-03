@@ -330,12 +330,140 @@
         }
 
         @media (max-width: 768px) {
+            .header {
+                padding: 1rem 1.5rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .tagline {
+                font-size: 0.55rem;
+            }
+            
             .location-list {
-                display: none;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 280px;
+                height: 100%;
+                max-height: 100%;
+                background: linear-gradient(180deg, 
+                    rgba(10, 22, 40, 0.98) 0%,
+                    rgba(21, 34, 56, 0.98) 100%);
+                backdrop-filter: blur(30px);
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+                padding-top: 80px;
+                z-index: 200;
+                border-right: 1px solid rgba(212, 165, 116, 0.2);
+            }
+            
+            .location-list.open {
+                transform: translateX(0);
             }
             
             .side-panel {
                 width: 100%;
+            }
+            
+            .instructions {
+                bottom: 1rem;
+            }
+            
+            .instructions p {
+                font-size: 0.65rem;
+            }
+        }
+        
+        /* Hamburger Menu Button */
+        .menu-toggle {
+            position: fixed;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 250;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.2), 
+                rgba(224, 122, 95, 0.15));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle:hover {
+            background: linear-gradient(135deg, 
+                rgba(212, 165, 116, 0.3), 
+                rgba(224, 122, 95, 0.25));
+        }
+        
+        .menu-toggle span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--gold);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle.open span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        
+        .menu-toggle.open span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .menu-toggle.open span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: flex;
+            }
+        }
+        
+        /* Mobile overlay */
+        .mobile-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 190;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        
+        .mobile-overlay.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        
+        /* Instructions switching */
+        .mobile-instructions {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .desktop-instructions {
+                display: none;
+            }
+            .mobile-instructions {
+                display: block;
             }
         }
     </style>
@@ -357,6 +485,16 @@
         <div class="logo">Ship<span>life</span></div>
         <div class="tagline">12 Years at Sea — An Interactive Journey</div>
     </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
 
     <!-- Location List -->
     <div class="location-list" id="locationList"></div>
@@ -381,7 +519,8 @@
 
     <!-- Instructions -->
     <div class="instructions">
-        <p>Drag to rotate • Scroll to zoom • Click a location to explore</p>
+        <p class="desktop-instructions">Drag to rotate • Scroll to zoom • Click a location to explore</p>
+        <p class="mobile-instructions">Drag to rotate • Pinch to zoom • Tap a location to explore</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -754,9 +893,29 @@
             window.addEventListener('resize', onWindowResize, false);
 
             // Touch events
-            renderer.domElement.addEventListener('touchstart', onTouchStart, false);
-            renderer.domElement.addEventListener('touchmove', onTouchMove, false);
+            renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: false });
+            renderer.domElement.addEventListener('touchmove', onTouchMove, { passive: false });
             renderer.domElement.addEventListener('touchend', onTouchEnd, false);
+            
+            // Add tap detection for mobile marker selection
+            let touchStartTime;
+            let touchStartPos;
+            renderer.domElement.addEventListener('touchstart', (e) => {
+                touchStartTime = Date.now();
+                touchStartPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+            }, false);
+            renderer.domElement.addEventListener('touchend', (e) => {
+                const touchDuration = Date.now() - touchStartTime;
+                const touch = e.changedTouches[0];
+                const moveDistance = Math.sqrt(
+                    Math.pow(touch.clientX - touchStartPos.x, 2) + 
+                    Math.pow(touch.clientY - touchStartPos.y, 2)
+                );
+                // If it was a quick tap without much movement, treat as click
+                if (touchDuration < 300 && moveDistance < 10) {
+                    onTouchTap(e);
+                }
+            }, false);
 
             // Build location list
             buildLocationList();
@@ -934,7 +1093,10 @@
                     <div class="icon">${loc.icon}</div>
                     <div class="name">${loc.title}</div>
                 `;
-                item.onclick = () => focusLocation(loc);
+                item.onclick = () => {
+                    focusLocation(loc);
+                    closeMobileMenu();
+                };
                 list.appendChild(item);
             });
         }
@@ -1088,6 +1250,8 @@
 
         // Touch events
         let touchStartX, touchStartY;
+        let initialPinchDistance = null;
+        let initialCameraZ = null;
         
         function onTouchStart(event) {
             if (event.touches.length === 1) {
@@ -1096,19 +1260,90 @@
                 touchStartY = event.touches[0].clientY;
                 targetRotationXOnMouseDown = targetRotationX;
                 targetRotationYOnMouseDown = targetRotationY;
+            } else if (event.touches.length === 2) {
+                // Pinch zoom start
+                isUserInteracting = true;
+                initialPinchDistance = getPinchDistance(event.touches);
+                initialCameraZ = camera.position.z;
             }
         }
 
         function onTouchMove(event) {
-            if (event.touches.length === 1 && isUserInteracting) {
+            event.preventDefault();
+            
+            if (event.touches.length === 1 && isUserInteracting && !initialPinchDistance) {
+                // Single finger drag to rotate
                 targetRotationY = targetRotationYOnMouseDown + (event.touches[0].clientX - touchStartX) * 0.005;
                 targetRotationX = targetRotationXOnMouseDown + (event.touches[0].clientY - touchStartY) * 0.005;
                 targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
+            } else if (event.touches.length === 2 && initialPinchDistance) {
+                // Pinch to zoom
+                const currentDistance = getPinchDistance(event.touches);
+                const scale = initialPinchDistance / currentDistance;
+                camera.position.z = Math.max(1.2, Math.min(4, initialCameraZ * scale));
             }
         }
 
-        function onTouchEnd() {
-            isUserInteracting = false;
+        function onTouchEnd(event) {
+            if (event.touches.length === 0) {
+                isUserInteracting = false;
+                initialPinchDistance = null;
+                initialCameraZ = null;
+            } else if (event.touches.length === 1) {
+                // Switched from pinch to single touch
+                initialPinchDistance = null;
+                touchStartX = event.touches[0].clientX;
+                touchStartY = event.touches[0].clientY;
+                targetRotationXOnMouseDown = targetRotationX;
+                targetRotationYOnMouseDown = targetRotationY;
+            }
+        }
+        
+        function getPinchDistance(touches) {
+            const dx = touches[0].clientX - touches[1].clientX;
+            const dy = touches[0].clientY - touches[1].clientY;
+            return Math.sqrt(dx * dx + dy * dy);
+        }
+        
+        // Mobile tap to select location
+        function onTouchTap(event) {
+            if (event.changedTouches.length === 1) {
+                const touch = event.changedTouches[0];
+                mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
+                mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+                
+                raycaster.setFromCamera(mouse, camera);
+                const intersects = raycaster.intersectObjects(markers);
+                
+                if (intersects.length > 0) {
+                    const marker = intersects[0].object;
+                    if (marker.userData.title) {
+                        openPanel(marker.userData);
+                    }
+                }
+            }
+        }
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('locationList');
+            const toggle = document.getElementById('menuToggle');
+            const overlay = document.getElementById('mobileOverlay');
+            
+            menu.classList.toggle('open');
+            toggle.classList.toggle('open');
+            overlay.classList.toggle('open');
+        }
+        
+        // Close mobile menu when location selected
+        function closeMobileMenu() {
+            const menu = document.getElementById('locationList');
+            const toggle = document.getElementById('menuToggle');
+            const overlay = document.getElementById('mobileOverlay');
+            
+            menu.classList.remove('open');
+            toggle.classList.remove('open');
+            overlay.classList.remove('open');
         }
 
         function onClick(event) {
