@@ -367,6 +367,12 @@
             align-items: center;
             justify-content: center;
             font-size: 0.9rem;
+            overflow: hidden;
+        }
+        
+        .location-item .icon canvas {
+            width: 100%;
+            height: 100%;
         }
 
         .location-item.door .icon {
@@ -385,6 +391,37 @@
         .location-item.door .name {
             color: var(--gold);
             font-weight: 500;
+        }
+        
+        /* Icon style indicators */
+        .location-item[data-style="deco"] .icon {
+            border-color: rgba(212, 165, 116, 0.5);
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.2), rgba(139, 105, 20, 0.2));
+        }
+        
+        .location-item[data-style="minimal"] .icon {
+            border-color: rgba(150, 180, 200, 0.4);
+            background: linear-gradient(135deg, rgba(150, 180, 200, 0.15), rgba(96, 112, 128, 0.15));
+        }
+        
+        .location-item[data-style="heritage"] .icon {
+            border-color: rgba(139, 115, 85, 0.5);
+            background: linear-gradient(135deg, rgba(139, 115, 85, 0.2), rgba(90, 74, 58, 0.2));
+        }
+        
+        .location-item[data-style="paradise"] .icon {
+            border-color: rgba(64, 224, 208, 0.4);
+            background: linear-gradient(135deg, rgba(64, 224, 208, 0.15), rgba(74, 144, 160, 0.15));
+        }
+        
+        .location-item[data-style="adventure"] .icon {
+            border-color: rgba(96, 112, 128, 0.5);
+            background: linear-gradient(135deg, rgba(96, 112, 128, 0.2), rgba(45, 55, 72, 0.2));
+        }
+        
+        .location-item[data-style="culture"] .icon {
+            border-color: rgba(224, 122, 95, 0.4);
+            background: linear-gradient(135deg, rgba(224, 122, 95, 0.15), rgba(114, 47, 55, 0.15));
         }
 
         /* Scrollbar styling */
@@ -849,6 +886,8 @@
                 coords: [41.6528, -83.5379],
                 tag: "Door #1: Escape",
                 icon: "🚪",
+                iconType: "door",
+                iconSymbol: "steel-door",
                 isDoor: true,
                 shortDesc: "Breaking free from the cubicle.",
                 fullDesc: "This was Door #1.\n\nI had quite literally run out of excuses for calling in sick to my cubicle job. It wasn't something I was proud of, but no matter how I tried to fit in as a good employee, I was being pulled by a conflicting sensation that was telling me every morning when I woke that I was putting my energy into the wrong vocation.\n\nThe awful feeling of letting my boss and co-workers down was quickly replaced by a much stronger desire to create music.\n\nBack then in 2007, there was conflict so horrific in the Darfur region that I was compelled to write about it. This song captures where my heart truly was—not in spreadsheets, but in stories that needed to be told.\n\nI had to escape. And somehow, against all odds, I did.\n\nThis door opened the possibility of everything that came after.",
@@ -1353,27 +1392,510 @@
             );
         }
 
+        // =============================================
+        // ICON RENDERING SYSTEM
+        // =============================================
+        
+        const ICON_CONFIG = {
+            // Toledo - Steel Door
+            "Toledo, Ohio": { style: 'door', symbol: 'steel-door', color: '#4a5568', accent: '#d4a574' },
+            // Darwin - Wood Door  
+            "Darwin, Australia": { style: 'door', symbol: 'wood-door', color: '#8b4513', accent: '#d4a574' },
+            // Auckland - Gold Door
+            "Auckland, New Zealand": { style: 'door', symbol: 'gold-door', color: '#d4a574', accent: '#ffd700' },
+            // Art Deco - Luxury
+            "Queen Victoria (Cunard)": { style: 'deco', symbol: 'crown', color: '#d4a574', accent: '#ffd700' },
+            // Modern Minimal - Cities
+            "Brisbane, Australia": { style: 'minimal', symbol: 'sunrise', color: '#ffa500', accent: '#ffcc00' },
+            "Sydney, Australia": { style: 'minimal', symbol: 'fireworks', color: '#ff6b6b', accent: '#ffd700' },
+            "Wellington, New Zealand": { style: 'minimal', symbol: 'star', color: '#c0c8d0', accent: '#ff6b6b' },
+            "Napier, New Zealand": { style: 'minimal', symbol: 'car', color: '#607080', accent: '#d4a574' },
+            // Heritage - Historic Sites
+            "Dubrovnik, Croatia": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#5a4a3a' },
+            "Ephesus, Turkey": { style: 'heritage', symbol: 'column', color: '#c9b896', accent: '#8b7355' },
+            "Rome, Italy": { style: 'heritage', symbol: 'arch', color: '#c9b896', accent: '#8b7355' },
+            "Milford Sound, New Zealand": { style: 'heritage', symbol: 'mountain', color: '#607080', accent: '#a0c0d0' },
+            // Paradise - Tropical
+            "Reithi Rah, Maldives": { style: 'paradise', symbol: 'shark', color: '#4a90a0', accent: '#2d5a6a' },
+            "Bali, Indonesia": { style: 'paradise', symbol: 'mango', color: '#ffa500', accent: '#228b22' },
+            "Bora Bora": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+            "Tonga": { style: 'paradise', symbol: 'whale', color: '#4a90a0', accent: '#2d5a6a' },
+            "Vanuatu": { style: 'paradise', symbol: 'coffee', color: '#6f4e37', accent: '#d4a574' },
+            "Airlie Beach, Australia": { style: 'paradise', symbol: 'sun-hot', color: '#ff6b6b', accent: '#ffa500' },
+            // Adventure - Remote
+            "Ushuaia, Argentina": { style: 'adventure', symbol: 'compass', color: '#607080', accent: '#d4a574' },
+            "Falkland Islands": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
+            // Culture - Food, Wine, Music
+            "Portofino, Italy": { style: 'culture', symbol: 'boat', color: '#e07a5f', accent: '#2d5a6a' },
+            "Akaroa, New Zealand": { style: 'culture', symbol: 'wine', color: '#722f37', accent: '#d4a574' },
+            "Picton, New Zealand": { style: 'culture', symbol: 'grapes', color: '#4a0e4e', accent: '#228b22' },
+            "Tauranga, New Zealand": { style: 'culture', symbol: 'guitar', color: '#8b4513', accent: '#d4a574' }
+        };
+        
+        function renderSidebarIcon(canvas, config) {
+            const ctx = canvas.getContext('2d');
+            const size = canvas.width;
+            const cx = size / 2;
+            const cy = size / 2;
+            
+            ctx.clearRect(0, 0, size, size);
+            
+            const color = config.color;
+            const accent = config.accent;
+            
+            switch(config.symbol) {
+                case 'steel-door':
+                    // Steel door with lock
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 12, cy - 16, 24, 32);
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy + 4, 5, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillRect(cx - 2, cy + 4, 4, 8);
+                    break;
+                    
+                case 'wood-door':
+                    // Wooden door
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 12, cy - 16, 24, 32);
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 2;
+                    ctx.strokeRect(cx - 10, cy - 14, 20, 28);
+                    ctx.beginPath();
+                    ctx.arc(cx + 6, cy, 3, 0, Math.PI * 2);
+                    ctx.stroke();
+                    break;
+                    
+                case 'gold-door':
+                    // Golden door
+                    const goldGrad = ctx.createLinearGradient(cx - 12, 0, cx + 12, 0);
+                    goldGrad.addColorStop(0, color);
+                    goldGrad.addColorStop(0.5, accent);
+                    goldGrad.addColorStop(1, color);
+                    ctx.fillStyle = goldGrad;
+                    ctx.fillRect(cx - 12, cy - 16, 24, 32);
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 2;
+                    ctx.strokeRect(cx - 12, cy - 16, 24, 32);
+                    break;
+                    
+                case 'crown':
+                    // Crown
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 14, cy + 8);
+                    ctx.lineTo(cx - 10, cy - 8);
+                    ctx.lineTo(cx - 5, cy);
+                    ctx.lineTo(cx, cy - 12);
+                    ctx.lineTo(cx + 5, cy);
+                    ctx.lineTo(cx + 10, cy - 8);
+                    ctx.lineTo(cx + 14, cy + 8);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - 12, 3, 0, Math.PI * 2);
+                    ctx.fill();
+                    break;
+                    
+                case 'sunrise':
+                    // Rising sun
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy + 5, 12, Math.PI, 0);
+                    ctx.fill();
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 2;
+                    for (let i = 0; i < 7; i++) {
+                        const angle = Math.PI + (i / 6) * Math.PI;
+                        ctx.beginPath();
+                        ctx.moveTo(cx + Math.cos(angle) * 14, cy + 5 + Math.sin(angle) * 14);
+                        ctx.lineTo(cx + Math.cos(angle) * 20, cy + 5 + Math.sin(angle) * 20);
+                        ctx.stroke();
+                    }
+                    break;
+                    
+                case 'fireworks':
+                    // Fireworks burst
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 2;
+                    for (let i = 0; i < 8; i++) {
+                        const angle = (i / 8) * Math.PI * 2;
+                        ctx.beginPath();
+                        ctx.moveTo(cx + Math.cos(angle) * 4, cy + Math.sin(angle) * 4);
+                        ctx.lineTo(cx + Math.cos(angle) * 14, cy + Math.sin(angle) * 14);
+                        ctx.stroke();
+                    }
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 4, 0, Math.PI * 2);
+                    ctx.fill();
+                    break;
+                    
+                case 'star':
+                    // Simple star
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    for (let i = 0; i < 5; i++) {
+                        const outerAngle = (i / 5) * Math.PI * 2 - Math.PI / 2;
+                        const innerAngle = ((i + 0.5) / 5) * Math.PI * 2 - Math.PI / 2;
+                        if (i === 0) ctx.moveTo(cx + Math.cos(outerAngle) * 14, cy + Math.sin(outerAngle) * 14);
+                        else ctx.lineTo(cx + Math.cos(outerAngle) * 14, cy + Math.sin(outerAngle) * 14);
+                        ctx.lineTo(cx + Math.cos(innerAngle) * 6, cy + Math.sin(innerAngle) * 6);
+                    }
+                    ctx.closePath();
+                    ctx.fill();
+                    break;
+                    
+                case 'car':
+                    // Art deco car
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 14, cy - 4, 28, 10);
+                    ctx.fillRect(cx - 8, cy - 10, 16, 8);
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx - 8, cy + 6, 4, 0, Math.PI * 2);
+                    ctx.arc(cx + 8, cy + 6, 4, 0, Math.PI * 2);
+                    ctx.fill();
+                    break;
+                    
+                case 'fortress':
+                    // Castle/fortress
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 12, cy - 6, 24, 18);
+                    ctx.fillRect(cx - 14, cy - 14, 6, 10);
+                    ctx.fillRect(cx - 3, cy - 14, 6, 10);
+                    ctx.fillRect(cx + 8, cy - 14, 6, 10);
+                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 3, cy + 2, 6, 10);
+                    break;
+                    
+                case 'column':
+                    // Greek column
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 8, cy - 14, 16, 4);
+                    ctx.fillRect(cx - 6, cy - 10, 12, 20);
+                    ctx.fillRect(cx - 8, cy + 10, 16, 4);
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 1;
+                    for (let i = 0; i < 3; i++) {
+                        ctx.beginPath();
+                        ctx.moveTo(cx - 4 + i * 4, cy - 10);
+                        ctx.lineTo(cx - 4 + i * 4, cy + 10);
+                        ctx.stroke();
+                    }
+                    break;
+                    
+                case 'arch':
+                    // Roman arch
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 14, cy - 12, 6, 26);
+                    ctx.fillRect(cx + 8, cy - 12, 6, 26);
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - 6, 11, Math.PI, 0);
+                    ctx.fill();
+                    ctx.fillStyle = '#0a1628';
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 7, Math.PI, 0);
+                    ctx.rect(cx - 7, cy, 14, 14);
+                    ctx.fill();
+                    break;
+                    
+                case 'mountain':
+                    // Mountain peak
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 16, cy + 12);
+                    ctx.lineTo(cx - 4, cy - 10);
+                    ctx.lineTo(cx + 2, cy - 2);
+                    ctx.lineTo(cx + 8, cy - 14);
+                    ctx.lineTo(cx + 16, cy + 12);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.moveTo(cx + 8, cy - 14);
+                    ctx.lineTo(cx + 4, cy - 8);
+                    ctx.lineTo(cx + 12, cy - 8);
+                    ctx.closePath();
+                    ctx.fill();
+                    break;
+                    
+                case 'shark':
+                    // Shark fin
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 12, cy + 8);
+                    ctx.quadraticCurveTo(cx - 4, cy + 6, cx, cy - 12);
+                    ctx.quadraticCurveTo(cx + 2, cy, cx + 14, cy + 8);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 16, cy + 10);
+                    ctx.lineTo(cx + 16, cy + 10);
+                    ctx.stroke();
+                    break;
+                    
+                case 'mango':
+                    // Mango fruit
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy + 2, 12, 14, 0.2, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.ellipse(cx - 2, cy - 12, 4, 6, -0.5, 0, Math.PI * 2);
+                    ctx.fill();
+                    break;
+                    
+                case 'palm':
+                    // Palm tree
+                    ctx.fillStyle = '#8b4513';
+                    ctx.fillRect(cx - 2, cy, 4, 16);
+                    ctx.fillStyle = accent;
+                    for (let i = 0; i < 5; i++) {
+                        const angle = -Math.PI / 2 + (i - 2) * 0.4;
+                        ctx.beginPath();
+                        ctx.moveTo(cx, cy);
+                        ctx.quadraticCurveTo(
+                            cx + Math.cos(angle) * 10, cy + Math.sin(angle) * 10 - 5,
+                            cx + Math.cos(angle) * 16, cy + Math.sin(angle) * 16
+                        );
+                        ctx.lineWidth = 3;
+                        ctx.strokeStyle = accent;
+                        ctx.stroke();
+                    }
+                    break;
+                    
+                case 'whale':
+                    // Whale tail
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy + 10);
+                    ctx.quadraticCurveTo(cx - 6, cy, cx - 14, cy - 10);
+                    ctx.quadraticCurveTo(cx - 10, cy - 6, cx, cy - 4);
+                    ctx.quadraticCurveTo(cx + 10, cy - 6, cx + 14, cy - 10);
+                    ctx.quadraticCurveTo(cx + 6, cy, cx, cy + 10);
+                    ctx.fill();
+                    break;
+                    
+                case 'coffee':
+                    // Coffee cup
+                    ctx.fillStyle = color;
+                    ctx.fillRect(cx - 8, cy - 6, 16, 16);
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.arc(cx + 10, cy + 2, 6, -Math.PI / 2, Math.PI / 2);
+                    ctx.stroke();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 4, cy - 10);
+                    ctx.quadraticCurveTo(cx - 6, cy - 14, cx - 4, cy - 16);
+                    ctx.quadraticCurveTo(cx, cy - 12, cx, cy - 10);
+                    ctx.stroke();
+                    break;
+                    
+                case 'sun-hot':
+                    // Hot sun with thermometer feel
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 10, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 3;
+                    for (let i = 0; i < 8; i++) {
+                        const angle = (i / 8) * Math.PI * 2;
+                        ctx.beginPath();
+                        ctx.moveTo(cx + Math.cos(angle) * 12, cy + Math.sin(angle) * 12);
+                        ctx.lineTo(cx + Math.cos(angle) * 16, cy + Math.sin(angle) * 16);
+                        ctx.stroke();
+                    }
+                    break;
+                    
+                case 'compass':
+                    // Compass
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 13, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy - 10);
+                    ctx.lineTo(cx + 3, cy);
+                    ctx.lineTo(cx, cy + 10);
+                    ctx.lineTo(cx - 3, cy);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy + 10);
+                    ctx.lineTo(cx + 3, cy);
+                    ctx.lineTo(cx, cy - 2);
+                    ctx.lineTo(cx - 3, cy);
+                    ctx.closePath();
+                    ctx.fill();
+                    break;
+                    
+                case 'penguin':
+                    // Penguin
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy + 2, 10, 14, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = '#f5f0e8';
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy + 4, 6, 10, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 2, cy - 6);
+                    ctx.lineTo(cx, cy - 2);
+                    ctx.lineTo(cx + 2, cy - 6);
+                    ctx.fill();
+                    break;
+                    
+                case 'boat':
+                    // Small boat
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 14, cy + 4);
+                    ctx.lineTo(cx - 10, cy + 10);
+                    ctx.lineTo(cx + 10, cy + 10);
+                    ctx.lineTo(cx + 14, cy + 4);
+                    ctx.closePath();
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 1, cy - 10, 2, 16);
+                    ctx.beginPath();
+                    ctx.moveTo(cx + 1, cy - 8);
+                    ctx.lineTo(cx + 12, cy);
+                    ctx.lineTo(cx + 1, cy + 4);
+                    ctx.fill();
+                    break;
+                    
+                case 'wine':
+                    // Wine glass
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 8, cy - 10);
+                    ctx.quadraticCurveTo(cx - 10, cy - 2, cx, cy + 2);
+                    ctx.quadraticCurveTo(cx + 10, cy - 2, cx + 8, cy - 10);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy + 2);
+                    ctx.lineTo(cx, cy + 12);
+                    ctx.moveTo(cx - 6, cy + 12);
+                    ctx.lineTo(cx + 6, cy + 12);
+                    ctx.stroke();
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - 4, 5, 0, Math.PI);
+                    ctx.fill();
+                    break;
+                    
+                case 'grapes':
+                    // Grape cluster
+                    ctx.fillStyle = color;
+                    const grapePositions = [[0,-8],[5,-4],[-5,-4],[0,0],[8,0],[-8,0],[3,6],[-3,6],[0,10]];
+                    grapePositions.forEach(([x, y]) => {
+                        ctx.beginPath();
+                        ctx.arc(cx + x, cy + y, 4, 0, Math.PI * 2);
+                        ctx.fill();
+                    });
+                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 1, cy - 14, 2, 6);
+                    break;
+                    
+                case 'guitar':
+                    // Guitar
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy + 6, 10, 8, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy - 2, 6, 5, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 2, cy - 16, 4, 14);
+                    ctx.fillStyle = '#1a1a1a';
+                    ctx.beginPath();
+                    ctx.arc(cx, cy + 6, 3, 0, Math.PI * 2);
+                    ctx.fill();
+                    break;
+                    
+                default:
+                    // Fallback - simple circle
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 12, 0, Math.PI * 2);
+                    ctx.fill();
+            }
+        }
+        
+        function getIconConfig(title) {
+            return ICON_CONFIG[title] || { style: 'minimal', symbol: 'default', color: '#d4a574', accent: '#8b6914' };
+        }
+
         function createMarkers() {
             locations.forEach((loc, index) => {
                 const position = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
+                const config = getIconConfig(loc.title);
                 
-                // Size - larger icons
-                const baseSize = 0.025;
+                // Size - doors are larger
+                const baseSize = loc.isDoor ? 0.035 : 0.028;
                 
-                // Create emoji sprite as the marker itself
+                // Create canvas for the marker
                 const canvas = document.createElement('canvas');
-                canvas.width = 256;
-                canvas.height = 256;
+                canvas.width = 128;
+                canvas.height = 128;
                 const ctx = canvas.getContext('2d');
                 
-                // Clear canvas with transparency
-                ctx.clearRect(0, 0, 256, 256);
+                // Clear canvas
+                ctx.clearRect(0, 0, 128, 128);
                 
-                // Draw emoji - Firefox needs explicit emoji font
-                ctx.font = '160px serif';
-                ctx.textAlign = 'center';
-                ctx.textBaseline = 'middle';
-                ctx.fillText(loc.icon, 128, 128);
+                // Draw circular background with glow
+                const cx = 64, cy = 64;
+                
+                // Outer glow
+                const glowGrad = ctx.createRadialGradient(cx, cy, 30, cx, cy, 60);
+                glowGrad.addColorStop(0, config.style === 'door' ? 'rgba(212, 165, 116, 0.4)' : 'rgba(200, 200, 200, 0.2)');
+                glowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+                ctx.fillStyle = glowGrad;
+                ctx.beginPath();
+                ctx.arc(cx, cy, 60, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Background circle
+                ctx.fillStyle = 'rgba(10, 22, 40, 0.85)';
+                ctx.beginPath();
+                ctx.arc(cx, cy, 45, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Border
+                ctx.strokeStyle = config.color;
+                ctx.lineWidth = loc.isDoor ? 4 : 3;
+                ctx.beginPath();
+                ctx.arc(cx, cy, 45, 0, Math.PI * 2);
+                ctx.stroke();
+                
+                // Render the icon (scale context to fit)
+                ctx.save();
+                ctx.translate(cx - 32, cy - 32);
+                ctx.scale(2, 2);
+                
+                // Use same render function but adjust for larger canvas
+                const tempCanvas = document.createElement('canvas');
+                tempCanvas.width = 64;
+                tempCanvas.height = 64;
+                renderSidebarIcon(tempCanvas, config);
+                ctx.drawImage(tempCanvas, 0, 0);
+                ctx.restore();
                 
                 const texture = new THREE.CanvasTexture(canvas);
                 const spriteMaterial = new THREE.SpriteMaterial({ 
@@ -1390,6 +1912,7 @@
                 // Store data on sprite for click handling
                 sprite.userData = loc;
                 sprite.userData.baseSize = baseSize;
+                sprite.userData.iconConfig = config;
                 
                 globe.add(sprite);
                 markers.push(sprite);
@@ -1404,12 +1927,31 @@
             const others = locations.filter(l => !l.isDoor);
             
             [...doors, ...others].forEach(loc => {
+                const config = getIconConfig(loc.title);
+                
                 const item = document.createElement('div');
                 item.className = `location-item ${loc.isDoor ? 'door' : ''}`;
-                item.innerHTML = `
-                    <div class="icon">${loc.icon}</div>
-                    <div class="name">${loc.title}</div>
-                `;
+                item.setAttribute('data-style', config.style);
+                
+                // Create icon container
+                const iconDiv = document.createElement('div');
+                iconDiv.className = 'icon';
+                
+                // Create canvas for custom icon
+                const canvas = document.createElement('canvas');
+                canvas.width = 64;
+                canvas.height = 64;
+                renderSidebarIcon(canvas, config);
+                iconDiv.appendChild(canvas);
+                
+                // Create name
+                const nameDiv = document.createElement('div');
+                nameDiv.className = 'name';
+                nameDiv.textContent = loc.title;
+                
+                item.appendChild(iconDiv);
+                item.appendChild(nameDiv);
+                
                 item.onclick = () => {
                     skipPanelOpen = true; // User must click icon to open story
                     focusLocation(loc);
