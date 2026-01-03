@@ -221,6 +221,86 @@
             margin-bottom: 1rem;
         }
 
+        /* Close link at bottom of panel */
+        .panel-close-link {
+            display: none;
+            width: 100%;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background: transparent;
+            color: rgba(245, 240, 232, 0.7);
+            border: 1px solid rgba(245, 240, 232, 0.2);
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .panel-close-link:hover {
+            background: rgba(245, 240, 232, 0.1);
+            color: var(--cream);
+        }
+        
+        .panel-close-link .close-icon {
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        /* Locations hint - visual link to panel below */
+        .locations-hint {
+            display: none;
+            margin-top: 15px;
+            padding: 15px 20px;
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(212, 165, 116, 0.05));
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .locations-hint:hover {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.25), rgba(212, 165, 116, 0.1));
+        }
+        
+        .locations-hint .hint-arrow {
+            display: block;
+            font-size: 1.2rem;
+            color: var(--gold);
+            animation: bounce-arrow 1.5s ease-in-out infinite;
+        }
+        
+        .locations-hint .hint-text {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--cream);
+            margin: 5px 0 3px;
+            font-weight: 500;
+        }
+        
+        .locations-hint .hint-count {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+        
+        @keyframes bounce-arrow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(4px); }
+        }
+
+        @media (max-width: 768px) {
+            .panel-close-link {
+                display: block;
+            }
+            
+            .locations-hint {
+                display: block;
+            }
+        }
+
         /* Location list */
         .location-list {
             position: fixed;
@@ -437,6 +517,28 @@
             
             .panel-content {
                 padding: 1rem 1.5rem;
+                padding-bottom: 30px;
+            }
+            
+            .side-panel.expanded .panel-content {
+                padding-bottom: 100px;
+            }
+            
+            /* Hide close link and locations hint in collapsed state */
+            .panel-close-link,
+            .locations-hint {
+                display: none;
+            }
+            
+            /* Show them when expanded */
+            .side-panel.expanded .panel-close-link,
+            .side-panel.expanded .locations-hint {
+                display: block;
+            }
+            
+            /* Hide swipe hint when expanded */
+            .side-panel.expanded .swipe-hint {
+                display: none;
             }
             
             .panel-title {
@@ -671,6 +773,14 @@
             <div class="panel-preview" id="panelPreview"></div>
             <div class="panel-text" id="panelText"></div>
             <div class="swipe-hint">↑ Swipe up for full story</div>
+            <button class="panel-close-link" onclick="closePanel()">
+                <span class="close-icon">✕</span> Close Story
+            </button>
+            <div class="locations-hint" onclick="closePanel(); setTimeout(toggleMobileMenu, 300);">
+                <span class="hint-arrow">↓</span>
+                <span class="hint-text">View All Locations</span>
+                <span class="hint-count" id="locationsCount">24 places</span>
+            </div>
         </div>
     </div>
 
@@ -1254,6 +1364,12 @@
                 };
                 list.appendChild(item);
             });
+            
+            // Update locations count in panel hint
+            const countEl = document.getElementById('locationsCount');
+            if (countEl) {
+                countEl.textContent = locations.length + ' places';
+            }
         }
 
         function focusLocation(loc) {
