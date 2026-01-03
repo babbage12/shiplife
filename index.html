@@ -389,12 +389,12 @@
             
             /* Right panel - bottom sheet style, starts as preview */
             .side-panel {
-                position: fixed;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                top: auto;
-                width: 100%;
+                position: fixed !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
+                top: auto !important;
+                width: 100% !important;
                 height: 45vh;
                 max-height: 45vh;
                 border-radius: 20px 20px 0 0;
@@ -405,7 +405,7 @@
             }
             
             .side-panel.open {
-                transform: translateY(0);
+                transform: translateY(0) !important;
             }
             
             .side-panel.expanded {
@@ -471,11 +471,19 @@
             
             /* Move hamburger to bottom right on mobile */
             .menu-toggle {
+                display: flex !important;
                 left: auto;
                 right: 1rem;
                 top: auto;
                 bottom: 5rem;
                 transform: none;
+                background: rgba(212, 165, 116, 0.9);
+                border: 2px solid var(--gold);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            }
+            
+            .menu-toggle span {
+                background: var(--navy);
             }
             
             /* Prevent page zoom on double-tap */
@@ -689,7 +697,7 @@
                 isDoor: true,
                 shortDesc: "Breaking free from the cubicle.",
                 fullDesc: "This was Door #1.\n\nI had quite literally run out of excuses for calling in sick to my cubicle job. It wasn't something I was proud of, but no matter how I tried to fit in as a good employee, I was being pulled by a conflicting sensation that was telling me every morning when I woke that I was putting my energy into the wrong vocation.\n\nThe awful feeling of letting my boss and co-workers down was quickly replaced by a much stronger desire to create music.\n\nBack then in 2007, there was conflict so horrific in the Darfur region that I was compelled to write about it. This song captures where my heart truly was—not in spreadsheets, but in stories that needed to be told.\n\nI had to escape. And somehow, against all odds, I did.\n\nThis door opened the possibility of everything that came after.",
-                image: "https://images.unsplash.com/photo-1471623817296-aa07ae5c9ec9?w=1200"
+                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1200"
             },
             {
                 id: 21,
