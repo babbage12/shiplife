@@ -1408,6 +1408,7 @@
                     <div class="name">${loc.title}</div>
                 `;
                 item.onclick = () => {
+                    skipPanelOpen = true; // User must click icon to open story
                     focusLocation(loc);
                     closeMobileMenu();
                 };
@@ -1513,6 +1514,7 @@
         let pendingRotationY = 0;
         let pendingRotationX = 0;
         let pendingLocation = null;
+        let skipPanelOpen = false; // Flag to prevent auto-opening panel
 
         function triggerBounce(locationId) {
             bouncingMarkerId = locationId;
@@ -1582,6 +1584,7 @@
             if (nextDoor) {
                 // Close panel and rotate globe to next door location
                 closePanel();
+                skipPanelOpen = true; // Prevent auto-opening panel
                 focusLocation(nextDoor);
                 // Panel stays closed - user must click icon to open story
             }
@@ -1885,8 +1888,11 @@
                             // Trigger bounce animation for the target location
                             if (pendingLocation) {
                                 triggerBounce(pendingLocation.id);
-                                openPanel(pendingLocation);
+                                if (!skipPanelOpen) {
+                                    openPanel(pendingLocation);
+                                }
                                 pendingLocation = null;
+                                skipPanelOpen = false;
                             }
                         }
                     }
