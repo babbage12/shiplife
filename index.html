@@ -1445,14 +1445,41 @@
             
             switch(config.symbol) {
                 case 'steel-door':
-                    // Steel door with lock
+                    // Heavy steel door with padlock
+                    // Door frame
+                    ctx.fillStyle = '#2d3748';
+                    ctx.fillRect(cx - 14, cy - 18, 28, 36);
+                    
+                    // Door panel
                     ctx.fillStyle = color;
-                    ctx.fillRect(cx - 12, cy - 16, 24, 32);
-                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 11, cy - 15, 22, 30);
+                    
+                    // Reinforcement lines
+                    ctx.strokeStyle = '#2d3748';
+                    ctx.lineWidth = 2;
                     ctx.beginPath();
-                    ctx.arc(cx, cy + 4, 5, 0, Math.PI * 2);
+                    ctx.moveTo(cx - 11, cy - 5);
+                    ctx.lineTo(cx + 11, cy - 5);
+                    ctx.moveTo(cx - 11, cy + 5);
+                    ctx.lineTo(cx + 11, cy + 5);
+                    ctx.stroke();
+                    
+                    // Padlock body
+                    ctx.fillStyle = accent;
+                    ctx.fillRect(cx - 5, cy - 2, 10, 10);
+                    
+                    // Padlock shackle (U-shape)
+                    ctx.strokeStyle = accent;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - 4, 4, Math.PI, 0);
+                    ctx.stroke();
+                    
+                    // Keyhole
+                    ctx.fillStyle = '#1a1a1a';
+                    ctx.beginPath();
+                    ctx.arc(cx, cy + 3, 2, 0, Math.PI * 2);
                     ctx.fill();
-                    ctx.fillRect(cx - 2, cy + 4, 4, 8);
                     break;
                     
                 case 'wood-door':
@@ -1842,67 +1869,1421 @@
             return ICON_CONFIG[title] || { style: 'minimal', symbol: 'default', color: '#d4a574', accent: '#8b6914' };
         }
 
+        // Door #1 3D Animation System
+        let door1Scene, door1Camera, door1Renderer;
+        let door1Group, door1LockGroup, door1ShackleGroup;
+        let door1Canvas, door1Texture, door1GoldMat;
+        let door1AnimPhase = 'idle';
+        let door1AnimStart = 0;
+        let door1IsLocked = true;
+        let door1Sprite = null;
+        
+        function initDoor1Icon() {
+            // Create offscreen canvas for rendering
+            door1Canvas = document.createElement('canvas');
+            door1Canvas.width = 256;
+            door1Canvas.height = 256;
+            
+            // Create mini Three.js scene
+            door1Scene = new THREE.Scene();
+            door1Scene.background = null; // Transparent
+            
+            // Camera - zoomed in tight on the door
+            door1Camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+            door1Camera.position.set(0, 0, 3.5);
+            door1Camera.lookAt(0, 0, 0);
+            
+            door1Renderer = new THREE.WebGLRenderer({ 
+                canvas: door1Canvas,
+                antialias: true, 
+                alpha: true 
+            });
+            door1Renderer.setSize(256, 256);
+            door1Renderer.setClearColor(0x000000, 0);
+            
+            // Lighting
+            const ambient = new THREE.AmbientLight(0xffffff, 0.4);
+            door1Scene.add(ambient);
+            
+            const key = new THREE.DirectionalLight(0xfff5e6, 1.0);
+            key.position.set(2, 3, 4);
+            door1Scene.add(key);
+            
+            // Materials
+            const steelMat = new THREE.MeshStandardMaterial({
+                color: 0x4a5568,
+                metalness: 0.8,
+                roughness: 0.4
+            });
+            
+            const darkSteelMat = new THREE.MeshStandardMaterial({
+                color: 0x2d3748,
+                metalness: 0.9,
+                roughness: 0.3
+            });
+            
+            const brassMat = new THREE.MeshStandardMaterial({
+                color: 0xd4a574,
+                metalness: 0.95,
+                roughness: 0.2
+            });
+            
+            door1GoldMat = new THREE.MeshStandardMaterial({
+                color: 0xffd700,
+                metalness: 0.95,
+                roughness: 0.1,
+                emissive: 0x332200,
+                emissiveIntensity: 0.2
+            });
+            
+            // Door group - scaled to fit tightly in frame
+            door1Group = new THREE.Group();
+            door1Group.position.set(-0.7, 0, 0);
+            door1Group.scale.set(0.75, 0.75, 0.75);
+            door1Scene.add(door1Group);
+            
+            // Frame - complete rectangle, scaled to match
+            const leftFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(0.12, 2.2, 0.15),
+                darkSteelMat
+            );
+            leftFrame.position.set(-0.78, 0, 0);
+            door1Scene.add(leftFrame);
+            
+            const rightFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(0.12, 2.2, 0.15),
+                darkSteelMat
+            );
+            rightFrame.position.set(0.78, 0, 0);
+            door1Scene.add(rightFrame);
+            
+            const topFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(1.68, 0.12, 0.15),
+                darkSteelMat
+            );
+            topFrame.position.set(0, 1.1, 0);
+            door1Scene.add(topFrame);
+            
+            const bottomFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(1.68, 0.12, 0.15),
+                darkSteelMat
+            );
+            bottomFrame.position.set(0, -1.1, 0);
+            door1Scene.add(bottomFrame);
+            
+            // Door panel - sized to fully seal the frame opening
+            // Frame inner opening is roughly 1.44 wide x 2.08 tall
+            // But door group is scaled 0.75x, so we need larger values
+            const doorPanel = new THREE.Mesh(
+                new THREE.BoxGeometry(2.1, 2.9, 0.1),
+                steelMat
+            );
+            doorPanel.position.set(1.05, 0, 0.02);
+            door1Group.add(doorPanel);
+            
+            // Reinforcement plates
+            const plateGeo = new THREE.BoxGeometry(1.8, 0.1, 0.02);
+            [-0.9, 0, 0.9].forEach(y => {
+                const plate = new THREE.Mesh(plateGeo, darkSteelMat);
+                plate.position.set(1.05, y, 0.08);
+                door1Group.add(plate);
+            });
+            
+            // Lock group - centered on door panel
+            door1LockGroup = new THREE.Group();
+            door1LockGroup.position.set(1.05, -0.15, 0.12);
+            door1Group.add(door1LockGroup);
+            
+            // Lock body
+            const lockBody = new THREE.Mesh(
+                new THREE.BoxGeometry(0.4, 0.35, 0.15),
+                brassMat
+            );
+            lockBody.position.y = -0.12;
+            door1LockGroup.add(lockBody);
+            
+            // Shackle group
+            door1ShackleGroup = new THREE.Group();
+            door1LockGroup.add(door1ShackleGroup);
+            
+            const shackleCurve = new THREE.Mesh(
+                new THREE.TorusGeometry(0.12, 0.03, 8, 16, Math.PI),
+                door1GoldMat
+            );
+            shackleCurve.rotation.z = Math.PI;
+            shackleCurve.position.y = 0.12;
+            door1ShackleGroup.add(shackleCurve);
+            
+            const shackleLegGeo = new THREE.CylinderGeometry(0.03, 0.03, 0.15, 8);
+            const shackleLeft = new THREE.Mesh(shackleLegGeo, door1GoldMat);
+            shackleLeft.position.set(-0.12, 0.04, 0);
+            door1ShackleGroup.add(shackleLeft);
+            
+            const shackleRight = new THREE.Mesh(shackleLegGeo, door1GoldMat);
+            shackleRight.position.set(0.12, 0.04, 0);
+            door1ShackleGroup.add(shackleRight);
+            
+            // Keyhole
+            const keyholeMat = new THREE.MeshBasicMaterial({ color: 0x1a1a1a });
+            const keyhole = new THREE.Mesh(
+                new THREE.CircleGeometry(0.04, 16),
+                keyholeMat
+            );
+            keyhole.position.set(0, -0.12, 0.08);
+            door1LockGroup.add(keyhole);
+            
+            // ==========================================
+            // ADVENTURE SCENE BEHIND THE DOOR
+            // ==========================================
+            
+            // High-res layered beach sunset scene
+            const sunsetCanvas = document.createElement('canvas');
+            sunsetCanvas.width = 512;
+            sunsetCanvas.height = 640; // Taller for vertical door
+            const ctx = sunsetCanvas.getContext('2d');
+            
+            // === LAYER 1: Sky gradient ===
+            const skyGrad = ctx.createLinearGradient(0, 0, 0, 400);
+            skyGrad.addColorStop(0, '#0a0a1a');      // Deep night
+            skyGrad.addColorStop(0.2, '#0d1b2a');    // Dark navy
+            skyGrad.addColorStop(0.4, '#1b263b');    // Navy
+            skyGrad.addColorStop(0.6, '#415a77');    // Steel blue
+            skyGrad.addColorStop(0.75, '#d4736a');   // Dusty coral
+            skyGrad.addColorStop(0.85, '#f4a261');   // Orange
+            skyGrad.addColorStop(0.95, '#ffb347');   // Bright orange
+            skyGrad.addColorStop(1, '#ffd699');      // Golden horizon
+            ctx.fillStyle = skyGrad;
+            ctx.fillRect(0, 0, 512, 400);
+            
+            // === LAYER 2: Sun on horizon ===
+            const sunY = 385;
+            
+            // Outer glow
+            const outerGlow = ctx.createRadialGradient(256, sunY, 20, 256, sunY, 150);
+            outerGlow.addColorStop(0, 'rgba(255, 220, 150, 0.6)');
+            outerGlow.addColorStop(0.5, 'rgba(255, 180, 100, 0.2)');
+            outerGlow.addColorStop(1, 'rgba(255, 150, 80, 0)');
+            ctx.fillStyle = outerGlow;
+            ctx.fillRect(100, 250, 312, 150);
+            
+            // Sun disc
+            ctx.fillStyle = '#fffde7';
+            ctx.beginPath();
+            ctx.arc(256, sunY, 40, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // === LAYER 3: Ocean/water ===
+            const waterGrad = ctx.createLinearGradient(0, 400, 0, 520);
+            waterGrad.addColorStop(0, '#2d6a7a');    // Teal at horizon
+            waterGrad.addColorStop(0.3, '#1d4e5e');  // Deeper teal
+            waterGrad.addColorStop(1, '#0f2d3a');    // Deep ocean
+            ctx.fillStyle = waterGrad;
+            ctx.fillRect(0, 400, 512, 120);
+            
+            // Sun reflection on water
+            const reflectGrad = ctx.createLinearGradient(0, 400, 0, 480);
+            reflectGrad.addColorStop(0, 'rgba(255, 200, 120, 0.5)');
+            reflectGrad.addColorStop(0.5, 'rgba(255, 180, 100, 0.2)');
+            reflectGrad.addColorStop(1, 'rgba(255, 150, 80, 0)');
+            ctx.fillStyle = reflectGrad;
+            ctx.fillRect(180, 400, 152, 80);
+            
+            // Water shimmer lines
+            ctx.strokeStyle = 'rgba(255, 220, 150, 0.15)';
+            ctx.lineWidth = 1;
+            for (let i = 0; i < 8; i++) {
+                ctx.beginPath();
+                ctx.moveTo(160 + i * 8, 410 + i * 6);
+                ctx.lineTo(352 - i * 8, 410 + i * 6);
+                ctx.stroke();
+            }
+            
+            // === Small cruise ship at the horizon ===
+            ctx.fillStyle = '#1a1a1a';
+            // Hull - small at horizon (y ~400 is where water meets sky)
+            ctx.beginPath();
+            ctx.moveTo(320, 398);
+            ctx.lineTo(365, 398);
+            ctx.quadraticCurveTo(368, 399, 366, 402);
+            ctx.lineTo(322, 402);
+            ctx.quadraticCurveTo(318, 400, 320, 398);
+            ctx.closePath();
+            ctx.fill();
+            // Main deck/superstructure
+            ctx.fillRect(326, 391, 32, 7);
+            // Upper decks (tiered)
+            ctx.fillRect(330, 386, 24, 5);
+            ctx.fillRect(334, 382, 16, 4);
+            // Funnel/smokestack
+            ctx.fillRect(348, 377, 4, 5);
+            // Bridge windows (tiny highlights)
+            ctx.fillStyle = 'rgba(255, 220, 150, 0.6)';
+            ctx.fillRect(332, 388, 2, 2);
+            ctx.fillRect(338, 388, 2, 2);
+            ctx.fillRect(344, 388, 2, 2);
+            
+            // === LAYER 4: Beach/sand ===
+            const beachGrad = ctx.createLinearGradient(0, 520, 0, 640);
+            beachGrad.addColorStop(0, '#c9a86c');    // Wet sand
+            beachGrad.addColorStop(0.3, '#d4b896');  // Damp sand
+            beachGrad.addColorStop(1, '#e6d4a8');    // Dry sand
+            ctx.fillStyle = beachGrad;
+            ctx.fillRect(0, 520, 512, 120);
+            
+            // Beach texture dots
+            ctx.fillStyle = 'rgba(180, 150, 100, 0.3)';
+            for (let i = 0; i < 50; i++) {
+                ctx.beginPath();
+                ctx.arc(Math.random() * 512, 530 + Math.random() * 100, 1 + Math.random() * 2, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // === LAYER 5: Sandy/brown hilly dunes ===
+            
+            // Rolling sand dunes in background
+            ctx.fillStyle = '#a08060';
+            ctx.beginPath();
+            ctx.moveTo(0, 480);
+            ctx.quadraticCurveTo(80, 420, 160, 450);
+            ctx.quadraticCurveTo(256, 400, 350, 440);
+            ctx.quadraticCurveTo(430, 410, 512, 460);
+            ctx.lineTo(512, 520);
+            ctx.lineTo(0, 520);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Closer sand dune
+            ctx.fillStyle = '#8b7355';
+            ctx.beginPath();
+            ctx.moveTo(0, 500);
+            ctx.quadraticCurveTo(100, 460, 200, 490);
+            ctx.quadraticCurveTo(300, 450, 400, 480);
+            ctx.quadraticCurveTo(460, 460, 512, 490);
+            ctx.lineTo(512, 640);
+            ctx.lineTo(0, 640);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Helper to draw a lush palm tree
+            function drawPalm(x, baseY, trunkH, lean, size) {
+                ctx.fillStyle = '#0a0a0a';
+                
+                // Curved trunk
+                ctx.beginPath();
+                ctx.moveTo(x - 4 * size, baseY);
+                ctx.quadraticCurveTo(x + lean * 0.3, baseY - trunkH * 0.3, x + lean * 0.6, baseY - trunkH * 0.6);
+                ctx.quadraticCurveTo(x + lean * 0.8, baseY - trunkH * 0.8, x + lean, baseY - trunkH);
+                ctx.lineTo(x + lean + 4 * size, baseY - trunkH);
+                ctx.quadraticCurveTo(x + lean * 0.8 + 4 * size, baseY - trunkH * 0.8, x + lean * 0.6 + 4 * size, baseY - trunkH * 0.6);
+                ctx.quadraticCurveTo(x + lean * 0.3 + 4 * size, baseY - trunkH * 0.3, x + 4 * size, baseY);
+                ctx.closePath();
+                ctx.fill();
+                
+                // Fronds - big drooping leaves
+                const cx = x + lean + 2 * size;
+                const cy = baseY - trunkH;
+                
+                for (let i = 0; i < 9; i++) {
+                    const angle = (i / 9) * Math.PI * 1.6 - Math.PI * 0.8;
+                    const len = (50 + Math.random() * 30) * size;
+                    const droop = 0.4 + Math.random() * 0.2;
+                    
+                    // Main frond stem
+                    ctx.beginPath();
+                    ctx.moveTo(cx, cy);
+                    
+                    const midX = cx + Math.cos(angle) * len * 0.5;
+                    const midY = cy + Math.sin(angle) * len * 0.3;
+                    const endX = cx + Math.cos(angle) * len;
+                    const endY = cy + Math.sin(angle) * len * droop + len * 0.2;
+                    
+                    ctx.quadraticCurveTo(midX, midY, endX, endY);
+                    ctx.quadraticCurveTo(midX + 2, midY + 2, cx, cy);
+                    ctx.fill();
+                    
+                    // Leaflets along the frond
+                    for (let j = 0; j < 6; j++) {
+                        const t = 0.2 + j * 0.13;
+                        const lx = cx + (midX - cx) * t * 2;
+                        const ly = cy + (endY - cy) * t;
+                        const leafLen = 15 * size * (1 - t * 0.5);
+                        const leafAngle = angle + (j % 2 === 0 ? 0.4 : -0.4);
+                        
+                        ctx.beginPath();
+                        ctx.moveTo(lx, ly);
+                        ctx.lineTo(lx + Math.cos(leafAngle) * leafLen, ly + Math.sin(leafAngle) * leafLen * 0.5);
+                        ctx.lineTo(lx + 2, ly + 2);
+                        ctx.fill();
+                    }
+                }
+                
+                // Coconuts
+                ctx.beginPath();
+                ctx.arc(cx - 3 * size, cy + 5 * size, 4 * size, 0, Math.PI * 2);
+                ctx.arc(cx + 3 * size, cy + 7 * size, 3.5 * size, 0, Math.PI * 2);
+                ctx.arc(cx, cy + 9 * size, 3 * size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            
+            // Helper to draw tropical ferns/bushes
+            function drawFern(x, baseY, size) {
+                ctx.fillStyle = '#0a0a0a';
+                for (let i = 0; i < 7; i++) {
+                    const angle = (i / 7) * Math.PI - Math.PI * 0.5;
+                    const len = (30 + Math.random() * 20) * size;
+                    
+                    ctx.beginPath();
+                    ctx.moveTo(x, baseY);
+                    const endX = x + Math.cos(angle) * len;
+                    const endY = baseY - Math.abs(Math.sin(angle)) * len - 10 * size;
+                    const ctrlX = x + Math.cos(angle) * len * 0.6;
+                    const ctrlY = baseY - Math.abs(Math.sin(angle)) * len * 0.8;
+                    
+                    ctx.quadraticCurveTo(ctrlX, ctrlY, endX, endY);
+                    ctx.lineTo(endX + 2, endY + 3);
+                    ctx.quadraticCurveTo(ctrlX + 1, ctrlY + 2, x, baseY);
+                    ctx.fill();
+                }
+            }
+            
+            // Draw background palms (smaller, in distance)
+            drawPalm(80, 490, 90, -10, 0.7);
+            drawPalm(420, 480, 100, 15, 0.8);
+            drawPalm(250, 470, 70, 5, 0.6);
+            
+            // Draw ferns and bushes
+            drawFern(30, 530, 0.8);
+            drawFern(150, 520, 0.6);
+            drawFern(350, 515, 0.7);
+            drawFern(480, 525, 0.9);
+            
+            // Foreground palms (larger)
+            drawPalm(50, 600, 150, -20, 1.2);
+            drawPalm(450, 610, 170, 25, 1.3);
+            
+            // More ferns in foreground
+            drawFern(0, 580, 1.0);
+            drawFern(100, 590, 0.9);
+            drawFern(400, 585, 1.1);
+            drawFern(512, 595, 1.0);
+            
+            const sunsetTexture = new THREE.CanvasTexture(sunsetCanvas);
+            sunsetTexture.minFilter = THREE.LinearFilter;
+            sunsetTexture.magFilter = THREE.LinearFilter;
+            
+            const sunsetMat = new THREE.MeshBasicMaterial({ 
+                map: sunsetTexture,
+                side: THREE.DoubleSide
+            });
+            
+            // Sky backdrop - fits door opening
+            const skyPlane = new THREE.Mesh(
+                new THREE.PlaneGeometry(1.6, 2.4),
+                sunsetMat
+            );
+            skyPlane.position.set(0, 0, -0.4);
+            skyPlane.visible = false;
+            door1Scene.add(skyPlane);
+            window.skyPlane = skyPlane;
+            
+            // Remove 3D palm trees - they're now baked into the texture
+            window.palmTrees = [];
+            window.birds = [];
+            
+            // Add animated jungle elements that pop forward
+            const jungleMat = new THREE.MeshBasicMaterial({ 
+                color: 0x0a0a0a,
+                side: THREE.DoubleSide
+            });
+            
+            function createAnimatedPalm(x, scale, delay) {
+                const palm = new THREE.Group();
+                palm.userData.delay = delay;
+                palm.userData.baseZ = -0.5;
+                palm.userData.targetZ = 0.1; // Pop way forward, in front of door
+                palm.userData.baseY = -1.2;
+                palm.userData.targetY = -0.5;
+                palm.userData.targetScale = scale;
+                
+                // Much bigger palm silhouette
+                // Trunk - taller and curved
+                const trunkShape = new THREE.Shape();
+                trunkShape.moveTo(-0.04, 0);
+                trunkShape.quadraticCurveTo(-0.02, 0.4, 0.02, 0.8);
+                trunkShape.lineTo(0.06, 0.8);
+                trunkShape.quadraticCurveTo(0.02, 0.4, 0.04, 0);
+                trunkShape.closePath();
+                
+                const trunkGeo = new THREE.ShapeGeometry(trunkShape);
+                const trunk = new THREE.Mesh(trunkGeo, jungleMat);
+                palm.add(trunk);
+                
+                // Big dramatic fronds
+                for (let i = 0; i < 9; i++) {
+                    const angle = (i / 9) * Math.PI * 1.6 - Math.PI * 0.8;
+                    const len = 0.4 + Math.random() * 0.15;
+                    
+                    const frondShape = new THREE.Shape();
+                    frondShape.moveTo(0, 0);
+                    
+                    // Curved drooping frond
+                    const midX = Math.cos(angle) * len * 0.5;
+                    const midY = Math.sin(angle) * len * 0.3 + 0.1;
+                    const endX = Math.cos(angle) * len;
+                    const endY = Math.sin(angle) * len * 0.2 - 0.05; // Droop down
+                    
+                    frondShape.quadraticCurveTo(midX, midY, endX, endY);
+                    frondShape.lineTo(endX + 0.02, endY + 0.03);
+                    frondShape.quadraticCurveTo(midX + 0.01, midY + 0.02, 0, 0);
+                    
+                    const frondGeo = new THREE.ShapeGeometry(frondShape);
+                    const frond = new THREE.Mesh(frondGeo, jungleMat);
+                    frond.position.set(0.04, 0.75, 0);
+                    palm.add(frond);
+                }
+                
+                // Coconuts
+                const coconutGeo = new THREE.CircleGeometry(0.03, 8);
+                for (let i = 0; i < 3; i++) {
+                    const coconut = new THREE.Mesh(coconutGeo, jungleMat);
+                    coconut.position.set(0.04 + (i - 1) * 0.04, 0.7, 0.01);
+                    palm.add(coconut);
+                }
+                
+                palm.scale.setScalar(0.01); // Start tiny
+                palm.position.set(x, palm.userData.baseY, palm.userData.baseZ);
+                palm.visible = false;
+                
+                return palm;
+            }
+            
+            // Create BIG animated palms that pop forward dramatically
+            const animPalm1 = createAnimatedPalm(-0.55, 1.7, 0);     // Left
+            const animPalm2 = createAnimatedPalm(0.6, 1.9, 200);     // Right
+            const animPalm3 = createAnimatedPalm(-0.3, 1.4, 400);    // Center-left
+            const animPalm4 = createAnimatedPalm(0.35, 1.5, 300);    // Center-right
+            
+            window.palmTrees = [animPalm1, animPalm2, animPalm3, animPalm4];
+            window.palmTrees.forEach(p => door1Scene.add(p));
+            
+            window.jungleAnimStart = 0;
+        }
+        
+        function renderDoor1Frame() {
+            if (!door1Renderer) return;
+            
+            const time = Date.now();
+            const doorBaseX = -0.7;
+            
+            // Animation phases
+            if (door1AnimPhase === 'shake') {
+                const elapsed = time - door1AnimStart;
+                if (elapsed < 600) {
+                    const intensity = Math.sin(elapsed * 0.06) * 0.015 * (1 - elapsed / 600);
+                    door1Group.rotation.z = intensity;
+                    door1Group.position.x = doorBaseX + Math.sin(elapsed * 0.1) * 0.008;
+                } else {
+                    door1Group.rotation.z = 0;
+                    door1Group.position.x = doorBaseX;
+                    door1AnimPhase = 'unlock';
+                    door1AnimStart = time;
+                }
+            } else if (door1AnimPhase === 'unlock') {
+                const elapsed = time - door1AnimStart;
+                if (elapsed < 400) {
+                    const progress = elapsed / 400;
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    door1ShackleGroup.rotation.z = easeOut * 0.7;
+                    door1ShackleGroup.position.y = easeOut * 0.08;
+                } else {
+                    door1AnimPhase = 'fall';
+                    door1AnimStart = time;
+                    door1IsLocked = false;
+                }
+            } else if (door1AnimPhase === 'fall') {
+                const elapsed = time - door1AnimStart;
+                if (elapsed < 300) {
+                    const progress = elapsed / 300;
+                    door1LockGroup.position.y = -0.15 - progress * 1.5;
+                    door1LockGroup.rotation.x = progress * 0.8;
+                    door1LockGroup.rotation.z = progress * 0.4;
+                } else {
+                    door1LockGroup.visible = false;
+                    door1AnimPhase = 'swing';
+                    door1AnimStart = time;
+                }
+            } else if (door1AnimPhase === 'swing') {
+                const elapsed = time - door1AnimStart;
+                if (elapsed < 800) {
+                    const progress = elapsed / 800;
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    const bounce = Math.sin(progress * Math.PI * 2) * 0.04 * (1 - progress);
+                    door1Group.rotation.y = (easeOut + bounce) * -1.2;
+                    
+                    // Show sky backdrop once door is partially open (20%)
+                    if (progress > 0.2 && window.skyPlane) {
+                        window.skyPlane.visible = true;
+                    }
+                    
+                    // Start jungle animation when door is 40% open
+                    if (progress > 0.4 && window.jungleAnimStart === 0) {
+                        window.jungleAnimStart = time;
+                    }
+                } else {
+                    door1Group.rotation.y = -1.2;
+                    door1AnimPhase = 'open';
+                    if (window.jungleAnimStart === 0) {
+                        window.jungleAnimStart = time;
+                    }
+                }
+            }
+            
+            // Animate trees popping forward (runs during swing and open phases)
+            if (window.jungleAnimStart > 0 && window.palmTrees) {
+                const jungleElapsed = time - window.jungleAnimStart;
+                
+                window.palmTrees.forEach((tree, i) => {
+                    const treeElapsed = jungleElapsed - tree.userData.delay;
+                    
+                    if (treeElapsed > 0) {
+                        tree.visible = true;
+                        const popDuration = 800; // Each tree takes 800ms to pop out
+                        const progress = Math.min(treeElapsed / popDuration, 1);
+                        
+                        // Elastic/bouncy easing for lazy pop effect
+                        let ease;
+                        if (progress < 1) {
+                            const t = progress;
+                            ease = 1 - Math.pow(1 - t, 3) * Math.cos(t * Math.PI * 1.5) * (1 - t);
+                            ease = Math.min(1.1, ease);
+                        } else {
+                            ease = 1;
+                        }
+                        
+                        // Animate Z position (pop forward out of the door)
+                        if (tree.userData.baseZ !== undefined) {
+                            tree.position.z = tree.userData.baseZ + (tree.userData.targetZ - tree.userData.baseZ) * Math.min(ease, 1);
+                        }
+                        
+                        // Animate Y position (pop up slightly)
+                        tree.position.y = tree.userData.baseY + (tree.userData.targetY - tree.userData.baseY) * Math.min(ease, 1);
+                        
+                        // Animate scale (grow from tiny)
+                        const scaleEase = 1 - Math.pow(1 - Math.min(progress, 1), 2);
+                        tree.scale.setScalar(tree.userData.targetScale * scaleEase);
+                        
+                        // Gentle sway once popped
+                        if (progress >= 1) {
+                            tree.rotation.z = Math.sin(time * 0.0015 + i * 1.5) * 0.03;
+                        }
+                    }
+                });
+                
+                // Animate birds after trees
+                if (window.birds && window.birds.length > 0) {
+                    window.birds.forEach((bird, i) => {
+                        const birdElapsed = jungleElapsed - bird.userData.delay;
+                        
+                        if (birdElapsed > 0) {
+                            bird.visible = true;
+                            const t = birdElapsed * 0.001 * bird.userData.speed;
+                            
+                            // Fly across the scene
+                            bird.position.x = bird.userData.startX + Math.sin(t) * 0.4;
+                            bird.position.y = bird.userData.startY + Math.sin(t * 1.3) * 0.15;
+                            
+                            // Wing flap
+                            bird.children.forEach((wing, wi) => {
+                                wing.rotation.z = (wi === 0 ? 1 : -1) * (0.3 + Math.sin(t * 15) * 0.25);
+                            });
+                        }
+                    });
+                }
+            }
+            
+            // Idle glow pulse
+            if (door1IsLocked && door1AnimPhase === 'idle') {
+                const pulse = Math.sin(time * 0.004) * 0.15 + 0.85;
+                door1GoldMat.emissiveIntensity = 0.25 * pulse;
+            }
+            
+            door1Renderer.render(door1Scene, door1Camera);
+            
+            // Update sprite texture
+            if (door1Texture) {
+                door1Texture.needsUpdate = true;
+            }
+        }
+        
+        function resetDoor1Animation() {
+            door1IsLocked = true;
+            door1AnimPhase = 'idle';
+            
+            if (door1Group) {
+                door1Group.rotation.y = 0;
+                door1Group.rotation.z = 0;
+                door1Group.position.x = -0.7;
+            }
+            if (door1ShackleGroup) {
+                door1ShackleGroup.rotation.z = 0;
+                door1ShackleGroup.position.y = 0;
+            }
+            if (door1LockGroup) {
+                door1LockGroup.visible = true;
+                door1LockGroup.position.y = -0.15;
+                door1LockGroup.rotation.x = 0;
+                door1LockGroup.rotation.z = 0;
+            }
+            if (window.palmTrees) {
+                window.palmTrees.forEach(tree => {
+                    tree.visible = false;
+                    tree.position.y = tree.userData.baseY;
+                    tree.scale.setScalar(0.01);
+                    tree.rotation.z = 0;
+                });
+            }
+            if (window.birds) {
+                window.birds.forEach(bird => {
+                    bird.visible = false;
+                });
+            }
+            if (window.skyPlane) {
+                window.skyPlane.visible = false;
+            }
+            window.jungleAnimStart = 0;
+        }
+        
+        function triggerDoor1Animation() {
+            if (door1AnimPhase !== 'idle' && door1AnimPhase !== 'open') return;
+            
+            if (door1AnimPhase === 'open') {
+                // Reset if already open
+                resetDoor1Animation();
+                return;
+            }
+            
+            door1AnimPhase = 'shake';
+            door1AnimStart = Date.now();
+        }
+
+        // ================================================================
+        // Door #2 3D Animation System - Darwin (Watertight Ship Door)
+        // ================================================================
+        let door2Scene, door2Camera, door2Renderer;
+        let door2Group, door2LeverGroup, door2BarGroup;
+        let door2Canvas, door2Texture, door2MetalMat;
+        let door2AnimPhase = 'idle';
+        let door2AnimStart = 0;
+        let door2IsOpen = false;
+        let door2Sprite = null;
+        
+        function initDoor2Icon() {
+            door2Canvas = document.createElement('canvas');
+            door2Canvas.width = 256;
+            door2Canvas.height = 256;
+            
+            door2Scene = new THREE.Scene();
+            door2Scene.background = null;
+            
+            door2Camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+            door2Camera.position.set(0, 0, 3.5);
+            door2Camera.lookAt(0, 0, 0);
+            
+            door2Renderer = new THREE.WebGLRenderer({ 
+                canvas: door2Canvas,
+                antialias: true, 
+                alpha: true 
+            });
+            door2Renderer.setSize(256, 256);
+            door2Renderer.setClearColor(0x000000, 0);
+            
+            // Industrial lighting
+            const ambient = new THREE.AmbientLight(0xffffff, 0.5);
+            door2Scene.add(ambient);
+            
+            const key = new THREE.DirectionalLight(0xfff8f0, 1.0);
+            key.position.set(2, 3, 4);
+            door2Scene.add(key);
+            
+            // Materials - WHITE ship hull style
+            const whiteMat = new THREE.MeshStandardMaterial({
+                color: 0xf5f5f0,
+                metalness: 0.3,
+                roughness: 0.4
+            });
+            
+            const offWhiteMat = new THREE.MeshStandardMaterial({
+                color: 0xe8e8e0,
+                metalness: 0.4,
+                roughness: 0.5
+            });
+            
+            const frameMat = new THREE.MeshStandardMaterial({
+                color: 0xd0d0c8,
+                metalness: 0.5,
+                roughness: 0.5
+            });
+            
+            // Yellow/brass for lever and warning elements
+            door2MetalMat = new THREE.MeshStandardMaterial({
+                color: 0xccaa44,
+                metalness: 0.8,
+                roughness: 0.3,
+                emissive: 0x332200,
+                emissiveIntensity: 0.15
+            });
+            
+            const rubberMat = new THREE.MeshStandardMaterial({
+                color: 0x1a1a1a,
+                metalness: 0.0,
+                roughness: 0.9
+            });
+            
+            // Door group (hinged on left side)
+            door2Group = new THREE.Group();
+            door2Group.position.set(-0.7, 0, 0);
+            door2Group.scale.set(0.75, 0.75, 0.75);
+            door2Scene.add(door2Group);
+            
+            // Heavy steel frame with raised lip (watertight seal)
+            const frameThickness = 0.15;
+            const frameDepth = 0.2;
+            
+            // Left frame
+            const leftFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(frameThickness, 2.4, frameDepth),
+                frameMat
+            );
+            leftFrame.position.set(-0.82, 0, 0);
+            door2Scene.add(leftFrame);
+            
+            // Right frame
+            const rightFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(frameThickness, 2.4, frameDepth),
+                frameMat
+            );
+            rightFrame.position.set(0.82, 0, 0);
+            door2Scene.add(rightFrame);
+            
+            // Top frame
+            const topFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(1.8, frameThickness, frameDepth),
+                frameMat
+            );
+            topFrame.position.set(0, 1.2, 0);
+            door2Scene.add(topFrame);
+            
+            // Bottom frame (raised threshold)
+            const bottomFrame = new THREE.Mesh(
+                new THREE.BoxGeometry(1.8, 0.2, frameDepth),
+                frameMat
+            );
+            bottomFrame.position.set(0, -1.15, 0);
+            door2Scene.add(bottomFrame);
+            
+            // Rubber seal around frame
+            const sealGeo = new THREE.BoxGeometry(0.03, 2.2, 0.05);
+            const leftSeal = new THREE.Mesh(sealGeo, rubberMat);
+            leftSeal.position.set(-0.72, 0, 0.1);
+            door2Scene.add(leftSeal);
+            
+            const rightSeal = new THREE.Mesh(sealGeo, rubberMat);
+            rightSeal.position.set(0.72, 0, 0.1);
+            door2Scene.add(rightSeal);
+            
+            // Door panel - heavy steel plate
+            // Door panel - CURVED white hull shape
+            // Create curved geometry using cylinder section
+            const curveRadius = 8; // Large radius for subtle curve
+            const curveSegments = 16;
+            const doorWidth = 2.0;
+            const doorHeight = 2.8;
+            
+            // Create curved door using a cylinder segment
+            const doorGeo = new THREE.CylinderGeometry(
+                curveRadius, curveRadius, doorHeight, curveSegments, 1, true,
+                -doorWidth / (2 * curveRadius), doorWidth / curveRadius
+            );
+            doorGeo.rotateX(Math.PI / 2);
+            doorGeo.rotateY(Math.PI / 2);
+            
+            const doorPanel = new THREE.Mesh(doorGeo, whiteMat);
+            doorPanel.position.set(1.0 - curveRadius + 0.1, 0, 0);
+            door2Group.add(doorPanel);
+            
+            // Add a back panel to make it solid
+            const backPanel = new THREE.Mesh(
+                new THREE.PlaneGeometry(doorWidth, doorHeight),
+                whiteMat
+            );
+            backPanel.position.set(1.0, 0, -0.05);
+            door2Group.add(backPanel);
+            
+            // Reinforcement ribs on door (horizontal) - white
+            const ribGeo = new THREE.BoxGeometry(1.6, 0.06, 0.06);
+            [-0.8, -0.4, 0, 0.4, 0.8].forEach(y => {
+                const rib = new THREE.Mesh(ribGeo, offWhiteMat);
+                rib.position.set(1.0, y, 0.15);
+                door2Group.add(rib);
+            });
+            
+            // Vertical reinforcement ribs - white
+            const vRibGeo = new THREE.BoxGeometry(0.05, 2.4, 0.06);
+            [0.4, 1.0, 1.6].forEach(x => {
+                const vRib = new THREE.Mesh(vRibGeo, offWhiteMat);
+                vRib.position.set(x, 0, 0.15);
+                door2Group.add(vRib);
+            });
+            
+            // ========== LARGE MECHANICAL LOCKING BAR ==========
+            door2BarGroup = new THREE.Group();
+            door2BarGroup.position.set(1.0, 0, 0.22);
+            door2Group.add(door2BarGroup);
+            
+            // Main horizontal locking bar
+            const mainBar = new THREE.Mesh(
+                new THREE.BoxGeometry(1.4, 0.12, 0.08),
+                door2MetalMat
+            );
+            door2BarGroup.add(mainBar);
+            
+            // Bar mounting brackets - white
+            const bracketGeo = new THREE.BoxGeometry(0.15, 0.2, 0.1);
+            [-0.5, 0.5].forEach(x => {
+                const bracket = new THREE.Mesh(bracketGeo, offWhiteMat);
+                bracket.position.set(x, 0, -0.02);
+                door2BarGroup.add(bracket);
+            });
+            
+            // End hooks that catch the frame
+            const hookGeo = new THREE.BoxGeometry(0.1, 0.15, 0.12);
+            const leftHook = new THREE.Mesh(hookGeo, door2MetalMat);
+            leftHook.position.set(-0.75, 0, 0);
+            door2BarGroup.add(leftHook);
+            
+            const rightHook = new THREE.Mesh(hookGeo, door2MetalMat);
+            rightHook.position.set(0.75, 0, 0);
+            door2BarGroup.add(rightHook);
+            
+            // ========== OPERATING LEVER (wheel/handle) ==========
+            door2LeverGroup = new THREE.Group();
+            door2LeverGroup.position.set(1.5, 0, 0.28);
+            door2Group.add(door2LeverGroup);
+            
+            // Lever hub (center)
+            const hub = new THREE.Mesh(
+                new THREE.CylinderGeometry(0.08, 0.08, 0.06, 16),
+                door2MetalMat
+            );
+            hub.rotation.x = Math.PI / 2;
+            door2LeverGroup.add(hub);
+            
+            // Lever handle (T-bar style)
+            const leverBar = new THREE.Mesh(
+                new THREE.BoxGeometry(0.35, 0.05, 0.05),
+                door2MetalMat
+            );
+            leverBar.position.z = 0.05;
+            door2LeverGroup.add(leverBar);
+            
+            // Handle grips
+            const gripGeo = new THREE.CylinderGeometry(0.025, 0.025, 0.1, 8);
+            const leftGrip = new THREE.Mesh(gripGeo, rubberMat);
+            leftGrip.rotation.x = Math.PI / 2;
+            leftGrip.position.set(-0.15, 0, 0.1);
+            door2LeverGroup.add(leftGrip);
+            
+            const rightGrip = new THREE.Mesh(gripGeo, rubberMat);
+            rightGrip.rotation.x = Math.PI / 2;
+            rightGrip.position.set(0.15, 0, 0.1);
+            door2LeverGroup.add(rightGrip);
+            
+            // ========== DOG HANDLES (cleat bolts around edge) - white ==========
+            const dogGeo = new THREE.BoxGeometry(0.08, 0.15, 0.05);
+            const dogPositions = [
+                [1.7, 0.7], [1.7, -0.7],  // Right side
+                [0.3, 1.1], [0.7, 1.1], [1.1, 1.1], [1.5, 1.1],  // Top
+                [0.3, -1.1], [0.7, -1.1], [1.1, -1.1], [1.5, -1.1]  // Bottom
+            ];
+            dogPositions.forEach(([x, y]) => {
+                const dog = new THREE.Mesh(dogGeo, offWhiteMat);
+                dog.position.set(x, y, 0.18);
+                door2Group.add(dog);
+            });
+            
+            // Small porthole window - white ring
+            const portholeRing = new THREE.Mesh(
+                new THREE.TorusGeometry(0.12, 0.03, 8, 24),
+                offWhiteMat
+            );
+            portholeRing.position.set(1.0, 0.5, 0.18);
+            door2Group.add(portholeRing);
+            
+            const portholeGlass = new THREE.Mesh(
+                new THREE.CircleGeometry(0.1, 24),
+                new THREE.MeshBasicMaterial({ color: 0x2a4050, transparent: true, opacity: 0.6 })
+            );
+            portholeGlass.position.set(1.0, 0.5, 0.17);
+            door2Group.add(portholeGlass);
+            
+            // ==========================================
+            // YOUR ACTUAL PHOTO BEHIND THE DOOR
+            // ==========================================
+            
+            // Load your performance photo as texture
+            const photoLoader = new THREE.TextureLoader();
+            const photoTexture = photoLoader.load('darwin-photo.jpg');
+            photoTexture.minFilter = THREE.LinearFilter;
+            photoTexture.magFilter = THREE.LinearFilter;
+            
+            const photoMat = new THREE.MeshBasicMaterial({ 
+                map: photoTexture,
+                side: THREE.DoubleSide
+            });
+            
+            // Photo backdrop - sized to fit door opening
+            const photoPlane = new THREE.Mesh(
+                new THREE.PlaneGeometry(1.6, 1.2), // Aspect ratio ~4:3 for the photo
+                photoMat
+            );
+            photoPlane.position.set(0, 0.1, -0.4);
+            photoPlane.visible = false;
+            door2Scene.add(photoPlane);
+            window.door2StagePlane = photoPlane;
+            
+            // Dark vignette frame around photo for effect
+            const vignetteCanvas = document.createElement('canvas');
+            vignetteCanvas.width = 256;
+            vignetteCanvas.height = 256;
+            const vCtx = vignetteCanvas.getContext('2d');
+            
+            // Create vignette gradient
+            const vigGrad = vCtx.createRadialGradient(128, 128, 60, 128, 128, 128);
+            vigGrad.addColorStop(0, 'rgba(0,0,0,0)');
+            vigGrad.addColorStop(0.7, 'rgba(0,0,0,0.3)');
+            vigGrad.addColorStop(1, 'rgba(0,0,0,0.8)');
+            vCtx.fillStyle = vigGrad;
+            vCtx.fillRect(0, 0, 256, 256);
+            
+            const vignetteTexture = new THREE.CanvasTexture(vignetteCanvas);
+            const vignetteMat = new THREE.MeshBasicMaterial({
+                map: vignetteTexture,
+                transparent: true,
+                side: THREE.DoubleSide
+            });
+            
+            const vignettePlane = new THREE.Mesh(
+                new THREE.PlaneGeometry(1.8, 2.4),
+                vignetteMat
+            );
+            vignettePlane.position.set(0, 0, -0.35);
+            vignettePlane.visible = false;
+            door2Scene.add(vignettePlane);
+            window.door2Vignette = vignettePlane;
+            
+            // ==========================================
+            // ANIMATED MUSICAL NOTES
+            // ==========================================
+            
+            const noteMat = new THREE.MeshBasicMaterial({ 
+                color: 0xffd700,
+                side: THREE.DoubleSide
+            });
+            
+            window.musicalNotes = [];
+            
+            function createMusicalNote(type, x, delay, scale) {
+                const note = new THREE.Group();
+                note.userData.delay = delay;
+                note.userData.baseZ = -0.5;
+                note.userData.targetZ = 0.3;
+                note.userData.baseY = -0.5;
+                note.userData.targetY = 0.3 + Math.random() * 0.4;
+                note.userData.targetScale = scale;
+                note.userData.floatOffset = Math.random() * Math.PI * 2;
+                note.userData.floatSpeed = 0.5 + Math.random() * 0.5;
+                
+                if (type === 'quarter') {
+                    // Quarter note - filled oval + stem
+                    const noteHead = new THREE.Mesh(
+                        new THREE.CircleGeometry(0.06, 16),
+                        noteMat
+                    );
+                    noteHead.scale.set(1.3, 1, 1);
+                    noteHead.rotation.z = -0.3;
+                    note.add(noteHead);
+                    
+                    // Stem
+                    const stem = new THREE.Mesh(
+                        new THREE.PlaneGeometry(0.02, 0.25),
+                        noteMat
+                    );
+                    stem.position.set(0.06, 0.12, 0);
+                    note.add(stem);
+                    
+                } else if (type === 'eighth') {
+                    // Eighth note - filled oval + stem + flag
+                    const noteHead = new THREE.Mesh(
+                        new THREE.CircleGeometry(0.05, 16),
+                        noteMat
+                    );
+                    noteHead.scale.set(1.3, 1, 1);
+                    noteHead.rotation.z = -0.3;
+                    note.add(noteHead);
+                    
+                    // Stem
+                    const stem = new THREE.Mesh(
+                        new THREE.PlaneGeometry(0.02, 0.22),
+                        noteMat
+                    );
+                    stem.position.set(0.05, 0.11, 0);
+                    note.add(stem);
+                    
+                    // Flag
+                    const flagShape = new THREE.Shape();
+                    flagShape.moveTo(0, 0);
+                    flagShape.quadraticCurveTo(0.08, -0.03, 0.1, -0.1);
+                    flagShape.lineTo(0.08, -0.08);
+                    flagShape.quadraticCurveTo(0.05, -0.02, 0, 0);
+                    const flag = new THREE.Mesh(
+                        new THREE.ShapeGeometry(flagShape),
+                        noteMat
+                    );
+                    flag.position.set(0.06, 0.22, 0);
+                    note.add(flag);
+                    
+                } else if (type === 'double') {
+                    // Double eighth notes
+                    for (let i = 0; i < 2; i++) {
+                        const head = new THREE.Mesh(
+                            new THREE.CircleGeometry(0.04, 16),
+                            noteMat
+                        );
+                        head.scale.set(1.3, 1, 1);
+                        head.rotation.z = -0.3;
+                        head.position.x = i * 0.12;
+                        note.add(head);
+                        
+                        const stem = new THREE.Mesh(
+                            new THREE.PlaneGeometry(0.015, 0.18),
+                            noteMat
+                        );
+                        stem.position.set(i * 0.12 + 0.04, 0.09, 0);
+                        note.add(stem);
+                    }
+                    // Beam connecting
+                    const beam = new THREE.Mesh(
+                        new THREE.PlaneGeometry(0.14, 0.025),
+                        noteMat
+                    );
+                    beam.position.set(0.06, 0.18, 0);
+                    note.add(beam);
+                    
+                } else if (type === 'treble') {
+                    // Simplified treble clef
+                    const clefMat = new THREE.MeshBasicMaterial({ 
+                        color: 0xffd700,
+                        side: THREE.DoubleSide
+                    });
+                    
+                    // Main spiral body (simplified as curves)
+                    const shape = new THREE.Shape();
+                    shape.moveTo(0, -0.15);
+                    shape.quadraticCurveTo(0.1, -0.1, 0.08, 0);
+                    shape.quadraticCurveTo(0.06, 0.1, 0, 0.15);
+                    shape.quadraticCurveTo(-0.08, 0.2, -0.05, 0.25);
+                    shape.quadraticCurveTo(0, 0.3, 0.05, 0.25);
+                    shape.quadraticCurveTo(0.1, 0.15, 0.05, 0.05);
+                    shape.lineTo(0.03, 0.05);
+                    shape.quadraticCurveTo(0.07, 0.12, 0.03, 0.2);
+                    shape.quadraticCurveTo(-0.02, 0.25, -0.03, 0.2);
+                    shape.quadraticCurveTo(-0.05, 0.15, 0, 0.1);
+                    shape.quadraticCurveTo(0.04, 0.05, 0.02, -0.05);
+                    shape.quadraticCurveTo(-0.02, -0.08, -0.02, -0.12);
+                    shape.lineTo(0, -0.15);
+                    
+                    const clef = new THREE.Mesh(
+                        new THREE.ShapeGeometry(shape),
+                        clefMat
+                    );
+                    clef.scale.setScalar(1.5);
+                    note.add(clef);
+                }
+                
+                note.scale.setScalar(0.01);
+                note.position.set(x, note.userData.baseY, note.userData.baseZ);
+                note.visible = false;
+                
+                return note;
+            }
+            
+            // Create variety of musical notes
+            const note1 = createMusicalNote('quarter', -0.4, 0, 1.8);
+            const note2 = createMusicalNote('eighth', 0.5, 100, 1.6);
+            const note3 = createMusicalNote('double', -0.2, 200, 1.4);
+            const note4 = createMusicalNote('quarter', 0.3, 150, 1.5);
+            const note5 = createMusicalNote('treble', 0, 300, 1.2);
+            const note6 = createMusicalNote('eighth', -0.5, 250, 1.3);
+            const note7 = createMusicalNote('quarter', 0.45, 350, 1.4);
+            const note8 = createMusicalNote('double', 0.15, 400, 1.1);
+            
+            window.musicalNotes = [note1, note2, note3, note4, note5, note6, note7, note8];
+            window.musicalNotes.forEach(n => door2Scene.add(n));
+            
+            window.door2MusicAnimStart = 0;
+        }
+        
+        function renderDoor2Frame() {
+            if (!door2Renderer) return;
+            
+            const time = Date.now();
+            const doorBaseX = -0.7;
+            
+            // Animation phases for watertight door
+            if (door2AnimPhase === 'knock') {
+                // Phase 1: Lever turns (unlocking mechanism)
+                const elapsed = time - door2AnimStart;
+                if (elapsed < 600) {
+                    const progress = elapsed / 600;
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    // Lever rotates 180 degrees
+                    if (door2LeverGroup) {
+                        door2LeverGroup.rotation.z = easeOut * Math.PI;
+                    }
+                } else {
+                    door2AnimPhase = 'turn';
+                    door2AnimStart = time;
+                }
+            } else if (door2AnimPhase === 'turn') {
+                // Phase 2: Bar slides/retracts
+                const elapsed = time - door2AnimStart;
+                if (elapsed < 500) {
+                    const progress = elapsed / 500;
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    // Bar slides to the side (retracting)
+                    if (door2BarGroup) {
+                        door2BarGroup.position.x = 1.0 + easeOut * 0.4;
+                        door2BarGroup.scale.x = 1 - easeOut * 0.3;
+                    }
+                } else {
+                    door2AnimPhase = 'swing';
+                    door2AnimStart = time;
+                }
+            } else if (door2AnimPhase === 'swing') {
+                const elapsed = time - door2AnimStart;
+                if (elapsed < 1000) {
+                    const progress = elapsed / 1000;
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    const bounce = Math.sin(progress * Math.PI * 2) * 0.03 * (1 - progress);
+                    // Heavy door swings open slowly
+                    door2Group.rotation.y = (easeOut + bounce) * -1.2;
+                    
+                    // Show stage backdrop
+                    if (progress > 0.2 && window.door2StagePlane) {
+                        window.door2StagePlane.visible = true;
+                        if (window.door2Vignette) window.door2Vignette.visible = true;
+                    }
+                    
+                    // Start music animation
+                    if (progress > 0.3 && window.door2MusicAnimStart === 0) {
+                        window.door2MusicAnimStart = time;
+                    }
+                } else {
+                    door2Group.rotation.y = -1.2;
+                    door2AnimPhase = 'open';
+                    door2IsOpen = true;
+                }
+            }
+            
+            // Animate musical notes floating out
+            if (window.door2MusicAnimStart > 0 && window.musicalNotes) {
+                const musicElapsed = time - window.door2MusicAnimStart;
+                
+                window.musicalNotes.forEach((note, i) => {
+                    const noteElapsed = musicElapsed - note.userData.delay;
+                    
+                    if (noteElapsed > 0) {
+                        note.visible = true;
+                        const popDuration = 600;
+                        const progress = Math.min(noteElapsed / popDuration, 1);
+                        
+                        // Bouncy pop out
+                        let ease;
+                        if (progress < 1) {
+                            const t = progress;
+                            ease = 1 - Math.pow(1 - t, 3) * Math.cos(t * Math.PI * 1.5) * (1 - t);
+                            ease = Math.min(1.1, ease);
+                        } else {
+                            ease = 1;
+                        }
+                        
+                        // Pop forward and up
+                        note.position.z = note.userData.baseZ + (note.userData.targetZ - note.userData.baseZ) * Math.min(ease, 1);
+                        note.position.y = note.userData.baseY + (note.userData.targetY - note.userData.baseY) * Math.min(ease, 1);
+                        
+                        // Scale up
+                        const scaleEase = 1 - Math.pow(1 - Math.min(progress, 1), 2);
+                        note.scale.setScalar(note.userData.targetScale * scaleEase);
+                        
+                        // Continuous floating and rotating once popped
+                        if (progress >= 1) {
+                            const floatTime = (noteElapsed - popDuration) * 0.001;
+                            note.position.y = note.userData.targetY + Math.sin(floatTime * note.userData.floatSpeed + note.userData.floatOffset) * 0.1;
+                            note.position.x += Math.sin(floatTime * 0.3 + i) * 0.001;
+                            note.rotation.z = Math.sin(floatTime * 0.5 + note.userData.floatOffset) * 0.2;
+                        }
+                    }
+                });
+            }
+            
+            // Idle brass glow pulse
+            if (!door2IsOpen && door2AnimPhase === 'idle') {
+                const pulse = Math.sin(time * 0.003) * 0.15 + 0.85;
+                door2MetalMat.emissiveIntensity = 0.2 * pulse;
+            }
+            
+            door2Renderer.render(door2Scene, door2Camera);
+            
+            if (door2Texture) {
+                door2Texture.needsUpdate = true;
+            }
+        }
+        
+        function resetDoor2Animation() {
+            door2IsOpen = false;
+            door2AnimPhase = 'idle';
+            
+            if (door2Group) {
+                door2Group.rotation.y = 0;
+                door2Group.position.z = 0;
+                door2Group.position.x = -0.7;
+            }
+            if (door2LeverGroup) {
+                door2LeverGroup.rotation.z = 0;
+            }
+            if (door2BarGroup) {
+                door2BarGroup.position.x = 1.0;
+                door2BarGroup.scale.x = 1;
+            }
+            if (window.door2StagePlane) {
+                window.door2StagePlane.visible = false;
+            }
+            if (window.door2Vignette) {
+                window.door2Vignette.visible = false;
+            }
+            if (window.musicalNotes) {
+                window.musicalNotes.forEach(note => {
+                    note.visible = false;
+                    note.position.y = note.userData.baseY;
+                    note.position.z = note.userData.baseZ;
+                    note.scale.setScalar(0.01);
+                    note.rotation.z = 0;
+                });
+            }
+            window.door2MusicAnimStart = 0;
+        }
+        
+        function triggerDoor2Animation() {
+            if (door2AnimPhase !== 'idle' && door2AnimPhase !== 'open') return;
+            
+            if (door2AnimPhase === 'open') {
+                resetDoor2Animation();
+                return;
+            }
+            
+            door2AnimPhase = 'knock';
+            door2AnimStart = Date.now();
+        }
+
         function createMarkers() {
             locations.forEach((loc, index) => {
                 const position = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
                 const config = getIconConfig(loc.title);
                 
                 // Size - doors are larger
-                const baseSize = loc.isDoor ? 0.035 : 0.028;
+                const baseSize = loc.isDoor ? 0.045 : 0.032;
                 
-                // Create canvas for the marker
-                const canvas = document.createElement('canvas');
-                canvas.width = 128;
-                canvas.height = 128;
-                const ctx = canvas.getContext('2d');
+                let sprite;
                 
-                // Clear canvas
-                ctx.clearRect(0, 0, 128, 128);
-                
-                // Draw circular background with glow
-                const cx = 64, cy = 64;
-                
-                // Outer glow
-                const glowGrad = ctx.createRadialGradient(cx, cy, 30, cx, cy, 60);
-                glowGrad.addColorStop(0, config.style === 'door' ? 'rgba(212, 165, 116, 0.4)' : 'rgba(200, 200, 200, 0.2)');
-                glowGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-                ctx.fillStyle = glowGrad;
-                ctx.beginPath();
-                ctx.arc(cx, cy, 60, 0, Math.PI * 2);
-                ctx.fill();
-                
-                // Background circle
-                ctx.fillStyle = 'rgba(10, 22, 40, 0.85)';
-                ctx.beginPath();
-                ctx.arc(cx, cy, 45, 0, Math.PI * 2);
-                ctx.fill();
-                
-                // Border
-                ctx.strokeStyle = config.color;
-                ctx.lineWidth = loc.isDoor ? 4 : 3;
-                ctx.beginPath();
-                ctx.arc(cx, cy, 45, 0, Math.PI * 2);
-                ctx.stroke();
-                
-                // Render the icon (scale context to fit)
-                ctx.save();
-                ctx.translate(cx - 32, cy - 32);
-                ctx.scale(2, 2);
-                
-                // Use same render function but adjust for larger canvas
-                const tempCanvas = document.createElement('canvas');
-                tempCanvas.width = 64;
-                tempCanvas.height = 64;
-                renderSidebarIcon(tempCanvas, config);
-                ctx.drawImage(tempCanvas, 0, 0);
-                ctx.restore();
-                
-                const texture = new THREE.CanvasTexture(canvas);
-                const spriteMaterial = new THREE.SpriteMaterial({ 
-                    map: texture,
-                    transparent: true
-                });
-                const sprite = new THREE.Sprite(spriteMaterial);
+                // Special handling for Door #1 (Toledo) - 3D animated door
+                if (loc.title === "Toledo, Ohio") {
+                    // Initialize the 3D door scene
+                    initDoor1Icon();
+                    
+                    // Create texture from the door canvas
+                    door1Texture = new THREE.CanvasTexture(door1Canvas);
+                    door1Texture.needsUpdate = true;
+                    
+                    const spriteMaterial = new THREE.SpriteMaterial({
+                        map: door1Texture,
+                        transparent: true
+                    });
+                    sprite = new THREE.Sprite(spriteMaterial);
+                    door1Sprite = sprite;
+                    
+                // Special handling for Door #2 (Darwin) - Wooden door with music
+                } else if (loc.title === "Darwin, Australia") {
+                    initDoor2Icon();
+                    
+                    door2Texture = new THREE.CanvasTexture(door2Canvas);
+                    door2Texture.needsUpdate = true;
+                    
+                    const spriteMaterial = new THREE.SpriteMaterial({
+                        map: door2Texture,
+                        transparent: true
+                    });
+                    sprite = new THREE.Sprite(spriteMaterial);
+                    door2Sprite = sprite;
+                    
+                } else {
+                    // Regular 2D canvas icons for other locations
+                    const canvas = document.createElement('canvas');
+                    canvas.width = 128;
+                    canvas.height = 128;
+                    const ctx = canvas.getContext('2d');
+                    
+                    ctx.clearRect(0, 0, 128, 128);
+                    
+                    const cx = 64, cy = 64;
+                    
+                    // Outer glow for doors only
+                    if (loc.isDoor) {
+                        const glowGrad = ctx.createRadialGradient(cx, cy, 35, cx, cy, 62);
+                        glowGrad.addColorStop(0, 'rgba(212, 165, 116, 0.6)');
+                        glowGrad.addColorStop(1, 'rgba(212, 165, 116, 0)');
+                        ctx.fillStyle = glowGrad;
+                        ctx.beginPath();
+                        ctx.arc(cx, cy, 62, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                    
+                    // Background circle
+                    ctx.fillStyle = 'rgba(10, 22, 40, 0.92)';
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 40, 0, Math.PI * 2);
+                    ctx.fill();
+                    
+                    // Border ring
+                    ctx.strokeStyle = config.color;
+                    ctx.lineWidth = loc.isDoor ? 4 : 3;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy, 40, 0, Math.PI * 2);
+                    ctx.stroke();
+                    
+                    // Draw the icon
+                    const iconCanvas = document.createElement('canvas');
+                    iconCanvas.width = 64;
+                    iconCanvas.height = 64;
+                    renderSidebarIcon(iconCanvas, config);
+                    ctx.drawImage(iconCanvas, cx - 32, cy - 32);
+                    
+                    const texture = new THREE.CanvasTexture(canvas);
+                    const spriteMaterial = new THREE.SpriteMaterial({
+                        map: texture,
+                        transparent: true
+                    });
+                    sprite = new THREE.Sprite(spriteMaterial);
+                }
                 
                 // Position sprite above surface
                 const direction = position.clone().normalize();
@@ -2310,7 +3691,44 @@
 
         function onClick(event) {
             if (hoveredMarker) {
-                openPanel(hoveredMarker.userData);
+                const loc = hoveredMarker.userData;
+                
+                // Check if this is Door #1 (Toledo) - trigger 3D animation
+                if (loc.title === "Toledo, Ohio") {
+                    // If door is in idle state, start animation then open panel
+                    if (door1AnimPhase === 'idle') {
+                        triggerDoor1Animation();
+                        // Open panel after animation completes
+                        setTimeout(() => {
+                            openPanel(loc);
+                        }, 2200); // Total animation time: shake(600) + unlock(400) + fall(300) + swing(800) + buffer
+                        return;
+                    } else if (door1AnimPhase === 'open') {
+                        // Door already open, just open panel
+                        openPanel(loc);
+                        return;
+                    }
+                    // If mid-animation, do nothing
+                    return;
+                }
+                
+                // Check if this is Door #2 (Darwin) - trigger wooden door animation
+                if (loc.title === "Darwin, Australia") {
+                    if (door2AnimPhase === 'idle') {
+                        triggerDoor2Animation();
+                        setTimeout(() => {
+                            openPanel(loc);
+                        }, 2200); // lever(600) + bar(500) + swing(1000) + buffer
+                        return;
+                    } else if (door2AnimPhase === 'open') {
+                        openPanel(loc);
+                        return;
+                    }
+                    return;
+                }
+                
+                // Regular locations
+                openPanel(loc);
             }
         }
 
@@ -2485,6 +3903,12 @@
                     }
                 }
             });
+            
+            // Render Door #1 3D animation
+            renderDoor1Frame();
+            
+            // Render Door #2 3D animation
+            renderDoor2Frame();
             
             renderer.render(scene, camera);
         }
