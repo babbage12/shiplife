@@ -2872,10 +2872,10 @@
             
             // Photo backdrop - landscape photo (720x434), slightly stretched
             const photoPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(1.7, 1.3), // Split the difference
+                new THREE.PlaneGeometry(1.9, 1.5), // Bigger for zoom effect
                 photoMat
             );
-            photoPlane.position.set(0, -0.3, -0.25);
+            photoPlane.position.set(0, -0.45, -0.25);
             photoPlane.visible = false;
             door2Scene.add(photoPlane);
             window.door2StagePlane = photoPlane;
