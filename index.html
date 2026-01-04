@@ -2841,9 +2841,38 @@
                 side: THREE.DoubleSide
             });
             
-            // Photo backdrop - landscape photo (720x434), scale to fill door width
+            // Dark gradient backdrop to fill door frame behind photo
+            const backdropCanvas = document.createElement('canvas');
+            backdropCanvas.width = 256;
+            backdropCanvas.height = 512;
+            const bCtx = backdropCanvas.getContext('2d');
+            
+            // Create dark gradient backdrop
+            const backGrad = bCtx.createRadialGradient(128, 256, 50, 128, 256, 300);
+            backGrad.addColorStop(0, '#2a1a10');  // Warm dark center
+            backGrad.addColorStop(0.5, '#1a1008');
+            backGrad.addColorStop(1, '#0a0504');  // Almost black edges
+            bCtx.fillStyle = backGrad;
+            bCtx.fillRect(0, 0, 256, 512);
+            
+            const backdropTexture = new THREE.CanvasTexture(backdropCanvas);
+            const backdropMat = new THREE.MeshBasicMaterial({
+                map: backdropTexture,
+                side: THREE.DoubleSide
+            });
+            
+            const backdropPlane = new THREE.Mesh(
+                new THREE.PlaneGeometry(2.0, 2.6),
+                backdropMat
+            );
+            backdropPlane.position.set(0, 0, -0.35);
+            backdropPlane.visible = false;
+            door2Scene.add(backdropPlane);
+            window.door2Backdrop = backdropPlane;
+            
+            // Photo backdrop - landscape photo (720x434), less stretched
             const photoPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(2.4, 1.45), // Matches photo aspect ratio ~1.66:1
+                new THREE.PlaneGeometry(1.8, 1.1), // Closer to natural aspect ratio
                 photoMat
             );
             photoPlane.position.set(0, 0, -0.25);
@@ -3080,6 +3109,7 @@
                     
                     // Show stage backdrop
                     if (progress > 0.2 && window.door2StagePlane) {
+                        if (window.door2Backdrop) window.door2Backdrop.visible = true;
                         window.door2StagePlane.visible = true;
                         if (window.door2Vignette) window.door2Vignette.visible = true;
                     }
@@ -3164,6 +3194,9 @@
             if (door2BarGroup) {
                 door2BarGroup.position.x = 1.0;
                 door2BarGroup.scale.x = 1;
+            }
+            if (window.door2Backdrop) {
+                window.door2Backdrop.visible = false;
             }
             if (window.door2StagePlane) {
                 window.door2StagePlane.visible = false;
