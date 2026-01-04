@@ -2843,10 +2843,10 @@
             
             // Photo backdrop - sized to fill door opening
             const photoPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(1.8, 2.2), // Taller to fill door frame
+                new THREE.PlaneGeometry(2.0, 2.8), // Big to fill entire door frame
                 photoMat
             );
-            photoPlane.position.set(0, 0, -0.4);
+            photoPlane.position.set(0, 0, -0.3);
             photoPlane.visible = false;
             door2Scene.add(photoPlane);
             window.door2StagePlane = photoPlane;
