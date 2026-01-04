@@ -2862,7 +2862,7 @@
             });
             
             const backdropPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(2.0, 2.6),
+                new THREE.PlaneGeometry(1.8, 2.0),
                 backdropMat
             );
             backdropPlane.position.set(0, 0, -0.35);
@@ -2870,9 +2870,9 @@
             door2Scene.add(backdropPlane);
             window.door2Backdrop = backdropPlane;
             
-            // Photo backdrop - landscape photo (720x434), less stretched
+            // Photo backdrop - landscape photo (720x434), slightly stretched
             const photoPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(1.8, 1.1), // Closer to natural aspect ratio
+                new THREE.PlaneGeometry(1.7, 1.3), // Split the difference
                 photoMat
             );
             photoPlane.position.set(0, 0, -0.25);
