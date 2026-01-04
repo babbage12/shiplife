@@ -2841,12 +2841,12 @@
                 side: THREE.DoubleSide
             });
             
-            // Photo backdrop - sized to fill door opening
+            // Photo backdrop - landscape photo (720x434), scale to fill door width
             const photoPlane = new THREE.Mesh(
-                new THREE.PlaneGeometry(2.0, 2.8), // Big to fill entire door frame
+                new THREE.PlaneGeometry(2.4, 1.45), // Matches photo aspect ratio ~1.66:1
                 photoMat
             );
-            photoPlane.position.set(0, 0, -0.3);
+            photoPlane.position.set(0, 0, -0.25);
             photoPlane.visible = false;
             door2Scene.add(photoPlane);
             window.door2StagePlane = photoPlane;
