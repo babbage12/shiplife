@@ -144,13 +144,32 @@
             width: 400px;
             height: 100%;
             background: linear-gradient(180deg, 
-                rgb(10, 22, 40) 0%, 
-                rgb(21, 34, 56) 100%);
-            border-left: 1px solid rgba(212, 165, 116, 0.2);
+                rgb(50, 54, 48) 0%, 
+                rgb(38, 42, 36) 100%);
+            border-left: 1px solid rgba(212, 165, 116, 0.3);
             z-index: 150;
             transform: translateX(100%);
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             overflow-y: auto;
+        }
+
+        /* Nautical decorative elements */
+        .side-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M20 50 Q35 35 50 50 T80 50' stroke='%23d4a574' stroke-width='1' fill='none' opacity='0.08'/%3E%3Cpath d='M10 80 Q25 65 40 80 T70 80' stroke='%23d4a574' stroke-width='1' fill='none' opacity='0.06'/%3E%3Ccircle cx='85' cy='25' r='3' fill='%23d4a574' opacity='0.1'/%3E%3Cpath d='M5 20 Q20 5 35 20' stroke='%23d4a574' stroke-width='1' fill='none' opacity='0.07'/%3E%3C/svg%3E");
+            background-size: 150px 150px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .side-panel > * {
+            position: relative;
+            z-index: 1;
         }
 
         .side-panel.open {
@@ -183,6 +202,28 @@
             width: 100%;
             height: 250px;
             object-fit: cover;
+            object-position: var(--image-position, center);
+        }
+
+        .panel-image-container {
+            position: relative;
+        }
+
+        .panel-image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem 1rem 0.75rem;
+            background: linear-gradient(to top, rgba(10, 22, 40, 0.9) 0%, transparent 100%);
+            font-size: 0.75rem;
+            color: rgba(245, 240, 232, 0.7);
+            font-style: italic;
+            text-align: center;
+        }
+
+        .panel-image-caption:empty {
+            display: none;
         }
 
         .panel-content {
@@ -237,6 +278,171 @@
 
         .story-gallery .story-image {
             margin-top: 0;
+        }
+
+        /* Rich story panel styles */
+        .story-section-panel {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(212, 165, 116, 0.25);
+        }
+
+        .story-section-panel:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .section-tag-panel {
+            display: block;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title-panel {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: var(--cream);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .story-section-panel p {
+            margin-bottom: 0.8rem;
+            line-height: 1.7;
+        }
+
+        .story-section-panel p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .story-quote {
+            position: relative;
+            padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+            margin: 1.25rem 0;
+            background: rgba(212, 165, 116, 0.12);
+            border-left: 3px solid var(--gold);
+            border-radius: 0 8px 8px 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--cream);
+            line-height: 1.5;
+        }
+
+        .story-quote cite {
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.8rem;
+            font-style: normal;
+            color: var(--gold);
+        }
+
+        .story-quote.final-quote {
+            text-align: center;
+            border-left: none;
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            background: rgba(212, 165, 116, 0.05);
+        }
+
+        /* Story gallery grid for side-by-side photos */
+        .story-gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin: 1rem 0;
+        }
+
+        .story-gallery-grid .story-image {
+            margin: 0;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .photo-caption-inline {
+            font-size: 0.75rem;
+            color: rgba(245, 240, 232, 0.5);
+            font-style: italic;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 500px) {
+            .story-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 22, 40, 0.95);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 2rem;
+            color: var(--cream);
+            cursor: pointer;
+            transition: color 0.3s;
+            z-index: 1001;
+        }
+
+        .lightbox-close:hover {
+            color: var(--gold);
+        }
+
+        .lightbox-caption {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: rgba(245, 240, 232, 0.7);
+            font-style: italic;
+            text-align: center;
+            max-width: 600px;
+            padding: 0 1rem;
+        }
+
+        .lightbox-caption:empty {
+            display: none;
+        }
+
+        /* Make story images clickable */
+        .story-image {
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .story-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
 
         /* Back to globe link - subtle secondary action */
@@ -922,7 +1128,10 @@
     <!-- Side Panel -->
     <div class="side-panel" id="sidePanel">
         <button class="panel-close" onclick="closePanel()">×</button>
-        <img class="panel-image" id="panelImage" src="" alt="">
+        <div class="panel-image-container">
+            <img class="panel-image" id="panelImage" src="" alt="">
+            <div class="panel-image-caption" id="panelImageCaption"></div>
+        </div>
         <div class="panel-content">
             <div class="panel-tag" id="panelTag"></div>
             <h2 class="panel-title" id="panelTitle"></h2>
@@ -983,9 +1192,77 @@
                 tag: "Door #2: My First Contract",
                 icon: "🚪",
                 isDoor: true,
-                shortDesc: "Two weeks. Two cruises. The industry trial period.",
-                fullDesc: "Two weeks. Two cruises. That was the industry standard. The unspoken trial period where the office watched to see if you'd sink or swim.\n\nMake it past that window and they'd turn their attention elsewhere. You were left alone to succeed, fail, or burn out at your own risk.\n\nDarwin marked the end of my probation. Five weeks in, we pulled into port and something had shifted. The scrutiny was gone. My name appeared in the daily schedule without revision.\n\nOn my first day aboard, during orientation, the staff captain told us straight: \"Ship life will fulfill you, drain you, or wreck you emotionally. You can tell a lot about a person based on how they conduct themselves aboard a ship.\"\n\nI remember sitting there thinking — am I ready for this? Am I ready to become the best version of myself? Because that's what this is going to take.\n\nThose first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.\n\nThey weren't just colleagues. They were professionals, as dedicated to their work as I was to mine. But more than that, we were all witnesses to this strange experience we'd signed on to. There was humor and irony in every story told at sea. It just happened that way — so many people from such different places, bumping into each other's unfamiliar ways.\n\nI lasted twelve years. Would have been longer if not for a pandemic that grounded the entire industry.\n\nBut what matters is this: Darwin was the door that opened everything. The proving ground. The place where I stopped being a guy who got lucky with a contract, and became a cruise ship musician.\n\nThe show goes on.",
-                image: "https://i.imgur.com/wv8ryAu.jpeg"
+                shortDesc: "If I could make it to Darwin, I could make it anywhere.",
+                imagePosition: "center",
+                imageCaption: "Somewhere in the first week — still figuring out the rhythm.",
+                useRichContent: true,
+                richContent: `
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">The Proving Ground</span>
+                        <h3 class="section-title-panel">The 14-Day Cruise</h3>
+                        <p>I had two weeks. Two 7-day cruises. That was the industry standard — the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
+                        <p>I knew that if I made it past that window, the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
+                        <p>I heard crew members whispering about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But to me, Darwin represented something else entirely.</p>
+                        <p>If I could stay on and make it to Darwin without being handed a plane ticket home, I was good for at least my first 4-month contract. And who knows — maybe they would bring me back to do it again.</p>
+                        <blockquote class="story-quote">I could make it anywhere if I could just get to Darwin.</blockquote>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645531/002_zzrowo.jpg" class="story-image" alt="Smugglers Lounge">
+                        <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun — the proving ground.</p>
+                        <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
+                        <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist — Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
+                        <div class="story-gallery-grid">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" alt="Atlantis entertainment brochure">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" alt="Soundcheck at the Atlantis Lounge">
+                        </div>
+                        <p class="photo-caption-inline">The Atlantis Showlounge — my name in print, and the view from soundcheck before the doors opened.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">Orientation Day</span>
+                        <h3 class="section-title-panel">A Life in Motion</h3>
+                        <p>On my first day aboard, during orientation, the staff captain told us straight:</p>
+                        <blockquote class="story-quote">
+                            "Ship life will fulfill you, drain you, or wreck you emotionally. You can tell a lot about a person based on how they conduct themselves aboard a ship."
+                            <cite>— Staff Captain, Pacific Sun</cite>
+                        </blockquote>
+                        <p>I remember sitting there thinking — am I ready for this? Am I ready to become the best version of myself? Because that's what this is going to take.</p>
+                        <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">Shore Leave</span>
+                        <h3 class="section-title-panel">The Pacific Run</h3>
+                        <p>The Pacific run took us through places I'd only seen in documentaries. Turquoise water so clear you could count fish from the tender. Churches older than any building I'd ever entered. Islands where time moved differently.</p>
+                        <div class="story-gallery-grid">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645530/isle_of_pines_a14gno.jpg" class="story-image" alt="Isle of Pines">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645530/New_Caldonia_church_rqfw7s.jpg" class="story-image" alt="Church door in Vanuatu">
+                        </div>
+                        <p class="photo-caption-inline">Isle of Pines, and a weathered church door somewhere in Vanuatu.</p>
+                        <div class="story-gallery-grid">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645531/darwin_star_jseq6c.jpg" class="story-image" alt="Darwin Star Picture Theatre">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645531/DSC00286_ikuq8x.jpg" class="story-image" alt="Brisbane at night">
+                        </div>
+                        <p class="photo-caption-inline">The Star Picture Theatre in Darwin, and Brisbane lit up at night.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">Shipmates</span>
+                        <h3 class="section-title-panel">Witnesses to the Strange</h3>
+                        <p>They weren't just colleagues. They were professionals, as dedicated to their work as I was to mine. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
+                        <p>There was humor and irony in every story told at sea. It just happened that way — so many people from such different places, bumping into each other's unfamiliar ways.</p>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767645530/crew_bar_omq5df.jpg" class="story-image" alt="Crew bar with shipmates">
+                        <p class="photo-caption-inline">The crew bar — where the real stories got told.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">Door #2</span>
+                        <h3 class="section-title-panel">The Door That Opened Everything</h3>
+                        <p>Darwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.</p>
+                        <p>I lasted twelve years. Would have been longer if not for a pandemic that grounded the entire industry. But what matters is this: I made it to Darwin. And everything after that was possible because of it.</p>
+                        <blockquote class="story-quote final-quote">The show goes on.</blockquote>
+                    </div>
+                `,
+                fullDesc: "I heard crew members whispering about the 14-day cruise to Darwin like it was a mystical place. To me, Darwin represented something else entirely: if I could make it there, I would be staying onboard for a full contract.\n\nDarwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.\n\nThe show goes on.",
+                image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767643122/013_pzswfa.jpg"
             },
             {
                 id: 4,
@@ -3702,7 +3979,10 @@
             // Hide tooltip when opening panel
             hideTooltip();
             
-            document.getElementById('panelImage').src = loc.image;
+            const panelImage = document.getElementById('panelImage');
+            panelImage.src = loc.image;
+            panelImage.style.setProperty('--image-position', loc.imagePosition || 'center');
+            document.getElementById('panelImageCaption').textContent = loc.imageCaption || '';
             document.getElementById('panelTag').textContent = loc.tag;
             document.getElementById('panelTitle').textContent = loc.title;
             
@@ -3715,8 +3995,14 @@
             }
             document.getElementById('panelPreview').textContent = preview;
             
-            // Full text for expanded view, with optional story image(s) at the end
-            let fullContent = paragraphs.map(p => `<p>${p}</p>`).join('');
+            // Check if location has rich HTML content
+            let fullContent;
+            if (loc.useRichContent && loc.richContent) {
+                fullContent = loc.richContent;
+            } else {
+                // Default: Full text for expanded view
+                fullContent = paragraphs.map(p => `<p>${p}</p>`).join('');
+            }
             
             // Support both single image and array of images
             if (loc.storyImages && loc.storyImages.length > 0) {
@@ -3729,6 +4015,9 @@
                 fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
             }
             document.getElementById('panelText').innerHTML = fullContent;
+            
+            // Attach click handlers to story images for lightbox
+            attachImageClickHandlers();
             
             // Update next door button based on current location
             updateNextDoorButton(loc);
@@ -3779,6 +4068,46 @@
             if (window.innerWidth <= 768) {
                 setTimeout(toggleMobileMenu, 300);
             }
+        }
+
+        // Lightbox functions
+        function openLightbox(imgSrc, caption) {
+            document.getElementById('lightboxImg').src = imgSrc;
+            document.getElementById('lightboxCaption').textContent = caption || '';
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            // Only close if clicking the background or close button, not the image
+            if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+                document.getElementById('lightbox').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                document.getElementById('lightbox').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Attach click handlers to story images when panel content changes
+        function attachImageClickHandlers() {
+            const storyImages = document.querySelectorAll('.panel-text .story-image');
+            storyImages.forEach(img => {
+                img.onclick = function() {
+                    // Get caption from the next sibling if it's a caption element
+                    let caption = '';
+                    const nextEl = img.parentElement?.nextElementSibling;
+                    if (nextEl && nextEl.classList.contains('photo-caption-inline')) {
+                        caption = nextEl.textContent;
+                    }
+                    openLightbox(img.src, caption);
+                };
+            });
         }
 
         function closePanel() {
@@ -4222,5 +4551,12 @@
         // Initialize
         init();
     </script>
+    <!-- Lightbox for full-size images -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Full size image" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
 </body>
 </html>
