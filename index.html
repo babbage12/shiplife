@@ -826,6 +826,59 @@
                 display: block;
             }
         }
+        
+        /* Disney Sparkle Effect */
+        .sparkle-container {
+            position: fixed;
+            pointer-events: none;
+            z-index: 500;
+        }
+        
+        .sparkle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: radial-gradient(circle, #fff 0%, #ffd700 40%, transparent 70%);
+            border-radius: 50%;
+            animation: sparkleAnim 0.8s ease-out forwards;
+        }
+        
+        .sparkle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #ffd700, transparent);
+            transform: translate(-50%, -50%);
+        }
+        
+        .sparkle::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 2px;
+            height: 12px;
+            background: linear-gradient(180deg, transparent, #ffd700, transparent);
+            transform: translate(-50%, -50%);
+        }
+        
+        @keyframes sparkleAnim {
+            0% {
+                opacity: 0;
+                transform: scale(0) rotate(0deg);
+            }
+            20% {
+                opacity: 1;
+                transform: scale(1.2) rotate(45deg);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.3) rotate(90deg);
+            }
+        }
     </style>
 </head>
 <body>
@@ -3560,6 +3613,53 @@
             bouncingMarkerId = locationId;
             bounceStartTime = Date.now();
         }
+        
+        // Disney sparkle effect
+        function createSparkles(x, y) {
+            const container = document.createElement('div');
+            container.className = 'sparkle-container';
+            container.style.left = x + 'px';
+            container.style.top = y + 'px';
+            document.body.appendChild(container);
+            
+            // Create arc of sparkles (Disney swoosh)
+            const numSparkles = 12;
+            for (let i = 0; i < numSparkles; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                
+                // Arc pattern around click point
+                const angle = (i / numSparkles) * Math.PI * 1.5 - Math.PI * 0.75;
+                const radius = 30 + Math.random() * 20;
+                const sparkleX = Math.cos(angle) * radius;
+                const sparkleY = Math.sin(angle) * radius;
+                
+                sparkle.style.left = sparkleX + 'px';
+                sparkle.style.top = sparkleY + 'px';
+                sparkle.style.animationDelay = (i * 0.04) + 's';
+                sparkle.style.width = (6 + Math.random() * 6) + 'px';
+                sparkle.style.height = sparkle.style.width;
+                
+                container.appendChild(sparkle);
+            }
+            
+            // Add scattered fairy dust
+            for (let i = 0; i < 8; i++) {
+                const dust = document.createElement('div');
+                dust.className = 'sparkle';
+                dust.style.left = (-20 + Math.random() * 40) + 'px';
+                dust.style.top = (-20 + Math.random() * 40) + 'px';
+                dust.style.animationDelay = (0.1 + Math.random() * 0.3) + 's';
+                dust.style.width = (3 + Math.random() * 4) + 'px';
+                dust.style.height = dust.style.width;
+                container.appendChild(dust);
+            }
+            
+            // Remove container after animation
+            setTimeout(() => {
+                container.remove();
+            }, 1200);
+        }
 
         // Track current location for next door navigation
         let currentLocation = null;
@@ -3788,6 +3888,8 @@
                 if (intersects.length > 0) {
                     const marker = intersects[0].object;
                     if (marker.userData.title) {
+                        // Trigger Disney sparkle effect at tap position
+                        createSparkles(touch.clientX, touch.clientY);
                         openPanel(marker.userData);
                     }
                 }
@@ -3819,6 +3921,9 @@
         function onClick(event) {
             if (hoveredMarker) {
                 const loc = hoveredMarker.userData;
+                
+                // Trigger Disney sparkle effect at click position
+                createSparkles(event.clientX, event.clientY);
                 
                 // Check if this is Door #1 (Toledo) - trigger 3D animation
                 if (loc.title === "Toledo, Ohio") {
