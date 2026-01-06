@@ -1170,9 +1170,69 @@
                 iconType: "door",
                 iconSymbol: "steel-door",
                 isDoor: true,
-                shortDesc: "Breaking free from the cubicle.",
-                fullDesc: "This was Door #1.\n\nRun out of sick days. Run out of excuses. Every morning the same feeling—I was in the wrong place. The cubicle wanted spreadsheets. I wanted music.\n\nThis door opened the possibility of everything that came after.",
-                image: "https://images.unsplash.com/photo-1534430480872-3498386e7856?w=1200"
+                shortDesc: "The cubicle wanted spreadsheets. I wanted music.",
+                imagePosition: "center",
+                imageCaption: "Early band days, before the detour.",
+                useRichContent: true,
+                richContent: `
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">The Beginning</span>
+                        <h3 class="section-title-panel">The Doghouse</h3>
+                        <p>My mom would tell you I was singing before I could talk.</p>
+                        <p>If you wanted to find me as a kid, all you had to do was listen. If I wasn't banging on a drum set, I was playing clarinet, or guitar, or singing for anyone who would listen. My mom, my grandma, my brother and sister. My great-grandma Gillette would hoist me up onto the doghouse and I would sing the Star Spangled Banner for her, pretending the apples on the trees around us were my audience.</p>
+                        <p>I made up songs. I sang harmony with the radio. I daydreamed constantly, and it got me into a lot of trouble.</p>
+                        <p>At age 7, when other kids were playing with Legos, I began playing my dad's Jazzmaster guitar.</p>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" alt="Age 8 with dad's Jazzmaster">
+                        <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
+                        <p>When I wasn't lost in music, I'd disappear for hours into the woods, walking the train tracks that ran behind our house, exploring my small world. I imagined I could just keep walking until I'd seen all of it.</p>
+                        <p>That would have to wait a few years.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">The Detour</span>
+                        <h3 class="section-title-panel">Fifteen Years</h3>
+                        <p>Somewhere between childhood and adulthood, I took a wrong turn.</p>
+                        <p>I was 25, barely scraping by playing bar gigs. I had to make a living, so for the next 15 years I worked a handful of 8-to-5 jobs. First it was working phones in customer service. Then I found myself in a credit collections department for, of all things, an elevator company.</p>
+                        <p>Imagine trying to collect on an elevator bill. I was screaming at people on the phone for a living. What was I doing?</p>
+                        <p>I had to get out.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">The Spark</span>
+                        <h3 class="section-title-panel">Visualizing the Escape</h3>
+                        <p>In 2005, I worked up a few sets of guitar-vocal songs and played my first solo gig in years. It was a good start, but I had a ways to go. If I wanted to escape Toledo and make a living playing music, I needed to be prepared.</p>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" alt="First solo gig">
+                        <p class="photo-caption-inline">2005. The first solo gig in years. The spark.</p>
+                        <p>The most important thing I did was to begin to visualize where music could take me again. I started a scrapbook of exotic places and tried to imagine myself playing in grand hotels. Or cruise ships.</p>
+                        <p>I started recording my rehearsals. Made a demo and uploaded it to MySpace.</p>
+                        <p>Then one night, late, I started searching for solo guitar gigs. Landed on a British talent website and found an ad that read something like:</p>
+                        <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
+                        <p>Okay. This was it. I knew it was a long shot, but I responded to the ad and went to bed.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">The Email</span>
+                        <h3 class="section-title-panel">ProShip Entertainment</h3>
+                        <p>A few days later I was back at my cubicle. I had just opened my email when I saw an email from ProShip Entertainment.</p>
+                        <blockquote class="story-quote">
+                            Dear Derrick,<br><br>
+                            I watched your demo and really liked it. You sounded very good! We may have an opportunity for you. Are you able to speak this afternoon?
+                        </blockquote>
+                        <p>I didn't know if this was a scam or a dream or what. I think I almost jumped out of my chair. I'm sure I left work early that day. There was no way I could sit still after getting that email.</p>
+                        <p>We spoke. The interview was short and sweet. The real shocker came when the interviewer said:</p>
+                        <blockquote class="story-quote">"So Derrick, how soon can you be ready to leave for Australia?"</blockquote>
+                        <p>I went over the moon.</p>
+                    </div>
+                    
+                    <div class="story-section-panel">
+                        <span class="section-tag-panel">Door #1</span>
+                        <h3 class="section-title-panel">The Escape</h3>
+                        <p>Walking through the first door was the hardest thing I had ever done. I left everything behind. Everything I owned was shoved into a storage space and I left Toledo on July 6th, 2009.</p>
+                        <blockquote class="story-quote final-quote">The lock fell away from Door #1 and opened to the possibility of everything that came after.</blockquote>
+                    </div>
+                `,
+                fullDesc: "My mom would tell you I was singing before I could talk. If you wanted to find me as a kid, all you had to do was listen.\n\nSomewhere between childhood and adulthood, I took a wrong turn. Fifteen years in a cubicle. Then one night, late, I found an ad: Vocalist/Guitarist wanted for cruise ship.\n\nThis was Door #1. The escape. This door opened the possibility of everything that came after.",
+                image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767710239/brothers_of_badness_waogg5.jpg"
             },
             {
                 id: 21,
@@ -3974,58 +4034,66 @@
         let currentLocation = null;
         
         function openPanel(loc) {
-            currentLocation = loc;
-            
-            // Hide tooltip when opening panel
-            hideTooltip();
-            
-            const panelImage = document.getElementById('panelImage');
-            panelImage.src = loc.image;
-            panelImage.style.setProperty('--image-position', loc.imagePosition || 'center');
-            document.getElementById('panelImageCaption').textContent = loc.imageCaption || '';
-            document.getElementById('panelTag').textContent = loc.tag;
-            document.getElementById('panelTitle').textContent = loc.title;
-            
-            const paragraphs = loc.fullDesc.split('\n\n');
-            
-            // Show first paragraph as preview (truncated if too long)
-            let preview = paragraphs[0];
-            if (preview.length > 150) {
-                preview = preview.substring(0, 150) + '...';
+            try {
+                currentLocation = loc;
+                
+                // Hide tooltip when opening panel
+                hideTooltip();
+                
+                const panelImage = document.getElementById('panelImage');
+                panelImage.src = loc.image;
+                panelImage.style.setProperty('--image-position', loc.imagePosition || 'center');
+                document.getElementById('panelImageCaption').textContent = loc.imageCaption || '';
+                document.getElementById('panelTag').textContent = loc.tag;
+                document.getElementById('panelTitle').textContent = loc.title;
+                
+                const paragraphs = loc.fullDesc.split('\n\n');
+                
+                // Show first paragraph as preview (truncated if too long)
+                let preview = paragraphs[0];
+                if (preview.length > 150) {
+                    preview = preview.substring(0, 150) + '...';
+                }
+                document.getElementById('panelPreview').textContent = preview;
+                
+                // Check if location has rich HTML content
+                let fullContent;
+                if (loc.useRichContent && loc.richContent) {
+                    fullContent = loc.richContent;
+                } else {
+                    // Default: Full text for expanded view
+                    fullContent = paragraphs.map(p => `<p>${p}</p>`).join('');
+                }
+                
+                // Support both single image and array of images
+                if (loc.storyImages && loc.storyImages.length > 0) {
+                    fullContent += '<div class="story-gallery">';
+                    loc.storyImages.forEach(img => {
+                        fullContent += `<img src="${img}" class="story-image" alt="Story photo">`;
+                    });
+                    fullContent += '</div>';
+                } else if (loc.storyImage) {
+                    fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
+                }
+                document.getElementById('panelText').innerHTML = fullContent;
+                
+                // Attach click handlers to story images for lightbox
+                attachImageClickHandlers();
+                
+                // Update next door button based on current location
+                updateNextDoorButton(loc);
+                
+                // Reset expanded state when opening new location
+                sidePanel.classList.remove('expanded');
+                sidePanel.classList.add('open');
+                panelIsOpen = true; // Stop auto-rotation while reading
+            } catch (error) {
+                console.error('Error opening panel:', error);
+                // Reset panel state on error
+                sidePanel.classList.remove('expanded');
+                sidePanel.classList.add('open');
+                panelIsOpen = true;
             }
-            document.getElementById('panelPreview').textContent = preview;
-            
-            // Check if location has rich HTML content
-            let fullContent;
-            if (loc.useRichContent && loc.richContent) {
-                fullContent = loc.richContent;
-            } else {
-                // Default: Full text for expanded view
-                fullContent = paragraphs.map(p => `<p>${p}</p>`).join('');
-            }
-            
-            // Support both single image and array of images
-            if (loc.storyImages && loc.storyImages.length > 0) {
-                fullContent += '<div class="story-gallery">';
-                loc.storyImages.forEach(img => {
-                    fullContent += `<img src="${img}" class="story-image" alt="Story photo">`;
-                });
-                fullContent += '</div>';
-            } else if (loc.storyImage) {
-                fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
-            }
-            document.getElementById('panelText').innerHTML = fullContent;
-            
-            // Attach click handlers to story images for lightbox
-            attachImageClickHandlers();
-            
-            // Update next door button based on current location
-            updateNextDoorButton(loc);
-            
-            // Reset expanded state when opening new location
-            sidePanel.classList.remove('expanded');
-            sidePanel.classList.add('open');
-            panelIsOpen = true; // Stop auto-rotation while reading
         }
         
         function updateNextDoorButton(loc) {
@@ -4249,9 +4317,81 @@
                 if (intersects.length > 0) {
                     const marker = intersects[0].object;
                     if (marker.userData.title) {
+                        const loc = marker.userData;
+                        
                         // Trigger Disney sparkle effect at tap position
                         createSparkles(touch.clientX, touch.clientY);
-                        openPanel(marker.userData);
+                        
+                        // Check if we're switching to a different location
+                        const isSwitching = currentLocation && currentLocation.id !== loc.id;
+                        
+                        // If switching, trigger globe rotation
+                        if (isSwitching) {
+                            closePanel();
+                            const lon = loc.coords[1];
+                            const lat = loc.coords[0];
+                            isTransitioning = true;
+                            transitionPhase = 'zoom-out';
+                            transitionStartTime = Date.now();
+                            pendingRotationY = getTargetY(lon);
+                            pendingRotationX = lat * (Math.PI / 180);
+                            pendingLocation = null; // Don't auto-open panel from transition
+                        }
+                        
+                        // Handle Door #1 (Toledo)
+                        if (loc.title === "Toledo, Ohio") {
+                            if (door1AnimPhase === 'idle') {
+                                triggerDoor1Animation();
+                                setTimeout(() => openPanel(loc), 2200);
+                                return;
+                            } else if (door1AnimPhase === 'open') {
+                                if (isSwitching) {
+                                    setTimeout(() => openPanel(loc), 800);
+                                } else {
+                                    openPanel(loc);
+                                }
+                                return;
+                            } else {
+                                door1AnimPhase = 'open';
+                                if (isSwitching) {
+                                    setTimeout(() => openPanel(loc), 800);
+                                } else {
+                                    openPanel(loc);
+                                }
+                                return;
+                            }
+                        }
+                        
+                        // Handle Door #2 (Darwin)
+                        if (loc.title === "Darwin, Australia") {
+                            if (door2AnimPhase === 'idle') {
+                                triggerDoor2Animation();
+                                setTimeout(() => openPanel(loc), 2200);
+                                return;
+                            } else if (door2AnimPhase === 'open') {
+                                if (isSwitching) {
+                                    setTimeout(() => openPanel(loc), 800);
+                                } else {
+                                    openPanel(loc);
+                                }
+                                return;
+                            } else {
+                                door2AnimPhase = 'open';
+                                if (isSwitching) {
+                                    setTimeout(() => openPanel(loc), 800);
+                                } else {
+                                    openPanel(loc);
+                                }
+                                return;
+                            }
+                        }
+                        
+                        // Regular locations - delay if switching so user sees globe rotate
+                        if (isSwitching) {
+                            setTimeout(() => openPanel(loc), 800);
+                        } else {
+                            openPanel(loc);
+                        }
                     }
                 }
             }
@@ -4286,6 +4426,24 @@
                 // Trigger Disney sparkle effect at click position
                 createSparkles(event.clientX, event.clientY);
                 
+                // Check if we're switching to a different location
+                const isSwitching = currentLocation && currentLocation.id !== loc.id;
+                
+                // If switching, use focusLocation to handle globe rotation (it also closes panel)
+                // But we need to prevent it from auto-opening panel via the transition system
+                if (isSwitching) {
+                    closePanel();
+                    // Trigger the globe rotation
+                    const lon = loc.coords[1];
+                    const lat = loc.coords[0];
+                    isTransitioning = true;
+                    transitionPhase = 'zoom-out';
+                    transitionStartTime = Date.now();
+                    pendingRotationY = getTargetY(lon);
+                    pendingRotationX = lat * (Math.PI / 180);
+                    pendingLocation = null; // Don't auto-open panel from transition
+                }
+                
                 // Check if this is Door #1 (Toledo) - trigger 3D animation
                 if (loc.title === "Toledo, Ohio") {
                     // If door is in idle state, start animation then open panel
@@ -4297,16 +4455,28 @@
                         }, 2200); // Total animation time: shake(600) + unlock(400) + fall(300) + swing(800) + buffer
                         return;
                     } else if (door1AnimPhase === 'open') {
-                        // Door already open, just open panel
-                        openPanel(loc);
+                        // Door already open, just open panel (with delay if switching)
+                        if (isSwitching) {
+                            setTimeout(() => openPanel(loc), 800);
+                        } else {
+                            openPanel(loc);
+                        }
+                        return;
+                    } else {
+                        // Animation stuck, reset and open
+                        door1AnimPhase = 'open';
+                        if (isSwitching) {
+                            setTimeout(() => openPanel(loc), 800);
+                        } else {
+                            openPanel(loc);
+                        }
                         return;
                     }
-                    // If mid-animation, do nothing
-                    return;
                 }
                 
                 // Check if this is Door #2 (Darwin) - trigger wooden door animation
                 if (loc.title === "Darwin, Australia") {
+                    console.log('Darwin clicked, door2AnimPhase:', door2AnimPhase);
                     if (door2AnimPhase === 'idle') {
                         triggerDoor2Animation();
                         setTimeout(() => {
@@ -4314,14 +4484,75 @@
                         }, 2200); // lever(600) + bar(500) + swing(1000) + buffer
                         return;
                     } else if (door2AnimPhase === 'open') {
-                        openPanel(loc);
+                        if (isSwitching) {
+                            setTimeout(() => openPanel(loc), 800);
+                        } else {
+                            openPanel(loc);
+                        }
+                        return;
+                    } else {
+                        // Animation stuck mid-way, reset and open panel directly
+                        console.log('Darwin animation was stuck, resetting');
+                        door2AnimPhase = 'open';
+                        if (isSwitching) {
+                            setTimeout(() => openPanel(loc), 800);
+                        } else {
+                            openPanel(loc);
+                        }
                         return;
                     }
-                    return;
                 }
                 
-                // Regular locations
-                openPanel(loc);
+                // Regular locations - delay if switching so user sees globe rotate
+                if (isSwitching) {
+                    setTimeout(() => openPanel(loc), 800);
+                } else {
+                    openPanel(loc);
+                }
+            }
+        }
+        
+        // Helper function to get calibrated Y rotation for a longitude
+        function getTargetY(lon) {
+            if (lon <= -83.54) {
+                const slope = (-0.87 - (-0.10)) / (-41.89 - (-83.54));
+                return -0.10 + (lon - (-83.54)) * slope;
+            } else if (lon <= -41.89) {
+                const t = (lon - (-83.54)) / (-41.89 - (-83.54));
+                return -0.10 + t * (-0.87 - (-0.10));
+            } else if (lon <= 5.37) {
+                const t = (lon - (-41.89)) / (5.37 - (-41.89));
+                return -0.87 + t * (-1.65 - (-0.87));
+            } else if (lon <= 9.21) {
+                const t = (lon - 5.37) / (9.21 - 5.37);
+                return -1.65 + t * (4.60 - (-1.65));
+            } else if (lon <= 12.50) {
+                const t = (lon - 9.21) / (12.50 - 9.21);
+                return 4.60 + t * (4.50 - 4.60);
+            } else if (lon <= 14.51) {
+                const t = (lon - 12.50) / (14.51 - 12.50);
+                return 4.50 + t * (4.42 - 4.50);
+            } else if (lon <= 130.85) {
+                const t = (lon - 14.51) / (130.85 - 14.51);
+                return 4.42 + t * (2.44 - 4.42);
+            } else if (lon <= 151.21) {
+                const t = (lon - 130.85) / (151.21 - 130.85);
+                return 2.44 + t * (2.10 - 2.44);
+            } else if (lon <= 153.03) {
+                const t = (lon - 151.21) / (153.03 - 151.21);
+                return 2.10 + t * (8.30 - 2.10);
+            } else if (lon <= 167.90) {
+                const t = (lon - 153.03) / (167.90 - 153.03);
+                return 8.30 + t * (8.10 - 8.30);
+            } else if (lon <= 174.78) {
+                const t = (lon - 167.90) / (174.78 - 167.90);
+                return 8.10 + t * (8.01 - 8.10);
+            } else if (lon <= 176.17) {
+                const t = (lon - 174.78) / (176.17 - 174.78);
+                return 8.01 + t * (7.93 - 8.01);
+            } else {
+                const t = (lon - 176.17) / (176.91 - 176.17);
+                return 7.93 + t * (7.90 - 7.93);
             }
         }
 
