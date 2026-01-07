@@ -105,11 +105,16 @@
             color: var(--gold);
         }
 
-        .return-link {
-            margin-top: 0.5rem;
+        .center-name {
+            position: fixed;
+            top: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 100;
+            pointer-events: auto;
         }
 
-        .return-link a {
+        .center-name a {
             font-family: 'Cormorant Garamond', serif;
             font-size: 2rem;
             font-weight: 300;
@@ -117,14 +122,13 @@
             text-decoration: none;
             letter-spacing: 0.1em;
             transition: opacity 0.3s ease;
-            pointer-events: auto;
         }
 
-        .return-link a span {
+        .center-name a span {
             color: var(--gold);
         }
 
-        .return-link a:hover {
+        .center-name a:hover {
             opacity: 0.8;
         }
 
@@ -993,7 +997,7 @@
                 font-size: 1.5rem;
             }
 
-            .return-link a {
+            .center-name a {
                 font-size: 1.25rem;
             }
             
@@ -1368,9 +1372,11 @@
     <div class="header">
         <div class="logo"><a href="https://derrickhudson.com" style="color: inherit; text-decoration: none;">Ship<span>life</span></a></div>
         <div class="tagline">12 Years at Sea • 60 Countries • Spanning All 7 Continents</div>
-        <div class="return-link"><a href="https://derrickhudson.com">← Derrick<span>Hudson</span>.com</a></div>
         <div class="header-name"><a href="https://derrickhudson.com">Derrick Hudson</a></div>
     </div>
+    
+    <!-- Centered name link at top -->
+    <div class="center-name"><a href="https://derrickhudson.com"><span>Derrick</span>Hudson.com</a></div>
 
     <!-- Mobile Menu Toggle -->
     <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
