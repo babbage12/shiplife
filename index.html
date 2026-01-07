@@ -85,26 +85,6 @@
             margin-top: 0.25rem;
         }
 
-        .header-name {
-            position: absolute;
-            top: 2rem;
-            right: 3rem;
-        }
-
-        .header-name a {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
-            font-weight: 300;
-            color: var(--cream);
-            text-decoration: none;
-            letter-spacing: 0.1em;
-            transition: color 0.3s ease;
-        }
-
-        .header-name a:hover {
-            color: var(--gold);
-        }
-
         .center-name {
             position: fixed;
             top: 2rem;
@@ -815,6 +795,16 @@
             overflow-y: auto;
         }
 
+        .left-copyright {
+            position: fixed;
+            left: 2rem;
+            bottom: 2rem;
+            z-index: 100;
+            font-size: 0.65rem;
+            color: rgba(245, 240, 232, 0.3);
+            letter-spacing: 0.05em;
+        }
+
         .location-item {
             display: flex;
             align-items: center;
@@ -987,18 +977,13 @@
             .tagline {
                 font-size: 0.55rem;
             }
-            
-            .header-name {
-                top: 1rem;
-                right: 1.5rem;
-            }
-            
-            .header-name a {
-                font-size: 1.5rem;
-            }
 
             .center-name a {
                 font-size: 1.25rem;
+            }
+            
+            .left-copyright {
+                display: none; /* Hide on mobile - already in side panel */
             }
             
             /* Left menu - bottom sheet style */
@@ -1372,7 +1357,6 @@
     <div class="header">
         <div class="logo"><a href="https://derrickhudson.com" style="color: inherit; text-decoration: none;">Ship<span>life</span></a></div>
         <div class="tagline">12 Years at Sea • 60 Countries • Spanning All 7 Continents</div>
-        <div class="header-name"><a href="https://derrickhudson.com">Derrick Hudson</a></div>
     </div>
     
     <!-- Centered name link at top -->
@@ -1390,6 +1374,9 @@
 
     <!-- Location List -->
     <div class="location-list" id="locationList"></div>
+    
+    <!-- Copyright below left panel -->
+    <div class="left-copyright">© Derrick Hudson. All rights reserved.</div>
 
     <!-- Tooltip -->
     <div class="tooltip" id="tooltip">
