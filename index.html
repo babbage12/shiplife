@@ -93,15 +93,33 @@
 
         .header-name a {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1rem;
-            color: var(--gold);
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--cream);
             text-decoration: none;
             letter-spacing: 0.1em;
             transition: color 0.3s ease;
         }
 
         .header-name a:hover {
-            color: var(--cream);
+            color: var(--gold);
+        }
+
+        .return-link {
+            margin-top: 0.5rem;
+        }
+
+        .return-link a {
+            font-size: 0.7rem;
+            color: rgba(212, 165, 116, 0.6);
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            transition: color 0.3s ease;
+            pointer-events: auto;
+        }
+
+        .return-link a:hover {
+            color: var(--gold);
         }
 
         /* Instructions */
@@ -966,7 +984,11 @@
             }
             
             .header-name a {
-                font-size: 0.85rem;
+                font-size: 1.5rem;
+            }
+
+            .return-link a {
+                font-size: 0.55rem;
             }
             
             /* Left menu - bottom sheet style */
@@ -1340,6 +1362,7 @@
     <div class="header">
         <div class="logo"><a href="https://derrickhudson.com" style="color: inherit; text-decoration: none;">Ship<span>life</span></a></div>
         <div class="tagline">12 Years at Sea • 60 Countries • Spanning All 7 Continents</div>
+        <div class="return-link"><a href="https://derrickhudson.com">← derrickhudson.com</a></div>
         <div class="header-name"><a href="https://derrickhudson.com">Derrick Hudson</a></div>
     </div>
 
