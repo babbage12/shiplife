@@ -3894,8 +3894,8 @@
             
             // Offset positions for overlapping markers (lat/lng offset)
             const markerOffsets = {
-                "Port Lockroy, Antarctica": { latOffset: 1.8, lngOffset: 2.5, hasAnchorLine: true },
-                "Kotor, Montenegro": { latOffset: -1.2, lngOffset: 1.5, hasAnchorLine: true }
+                "Port Lockroy, Antarctica": { latOffset: 1.8, lngOffset: 2.5 },
+                "Kotor, Montenegro": { latOffset: -1.2, lngOffset: 1.5 }
             };
             
             locations.forEach((loc, index) => {
@@ -3908,72 +3908,7 @@
                 const truePosition = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
                 const config = getIconConfig(loc.title);
                 
-                // Create anchor line if this marker is offset
-                if (offset && offset.hasAnchorLine) {
-                    // More visible golden compass line
-                    const lineMaterial = new THREE.LineDashedMaterial({
-                        color: 0xd4af37,
-                        dashSize: 0.015,
-                        gapSize: 0.008,
-                        linewidth: 3,
-                        transparent: true,
-                        opacity: 0.9
-                    });
-                    
-                    // Create curved line points
-                    const midPoint = new THREE.Vector3().addVectors(position, truePosition).multiplyScalar(0.5);
-                    midPoint.normalize().multiplyScalar(1.05); // Lift middle above globe surface
-                    
-                    const curve = new THREE.QuadraticBezierCurve3(truePosition.clone().multiplyScalar(1.015), midPoint, position.clone().multiplyScalar(1.015));
-                    const points = curve.getPoints(30);
-                    
-                    const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
-                    const anchorLine = new THREE.Line(lineGeometry, lineMaterial);
-                    anchorLine.computeLineDistances();
-                    globe.add(anchorLine);
-                    
-                    // Add a solid line underneath for more visibility
-                    const solidLineMaterial = new THREE.LineBasicMaterial({
-                        color: 0x8a6a3a,
-                        transparent: true,
-                        opacity: 0.5
-                    });
-                    const solidLine = new THREE.Line(lineGeometry.clone(), solidLineMaterial);
-                    globe.add(solidLine);
-                    
-                    // Larger, more visible anchor/pin at true position
-                    const anchorCanvas = document.createElement('canvas');
-                    anchorCanvas.width = 48;
-                    anchorCanvas.height = 48;
-                    const actx = anchorCanvas.getContext('2d');
-                    
-                    // Draw a compass pin marker
-                    actx.fillStyle = '#d4af37';
-                    actx.beginPath();
-                    actx.arc(24, 20, 10, 0, Math.PI * 2);
-                    actx.fill();
-                    actx.beginPath();
-                    actx.moveTo(24, 30);
-                    actx.lineTo(18, 44);
-                    actx.lineTo(30, 44);
-                    actx.closePath();
-                    actx.fill();
-                    // Inner dot
-                    actx.fillStyle = '#1a2744';
-                    actx.beginPath();
-                    actx.arc(24, 20, 5, 0, Math.PI * 2);
-                    actx.fill();
-                    
-                    const anchorTexture = new THREE.CanvasTexture(anchorCanvas);
-                    const anchorSprite = new THREE.Sprite(new THREE.SpriteMaterial({ 
-                        map: anchorTexture, 
-                        transparent: true 
-                    }));
-                    const trueDir = truePosition.clone().normalize();
-                    anchorSprite.position.copy(truePosition).add(trueDir.multiplyScalar(0.02));
-                    anchorSprite.scale.set(0.035, 0.035, 1);
-                    globe.add(anchorSprite);
-                }
+                // Offsets are applied above - no visual anchor line needed
                 
                 // Get density-based scale factor
                 const densityScale = densityFactors.get(loc.id) || 1.0;
