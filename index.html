@@ -1287,58 +1287,6 @@
             }
         }
         
-        /* Disney Sparkle Effect */
-        .sparkle-container {
-            position: fixed;
-            pointer-events: none;
-            z-index: 500;
-        }
-        
-        .sparkle {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: radial-gradient(circle, #fff 0%, #ffd700 40%, transparent 70%);
-            border-radius: 50%;
-            animation: sparkleAnim 0.8s ease-out forwards;
-        }
-        
-        .sparkle::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 12px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, #ffd700, transparent);
-            transform: translate(-50%, -50%);
-        }
-        
-        .sparkle::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 2px;
-            height: 12px;
-            background: linear-gradient(180deg, transparent, #ffd700, transparent);
-            transform: translate(-50%, -50%);
-        }
-        
-        @keyframes sparkleAnim {
-            0% {
-                opacity: 0;
-                transform: scale(0) rotate(0deg);
-            }
-            20% {
-                opacity: 1;
-                transform: scale(1.2) rotate(45deg);
-            }
-            100% {
-                opacity: 0;
-                transform: scale(0.3) rotate(90deg);
-            }
-        }
     </style>
 </head>
 <body>
@@ -1974,6 +1922,17 @@
                 image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767734543/IMG_3093_p55z1r.jpg"
             },
             {
+                id: 41,
+                title: "Santorini, Greece",
+                coords: [36.39, 25.46],
+                tag: "Iconic Caldera",
+                icon: "🏛️",
+                isDoor: false,
+                shortDesc: "The postcard of the Aegean.",
+                fullDesc: "Santorini needs no introduction.\n\nThe white-washed buildings cascading down volcanic cliffs, the blue domes, the sunsets that stop you in your tracks. It's touristy for a reason—some places really are as beautiful as the postcards suggest. Watching the sun sink into the caldera from Oia is something I'll never forget.",
+                image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=1200"
+            },
+            {
                 id: 26,
                 title: "Piran, Slovenia",
                 coords: [45.53, 13.57],
@@ -2152,20 +2111,74 @@
         // Bounce animation for focused icon
         let bouncingMarkerId = null;
         let bounceStartTime = null;
-        const bounceDuration = 1500; // 1.5 seconds of bouncing
+        const bounceDuration = 350; // Quick single bounce
 
         // Zoom transition animation
         let isTransitioning = false;
         let transitionStartTime = null;
         let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
         let targetCameraZ = 1.8;
-        const zoomOutDistance = 4.05; // Zoomed out (10% closer than before)
-        const zoomInDistance = 1.89;  // Zoomed in closer to locations (10% closer)
+        const zoomOutDistance = 4.05; // Zoomed out
+        const baseZoomInDistance = 2.16;  // Zoom for door icons (reference)
+        let currentZoomInDistance = baseZoomInDistance; // Dynamic per-location
         const zoomOutDuration = 600;  // ms
         const zoomInDuration = 800;   // ms
+        
+        // Store density factors globally for zoom calculations
+        let globalDensityFactors = null;
 
         const tooltip = document.getElementById('tooltip');
         const sidePanel = document.getElementById('sidePanel');
+        
+        // AI-generated porthole textures
+        const USE_AI_PORTHOLES = true; // Toggle between AI images and canvas-drawn
+        let portholeFrameTexture = null;  // Empty frame for doors
+        let portholeSceneTexture = null;  // Default fallback for locations
+        
+        // Per-location porthole images (add URLs as you create them!)
+        const locationPortholeURLs = {
+            // Completed locations
+            "Vanuatu": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934122/marcie_00842__xyvw5f.png",
+            "Kotor, Montenegro": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934308/marcie_00795__dqtfrv.png",
+            "Milford Sound, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934562/marcie_00848__lsqvc7.png",
+            "Bora Bora": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934658/marcie_00863__d9cfov.png",
+            "Picton, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934726/marcie_00859__hg41ls.png",
+            "Akaroa, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934782/marcie_00856__shstqa.png",
+            "Wellington, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767934920/marcie_00854__ddnt6o.png",
+            "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767937260/marcie_00913__fvuzla.png",
+            "Brisbane, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767937320/marcie_00869__xtfnj3.png",
+            "Portofino, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767937437/marcie_00880__wrzehv.png",
+            "Ephesus, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767937501/marcie_00884__glotfr.png",
+            "Auckland, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950342/marcie_00954__cjlthw.png",
+            "Darwin, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950354/marcie_00920__gymcoe.png",
+            "Rome, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950310/marcie_01005__n4dbdz.png",
+            "Piran, Slovenia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950328/marcie_01050__qunmvg.png",
+            "Sydney, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950196/marcie_00957__suiqhl.png",
+            "Dubrovnik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767950299/marcie_00998__uuyksn.png",
+            "Ushuaia, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767952701/marcie_01044__d7wlbn.png",
+            "Alexandria, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954446/marcie_01091__g6f37b.png",
+            "Milos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954451/marcie_01087__tjhnoz.png",
+            "South Georgia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954452/marcie_01084__wkiyxh.png",
+            "Bali, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954456/marcie_01078__lmxp7z.png",
+            "Valletta, Malta": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954460/marcie_01076__naw5pw.png",
+            "Ibiza, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954467/marcie_01065__vcsfvn.png",
+            "Santorini, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767954465/marcie_01069__sjquu7.png",
+        };
+        
+        // Per-location ANIMATED porthole videos (Wan 2.1 exports)
+        const locationVideoURLs = {
+            // Add animated portholes here - these take priority over static images!
+            "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/video/upload/v1767948217/Wan2.2_image_to_video_00008__vbdcww.mp4",
+        };
+        
+        // Loaded textures stored here
+        const locationTextures = {};
+        
+        // Video elements that need updating each frame
+        const videoTextures = [];
+        
+        // Video elements mapped by location name for play/pause control
+        const locationVideos = {};
         
         // Toledo: 41.6528° N, 83.5379° W
         // FOUND: Y = -0.10 shows Toledo (lon = -83.5°)
@@ -2175,7 +2188,130 @@
         const TOLEDO_Y = -0.10;
         const TOLEDO_X = (41.6528 * Math.PI / 180); // positive for north
 
-        function init() {
+        // Load video as texture (does NOT autoplay - call video.play() when ready)
+        function loadVideoTexture(url) {
+            return new Promise((resolve) => {
+                const video = document.createElement('video');
+                video.crossOrigin = 'anonymous';
+                video.loop = false; // Play once and stop on last frame
+                video.muted = true;
+                video.playsInline = true;
+                // DON'T autoplay - wait for user interaction
+                video.autoplay = false;
+                
+                video.onloadeddata = function() {
+                    const texture = new THREE.VideoTexture(video);
+                    texture.minFilter = THREE.LinearFilter;
+                    texture.magFilter = THREE.LinearFilter;
+                    // DON'T play yet - wait for user click
+                    console.log('Loaded video texture (paused):', url);
+                    
+                    // Store reference for frame updates
+                    videoTextures.push({ video, texture });
+                    resolve({ texture, video });
+                };
+                
+                video.onerror = () => {
+                    console.error('Failed to load video:', url);
+                    resolve(null);
+                };
+                
+                video.src = url;
+            });
+        }
+
+        // Load image and make black pixels transparent (only outside the circular porthole)
+        function loadTextureWithTransparentBlack(url, threshold = 60) {
+            return new Promise((resolve) => {
+                const img = new Image();
+                img.crossOrigin = 'anonymous';
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0);
+                    
+                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    const data = imageData.data;
+                    
+                    const cx = canvas.width / 2;
+                    const cy = canvas.height / 2;
+                    // Porthole radius - assume it takes up ~88% of image width
+                    const portholeRadius = Math.min(cx, cy) * 0.88;
+                    
+                    // Make dark pixels transparent ONLY if outside porthole circle
+                    for (let y = 0; y < canvas.height; y++) {
+                        for (let x = 0; x < canvas.width; x++) {
+                            const i = (y * canvas.width + x) * 4;
+                            const r = data[i];
+                            const g = data[i + 1];
+                            const b = data[i + 2];
+                            
+                            // Distance from center
+                            const dx = x - cx;
+                            const dy = y - cy;
+                            const dist = Math.sqrt(dx * dx + dy * dy);
+                            
+                            // Only make transparent if:
+                            // 1. Pixel is dark (near black)
+                            // 2. AND pixel is outside the porthole circle
+                            if (r < threshold && g < threshold && b < threshold && dist > portholeRadius) {
+                                data[i + 3] = 0; // Set alpha to 0
+                            }
+                        }
+                    }
+                    
+                    ctx.putImageData(imageData, 0, 0);
+                    
+                    const texture = new THREE.CanvasTexture(canvas);
+                    texture.needsUpdate = true;
+                    console.log('Loaded with circular transparency:', url);
+                    resolve(texture);
+                };
+                img.onerror = () => {
+                    console.error('Failed to load:', url);
+                    resolve(null);
+                };
+                img.src = url;
+            });
+        }
+        
+        async function init() {
+            // Preload AI porthole textures with black-to-transparent processing
+            if (USE_AI_PORTHOLES) {
+                // Load default textures
+                [portholeFrameTexture, portholeSceneTexture] = await Promise.all([
+                    loadTextureWithTransparentBlack(
+                        'https://res.cloudinary.com/de5jbyhxx/image/upload/v1767928093/marcie_00688__ntj67c.png',
+                        65 // threshold for black background removal
+                    ),
+                    loadTextureWithTransparentBlack(
+                        'https://res.cloudinary.com/de5jbyhxx/image/upload/v1767928140/marcie_00793__bhzemp.png',
+                        65
+                    )
+                ]);
+                
+                // Load per-location textures
+                const locationLoadPromises = Object.entries(locationPortholeURLs).map(async ([name, url]) => {
+                    const texture = await loadTextureWithTransparentBlack(url, 65);
+                    locationTextures[name] = texture;
+                    console.log(`Loaded texture for: ${name}`);
+                });
+                await Promise.all(locationLoadPromises);
+                
+                // Load per-location VIDEO textures (these override static images)
+                const videoLoadPromises = Object.entries(locationVideoURLs).map(async ([name, url]) => {
+                    const result = await loadVideoTexture(url);
+                    if (result && result.texture) {
+                        locationTextures[name] = result.texture; // Override any static image
+                        locationVideos[name] = result.video; // Store video element for play/pause control
+                        console.log(`Loaded VIDEO texture for: ${name}`);
+                    }
+                });
+                await Promise.all(videoLoadPromises);
+            }
+            
             // Scene
             scene = new THREE.Scene();
             
@@ -2429,6 +2565,7 @@
             "Rome, Italy": { style: 'heritage', symbol: 'colosseum', color: '#c9b896', accent: '#8b7355' },
             "Milford Sound, New Zealand": { style: 'heritage', symbol: 'mountain', color: '#607080', accent: '#a0c0d0' },
             "Milos, Greece": { style: 'heritage', symbol: 'venus', color: '#4a90a0', accent: '#ffffff' },
+            "Santorini, Greece": { style: 'heritage', symbol: 'column', color: '#1e90ff', accent: '#ffffff' },
             "Syracuse, Sicily": { style: 'heritage', symbol: 'amphitheater', color: '#c9b896', accent: '#8b7355' },
             "Kotor, Montenegro": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#5a4a3a' },
             "Valletta, Malta": { style: 'heritage', symbol: 'cross', color: '#c9b896', accent: '#8b7355' },
@@ -3627,41 +3764,88 @@
             ctx.clearRect(0, 0, w, h);
             
             const cx = w / 2;
-            const cy = h / 2 - 12;
+            const cy = isDoor ? h / 2 : h / 2 - 12; // Center doors vertically (no base)
             const radius = isDoor ? 44 : 38;
             
-            // === LAYER 1: Black background (revealed when open) ===
-            ctx.fillStyle = '#0a0a0a';
+            if (isDoor) {
+                // === DOOR PORTHOLE: Clear glass with door visible behind ===
+                
+                // Layer 1: Dark interior behind the door
+                ctx.fillStyle = '#1a1a2e';
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius - 3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Layer 2: The door (always visible through glass)
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius - 5, 0, Math.PI * 2);
+                ctx.clip();
+                draw3DDoor(ctx, cx, cy, config.color || '#6a5a4a', 1); // Always draw door at full opacity
+                ctx.restore();
+                
+                // Layer 3: Clear glass overlay with subtle reflections
+                drawClearGlass(ctx, cx, cy, radius - 3);
+                
+                // Layer 4: Brass porthole frame
+                drawPortholeFrame(ctx, cx, cy, radius);
+                
+                // NO BASE for doors
+                
+            } else {
+                // === REGULAR ICONS: Keep existing behavior ===
+                
+                // Layer 1: Black background
+                ctx.fillStyle = '#0a0a0a';
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius - 3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Layer 2: The icon content
+                ctx.save();
+                ctx.beginPath();
+                ctx.arc(cx, cy, radius - 5, 0, Math.PI * 2);
+                ctx.clip();
+                drawRegularIcon(ctx, cx, cy, config, openAmount);
+                ctx.restore();
+                
+                // Layer 3: Brass porthole frame
+                drawPortholeFrame(ctx, cx, cy, radius);
+                
+                // Layer 4: Base for regular icons
+                drawPortholeBase(ctx, cx, cy + radius, isDoor);
+            }
+        }
+        
+        // Draw clear glass effect for door portholes
+        function drawClearGlass(ctx, cx, cy, radius) {
+            // Subtle blue-ish tint like real glass
+            ctx.fillStyle = 'rgba(200, 220, 240, 0.08)';
             ctx.beginPath();
-            ctx.arc(cx, cy, radius - 3, 0, Math.PI * 2);
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
             ctx.fill();
             
-            // === LAYER 2: The icon content (visible when open) ===
-            ctx.save();
+            // Main highlight (top-left reflection)
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
             ctx.beginPath();
-            ctx.arc(cx, cy, radius - 5, 0, Math.PI * 2);
-            ctx.clip();
+            ctx.ellipse(cx - radius * 0.3, cy - radius * 0.3, radius * 0.35, radius * 0.15, -0.6, 0, Math.PI * 2);
+            ctx.fill();
             
-            if (isDoor) {
-                draw3DDoor(ctx, cx, cy, config.color || '#6a5a4a', openAmount);
-            } else {
-                // Use custom-drawn icons matching the sidebar
-                drawRegularIcon(ctx, cx, cy, config, openAmount);
-            }
+            // Secondary smaller highlight
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+            ctx.beginPath();
+            ctx.ellipse(cx - radius * 0.15, cy - radius * 0.5, radius * 0.15, radius * 0.06, -0.4, 0, Math.PI * 2);
+            ctx.fill();
             
-            ctx.restore();
-            
-            // === LAYER 3: Iris aperture (only for doors) ===
-            if (isDoor) {
-                drawIrisAperture(ctx, cx, cy, radius - 3, 1 - openAmount);
-            }
-            // No glass overlay for regular icons - icons are now fully visible
-            
-            // === LAYER 4: Brass porthole frame ===
-            drawPortholeFrame(ctx, cx, cy, radius);
-            
-            // === LAYER 5: Base ===
-            drawPortholeBase(ctx, cx, cy + radius, isDoor);
+            // Subtle rim light around edge
+            const rimGrad = ctx.createRadialGradient(cx, cy, radius * 0.7, cx, cy, radius);
+            rimGrad.addColorStop(0, 'rgba(255, 255, 255, 0)');
+            rimGrad.addColorStop(0.8, 'rgba(255, 255, 255, 0)');
+            rimGrad.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+            ctx.fillStyle = rimGrad;
+            ctx.beginPath();
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+            ctx.fill();
         }
         
         // Draw smoky glass bubble effect for regular icons
@@ -3798,7 +3982,12 @@
             const anim = markerAnimations.get(markerId);
             if (!anim) return;
             
+            // Skip canvas updates for AI porthole markers
+            if (marker.userData.useAIPorthole) return;
+            
             const canvas = marker.userData.iconCanvas;
+            if (!canvas) return; // Safety check
+            
             const config = marker.userData.iconConfig;
             const isDoor = marker.userData.isDoor;
             
@@ -3873,7 +4062,110 @@
                 densityFactors.set(loc.id, scaleFactor);
             });
             
+            // Store globally for zoom calculations
+            globalDensityFactors = densityFactors;
+            
             return densityFactors;
+        }
+        
+        // Calculate zoom distance for a location - smaller icons zoom closer to match door appearance
+        function getZoomDistanceForLocation(loc) {
+            if (!globalDensityFactors || !loc) return baseZoomInDistance;
+            
+            // Door size is the reference
+            const doorSize = 0.040;
+            const doorZoom = baseZoomInDistance; // Doors zoom to this distance
+            
+            // Calculate this location's actual icon size
+            let iconSize;
+            if (loc.isDoor) {
+                iconSize = doorSize;
+            } else {
+                const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
+                const manualOverride = 1.0; // Could look up from sizeOverrides if needed
+                iconSize = 0.029 * densityFactor * manualOverride;
+            }
+            
+            // Calculate full proportional zoom
+            const fullProportionalZoom = doorZoom * (iconSize / doorSize);
+            
+            // Blend 50% between base zoom and full proportional (middle ground)
+            const blendFactor = 0.5;
+            const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
+            
+            // Clamp to reasonable range
+            const minZoom = 1.20;
+            return Math.max(zoomDistance, minZoom);
+        }
+        
+        // Custom shader material for video textures with black transparency (chroma key)
+        function createVideoChromaMaterial(texture) {
+            const vertexShader = `
+                varying vec2 vUv;
+                void main() {
+                    vUv = uv;
+                    // Billboard behavior for sprites
+                    vec4 mvPosition = modelViewMatrix * vec4(0.0, 0.0, 0.0, 1.0);
+                    vec2 scale = vec2(
+                        length(vec3(modelMatrix[0].xyz)),
+                        length(vec3(modelMatrix[1].xyz))
+                    );
+                    mvPosition.xy += position.xy * scale;
+                    gl_Position = projectionMatrix * mvPosition;
+                }
+            `;
+            
+            const fragmentShader = `
+                uniform sampler2D map;
+                uniform float threshold;
+                uniform float softness;
+                varying vec2 vUv;
+                
+                void main() {
+                    vec4 texColor = texture2D(map, vUv);
+                    
+                    // Calculate brightness (luminance)
+                    float brightness = (texColor.r + texColor.g + texColor.b) / 3.0;
+                    
+                    // Create soft edge around threshold
+                    float alpha = smoothstep(threshold - softness, threshold + softness, brightness);
+                    
+                    // Also check for circular mask (porthole shape)
+                    vec2 center = vec2(0.5, 0.5);
+                    float dist = distance(vUv, center);
+                    float radius = 0.46; // Porthole radius
+                    float edgeSoftness = 0.02;
+                    
+                    // Only apply black transparency OUTSIDE the porthole circle
+                    // Inside the circle, keep all pixels (including dark ones)
+                    float insideCircle = 1.0 - smoothstep(radius - edgeSoftness, radius + edgeSoftness, dist);
+                    
+                    // Final alpha: inside circle = keep everything, outside = remove black
+                    float finalAlpha = mix(alpha, 1.0, insideCircle) * texColor.a;
+                    
+                    gl_FragColor = vec4(texColor.rgb, finalAlpha);
+                }
+            `;
+            
+            const material = new THREE.ShaderMaterial({
+                uniforms: {
+                    map: { value: texture },
+                    threshold: { value: 0.15 }, // Black threshold (0-1)
+                    softness: { value: 0.05 }   // Edge softness
+                },
+                vertexShader: vertexShader,
+                fragmentShader: fragmentShader,
+                transparent: true,
+                depthWrite: false,
+                side: THREE.DoubleSide
+            });
+            
+            return material;
+        }
+        
+        // Track which locations use video (for special material handling)
+        function isVideoTexture(locationTitle) {
+            return locationVideoURLs.hasOwnProperty(locationTitle);
         }
         
         function createMarkers() {
@@ -3895,7 +4187,9 @@
             // Offset positions for overlapping markers (lat/lng offset)
             const markerOffsets = {
                 "Port Lockroy, Antarctica": { latOffset: 1.8, lngOffset: 2.5 },
-                "Kotor, Montenegro": { latOffset: -1.2, lngOffset: 1.5 }
+                "Kotor, Montenegro": { latOffset: -1.2, lngOffset: 1.5 },
+                "Wellington, New Zealand": { latOffset: 1.5, lngOffset: 1.0 },
+                "Picton, New Zealand": { latOffset: -1.5, lngOffset: -1.0 }
             };
             
             locations.forEach((loc, index) => {
@@ -3913,47 +4207,102 @@
                 // Get density-based scale factor
                 const densityScale = densityFactors.get(loc.id) || 1.0;
                 
-                // Check for manual override
+                // Check for manual override (applies to both doors and regular markers)
                 const manualOverride = sizeOverrides[loc.title] || 1.0;
                 
-                // Size - doors are larger, apply density scaling and manual overrides to non-doors
-                const baseSize = loc.isDoor ? 0.040 : 0.029 * densityScale * manualOverride;
+                // Size - doors are larger, apply manual overrides to all, density only to non-doors
+                const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.029 * densityScale * manualOverride;
                 
-                // Create canvas for porthole icon
-                const canvas = document.createElement('canvas');
-                canvas.width = 128;
-                canvas.height = 150; // Taller for base
+                let texture, spriteMaterial, canvas;
                 
-                // Doors start closed (iris animation), regular icons start open
-                const initialOpen = loc.isDoor ? 0 : 1;
+                if (USE_AI_PORTHOLES) {
+                    if (locationTextures[loc.title]) {
+                        // Use location-specific texture if available (even for doors!)
+                        texture = locationTextures[loc.title];
+                    } else if (loc.isDoor) {
+                        // Doors without custom image use the frame texture
+                        texture = portholeFrameTexture;
+                    } else {
+                        // Fall back to default scene texture
+                        texture = portholeSceneTexture;
+                    }
+                    
+                if (texture) {
+                        // Check if this is a video texture - use shader for transparency
+                        if (isVideoTexture(loc.title)) {
+                            // Use custom shader material for video (handles black transparency)
+                            spriteMaterial = createVideoChromaMaterial(texture);
+                        } else {
+                            // Regular sprite material for static images
+                            spriteMaterial = new THREE.SpriteMaterial({
+                                map: texture,
+                                transparent: true
+                            });
+                        }
+                        canvas = null; // No canvas needed for AI images
+                    }
+                }
                 
-                // Draw initial state
-                drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+                // Fallback to canvas-drawn portholes if no texture
+                if (!texture) {
+                    canvas = document.createElement('canvas');
+                    canvas.width = 128;
+                    canvas.height = 150; // Taller for base
+                    
+                    // Doors start closed (iris animation), regular icons start open
+                    const initialOpen = loc.isDoor ? 0 : 1;
+                    
+                    // Draw initial state
+                    drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+                    
+                    texture = new THREE.CanvasTexture(canvas);
+                    spriteMaterial = new THREE.SpriteMaterial({
+                        map: texture,
+                        transparent: true
+                    });
+                }
                 
-                // Create Three.js sprite
-                const texture = new THREE.CanvasTexture(canvas);
-                const spriteMaterial = new THREE.SpriteMaterial({
-                    map: texture,
-                    transparent: true
-                });
-                const sprite = new THREE.Sprite(spriteMaterial);
+                // Create Three.js sprite or mesh
+                let marker;
+                const useVideoMesh = isVideoTexture(loc.title);
                 
-                // Position sprite above surface
+                if (useVideoMesh) {
+                    // Use Mesh with PlaneGeometry for video (supports shader material)
+                    const geometry = new THREE.PlaneGeometry(1, 1);
+                    marker = new THREE.Mesh(geometry, spriteMaterial);
+                    marker.userData.isVideoMesh = true;
+                } else {
+                    // Use Sprite for static images
+                    marker = new THREE.Sprite(spriteMaterial);
+                    marker.userData.isVideoMesh = false;
+                }
+                
+                // Position marker above surface
                 const direction = position.clone().normalize();
-                sprite.position.copy(position).add(direction.multiplyScalar(0.015));
+                marker.position.copy(position).add(direction.multiplyScalar(0.015));
                 
-                // Adjust scale
-                const scaleX = baseSize * 2;
-                const scaleY = baseSize * 2.35; // Taller for base
-                sprite.scale.set(scaleX, scaleY, 1);
+                // Adjust scale - AI images are square, canvas ones are taller
+                let scaleX, scaleY;
+                if (canvas === null) {
+                    // AI images are square (1:1)
+                    scaleX = baseSize * 2;
+                    scaleY = baseSize * 2;
+                } else {
+                    // Canvas icons - doors are circular (no base), regular icons are taller (have base)
+                    scaleX = baseSize * 2;
+                    scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35;
+                }
+                marker.scale.set(scaleX, scaleY, 1);
                 
-                // Store data on sprite for click handling and animation
-                sprite.userData = loc;
-                sprite.userData.baseSize = baseSize;
-                sprite.userData.iconConfig = config;
-                sprite.userData.iconCanvas = canvas; // Store canvas for animation updates
+                // Store data on marker for click handling and animation
+                marker.userData = { ...marker.userData, ...loc };
+                marker.userData.baseSize = baseSize;
+                marker.userData.iconConfig = config;
+                marker.userData.iconCanvas = canvas; // null for AI images, canvas for drawn ones
+                marker.userData.useAIPorthole = (canvas === null); // Track which mode based on actual usage
                 
                 // Initialize animation state - doors closed, regular open
+                const initialOpen = loc.isDoor ? 0 : 1;
                 markerAnimations.set(loc.id, {
                     openAmount: initialOpen,
                     targetOpen: initialOpen,
@@ -3961,8 +4310,8 @@
                     callback: null
                 });
                 
-                globe.add(sprite);
-                markers.push(sprite);
+                globe.add(marker);
+                markers.push(marker);
             });
         }
 
@@ -4045,6 +4394,7 @@
             pendingRotationY = targetY;
             pendingRotationX = lat * (Math.PI / 180);
             pendingLocation = loc;
+            pendingZoomLocation = loc; // Track for dynamic zoom
             
             console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2));
         }
@@ -4053,57 +4403,11 @@
         let pendingRotationY = 0;
         let pendingRotationX = 0;
         let pendingLocation = null;
+        let pendingZoomLocation = null; // Track location for dynamic zoom calculation
 
         function triggerBounce(locationId) {
             bouncingMarkerId = locationId;
             bounceStartTime = Date.now();
-        }
-        
-        // Disney sparkle effect
-        function createSparkles(x, y) {
-            const container = document.createElement('div');
-            container.className = 'sparkle-container';
-            container.style.left = x + 'px';
-            container.style.top = y + 'px';
-            document.body.appendChild(container);
-            
-            // Create arc of sparkles (Disney swoosh)
-            const numSparkles = 12;
-            for (let i = 0; i < numSparkles; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.className = 'sparkle';
-                
-                // Arc pattern around click point
-                const angle = (i / numSparkles) * Math.PI * 1.5 - Math.PI * 0.75;
-                const radius = 30 + Math.random() * 20;
-                const sparkleX = Math.cos(angle) * radius;
-                const sparkleY = Math.sin(angle) * radius;
-                
-                sparkle.style.left = sparkleX + 'px';
-                sparkle.style.top = sparkleY + 'px';
-                sparkle.style.animationDelay = (i * 0.04) + 's';
-                sparkle.style.width = (6 + Math.random() * 6) + 'px';
-                sparkle.style.height = sparkle.style.width;
-                
-                container.appendChild(sparkle);
-            }
-            
-            // Add scattered fairy dust
-            for (let i = 0; i < 8; i++) {
-                const dust = document.createElement('div');
-                dust.className = 'sparkle';
-                dust.style.left = (-20 + Math.random() * 40) + 'px';
-                dust.style.top = (-20 + Math.random() * 40) + 'px';
-                dust.style.animationDelay = (0.1 + Math.random() * 0.3) + 's';
-                dust.style.width = (3 + Math.random() * 4) + 'px';
-                dust.style.height = dust.style.width;
-                container.appendChild(dust);
-            }
-            
-            // Remove container after animation
-            setTimeout(() => {
-                container.remove();
-            }, 1200);
         }
 
         // Track current location for next door navigation
@@ -4115,6 +4419,8 @@
                 
                 // Hide tooltip when opening panel
                 hideTooltip();
+                
+                // Note: Video playback is handled in click handler, not here
                 
                 const panelImage = document.getElementById('panelImage');
                 panelImage.src = loc.image;
@@ -4258,6 +4564,14 @@
         }
 
         function closePanel() {
+            // Pause video playback if current location has video
+            if (currentLocation && locationVideos[currentLocation.title]) {
+                const video = locationVideos[currentLocation.title];
+                video.pause();
+                video.currentTime = 0; // Reset to beginning for next open
+                console.log('Paused and reset video for:', currentLocation.title);
+            }
+            
             sidePanel.classList.remove('open');
             sidePanel.classList.remove('expanded');
             panelIsOpen = false; // Resume auto-rotation
@@ -4398,9 +4712,6 @@
                     if (marker.userData.title) {
                         const loc = marker.userData;
                         
-                        // Trigger Disney sparkle effect at tap position
-                        createSparkles(touch.clientX, touch.clientY);
-                        
                         // Check if we're switching to a different location
                         const isSwitching = currentLocation && currentLocation.id !== loc.id;
                         
@@ -4420,34 +4731,61 @@
                             pendingRotationY = getTargetY(lon);
                             pendingRotationX = lat * (Math.PI / 180);
                             pendingLocation = null;
+                            pendingZoomLocation = loc; // Track for dynamic zoom
                         }
+                        
+                        // Check if this location has a video animation
+                        const hasVideo = locationVideos[loc.title];
+                        
+                        // Helper function to open panel (possibly after video)
+                        const openPanelForLocation = () => {
+                            if (hasVideo) {
+                                // Play video first, then open panel when it ends
+                                const video = locationVideos[loc.title];
+                                video.currentTime = 0; // Reset to start
+                                
+                                // Set up one-time listener for when video ends
+                                const onVideoEnd = () => {
+                                    video.removeEventListener('ended', onVideoEnd);
+                                    openPanel(loc);
+                                };
+                                video.addEventListener('ended', onVideoEnd);
+                                
+                                // Start the video
+                                video.play();
+                                console.log('Playing video animation for:', loc.title);
+                            } else {
+                                // No video - open panel immediately
+                                openPanel(loc);
+                            }
+                        };
                         
                         // Doors have iris animation, regular icons don't
                         if (loc.isDoor) {
                             const currentOpen = getMarkerOpenAmount(loc.id);
                             
                             if (currentOpen < 0.5) {
-                                // Iris is closed - open it and then open panel
+                                // Iris is closed - open it and then handle video/panel
                                 const delay = isSwitching ? 600 : 0;
                                 setTimeout(() => {
                                     startIrisAnimation(loc.id, 1, () => {
-                                        openPanel(loc);
+                                        openPanelForLocation();
                                     });
                                 }, delay);
                             } else {
-                                // Iris already open - just open/refresh panel
+                                // Iris already open - handle video/panel
                                 if (isSwitching) {
-                                    setTimeout(() => openPanel(loc), 800);
+                                    setTimeout(() => openPanelForLocation(), 800);
                                 } else {
-                                    openPanel(loc);
+                                    openPanelForLocation();
                                 }
                             }
                         } else {
-                            // Regular icons - no iris animation, just open panel
+                            // Regular icons - no iris animation
                             if (isSwitching) {
-                                setTimeout(() => openPanel(loc), 800);
+                                setTimeout(() => openPanelForLocation(), 800);
                             } else {
-                                openPanel(loc);
+                                openPanelForLocation();
                             }
                         }
                     }
@@ -4481,9 +4819,6 @@
             if (hoveredMarker) {
                 const loc = hoveredMarker.userData;
                 
-                // Trigger Disney sparkle effect at click position
-                createSparkles(event.clientX, event.clientY);
-                
                 // Check if we're switching to a different location
                 const isSwitching = currentLocation && currentLocation.id !== loc.id;
                 
@@ -4503,34 +4838,61 @@
                     pendingRotationY = getTargetY(lon);
                     pendingRotationX = lat * (Math.PI / 180);
                     pendingLocation = null;
+                    pendingZoomLocation = loc; // Track for dynamic zoom
                 }
+                
+                // Check if this location has a video animation
+                const hasVideo = locationVideos[loc.title];
+                
+                // Helper function to open panel (possibly after video)
+                const openPanelForLocation = () => {
+                    if (hasVideo) {
+                        // Play video first, then open panel when it ends
+                        const video = locationVideos[loc.title];
+                        video.currentTime = 0; // Reset to start
+                        
+                        // Set up one-time listener for when video ends
+                        const onVideoEnd = () => {
+                            video.removeEventListener('ended', onVideoEnd);
+                            openPanel(loc);
+                        };
+                        video.addEventListener('ended', onVideoEnd);
+                        
+                        // Start the video
+                        video.play();
+                        console.log('Playing video animation for:', loc.title);
+                    } else {
+                        // No video - open panel immediately
+                        openPanel(loc);
+                    }
+                };
                 
                 // Doors have iris animation, regular icons don't
                 if (loc.isDoor) {
                     const currentOpen = getMarkerOpenAmount(loc.id);
                     
                     if (currentOpen < 0.5) {
-                        // Iris is closed - open it and then open panel
+                        // Iris is closed - open it and then handle video/panel
                         const delay = isSwitching ? 600 : 0;
                         setTimeout(() => {
                             startIrisAnimation(loc.id, 1, () => {
-                                openPanel(loc);
+                                openPanelForLocation();
                             });
                         }, delay);
                     } else {
-                        // Iris already open - just open/refresh panel
+                        // Iris already open - handle video/panel
                         if (isSwitching) {
-                            setTimeout(() => openPanel(loc), 800);
+                            setTimeout(() => openPanelForLocation(), 800);
                         } else {
-                            openPanel(loc);
+                            openPanelForLocation();
                         }
                     }
                 } else {
-                    // Regular icons - no iris animation, just open panel
+                    // Regular icons - no iris animation
                     if (isSwitching) {
-                        setTimeout(() => openPanel(loc), 800);
+                        setTimeout(() => openPanelForLocation(), 800);
                     } else {
-                        openPanel(loc);
+                        openPanelForLocation();
                     }
                 }
             }
@@ -4597,14 +4959,16 @@
                     
                     // Highlight marker - scale up from original size
                     const baseScale = marker.userData.baseSize * 2;
-                    const baseScaleY = marker.userData.baseSize * 2.2;
+                    const useAI = marker.userData.useAIPorthole;
+                    const baseScaleY = useAI ? marker.userData.baseSize * 2 : (marker.userData.isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
                     marker.scale.set(baseScale * 1.3, baseScaleY * 1.3, 1);
                 }
             } else {
                 if (hoveredMarker) {
                     // Reset to original size
                     const baseScale = hoveredMarker.userData.baseSize * 2;
-                    const baseScaleY = hoveredMarker.userData.baseSize * 2.2;
+                    const useAI = hoveredMarker.userData.useAIPorthole;
+                    const baseScaleY = useAI ? hoveredMarker.userData.baseSize * 2 : (hoveredMarker.userData.isDoor ? hoveredMarker.userData.baseSize * 2 : hoveredMarker.userData.baseSize * 2.2);
                     hoveredMarker.scale.set(baseScale, baseScaleY, 1);
                 }
                 hoveredMarker = null;
@@ -4678,13 +5042,16 @@
                             targetRotationX = pendingRotationX;
                             transitionPhase = 'zoom-in';
                             transitionStartTime = Date.now();
+                            
+                            // Calculate zoom distance based on target location's density
+                            currentZoomInDistance = getZoomDistanceForLocation(pendingZoomLocation || pendingLocation);
                         }
                     } else if (transitionPhase === 'zoom-in') {
                         const progress = Math.min(elapsed / zoomInDuration, 1);
                         const easeOut = 1 - Math.pow(1 - progress, 3);
                         
-                        // Zoom in
-                        camera.position.z = zoomOutDistance - (zoomOutDistance - zoomInDistance) * easeOut;
+                        // Zoom in (closer for dense areas)
+                        camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
                         
                         // Check if globe rotation has settled (close enough to target)
                         const rotationSettled = 
@@ -4694,7 +5061,8 @@
                         if (progress >= 1 && rotationSettled) {
                             isTransitioning = false;
                             transitionPhase = 'none';
-                            camera.position.z = zoomInDistance;
+                            camera.position.z = currentZoomInDistance;
+                            pendingZoomLocation = null;
                             
                             // Trigger bounce animation for the target location
                             if (pendingLocation) {
@@ -4725,13 +5093,22 @@
             // Marker animations
             markers.forEach((marker, i) => {
                 const isDoor = marker.userData.isDoor;
+                const useAI = marker.userData.useAIPorthole;
                 const baseScale = marker.userData.baseSize * 2; // Original scale
-                const baseScaleY = marker.userData.baseSize * 2.2; // Taller for snow globe base
+                // AI portholes are square, canvas ones have base
+                const baseScaleY = useAI ? marker.userData.baseSize * 2 : (isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
                 const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
+                
+                // Billboard video meshes to face camera
+                if (marker.userData.isVideoMesh) {
+                    marker.lookAt(camera.position);
+                }
                 
                 // Ensure marker is visible and fully opaque
                 marker.visible = true;
-                marker.material.opacity = 1.0;
+                if (marker.material.opacity !== undefined) {
+                    marker.material.opacity = 1.0;
+                }
                 
                 if (isBouncing && bounceStartTime) {
                     // Bounce animation - up and down with decreasing amplitude
@@ -4740,9 +5117,9 @@
                     
                     if (progress < 1) {
                         // Bouncing: scale pulses with decreasing amplitude
-                        const bounceFreq = 8; // Number of bounces
+                        const bounceFreq = 1; // Single bounce
                         const decay = 1 - progress; // Decreasing amplitude
-                        const bounce = 1 + Math.sin(progress * Math.PI * bounceFreq) * 0.4 * decay;
+                        const bounce = 1 + Math.sin(progress * Math.PI * bounceFreq) * 0.3 * decay;
                         marker.scale.set(baseScale * bounce, baseScaleY * bounce, 1);
                     } else {
                         // Animation complete
@@ -4750,13 +5127,28 @@
                         bounceStartTime = null;
                         marker.scale.set(baseScale, baseScaleY, 1);
                     }
-                } else if (isDoor && !isBouncing) {
-                    // Subtle pulse effect for doors
-                    const pulse = 1 + Math.sin(Date.now() * 0.003 + i) * 0.1;
-                    if (!hoveredMarker || hoveredMarker !== marker) {
+                } else if (!hoveredMarker || hoveredMarker !== marker) {
+                    // Check if this marker's panel is currently open - if so, stay still
+                    const isPanelOpenForThis = currentLocation && currentLocation.id === marker.userData.id;
+                    
+                    if (isPanelOpenForThis) {
+                        // Panel is open for this location - no animation, stay at base scale
+                        marker.scale.set(baseScale, baseScaleY, 1);
+                    } else if (isDoor) {
+                        // Doors: more pronounced pulse (only when panel not open)
+                        const pulse = 1 + Math.sin(Date.now() * 0.003 + i) * 0.1;
                         marker.scale.set(baseScale * pulse, baseScaleY * pulse, 1);
+                    } else if (useAI) {
+                        // AI portholes: very gentle breathing (slower, subtler)
+                        const breath = 1 + Math.sin(Date.now() * 0.0015 + i * 0.5) * 0.03;
+                        marker.scale.set(baseScale * breath, baseScaleY * breath, 1);
                     }
                 }
+            });
+            
+            // Update video textures each frame
+            videoTextures.forEach(({ texture }) => {
+                texture.needsUpdate = true;
             });
             
             renderer.render(scene, camera);
