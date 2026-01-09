@@ -2115,6 +2115,17 @@
                 shortDesc: "Party island with a secret peaceful side.",
                 fullDesc: "Everyone knows Ibiza for the clubs. But the island has another side.\n\nThe old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.",
                 image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767738680/IMG_20140610_113551_fvskrb.jpg"
+            },
+            {
+                id: 40,
+                title: "Manaus, Brazil",
+                coords: [-3.1190, -60.0217],
+                tag: "Opera in the Jungle",
+                icon: "🎭",
+                isDoor: false,
+                shortDesc: "Where the Amazon meets high culture.",
+                fullDesc: "In the heart of the Amazon rainforest, there's an opera house.\n\nThe Teatro Amazonas was built during the rubber boom, when Manaus was one of the richest cities on Earth. Italian marble, French chandeliers, English steel—all shipped up the river. I performed there, where Caruso once sang, surrounded by jungle on all sides.\n\nThe meeting of the waters nearby—where the black Rio Negro meets the sandy Amazon—they flow side by side without mixing for miles. Like two worlds refusing to blend.",
+                image: ""
             }
         ];
 
@@ -2148,8 +2159,8 @@
         let transitionStartTime = null;
         let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
         let targetCameraZ = 1.8;
-        const zoomOutDistance = 4.5; // Zoomed out more
-        const zoomInDistance = 2.1;  // Zoomed in closer to locations (15% more)
+        const zoomOutDistance = 4.05; // Zoomed out (10% closer than before)
+        const zoomInDistance = 1.89;  // Zoomed in closer to locations (10% closer)
         const zoomOutDuration = 600;  // ms
         const zoomInDuration = 800;   // ms
 
@@ -2430,12 +2441,13 @@
             "Vanuatu": { style: 'paradise', symbol: 'coffee', color: '#6f4e37', accent: '#d4a574' },
             "Airlie Beach, Australia": { style: 'paradise', symbol: 'sun-hot', color: '#ff6b6b', accent: '#ffa500' },
             "Ibiza, Spain": { style: 'paradise', symbol: 'dj', color: '#ff6b6b', accent: '#ffd700' },
+            "Manaus, Brazil": { style: 'culture', symbol: 'opera', color: '#f5e6d3', accent: '#8b4513' },
             // Adventure - Remote
-            "Ushuaia, Argentina": { style: 'adventure', symbol: 'compass', color: '#607080', accent: '#d4a574' },
-            "Falkland Islands": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
-            "South Georgia": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffffff' },
+            "Ushuaia, Argentina": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
+            "Falkland Islands": { style: 'adventure', symbol: 'beer', color: '#d4a574', accent: '#f5f0e8' },
+            "South Georgia": { style: 'adventure', symbol: 'whalingboat', color: '#8b4513', accent: '#a0522d' },
             "Lemaire Channel, Antarctica": { style: 'adventure', symbol: 'iceberg', color: '#a0c0d0', accent: '#ffffff' },
-            "Port Lockroy, Antarctica": { style: 'adventure', symbol: 'penguin', color: '#4a90a0', accent: '#ffffff' },
+            "Port Lockroy, Antarctica": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
             // Culture - Food, Wine, Music, Glamour (unique boats)
             "Portofino, Italy": { style: 'culture', symbol: 'yacht', color: '#e07a5f', accent: '#2d5a6a' },
             "Akaroa, New Zealand": { style: 'culture', symbol: 'wine', color: '#722f37', accent: '#d4a574' },
@@ -2530,62 +2542,25 @@
         
         // Draw brass porthole frame
         function drawPortholeFrame(ctx, cx, cy, radius) {
-            // Outer brass ring
-            ctx.strokeStyle = '#8a6a3a';
-            ctx.lineWidth = 6;
-            ctx.beginPath();
-            ctx.arc(cx, cy, radius + 2, 0, Math.PI * 2);
-            ctx.stroke();
-            
-            // Inner brass ring (lighter gradient)
+            // Minimal elegant brass ring
             const brassGrad = ctx.createLinearGradient(cx - radius, cy - radius, cx + radius, cy + radius);
             brassGrad.addColorStop(0, '#e8c9a0');
-            brassGrad.addColorStop(0.3, '#d4a574');
+            brassGrad.addColorStop(0.3, '#d4af37');
             brassGrad.addColorStop(0.7, '#b8956a');
             brassGrad.addColorStop(1, '#8a6a3a');
             
             ctx.strokeStyle = brassGrad;
-            ctx.lineWidth = 3;
+            ctx.lineWidth = 2;
             ctx.beginPath();
-            ctx.arc(cx, cy, radius + 2, 0, Math.PI * 2);
+            ctx.arc(cx, cy, radius, 0, Math.PI * 2);
             ctx.stroke();
             
-            // Highlight
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+            // Subtle highlight
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
             ctx.lineWidth = 1;
             ctx.beginPath();
-            ctx.arc(cx, cy, radius + 4, -Math.PI * 0.7, -Math.PI * 0.2);
+            ctx.arc(cx, cy, radius - 1, -Math.PI * 0.7, -Math.PI * 0.2);
             ctx.stroke();
-            
-            // Rivets
-            const rivetCount = 8;
-            for (let i = 0; i < rivetCount; i++) {
-                const angle = (i / rivetCount) * Math.PI * 2 - Math.PI / 2;
-                const rx = cx + Math.cos(angle) * (radius + 2);
-                const ry = cy + Math.sin(angle) * (radius + 2);
-                
-                // Rivet base
-                ctx.fillStyle = '#6a5030';
-                ctx.beginPath();
-                ctx.arc(rx, ry, 4, 0, Math.PI * 2);
-                ctx.fill();
-                
-                // Rivet top
-                const rivetGrad = ctx.createRadialGradient(rx - 1, ry - 1, 0, rx, ry, 3);
-                rivetGrad.addColorStop(0, '#d4a574');
-                rivetGrad.addColorStop(0.5, '#b8956a');
-                rivetGrad.addColorStop(1, '#8a6a3a');
-                ctx.fillStyle = rivetGrad;
-                ctx.beginPath();
-                ctx.arc(rx, ry, 3, 0, Math.PI * 2);
-                ctx.fill();
-                
-                // Rivet highlight
-                ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
-                ctx.beginPath();
-                ctx.arc(rx - 0.5, ry - 0.5, 1, 0, Math.PI * 2);
-                ctx.fill();
-            }
         }
         
         // Draw brass base
@@ -2735,7 +2710,11 @@
             const accent = config.accent || '#8b6914';
             const symbol = config.symbol || 'default';
             
-            // Scale icons to fit in porthole (sidebar uses 64x64, porthole needs ~70x70 centered)
+            // Scale icons to 150% for better visibility
+            ctx.translate(cx, cy);
+            ctx.scale(1.5, 1.5);
+            ctx.translate(-cx, -cy);
+            
             renderIconSymbol(ctx, cx, cy, symbol, color, accent);
             
             ctx.restore();
@@ -3048,6 +3027,92 @@
                     ctx.moveTo(cx - 2, cy - 6);
                     ctx.lineTo(cx, cy - 2);
                     ctx.lineTo(cx + 2, cy - 6);
+                    ctx.fill();
+                    break;
+                
+                case 'grave':
+                    // Celtic cross for Shackleton's grave
+                    ctx.fillStyle = color;
+                    // Vertical beam
+                    ctx.fillRect(cx - 2, cy - 12, 4, 22);
+                    // Horizontal beam
+                    ctx.fillRect(cx - 8, cy - 6, 16, 4);
+                    // Circle behind cross intersection
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(cx, cy - 4, 6, 0, Math.PI * 2);
+                    ctx.stroke();
+                    // Small base
+                    ctx.fillRect(cx - 5, cy + 8, 10, 4);
+                    break;
+                
+                case 'whalingboat':
+                    // Rusty old whaling boat - weathered and listing
+                    ctx.fillStyle = color; // rusty brown
+                    // Hull - slightly tilted/listing
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 14, cy + 2);
+                    ctx.lineTo(cx - 12, cy + 10);
+                    ctx.lineTo(cx + 10, cy + 12);
+                    ctx.lineTo(cx + 14, cy + 4);
+                    ctx.closePath();
+                    ctx.fill();
+                    // Rust patches
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.ellipse(cx - 4, cy + 7, 3, 2, 0.2, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(cx + 6, cy + 6, 2, 1.5, -0.1, 0, Math.PI * 2);
+                    ctx.fill();
+                    // Broken mast - tilted
+                    ctx.fillStyle = '#5c4033';
+                    ctx.save();
+                    ctx.translate(cx, cy);
+                    ctx.rotate(-0.15);
+                    ctx.fillRect(-1, -14, 2, 16);
+                    ctx.restore();
+                    // Tattered remnant of rigging
+                    ctx.strokeStyle = '#4a3728';
+                    ctx.lineWidth = 1;
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 1, cy - 10);
+                    ctx.lineTo(cx + 8, cy + 2);
+                    ctx.stroke();
+                    break;
+                
+                case 'beer':
+                    // Beer mug with foam
+                    ctx.fillStyle = color; // amber/golden
+                    // Mug body
+                    ctx.beginPath();
+                    ctx.moveTo(cx - 8, cy - 6);
+                    ctx.lineTo(cx - 7, cy + 10);
+                    ctx.lineTo(cx + 7, cy + 10);
+                    ctx.lineTo(cx + 8, cy - 6);
+                    ctx.closePath();
+                    ctx.fill();
+                    // Handle
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = 3;
+                    ctx.beginPath();
+                    ctx.arc(cx + 12, cy + 2, 5, -Math.PI * 0.5, Math.PI * 0.5);
+                    ctx.stroke();
+                    // Foam top
+                    ctx.fillStyle = accent; // white/cream foam
+                    ctx.beginPath();
+                    ctx.ellipse(cx - 4, cy - 8, 5, 4, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(cx + 3, cy - 7, 5, 4, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(cx, cy - 10, 4, 3, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    // Foam drip
+                    ctx.beginPath();
+                    ctx.ellipse(cx - 6, cy - 4, 2, 3, 0.2, 0, Math.PI * 2);
                     ctx.fill();
                     break;
                     
@@ -3506,6 +3571,39 @@
                     ctx.fillStyle = color;
                     ctx.fillRect(cx - 2, cy - 2, 4, 3);
                     break;
+                
+                case 'opera':
+                    // Theater/opera masks - comedy and tragedy
+                    // Happy mask (left, slightly up)
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.ellipse(cx - 7, cy - 2, 9, 11, -0.2, 0, Math.PI * 2);
+                    ctx.fill();
+                    // Happy face details
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx - 10, cy - 5, 2, 0, Math.PI * 2); // left eye
+                    ctx.arc(cx - 4, cy - 6, 2, 0, Math.PI * 2);  // right eye
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(cx - 7, cy + 2, 4, 0, Math.PI); // smile
+                    ctx.stroke();
+                    
+                    // Sad mask (right, slightly down)
+                    ctx.fillStyle = color;
+                    ctx.beginPath();
+                    ctx.ellipse(cx + 7, cy + 2, 9, 11, 0.2, 0, Math.PI * 2);
+                    ctx.fill();
+                    // Sad face details
+                    ctx.fillStyle = accent;
+                    ctx.beginPath();
+                    ctx.arc(cx + 4, cy - 1, 2, 0, Math.PI * 2);  // left eye
+                    ctx.arc(cx + 10, cy, 2, 0, Math.PI * 2);     // right eye
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(cx + 7, cy + 8, 4, Math.PI, 0); // frown
+                    ctx.stroke();
+                    break;
                     
                 default:
                     // Fallback - simple circle with pin
@@ -3556,10 +3654,8 @@
             // === LAYER 3: Iris aperture (only for doors) ===
             if (isDoor) {
                 drawIrisAperture(ctx, cx, cy, radius - 3, 1 - openAmount);
-            } else {
-                // Smoky glass bubble overlay for regular icons
-                drawSmokyGlassBubble(ctx, cx, cy, radius - 3);
             }
+            // No glass overlay for regular icons - icons are now fully visible
             
             // === LAYER 4: Brass porthole frame ===
             drawPortholeFrame(ctx, cx, cy, radius);
@@ -3791,12 +3887,93 @@
                 "Ibiza, Spain": 1.10,
                 "Alexandria, Egypt": 1.10,
                 "Piran, Slovenia": 1.10,
-                "Tel Aviv, Israel": 1.10
+                "Tel Aviv, Israel": 1.10,
+                "Dubrovnik, Croatia": 0.85,
+                "Kotor, Montenegro": 0.85
+            };
+            
+            // Offset positions for overlapping markers (lat/lng offset)
+            const markerOffsets = {
+                "Port Lockroy, Antarctica": { latOffset: 1.8, lngOffset: 2.5, hasAnchorLine: true },
+                "Kotor, Montenegro": { latOffset: -1.2, lngOffset: 1.5, hasAnchorLine: true }
             };
             
             locations.forEach((loc, index) => {
-                const position = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
+                // Check for offset
+                const offset = markerOffsets[loc.title];
+                const displayLat = offset ? loc.coords[0] + offset.latOffset : loc.coords[0];
+                const displayLng = offset ? loc.coords[1] + offset.lngOffset : loc.coords[1];
+                
+                const position = latLonToVector3(displayLat, displayLng, 1.0);
+                const truePosition = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
                 const config = getIconConfig(loc.title);
+                
+                // Create anchor line if this marker is offset
+                if (offset && offset.hasAnchorLine) {
+                    // More visible golden compass line
+                    const lineMaterial = new THREE.LineDashedMaterial({
+                        color: 0xd4af37,
+                        dashSize: 0.015,
+                        gapSize: 0.008,
+                        linewidth: 3,
+                        transparent: true,
+                        opacity: 0.9
+                    });
+                    
+                    // Create curved line points
+                    const midPoint = new THREE.Vector3().addVectors(position, truePosition).multiplyScalar(0.5);
+                    midPoint.normalize().multiplyScalar(1.05); // Lift middle above globe surface
+                    
+                    const curve = new THREE.QuadraticBezierCurve3(truePosition.clone().multiplyScalar(1.015), midPoint, position.clone().multiplyScalar(1.015));
+                    const points = curve.getPoints(30);
+                    
+                    const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
+                    const anchorLine = new THREE.Line(lineGeometry, lineMaterial);
+                    anchorLine.computeLineDistances();
+                    globe.add(anchorLine);
+                    
+                    // Add a solid line underneath for more visibility
+                    const solidLineMaterial = new THREE.LineBasicMaterial({
+                        color: 0x8a6a3a,
+                        transparent: true,
+                        opacity: 0.5
+                    });
+                    const solidLine = new THREE.Line(lineGeometry.clone(), solidLineMaterial);
+                    globe.add(solidLine);
+                    
+                    // Larger, more visible anchor/pin at true position
+                    const anchorCanvas = document.createElement('canvas');
+                    anchorCanvas.width = 48;
+                    anchorCanvas.height = 48;
+                    const actx = anchorCanvas.getContext('2d');
+                    
+                    // Draw a compass pin marker
+                    actx.fillStyle = '#d4af37';
+                    actx.beginPath();
+                    actx.arc(24, 20, 10, 0, Math.PI * 2);
+                    actx.fill();
+                    actx.beginPath();
+                    actx.moveTo(24, 30);
+                    actx.lineTo(18, 44);
+                    actx.lineTo(30, 44);
+                    actx.closePath();
+                    actx.fill();
+                    // Inner dot
+                    actx.fillStyle = '#1a2744';
+                    actx.beginPath();
+                    actx.arc(24, 20, 5, 0, Math.PI * 2);
+                    actx.fill();
+                    
+                    const anchorTexture = new THREE.CanvasTexture(anchorCanvas);
+                    const anchorSprite = new THREE.Sprite(new THREE.SpriteMaterial({ 
+                        map: anchorTexture, 
+                        transparent: true 
+                    }));
+                    const trueDir = truePosition.clone().normalize();
+                    anchorSprite.position.copy(truePosition).add(trueDir.multiplyScalar(0.02));
+                    anchorSprite.scale.set(0.035, 0.035, 1);
+                    globe.add(anchorSprite);
+                }
                 
                 // Get density-based scale factor
                 const densityScale = densityFactors.get(loc.id) || 1.0;
@@ -4541,8 +4718,8 @@
                 // Easing function for smooth deceleration
                 const easeOutCubic = 1 - Math.pow(1 - progress, 3);
                 
-                // Zoom from far (8) to close (1.8)
-                camera.position.z = 8 - (6.2 * easeOutCubic);
+                // Zoom from far (8) to close (1.62) - 10% closer
+                camera.position.z = 8 - (6.38 * easeOutCubic);
                 
                 if (progress >= 1) {
                     introComplete = true;
