@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Shiplife - An Interactive Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">Loading globe...</div>
+    </div>
+
+    <!-- Stars background -->
+    <canvas class="stars" id="stars"></canvas>
+
+    <!-- Three.js Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo"><a href="https://derrickhudson.com" style="color: inherit; text-decoration: none;">Ship<span>life</span></a></div>
+        <div class="tagline">12 Years at Sea • 60 Countries • Spanning All 7 Continents</div>
+    </div>
+
+    <!-- Centered name link at top -->
+    <div class="center-name"><a href="https://derrickhudson.com"><span>Derrick</span>Hudson.com</a></div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Location List -->
+    <div class="location-list" id="locationList"></div>
+
+    <!-- Sidebar Scroll Hint -->
+    <div class="sidebar-scroll-hint" id="sidebarScrollHint">
+        <span class="scroll-arrow">↓</span>
+        <span>Scroll for more locations</span>
+    </div>
+
+    <!-- Copyright below left panel -->
+    <div class="left-copyright">© Derrick Hudson. All rights reserved.</div>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip">
+        <div class="tooltip-tag" id="tooltipTag"></div>
+        <div class="tooltip-title" id="tooltipTitle"></div>
+        <div class="tooltip-desc" id="tooltipDesc"></div>
+    </div>
+
+    <!-- Side Panel -->
+    <div class="side-panel" id="sidePanel">
+        <button class="panel-close" onclick="closePanel()">×</button>
+
+        <!-- Three Doors Navigation -->
+        <div class="three-doors-nav" id="threeDoorsNav">
+            <div class="door-nav-item">
+                <span class="door-nav-label" id="doorLabel1"></span>
+                <button class="door-nav-btn" data-door="1" onclick="goToDoor(1)" title="Door #1: Escape">
+                    🚪
+                    <span class="door-number">1</span>
+                </button>
+            </div>
+            <div class="door-nav-item">
+                <span class="door-nav-label" id="doorLabel2"></span>
+                <button class="door-nav-btn" data-door="2" onclick="goToDoor(2)" title="Door #2: First Contract">
+                    🚪
+                    <span class="door-number">2</span>
+                </button>
+            </div>
+            <div class="door-nav-item">
+                <span class="door-nav-label" id="doorLabel3"></span>
+                <button class="door-nav-btn" data-door="3" onclick="goToDoor(3)" title="Door #3: Full Circle">
+                    🚪
+                    <span class="door-number">3</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="panel-image-container">
+            <img class="panel-image" id="panelImage" src="" alt="">
+            <div class="panel-image-caption" id="panelImageCaption"></div>
+        </div>
+        <div class="panel-content">
+            <div class="panel-tag" id="panelTag"></div>
+            <h2 class="panel-title" id="panelTitle"></h2>
+            <div class="panel-preview" id="panelPreview"></div>
+            <div class="panel-text" id="panelText"></div>
+            <div class="swipe-hint">↑ Swipe up for full story</div>
+            <div class="next-door-hint" id="nextDoorHint" onclick="goToNextDoor()">
+                <span class="door-icon">🚪</span>
+                <span class="door-text" id="nextDoorText">Continue to Door #2</span>
+            </div>
+            <div class="locations-hint" onclick="viewAllLocations()">
+                <span class="hint-arrow">↓</span>
+                <span class="hint-text">View All Locations</span>
+                <span class="hint-count" id="locationsCount">24 places</span>
+            </div>
+            <a class="back-to-globe" onclick="closePanel()">back to globe</a>
+            <div class="copyright">© Derrick Hudson. All rights reserved.</div>
+        </div>
+    </div>
+
+    <!-- Scroll hint at bottom (outside panel for fixed positioning) -->
+    <div class="scroll-hint-bottom" id="scrollHintBottom">
+        <div class="scroll-hint-bottom-inner">
+            <span class="scroll-arrow">↓</span>
+            <span>Scroll to read</span>
+        </div>
+    </div>
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <p class="desktop-instructions">Drag to rotate • Scroll to zoom • Click a location to explore</p>
+        <p class="mobile-instructions">Drag to rotate • Pinch to zoom • Tap a location to explore</p>
+    </div>
+
+    <!-- Background Music for Story Panels -->
+    <audio id="backgroundMusic" preload="none"></audio>
+
+    <!-- Lightbox for full-size images -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Full size image" id="lightboxImage">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- Director's Commentary Modal -->
+    <div class="commentary-modal-overlay" id="commentaryModal" onclick="closeCommentaryModal(event)">
+        <div class="commentary-modal" onclick="event.stopPropagation()">
+            <div class="commentary-header">
+                <span class="commentary-icon">🎬</span>
+                <span class="commentary-label">Director's Commentary</span>
+            </div>
+            <h4 class="commentary-title">How to Make an Impression</h4>
+            <p>The assistant cruise director gave me the grand tour and dropped me at my cabin. I flipped through my folder full of welcome papers - induction schedules, safety protocols, crew mess hours. <em>I hope I can find my way back to...</em> where was it again?</p>
+            <p>"You'll be fine. See you at 14:30 for Induction 1."</p>
+            <p>The door clicked shut. I wanted to call home. Tell everyone I'd made it. The phone on the wall looked simple enough.</p>
+            <p><span class="story-emphasis">Here's what I understood about ship communication systems:</span> nothing.</p>
+            <p><span class="story-emphasis">Here's what I understood about maritime hierarchy and protocol:</span> less than nothing.</p>
+            <p>Let me paint you a picture of embarkation day on a cruise ship. Two thousand passengers are boarding. Luggage is being sorted and delivered to 800+ cabins. The kitchen is prepping for the first seating. Safety officers are running equipment checks. The entertainment staff is rehearsing the welcome show.</p>
+            <p>And on the bridge - the nerve center of the entire operation - the Captain is coordinating with harbor pilots, monitoring weather reports, clearing departure procedures, and managing a crew of over 600 people.</p>
+            <p>This is where I come in.</p>
+            <p>So when the phone wouldn't connect, I did what any reasonable person would do. I started mashing zeros like I was trying to win a prize.</p>
+            <p class="zeros">Nothing.</p>
+            <p class="zeros">Zero zero zero.</p>
+            <p class="zeros">Still nothing.</p>
+            <p class="zeros"><em>Zero zero zero zero zero-</em></p>
+            <span class="captain-voice">"Bridge. Captain speaking."</span>
+            <p>I froze.</p>
+            <span class="captain-voice">"...Hello?"</span>
+            <p>I hung up.</p>
+            <span class="rule-one">Rule #1: Do not call the bridge. Ever. Unless someone is actively dying - and even then, there's a chain of command for that.</span>
+            <p class="kicker">I had been aboard for approximately forty-five minutes. But for one beautiful, horrifying moment, I was the guy who made the Captain answer the phone to help the new musician call his mom.</p>
+        </div>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Data (must load first) -->
+    <script src="js/data/config.js"></script>
+    <script src="js/data/galleries.js"></script>
+    <script src="js/data/locations.js"></script>
+
+    <!-- Utilities -->
+    <script src="js/utils.js"></script>
+
+    <!-- Globe -->
+    <script src="js/globe/core.js"></script>
+    <script src="js/globe/markers.js"></script>
+    <script src="js/globe/animation.js"></script>
+
+    <!-- UI -->
+    <script src="js/ui/tooltip.js"></script>
+    <script src="js/ui/panel.js"></script>
+    <script src="js/ui/sidebar.js"></script>
+    <script src="js/ui/lightbox.js"></script>
+    <script src="js/ui/carousel.js"></script>
+    <script src="js/ui/modal.js"></script>
+
+    <!-- Input & Audio -->
+    <script src="js/audio.js"></script>
+    <script src="js/input.js"></script>
+
+    <!-- Main Initialization -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
