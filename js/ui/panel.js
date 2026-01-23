@@ -14,7 +14,11 @@ function triggerBounce(locationId) {
 function openPanel(loc) {
     try {
         currentLocation = loc;
-        
+
+        // Stop any bouncing animation when panel opens
+        bouncingMarkerId = null;
+        bounceStartTime = null;
+
         // Hide tooltip when opening panel
         hideTooltip();
         

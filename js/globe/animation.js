@@ -142,22 +142,14 @@ function animate() {
         }
         
         if (isBouncing && bounceStartTime) {
-            // Bounce animation - up and down with decreasing amplitude
+            // Bounce animation - continuous until clicked
             const elapsed = Date.now() - bounceStartTime;
-            const progress = elapsed / bounceDuration;
-            
-            if (progress < 1) {
-                // Bouncing: scale pulses with decreasing amplitude
-                const bounceFreq = 1; // Single bounce
-                const decay = 1 - progress; // Decreasing amplitude
-                const bounce = 1 + Math.sin(progress * Math.PI * bounceFreq) * 0.3 * decay;
-                marker.scale.set(baseScale * bounce, baseScaleY * bounce, 1);
-            } else {
-                // Animation complete
-                bouncingMarkerId = null;
-                bounceStartTime = null;
-                marker.scale.set(baseScale, baseScaleY, 1);
-            }
+            const cycleDuration = 1600; // Duration of one bounce cycle (slow, gentle)
+            const cycleProgress = (elapsed % cycleDuration) / cycleDuration;
+
+            // Continuous bouncing with larger amplitude (50% scale increase)
+            const bounce = 1 + Math.sin(cycleProgress * Math.PI * 2) * 0.5;
+            marker.scale.set(baseScale * bounce, baseScaleY * bounce, 1);
         } else if (!hoveredMarker || hoveredMarker !== marker) {
             // Check if this marker's panel is currently open - if so, stay still
             const isPanelOpenForThis = currentLocation && currentLocation.id === marker.userData.id;
