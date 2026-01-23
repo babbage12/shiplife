@@ -1,28 +1,44 @@
 function animate() {
     requestAnimationFrame(animate);
     
-    // Cinematic intro - just zoom, globe is already positioned
+    // Cinematic intro - fast spins from space, settle on Toledo
     if (!introComplete) {
         if (!introStartTime) {
             introStartTime = Date.now();
-            // Set globe rotation immediately to Toledo
+            // Start with 4 full rotations ahead of Toledo
+            introStartY = TOLEDO_Y + Math.PI * 8;
+            globe.rotation.y = introStartY;
+            globe.rotation.x = 0.15;
+        }
+
+        const elapsed = Date.now() - introStartTime;
+        const totalDuration = 8400; // ~8.4 seconds (40% slower)
+        const progress = Math.min(elapsed / totalDuration, 1);
+
+        // Easing - fast start, smooth slowdown
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+
+        // Zoom from deep space to final position
+        camera.position.z = 20 - (17.8 * easeOutQuart); // 20 -> 2.2
+
+        // Spin from start position to Toledo
+        globe.rotation.y = introStartY - (introStartY - TOLEDO_Y) * easeOutQuart;
+
+        // Gradually tilt to correct angle
+        globe.rotation.x = 0.15 + (TOLEDO_X - 0.15) * easeOutQuart;
+
+        if (progress >= 1) {
+            // Done - set final values
+            camera.position.z = 2.2;
             globe.rotation.y = TOLEDO_Y;
             globe.rotation.x = TOLEDO_X;
             targetRotationY = TOLEDO_Y;
             targetRotationX = TOLEDO_X;
-        }
-        
-        const elapsed = Date.now() - introStartTime;
-        const progress = Math.min(elapsed / introDuration, 1);
-        
-        // Easing function for smooth deceleration
-        const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-        
-        // Zoom from far (8) to close (1.62) - 10% closer
-        camera.position.z = 8 - (6.38 * easeOutCubic);
-        
-        if (progress >= 1) {
             introComplete = true;
+        } else {
+            // Set targets for smooth handoff
+            targetRotationY = globe.rotation.y;
+            targetRotationX = globe.rotation.x;
         }
     } else {
         // Handle zoom transition animation
@@ -174,7 +190,7 @@ function animate() {
         // 2. Video is paused but we haven't shown the current frame yet (for static display)
         const isPlaying = !video.paused && !video.ended;
         const isReady = video.readyState >= 2;
-        
+
         if (isReady) {
             if (isPlaying) {
                 // Video is playing - update every frame
@@ -187,7 +203,19 @@ function animate() {
             }
         }
     });
-    
+
+    // Update Earth video texture - skip during/after seek events to avoid flash
+    if (window.earthVideo && window.earthTexture) {
+        const v = window.earthVideo;
+        const now = Date.now();
+        const safeToUpdate = v.readyState >= 3 &&
+                            !v.seeking &&
+                            now > (window.earthVideoSafeTime || 0);
+        if (safeToUpdate) {
+            window.earthTexture.needsUpdate = true;
+        }
+    }
+
     renderer.render(scene, camera);
 }
 

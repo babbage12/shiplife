@@ -1124,7 +1124,7 @@ function renderIconSymbol(ctx, cx, cy, symbol, color, accent) {
             ctx.beginPath();
             ctx.arc(cx - 7, cy + 2, 4, 0, Math.PI); // smile
             ctx.stroke();
-            
+
             // Sad mask (right, slightly down)
             ctx.fillStyle = color;
             ctx.beginPath();
@@ -1140,7 +1140,122 @@ function renderIconSymbol(ctx, cx, cy, symbol, color, accent) {
             ctx.arc(cx + 7, cy + 8, 4, Math.PI, 0); // frown
             ctx.stroke();
             break;
-            
+
+        case 'fire':
+            // Flames (for Tierra del Fuego - Land of Fire)
+            ctx.fillStyle = accent;
+            // Outer flame
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 16);
+            ctx.quadraticCurveTo(cx + 12, cy - 6, cx + 10, cy + 8);
+            ctx.quadraticCurveTo(cx + 6, cy + 12, cx, cy + 10);
+            ctx.quadraticCurveTo(cx - 6, cy + 12, cx - 10, cy + 8);
+            ctx.quadraticCurveTo(cx - 12, cy - 6, cx, cy - 16);
+            ctx.fill();
+            // Inner flame
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 10);
+            ctx.quadraticCurveTo(cx + 7, cy - 2, cx + 5, cy + 6);
+            ctx.quadraticCurveTo(cx + 2, cy + 8, cx, cy + 6);
+            ctx.quadraticCurveTo(cx - 2, cy + 8, cx - 5, cy + 6);
+            ctx.quadraticCurveTo(cx - 7, cy - 2, cx, cy - 10);
+            ctx.fill();
+            // Core
+            ctx.fillStyle = '#fff5e0';
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 2, 3, 5, 0, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'volcano':
+            // Snow-capped volcano (like Osorno)
+            ctx.fillStyle = color;
+            // Main cone
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 12);
+            ctx.lineTo(cx - 4, cy - 10);
+            ctx.lineTo(cx + 4, cy - 10);
+            ctx.lineTo(cx + 16, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Snow cap
+            ctx.fillStyle = '#f5f0e8';
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy - 10);
+            ctx.lineTo(cx, cy - 14);
+            ctx.lineTo(cx + 4, cy - 10);
+            ctx.lineTo(cx + 2, cy - 6);
+            ctx.lineTo(cx - 2, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            // Crater glow
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 12, 3, 2, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Smoke wisps
+            ctx.strokeStyle = 'rgba(200, 200, 200, 0.5)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx - 1, cy - 14);
+            ctx.quadraticCurveTo(cx - 3, cy - 18, cx - 1, cy - 20);
+            ctx.moveTo(cx + 1, cy - 14);
+            ctx.quadraticCurveTo(cx + 4, cy - 17, cx + 2, cy - 21);
+            ctx.stroke();
+            break;
+
+        case 'fjord':
+            // Patagonian fjord - mountains with water channel
+            // Left mountain range
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 18, cy + 12);
+            ctx.lineTo(cx - 14, cy - 6);
+            ctx.lineTo(cx - 10, cy - 12);
+            ctx.lineTo(cx - 6, cy - 4);
+            ctx.lineTo(cx - 4, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Right mountain range
+            ctx.beginPath();
+            ctx.moveTo(cx + 4, cy + 12);
+            ctx.lineTo(cx + 6, cy - 2);
+            ctx.lineTo(cx + 10, cy - 10);
+            ctx.lineTo(cx + 14, cy - 4);
+            ctx.lineTo(cx + 18, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Snow caps
+            ctx.fillStyle = '#f5f0e8';
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy - 12);
+            ctx.lineTo(cx - 12, cy - 6);
+            ctx.lineTo(cx - 8, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(cx + 10, cy - 10);
+            ctx.lineTo(cx + 8, cy - 4);
+            ctx.lineTo(cx + 12, cy - 4);
+            ctx.closePath();
+            ctx.fill();
+            // Water channel between mountains
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy + 12);
+            ctx.lineTo(cx - 2, cy);
+            ctx.lineTo(cx + 2, cy);
+            ctx.lineTo(cx + 4, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Mist/atmosphere layer
+            ctx.fillStyle = 'rgba(200, 210, 220, 0.3)';
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 14, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
         default:
             // Fallback - simple circle with pin
             ctx.fillStyle = color;
@@ -1607,12 +1722,12 @@ function createMarkers() {
         "Katakolon, Greece": 0.72,
         "Pylos, Greece": 0.75,
         "Zakynthos, Greece": 0.55,
-        // French Riviera cluster - offset handles spacing
-        "Le Lavandou, France": 0.85,
-        "Monte Carlo, Monaco": 0.85,
-        "San Remo, Italy": 0.50,
-        "St. Tropez, France": 0.85,
-        "Marseille, France": 0.85,
+        // French Riviera cluster - smaller + offset handles spacing
+        "Le Lavandou, France": 0.68,
+        "Monte Carlo, Monaco": 0.68,
+        "San Remo, Italy": 0.40,
+        "St. Tropez, France": 0.68,
+        "Marseille, France": 0.68,
         "Roses, Spain": 0.85,
         // Other Italian
         "Stromboli, Italy": 0.75,
@@ -1637,12 +1752,12 @@ function createMarkers() {
         "Florence, Italy": { latOffset: 0.3, lngOffset: 0.2 },
         "Portovenere, Italy": { latOffset: -0.5, lngOffset: 0.6 },
         "Portofino, Italy": { latOffset: 0.4, lngOffset: -0.3 },
-        // French Riviera - stagger north/south to avoid overlap
-        "Marseille, France": { latOffset: 0.6, lngOffset: -0.3 },
-        "Le Lavandou, France": { latOffset: -0.7, lngOffset: -0.2 },
-        "St. Tropez, France": { latOffset: 0.8, lngOffset: 0.2 },
-        "Monte Carlo, Monaco": { latOffset: -0.6, lngOffset: -0.3 },
-        "San Remo, Italy": { latOffset: -0.5, lngOffset: 0.3 },
+        // French Riviera - stagger north/south to avoid overlap (increased spacing)
+        "Marseille, France": { latOffset: 1.2, lngOffset: -0.6 },
+        "Le Lavandou, France": { latOffset: -1.4, lngOffset: -0.4 },
+        "St. Tropez, France": { latOffset: 1.6, lngOffset: 0.4 },
+        "Monte Carlo, Monaco": { latOffset: -1.2, lngOffset: -0.6 },
+        "San Remo, Italy": { latOffset: -1.0, lngOffset: 0.6 },
         "Roses, Spain": { latOffset: -0.3, lngOffset: 0.2 },
         // Corsica
         "Propriano, Corsica": { latOffset: -0.2, lngOffset: 0.2 },
@@ -1668,7 +1783,15 @@ function createMarkers() {
         "Nafplio, Greece": { latOffset: -0.3, lngOffset: 0.4 },
         "Katakolon, Greece": { latOffset: -0.5, lngOffset: -0.4 },
         "Pylos, Greece": { latOffset: -0.4, lngOffset: 0.3 },
-        "Zakynthos, Greece": { latOffset: 0.4, lngOffset: -0.5 }
+        "Zakynthos, Greece": { latOffset: 0.4, lngOffset: -0.5 },
+        // Patagonia/Antarctica - spread apart
+        "Beagle Channel, Chile": { latOffset: 0.8, lngOffset: -2.5 },
+        "Lemaire Channel, Antarctica": { latOffset: -1.0, lngOffset: 2.0 },
+        "Ushuaia, Argentina": { latOffset: -0.6, lngOffset: 1.0 },
+        "Tierra del Fuego": { latOffset: -0.3, lngOffset: -1.5 },
+        // Indonesia - Bali area
+        "Bali, Indonesia": { latOffset: -0.5, lngOffset: 1.2 },
+        "Celukan Bawang, Indonesia": { latOffset: 0.5, lngOffset: -1.2 }
     };
     
     locations.forEach((loc, index) => {

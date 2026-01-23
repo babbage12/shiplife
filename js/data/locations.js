@@ -895,9 +895,91 @@ const locations = [
         tag: "French Corner",
         icon: "🍷",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "A slice of France in New Zealand.",
         fullDesc: "This tiny town on Banks Peninsula has French street names and French bakeries.\n\nIt's the result of a quirky colonial history-French settlers arrived just days after the British claimed the islands. The French decided to stay anyway. Good choice.",
-        image: "https://images.unsplash.com/photo-1504275107627-0c2ba7a43dba?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-09_xdpvet.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Walk</span>
+                <h3 class="section-title-panel">Edge of the World</h3>
+                <p>There was something very peaceful and tranquil about New Zealand, but this feeling was magnified in spots like Akaroa.</p>
+                <p>The walk around the harbor almost compelled you along, and before you knew it you'd be standing at the edge - with the lighthouse and the ancient forest graveyard that was dying (pun intended) to be in a Stephen King movie.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Harbor</span>
+                <h3 class="section-title-panel">Hardy Boys Mystery Vibes</h3>
+                <p>I felt like I was in a Hardy Boys mystery novel for some strange reason. Maybe it was the quiet. Maybe it was the way the light hit the water. Maybe it was knowing that this tiny French corner of New Zealand existed at all.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-11_hzettl.jpg" class="story-image" alt="Akaroa harbor view">
+                <p class="photo-caption-inline">The harbor stretched out like a secret waiting to be discovered.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-12_p6l8ha.jpg" class="story-image" alt="Akaroa landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-13_vxtdlc.jpg" class="story-image" alt="Akaroa scenery">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-14_aibkvr.jpg" class="story-image" alt="Akaroa views">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-15_siokxm.jpg" class="story-image" alt="Akaroa coastline">
+                </div>
+                <p class="photo-caption-inline">Every angle revealed something new.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Gallery</span>
+                <h3 class="section-title-panel">More From Akaroa</h3>
+                <details class="collapsible-gallery">
+                    <summary>View all photos from Akaroa (24 more)</summary>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-01_yakkpj.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-02_rcfy42.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-03_mazn3s.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-04_ph0r74.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-05_v26ryz.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-06_t4ay3f.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-07_wskpez.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-08_i7tlb9.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-10_jbnkjf.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-16_e7rro9.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-17_vncbyi.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-18_nqkyw9.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-19_ywgloa.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-20_icr5jf.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-21_yrnnkf.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-22_ya66e6.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-23_fpnuh0.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-24_zqrbua.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-25_gbv86c.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-26_bxui9c.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-27_dcjsfn.jpg" class="story-image" alt="Akaroa">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-28_sqmebs.jpg" class="story-image" alt="Akaroa">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-29_t7whzs.jpg" class="story-image" alt="Akaroa panorama">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-30_yrmpiw.jpg" class="story-image" alt="Akaroa lighthouse panorama">
+                    </div>
+                </details>
+            </div>
+        `
     },
     {
         id: 14,
@@ -1544,6 +1626,75 @@ const locations = [
         shortDesc: "Where the land runs out and the wind takes over.",
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
         image: ""
+    },
+    {
+        id: 120,
+        title: "Beagle Channel, Chile",
+        coords: [-54.88, -69.50],
+        tag: "Chilean Fjords",
+        icon: "⛰️",
+        isDoor: false,
+        useRichContent: true,
+        shortDesc: "Sailing through Patagonia's dramatic channels.",
+        fullDesc: "The Beagle Channel connects the Atlantic and Pacific through some of the most dramatic scenery on Earth. Named after Darwin's ship, this narrow passage winds between snow-capped mountains, past glaciers calving into the sea, and through waters so still they mirror the sky.",
+        image: "",
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Patagonia</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📏</span>
+                    <span class="demo-value">240 km</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">HMS Beagle</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🧭</span>
+                    <span class="demo-value">1833</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Passage</span>
+                <h3 class="section-title-panel">Chilean Fjords</h3>
+                <p>En route to Antarctica, we sailed through some of the most spectacular scenery I've ever witnessed. The channels of Patagonia.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Gallery</span>
+                <h3 class="section-title-panel">The Journey South</h3>
+                <details class="collapsible-gallery" open>
+                    <summary>Photos from the Chilean Fjords</summary>
+                    <div class="story-gallery-grid">
+                        <!-- Photos to be added after Cloudinary upload -->
+                    </div>
+                </details>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">⛰️</span>
+                        <span>The Beagle Channel</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Named for Darwin:</strong> The channel was charted by the HMS Beagle in 1833, the same ship that carried Charles Darwin on his famous voyage that would inspire the theory of evolution.</li>
+                        <li><strong>Border Dispute:</strong> The channel marks the border between Chile and Argentina. The two nations nearly went to war over islands here in 1978 before the Pope mediated a settlement.</li>
+                        <li><strong>Glacier Alley:</strong> The nearby Avenue of the Glaciers features five tidewater glaciers descending from the Darwin Ice Field - named Italia, Holanda, Alemania, Francia, and España.</li>
+                        <li><strong>Indigenous History:</strong> The Yaghan people navigated these waters for over 10,000 years, surviving the harsh climate as the world's southernmost human inhabitants.</li>
+                        <li><strong>Wildlife:</strong> Magellanic penguins, sea lions, and Andean condors are common sights along the channel's dramatic coastline.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 42,
@@ -2378,10 +2529,10 @@ const locations = [
                 <p>I woke up slouched against a urinal. I couldn't stand. I couldn't think straight.</p>
                 <p>Then I heard a voice: "Hey - that's Derrick!"</p>
                 <p>A hand grabbed me. Pulled my arm over a shoulder. Got me out of there.</p>
-                <p>Martin Neese. A fellow musician. A friend. I may have had a few more minutes before I was robbed - or worse - when he walked in and saw me.</p>
+                <p>Martin Neely. A fellow musician. A friend. I may have had a few more minutes before I was robbed - or worse - when he walked in and saw me.</p>
                 <p>Here's the thing: I had walked around Phuket all day. Downtown, the beaches, everywhere. I hadn't run into a single crew member. Not one. And then, the one moment I really needed someone - there was Martin.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768866121/IMG_19700105_041151_dliaia.jpg" class="story-image" data-caption="My good friends Martin Neese and Yolonda Barber - Martin is the reason I'm still here to tell this story." alt="Martin Neese and Yolonda Barber">
-                <p class="photo-caption-inline">My good friends Martin Neese and Yolonda Barber. Martin is the reason I'm still here to tell this story.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768866121/IMG_19700105_041151_dliaia.jpg" class="story-image" data-caption="My good friends Martin Neely and Yolonda Barber - Martin is the reason I'm still here to tell this story." alt="Martin Neely and Yolonda Barber">
+                <p class="photo-caption-inline">My good friends Martin Neely and Yolonda Barber. Martin is the reason I'm still here to tell this story.</p>
                 <p>He got me back to the ship safely. No incident report. No questions. Just back on board, alive, lesson learned the hard way.</p>
                 <p>Unreal, right? Close call.</p>
             </div>
