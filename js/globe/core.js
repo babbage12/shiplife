@@ -200,7 +200,17 @@ async function init() {
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x0a1628, 1); // Match body background to prevent flash
     document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+    // Handle WebGL context loss/restore
+    renderer.domElement.addEventListener('webglcontextlost', (e) => {
+        e.preventDefault();
+        console.warn('WebGL context lost');
+    });
+    renderer.domElement.addEventListener('webglcontextrestored', () => {
+        console.log('WebGL context restored');
+    });
 
     // Raycaster for interaction
     raycaster = new THREE.Raycaster();
