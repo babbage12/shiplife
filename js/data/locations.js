@@ -942,6 +942,67 @@ const locations = [
         icon: "🚣",
         isDoor: false,
         shortDesc: "A postcard come to life.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Ligurian Coast</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~400 residents</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⚓</span>
+                    <span class="demo-value">Tender Port</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Village</span>
+                <h3 class="section-title-panel">Concentrated Beauty</h3>
+                <p>I've never seen such concentrated beauty in such a small space.</p>
+                <p>Portofino is tiny - you can walk the entire town in 15 minutes. But every corner is a photograph. Pastel buildings, super-yachts in the harbor, and espresso that costs as much as a meal anywhere else.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951563/Screenshot_20260120_140713_Facebook_wjt37q.jpg" class="story-image" data-caption="The narrow alleys of Portofino lead down to the famous harbor." alt="Portofino alley to harbor">
+                <p class="photo-caption-inline">Every alley leads to the water.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Portofino</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🚣</span>
+                        <span>Italian Riviera Jewel</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Tiny Population:</strong> Only about 400 people actually live in Portofino year-round, making it one of Italy's smallest municipalities.</li>
+                        <li><strong>Celebrity Haven:</strong> The harbor regularly hosts mega-yachts belonging to the world's ultra-wealthy. A coffee at the piazza can cost €15.</li>
+                        <li><strong>Protected Since 1935:</strong> The entire harbor area has been a protected marine reserve since 1935, explaining its pristine condition.</li>
+                        <li><strong>Literary History:</strong> Guy de Maupassant, Friedrich Nietzsche, and Ezra Pound all wrote about or visited Portofino.</li>
+                        <li><strong>No Cars:</strong> The village is essentially car-free - visitors arrive by boat, bus, or on foot along the coastal path.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="portofinoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140713_Facebook_wjt37q.jpg" class="gallery-thumb" data-caption="Narrow alley leading to Portofino harbor." alt="Portofino alley">
+                </div>
+            </div>
+        `,
         fullDesc: "I've never seen such concentrated beauty in such a small space.\n\nPortofino is tiny-you can walk the entire town in 15 minutes. But every corner is a photograph. Pastel buildings, super-yachts in the harbor, and espresso that costs as much as a meal anywhere else.",
         image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200"
     },
@@ -964,6 +1025,68 @@ const locations = [
         icon: "🏟️",
         isDoor: false,
         shortDesc: "The eternal city never disappoints.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Civitavecchia Port</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">2,700+ Years Old</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Multiple Visits</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Eternal City</span>
+                <h3 class="section-title-panel">Always Something New</h3>
+                <p>Every time I visited Rome, I found something new.</p>
+                <p>The Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Rome</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏟️</span>
+                        <span>The Eternal City</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Civitavecchia:</strong> Rome's cruise port is about 80km from the city center - plan for a full day excursion.</li>
+                        <li><strong>The Colosseum:</strong> Could hold 50,000-80,000 spectators. The wooden arena floor covered a complex underground network of tunnels and animal cages.</li>
+                        <li><strong>Trevi Fountain:</strong> About €3,000 in coins is thrown in daily. The money goes to Caritas to fund food programs for the poor.</li>
+                        <li><strong>Vatican City:</strong> The world's smallest country (0.44 km²) is technically a separate nation within Rome.</li>
+                        <li><strong>Seven Hills:</strong> Rome was famously built on seven hills - Aventine, Caelian, Capitoline, Esquiline, Palatine, Quirinal, and Viminal.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="romeGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">4 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141348_Facebook_xxhtbm.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141422_Facebook_z4qht5.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141240_Facebook_guktno.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140613_Facebook_vgrb9g.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                </div>
+            </div>
+        `,
         fullDesc: "Every time I visited Rome, I found something new.\n\nThe Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.",
         image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200"
     },
@@ -2940,6 +3063,76 @@ const locations = [
         icon: "🏛️",
         isDoor: false,
         shortDesc: "Where Byron swam to visit Shelley.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Gulf of Poets</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">UNESCO Site</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">✍️</span>
+                    <span class="demo-value">Byron's Grotto</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The View</span>
+                <h3 class="section-title-panel">Gateway to Cinque Terre</h3>
+                <p>Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951540/Screenshot_20260120_141430_Facebook_j3ffyi.jpg" class="story-image" data-caption="The dramatic Ligurian coastline seen through the fortress walls." alt="View through fortress window at Portovenere">
+                <p class="photo-caption-inline">The Ligurian coast through ancient stone.</p>
+                <p>Lord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Fortress</span>
+                <h3 class="section-title-panel">Ancient Windows</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951540/Screenshot_20260120_141412_Facebook_u7xh1q.jpg" class="story-image" data-caption="A brick archway frames the turquoise waters of a hidden cove." alt="Brick arch window at Portovenere">
+                <p class="photo-caption-inline">Every window frames a painting.</p>
+                <p>Pastel houses stack up the hillside, and the Church of St. Peter perches dramatically on the rocks.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Portovenere</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏛️</span>
+                        <span>The Gulf of Poets</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Byron's Grotto:</strong> The sea cave where Lord Byron swam and meditated is now named Grotta Byron. He reportedly swam 5km across the bay to visit Shelley.</li>
+                        <li><strong>UNESCO World Heritage:</strong> Portovenere, along with Cinque Terre and the islands, became a UNESCO site in 1997.</li>
+                        <li><strong>Church of St. Peter:</strong> The striped Gothic church perched on the rocky headland dates to 1198, built on the ruins of an ancient temple.</li>
+                        <li><strong>Palmaria Island:</strong> The largest island in Liguria sits just offshore, home to the Blue Grotto and abandoned military fortifications.</li>
+                        <li><strong>The Gulf of Poets:</strong> This stretch of coast earned its nickname from the Romantic poets - Byron, Shelley, and D.H. Lawrence - who lived and wrote here.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="portovenereGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">2 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141430_Facebook_j3ffyi.jpg" class="gallery-thumb" data-caption="Dramatic Ligurian coastline through fortress walls." alt="Portovenere coastal view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141412_Facebook_u7xh1q.jpg" class="gallery-thumb" data-caption="Brick archway framing turquoise waters." alt="Portovenere arch window">
+                </div>
+            </div>
+        `,
         fullDesc: "Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.\n\nLord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him. Pastel houses stack up the hillside, and the Church of St. Peter perches dramatically on the rocks.",
         image: ""
     },
@@ -3006,6 +3199,75 @@ const locations = [
         icon: "🌸",
         isDoor: false,
         shortDesc: "Riviera glamour and the Italian Song Festival.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Italian Riviera</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌸</span>
+                    <span class="demo-value">Flower Capital</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚴</span>
+                    <span class="demo-value">Bike Path</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Riviera</span>
+                <h3 class="section-title-panel">Where Italy Vacations</h3>
+                <p>San Remo is where Italy comes to vacation.</p>
+                <p>The Casino is legendary. The flower market supplies much of Europe. Every February, the Sanremo Music Festival launches Italian pop careers. The old town climbs the hillside in a tangle of medieval streets.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951541/Screenshot_20260120_141120_Facebook_dfrf7x.jpg" class="story-image" data-caption="Bike riding along the San Remo coast." alt="Bike riding San Remo">
+                <p class="photo-caption-inline">The coastal bike path - one of the best ways to see the Riviera.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about San Remo</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌸</span>
+                        <span>City of Flowers</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Flower Capital:</strong> San Remo's flower market is one of the largest in Europe, exporting millions of carnations, roses, and other blooms annually.</li>
+                        <li><strong>Sanremo Music Festival:</strong> Italy's most important music competition has launched careers since 1951 - including Andrea Bocelli and Eros Ramazzotti.</li>
+                        <li><strong>Casino:</strong> The Sanremo Casino opened in 1905 and remains one of only four legal casinos in Italy.</li>
+                        <li><strong>Russian Connection:</strong> The Russian Orthodox church here was built for the many Russian nobles who wintered on the Riviera in the 19th century.</li>
+                        <li><strong>Bike Path:</strong> The Pista Ciclabile runs 24km along the coast on a former railway line - one of Europe's most scenic cycling routes.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="sanRemoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">9 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951541/Screenshot_20260120_141120_Facebook_dfrf7x.jpg" class="gallery-thumb" data-caption="Bike riding along the coast." alt="San Remo bike path">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_141050_Facebook_nyprnl.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_141038_Facebook_wlpgmo.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_141103_Facebook_co0qs7.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_141026_Facebook_qce8id.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_141033_Facebook_wef5eu.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_140947_Facebook_sfthro.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140937_Facebook_lksenn.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140752_Facebook_qrpdwc.jpg" class="gallery-thumb" data-caption="Belle Époque villa on the Italian Riviera." alt="Riviera villa">
+                </div>
+            </div>
+        `,
         fullDesc: "San Remo is where Italy comes to vacation.\n\nThe Casino is legendary. The flower market supplies much of Europe. Every February, the Sanremo Music Festival launches Italian pop careers. The old town climbs the hillside in a tangle of medieval streets.",
         image: ""
     },
@@ -3039,6 +3301,69 @@ const locations = [
         icon: "⚓",
         isDoor: false,
         shortDesc: "Gritty, gorgeous, and unapologetically itself.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Provence</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">2,600 Years Old</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🍲</span>
+                    <span class="demo-value">Bouillabaisse</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Old Port</span>
+                <h3 class="section-title-panel">France's Oldest City</h3>
+                <p>Marseille is France's oldest city and its most diverse.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951551/Screenshot_20260120_140907_Facebook_kw0y1a.jpg" class="story-image" data-caption="The Old Port of Marseille with Fort Saint-Jean." alt="Marseille Old Port">
+                <p class="photo-caption-inline">The Old Port - 2,600 years of maritime history.</p>
+                <p>The Old Port has welcomed ships for 2,600 years. The bouillabaisse is non-negotiable. The Calanques - limestone cliffs plunging into turquoise water - rival any coastline in the world.</p>
+                <p>This isn't Paris. Marseille doesn't care.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Marseille</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">⚓</span>
+                        <span>France's Mediterranean Soul</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Founded by Greeks:</strong> Marseille was founded as Massalia by Greek sailors from Phocaea around 600 BC, making it France's oldest city.</li>
+                        <li><strong>MuCEM:</strong> The Museum of European and Mediterranean Civilizations opened in 2013, connected to Fort Saint-Jean by a dramatic footbridge.</li>
+                        <li><strong>Bouillabaisse Rules:</strong> The authentic fish stew has strict rules - it must contain at least four types of local fish and be served with rouille and croutons.</li>
+                        <li><strong>Calanques:</strong> The Calanques National Park protects 20km of dramatic limestone cliffs and turquoise coves between Marseille and Cassis.</li>
+                        <li><strong>Château d'If:</strong> The island fortress made famous by The Count of Monte Cristo is a 20-minute ferry ride from the Old Port.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="marseilleGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">2 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140907_Facebook_kw0y1a.jpg" class="gallery-thumb" data-caption="The Old Port with Fort Saint-Jean." alt="Marseille Old Port">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140553_Facebook_a4jsbz.jpg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                </div>
+            </div>
+        `,
         fullDesc: "Marseille is France's oldest city and its most diverse.\n\nThe Old Port has welcomed ships for 2,600 years. The bouillabaisse is non-negotiable. The Calanques-limestone cliffs plunging into turquoise water-rival any coastline in the world. This isn't Paris. Marseille doesn't care.",
         image: ""
     },
@@ -3061,6 +3386,67 @@ const locations = [
         icon: "🎰",
         isDoor: false,
         shortDesc: "Where fortunes are won and lost in style.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">2 km² Country</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🎰</span>
+                    <span class="demo-value">Casino Square</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏎️</span>
+                    <span class="demo-value">Grand Prix</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Principality</span>
+                <h3 class="section-title-panel">Concentrated Wealth</h3>
+                <p>Monaco is two square kilometers of concentrated wealth.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg" class="story-image" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                <p class="photo-caption-inline">Where fortunes are won and lost in style.</p>
+                <p>The Casino is palatial. The Grand Prix tears through the streets every May. The yachts in the harbor cost more than most neighborhoods. It's absurd and glamorous and nothing quite like anywhere else.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Monaco</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🎰</span>
+                        <span>The World's Playground</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Tiny Nation:</strong> Monaco is the world's second-smallest country (after Vatican City) at just 2.02 km² - smaller than Central Park.</li>
+                        <li><strong>No Income Tax:</strong> Monaco has no income tax for residents, attracting the ultra-wealthy from around the world.</li>
+                        <li><strong>Casino History:</strong> The Monte Carlo Casino opened in 1863. Ironically, Monegasque citizens are forbidden from gambling there.</li>
+                        <li><strong>Grand Prix:</strong> The Monaco GP has run since 1929, with cars reaching 260 km/h through narrow streets just meters from the harbor.</li>
+                        <li><strong>Grace Kelly:</strong> American actress Grace Kelly became Princess of Monaco in 1956 after marrying Prince Rainier III.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="monteCarloGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                </div>
+            </div>
+        `,
         fullDesc: "Monaco is two square kilometers of concentrated wealth.\n\nThe Casino is palatial. The Grand Prix tears through the streets every May. The yachts in the harbor cost more than most neighborhoods. It's absurd and glamorous and nothing quite like anywhere else.",
         image: ""
     },
