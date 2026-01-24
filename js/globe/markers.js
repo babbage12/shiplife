@@ -1789,6 +1789,8 @@ function createMarkers() {
         "Lemaire Channel, Antarctica": { latOffset: -1.0, lngOffset: 2.0 },
         "Ushuaia, Argentina": { latOffset: -0.6, lngOffset: 1.0 },
         "Tierra del Fuego": { latOffset: -0.3, lngOffset: -1.5 },
+        "Petermann Island, Antarctica": { latOffset: -1.5, lngOffset: -2.5 },
+        "Port Lockroy, Antarctica": { latOffset: 1.0, lngOffset: 1.5 },
         // Indonesia - Bali area
         "Bali, Indonesia": { latOffset: -0.5, lngOffset: 1.2 },
         "Celukan Bawang, Indonesia": { latOffset: 0.5, lngOffset: -1.2 }
