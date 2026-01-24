@@ -285,11 +285,21 @@ const locations = [
             </div>
             
             <div class="story-section-panel">
+                <span class="section-tag-panel">Day Trip</span>
+                <h3 class="section-title-panel">Litchfield National Park</h3>
+                <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds.</p>
+                <p>A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532403/033_tbuodb.jpg" class="story-image" alt="Litchfield National Park swimming hole">
+                <p class="photo-caption-inline">Swimming in Litchfield. We saw the crocodile warning sign on our way out. Duh.</p>
+                <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <span class="section-tag-panel">Door #2</span>
                 <h3 class="section-title-panel">The Door That Opened Everything</h3>
                 <p>Darwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.</p>
             </div>
-            
+
             ${generateGallery('darwin', 'Crew Friends & Shiplife Moments')}
             
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -400,7 +410,10 @@ const locations = [
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor">
                 <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
                 <p>An hour later I was eating oysters with my shipmates. Gagging. Laughing. Trying not to throw up.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767729046/IMG_0831_ei47kw.jpg" class="story-image" alt="Oysters in Akaroa">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters">
+                </div>
                 <p class="photo-caption-inline">Oysters with shipmates. Not my finest moment.</p>
                 <p>The door had just slid open.</p>
             </div>
@@ -420,6 +433,8 @@ const locations = [
                 <h3 class="section-title-panel">Auckland, January 2013</h3>
                 <p>Same port where I boarded my first P&O ship in 2009.</p>
                 <p>Same gangway. Different universe.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767727288/IMG_0145_v2vqtm.jpg" class="story-image" alt="Sky Tower Auckland">
+                <p class="photo-caption-inline">The Sky Tower - Auckland's needle. Watching over the harbor as I sailed in on a new ship.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767732747/IMG_0159_nx39vl.jpg" class="story-image" alt="Auckland Harbor from Seabourn">
                 <p class="photo-caption-inline">Auckland Harbor from the Odyssey. Pulling away from where it all started.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767729034/IMG_0169_nnzkhu.jpg" class="story-image" alt="Leaving Auckland">
@@ -437,6 +452,7 @@ const locations = [
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767728099/IMG_0201_jrd2av.jpg" class="story-image" alt="Seabourn schedule">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn">
                 </div>
                 <p class="photo-caption-inline">Saturday, March 2, 2013. My name in print on Seabourn. And yes, they always put me by the food.</p>
                 <p>Seabourn ships are more like huge luxury yachts than cruise ships. The guests were amazing. Doctors. Lawyers. Dignitaries. CEOs. Experts in horticulture, ancient history, penguins - you name it.</p>
@@ -547,7 +563,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A month as resident musician in an oligarch's playground.",
         fullDesc: "Ah...the Maldives. A shark-infested paradise.\n\nDaily walks through dense tropical forest. One day, the largest man I'd seen in my life came running towards me on the narrow path-one of the oligarchs' bodyguards. They were here for Christmas, and the island was flooded with them.\n\nReef sharks by the restaurant door. Millions bet on beach card games. At some point I had to stop myself from saying wow all the time.",
-        image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767729034/IMG_0038_cbv7ss.jpg"
     },
     {
         id: 3,
@@ -594,6 +610,110 @@ const locations = [
         image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200"
     },
     {
+        id: 120,
+        title: "Sea Days",
+        coords: [-25.00, -115.00],
+        tag: "Life at Sea",
+        icon: "🌊",
+        isDoor: false,
+        shortDesc: "The rhythm between ports.",
+        imagePosition: "center",
+        imageCaption: "Endless ocean. Endless horizon.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🌊</span>
+                    <span class="demo-value">Endless Blue</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🎸</span>
+                    <span class="demo-value">Extra Shows</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📚</span>
+                    <span class="demo-value">Time to Read</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">☀️</span>
+                    <span class="demo-value">Deck Time</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Rhythm</span>
+                <h3 class="section-title-panel">Days Between Ports</h3>
+                <p>Sea days are when the ship becomes a floating world unto itself. No port to rush to, no excursions to catch. Just the horizon in every direction.</p>
+                <p>For entertainers, sea days meant extra shows. The passengers had nowhere else to be, so they came to see us. For the crew, it was a chance to catch up - laundry, sleep, maybe a few hours on deck if you were lucky.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532511/IMG_0240_yg0xap.jpg" class="story-image" alt="Sea day view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg" class="story-image" alt="At sea">
+                </div>
+                <p class="photo-caption-inline">The view from deck. Nothing but water and sky.</p>
+                <p>There's a rhythm to sea days that you learn to love. The gentle roll of the ship. The sound of waves. The knowledge that for today, at least, the whole world is this vessel and everyone on it.</p>
+            </div>
+        \`,
+        fullDesc: "Sea days are when the ship becomes a floating world unto itself. No port to rush to, no excursions to catch. Just the horizon in every direction.\n\nFor entertainers, sea days meant extra shows. For the crew, it was a chance to catch up. There's a rhythm to sea days that you learn to love.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532511/IMG_0240_yg0xap.jpg"
+    },
+    {
+        id: 119,
+        title: "Komodo Island, Indonesia",
+        coords: [-8.5450, 119.4411],
+        tag: "Here Be Dragons",
+        icon: "🦎",
+        isDoor: false,
+        shortDesc: "Face to face with prehistoric predators.",
+        imagePosition: "center",
+        imageCaption: "Komodo dragons - the world's largest living lizards.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🦎</span>
+                    <span class="demo-value">~3,000 Dragons</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Lesser Sundas</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">UNESCO Site</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Seabourn</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Dragons</span>
+                <h3 class="section-title-panel">Prehistoric Predators</h3>
+                <p>Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle. They've been here for millions of years, unchanged.</p>
+                <p>We walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. One chomp and you're done for.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532337/DSC002971st_prbc0u.jpg" class="story-image" alt="Komodo dragon">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532348/DSC00313_iv0cyd.jpg" class="story-image" alt="Komodo dragon close-up">
+                </div>
+                <p class="photo-caption-inline">Face to face with dragons. The rangers carried forked sticks - not that they'd help much.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Island</span>
+                <h3 class="section-title-panel">Jurassic Park Vibes</h3>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532354/DSC00301_czqyrm.jpg" class="story-image" alt="Komodo landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532360/DSC002982nd_rlitb4.jpg" class="story-image" alt="Komodo Island">
+                </div>
+                <p class="photo-caption-inline">The landscape feels like stepping back in time. Dry savanna, volcanic hills, and dragons.</p>
+                <p>The whole island has this prehistoric energy. You half expect a pterodactyl to fly overhead.</p>
+            </div>
+        \`,
+        fullDesc: "Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle.\n\nWe walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. The whole island has this prehistoric energy.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532337/DSC002971st_prbc0u.jpg"
+    },
+    {
         id: 7,
         title: "Ushuaia, Argentina",
         coords: [-54.8019, -68.3030],
@@ -601,8 +721,63 @@ const locations = [
         icon: "🗺️",
         isDoor: false,
         shortDesc: "The southernmost city on Earth.",
+        imagePosition: "center",
+        imageCaption: "Ushuaia - the southernmost city on Earth.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~75,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Tierra del Fuego</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌡️</span>
+                    <span class="demo-value">5°C Average</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Gateway to Antarctica</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Edge</span>
+                <h3 class="section-title-panel">End of the World</h3>
+                <p>At the end of the world, you reflect on how you got here. Ushuaia is dramatic in every sense - the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon.</p>
+                <p>We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="story-image" alt="Ushuaia harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="story-image" alt="Ushuaia mountains">
+                </div>
+                <p class="photo-caption-inline">The harbor and mountains of Ushuaia. Patagonia at its most dramatic.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ship</span>
+                <h3 class="section-title-panel">Seabourn Quest</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="story-image" alt="Seabourn Quest in Ushuaia">
+                <p class="photo-caption-inline">The Seabourn Quest docked in Ushuaia - ready for Antarctica.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="story-image" alt="Ushuaia view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="story-image" alt="Ushuaia scenery">
+                </div>
+                <p class="photo-caption-inline">Views from Ushuaia - where South America ends and Antarctica begins.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="story-image" alt="Ushuaia landscape">
+                <p class="photo-caption-inline">The dramatic landscape of Tierra del Fuego.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Signs</span>
+                <h3 class="section-title-panel">Las Malvinas Son Argentinas</h3>
+                <p>I saw passionately-worded signs about the Falkland Islands - "Las Malvinas Son Argentinas." Little did I know I'd be visiting those contested shores just days later.</p>
+            </div>
+        \`,
         fullDesc: "At the end of the world, you reflect on how you got here.\n\nUshuaia is dramatic in every sense-the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon. We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.\n\nI saw passionately-worded signs about the Falkland Islands-'Las Malvinas Son Argentinas.' Little did I know I'd be visiting those contested shores just days later.",
-        image: "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767738205/IMG_6691_g9fekn.jpg"
     },
     {
         id: 8,
@@ -886,7 +1061,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Fjords that defy description.",
         fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
-        image: "https://images.unsplash.com/photo-1508882189859-4d570e7b4030?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532665/DSC00376_t661hp.jpg"
     },
     {
         id: 13,
@@ -1268,8 +1443,9 @@ const locations = [
         icon: "🍺",
         isDoor: false,
         shortDesc: "Half a day in rough seas, a pub, and someone's problems.",
+        imageCaption: "Standing on disputed ground - days after reading 'Las Malvinas Son Argentinas' signs in Ushuaia.",
         fullDesc: "We stopped here for half a day during rough seas. Had a beer in one of the pubs and listened to a friend tell me all of her woes.\n\nUnique, memorable, and exhausting.\n\nThe irony wasn't lost on me-just days earlier in Ushuaia, I'd been reading those passionate anti-British posters about this very place. Now here I was, having a pint on the disputed ground itself.",
-        image: "https://images.unsplash.com/photo-1564760290292-23341e4df6ec?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951516/Screenshot_20260120_142328_Facebook_bcerw1.jpg"
     },
     {
         id: 25,
@@ -1301,7 +1477,48 @@ const locations = [
         icon: "⛵",
         isDoor: false,
         shortDesc: "Slovenia's tiny slice of coastline.",
-        fullDesc: "Slovenia has only 47 kilometers of coastline. Piran is the jewel of it.\n\nVenetian architecture, narrow winding streets, and none of the crowds of nearby Croatia. We walked the sea wall at sunset and watched the fishing boats come in. Perfect.",
+        imagePosition: "center",
+        imageCaption: "Piran's Venetian architecture along Slovenia's tiny coastline.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🌊</span>
+                    <span class="demo-value">47 km Coastline</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">Venetian Heritage</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐴</span>
+                    <span class="demo-value">Lipizzan Horses</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Adriatic Sea</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Jewel of the Coast</h3>
+                <p>Slovenia has only 47 kilometers of coastline. Piran is the jewel of it.</p>
+                <p>Venetian architecture, narrow winding streets, and none of the crowds of nearby Croatia. We walked the sea wall at sunset and watched the fishing boats come in. Perfect.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Shore Excursion</span>
+                <h3 class="section-title-panel">Lipica Stud Farm</h3>
+                <p>From the tender port, I took an excursion inland to Lipica - the birthplace of the famous Lipizzan horses. This historic stud farm has been breeding these magnificent white horses since 1580, making it one of the oldest in the world.</p>
+                <p>The classical dressage performance was breathtaking - watching these powerful horses move with such grace and precision, performing movements that have been perfected over centuries.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951532/Screenshot_20260120_141730_Facebook_kjfnuv.jpg" class="story-image" data-caption="The Lipizzan horses performing classical dressage at Lipica." alt="Lipizzan horse performance at Lipica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951532/Screenshot_20260120_141721_Facebook_zyavdi.jpg" class="story-image" data-caption="Lipica Stud Farm - home of the Lipizzan breed since 1580." alt="Lipica Stud Farm horse show">
+                </div>
+                <p class="photo-caption-inline">The famous Lipizzan horses at Lipica Stud Farm, birthplace of the breed.</p>
+            </div>
+        `,
+        fullDesc: "Slovenia has only 47 kilometers of coastline. Piran is the jewel of it.\n\nVenetian architecture, narrow winding streets, and none of the crowds of nearby Croatia. We walked the sea wall at sunset and watched the fishing boats come in. Perfect.\n\nFrom here I took an excursion to Lipica - the birthplace of the famous Lipizzan horses, breeding these magnificent white horses since 1580.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767734745/IMG_1778_fw5ihj.jpg"
     },
     {
@@ -1312,6 +1529,55 @@ const locations = [
         icon: "🏰",
         isDoor: false,
         shortDesc: "Medieval walls climbing impossible mountains.",
+        imagePosition: "center",
+        imageCaption: "The fortress walls climbing up the mountain behind Kotor's old town.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~1,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">UNESCO Site</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛰️</span>
+                    <span class="demo-value">1,350 Steps</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Bay of Kotor</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Approach</span>
+                <h3 class="section-title-panel">Fjord of the Adriatic</h3>
+                <p>The fjord approach to Kotor is dramatic enough. The ship threads through narrow passages, mountains rising on both sides, until the old town reveals itself at the end of the bay.</p>
+                <p>Then you see the walls.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Climb</span>
+                <h3 class="section-title-panel">1,350 Steps to the Top</h3>
+                <p>They climb straight up the mountain behind the old town - 1,350 steps to the fortress at the top. I made the climb. The view was worth every step.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735480/IMG_1657_xtlvwv.jpg" class="story-image" alt="Kotor from the walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735569/IMG_1696_o1sjn5.jpg" class="story-image" alt="Kotor old town">
+                </div>
+                <p class="photo-caption-inline">The view from the fortress walls, and the old town below.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Old Town</span>
+                <h3 class="section-title-panel">Medieval Perfection</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735553/IMG_1717_ggcmyu.jpg" class="story-image" alt="Kotor fortress walls">
+                <p class="photo-caption-inline">The fortress walls - still standing after centuries.</p>
+                <p>Kotor's old town is a maze of narrow streets, hidden squares, and cats. So many cats. The Venetians built this place to last, and it has.</p>
+            </div>
+        `,
         fullDesc: "The fjord approach to Kotor is dramatic enough. Then you see the walls.\n\nThey climb straight up the mountain behind the old town-1,350 steps to the fortress at the top. I made the climb. The view was worth every step.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735553/IMG_1717_ggcmyu.jpg"
     },
@@ -1334,6 +1600,41 @@ const locations = [
         icon: "⚓",
         isDoor: false,
         shortDesc: "The fortress island.",
+        imagePosition: "center",
+        imageCaption: "The Grand Harbour of Valletta.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~6,500</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">UNESCO Site</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⚔️</span>
+                    <span class="demo-value">Knights of St. John</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Mediterranean</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Fortress</span>
+                <h3 class="section-title-panel">Knights and History</h3>
+                <p>Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.</p>
+                <p>Valletta is built on a grid - unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735863/IMG_1155_qtda7b.jpg" class="story-image" alt="Malta Grand Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="story-image" alt="Malta view">
+                </div>
+                <p class="photo-caption-inline">The Grand Harbour and the fortress walls of Valletta.</p>
+            </div>
+        \`,
         fullDesc: "Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.\n\nValletta is built on a grid-unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767735863/IMG_1155_qtda7b.jpg"
     },
@@ -1356,6 +1657,41 @@ const locations = [
         icon: "🐫",
         isDoor: false,
         shortDesc: "Where the ancient library once stood.",
+        imagePosition: "center",
+        imageCaption: "The Mediterranean corniche in Alexandria.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~5 Million</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📜</span>
+                    <span class="demo-value">Founded 331 BC</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">Ancient Library</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Mediterranean</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Ancient History</span>
+                <h3 class="section-title-panel">Cleopatra's City</h3>
+                <p>Alexandria was founded by Alexander the Great and ruled by Cleopatra. The famous lighthouse is gone. The library burned. But the city endures - chaotic, loud, and utterly captivating.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767736004/IMG_0687_znjvkv.jpg" class="story-image" alt="Alexandria corniche">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1767736027/IMG_0655_vpe0lu.jpg" class="story-image" alt="Alexandria waterfront">
+                </div>
+                <p class="photo-caption-inline">The corniche and waterfront - where the ancient lighthouse once guided ships into harbor.</p>
+                <p>Standing on the corniche, you feel the weight of all that history pushing up through the pavement.</p>
+            </div>
+        `,
         fullDesc: "Alexandria was founded by Alexander the Great and ruled by Cleopatra.\n\nThe famous lighthouse is gone. The library burned. But the city endures-chaotic, loud, and utterly captivating. Standing on the corniche, you feel the weight of all that history pushing up through the pavement.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767736004/IMG_0687_znjvkv.jpg"
     },
@@ -1568,8 +1904,115 @@ const locations = [
         icon: "🧊",
         isDoor: false,
         shortDesc: "The most beautiful passage in Antarctica.",
+        imagePosition: "center",
+        imageCaption: "The Lemaire Channel - ice cliffs rising on both sides.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Antarctic Peninsula</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌡️</span>
+                    <span class="demo-value">-2°C Average</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📷</span>
+                    <span class="demo-value">"Kodak Gap"</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Seabourn</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Passage</span>
+                <h3 class="section-title-panel">Kodak Gap</h3>
+                <p>They call it Kodak Gap because everyone reaches for their camera. The Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains.</p>
+                <p>Time stops here.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="story-image" alt="Antarctica ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="story-image" alt="Antarctica landscape">
+                </div>
+                <p class="photo-caption-inline">Ice in every direction. The silence is overwhelming.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ice</span>
+                <h3 class="section-title-panel">A World of Blue and White</h3>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="story-image" alt="Antarctic ice formations">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951500/Screenshot_20260120_143046_Facebook_ssqrle.jpg" class="story-image" alt="Antarctic scenery">
+                </div>
+                <p class="photo-caption-inline">Every iceberg is different. Some are brilliant white, others glow blue from within.</p>
+                <p>You've never seen anything like it. And you never will again - each moment down here is unique, unrepeatable.</p>
+            </div>
+        \`,
         fullDesc: "They call it Kodak Gap because everyone reaches for their camera.\n\nThe Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains. Time stops here.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767737978/IMG_6712_bmwcxi.jpg"
+    },
+    {
+        id: 121,
+        title: "Petermann Island, Antarctica",
+        coords: [-65.17, -64.13],
+        tag: "Penguin Paradise",
+        icon: "🐧",
+        isDoor: false,
+        shortDesc: "Sailing past penguin paradise.",
+        imagePosition: "center",
+        imageCaption: "Petermann Island from the deck of the ship.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Antarctic Peninsula</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐧</span>
+                    <span class="demo-value">Penguin Colonies</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌡️</span>
+                    <span class="demo-value">-5°C Average</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Scenic Cruising</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Passage</span>
+                <h3 class="section-title-panel">Sailing Past Paradise</h3>
+                <p>We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.</p>
+                <p>Sometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951510/Screenshot_20260120_142530_Facebook_blt0dm.jpg" class="story-image" alt="Petermann Island view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="story-image" alt="Petermann Island scenery">
+                </div>
+                <p class="photo-caption-inline">Views from the deck as we sailed past.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ice</span>
+                <h3 class="section-title-panel">Frozen Perfection</h3>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="story-image" alt="Antarctic scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="story-image" alt="Petermann ice">
+                </div>
+                <p class="photo-caption-inline">Ice formations and glaciers along the coast.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="story-image" alt="Petermann Island landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="story-image" alt="Petermann Island view">
+                </div>
+                <p class="photo-caption-inline">Antarctica in all its frozen glory.</p>
+            </div>
+        \`,
+        fullDesc: "We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.\n\nSometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951510/Screenshot_20260120_142530_Facebook_blt0dm.jpg"
     },
     {
         id: 35,
@@ -1590,6 +2033,57 @@ const locations = [
         icon: "🎭",
         isDoor: false,
         shortDesc: "Where art and architecture collide.",
+        imagePosition: "center",
+        imageCaption: "Barcelona from the hills above the city.",
+        useRichContent: true,
+        richContent: \`
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">~1.6 Million</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">Gaudí's City</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏅</span>
+                    <span class="demo-value">1992 Olympics</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Catalonia</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The City</span>
+                <h3 class="section-title-panel">Gaudí's Playground</h3>
+                <p>Barcelona is Gaudí's city. The Sagrada Família defies description - a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night.</p>
+                <p>This city knows how to live.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Tour</span>
+                <h3 class="section-title-panel">Olympic Village & Museum</h3>
+                <p>I took a tour to the Olympic Village and museum from the 1992 Summer Games. The whole complex is still impressive - built to host the world, now a vibrant neighborhood.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="story-image" alt="Barcelona Olympic Village">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="story-image" alt="Barcelona Olympic site">
+                </div>
+                <p class="photo-caption-inline">The Olympic Village - built for 1992, still going strong.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="story-image" alt="Olympic Museum">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951532/Screenshot_20260120_141853_Facebook_njurfr.jpg" class="story-image" alt="Barcelona views">
+                </div>
+                <p class="photo-caption-inline">The Olympic Museum and views of the city.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="story-image" alt="Barcelona cityscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="story-image" alt="Barcelona architecture">
+                </div>
+                <p class="photo-caption-inline">Barcelona from above - Mediterranean magic.</p>
+            </div>
+        \`,
         fullDesc: "Barcelona is Gaudí's city.\n\nThe Sagrada Família defies description-a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night. This city knows how to live.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1767738440/IMG_20140811_122138_cqwjid.jpg"
     },
@@ -2452,8 +2946,8 @@ const locations = [
         icon: "⚓",
         isDoor: false,
         shortDesc: "Gateway to Borobudur.",
-        fullDesc: "Placeholder description for Semarang.",
-        image: ""
+        fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world.\n\nWe took an excursion inland to see it. Nothing prepares you for the scale of the place. Thousands of intricate stone carvings, Buddha statues in bell-shaped stupas, all of it emerging from the jungle like something from another time.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768527359/DSC00357_et8mzd.jpg"
     },
     {
         id: 90,
@@ -2463,8 +2957,8 @@ const locations = [
         icon: "🦀",
         isDoor: false,
         shortDesc: "Australia's remote island in the Indian Ocean.",
-        fullDesc: "Placeholder description for Christmas Island.",
-        image: ""
+        fullDesc: "Christmas Island is famous for its annual red crab migration - millions of crabs making their way from the jungle to the sea.\n\nIt's one of Australia's most remote territories, sitting in the Indian Ocean closer to Indonesia than the mainland. The island is mostly national park, with rainforest, seabirds, and some of the most pristine reefs in the world.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1768532294/IMG_0185_f0sgyf.jpg"
     },
     {
         id: 91,
