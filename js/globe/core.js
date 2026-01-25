@@ -231,35 +231,44 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 
 async function init() {
     // SMART LOADING: Toledo loads immediately, rest stagger over 60 seconds
-    console.log('Initializing with smart texture loading');
+    console.log('=== INIT STARTING ===');
+    console.log('USE_AI_PORTHOLES:', USE_AI_PORTHOLES);
+    console.log('Toledo URL exists:', !!locationPortholeURLs["Toledo, Ohio"]);
 
     // Pre-load Toledo (Door #1) immediately - users see this first
-    if (USE_AI_PORTHOLES && locationPortholeURLs["Toledo, Ohio"]) {
+    // Use Promise.race with timeout to prevent hanging
+    if (USE_AI_PORTHOLES) {
+        console.log('Starting Toledo pre-load...');
         try {
-            const toledoTexture = await loadTextureWithTransparentBlack(
-                locationPortholeURLs["Toledo, Ohio"], 65
-            );
+            // Load texture with 5 second timeout
+            const toledoTexture = await Promise.race([
+                loadTextureWithTransparentBlack(locationPortholeURLs["Toledo, Ohio"], 65),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('Toledo texture timeout')), 5000))
+            ]);
             if (toledoTexture) {
                 locationTextures["Toledo, Ohio"] = toledoTexture;
-                console.log('Pre-loaded Toledo texture');
+                console.log('Pre-loaded Toledo texture OK');
             }
         } catch (e) {
-            console.warn('Failed to pre-load Toledo:', e);
+            console.warn('Toledo texture failed:', e.message);
         }
 
         // Also load Toledo video
-        if (locationVideoURLs["Toledo, Ohio"]) {
-            try {
-                const result = await loadVideoTexture(locationVideoURLs["Toledo, Ohio"]);
-                if (result && result.texture) {
-                    locationTextures["Toledo, Ohio"] = result.texture;
-                    locationVideos["Toledo, Ohio"] = result.video;
-                    console.log('Pre-loaded Toledo video');
-                }
-            } catch (e) {
-                console.warn('Failed to pre-load Toledo video:', e);
+        console.log('Starting Toledo video pre-load...');
+        try {
+            const result = await Promise.race([
+                loadVideoTexture(locationVideoURLs["Toledo, Ohio"]),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('Toledo video timeout')), 8000))
+            ]);
+            if (result && result.texture) {
+                locationTextures["Toledo, Ohio"] = result.texture;
+                locationVideos["Toledo, Ohio"] = result.video;
+                console.log('Pre-loaded Toledo video OK');
             }
+        } catch (e) {
+            console.warn('Toledo video failed:', e.message);
         }
+        console.log('Toledo pre-load complete');
     }
     
     // Scene
