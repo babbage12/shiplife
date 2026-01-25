@@ -1818,95 +1818,47 @@ function createMarkers() {
         const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.029 * densityScale * manualOverride;
         
         let texture, spriteMaterial, canvas;
+
+        // LAZY LOADING: Always start with canvas-drawn icons
+        // Real textures will be lazy-loaded when marker is clicked
+        canvas = document.createElement('canvas');
+        canvas.width = 128;
+        canvas.height = 150; // Taller for base
+
+        // Doors start closed (iris animation), regular icons start open
+        const initialOpen = loc.isDoor ? 0 : 1;
+
+        // Draw initial state
+        drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+
+        texture = new THREE.CanvasTexture(canvas);
+        spriteMaterial = new THREE.SpriteMaterial({
+            map: texture,
+            transparent: true
+        });
         
-        if (USE_AI_PORTHOLES) {
-            if (locationTextures[loc.title]) {
-                // Use location-specific texture if available (even for doors!)
-                texture = locationTextures[loc.title];
-            } else if (loc.isDoor) {
-                // Doors without custom image use the frame texture
-                texture = portholeFrameTexture;
-            } else {
-                // Fall back to default scene texture
-                texture = portholeSceneTexture;
-            }
-            
-        if (texture) {
-                // Check if this is a video texture - use shader for transparency
-                if (isVideoTexture(loc.title)) {
-                    // Use custom shader material for video (handles black transparency)
-                    spriteMaterial = createVideoChromaMaterial(texture);
-                } else {
-                    // Regular sprite material for static images
-                    spriteMaterial = new THREE.SpriteMaterial({
-                        map: texture,
-                        transparent: true
-                    });
-                }
-                canvas = null; // No canvas needed for AI images
-            }
-        }
-        
-        // Fallback to canvas-drawn portholes if no texture
-        if (!texture) {
-            canvas = document.createElement('canvas');
-            canvas.width = 128;
-            canvas.height = 150; // Taller for base
-            
-            // Doors start closed (iris animation), regular icons start open
-            const initialOpen = loc.isDoor ? 0 : 1;
-            
-            // Draw initial state
-            drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
-            
-            texture = new THREE.CanvasTexture(canvas);
-            spriteMaterial = new THREE.SpriteMaterial({
-                map: texture,
-                transparent: true
-            });
-        }
-        
-        // Create Three.js sprite or mesh
-        let marker;
-        const useVideoMesh = isVideoTexture(loc.title);
-        
-        if (useVideoMesh) {
-            // Use Mesh with PlaneGeometry for video (supports shader material)
-            const geometry = new THREE.PlaneGeometry(1, 1);
-            marker = new THREE.Mesh(geometry, spriteMaterial);
-            marker.userData.isVideoMesh = true;
-        } else {
-            // Use Sprite for static images
-            marker = new THREE.Sprite(spriteMaterial);
-            marker.userData.isVideoMesh = false;
-        }
-        
+        // Create Three.js sprite (always start with Sprite, may upgrade to Mesh for video later)
+        let marker = new THREE.Sprite(spriteMaterial);
+        marker.userData.isVideoMesh = false;
+
         // Position marker above surface
         const direction = position.clone().normalize();
         marker.position.copy(position).add(direction.multiplyScalar(0.015));
-        
-        // Adjust scale - AI images are square, canvas ones are taller
-        let scaleX, scaleY;
-        if (canvas === null) {
-            // AI images are square (1:1)
-            scaleX = baseSize * 2;
-            scaleY = baseSize * 2;
-        } else {
-            // Canvas icons - doors are circular (no base), regular icons are taller (have base)
-            scaleX = baseSize * 2;
-            scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35;
-        }
+
+        // Scale - canvas icons have base (taller), doors are circular (no base)
+        const scaleX = baseSize * 2;
+        const scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35;
         marker.scale.set(scaleX, scaleY, 1);
         
         // Store data on marker for click handling and animation
         marker.userData = { ...marker.userData, ...loc };
         marker.userData.baseSize = baseSize;
         marker.userData.iconConfig = config;
-        marker.userData.iconCanvas = canvas; // null for AI images, canvas for drawn ones
-        marker.userData.useAIPorthole = (canvas === null); // Track which mode based on actual usage
+        marker.userData.iconCanvas = canvas;
+        marker.userData.useAIPorthole = false; // Will be set true when texture lazy loads
+        marker.userData.textureLoaded = false; // Track if real texture has been loaded
         
-        // Initialize animation state - doors closed, regular open
-        const initialOpen = loc.isDoor ? 0 : 1;
+        // Initialize animation state - doors closed, regular open (reuse initialOpen from above)
         markerAnimations.set(loc.id, {
             openAmount: initialOpen,
             targetOpen: initialOpen,

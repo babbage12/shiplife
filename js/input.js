@@ -104,14 +104,19 @@ function onTouchTap(event) {
         const touch = event.changedTouches[0];
         mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
         mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
-        
+
         raycaster.setFromCamera(mouse, camera);
         const intersects = raycaster.intersectObjects(markers);
-        
+
         if (intersects.length > 0) {
             const marker = intersects[0].object;
             if (marker.userData.title) {
                 const loc = marker.userData;
+
+                // LAZY LOAD: Trigger texture loading for this marker
+                if (USE_AI_PORTHOLES && !marker.userData.textureLoaded) {
+                    lazyLoadTexture(loc.title, marker);
+                }
                 
                 // Check if we're switching to a different location
                 const isSwitching = currentLocation && currentLocation.id !== loc.id;
@@ -198,7 +203,12 @@ function onTouchTap(event) {
 function onClick(event) {
     if (hoveredMarker) {
         const loc = hoveredMarker.userData;
-        
+
+        // LAZY LOAD: Trigger texture loading for this marker
+        if (USE_AI_PORTHOLES && !hoveredMarker.userData.textureLoaded) {
+            lazyLoadTexture(loc.title, hoveredMarker);
+        }
+
         // Check if we're switching to a different location
         const isSwitching = currentLocation && currentLocation.id !== loc.id;
         

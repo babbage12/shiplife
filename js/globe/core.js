@@ -84,6 +84,93 @@ function loadVideoTexture(url) {
     });
 }
 
+// Track which textures are currently being loaded to prevent duplicate requests
+const textureLoadingPromises = {};
+
+// Lazy load a texture for a specific location when needed
+async function lazyLoadTexture(locationTitle, marker) {
+    // Already loaded?
+    if (locationTextures[locationTitle]) {
+        return locationTextures[locationTitle];
+    }
+
+    // Already loading? Return the existing promise
+    if (textureLoadingPromises[locationTitle]) {
+        return textureLoadingPromises[locationTitle];
+    }
+
+    // Check if this location has a custom texture URL
+    const imageUrl = locationPortholeURLs[locationTitle];
+    const videoUrl = locationVideoURLs[locationTitle];
+
+    if (!imageUrl && !videoUrl) {
+        return null; // No custom texture for this location
+    }
+
+    console.log(`Lazy loading texture for: ${locationTitle}`);
+
+    // Create the loading promise
+    textureLoadingPromises[locationTitle] = (async () => {
+        let texture = null;
+
+        if (videoUrl) {
+            // Load video texture
+            const result = await loadVideoTexture(videoUrl);
+            if (result && result.texture) {
+                texture = result.texture;
+                locationVideos[locationTitle] = result.video;
+            }
+        } else if (imageUrl) {
+            // Load image texture
+            texture = await loadTextureWithTransparentBlack(imageUrl, 65);
+        }
+
+        if (texture) {
+            locationTextures[locationTitle] = texture;
+
+            // Update the marker's material if provided
+            if (marker) {
+                updateMarkerWithTexture(marker, texture, locationTitle);
+            }
+        }
+
+        // Clean up loading promise
+        delete textureLoadingPromises[locationTitle];
+
+        return texture;
+    })();
+
+    return textureLoadingPromises[locationTitle];
+}
+
+// Update a marker's material with a newly loaded texture
+function updateMarkerWithTexture(marker, texture, locationTitle) {
+    if (!marker || !texture) return;
+
+    const isVideo = locationVideoURLs.hasOwnProperty(locationTitle);
+
+    if (isVideo) {
+        // Use shader material for video
+        marker.material = createVideoChromaMaterial(texture);
+    } else {
+        // Use sprite material for static images
+        if (marker.material) {
+            marker.material.map = texture;
+            marker.material.needsUpdate = true;
+        }
+    }
+
+    // AI textures are square - adjust scale from canvas aspect ratio
+    const baseSize = marker.userData.baseSize;
+    if (baseSize) {
+        marker.scale.set(baseSize * 2, baseSize * 2, 1);
+    }
+
+    marker.userData.useAIPorthole = true;
+    marker.userData.textureLoaded = true;
+    console.log(`Applied texture to marker: ${locationTitle}`);
+}
+
 // Load image and make black pixels transparent (outside circular porthole)
 function loadTextureWithTransparentBlack(url, threshold = 60) {
     return new Promise((resolve) => {
@@ -143,47 +230,9 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 }
 
 async function init() {
-    // Preload AI porthole textures
-    if (USE_AI_PORTHOLES) {
-        try {
-            const textureLoadPromise = (async () => {
-                [portholeFrameTexture, portholeSceneTexture] = await Promise.all([
-                    loadTextureWithTransparentBlack(
-                        'https://res.cloudinary.com/de5jbyhxx/image/upload/v1767928093/marcie_00688__ntj67c.png',
-                        65
-                    ),
-                    loadTextureWithTransparentBlack(
-                        'https://res.cloudinary.com/de5jbyhxx/image/upload/v1767928140/marcie_00793__bhzemp.png',
-                        65
-                    )
-                ]);
-                
-                const locationLoadPromises = Object.entries(locationPortholeURLs).map(async ([name, url]) => {
-                    const texture = await loadTextureWithTransparentBlack(url, 65);
-                    locationTextures[name] = texture;
-                    console.log(`Loaded texture for: ${name}`);
-                });
-                await Promise.all(locationLoadPromises);
-                
-                const videoLoadPromises = Object.entries(locationVideoURLs).map(async ([name, url]) => {
-                    const result = await loadVideoTexture(url);
-                    if (result && result.texture) {
-                        locationTextures[name] = result.texture;
-                        locationVideos[name] = result.video;
-                        console.log(`Loaded VIDEO texture for: ${name}`);
-                    }
-                });
-                await Promise.all(videoLoadPromises);
-            })();
-            
-            await Promise.race([
-                textureLoadPromise,
-                new Promise((_, reject) => setTimeout(() => reject(new Error('Master timeout')), 15000))
-            ]);
-        } catch (e) {
-            console.warn('Texture loading failed or timed out:', e);
-        }
-    }
+    // LAZY LOADING: Skip bulk texture preloading - textures load on demand when markers are clicked
+    // This prevents mobile devices from hanging on 122+ texture loads at startup
+    console.log('Initializing with lazy texture loading enabled');
     
     // Scene
     scene = new THREE.Scene();
