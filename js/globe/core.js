@@ -306,11 +306,15 @@ async function init() {
     targetRotationY = TOLEDO_Y;
     targetRotationX = TOLEDO_X;
 
-    // Renderer
-    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    // Renderer (alpha: false fixes iPad transparency bug)
+    renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: false,
+        powerPreference: 'high-performance'
+    });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.setClearColor(0x0a1628, 1); // Match body background to prevent flash
+    renderer.setClearColor(0x0a1628, 1); // Match body background
     document.getElementById('canvas-container').appendChild(renderer.domElement);
 
     // Handle WebGL context loss/restore
