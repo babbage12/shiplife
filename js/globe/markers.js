@@ -1829,15 +1829,12 @@ function createMarkers() {
             canvas = null;
             textureAlreadyLoaded = true;
 
-            // Check if this is a video texture
-            if (locationVideoURLs[loc.title]) {
-                spriteMaterial = createVideoChromaMaterial(texture);
-            } else {
-                spriteMaterial = new THREE.SpriteMaterial({
-                    map: texture,
-                    transparent: true
-                });
-            }
+            // Always use SpriteMaterial for markers (video plays on click, not on marker)
+            // This ensures raycaster can detect the marker
+            spriteMaterial = new THREE.SpriteMaterial({
+                map: texture,
+                transparent: true
+            });
         } else {
             // Start with canvas-drawn icons, textures load progressively
             canvas = document.createElement('canvas');
@@ -1854,7 +1851,7 @@ function createMarkers() {
             });
         }
 
-        // Create Three.js sprite (always start with Sprite, may upgrade to Mesh for video later)
+        // Create Three.js sprite - always use Sprite for raycaster compatibility
         let marker = new THREE.Sprite(spriteMaterial);
         marker.userData.isVideoMesh = false;
 
