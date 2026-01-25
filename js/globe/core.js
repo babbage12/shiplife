@@ -230,9 +230,8 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 }
 
 async function init() {
-    // LAZY LOADING: Skip bulk texture preloading - textures load on demand when markers are clicked
-    // This prevents mobile devices from hanging on 122+ texture loads at startup
-    console.log('Initializing with lazy texture loading enabled');
+    // PROGRESSIVE LOADING: Globe shows immediately, textures load in background
+    console.log('Initializing with progressive texture loading');
     
     // Scene
     scene = new THREE.Scene();
@@ -330,9 +329,78 @@ async function init() {
 
     // Start animation
     animate();
-    
+
     // Stars
     initStars();
+
+    // Start progressive texture loading in background (after globe is visible)
+    if (USE_AI_PORTHOLES) {
+        setTimeout(() => {
+            progressivelyLoadTextures();
+        }, 1500); // Wait for globe to be fully visible
+    }
+}
+
+// Load textures progressively in background - small batches to avoid freezing
+async function progressivelyLoadTextures() {
+    const BATCH_SIZE = 4; // Load 4 textures at a time
+    const BATCH_DELAY = 100; // ms between batches
+
+    const locationNames = Object.keys(locationPortholeURLs);
+    console.log(`Progressive loading: ${locationNames.length} textures in batches of ${BATCH_SIZE}`);
+
+    for (let i = 0; i < locationNames.length; i += BATCH_SIZE) {
+        const batch = locationNames.slice(i, i + BATCH_SIZE);
+
+        // Load this batch in parallel
+        await Promise.all(batch.map(async (name) => {
+            // Skip if already loaded
+            if (locationTextures[name]) return;
+
+            const url = locationPortholeURLs[name];
+            try {
+                const texture = await loadTextureWithTransparentBlack(url, 65);
+                if (texture) {
+                    locationTextures[name] = texture;
+
+                    // Find and update the marker
+                    const marker = markers.find(m => m.userData.title === name);
+                    if (marker && !marker.userData.textureLoaded) {
+                        updateMarkerWithTexture(marker, texture, name);
+                    }
+                }
+            } catch (e) {
+                console.warn(`Failed to load texture for ${name}:`, e);
+            }
+        }));
+
+        // Small delay between batches to keep UI responsive
+        if (i + BATCH_SIZE < locationNames.length) {
+            await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
+        }
+    }
+
+    // Also load video textures
+    for (const [name, url] of Object.entries(locationVideoURLs)) {
+        if (locationTextures[name]) continue;
+
+        try {
+            const result = await loadVideoTexture(url);
+            if (result && result.texture) {
+                locationTextures[name] = result.texture;
+                locationVideos[name] = result.video;
+
+                const marker = markers.find(m => m.userData.title === name);
+                if (marker && !marker.userData.textureLoaded) {
+                    updateMarkerWithTexture(marker, result.texture, name);
+                }
+            }
+        } catch (e) {
+            console.warn(`Failed to load video for ${name}:`, e);
+        }
+    }
+
+    console.log('Progressive texture loading complete');
 }
 
 function createGlobe() {
