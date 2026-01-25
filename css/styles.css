@@ -1813,14 +1813,16 @@
                 transform: translateY(0);
             }
             
-            /* Mobile location items - simplified for Android */
+            /* Mobile location items - force GPU layers to prevent text disappearing */
             .location-list .location-item {
                 display: flex !important;
                 flex-direction: row !important;
                 align-items: center !important;
                 gap: 0.75rem;
                 width: 100%;
-                min-height: 44px;
+                min-height: 48px;
+                transform: translate3d(0, 0, 0);
+                -webkit-transform: translate3d(0, 0, 0);
             }
 
             /* Hide canvas icons on mobile - use emoji text instead */
@@ -1836,12 +1838,15 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transform: translate3d(0, 0, 0);
             }
 
             .location-list .location-item .name {
                 flex: 1 1 auto !important;
                 font-size: 0.9rem !important;
                 color: #f5f0e8 !important;
+                transform: translate3d(0, 0, 0);
+                -webkit-transform: translate3d(0, 0, 0);
             }
             
             /* Fallback: If backdrop-filter causes issues, use solid background */
