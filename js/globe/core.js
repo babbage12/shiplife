@@ -230,8 +230,37 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 }
 
 async function init() {
-    // PROGRESSIVE LOADING: Globe shows immediately, textures load in background
-    console.log('Initializing with progressive texture loading');
+    // SMART LOADING: Toledo loads immediately, rest stagger over 60 seconds
+    console.log('Initializing with smart texture loading');
+
+    // Pre-load Toledo (Door #1) immediately - users see this first
+    if (USE_AI_PORTHOLES && locationPortholeURLs["Toledo, Ohio"]) {
+        try {
+            const toledoTexture = await loadTextureWithTransparentBlack(
+                locationPortholeURLs["Toledo, Ohio"], 65
+            );
+            if (toledoTexture) {
+                locationTextures["Toledo, Ohio"] = toledoTexture;
+                console.log('Pre-loaded Toledo texture');
+            }
+        } catch (e) {
+            console.warn('Failed to pre-load Toledo:', e);
+        }
+
+        // Also load Toledo video
+        if (locationVideoURLs["Toledo, Ohio"]) {
+            try {
+                const result = await loadVideoTexture(locationVideoURLs["Toledo, Ohio"]);
+                if (result && result.texture) {
+                    locationTextures["Toledo, Ohio"] = result.texture;
+                    locationVideos["Toledo, Ohio"] = result.video;
+                    console.log('Pre-loaded Toledo video');
+                }
+            } catch (e) {
+                console.warn('Failed to pre-load Toledo video:', e);
+            }
+        }
+    }
     
     // Scene
     scene = new THREE.Scene();
@@ -341,13 +370,20 @@ async function init() {
     }
 }
 
-// Load textures progressively in background - small batches to avoid freezing
+// Load textures progressively in background - staggered over 60 seconds for smooth globe animation
 async function progressivelyLoadTextures() {
-    const BATCH_SIZE = 4; // Load 4 textures at a time
-    const BATCH_DELAY = 100; // ms between batches
+    const TOTAL_LOAD_TIME = 60000; // 60 seconds total
+    const BATCH_SIZE = 3; // Load 3 textures at a time for smoothness
 
-    const locationNames = Object.keys(locationPortholeURLs);
-    console.log(`Progressive loading: ${locationNames.length} textures in batches of ${BATCH_SIZE}`);
+    // Get all locations except Toledo (already pre-loaded)
+    const locationNames = Object.keys(locationPortholeURLs).filter(
+        name => name !== "Toledo, Ohio" && !locationTextures[name]
+    );
+
+    const totalBatches = Math.ceil(locationNames.length / BATCH_SIZE);
+    const delayBetweenBatches = Math.floor(TOTAL_LOAD_TIME / totalBatches);
+
+    console.log(`Progressive loading: ${locationNames.length} textures over ${TOTAL_LOAD_TIME/1000}s (${delayBetweenBatches}ms between batches)`);
 
     for (let i = 0; i < locationNames.length; i += BATCH_SIZE) {
         const batch = locationNames.slice(i, i + BATCH_SIZE);
@@ -374,15 +410,15 @@ async function progressivelyLoadTextures() {
             }
         }));
 
-        // Small delay between batches to keep UI responsive
+        // Stagger batches over 60 seconds for smooth globe spinning
         if (i + BATCH_SIZE < locationNames.length) {
-            await new Promise(resolve => setTimeout(resolve, BATCH_DELAY));
+            await new Promise(resolve => setTimeout(resolve, delayBetweenBatches));
         }
     }
 
-    // Also load video textures
+    // Load any remaining video textures (except Toledo)
     for (const [name, url] of Object.entries(locationVideoURLs)) {
-        if (locationTextures[name]) continue;
+        if (name === "Toledo, Ohio" || locationTextures[name]) continue;
 
         try {
             const result = await loadVideoTexture(url);

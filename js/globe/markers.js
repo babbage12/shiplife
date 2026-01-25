@@ -1818,25 +1818,42 @@ function createMarkers() {
         const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.029 * densityScale * manualOverride;
         
         let texture, spriteMaterial, canvas;
-
-        // LAZY LOADING: Always start with canvas-drawn icons
-        // Real textures will be lazy-loaded when marker is clicked
-        canvas = document.createElement('canvas');
-        canvas.width = 128;
-        canvas.height = 150; // Taller for base
+        let textureAlreadyLoaded = false;
 
         // Doors start closed (iris animation), regular icons start open
         const initialOpen = loc.isDoor ? 0 : 1;
 
-        // Draw initial state
-        drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+        // Check if texture was pre-loaded (e.g., Toledo)
+        if (USE_AI_PORTHOLES && locationTextures[loc.title]) {
+            texture = locationTextures[loc.title];
+            canvas = null;
+            textureAlreadyLoaded = true;
 
-        texture = new THREE.CanvasTexture(canvas);
-        spriteMaterial = new THREE.SpriteMaterial({
-            map: texture,
-            transparent: true
-        });
-        
+            // Check if this is a video texture
+            if (locationVideoURLs[loc.title]) {
+                spriteMaterial = createVideoChromaMaterial(texture);
+            } else {
+                spriteMaterial = new THREE.SpriteMaterial({
+                    map: texture,
+                    transparent: true
+                });
+            }
+        } else {
+            // Start with canvas-drawn icons, textures load progressively
+            canvas = document.createElement('canvas');
+            canvas.width = 128;
+            canvas.height = 150; // Taller for base
+
+            // Draw initial state
+            drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+
+            texture = new THREE.CanvasTexture(canvas);
+            spriteMaterial = new THREE.SpriteMaterial({
+                map: texture,
+                transparent: true
+            });
+        }
+
         // Create Three.js sprite (always start with Sprite, may upgrade to Mesh for video later)
         let marker = new THREE.Sprite(spriteMaterial);
         marker.userData.isVideoMesh = false;
@@ -1845,9 +1862,14 @@ function createMarkers() {
         const direction = position.clone().normalize();
         marker.position.copy(position).add(direction.multiplyScalar(0.015));
 
-        // Scale - canvas icons have base (taller), doors are circular (no base)
+        // Scale - AI textures are square, canvas icons are taller (have base)
         const scaleX = baseSize * 2;
-        const scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35;
+        let scaleY;
+        if (textureAlreadyLoaded) {
+            scaleY = baseSize * 2; // AI textures are square
+        } else {
+            scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35; // Canvas icons
+        }
         marker.scale.set(scaleX, scaleY, 1);
         
         // Store data on marker for click handling and animation
@@ -1855,8 +1877,8 @@ function createMarkers() {
         marker.userData.baseSize = baseSize;
         marker.userData.iconConfig = config;
         marker.userData.iconCanvas = canvas;
-        marker.userData.useAIPorthole = false; // Will be set true when texture lazy loads
-        marker.userData.textureLoaded = false; // Track if real texture has been loaded
+        marker.userData.useAIPorthole = textureAlreadyLoaded;
+        marker.userData.textureLoaded = textureAlreadyLoaded;
         
         // Initialize animation state - doors closed, regular open (reuse initialOpen from above)
         markerAnimations.set(loc.id, {
