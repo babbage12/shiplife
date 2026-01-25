@@ -306,10 +306,11 @@ async function init() {
     targetRotationY = TOLEDO_Y;
     targetRotationX = TOLEDO_X;
 
-    // Renderer (alpha: false fixes iPad transparency bug)
+    // Renderer
     renderer = new THREE.WebGLRenderer({
         antialias: true,
-        alpha: false,
+        alpha: true,
+        premultipliedAlpha: false,  // Fix iPad transparency
         powerPreference: 'high-performance'
     });
     renderer.setSize(window.innerWidth, window.innerHeight);
