@@ -20,8 +20,13 @@ function buildLocationList() {
         // Create icon container
         const iconDiv = document.createElement('div');
         iconDiv.className = 'icon';
-        
-        // Create canvas for custom icon
+
+        // Store emoji for mobile fallback
+        const emoji = loc.icon || '📍';
+        iconDiv.setAttribute('data-emoji', emoji);
+        iconDiv.textContent = emoji; // Fallback text content
+
+        // Create canvas for custom icon (desktop)
         const canvas = document.createElement('canvas');
         canvas.width = 64;
         canvas.height = 64;

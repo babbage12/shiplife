@@ -1813,7 +1813,7 @@
                 transform: translateY(0);
             }
             
-            /* Mobile location items */
+            /* Mobile location items - simplified for Android */
             .location-list .location-item {
                 display: flex !important;
                 flex-direction: row !important;
@@ -1823,17 +1823,25 @@
                 min-height: 44px;
             }
 
+            /* Hide canvas icons on mobile - use emoji text instead */
+            .location-list .location-item .icon canvas {
+                display: none !important;
+            }
+
             .location-list .location-item .icon {
                 flex-shrink: 0;
+                width: 32px;
+                height: 32px;
+                font-size: 1.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             .location-list .location-item .name {
                 flex: 1 1 auto !important;
                 font-size: 0.9rem !important;
                 color: #f5f0e8 !important;
-                display: block !important;
-                visibility: visible !important;
-                opacity: 1 !important;
             }
             
             /* Fallback: If backdrop-filter causes issues, use solid background */
