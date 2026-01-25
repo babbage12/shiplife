@@ -147,17 +147,10 @@ async function lazyLoadTexture(locationTitle, marker) {
 function updateMarkerWithTexture(marker, texture, locationTitle) {
     if (!marker || !texture) return;
 
-    const isVideo = locationVideoURLs.hasOwnProperty(locationTitle);
-
-    if (isVideo) {
-        // Use shader material for video
-        marker.material = createVideoChromaMaterial(texture);
-    } else {
-        // Use sprite material for static images
-        if (marker.material) {
-            marker.material.map = texture;
-            marker.material.needsUpdate = true;
-        }
+    // Always use SpriteMaterial for markers (video plays separately on click)
+    if (marker.material) {
+        marker.material.map = texture;
+        marker.material.needsUpdate = true;
     }
 
     // AI textures are square - adjust scale from canvas aspect ratio
@@ -231,14 +224,8 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 
 async function init() {
     // SMART LOADING: Toledo loads immediately, rest stagger over 60 seconds
-    console.log('=== INIT STARTING ===');
-    console.log('USE_AI_PORTHOLES:', USE_AI_PORTHOLES);
-    console.log('Toledo URL exists:', !!locationPortholeURLs["Toledo, Ohio"]);
-
     // Pre-load Toledo (Door #1) immediately - users see this first
-    // Use Promise.race with timeout to prevent hanging
     if (USE_AI_PORTHOLES) {
-        console.log('Starting Toledo pre-load...');
         try {
             // Load texture with 5 second timeout
             const toledoTexture = await Promise.race([
@@ -247,28 +234,24 @@ async function init() {
             ]);
             if (toledoTexture) {
                 locationTextures["Toledo, Ohio"] = toledoTexture;
-                console.log('Pre-loaded Toledo texture OK');
             }
         } catch (e) {
             console.warn('Toledo texture failed:', e.message);
         }
 
         // Also load Toledo video (store separately, don't overwrite static texture)
-        console.log('Starting Toledo video pre-load...');
         try {
             const result = await Promise.race([
                 loadVideoTexture(locationVideoURLs["Toledo, Ohio"]),
                 new Promise((_, reject) => setTimeout(() => reject(new Error('Toledo video timeout')), 8000))
             ]);
             if (result && result.texture) {
-                // Store video texture separately - don't overwrite the static marker texture
+                // Store video separately - don't overwrite the static marker texture
                 locationVideos["Toledo, Ohio"] = result.video;
-                console.log('Pre-loaded Toledo video OK');
             }
         } catch (e) {
             console.warn('Toledo video failed:', e.message);
         }
-        console.log('Toledo pre-load complete');
     }
     
     // Scene

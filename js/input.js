@@ -216,15 +216,8 @@ function onTouchTap(event) {
 }
 
 function onClick(event) {
-    console.log('=== CLICK ===');
-    console.log('hoveredMarker:', hoveredMarker ? hoveredMarker.userData.title : 'NONE');
-
     if (hoveredMarker) {
         const loc = hoveredMarker.userData;
-        console.log('Clicked location:', loc.title);
-        console.log('isDoor:', loc.isDoor);
-        console.log('useAIPorthole:', hoveredMarker.userData.useAIPorthole);
-        console.log('textureLoaded:', hoveredMarker.userData.textureLoaded);
 
         // LAZY LOAD: Trigger texture loading for this marker
         if (USE_AI_PORTHOLES && !hoveredMarker.userData.textureLoaded) {
@@ -258,9 +251,6 @@ function onClick(event) {
         
         // Helper function to open panel (now triggers midway through animation)
         const openPanelForLocation = () => {
-            console.log('openPanelForLocation called for:', loc.title);
-            console.log('hasVideo:', hasVideo);
-
             // Start background music for doors (if configured)
             if (loc.isDoor && doorAudioTracks[loc.id]) {
                 playBackgroundMusic(loc.id);
@@ -313,11 +303,9 @@ function onClick(event) {
             }
         } else if (loc.isDoor && hasAITexture) {
             // Door with AI texture - no iris animation needed, just open panel
-            console.log('Door with AI texture - opening panel directly');
             if (isSwitching) {
                 setTimeout(() => openPanelForLocation(), 800);
             } else {
-                console.log('Calling openPanelForLocation NOW');
                 openPanelForLocation();
             }
         } else {
