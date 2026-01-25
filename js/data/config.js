@@ -34,7 +34,7 @@ const MUSIC_MAX_VOLUME = 0.36;
 
 // Audio tracks for each door
 const doorAudioTracks = {
-    1: 'https://res.cloudinary.com/de5jbyhxx/video/upload/v1768768186/pc_final_kqeaut.mp3',
+    // 1: 'https://res.cloudinary.com/de5jbyhxx/video/upload/v1768768186/pc_final_kqeaut.mp3', // Toledo - disabled for now
     // 2: './darwin-intro.mp3',  // Darwin (future)
     // 3: './auckland-intro.mp3' // Auckland (future)
 };
