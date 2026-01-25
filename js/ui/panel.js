@@ -21,11 +21,26 @@ function openPanel(loc) {
 
         // Hide tooltip when opening panel
         hideTooltip();
-        
-        // Note: Video playback is handled in click handler, not here
-        
+
+        // Preload hero image before showing panel content
         const panelImage = document.getElementById('panelImage');
-        panelImage.src = loc.image;
+
+        if (loc.image) {
+            // Hide current image while loading new one
+            panelImage.style.opacity = '0';
+
+            const preloadImg = new Image();
+            preloadImg.onload = () => {
+                panelImage.src = loc.image;
+                panelImage.style.opacity = '1';
+            };
+            preloadImg.onerror = () => {
+                panelImage.src = loc.image; // Try anyway
+                panelImage.style.opacity = '1';
+            };
+            preloadImg.src = loc.image;
+        }
+
         panelImage.style.setProperty('--image-position', loc.imagePosition || 'center');
         document.getElementById('panelImageCaption').textContent = loc.imageCaption || '';
         document.getElementById('panelTag').textContent = loc.tag;
