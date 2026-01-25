@@ -434,57 +434,13 @@ async function progressivelyLoadTextures() {
 function createGlobe() {
     const textureLoader = new THREE.TextureLoader();
 
-    // Create video element for animated Earth texture
-    const video = document.createElement('video');
-    video.src = 'https://res.cloudinary.com/de5jbyhxx/video/upload/v1769115184/GSFC_20170403_Blue_m12564_Marble_orig_orcvyx.mp4';
-    video.crossOrigin = 'anonymous';
-    video.loop = true;
-    video.muted = true;
-    video.playsInline = true;
-    video.autoplay = true;
-    video.playbackRate = 0.5; // Half speed
-    video.play();
-
-    // Create video texture with manual update control
-    const earthTexture = new THREE.VideoTexture(video);
-    earthTexture.minFilter = THREE.LinearFilter;
-    earthTexture.magFilter = THREE.LinearFilter;
+    // Use static Earth texture - video caused red flash artifacts
+    const earthTexture = textureLoader.load(
+        'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+    );
     earthTexture.colorSpace = THREE.SRGBColorSpace;
 
-    // Disable automatic updates - we'll control it manually
-    earthTexture.generateMipmaps = false;
-
-    // Store reference for manual update control
-    window.earthVideo = video;
-    window.earthTexture = earthTexture;
-    window.earthVideoSafeTime = 0; // Track when it's safe to update again
-
-    // When video loops or seeks, pause updates briefly
-    video.addEventListener('seeking', () => {
-        window.earthVideoSafeTime = Date.now() + 2000;
-    });
-    video.addEventListener('ended', () => {
-        window.earthVideoSafeTime = Date.now() + 2000;
-    });
-
-    // Handle video errors - reset the video to recover
-    video.addEventListener('error', (e) => {
-        console.warn('Earth video error, resetting:', e);
-        window.earthVideoSafeTime = Date.now() + 3000;
-        video.currentTime = 0;
-        video.play().catch(() => {});
-    });
-
-    // Periodically check video health and reset if stalled
-    setInterval(() => {
-        if (video.paused && !document.hidden) {
-            console.log('Earth video stalled, restarting');
-            window.earthVideoSafeTime = Date.now() + 2000;
-            video.play().catch(() => {});
-        }
-    }, 5000);
-
-    console.log('Earth video texture initialized');
+    console.log('Earth texture initialized');
 
     const bumpMap = textureLoader.load(
         'https://unpkg.com/three-globe/example/img/earth-topology.png'

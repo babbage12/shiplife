@@ -196,21 +196,6 @@ function animate() {
         }
     });
 
-    // Update Earth video texture - skip during/after seek events to avoid flash
-    if (window.earthVideo && window.earthTexture) {
-        const v = window.earthVideo;
-        const now = Date.now();
-        const safeToUpdate = v.readyState >= 3 &&
-                            !v.seeking &&
-                            !v.paused &&
-                            v.currentTime > 0.1 &&
-                            v.videoWidth > 0 &&
-                            now > (window.earthVideoSafeTime || 0);
-        if (safeToUpdate) {
-            window.earthTexture.needsUpdate = true;
-        }
-    }
-
     renderer.render(scene, camera);
 }
 
