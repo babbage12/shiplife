@@ -223,32 +223,55 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 }
 
 async function init() {
-    // Preload all AI porthole textures at startup
+    // Preload AI porthole textures - priority locations first, then rest
     if (USE_AI_PORTHOLES) {
-        console.log('Preloading all porthole textures...');
+        // Priority: Three doors + Australia (visible early in the experience)
+        const priorityLocations = [
+            "Toledo, Ohio",
+            "Darwin, Australia",
+            "Auckland, New Zealand",
+            "Sydney, Australia",
+            "Melbourne, Australia",
+            "Brisbane, Australia",
+            "Perth, Australia",
+            "Adelaide, Australia",
+            "Hobart, Tasmania",
+            "Airlie Beach, Australia",
+            "Broome, Australia"
+        ];
 
-        // Load all textures in parallel
-        const loadPromises = Object.entries(locationPortholeURLs).map(async ([name, url]) => {
+        // Load priority locations first
+        console.log('Loading priority textures (doors + Australia)...');
+        const priorityPromises = priorityLocations
+            .filter(name => locationPortholeURLs[name])
+            .map(async (name) => {
+                try {
+                    const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
+                    if (texture) {
+                        locationTextures[name] = texture;
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${name}:`, e.message);
+                }
+            });
+
+        await Promise.all(priorityPromises);
+        console.log('Priority textures loaded');
+
+        // Load remaining textures in background (don't block)
+        const remainingLocations = Object.keys(locationPortholeURLs)
+            .filter(name => !priorityLocations.includes(name));
+
+        Promise.all(remainingLocations.map(async (name) => {
             try {
-                const texture = await loadTextureWithTransparentBlack(url, 65);
+                const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
                 if (texture) {
                     locationTextures[name] = texture;
                 }
             } catch (e) {
-                console.warn(`Failed to load texture for ${name}:`, e.message);
+                console.warn(`Failed to load ${name}:`, e.message);
             }
-        });
-
-        // Wait for all textures with a timeout
-        try {
-            await Promise.race([
-                Promise.all(loadPromises),
-                new Promise((_, reject) => setTimeout(() => reject(new Error('Texture loading timeout')), 20000))
-            ]);
-            console.log('All porthole textures loaded');
-        } catch (e) {
-            console.warn('Texture preloading timed out, continuing with loaded textures');
-        }
+        })).then(() => console.log('All remaining textures loaded'));
 
         // Also load Toledo video
         if (locationVideoURLs["Toledo, Ohio"]) {
