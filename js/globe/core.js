@@ -223,34 +223,43 @@ function loadTextureWithTransparentBlack(url, threshold = 60) {
 }
 
 async function init() {
-    // SMART LOADING: Toledo loads immediately, rest stagger over 60 seconds
-    // Pre-load Toledo (Door #1) immediately - users see this first
+    // Preload all AI porthole textures at startup
     if (USE_AI_PORTHOLES) {
-        try {
-            // Load texture with 5 second timeout
-            const toledoTexture = await Promise.race([
-                loadTextureWithTransparentBlack(locationPortholeURLs["Toledo, Ohio"], 65),
-                new Promise((_, reject) => setTimeout(() => reject(new Error('Toledo texture timeout')), 5000))
-            ]);
-            if (toledoTexture) {
-                locationTextures["Toledo, Ohio"] = toledoTexture;
+        console.log('Preloading all porthole textures...');
+
+        // Load all textures in parallel
+        const loadPromises = Object.entries(locationPortholeURLs).map(async ([name, url]) => {
+            try {
+                const texture = await loadTextureWithTransparentBlack(url, 65);
+                if (texture) {
+                    locationTextures[name] = texture;
+                }
+            } catch (e) {
+                console.warn(`Failed to load texture for ${name}:`, e.message);
             }
+        });
+
+        // Wait for all textures with a timeout
+        try {
+            await Promise.race([
+                Promise.all(loadPromises),
+                new Promise((_, reject) => setTimeout(() => reject(new Error('Texture loading timeout')), 20000))
+            ]);
+            console.log('All porthole textures loaded');
         } catch (e) {
-            console.warn('Toledo texture failed:', e.message);
+            console.warn('Texture preloading timed out, continuing with loaded textures');
         }
 
-        // Also load Toledo video (store separately, don't overwrite static texture)
-        try {
-            const result = await Promise.race([
-                loadVideoTexture(locationVideoURLs["Toledo, Ohio"]),
-                new Promise((_, reject) => setTimeout(() => reject(new Error('Toledo video timeout')), 8000))
-            ]);
-            if (result && result.texture) {
-                // Store video separately - don't overwrite the static marker texture
-                locationVideos["Toledo, Ohio"] = result.video;
+        // Also load Toledo video
+        if (locationVideoURLs["Toledo, Ohio"]) {
+            try {
+                const result = await loadVideoTexture(locationVideoURLs["Toledo, Ohio"]);
+                if (result && result.texture) {
+                    locationVideos["Toledo, Ohio"] = result.video;
+                }
+            } catch (e) {
+                console.warn('Toledo video failed:', e.message);
             }
-        } catch (e) {
-            console.warn('Toledo video failed:', e.message);
         }
     }
     
@@ -354,93 +363,9 @@ async function init() {
     // Stars
     initStars();
 
-    // Start progressive texture loading in background (after globe is visible)
-    if (USE_AI_PORTHOLES) {
-        setTimeout(() => {
-            progressivelyLoadTextures();
-        }, 1500); // Wait for globe to be fully visible
-    }
 }
 
 // Load textures progressively in background - staggered over 30 seconds for smooth globe animation
-async function progressivelyLoadTextures() {
-    const TOTAL_LOAD_TIME = 30000; // 30 seconds total
-    const BATCH_SIZE = 3; // Load 3 textures at a time for smoothness
-
-    // Canadian locations to load last (don't distract from main story)
-    const canadianLocations = ["Quebec City, Canada", "Saguenay, Canada"];
-
-    // Get all locations except Toledo (already pre-loaded), with Canada at the end
-    const allLocations = Object.keys(locationPortholeURLs).filter(
-        name => name !== "Toledo, Ohio" && !locationTextures[name]
-    );
-
-    // Separate Canadian and non-Canadian locations
-    const mainLocations = allLocations.filter(name => !canadianLocations.includes(name));
-    const canadaLast = allLocations.filter(name => canadianLocations.includes(name));
-
-    // Combine with Canada at the end
-    const locationNames = [...mainLocations, ...canadaLast];
-
-    const totalBatches = Math.ceil(locationNames.length / BATCH_SIZE);
-    const delayBetweenBatches = Math.floor(TOTAL_LOAD_TIME / totalBatches);
-
-    console.log(`Progressive loading: ${locationNames.length} textures over ${TOTAL_LOAD_TIME/1000}s (${delayBetweenBatches}ms between batches)`);
-
-    for (let i = 0; i < locationNames.length; i += BATCH_SIZE) {
-        const batch = locationNames.slice(i, i + BATCH_SIZE);
-
-        // Load this batch in parallel
-        await Promise.all(batch.map(async (name) => {
-            // Skip if already loaded
-            if (locationTextures[name]) return;
-
-            const url = locationPortholeURLs[name];
-            try {
-                const texture = await loadTextureWithTransparentBlack(url, 65);
-                if (texture) {
-                    locationTextures[name] = texture;
-
-                    // Find and update the marker
-                    const marker = markers.find(m => m.userData.title === name);
-                    if (marker && !marker.userData.textureLoaded) {
-                        updateMarkerWithTexture(marker, texture, name);
-                    }
-                }
-            } catch (e) {
-                console.warn(`Failed to load texture for ${name}:`, e);
-            }
-        }));
-
-        // Stagger batches over 60 seconds for smooth globe spinning
-        if (i + BATCH_SIZE < locationNames.length) {
-            await new Promise(resolve => setTimeout(resolve, delayBetweenBatches));
-        }
-    }
-
-    // Load any remaining video textures (except Toledo)
-    for (const [name, url] of Object.entries(locationVideoURLs)) {
-        if (name === "Toledo, Ohio" || locationTextures[name]) continue;
-
-        try {
-            const result = await loadVideoTexture(url);
-            if (result && result.texture) {
-                locationTextures[name] = result.texture;
-                locationVideos[name] = result.video;
-
-                const marker = markers.find(m => m.userData.title === name);
-                if (marker && !marker.userData.textureLoaded) {
-                    updateMarkerWithTexture(marker, result.texture, name);
-                }
-            }
-        } catch (e) {
-            console.warn(`Failed to load video for ${name}:`, e);
-        }
-    }
-
-    console.log('Progressive texture loading complete');
-}
-
 function createGlobe() {
     const textureLoader = new THREE.TextureLoader();
 
