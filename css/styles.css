@@ -37,6 +37,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
+            background: #0a1628; /* Match WebGL clear color to prevent flash */
         }
 
         /* Header */
