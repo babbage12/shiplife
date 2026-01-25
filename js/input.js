@@ -167,15 +167,18 @@ function onTouchTap(event) {
                 };
                 
                 // Doors have iris animation, regular icons don't
-                if (loc.isDoor) {
+                // But skip iris animation for AI texture markers (no canvas to animate)
+                const hasAITexture = marker.userData.useAIPorthole;
+
+                if (loc.isDoor && !hasAITexture) {
                     const currentOpen = getMarkerOpenAmount(loc.id);
-                    
+
                     if (currentOpen < 0.5) {
                         // Iris is closed - start animation and open panel midway
                         const delay = isSwitching ? 600 : 0;
                         setTimeout(() => {
                             startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-                            
+
                             // Open panel after 200ms (roughly halfway through iris animation)
                             setTimeout(() => openPanelForLocation(), 200);
                         }, delay);
@@ -186,6 +189,13 @@ function onTouchTap(event) {
                         } else {
                             openPanelForLocation();
                         }
+                    }
+                } else if (loc.isDoor && hasAITexture) {
+                    // Door with AI texture - no iris animation needed, just open panel
+                    if (isSwitching) {
+                        setTimeout(() => openPanelForLocation(), 800);
+                    } else {
+                        openPanelForLocation();
                     }
                 } else {
                     // Regular icons - no iris animation
@@ -258,15 +268,18 @@ function onClick(event) {
         };
         
         // Doors have iris animation, regular icons don't
-        if (loc.isDoor) {
+        // But skip iris animation for AI texture markers (no canvas to animate)
+        const hasAITexture = hoveredMarker.userData.useAIPorthole;
+
+        if (loc.isDoor && !hasAITexture) {
             const currentOpen = getMarkerOpenAmount(loc.id);
-            
+
             if (currentOpen < 0.5) {
                 // Iris is closed - start animation and open panel midway
                 const delay = isSwitching ? 600 : 0;
                 setTimeout(() => {
                     startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-                    
+
                     // Open panel after 200ms (roughly halfway through iris animation)
                     setTimeout(() => openPanelForLocation(), 200);
                 }, delay);
@@ -277,6 +290,13 @@ function onClick(event) {
                 } else {
                     openPanelForLocation();
                 }
+            }
+        } else if (loc.isDoor && hasAITexture) {
+            // Door with AI texture - no iris animation needed, just open panel
+            if (isSwitching) {
+                setTimeout(() => openPanelForLocation(), 800);
+            } else {
+                openPanelForLocation();
             }
         } else {
             // Regular icons - no iris animation
