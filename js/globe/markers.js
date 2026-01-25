@@ -1256,6 +1256,61 @@ function renderIconSymbol(ctx, cx, cy, symbol, color, accent) {
             ctx.fill();
             break;
 
+        case 'komodo':
+            // Komodo dragon - prehistoric lizard silhouette
+            ctx.fillStyle = color;
+            // Body - long and muscular
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 2);
+            ctx.quadraticCurveTo(cx - 10, cy - 4, cx, cy - 2);
+            ctx.quadraticCurveTo(cx + 8, cy - 4, cx + 14, cy);
+            ctx.quadraticCurveTo(cx + 8, cy + 6, cx, cy + 4);
+            ctx.quadraticCurveTo(cx - 10, cy + 6, cx - 16, cy + 2);
+            ctx.fill();
+            // Head - angular and predatory
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 2);
+            ctx.lineTo(cx - 22, cy - 2);
+            ctx.lineTo(cx - 20, cy + 4);
+            ctx.lineTo(cx - 16, cy + 2);
+            ctx.fill();
+            // Tail - long and powerful
+            ctx.beginPath();
+            ctx.moveTo(cx + 14, cy);
+            ctx.quadraticCurveTo(cx + 20, cy - 2, cx + 22, cy + 4);
+            ctx.quadraticCurveTo(cx + 18, cy + 2, cx + 14, cy + 2);
+            ctx.fill();
+            // Front leg
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy + 4);
+            ctx.lineTo(cx - 10, cy + 12);
+            ctx.lineTo(cx - 6, cy + 12);
+            ctx.lineTo(cx - 4, cy + 4);
+            ctx.fill();
+            // Back leg
+            ctx.beginPath();
+            ctx.moveTo(cx + 6, cy + 4);
+            ctx.lineTo(cx + 4, cy + 12);
+            ctx.lineTo(cx + 8, cy + 12);
+            ctx.lineTo(cx + 10, cy + 4);
+            ctx.fill();
+            // Eye
+            ctx.fillStyle = '#ffd700';
+            ctx.beginPath();
+            ctx.arc(cx - 18, cy, 2, 0, Math.PI * 2);
+            ctx.fill();
+            // Forked tongue
+            ctx.strokeStyle = '#ff4444';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx - 22, cy);
+            ctx.lineTo(cx - 26, cy - 2);
+            ctx.moveTo(cx - 22, cy);
+            ctx.lineTo(cx - 26, cy + 2);
+            ctx.stroke();
+            break;
+
         default:
             // Fallback - simple circle with pin
             ctx.fillStyle = color;
