@@ -153,19 +153,24 @@ function onTouchTap(event) {
                     if (hasVideo) {
                         // Play video and open panel midway through
                         const video = locationVideos[loc.title];
-                        video.currentTime = 0; // Reset to start
-                        video.play();
-                        console.log('Playing video animation for:', loc.title);
-                        
-                        // Open panel after 40% of video duration (or 400ms minimum)
-                        const panelDelay = Math.max(400, (video.duration * 0.4) * 1000);
-                        setTimeout(() => openPanel(loc), panelDelay);
+                        try {
+                            video.currentTime = 0; // Reset to start
+                            video.play().catch(e => console.warn('Video play failed:', e));
+                            console.log('Playing video animation for:', loc.title);
+
+                            // Open panel after 40% of video duration (or 400ms minimum)
+                            const panelDelay = Math.max(400, (video.duration || 1) * 0.4 * 1000);
+                            setTimeout(() => openPanel(loc), panelDelay);
+                        } catch (e) {
+                            console.warn('Video error, opening panel directly:', e);
+                            openPanel(loc);
+                        }
                     } else {
                         // No video - open panel immediately
                         openPanel(loc);
                     }
                 };
-                
+
                 // Doors have iris animation, regular icons don't
                 // But skip iris animation for AI texture markers (no canvas to animate)
                 const hasAITexture = marker.userData.useAIPorthole;
@@ -254,13 +259,18 @@ function onClick(event) {
             if (hasVideo) {
                 // Play video and open panel midway through
                 const video = locationVideos[loc.title];
-                video.currentTime = 0; // Reset to start
-                video.play();
-                console.log('Playing video animation for:', loc.title);
-                
-                // Open panel after 40% of video duration (or 400ms minimum)
-                const panelDelay = Math.max(400, (video.duration * 0.4) * 1000);
-                setTimeout(() => openPanel(loc), panelDelay);
+                try {
+                    video.currentTime = 0; // Reset to start
+                    video.play().catch(e => console.warn('Video play failed:', e));
+                    console.log('Playing video animation for:', loc.title);
+
+                    // Open panel after 40% of video duration (or 400ms minimum)
+                    const panelDelay = Math.max(400, (video.duration || 1) * 0.4 * 1000);
+                    setTimeout(() => openPanel(loc), panelDelay);
+                } catch (e) {
+                    console.warn('Video error, opening panel directly:', e);
+                    openPanel(loc);
+                }
             } else {
                 // No video - open panel immediately
                 openPanel(loc);
