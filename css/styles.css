@@ -1817,17 +1817,22 @@
                 transform: translateY(0);
             }
             
-            /* Fix Android scroll flickering - force GPU layer for each item */
+            /* Mobile location items */
             .location-list .location-item {
-                transform: translateZ(0);
-                will-change: transform;
-                backface-visibility: hidden;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                width: 100%;
             }
             
             .location-list .location-item .name {
-                transform: translateZ(0);
-                will-change: contents;
-                backface-visibility: hidden;
+                flex: 1;
+                font-size: 0.85rem;
+                color: var(--cream);
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
             
             /* Fallback: If backdrop-filter causes issues, use solid background */
@@ -2108,6 +2113,52 @@
                 display: none;
             }
             .mobile-instructions {
+                display: block;
+            }
+        }
+
+        /* Mobile Tap Hint */
+        .mobile-tap-hint {
+            display: none;
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 150;
+            text-align: center;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .mobile-tap-hint.visible {
+            opacity: 1;
+        }
+
+        .mobile-tap-hint .tap-arrow {
+            display: block;
+            font-size: 2rem;
+            color: var(--gold);
+            animation: bounce-arrow 1s ease-in-out infinite;
+        }
+
+        .mobile-tap-hint .tap-text {
+            display: block;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: var(--cream);
+            letter-spacing: 0.1em;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            margin-top: 0.25rem;
+        }
+
+        @keyframes bounce-arrow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        @media (max-width: 768px) {
+            .mobile-tap-hint {
                 display: block;
             }
         }

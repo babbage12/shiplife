@@ -18,8 +18,10 @@ function animate() {
         // Easing - fast start, smooth slowdown
         const easeOutQuart = 1 - Math.pow(1 - progress, 4);
 
-        // Zoom from deep space to final position
-        camera.position.z = 20 - (17.8 * easeOutQuart); // 20 -> 2.2
+        // Zoom from deep space to final position (closer on mobile)
+        const isMobile = window.innerWidth <= 768;
+        const finalZoom = isMobile ? 1.8 : 2.2;
+        camera.position.z = 20 - ((20 - finalZoom) * easeOutQuart);
 
         // Spin from start position to Toledo
         globe.rotation.y = introStartY - (introStartY - TOLEDO_Y) * easeOutQuart;
@@ -29,12 +31,17 @@ function animate() {
 
         if (progress >= 1) {
             // Done - set final values
-            camera.position.z = 2.2;
+            camera.position.z = finalZoom;
             globe.rotation.y = TOLEDO_Y;
             globe.rotation.x = TOLEDO_X;
             targetRotationY = TOLEDO_Y;
             targetRotationX = TOLEDO_X;
             introComplete = true;
+
+            // Show tap hint on mobile
+            if (isMobile) {
+                showMobileTapHint();
+            }
         } else {
             // Set targets for smooth handoff
             targetRotationY = globe.rotation.y;
@@ -197,5 +204,24 @@ function animate() {
     });
 
     renderer.render(scene, camera);
+}
+
+// Show mobile tap hint after intro
+function showMobileTapHint() {
+    const hint = document.getElementById('mobileTapHint');
+    if (hint) {
+        setTimeout(() => {
+            hint.classList.add('visible');
+        }, 500);
+
+        // Hide hint when user taps anywhere or after 5 seconds
+        const hideHint = () => {
+            hint.classList.remove('visible');
+            document.removeEventListener('touchstart', hideHint);
+        };
+
+        document.addEventListener('touchstart', hideHint);
+        setTimeout(hideHint, 5000);
+    }
 }
 
