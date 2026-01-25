@@ -258,11 +258,13 @@ async function init() {
         await Promise.all(priorityPromises);
         console.log('Priority textures loaded');
 
-        // Load remaining textures in background (don't block)
+        // Load remaining textures - all in parallel with 20s total timeout
         const remainingLocations = Object.keys(locationPortholeURLs)
             .filter(name => !priorityLocations.includes(name));
 
-        Promise.all(remainingLocations.map(async (name) => {
+        console.log(`Loading ${remainingLocations.length} remaining textures...`);
+
+        const remainingPromises = remainingLocations.map(async (name) => {
             try {
                 const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
                 if (texture) {
@@ -271,7 +273,14 @@ async function init() {
             } catch (e) {
                 console.warn(`Failed to load ${name}:`, e.message);
             }
-        })).then(() => console.log('All remaining textures loaded'));
+        });
+
+        // Wait for all with 20s timeout
+        await Promise.race([
+            Promise.all(remainingPromises),
+            new Promise(resolve => setTimeout(resolve, 20000))
+        ]);
+        console.log('All textures loaded (or timed out)');
 
         // Also load Toledo video
         if (locationVideoURLs["Toledo, Ohio"]) {
