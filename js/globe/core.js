@@ -362,15 +362,25 @@ async function init() {
     }
 }
 
-// Load textures progressively in background - staggered over 60 seconds for smooth globe animation
+// Load textures progressively in background - staggered over 30 seconds for smooth globe animation
 async function progressivelyLoadTextures() {
-    const TOTAL_LOAD_TIME = 60000; // 60 seconds total
+    const TOTAL_LOAD_TIME = 30000; // 30 seconds total
     const BATCH_SIZE = 3; // Load 3 textures at a time for smoothness
 
-    // Get all locations except Toledo (already pre-loaded)
-    const locationNames = Object.keys(locationPortholeURLs).filter(
+    // Canadian locations to load last (don't distract from main story)
+    const canadianLocations = ["Quebec City, Canada", "Saguenay, Canada"];
+
+    // Get all locations except Toledo (already pre-loaded), with Canada at the end
+    const allLocations = Object.keys(locationPortholeURLs).filter(
         name => name !== "Toledo, Ohio" && !locationTextures[name]
     );
+
+    // Separate Canadian and non-Canadian locations
+    const mainLocations = allLocations.filter(name => !canadianLocations.includes(name));
+    const canadaLast = allLocations.filter(name => canadianLocations.includes(name));
+
+    // Combine with Canada at the end
+    const locationNames = [...mainLocations, ...canadaLast];
 
     const totalBatches = Math.ceil(locationNames.length / BATCH_SIZE);
     const delayBetweenBatches = Math.floor(TOTAL_LOAD_TIME / totalBatches);
