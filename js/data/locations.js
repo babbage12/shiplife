@@ -406,7 +406,7 @@ const locations = [
                 <p>A note slipped under my door.</p>
                 <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
                 <p>I made the call standing on the dock. C. Blackburn - the same agent who got me my first ship - delivered the news.</p>
-                <p>I had been offered a position on the very same ship I had seen in Cairns three years earlier. I was going to be working for Seabourn as a solo guitarist/vocalist!</p>
+                <p>I was moving to the number one rated small cruise ship in the world. Seabourn wanted me as a soloist. The same ship I had seen in Cairns three years earlier!</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor">
                 <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
                 <p>An hour later I was eating oysters with my shipmates. Gagging. Laughing. Trying not to throw up.</p>
