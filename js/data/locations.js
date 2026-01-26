@@ -1213,7 +1213,7 @@ const locations = [
                 <p class="photo-caption-inline">The Orient Bar. Finished. Elegant. Intimidating. The room that terrified me.</p>
                 <p>The first time I saw the finished Orient Bar, the elegant room, the beautiful baby grand, the view out to sea, my fear didn't go away.</p>
                 <p>It grew.</p>
-                <p>But I was with the Food & Beverage Manager. He was giving me the tour. I couldn't let it show.</p>
+                <p>But I was with the Food & Beverage Manager. I couldn't let it show.</p>
                 <p>Only my second contract at sea. But I'd already learned the importance of chain of command.</p>
                 <p>You don't let them see you sweat.</p>
             </div>
