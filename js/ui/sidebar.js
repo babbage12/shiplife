@@ -21,10 +21,9 @@ function buildLocationList() {
         const iconDiv = document.createElement('div');
         iconDiv.className = 'icon';
 
-        // Store emoji for mobile fallback
+        // Store emoji for mobile fallback (via CSS ::before pseudo-element)
         const emoji = loc.icon || '📍';
         iconDiv.setAttribute('data-emoji', emoji);
-        iconDiv.textContent = emoji; // Fallback text content
 
         // Create canvas for custom icon (desktop)
         const canvas = document.createElement('canvas');
