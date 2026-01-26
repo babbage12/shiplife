@@ -1218,7 +1218,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Stakes</span>
                 <h3 class="section-title-panel">Oh Holy Shit</h3>
-                <p>The P&O Pacific Jewel itinerary was built out for longer runs. Sometimes 18 days before we would return to Sydney to pick up another ship full of passengers.</p>
+                <p>Unlike my first contract on the Pacific Sun, the P&O Pacific Jewel itinerary was built for longer runs. Sometimes 18 days before we would return to Sydney to pick up another ship full of passengers.</p>
                 <p>That meant I was required to entertain the same groups of people for twice as long.</p>
                 <p>And this first cruise wasn't just any cruise.</p>
                 <p>This was the <em>inaugural</em> voyage.</p>
