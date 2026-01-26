@@ -1259,6 +1259,8 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455254/004-5_osr9fe.jpg" class="story-image" data-caption="Darling Harbour promenade." alt="Darling Harbour promenade">
                 </div>
                 <p class="photo-caption-inline">Darling Harbour. We explored every corner before the chaos began.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455213/019-5_tgfloj.jpg" class="story-image" data-caption="A local in the Royal Botanic Garden." alt="Bird in botanical gardens">
+                <p class="photo-caption-inline">The Royal Botanic Garden. Even the locals came out to see what the fuss was about.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour - inaugural day." alt="Pacific Jewel in Sydney Harbour">
                 <p class="photo-caption-inline">The Pacific Jewel in Sydney Harbour. This was really happening.</p>
