@@ -47,9 +47,25 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/v1768865556/IMG_20131118_184140_zmbgko.jpg", caption: "Another day in paradise.", alt: "Phuket closing" }
     ],
     
-    // SYDNEY (placeholder for Pacific Jewel maiden voyage)
+    // SYDNEY
     "sydney": [
-        // Add photos here when ready
+        { src: "w_600,q_80,f_auto/v1769452856/IMG_4080_oynzd4.jpg", caption: "The perfect Sydney trifecta - Opera House, Harbour Bridge, and Celebrity Solstice.", alt: "Opera House, Bridge, and cruise ship" },
+        { src: "w_600,q_80,f_auto/v1769452854/DSC00390_ydjuzo.jpg", caption: "Sydney Opera House at night.", alt: "Opera House at night" },
+        { src: "w_600,q_80,f_auto/v1769452855/IMG_4087_nlxpdb.jpg", caption: "Sailing into Circular Quay - Opera House, skyline, and Celebrity Solstice.", alt: "Sydney Harbour panorama" },
+        { src: "w_600,q_80,f_auto/v1769452855/IMG_4089_pmhmk5.jpg", caption: "The iconic Sydney Opera House with the city skyline.", alt: "Opera House and skyline" },
+        { src: "w_600,q_80,f_auto/v1769452857/IMG_4082_amzxul.jpg", caption: "Sydney Opera House from the harbour.", alt: "Opera House close-up" },
+        { src: "w_600,q_80,f_auto/v1769452853/IMG_4076_oemrj4.jpg", caption: "Opera House view from the pool deck.", alt: "Opera House from ship deck" },
+        { src: "w_600,q_80,f_auto/v1769452854/IMG_4092_dxnroi.jpg", caption: "Sydney skyline with the ship docked at Circular Quay.", alt: "Sydney skyline with cruise ship" },
+        { src: "w_600,q_80,f_auto/v1769452852/IMG_4104_tnztbf.jpg", caption: "Golden hour under the Harbour Bridge - tugboat heading out.", alt: "Sunset under Harbour Bridge" },
+        { src: "w_600,q_80,f_auto/v1769452853/IMG_4149_ay05vq.jpg", caption: "Sydney Harbour Bridge and control tower.", alt: "Harbour Bridge" },
+        { src: "w_600,q_80,f_auto/v1769452853/IMG_4158_pb1iha.jpg", caption: "Morning kayaker on the harbour.", alt: "Kayaker with Harbour Bridge" },
+        { src: "w_600,q_80,f_auto/v1769452854/IMG_4144_fbo0v2.jpg", caption: "Waterfront homes along the harbour.", alt: "Sydney waterfront homes" },
+        { src: "w_600,q_80,f_auto/v1769452856/IMG_4145_dupj0z.jpg", caption: "Sydney Harbour living.", alt: "Harbour homes and boats" },
+        { src: "w_600,q_80,f_auto/v1769452854/IMG_0468_vcjg0j.jpg", caption: "Dusk on deck with the Opera House.", alt: "Derrick on deck with Opera House" },
+        { src: "w_600,q_80,f_auto/v1769452853/IMG_4159_xay2kp.jpg", caption: "Christmas in the Southern Hemisphere - entertaining as Buddy the Elf.", alt: "Derrick as elf playing guitar" },
+        { src: "w_600,q_80,f_auto/v1769452856/IMG_0190_qjopgo.jpg", caption: "Sydney University - the Quadrangle.", alt: "Sydney University" },
+        { src: "w_600,q_80,f_auto/v1769452856/IMG_0193_zateza.jpg", caption: "Royal Botanic Garden.", alt: "Botanic Garden fountain" },
+        { src: "w_600,q_80,f_auto/v1769452855/IMG_0195_z0ukqo.jpg", caption: "Moreton Bay fig tree in the Royal Botanic Garden.", alt: "Giant fig tree" }
     ],
     
     // DARWIN - Crew Friends & Shiplife Moments
