@@ -1276,10 +1276,7 @@ const locations = [
                 <h3 class="section-title-panel">The Opera House at Night</h3>
                 <p>We pulled away from the dock.</p>
                 <p>The Opera House slid past. Lit up. Glowing against the dark.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769035906/03-opera-house-dusk_b5zehq.jpg" class="story-image" data-caption="The Opera House at dusk." alt="Opera House at dusk">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
-                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
                 <p class="photo-caption-inline">Through the porthole. Then past us. Then gone.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
                 <p class="photo-caption-inline">Fireworks lit up the harbour. The inaugural voyage had begun.</p>
