@@ -1299,8 +1299,6 @@ const locations = [
                 <p>Then, mid-ballad, what I thought was one of my most impassioned performances of the evening, a couple walked up and asked if I could take their photo.</p>
                 <blockquote class="story-quote">Sure. Of course.</blockquote>
                 <p>Things settled into a cozy routine after that. I adjusted to the sound of the room. To the quiet.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/011-8_soq3q6.jpg" class="story-image" data-caption="The Orient Bar starting to fill." alt="Orient Bar inaugural">
-                <p class="photo-caption-inline">The bar starting to fill. A few guests finding their way in.</p>
                 <p>And then suddenly, people started walking in from both sides of the bar. Fifty of them. Maybe more.</p>
                 <p>The Orient Bar came alive.</p>
                 <div class="story-gallery-grid">
