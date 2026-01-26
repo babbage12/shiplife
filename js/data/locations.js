@@ -1242,7 +1242,10 @@ const locations = [
                 <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous — I wasn't ready for this.</p>
                 <p>That's me. Standing in front of the Pacific Jewel. Opera House in the background. Black suit. Big smile.</p>
                 <p>The smile was real. So was the terror underneath it.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour." alt="Pacific Jewel in Sydney Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
+                </div>
                 <p class="photo-caption-inline">Sydney Harbour. This was a big deal.</p>
                 <div class="story-gallery-grid-small">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455039/033_jyc0u9.jpg" data-caption="Exploring Darling Harbour." alt="Darling Harbour">
@@ -1251,18 +1254,13 @@ const locations = [
                 </div>
                 <p class="photo-caption-inline">Darling Harbour. The Royal Botanic Garden. Even the locals came out to see what the fuss was about.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour - inaugural day." alt="Pacific Jewel in Sydney Harbour">
-                <p class="photo-caption-inline">The Pacific Jewel in Sydney Harbour. This was really happening.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/035_lhmdeq.jpg" class="story-image" data-caption="The inaugural party setup. Pink Hummer limos." alt="Inaugural party setup">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
                 </div>
                 <p class="photo-caption-inline">The setup. The anticipation. Musos waiting for the sky to clear. Would it rain?</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/016-5_pqce0o.jpg" class="story-image" data-caption="Famous Australian talent showed up for the party." alt="Australian celebrity">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037242/006-9_vgsu3k.jpg" class="story-image" data-caption="Musician friends: Adriano Moreira and Fabio." alt="Musician friends">
-                </div>
-                <p class="photo-caption-inline">Big Australian talent showed up for the party. My musician friends Adriano and Fabio.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/016-5_pqce0o.jpg" class="story-image" data-caption="Famous Australian talent showed up for the party." alt="Australian celebrity">
+                <p class="photo-caption-inline">Big Australian talent showed up for the party.</p>
                 <p>I was either going to sink or swim in the days ahead.</p>
                 <p>No in-between.</p>
             </div>

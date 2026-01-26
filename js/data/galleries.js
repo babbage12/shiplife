@@ -65,7 +65,8 @@ const locationGalleries = {
         { src: "w_600,q_80,f_auto/v1769452853/IMG_4159_xay2kp.jpg", caption: "Christmas in the Southern Hemisphere - entertaining as Buddy the Elf.", alt: "Derrick as elf playing guitar" },
         { src: "w_600,q_80,f_auto/v1769452856/IMG_0190_qjopgo.jpg", caption: "Sydney University - the Quadrangle.", alt: "Sydney University" },
         { src: "w_600,q_80,f_auto/v1769452856/IMG_0193_zateza.jpg", caption: "Royal Botanic Garden.", alt: "Botanic Garden fountain" },
-        { src: "w_600,q_80,f_auto/v1769452855/IMG_0195_z0ukqo.jpg", caption: "Moreton Bay fig tree in the Royal Botanic Garden.", alt: "Giant fig tree" }
+        { src: "w_600,q_80,f_auto/v1769452855/IMG_0195_z0ukqo.jpg", caption: "Moreton Bay fig tree in the Royal Botanic Garden.", alt: "Giant fig tree" },
+        { src: "w_600,q_80,f_auto/v1769037242/006-9_vgsu3k.jpg", caption: "Musician friends: Adriano Moreira and Fabio at the inaugural party.", alt: "Adriano and Fabio" }
     ],
     
     // DARWIN - Crew Friends & Shiplife Moments
