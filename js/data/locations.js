@@ -1180,29 +1180,19 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
                 </div>
                 <p class="photo-caption-inline">The electronics mall — my favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="The new hotel that wasn't yet finished - Marina Bay Sands." alt="Marina Bay Sands">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455552/080_unifec.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands construction">
-                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands">
                 <p class="photo-caption-inline">Marina Bay Sands — not even finished yet. We'd return in 2013 on Seabourn to see the completed towers.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455525/094_n9zzxl.jpg" class="story-image" data-caption="Singapore streets." alt="Singapore">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455561/077_atpyn7.jpg" class="story-image" data-caption="Exploring Singapore." alt="Exploring Singapore">
-                </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/Singapore_Panorama_ryrlix.jpg" class="story-image" data-caption="Singapore panorama." alt="Singapore panorama">
-                <p class="photo-caption-inline">Singapore. A city that never stopped building.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
                 <p class="photo-caption-inline">Richard, Ashley, and Thomas — we were in this together.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037275/039_bn8ed8.jpg" class="story-image" data-caption="The royal palace and park." alt="Royal palace">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/029-3_dz16wt.jpg" class="story-image" data-caption="Exploring Singapore." alt="Singapore park">
+                <div class="story-gallery-grid-small">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455525/094_n9zzxl.jpg" class="gallery-thumb" data-caption="Singapore streets." alt="Singapore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455561/077_atpyn7.jpg" class="gallery-thumb" data-caption="Exploring Singapore." alt="Exploring Singapore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037275/039_bn8ed8.jpg" class="gallery-thumb" data-caption="The royal palace and park." alt="Royal palace">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037276/029-3_dz16wt.jpg" class="gallery-thumb" data-caption="Exploring Singapore." alt="Singapore park">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037268/017_ngcz3a.jpg" class="gallery-thumb" data-caption="The royal park." alt="Royal park">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037266/021-3_viiyxk.jpg" class="gallery-thumb" data-caption="Don't say they didn't warn you." alt="Singapore warning sign">
                 </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037268/017_ngcz3a.jpg" class="story-image" data-caption="The royal park." alt="Royal park">
-                <p class="photo-caption-inline">The royal palace and park. We explored every chance we got.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/021-3_viiyxk.jpg" class="story-image" data-caption="A sign to obey. Singaporean law was clear." alt="Singapore warning sign">
-                <p class="photo-caption-inline">Singaporean law was clear. Don't say they didn't warn you.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037267/049-2_utq92i.jpg" class="story-image" data-caption="My passenger cabin on the Jewel." alt="Passenger cabin">
-                <p class="photo-caption-inline">My cabin. A passenger cabin. All to myself for four months.</p>
+                <p class="photo-caption-inline">Exploring Singapore. The royal palace, the parks, the warning signs. We escaped whenever we could.</p>
                 <p>That was the escape. But underneath it all — underneath the exploring and the jokes and the long walks through the city — there was worry.</p>
                 <p>I wasn't ready.</p>
             </div>

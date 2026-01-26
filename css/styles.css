@@ -614,6 +614,27 @@
             object-fit: cover;
         }
 
+        /* Small 3-column grid for sightseeing thumbnails */
+        .story-gallery-grid-small {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .story-gallery-grid-small img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .story-gallery-grid-small img:hover {
+            transform: scale(1.02);
+        }
+
         .photo-caption-inline {
             font-size: 0.75rem;
             color: rgba(245, 240, 232, 0.5);
