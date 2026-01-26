@@ -1171,7 +1171,7 @@ const locations = [
                 <p>I got to know the Singapore MRT. I got to know the malls.</p>
                 <blockquote class="story-quote">Malls meant two things: food and wifi.</blockquote>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037282/072-2_hxubqq.jpg" class="story-image" data-caption="The Singapore MRT. Our escape route." alt="Singapore MRT">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769037282/072-2_hxubqq.jpg" class="story-image" data-caption="The Singapore MRT. Our escape route." alt="Singapore MRT">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037282/073_jozbht.jpg" class="story-image" data-caption="The MRT station." alt="Singapore MRT">
                 </div>
                 <p class="photo-caption-inline">The MRT. Our escape route to air conditioning and wifi.</p>
@@ -1236,7 +1236,7 @@ const locations = [
                 <p>December 12th, 2009.</p>
                 <p>Darling Harbour, Sydney.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455293/039-3_z79ldk.jpg" class="story-image" data-caption="Getting ready to board on the red carpet. I've never been so nervous." alt="Red carpet boarding">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769455293/039-3_z79ldk.jpg" class="story-image" data-caption="Getting ready to board on the red carpet. I've never been so nervous." alt="Red carpet boarding">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg" class="story-image" data-caption="Standing in front of the Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
                 </div>
                 <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous — I wasn't ready for this.</p>
@@ -1244,13 +1244,12 @@ const locations = [
                 <p>The smile was real. So was the terror underneath it.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
                 <p class="photo-caption-inline">Sydney Harbour. This was a big deal.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455039/033_jyc0u9.jpg" class="story-image" data-caption="Exploring Darling Harbour." alt="Darling Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455254/004-5_osr9fe.jpg" class="story-image" data-caption="Darling Harbour promenade." alt="Darling Harbour promenade">
+                <div class="story-gallery-grid-small">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455039/033_jyc0u9.jpg" data-caption="Exploring Darling Harbour." alt="Darling Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455254/004-5_osr9fe.jpg" data-caption="Darling Harbour promenade." alt="Darling Harbour promenade">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455213/019-5_tgfloj.jpg" data-caption="A local in the Royal Botanic Garden." alt="Bird in botanical gardens">
                 </div>
-                <p class="photo-caption-inline">Darling Harbour. We explored every corner before the chaos began.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455213/019-5_tgfloj.jpg" class="story-image" data-caption="A local in the Royal Botanic Garden." alt="Bird in botanical gardens">
-                <p class="photo-caption-inline">The Royal Botanic Garden. Even the locals came out to see what the fuss was about.</p>
+                <p class="photo-caption-inline">Darling Harbour. The Royal Botanic Garden. Even the locals came out to see what the fuss was about.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour - inaugural day." alt="Pacific Jewel in Sydney Harbour">
                 <p class="photo-caption-inline">The Pacific Jewel in Sydney Harbour. This was really happening.</p>
