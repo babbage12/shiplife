@@ -1158,6 +1158,7 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455594/057-2_fr8tmk.jpg" class="story-image" data-caption="Dry dock operations." alt="Dry dock">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455599/056-2_eekdld.jpg" class="story-image" data-caption="The Jewel being transformed." alt="Dry dock transformation">
                 </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769462730/062_c5wqik.jpg" class="story-image" data-caption="Christmas decorations in dry dock." alt="Christmas in dry dock">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031185/060_mhyxga.jpg" class="story-image" data-caption="The Orient Bar during dry dock. Under construction." alt="Orient Bar under construction">
                 <p class="photo-caption-inline">The Orient Bar. Under construction. Plastic sheeting. Sawdust. Half-finished fixtures. But the piano worked.</p>
                 <p>Contractors everywhere. People yelling in languages I didn't recognize. Cafeteria lines a mile long. Project managers, welders, electricians, us.</p>
@@ -1187,12 +1188,14 @@ const locations = [
                 <div class="story-gallery-grid-small">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455525/094_n9zzxl.jpg" class="gallery-thumb" data-caption="Singapore streets." alt="Singapore">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455561/077_atpyn7.jpg" class="gallery-thumb" data-caption="Exploring Singapore." alt="Exploring Singapore">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037275/039_bn8ed8.jpg" class="gallery-thumb" data-caption="The royal palace and park." alt="Royal palace">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769462789/093_fpt2cj.jpg" class="gallery-thumb" data-caption="Raffles." alt="Raffles">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037276/029-3_dz16wt.jpg" class="gallery-thumb" data-caption="Exploring Singapore." alt="Singapore park">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037268/017_ngcz3a.jpg" class="gallery-thumb" data-caption="The royal park." alt="Royal park">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037266/021-3_viiyxk.jpg" class="gallery-thumb" data-caption="Don't say they didn't warn you." alt="Singapore warning sign">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037268/017_ngcz3a.jpg" class="gallery-thumb" data-caption="The park." alt="Park">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769462816/006_tlvpn1.jpg" class="gallery-thumb" data-caption="Singapore sights." alt="Singapore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769462839/084-2_ws7xgu.jpg" class="gallery-thumb" data-caption="Singapore park." alt="Singapore park">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769462852/082_rhjfde.jpg" class="gallery-thumb" data-caption="Singapore exploring." alt="Singapore exploring">
                 </div>
-                <p class="photo-caption-inline">Exploring Singapore. The royal palace, the parks, the warning signs. We escaped whenever we could.</p>
+                <p class="photo-caption-inline">Exploring Singapore. Raffles, the parks, the sights. We escaped whenever we could.</p>
                 <p>That was the escape. But underneath it all, underneath the exploring and the jokes and the long walks through the city, there was worry.</p>
                 <p>I wasn't ready.</p>
             </div>
