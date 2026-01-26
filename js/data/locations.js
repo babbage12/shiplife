@@ -1168,9 +1168,11 @@ const locations = [
                 <p class="photo-caption-inline">The MRT. Our escape route to air conditioning and wifi.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/012-2_m4xovl.jpg" class="story-image" data-caption="The electronics mall. My favorite spot in Singapore." alt="Electronics mall">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="The new hotel that wasn't yet finished - Marina Bay Sands." alt="Marina Bay Sands">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
                 </div>
-                <p class="photo-caption-inline">The electronics mall — my favorite spot in Singapore. And the new hotel that wasn't even finished yet. Everything felt under construction.</p>
+                <p class="photo-caption-inline">The electronics mall — my favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="The new hotel that wasn't yet finished - Marina Bay Sands." alt="Marina Bay Sands">
+                <p class="photo-caption-inline">Marina Bay Sands — not even finished yet. Everything in Singapore felt under construction.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/Singapore_Panorama_ryrlix.jpg" class="story-image" data-caption="Singapore panorama." alt="Singapore panorama">
                 <p class="photo-caption-inline">Singapore. A city that never stopped building.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
@@ -1237,6 +1239,8 @@ const locations = [
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
                 <p class="photo-caption-inline">Sydney Harbour. This was a big deal.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour - inaugural day." alt="Pacific Jewel in Sydney Harbour">
+                <p class="photo-caption-inline">The Pacific Jewel in Sydney Harbour. This was really happening.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/035_lhmdeq.jpg" class="story-image" data-caption="The inaugural party setup. Pink Hummer limos." alt="Inaugural party setup">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
