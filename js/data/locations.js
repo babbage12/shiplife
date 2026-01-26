@@ -1149,6 +1149,15 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/102_ly7caf.jpg" class="story-image" data-caption="The Jewel getting her name - one of the last things they do before leaving dry dock." alt="Jewel getting its name">
                 </div>
                 <p class="photo-caption-inline">Pacific Jewel in dry dock. Workers everywhere. Scaffolding. Chaos. This was home now.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455518/100_ik4c2a.jpg" class="story-image" data-caption="Workers biking past the Jewel on their lunch break." alt="Dry dock workers biking">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455580/061_mtftgb.jpg" class="story-image" data-caption="The dry dock in full swing." alt="Dry dock">
+                </div>
+                <p class="photo-caption-inline">Lunch break. Workers biking past like this was just another day. For them it was.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455594/057-2_fr8tmk.jpg" class="story-image" data-caption="Dry dock operations." alt="Dry dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455599/056-2_eekdld.jpg" class="story-image" data-caption="The Jewel being transformed." alt="Dry dock transformation">
+                </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031185/060_mhyxga.jpg" class="story-image" data-caption="The Orient Bar during dry dock. Under construction." alt="Orient Bar under construction">
                 <p class="photo-caption-inline">The Orient Bar. Under construction. Plastic sheeting. Sawdust. Half-finished fixtures. But the piano worked.</p>
                 <p>Contractors everywhere. People yelling in languages I didn't recognize. Cafeteria lines a mile long — project managers, welders, electricians, us.</p>
@@ -1171,8 +1180,15 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
                 </div>
                 <p class="photo-caption-inline">The electronics mall — my favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="The new hotel that wasn't yet finished - Marina Bay Sands." alt="Marina Bay Sands">
-                <p class="photo-caption-inline">Marina Bay Sands — not even finished yet. Everything in Singapore felt under construction.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="The new hotel that wasn't yet finished - Marina Bay Sands." alt="Marina Bay Sands">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455552/080_unifec.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands construction">
+                </div>
+                <p class="photo-caption-inline">Marina Bay Sands — not even finished yet. We'd return in 2013 on Seabourn to see the completed towers.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455525/094_n9zzxl.jpg" class="story-image" data-caption="Singapore streets." alt="Singapore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455561/077_atpyn7.jpg" class="story-image" data-caption="Exploring Singapore." alt="Exploring Singapore">
+                </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/Singapore_Panorama_ryrlix.jpg" class="story-image" data-caption="Singapore panorama." alt="Singapore panorama">
                 <p class="photo-caption-inline">Singapore. A city that never stopped building.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
@@ -1230,14 +1246,19 @@ const locations = [
                 <p>December 12th, 2009.</p>
                 <p>Darling Harbour, Sydney.</p>
                 <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455293/039-3_z79ldk.jpg" class="story-image" data-caption="Getting ready to board on the red carpet. I've never been so nervous." alt="Red carpet boarding">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg" class="story-image" data-caption="Standing in front of the Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/008-2_yeieuu.jpg" class="story-image" data-caption="Embarkation day." alt="Embarkation day">
                 </div>
-                <p class="photo-caption-inline">I felt like a movie star. I was terrified.</p>
+                <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous — I wasn't ready for this.</p>
                 <p>That's me. Standing in front of the Pacific Jewel. Opera House in the background. Black suit. Big smile.</p>
                 <p>The smile was real. So was the terror underneath it.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
                 <p class="photo-caption-inline">Sydney Harbour. This was a big deal.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455039/033_jyc0u9.jpg" class="story-image" data-caption="Exploring Darling Harbour." alt="Darling Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455254/004-5_osr9fe.jpg" class="story-image" data-caption="Darling Harbour promenade." alt="Darling Harbour promenade">
+                </div>
+                <p class="photo-caption-inline">Darling Harbour. We explored every corner before the chaos began.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour - inaugural day." alt="Pacific Jewel in Sydney Harbour">
                 <p class="photo-caption-inline">The Pacific Jewel in Sydney Harbour. This was really happening.</p>
@@ -1265,6 +1286,8 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
                 </div>
                 <p class="photo-caption-inline">Through the porthole. Then past us. Then gone.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
+                <p class="photo-caption-inline">Fireworks lit up the harbour. The inaugural voyage had begun.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031099/046-2_csspcp.jpg" class="story-image" data-caption="The deck party at night." alt="Deck party">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
