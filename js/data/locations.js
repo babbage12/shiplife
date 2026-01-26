@@ -1160,15 +1160,15 @@ const locations = [
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031185/060_mhyxga.jpg" class="story-image" data-caption="The Orient Bar during dry dock. Under construction." alt="Orient Bar under construction">
                 <p class="photo-caption-inline">The Orient Bar. Under construction. Plastic sheeting. Sawdust. Half-finished fixtures. But the piano worked.</p>
-                <p>Contractors everywhere. People yelling in languages I didn't recognize. Cafeteria lines a mile long — project managers, welders, electricians, us.</p>
+                <p>Contractors everywhere. People yelling in languages I didn't recognize. Cafeteria lines a mile long. Project managers, welders, electricians, us.</p>
                 <p>We ate with them. Partied with them. Sweated through the sticky Singapore heat with them. Tripped over them.</p>
-                <p>The musicians got close fast. We had chores during the day — nothing too bad — but we escaped whenever we could.</p>
+                <p>The musicians got close fast. We had chores during the day, nothing too bad, but we escaped whenever we could.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Exploring</span>
                 <h3 class="section-title-panel">Getting Off The Ship</h3>
-                <p>I got to know the Singapore MRT. I got to know the malls.</p>
+                <p>I came to know Singapore pretty well in the month-long stay. I learned my way around the Singapore MRT, and I scouted out all of the free wifi spots in the city, from the internet cafes to the malls.</p>
                 <blockquote class="story-quote">Malls meant two things: food and wifi.</blockquote>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769037282/072-2_hxubqq.jpg" class="story-image" data-caption="The Singapore MRT. Our escape route." alt="Singapore MRT">
@@ -1179,11 +1179,11 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/012-2_m4xovl.jpg" class="story-image" data-caption="The electronics mall. My favorite spot in Singapore." alt="Electronics mall">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
                 </div>
-                <p class="photo-caption-inline">The electronics mall — my favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
+                <p class="photo-caption-inline">The electronics mall. My favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands">
-                <p class="photo-caption-inline">Marina Bay Sands — not even finished yet. We'd return in 2013 on Seabourn to see the completed towers.</p>
+                <p class="photo-caption-inline">Marina Bay Sands. Not even finished yet. We'd return in 2013 on Seabourn to see the completed towers.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
-                <p class="photo-caption-inline">Richard, Ashley, and Thomas — we were in this together.</p>
+                <p class="photo-caption-inline">Richard, Ashley, and Thomas. We were in this together.</p>
                 <div class="story-gallery-grid-small">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455525/094_n9zzxl.jpg" class="gallery-thumb" data-caption="Singapore streets." alt="Singapore">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455561/077_atpyn7.jpg" class="gallery-thumb" data-caption="Exploring Singapore." alt="Exploring Singapore">
@@ -1193,21 +1193,22 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769037266/021-3_viiyxk.jpg" class="gallery-thumb" data-caption="Don't say they didn't warn you." alt="Singapore warning sign">
                 </div>
                 <p class="photo-caption-inline">Exploring Singapore. The royal palace, the parks, the warning signs. We escaped whenever we could.</p>
-                <p>That was the escape. But underneath it all — underneath the exploring and the jokes and the long walks through the city — there was worry.</p>
+                <p>That was the escape. But underneath it all, underneath the exploring and the jokes and the long walks through the city, there was worry.</p>
                 <p>I wasn't ready.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Preparation</span>
                 <h3 class="section-title-panel">Pounding the Keys</h3>
-                <p>Every night, I worked in the Orient Bar until late. I had over a hundred songs on my list.</p>
+                <p>Every night during dry dock, I worked in the Orient Bar until late. I had over a hundred songs on my list.</p>
                 <p>But when I sat down to play? I kept falling back on the same 30.</p>
                 <p>That was a problem.</p>
-                <p>There were two other pianists in our group. Ashley — our band master. And Alexander — a child prodigy type, pure Liberace energy. Both were incredibly supportive. They had to be.</p>
+                <p>There were two other pianists in our group. Ashley, our band master. And Alexander, a child prodigy type, pure Liberace energy. Both were incredibly supportive. They had to be.</p>
                 <p>I was nervous as hell.</p>
+                <p>After dry dock, we sailed back to Auckland and then on to Sydney for the inaugural voyage. I practiced the whole way. Every spare moment at that piano, trying to expand my repertoire from 30 songs to something respectable.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/025_yqujzb.jpg" class="story-image" data-caption="The Orient Bar, finished." alt="The Orient Bar">
                 <p class="photo-caption-inline">The Orient Bar. Finished. Elegant. Intimidating. The room that terrified me.</p>
-                <p>The first time I saw the finished Orient Bar — the elegant room, the beautiful baby grand, the view out to sea — my fear didn't go away.</p>
+                <p>The first time I saw the finished Orient Bar, the elegant room, the beautiful baby grand, the view out to sea, my fear didn't go away.</p>
                 <p>It grew.</p>
                 <p>But I was with the Food & Beverage Manager. He was giving me the tour. I couldn't let it show.</p>
                 <p>Only my second contract at sea. But I'd already learned the importance of chain of command.</p>
@@ -1232,14 +1233,14 @@ const locations = [
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Darling Harbour</span>
-                <h3 class="section-title-panel">The Red Carpet</h3>
+                <h3 class="section-title-panel">Inaugural Voyage Day</h3>
                 <p>December 12th, 2009.</p>
                 <p>Darling Harbour, Sydney.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769455293/039-3_z79ldk.jpg" class="story-image" data-caption="Getting ready to board on the red carpet. I've never been so nervous." alt="Red carpet boarding">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg" class="story-image" data-caption="Standing in front of the Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
                 </div>
-                <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous — I wasn't ready for this.</p>
+                <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous. I wasn't ready for this.</p>
                 <p>That's me. Standing in front of the Pacific Jewel. Opera House in the background. Black suit. Big smile.</p>
                 <p>The smile was real. So was the terror underneath it.</p>
                 <div class="story-gallery-grid">
@@ -1256,9 +1257,11 @@ const locations = [
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/035_lhmdeq.jpg" class="story-image" data-caption="The inaugural party setup. Pink Hummer limos." alt="Inaugural party setup">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031099/046-2_csspcp.jpg" class="story-image" data-caption="The deck party at night." alt="Deck party">
                 </div>
-                <p class="photo-caption-inline">The setup. The anticipation. Musos waiting for the sky to clear. Would it rain?</p>
+                <p class="photo-caption-inline">The setup. The deck party. Would it rain?</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
+                <p class="photo-caption-inline">Musos waiting for the sky to clear.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/016-5_pqce0o.jpg" class="story-image" data-caption="Famous Australian talent showed up for the party." alt="Australian celebrity">
                 <p class="photo-caption-inline">Big Australian talent showed up for the party.</p>
                 <p>I was either going to sink or swim in the days ahead.</p>
@@ -1277,11 +1280,8 @@ const locations = [
                 <p class="photo-caption-inline">Through the porthole. Then past us. Then gone.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
                 <p class="photo-caption-inline">Fireworks lit up the harbour. The inaugural voyage had begun.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031099/046-2_csspcp.jpg" class="story-image" data-caption="The deck party at night." alt="Deck party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
-                </div>
-                <p class="photo-caption-inline">The deck party. Hundreds of people. Sydney Showboat escorting us into the night.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
+                <p class="photo-caption-inline">Sydney Showboat escorting us into the night.</p>
                 <p>Somewhere in that harbor, the guitarist I used to be stayed behind.</p>
                 <p>The pianist I was about to become?</p>
                 <p>He sailed out into the dark.</p>
@@ -1292,11 +1292,11 @@ const locations = [
                 <h3 class="section-title-panel">The First Night</h3>
                 <p>I wasn't scheduled to play until the ship started pulling away from Darling Harbour.</p>
                 <p>By then it was late. Guests were still in their cabins after their first afternoon on board, still finding their way around. The Orient Bar was on Deck 7, towards the back of the ship. Not everyone would find it right away.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/025_yqujzb.jpg" class="story-image" data-caption="The Orient Bar. Elegant. Intimidating. Mostly empty." alt="Orient Bar empty">
-                <p class="photo-caption-inline">The Orient Bar. Elegant. Intimidating. Mostly windows. Mostly empty.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/004-6_gfk1p1.jpg" class="story-image" data-caption="Me at the piano in the Orient Bar." alt="Derrick at the piano">
+                <p class="photo-caption-inline">Me at the piano. The Orient Bar. Elegant. Intimidating. Mostly windows.</p>
                 <p>A few people came in and sat down at first.</p>
-                <p>I played. The sound of a baby grand piano in a mostly empty room that was mostly windows — it was jarring. Every note hung in the air. Every squeak of the foot pedals. Every plink of my fingers on the keys.</p>
-                <p>Then, mid-ballad — what I thought was one of my most impassioned performances of the evening — a couple walked up and asked if I could take their photo.</p>
+                <p>I played. The sound of a baby grand piano in a mostly empty room that was mostly windows. It was jarring. Every note hung in the air. Every squeak of the foot pedals. Every plink of my fingers on the keys.</p>
+                <p>Then, mid-ballad, what I thought was one of my most impassioned performances of the evening, a couple walked up and asked if I could take their photo.</p>
                 <blockquote class="story-quote">Sure. Of course.</blockquote>
                 <p>Things settled into a cozy routine after that. I adjusted to the sound of the room. To the quiet.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/011-8_soq3q6.jpg" class="story-image" data-caption="The Orient Bar starting to fill." alt="Orient Bar inaugural">
@@ -1313,10 +1313,8 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/001-5_exb3r6.jpg" class="story-image" data-caption="The bar full of life." alt="Orient Bar guests">
                 </div>
                 <p class="photo-caption-inline">This was what I'd been terrified of. This was what I'd been waiting for.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/004-6_gfk1p1.jpg" class="story-image" data-caption="My first performance in the Orient." alt="First performance">
-                <p class="photo-caption-inline">My first performance in the Orient Bar.</p>
-                <p>For the next four months, I often wished for that quiet piano room again — the one where I could hear each squeak of the pedals, each plink of the keys.</p>
-                <p>But that's when it hit me. There's a rhythm to certain things on a ship. A coordinated effort between all the elements of life at sea — the dining, the entertainment, the shore excursions, even the sea days. The entire crew works together to achieve that rhythm. And to keep it going through good and bad.</p>
+                <p>For the next four months, I often wished for that quiet piano room again. The one where I could hear each squeak of the pedals, each plink of the keys.</p>
+                <p>But that's when it hit me. There's a rhythm to certain things on a ship. A coordinated effort between all the elements of life at sea. The dining, the entertainment, the shore excursions, even the sea days. The entire crew works together to achieve that rhythm. And to keep it going through good and bad.</p>
                 <blockquote class="story-quote">I wasn't drowning.</blockquote>
                 <blockquote class="story-quote">I was swimming.</blockquote>
                 <p>The ship had been transformed in Singapore. Stripped down to the hull and rebuilt into something new.</p>
