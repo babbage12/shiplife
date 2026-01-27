@@ -628,7 +628,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where bicycles rule and canals connect everything.",
         fullDesc: "Amsterdam is a city that flows.\n\nThe canals wind through centuries of history-gabled houses leaning into each other, houseboats lined up along the banks, bicycles everywhere. The museums are world-class, the brown cafés are cozy, and the city has a tolerance and openness that's refreshing.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769520695/DSCN0153_xibhy6.jpg"
     },
     {
         id: 5,
@@ -2745,7 +2745,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the land runs out and the wind takes over.",
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg"
     },
     {
         id: 120,
@@ -2825,7 +2825,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Coffee, culture, and hidden laneways.",
         fullDesc: "Melbourne takes its coffee seriously. Very seriously.\n\nThe city's famous laneways hide street art, tiny bars, and some of the best food in the Southern Hemisphere. It's Australia's answer to Europe-cultured, cosmopolitan, and endlessly interesting.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521371/IMG_20131226_105910_urj5kq.jpg"
     },
     {
         id: 43,
@@ -2961,7 +2961,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A piece of Europe in North America.",
         fullDesc: "Quebec City is the only walled city north of Mexico.\n\nThe old town feels transported from France-cobblestone streets, sidewalk cafés, the imposing Château Frontenac watching over it all. In winter, it transforms into a snow-covered fairy tale.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521461/IMG_5903_bnajrx.jpg"
     },
     {
         id: 45,
@@ -3157,7 +3157,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Australia's southern outpost, gateway to Antarctica.",
         fullDesc: "Hobart sits in the shadow of Mount Wellington, looking out toward the pole.\n\nThis is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521843/023_nckajd.jpg"
     },
     {
         id: 48,
@@ -3168,7 +3168,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where whales come to the river.",
         fullDesc: "The Saguenay Fjord cuts deep into the Canadian Shield.\n\nBeluga whales gather where the cold fjord waters meet the St. Lawrence. The cliffs rise hundreds of feet on either side. In autumn, the forests explode in red and gold.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521934/IMG_5899_nzg1xd.jpg"
     },
     {
         id: 49,
@@ -3190,7 +3190,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where art and beauty were reinvented.",
         fullDesc: "Every street corner in Florence holds a masterpiece.\n\nMichelangelo's David. Brunelleschi's dome. The Uffizi's treasures. The Medici built this city into a monument to human achievement. Walking across the Ponte Vecchio at sunset, you understand why artists have been coming here for six hundred years.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522081/IMG_5442_szu1ta.jpg"
     },
     {
         id: 51,
@@ -3201,7 +3201,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The volcano that never sleeps.",
         fullDesc: "Stromboli has been erupting continuously for over 2,000 years.\n\nSailors have used its glow to navigate these waters since ancient times. We anchored offshore at night and watched the orange explosions light up the sky every few minutes. The island itself is just the volcano-a few hundred people living on its slopes, trusting it to behave.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522184/IMG_0830_qjeyfg.jpg"
     },
     {
         id: 52,
@@ -3292,7 +3292,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where Catalonia meets the sea.",
         fullDesc: "Roses sits on the Costa Brava-the 'wild coast'-near where Salvador Dalí made his home.\n\nThe bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522310/IMG_5245_zoii8t.jpg"
     },
     {
         id: 54,
@@ -3303,7 +3303,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Wild beauty on the Isle of Beauty.",
         fullDesc: "Corsica is France, but barely.\n\nThe island has its own language, its own cuisine, its own fierce sense of identity. Propriano sits in the Gulf of Valinco, backed by mountains that drop straight to the sea. Napoleon was born just up the coast. The maquis-the fragrant scrubland-perfumes the air.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522398/IMG_20140607_120635_nogqsh.jpg"
     },
     {
         id: 55,
