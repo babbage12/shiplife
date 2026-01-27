@@ -3388,7 +3388,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A dozen different beaches on one small stretch.",
         fullDesc: "Le Lavandou is named for the lavender that once grew on these hills.\n\nThe town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522796/IMG_20140605_134214_uyyeui.jpg"
     },
     {
         id: 57,
@@ -3471,7 +3471,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Greek island with an Italian accent.",
         fullDesc: "Corfu was Venetian for four hundred years, and it shows.\n\nThe old town has more in common with Venice than Athens. The Liston arcade could be in Bologna. But the olive groves and the crystal water are unmistakably Greek. Gerald Durrell grew up here. The Empress Sissi built her palace on the hill.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 59,
@@ -3482,7 +3482,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The Bali tourists don't see.",
         fullDesc: "On Bali's quiet north coast, life moves at a different pace.\n\nNo crowds, no clubs-just fishing villages, black sand beaches, and terraced rice paddies climbing the volcanic slopes. This is the Bali that existed before the tourists came.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522980/IMG_4038_uylyls.jpg"
     },
     {
         id: 60,
@@ -3493,7 +3493,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where cultures collide deliciously.",
         fullDesc: "Penang might have the best street food on Earth.\n\nChinese, Malay, Indian, Thai-all mixing in the hawker centers of George Town. The colonial architecture is UNESCO-protected. The temples are kaleidoscopic. Every meal is an adventure.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523078/IMG_3940_cbmzhe.jpg"
     },
     {
         id: 61,
@@ -3504,7 +3504,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where ambition knows no limits.",
         fullDesc: "Dubai shouldn't exist, and yet it does.\n\nA forest of impossible towers rising from the desert. Indoor ski slopes and artificial islands. The tallest building on Earth watching over it all. It's a monument to what happens when money and ambition have no restraints.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 113,
@@ -3515,7 +3515,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where tradition meets limitless ambition.",
         fullDesc: "Doha rose from the desert like a mirage made real.\n\nThe skyline is a showcase of architectural ambition-towers twisting and curving in impossible shapes. But walk through Souq Waqif and you're back in old Arabia, haggling over spices and textiles. The Museum of Islamic Art alone is worth the visit.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 62,
@@ -3526,7 +3526,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Military convoy through pirate waters.",
         fullDesc: "This is where the tension began.\n\nShips don't just cruise through the Gulf of Aden and Red Sea casually. The threat of Somali piracy meant armed escorts, convoy formations, and a few days of heightened alertness. Fire hoses at the ready, extra watches posted, and the surreal sight of naval vessels flanking a cruise ship full of passengers sipping cocktails.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523558/IMG_0743_gxmqox.jpg"
     },
     {
         id: 118,
@@ -3537,7 +3537,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The passage that changed world trade.",
         fullDesc: "The Suez Canal is 120 miles of engineering audacity.\n\nBefore it opened in 1869, ships had to sail around Africa. Now the desert slides past on both sides as you transit between the Mediterranean and the Red Sea. Camels watch from the banks. It's surreal.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523799/IMG_0722_wk3dxn.jpg"
     },
     {
         id: 112,
@@ -3548,7 +3548,7 @@ const locations = [
         isDoor: false,
         shortDesc: "World-class diving at the tip of Sinai.",
         fullDesc: "Sharm El Sheikh sits at the southern tip of the Sinai Peninsula where the Gulf of Aqaba meets the Gulf of Suez.\n\nThe coral reefs here are legendary-Ras Mohammed National Park is considered one of the top dive sites in the world. Crystal clear water, walls of colorful fish, and dramatic drop-offs into the deep blue.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523893/IMG_0292_jmjzfl.jpg"
     },
     {
         id: 63,
@@ -3559,7 +3559,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Two continents, one magnificent city.",
         fullDesc: "Istanbul is the only city on Earth that spans two continents.\n\nThe Hagia Sophia. The Blue Mosque. The Grand Bazaar's endless warrens. The Bosphorus churning between Europe and Asia. Call to prayer mixing with ship horns. This city has been the center of empires for two thousand years, and it still feels like the center of something.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769524178/IMG_3363_sd9rea.jpg"
     },
     {
         id: 64,
