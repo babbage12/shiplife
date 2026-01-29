@@ -211,36 +211,28 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-// Show mobile tap hint after intro, positioned below Toledo icon
+// Show mobile tap hint after intro
 function showMobileTapHint() {
     const hint = document.getElementById('mobileTapHint');
-    if (hint) {
-        // Find Toledo marker and position hint below it
-        const toledoMarker = markers.find(m => m.userData.title === 'Toledo, Ohio');
-        if (toledoMarker) {
-            const vector = toledoMarker.position.clone();
-            vector.project(camera);
-            const x = (vector.x * 0.5 + 0.5) * window.innerWidth;
-            const y = (-(vector.y * 0.5) + 0.5) * window.innerHeight;
-            // Position hint below the icon
-            hint.style.left = x + 'px';
-            hint.style.top = (y + 80) + 'px';
-            hint.style.transform = 'translateX(-50%)';
-        }
+    if (!hint) return;
 
-        // Show quickly - reduced from 500ms
-        setTimeout(() => {
-            hint.classList.add('visible');
-        }, 100);
+    // Position below center where Toledo icon lands
+    hint.style.left = '50%';
+    hint.style.top = '58%';
+    hint.style.transform = 'translateX(-50%)';
 
-        // Hide hint when user taps anywhere or after 5 seconds
-        const hideHint = () => {
-            hint.classList.remove('visible');
-            document.removeEventListener('touchstart', hideHint);
-        };
+    // Show quickly
+    setTimeout(() => {
+        hint.classList.add('visible');
+    }, 100);
 
-        document.addEventListener('touchstart', hideHint);
-        setTimeout(hideHint, 5000);
-    }
+    // Hide hint when user taps anywhere or after 5 seconds
+    const hideHint = () => {
+        hint.classList.remove('visible');
+        document.removeEventListener('touchstart', hideHint);
+    };
+
+    document.addEventListener('touchstart', hideHint);
+    setTimeout(hideHint, 5000);
 }
 
