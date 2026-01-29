@@ -2113,8 +2113,8 @@
         /* Desktop: account for sidebar pushing globe right */
         @media (min-width: 769px) {
             .mobile-tap-hint {
-                left: 52%;
-                top: 48%;
+                left: 45%;
+                top: 42%;
             }
         }
 
