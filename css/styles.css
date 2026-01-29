@@ -1879,7 +1879,7 @@
                 margin: 0 auto 15px;
             }
             
-            /* Right panel - bottom sheet style, opens nearly full screen */
+            /* Right panel - bottom sheet style, opens to show globe peek */
             .side-panel {
                 position: fixed !important;
                 left: 0 !important;
@@ -1887,8 +1887,8 @@
                 bottom: 0 !important;
                 top: auto !important;
                 width: 100% !important;
-                height: 95vh;
-                max-height: 95vh;
+                height: 82vh;
+                max-height: 82vh;
                 border-radius: 20px 20px 0 0;
                 border-left: none;
                 border-top: 1px solid rgba(212, 165, 116, 0.3);
@@ -1897,6 +1897,7 @@
                 -webkit-overflow-scrolling: touch;
                 z-index: 300 !important;
                 background: linear-gradient(180deg, rgb(10, 22, 40) 0%, rgb(21, 34, 56) 100%) !important;
+                padding-top: 0.5rem;
             }
             
             .side-panel.open {
@@ -1905,14 +1906,13 @@
             
             .panel-close {
                 position: sticky;
-                top: 0.75rem;
-                right: 0.75rem;
+                top: 0.5rem;
                 float: right;
-                margin: 0.75rem;
+                margin: 0.5rem 1rem 0 0;
                 z-index: 300;
-                width: 40px;
-                height: 40px;
-                background: rgba(10, 22, 40, 0.9);
+                width: 44px;
+                height: 44px;
+                background: rgba(10, 22, 40, 0.95);
                 border: 2px solid var(--gold);
                 color: var(--cream);
                 font-size: 1.25rem;
