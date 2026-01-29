@@ -43,8 +43,8 @@ const locations = [
                 <p>By thirteen, I had joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
                 <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
-                <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, exploring a small world. The dream was to just keep walking until all of it had been seen.</p>
-                <p>That would have to wait a few years.</p>
+                <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
+                <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
             </div>
             
             <div class="story-section-panel">
