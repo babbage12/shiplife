@@ -75,12 +75,19 @@ function openPanel(loc) {
             fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
         }
         document.getElementById('panelText').innerHTML = fullContent;
-        
+
         // Attach click handlers to story images for lightbox
         attachImageClickHandlers();
-        
+
         // Update next door button based on current location
         updateNextDoorButton(loc);
+
+        // Move next door button right after the final quote if it exists
+        const finalQuote = document.querySelector('.final-quote');
+        const nextDoorHint = document.getElementById('nextDoorHint');
+        if (finalQuote && nextDoorHint && loc.isDoor) {
+            finalQuote.parentNode.insertBefore(nextDoorHint, finalQuote.nextSibling);
+        }
         
         // Update three doors navigation
         updateThreeDoorsNav(loc);
