@@ -2107,7 +2107,7 @@
             text-align: center;
             pointer-events: none;
             opacity: 0;
-            transition: opacity 0.3s ease;
+            transition: none;
         }
 
         /* Desktop: position relative to globe area (after 220px sidebar) */

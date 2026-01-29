@@ -214,10 +214,8 @@ function showTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
 
-    // Show after short delay
-    setTimeout(() => {
-        hint.classList.add('visible');
-    }, 100);
+    // Show immediately
+    hint.classList.add('visible');
 
     // Hide hint when user interacts or after 5 seconds
     const hideHint = () => {
