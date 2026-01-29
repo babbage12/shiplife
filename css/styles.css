@@ -2110,7 +2110,15 @@
             transition: opacity 0.3s ease;
         }
 
-        /* Mobile: Toledo icon lands right of center */
+        /* Desktop: account for sidebar pushing globe right */
+        @media (min-width: 769px) {
+            .mobile-tap-hint {
+                left: 57%;
+                top: 52%;
+            }
+        }
+
+        /* Mobile: Toledo icon position */
         @media (max-width: 768px) {
             .mobile-tap-hint {
                 left: 52%;
