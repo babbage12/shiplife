@@ -62,10 +62,10 @@ const locations = [
                 <h3 class="section-title-panel">Fourteen Years</h3>
                 <p>A few years in, the bills started piling up. A steady paycheck meant a day job. Customer service. Nothing glamorous, but it paid the rent.</p>
                 <p>The thing is - the music never stopped. Touched was still gigging on nights and weekends, still playing around Toledo well into the 2000s. Music just... became the side hustle.</p>
-                <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Then came a credit collections department for an elevator company - screaming at people on the phone for a living.</p>
-                <p>After almost fourteen years of punching a clock, a hard realization hit:</p>
+                <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Life shrunk to the size of a cubicle - phone ringing constantly, inbox stacked two feet high and growing. Three bosses on one floor. Plus the guy in the cubicle out front who wasn't a boss but hadn't gotten the memo.</p>
+                <p>After almost fourteen years of this, a hard realization hit:</p>
                 <blockquote class="story-quote">This was a waste of time.</blockquote>
-                <p>The day job wasn't supporting the music career. It was slowly replacing it. Without a change, that cubicle would become a permanent home.</p>
+                <p>The day job wasn't supporting the music career. It was slowly replacing it. Time to get out.</p>
             </div>
             
             <div class="story-section-panel">
