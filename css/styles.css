@@ -2110,10 +2110,10 @@
             transition: opacity 0.3s ease;
         }
 
-        /* Mobile: Toledo icon lands slightly right of center */
+        /* Mobile: Toledo icon lands right of center */
         @media (max-width: 768px) {
             .mobile-tap-hint {
-                left: 52%;
+                left: 55%;
             }
         }
 
