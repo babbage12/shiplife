@@ -216,8 +216,8 @@ function showMobileTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
 
-    // Position below center where Toledo icon lands
-    hint.style.left = '50%';
+    // Position below Toledo icon (slightly left of center)
+    hint.style.left = '47%';
     hint.style.top = '58%';
     hint.style.transform = 'translateX(-50%)';
 
