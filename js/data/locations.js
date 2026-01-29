@@ -40,7 +40,7 @@ const locations = [
                 <p>At age 7, when other kids were playing with Legos, my dad's Jazzmaster guitar became my new obsession.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
                 <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
-                <p>By thirteen, a real band had formed. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
+                <p>By thirteen, I had joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
                 <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
                 <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, exploring a small world. The dream was to just keep walking until all of it had been seen.</p>
