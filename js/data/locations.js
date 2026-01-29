@@ -34,23 +34,23 @@ const locations = [
             
             <div class="story-section-panel">
                 <h3 class="section-title-panel">The Doghouse</h3>
-                <p>My mom would tell you I was singing before I could talk.</p>
-                <p>If you wanted to find me as a kid, all you had to do was listen. If I wasn't banging on a drum set, I was playing clarinet, or guitar, or singing for anyone who would listen. My mom, my grandma, my brother and sister. My great-grandma Gillette would hoist me up onto the doghouse and I would sing the Star Spangled Banner for her, pretending the apples on the trees around us were my audience.</p>
-                <p>I made up songs. I sang harmony with the radio. I daydreamed constantly, and it got me into a lot of trouble.</p>
-                <p>At age 7, when other kids were playing with Legos, I began playing my dad's Jazzmaster guitar.</p>
+                <p>My mom would tell you the singing came before the talking.</p>
+                <p>Finding me as a kid was easy - just listen. The sound of drums, clarinet, guitar, or singing would lead you right to me. My mom, my grandma, my brother and sister - anyone who would listen became an audience. My great-grandma Gillette would hoist me up onto the doghouse where the Star Spangled Banner would ring out, the apples on the surrounding trees standing in as my crowd.</p>
+                <p>Made-up songs. Harmonies with the radio. Constant daydreaming that got me into a lot of trouble.</p>
+                <p>At age 7, when other kids were playing with Legos, my dad's Jazzmaster guitar became my new obsession.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
                 <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
-                <p>By thirteen, I had my first real band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where I grew up.</p>
+                <p>By thirteen, a real band had formed. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
                 <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
-                <p>When I wasn't lost in music, I'd disappear for hours into the woods, walking the train tracks that ran behind our house, exploring my small world. I imagined I could just keep walking until I'd seen all of it.</p>
+                <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, exploring a small world. The dream was to just keep walking until all of it had been seen.</p>
                 <p>That would have to wait a few years.</p>
             </div>
             
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Band</span>
                 <h3 class="section-title-panel">Touched</h3>
-                <p>In 1989, I joined a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels to a few very questionable dive bars where I feel I narrowly escaped certain death a few times. The east coast was our circuit - Maine to Florida.</p>
+                <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable dive bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768521382/1000006616_gt9tju.jpg" class="story-image" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="The band Touched, 1991">
                 <p class="photo-caption-inline">Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991">
@@ -60,29 +60,29 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Double Life</span>
                 <h3 class="section-title-panel">Fourteen Years</h3>
-                <p>A few years in, the bills started piling up. I needed a steady paycheck, so I got a day job. Customer service. Nothing glamorous, but it paid the rent.</p>
-                <p>The thing is - I never stopped playing. I was still gigging with Touched on nights and weekends, still playing around Toledo well into the 2000s. Music never stopped. It just... became the side hustle.</p>
-                <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when I could. But one year became five. Five became ten. Then I found myself in a credit collections department for an elevator company, screaming at people on the phone for a living.</p>
-                <p>After almost fourteen years of punching a clock, I looked around and realized something:</p>
-                <blockquote class="story-quote">I was wasting my time.</blockquote>
-                <p>The day job wasn't supporting my music career. It was slowly replacing it. And if I didn't do something about it, I'd spend the rest of my life in that cubicle.</p>
+                <p>A few years in, the bills started piling up. A steady paycheck meant a day job. Customer service. Nothing glamorous, but it paid the rent.</p>
+                <p>The thing is - the music never stopped. Touched was still gigging on nights and weekends, still playing around Toledo well into the 2000s. Music just... became the side hustle.</p>
+                <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Then came a credit collections department for an elevator company - screaming at people on the phone for a living.</p>
+                <p>After almost fourteen years of punching a clock, a hard realization hit:</p>
+                <blockquote class="story-quote">This was a waste of time.</blockquote>
+                <p>The day job wasn't supporting the music career. It was slowly replacing it. Without a change, that cubicle would become a permanent home.</p>
             </div>
             
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Spark</span>
                 <h3 class="section-title-panel">Visualizing the Escape</h3>
-                <p>In 2005, I worked up a few sets of guitar-vocal songs and played my first solo gig in years. It was a good start, but I had a ways to go. If I wanted to escape Toledo and make a living playing music - really make a living - I needed to be prepared.</p>
+                <p>In 2005, a few sets of guitar-vocal songs came together for my first solo gig in years. A good start, but there was still a ways to go. Escaping Toledo and making a real living playing music would require preparation.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig">
                 <p class="photo-caption-inline">2005. The first solo gig in years. The spark.</p>
-                <p>The most important thing I did was to begin to visualize where music could take me again. I started a scrapbook of exotic places and tried to imagine myself playing in grand hotels. Or cruise ships.</p>
-                <p>Then one night, late, I started searching for solo guitar gigs. Landed on a British talent website and found an ad that read something like:</p>
+                <p>The most important step was visualizing where music could lead again. A scrapbook of exotic places took shape - images of grand hotels, cruise ships, distant stages.</p>
+                <p>Then one late night, a search for solo guitar gigs landed on a British talent website with an ad that read something like:</p>
                 <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
             </div>
             
             <div class="story-section-panel">
                 <span class="section-tag-panel">Door #1</span>
                 <h3 class="section-title-panel">The Escape</h3>
-                <p>Walking through the first door was the hardest thing I had ever done. I left everything behind. Everything I owned was shoved into a storage space and I left Toledo on July 6th, 2009.</p>
+                <p>Walking through the first door was the hardest thing ever. Everything got left behind - shoved into a storage space. Toledo faded in the rearview mirror on July 6th, 2009.</p>
                 <blockquote class="story-quote final-quote">The lock fell away from Door #1 and opened to the possibility of everything that came after.</blockquote>
             </div>
             
@@ -126,7 +126,7 @@ const locations = [
                 </div>
             </div>
         `,
-        fullDesc: "My mom would tell you I was singing before I could talk. If you wanted to find me as a kid, all you had to do was listen.\n\nI never stopped playing music. But after fourteen years of day jobs slowly replacing the dream, I realized I was wasting my time.\n\nThis was Door #1. The escape. This door opened the possibility of everything that came after.",
+        fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: this was a waste of time.\n\nThis was Door #1. The escape. This door opened the possibility of everything that came after.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520945/1000006610_rzhkon.jpg"
     },
     {
@@ -137,7 +137,7 @@ const locations = [
         icon: "☀️",
         isDoor: false,
         shortDesc: "First shore leave. The door stayed open.",
-        fullDesc: "Brisbane was my first real port of call once we left Auckland. I had performed the previous two nights in the same club where the previous soloist had lasted exactly two days. I was told before I boarded that this is just how it was-so don't be shocked if things don't work out.\n\nI had prepared myself for a call from the cruise director's office saying \"Thanks, but no thanks\" as he handed me a plane ticket home.\n\nIt was an anxious morning. I remember having breakfast with a few random crewmates, thinking about my boss back home who said I could probably come back and work the phones for him if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nI had my first shore leave.\n\nTurns out, this was my first of many shore leaves for the next 12 years of my life.\n\nThe door stayed open.",
+        fullDesc: "Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.\n\nMentally prepared for a call from the cruise director's office saying \"Thanks, but no thanks\" along with a plane ticket home.\n\nIt was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nFirst shore leave.\n\nTurns out, this was the first of many shore leaves over the next 12 years.\n\nThe door stayed open.",
         image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200"
     },
     {
@@ -147,7 +147,7 @@ const locations = [
         tag: "Door #2: My First Contract",
         icon: "🚪",
         isDoor: true,
-        shortDesc: "If I could make it to Darwin, I could make it anywhere.",
+        shortDesc: "Making it to Darwin meant making it anywhere.",
         imagePosition: "center",
         imageCaption: "Somewhere in the first week - still figuring out the rhythm.",
         useRichContent: true,
@@ -174,11 +174,11 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Proving Ground</span>
                 <h3 class="section-title-panel">The 14-Day Cruise</h3>
-                <p>I had two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
-                <p>I knew that if I made it past that window, the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
-                <p>I heard crew members whispering about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But to me, Darwin represented something else entirely.</p>
-                <p>If I could stay on and make it to Darwin without being handed a plane ticket home, I was good for at least my first 4-month contract. And who knows - maybe they would bring me back to do it again.</p>
-                <blockquote class="story-quote">I could make it anywhere if I could just get to Darwin.</blockquote>
+                <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
+                <p>Making it past that window meant the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
+                <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
+                <p>Staying on and making it to Darwin without being handed a plane ticket home meant at least a full 4-month contract. And who knows - maybe an invitation to do it again.</p>
+                <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
                 <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
                 <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
@@ -208,12 +208,12 @@ const locations = [
                         </svg>
                     </span>
                 </h3>
-                <p>On my first day aboard, during orientation, the staff captain told us straight:</p>
+                <p>On the first day aboard, during orientation, the staff captain told us straight:</p>
                 <blockquote class="story-quote">
                     "Ship life will fulfill you, drain you, or wreck you emotionally. You can tell a lot about a person based on how they conduct themselves aboard a ship."
                     <cite>- Staff Captain, Pacific Sun</cite>
                 </blockquote>
-                <p>I remember sitting there thinking - am I ready for this? Am I ready to become the best version of myself? Because that's what this is going to take.</p>
+                <p>Sitting there, the question hung in the air: am I ready for this? Ready to become the best version of myself? Because that's what this was going to take.</p>
                 <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526570/IMG_0109_dvahoj.jpg" class="story-image" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun in New Caledonia">
                 <p class="photo-caption-inline">Pacific Sun docked in New Caledonia.</p>
@@ -222,7 +222,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">Shore Leave</span>
                 <h3 class="section-title-panel">The Pacific Run</h3>
-                <p>The Pacific run took us through places I'd only seen in documentaries. Turquoise water so clear you could count fish from the tender. Churches older than any building I'd ever entered. Islands where time moved differently.</p>
+                <p>The Pacific run took us through places previously only seen in documentaries. Turquoise water so clear you could count fish from the tender. Churches older than any building back home. Islands where time moved differently.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526487/Isle_of_Pines_tddsqy.jpg" class="story-image" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526493/134_cwcuy0.jpg" class="story-image" data-caption="Pool party in Bali." alt="Pool party in Bali">
@@ -243,7 +243,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">Shipmates</span>
                 <h3 class="section-title-panel">Witnesses to the Strange</h3>
-                <p>They weren't just colleagues. They were professionals, as dedicated to their work as I was to mine. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
+                <p>They weren't just colleagues. They were professionals, equally dedicated to their craft. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
                 <p>There was humor and irony in every story told at sea. It just happened that way - so many people from such different places, bumping into each other's unfamiliar ways.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
@@ -261,7 +261,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Stage</span>
                 <h3 class="section-title-panel">Playing With Friends</h3>
-                <p>Some of the best nights were when I got to share the stage. My good friend Hayden Smith would jump in with me at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded me why I was here.</p>
+                <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="story-image" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Playing with Hayden Smith">
                 <p class="photo-caption-inline">Playing with my friend Hayden Smith in Smugglers Lounge.</p>
                 <div class="story-gallery-grid">
@@ -276,10 +276,10 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">Ship Celebrity</span>
                 <h3 class="section-title-panel">Cruise Director's Corner</h3>
-                <p>One day the cruise director invited me onto his daily TV show - broadcast to every cabin on the ship. I sat down, feeling pretty good about myself.</p>
+                <p>One day the cruise director extended an invitation to his daily TV show - broadcast to every cabin on the ship. Sat down, feeling pretty good about myself.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="story-image" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
                 <p class="photo-caption-inline">Cool. Calm. Collected.</p>
-                <p>Then I realized 2,000 passengers were watching me live and I completely forgot how humans sit.</p>
+                <p>Then the realization hit: 2,000 passengers were watching live. And suddenly, how humans sit became a complete mystery.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="story-image" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
                 <p class="photo-caption-inline">Where do hands go? What are hands? Why do I have hands?</p>
             </div>
@@ -368,7 +368,7 @@ const locations = [
                 </div>
             </div>
         `,
-        fullDesc: "I heard crew members whispering about the 14-day cruise to Darwin like it was a mystical place. To me, Darwin represented something else entirely: if I could make it there, I would be staying onboard for a full contract.\n\nDarwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.",
+        fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the door that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767643122/013_pzswfa.jpg"
     },
     {
@@ -386,8 +386,8 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">A Brief Digression</span>
                 <h3 class="section-title-panel">Before We Continue...</h3>
-                <p>Before we go any further into the story, I must digress.</p>
-                <p>We need to go back to 2009 - my first ship contract.</p>
+                <p>Before we go any further into the story, a brief digression.</p>
+                <p>We need to go back to 2009 - the first ship contract.</p>
             </div>
             
             <div class="story-section-panel">
@@ -395,9 +395,9 @@ const locations = [
                 <h3 class="section-title-panel">Cairns, 2009</h3>
                 <p>Riding bikes with shipmates. A white ship in the harbor.</p>
                 <p>Someone said, "That's Seabourn. Top cruise line in the world."</p>
-                <p>I watched it for a while. Got a little closer and snapped a photo.</p>
+                <p>Watched it for a while. Got a little closer and snapped a photo.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns">
-                <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. I was on the Pacific Sun, already dreaming about this strange, elegant ship in front of me.</p>
+                <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. Working on the Pacific Sun, already dreaming about this strange, elegant ship.</p>
             </div>
             
             <div class="story-section-panel">
@@ -405,8 +405,8 @@ const locations = [
                 <h3 class="section-title-panel">Akaroa, New Zealand. November 2012.</h3>
                 <p>A note slipped under my door.</p>
                 <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
-                <p>I made the call standing on the dock. C. Blackburn - the same agent who got me my first ship - delivered the news.</p>
-                <p>I was moving to the number one rated small cruise ship in the world. Seabourn wanted me as a soloist. The same ship I had seen in Cairns three years earlier!</p>
+                <p>The call was made standing on the dock. C. Blackburn - the same agent who landed me that first ship - delivered the news.</p>
+                <p>Seabourn wanted a soloist. The number one rated small cruise ship in the world. The same ship seen in Cairns three years earlier!</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor">
                 <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
                 <p>An hour later I was eating oysters with my shipmates. Gagging. Laughing. Trying not to throw up.</p>
@@ -423,7 +423,7 @@ const locations = [
                 <h3 class="section-title-panel">A Different Universe</h3>
                 <p>The first two doors I had to push open myself.</p>
                 <p>This one just... opened.</p>
-                <p>P&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. I thought I'd seen the world.</p>
+                <p>P&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. The whole world, it seemed.</p>
                 <blockquote class="story-quote">Seabourn gave me the rest of it.</blockquote>
                 <p>Three vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.</p>
             </div>
@@ -464,7 +464,7 @@ const locations = [
                 <span class="section-tag-panel">Door #3</span>
                 <h3 class="section-title-panel">The Entire Globe</h3>
                 <p>Door #3 opened to the entire world.</p>
-                <p>I had sat in my little yellow house back in Toledo and, by sheer force of will, conjured a dream into reality.</p>
+                <p>Back in that little yellow house in Toledo, a dream had been conjured into reality through sheer force of will.</p>
             </div>
             
             <div class="story-section-panel">
@@ -594,7 +594,7 @@ const locations = [
                 </div>
             </div>
         `,
-        fullDesc: "The first two doors I had to push open myself. This one just... opened.\n\nP&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. I thought I'd seen the world.\n\nSeabourn gave me the rest of it.\n\nThree vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.",
+        fullDesc: "The first two doors had to be pushed open. This one just... opened.\n\nP&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. The whole world, it seemed.\n\nSeabourn gave me the rest of it.\n\nThree vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768586585/IMG_6563_ggigfv.jpg"
     },
     {
@@ -616,7 +616,7 @@ const locations = [
         icon: "👑",
         isDoor: false,
         shortDesc: "Queen's Room Vocalist with a 9-piece orchestra.",
-        fullDesc: "In 2019, I accepted a prestigious position on the iconic Queen Victoria.\n\nThe Queen's Room was unlike anything I had experienced before. A grand ballroom where couples would waltz beneath crystal chandeliers while I performed with a nine-piece orchestra.\n\nThis was old-world elegance at sea-white gloves, formal attire, and the kind of sophistication that harked back to the golden age of ocean travel.",
+        fullDesc: "In 2019, a prestigious position opened up on the iconic Queen Victoria.\n\nThe Queen's Room was unlike anything experienced before. A grand ballroom where couples would waltz beneath crystal chandeliers while a nine-piece orchestra played.\n\nThis was old-world elegance at sea - white gloves, formal attire, and the kind of sophistication that harked back to the golden age of ocean travel.",
         image: "https://images.unsplash.com/photo-1559599238-308793637427?w=1200"
     },
     {
@@ -638,7 +638,7 @@ const locations = [
         icon: "🏰",
         isDoor: false,
         shortDesc: "Stepping through ancient gates into the Middle Ages.",
-        fullDesc: "I had heard it was a walled city. By the time we arrived, I had seen a fair share of ancient ruins along both shores of the Adriatic.\n\nBut nothing prepared me for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture-it was the feeling. As if centuries collapsed the moment I stepped through that stone archway.",
+        fullDesc: "The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic.\n\nBut nothing prepared for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.",
         image: "https://images.unsplash.com/photo-1555990538-1e6c3c10617e?w=1200"
     },
     {
@@ -649,7 +649,7 @@ const locations = [
         icon: "🥭",
         isDoor: false,
         shortDesc: "Spiritual awakenings and monkey forests.",
-        fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from how I'd imagined it. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
+        fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from expectation. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
         image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200"
     },
     {
@@ -3064,7 +3064,7 @@ const locations = [
 
             ${generateGallery('rio')}
         `,
-        fullDesc: "Every time I disembarked in Rio, I got lost. Something about this city wanted to keep me there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until I finally reached Copacabana and had a Corona.",
+        fullDesc: "Every time the ship docked in Rio, getting lost was inevitable. Something about this city wanted to keep you there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until finally reaching Copacabana and having a Corona.",
         image: ""
     },
     {
