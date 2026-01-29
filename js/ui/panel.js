@@ -316,17 +316,17 @@ const observer = new MutationObserver(function(mutations) {
             const isOpen = sidePanel.classList.contains('open');
             const isExpanded = sidePanel.classList.contains('expanded');
             const isMobile = window.innerWidth <= 768;
-            
-            // On mobile: show only when expanded
-            // On desktop: show when open
-            if ((isMobile && isExpanded && isOpen) || (!isMobile && isOpen)) {
-                // Small delay to let panel open/expand first
-                setTimeout(() => {
-                    scrollHintBottom.classList.add('visible');
-                }, 500);
-            } else if (!isOpen) {
-                // Panel closed - hide hint
+
+            if (!isOpen) {
+                // Panel closed - hide hint immediately
                 scrollHintBottom.classList.remove('visible');
+            } else if ((isMobile && isExpanded && isOpen) || (!isMobile && isOpen)) {
+                // Small delay to let panel open/expand first, then check if still open
+                setTimeout(() => {
+                    if (sidePanel.classList.contains('open')) {
+                        scrollHintBottom.classList.add('visible');
+                    }
+                }, 500);
             }
         }
     });
