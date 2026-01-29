@@ -77,8 +77,11 @@ const locations = [
                 <p>The most important step was visualizing where music could lead again. A scrapbook of exotic places took shape - images of grand hotels, cruise ships, distant stages.</p>
                 <p>Then one late night, a search for solo guitar gigs landed on a British talent website with an ad that read something like:</p>
                 <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
+                <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
+                <blockquote class="story-quote">"Hi Derrick, I watched your video and you really sound good! We might have an opportunity for you in the very near future. Is there a good time to talk?"</blockquote>
+                <p>Left work early that day. The following month, a plane was boarding in Detroit - destination: Auckland, New Zealand.</p>
             </div>
-            
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">Door #1</span>
                 <h3 class="section-title-panel">The Escape</h3>
