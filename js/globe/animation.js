@@ -214,10 +214,28 @@ function showTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
 
-    // Position below Toledo icon (centered)
-    hint.style.left = '50%';
-    hint.style.top = '55%';
-    hint.style.transform = 'translateX(-50%)';
+    // Find Toledo marker and get its screen position
+    const toledoMarker = markers.find(m => m.userData.title === 'Toledo, Ohio');
+    if (toledoMarker) {
+        // Get world position of marker
+        const worldPos = new THREE.Vector3();
+        toledoMarker.getWorldPosition(worldPos);
+
+        // Project to screen coordinates
+        const screenPos = worldPos.clone().project(camera);
+        const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+        const y = (-(screenPos.y * 0.5) + 0.5) * window.innerHeight;
+
+        // Position hint below the icon
+        hint.style.left = x + 'px';
+        hint.style.top = (y + 70) + 'px';
+        hint.style.transform = 'translateX(-50%)';
+    } else {
+        // Fallback if marker not found
+        hint.style.left = '50%';
+        hint.style.top = '55%';
+        hint.style.transform = 'translateX(-50%)';
+    }
 
     // Show quickly
     setTimeout(() => {
