@@ -2096,18 +2096,15 @@
             }
         }
 
-        /* Mobile Tap Hint */
+        /* Mobile Tap Hint - position set dynamically by JS */
         .mobile-tap-hint {
             display: none;
             position: fixed;
-            top: 58%;
-            left: 50%;
-            transform: translateX(-50%);
             z-index: 100;
             text-align: center;
             pointer-events: none;
             opacity: 0;
-            transition: opacity 0.5s ease;
+            transition: opacity 0.3s ease;
         }
 
         .mobile-tap-hint.visible {

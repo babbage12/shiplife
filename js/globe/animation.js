@@ -211,13 +211,27 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-// Show mobile tap hint after intro
+// Show mobile tap hint after intro, positioned below Toledo icon
 function showMobileTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (hint) {
+        // Find Toledo marker and position hint below it
+        const toledoMarker = markers.find(m => m.userData.title === 'Toledo, Ohio');
+        if (toledoMarker) {
+            const vector = toledoMarker.position.clone();
+            vector.project(camera);
+            const x = (vector.x * 0.5 + 0.5) * window.innerWidth;
+            const y = (-(vector.y * 0.5) + 0.5) * window.innerHeight;
+            // Position hint below the icon
+            hint.style.left = x + 'px';
+            hint.style.top = (y + 80) + 'px';
+            hint.style.transform = 'translateX(-50%)';
+        }
+
+        // Show quickly - reduced from 500ms
         setTimeout(() => {
             hint.classList.add('visible');
-        }, 500);
+        }, 100);
 
         // Hide hint when user taps anywhere or after 5 seconds
         const hideHint = () => {
