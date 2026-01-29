@@ -2113,8 +2113,8 @@
         /* Desktop: position relative to globe area (after 220px sidebar) */
         @media (min-width: 769px) {
             .mobile-tap-hint {
-                left: calc(220px + 38%);
-                top: 52%;
+                left: calc(220px + 34%);
+                top: 48%;
             }
         }
 
