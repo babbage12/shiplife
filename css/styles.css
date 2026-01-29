@@ -2096,10 +2096,13 @@
             }
         }
 
-        /* Tap/Click Hint - position set dynamically by JS */
+        /* Tap/Click Hint */
         .mobile-tap-hint {
             display: block;
             position: fixed;
+            left: 50%;
+            top: 55%;
+            transform: translateX(-50%);
             z-index: 100;
             text-align: center;
             pointer-events: none;

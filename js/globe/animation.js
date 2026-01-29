@@ -214,30 +214,7 @@ function showTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
 
-    // Find Toledo marker and get its screen position
-    const toledoMarker = markers.find(m => m.userData.title === 'Toledo, Ohio');
-    if (toledoMarker) {
-        // Get world position of marker
-        const worldPos = new THREE.Vector3();
-        toledoMarker.getWorldPosition(worldPos);
-
-        // Project to screen coordinates
-        const screenPos = worldPos.clone().project(camera);
-        const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
-        const y = (-(screenPos.y * 0.5) + 0.5) * window.innerHeight;
-
-        // Position hint below the icon
-        hint.style.left = x + 'px';
-        hint.style.top = (y + 70) + 'px';
-        hint.style.transform = 'translateX(-50%)';
-    } else {
-        // Fallback if marker not found
-        hint.style.left = '50%';
-        hint.style.top = '55%';
-        hint.style.transform = 'translateX(-50%)';
-    }
-
-    // Show quickly
+    // Show after short delay
     setTimeout(() => {
         hint.classList.add('visible');
     }, 100);
@@ -247,12 +224,10 @@ function showTapHint() {
         hint.classList.remove('visible');
         document.removeEventListener('touchstart', hideHint);
         document.removeEventListener('click', hideHint);
-        document.removeEventListener('mousedown', hideHint);
     };
 
-    document.addEventListener('touchstart', hideHint);
-    document.addEventListener('click', hideHint);
-    document.addEventListener('mousedown', hideHint);
+    document.addEventListener('touchstart', hideHint, { once: true });
+    document.addEventListener('click', hideHint, { once: true });
     setTimeout(hideHint, 5000);
 }
 
