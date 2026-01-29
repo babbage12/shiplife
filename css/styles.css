@@ -795,7 +795,7 @@
         .directors-commentary {
             display: inline-flex;
             align-items: center;
-            margin-left: 0.75rem;
+            margin-left: 1.25rem;
             vertical-align: middle;
             position: relative;
         }
@@ -804,8 +804,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 101px;
-            height: 101px;
+            width: 75px;
+            height: 75px;
             background: transparent;
             border: none;
             border-radius: 50%;
@@ -837,8 +837,8 @@
 
         .click-me-text {
             position: absolute;
-            width: 151px;
-            height: 151px;
+            width: 115px;
+            height: 115px;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -853,7 +853,7 @@
 
         .click-me-text text {
             fill: var(--gold);
-            font-size: 17px;
+            font-size: 13px;
             font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
