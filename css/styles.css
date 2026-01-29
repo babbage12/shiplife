@@ -2096,9 +2096,9 @@
             }
         }
 
-        /* Mobile Tap Hint - position set dynamically by JS */
+        /* Tap/Click Hint - position set dynamically by JS */
         .mobile-tap-hint {
-            display: none;
+            display: block;
             position: fixed;
             z-index: 100;
             text-align: center;
@@ -2135,9 +2135,4 @@
             50% { transform: translateY(-8px); }
         }
 
-        @media (max-width: 768px) {
-            .mobile-tap-hint {
-                display: block;
-            }
-        }
         

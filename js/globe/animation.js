@@ -38,10 +38,8 @@ function animate() {
             targetRotationX = TOLEDO_X;
             introComplete = true;
 
-            // Show tap hint on mobile
-            if (isMobile) {
-                showMobileTapHint();
-            }
+            // Show tap/click hint after intro
+            showTapHint();
         } else {
             // Set targets for smooth handoff
             targetRotationY = globe.rotation.y;
@@ -211,14 +209,14 @@ function animate() {
     renderer.render(scene, camera);
 }
 
-// Show mobile tap hint after intro
-function showMobileTapHint() {
+// Show tap/click hint after intro (works on both mobile and desktop)
+function showTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
 
-    // Position below Toledo icon (slightly left of center)
-    hint.style.left = '47%';
-    hint.style.top = '58%';
+    // Position below Toledo icon (centered)
+    hint.style.left = '50%';
+    hint.style.top = '55%';
     hint.style.transform = 'translateX(-50%)';
 
     // Show quickly
@@ -226,13 +224,17 @@ function showMobileTapHint() {
         hint.classList.add('visible');
     }, 100);
 
-    // Hide hint when user taps anywhere or after 5 seconds
+    // Hide hint when user interacts or after 5 seconds
     const hideHint = () => {
         hint.classList.remove('visible');
         document.removeEventListener('touchstart', hideHint);
+        document.removeEventListener('click', hideHint);
+        document.removeEventListener('mousedown', hideHint);
     };
 
     document.addEventListener('touchstart', hideHint);
+    document.addEventListener('click', hideHint);
+    document.addEventListener('mousedown', hideHint);
     setTimeout(hideHint, 5000);
 }
 
