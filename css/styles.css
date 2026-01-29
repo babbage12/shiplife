@@ -2110,11 +2110,11 @@
             transition: opacity 0.3s ease;
         }
 
-        /* Desktop: account for sidebar pushing globe right */
+        /* Desktop: position relative to globe area (after 220px sidebar) */
         @media (min-width: 769px) {
             .mobile-tap-hint {
-                left: 60%;
-                top: 58%;
+                left: calc(220px + 38%);
+                top: 52%;
             }
         }
 
