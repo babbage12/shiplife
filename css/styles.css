@@ -2113,8 +2113,8 @@
         /* Mobile: Toledo icon lands right of center */
         @media (max-width: 768px) {
             .mobile-tap-hint {
-                left: 55%;
-                top: 62%;
+                left: 52%;
+                top: 58%;
             }
         }
 
