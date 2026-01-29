@@ -123,7 +123,13 @@ function toggleMobileMenu() {
     const menu = document.getElementById('locationList');
     const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
-    
+
+    // If opening the menu, close the story panel first
+    const isOpening = !menu.classList.contains('open');
+    if (isOpening && panelIsOpen) {
+        closePanel();
+    }
+
     menu.classList.toggle('open');
     toggle.classList.toggle('open');
     overlay.classList.toggle('open');

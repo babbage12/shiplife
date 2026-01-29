@@ -85,8 +85,8 @@ function openPanel(loc) {
         // Update three doors navigation
         updateThreeDoorsNav(loc);
         
-        // Reset expanded state when opening new location
-        sidePanel.classList.remove('expanded');
+        // Open panel in expanded (full screen) state immediately
+        sidePanel.classList.add('expanded');
         sidePanel.classList.add('open');
         panelIsOpen = true; // Stop auto-rotation while reading
         
@@ -277,15 +277,12 @@ sidePanel.addEventListener('touchstart', function(e) {
 sidePanel.addEventListener('touchend', function(e) {
     const touchEndY = e.changedTouches[0].clientY;
     const swipeDistance = panelTouchStartY - touchEndY;
-    
+
     // If swiped up more than 50px and panel is not expanded, expand it
     if (swipeDistance > 50 && !sidePanel.classList.contains('expanded')) {
         expandPanel();
     }
-    // If swiped down more than 50px and panel is expanded, collapse it
-    else if (swipeDistance < -50 && sidePanel.classList.contains('expanded')) {
-        sidePanel.classList.remove('expanded');
-    }
+    // Swipe down to collapse is disabled - panel stays full screen until X is tapped
 }, { passive: true });
 
 // Scroll hint visibility based on scroll position

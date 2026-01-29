@@ -1879,7 +1879,7 @@
                 margin: 0 auto 15px;
             }
             
-            /* Right panel - bottom sheet style, starts as preview */
+            /* Right panel - bottom sheet style, opens nearly full screen */
             .side-panel {
                 position: fixed !important;
                 left: 0 !important;
@@ -1887,13 +1887,14 @@
                 bottom: 0 !important;
                 top: auto !important;
                 width: 100% !important;
-                height: 45vh;
-                max-height: 45vh;
+                height: 95vh;
+                max-height: 95vh;
                 border-radius: 20px 20px 0 0;
                 border-left: none;
                 border-top: 1px solid rgba(212, 165, 116, 0.3);
                 transform: translateY(100%);
-                overflow: hidden;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
                 z-index: 300 !important;
                 background: linear-gradient(180deg, rgb(10, 22, 40) 0%, rgb(21, 34, 56) 100%) !important;
             }
@@ -1902,61 +1903,39 @@
                 transform: translateY(0) !important;
             }
             
-            .side-panel.expanded {
-                height: 90vh;
-                max-height: 90vh;
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
-            }
-            
             .panel-close {
-                position: absolute;
+                position: sticky;
                 top: 0.75rem;
                 right: 0.75rem;
+                float: right;
+                margin: 0.75rem;
                 z-index: 300;
-                width: 36px;
-                height: 36px;
+                width: 40px;
+                height: 40px;
                 background: rgba(10, 22, 40, 0.9);
                 border: 2px solid var(--gold);
+                color: var(--cream);
+                font-size: 1.25rem;
             }
             
             .panel-image {
-                height: 120px;
-            }
-            
-            .side-panel.expanded .panel-image {
                 height: 200px;
             }
-            
+
             .panel-content {
                 padding: 1rem 1.5rem;
-                padding-bottom: 30px;
-            }
-            
-            .side-panel.expanded .panel-content {
                 padding-bottom: 100px;
             }
-            
+
             /* Show back link always */
             .back-to-globe {
                 display: block;
             }
-            
-            /* Hide next door and locations hint in collapsed state */
+
+            /* Show navigation hints */
             .next-door-hint,
             .locations-hint {
-                display: none;
-            }
-            
-            /* Show them when expanded */
-            .side-panel.expanded .next-door-hint,
-            .side-panel.expanded .locations-hint {
                 display: block;
-            }
-            
-            /* Hide swipe hint when expanded */
-            .side-panel.expanded .swipe-hint {
-                display: none;
             }
             
             .panel-title {
@@ -1964,15 +1943,12 @@
                 margin-bottom: 0.75rem;
             }
             
+            /* Show full text immediately - no preview state */
             .panel-text {
-                display: none;
-            }
-            
-            .side-panel.expanded .panel-text {
                 display: block;
             }
-            
-            .side-panel.expanded .panel-content {
+
+            .panel-content {
                 padding-bottom: 100px;
             }
             
@@ -2006,36 +1982,14 @@
         }
         
         @media (max-width: 768px) {
+            /* Hide preview text - full content shows immediately */
             .panel-preview {
-                display: block;
-                font-family: 'Cormorant Garamond', serif;
-                font-size: 1rem;
-                line-height: 1.6;
-                color: rgba(245, 240, 232, 0.85);
-                margin-top: 0.5rem;
-            }
-            
-            .side-panel.expanded .panel-preview {
                 display: none;
             }
-            
+
+            /* Hide swipe hint - panel opens full, no swipe needed */
             .swipe-hint {
-                display: block;
-                text-align: center;
-                font-size: 0.75rem;
-                color: var(--gold);
-                opacity: 0.7;
-                margin-top: 1rem;
-                animation: pulse-hint 2s ease-in-out infinite;
-            }
-            
-            .side-panel.expanded .swipe-hint {
                 display: none;
-            }
-            
-            @keyframes pulse-hint {
-                0%, 100% { opacity: 0.5; transform: translateY(0); }
-                50% { opacity: 1; transform: translateY(-3px); }
             }
         }
         
@@ -2093,8 +2047,8 @@
         @media (max-width: 768px) {
             .menu-toggle {
                 display: flex !important;
-                left: auto !important;
-                right: 1rem !important;
+                left: 1rem !important;
+                right: auto !important;
                 top: auto !important;
                 bottom: 5rem !important;
                 transform: none !important;
@@ -2103,7 +2057,7 @@
                 box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
                 z-index: 350 !important;
             }
-            
+
             .menu-toggle span {
                 background: var(--navy) !important;
             }
@@ -2146,10 +2100,10 @@
         .mobile-tap-hint {
             display: none;
             position: fixed;
-            top: 45%;
+            top: 58%;
             left: 50%;
             transform: translateX(-50%);
-            z-index: 150;
+            z-index: 100;
             text-align: center;
             pointer-events: none;
             opacity: 0;
@@ -2165,16 +2119,18 @@
             font-size: 2rem;
             color: var(--gold);
             animation: bounce-arrow 1s ease-in-out infinite;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
         }
 
         .mobile-tap-hint .tap-text {
             display: block;
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1rem;
-            color: var(--cream);
+            font-size: 1.1rem;
+            color: var(--gold);
             letter-spacing: 0.1em;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.8);
             margin-top: 0.25rem;
+            font-weight: 600;
         }
 
         @keyframes bounce-arrow {

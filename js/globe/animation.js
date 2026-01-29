@@ -106,7 +106,12 @@ function animate() {
         // - Panel is not open (user is not reading)
         // - Not transitioning
         if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
-            targetRotationY += 0.0001;
+            // Scale rotation speed based on zoom level - slower when zoomed in
+            const maxZoom = 4.5;  // zoomed out
+            const minZoom = 1.5;  // zoomed in close
+            const zoomFactor = (camera.position.z - minZoom) / (maxZoom - minZoom);
+            const rotationSpeed = 0.00003 + (zoomFactor * 0.00012); // 0.00003 to 0.00015
+            targetRotationY += rotationSpeed;
         }
         
         // Always smooth-lerp toward target rotation
