@@ -74,6 +74,16 @@ function openPanel(loc) {
         } else if (loc.storyImage) {
             fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
         }
+
+        // Restore nextDoorHint to its original position before replacing innerHTML
+        // (it may have been moved inside panelText on a previous panel open)
+        const nextDoorHint = document.getElementById('nextDoorHint');
+        const panelContent = document.querySelector('.panel-content');
+        const locationsHint = document.querySelector('.locations-hint');
+        if (nextDoorHint && panelContent && locationsHint) {
+            panelContent.insertBefore(nextDoorHint, locationsHint);
+        }
+
         document.getElementById('panelText').innerHTML = fullContent;
 
         // Attach click handlers to story images for lightbox
@@ -84,7 +94,6 @@ function openPanel(loc) {
 
         // Move next door button right after the final quote if it exists
         const finalQuote = document.querySelector('.final-quote');
-        const nextDoorHint = document.getElementById('nextDoorHint');
         if (finalQuote && nextDoorHint && loc.isDoor) {
             finalQuote.parentNode.insertBefore(nextDoorHint, finalQuote.nextSibling);
         }
@@ -96,10 +105,13 @@ function openPanel(loc) {
         sidePanel.classList.add('expanded');
         sidePanel.classList.add('open');
         panelIsOpen = true; // Stop auto-rotation while reading
-        
-        // Reset scroll position to top
+
+        // Reset scroll position to top (do it immediately and after layout)
         sidePanel.scrollTop = 0;
-        
+        requestAnimationFrame(() => {
+            sidePanel.scrollTop = 0;
+        });
+
         // Hide scroll hint until panel fully opens
         document.getElementById('scrollHintBottom').classList.remove('visible');
     } catch (error) {

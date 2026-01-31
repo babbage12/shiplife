@@ -3,6 +3,8 @@
 ## Summary
 Added 50 custom AI porthole images to complete all 118 locations, plus UI improvements for marker bounce animation and fixed a red screen flash bug. Also added bulk photo uploads to many locations, created 3 new locations, and built several new richContent panels.
 
+**Evening Session:** Completed richContent panel audit - added more-info and gallery sections to 22+ panels. Fixed broken Cloudinary URLs. Identified mystery photos (Portovenere). Added 6 Mediterranean location panels with 19 new photos.
+
 ---
 
 ## Custom Porthole Images - COMPLETE
@@ -159,6 +161,107 @@ Moved all porthole icons to "Icons" folder in Cloudinary. Updated all URLs in `c
 
 ---
 
+## Evening Session - RichContent Panel Audit
+
+### The Task
+Check all existing richContent panels and ensure each has:
+- `more-info-container` (expandable fun facts)
+- `photo-gallery-section` (expandable photo grid)
+
+### Panels Updated (16 total)
+| Location | More-Info | Gallery |
+|----------|-----------|---------|
+| Auckland | Added | Added (10 images) |
+| Sea Days | Added | Added (2 images) |
+| Komodo Island | Added | Added (4 images) |
+| Ushuaia | Added | Added (7 images) |
+| Sydney | Already had | Added (20 images) |
+| Akaroa | Added | Already had |
+| Kotor | Added | Added (3 images) |
+| Malta/Valletta | Added | Added (2 images) |
+| Alexandria | Added | Added (2 images) |
+| Lemaire Channel | Added | Added (4 images) |
+| Petermann Island | Added | Added (5 images) |
+| Barcelona | Added | Added (6 images) |
+| Rio de Janeiro | Added | Already had |
+| Port Vila | Already had | Added (1 image) |
+| Lifou | Already had | Added (2 images) |
+| Piran | Added | Added (2 images) |
+
+---
+
+## Bug Fix - Broken Porthole Icons
+
+### Problem
+After earlier session, most porthole icons showed broken images (404 errors).
+
+### Cause
+URLs in config.js contained `/Icons/` folder path, but images were never actually moved to that folder in Cloudinary.
+
+### Solution
+Removed `/Icons/` from all porthole URLs in config.js.
+
+---
+
+## Bug Fix - Petermann Island
+
+### Problems
+1. Icon overlapping with Port Lockroy
+2. Wrong porthole icon showing (Kotor instead of Antarctic)
+3. Bad hero image
+
+### Solutions
+1. Added marker offsets for both Petermann Island and Port Lockroy in markers.js
+2. Added Petermann Island to locationPortholeURLs using Port Lockroy's Antarctic image
+3. Swapped hero image with better one from gallery
+
+---
+
+## Mystery Photos Identified - Portovenere!
+
+### The Question
+Two photos showing dramatic coastal views through stone fortress windows - location unknown.
+
+### The Answer
+**Portovenere, Italy** - The fortress overlooking the Gulf of Poets near Cinque Terre. Added both photos to new richContent panel.
+
+---
+
+## New Mediterranean Panels (6 locations, 19 photos)
+
+### Portofino, Italy
+- 1 photo: narrow alley leading to harbor
+- Full richContent panel with fun facts
+
+### Portovenere, Italy
+- 2 photos: fortress window views of Ligurian coast
+- Full richContent panel with Byron's Grotto history
+
+### Rome, Italy
+- 4 photos added to gallery
+- Full richContent panel
+
+### San Remo, Italy
+- 9 photos: bike path, coastal views, Belle Époque villa
+- Full richContent panel with flower market/music festival facts
+
+### Marseille, France
+- 2 photos: Old Port with Fort Saint-Jean
+- Full richContent panel with MuCEM/Calanques facts
+
+### Monte Carlo, Monaco
+- 1 photo
+- Full richContent panel with casino/Grand Prix facts
+
+---
+
+## Other Updates
+
+### Šibenik, Croatia
+- Replaced placeholder description with proper content about UNESCO cathedral and Game of Thrones filming
+
+---
+
 ## Files Modified
 - `js/data/config.js` - Added 50 new porthole image URLs, Icons folder path migration
 - `js/data/locations.js` - Built/updated panels for Kotor, Alexandria, Ushuaia, Barcelona, Piran, Lemaire Channel, Malta; created Komodo, Sea Days, Petermann Island; updated hero images and galleries for multiple locations
@@ -172,6 +275,10 @@ Moved all porthole icons to "Icons" folder in Cloudinary. Updated all URLs in `c
 ## Git Commits
 1. "Add 50 custom AI porthole images for remaining locations" - pushed
 2. "Add continuous bounce animation for sidebar-selected markers" - local only
+3. "Add bulk photo content, 3 new locations, and Lipica horse show"
+4. "Add rich content sections to 16 location panels"
+5. "Fix Cloudinary URLs and add Petermann Island marker offsets"
+6. "Add richContent panels to 6 Mediterranean locations"
 
 ---
 
@@ -182,4 +289,19 @@ Moved all porthole icons to "Icons" folder in Cloudinary. Updated all URLs in `c
 
 ---
 
-Massive session! All 121 portholes complete, dozens of photos added, mystery horse show identified.
+## Codebase Stats
+| Category | Lines |
+|----------|------:|
+| JavaScript | 8,357 |
+| CSS | 2,095 |
+| HTML | 199 |
+| **Total** | **~10,650** |
+
+Largest files:
+- locations.js: 4,175 lines (content/data)
+- markers.js: 1,920 lines
+- styles.css: 2,095 lines
+
+---
+
+Massive session! All 121 portholes complete, 22+ panels fully built out, mystery photos identified, ~10,650 lines of code.
