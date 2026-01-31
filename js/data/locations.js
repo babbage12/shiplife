@@ -612,7 +612,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Queen's Room Vocalist with a 9-piece orchestra.",
         fullDesc: "In 2019, a prestigious position opened up on the iconic Queen Victoria.\n\nThe Queen's Room was unlike anything experienced before. A grand ballroom where couples would waltz beneath crystal chandeliers while a nine-piece orchestra played.\n\nThis was old-world elegance at sea - white gloves, formal attire, and the kind of sophistication that harked back to the golden age of ocean travel.",
-        image: "https://images.unsplash.com/photo-1559599238-308793637427?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821450/queen_v_wsuwn6.jpg"
     },
     {
         id: 116,
@@ -645,7 +645,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Spiritual awakenings and monkey forests.",
         fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from expectation. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
-        image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821387/bali_y9gq2v.jpg"
     },
     {
         id: 120,
@@ -808,7 +808,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">4 images</span>
+                        <span class="gallery-count">6 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -817,6 +817,8 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532348/DSC00313_iv0cyd.jpg" class="gallery-thumb" data-caption="Prehistoric predator up close." alt="Komodo dragon close-up">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532354/DSC00301_czqyrm.jpg" class="gallery-thumb" data-caption="The Komodo landscape." alt="Komodo landscape">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532360/DSC002982nd_rlitb4.jpg" class="gallery-thumb" data-caption="Jurassic Park vibes." alt="Komodo Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="gallery-thumb" data-caption="Dry season - brown savanna terrain." alt="Komodo dry season">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="gallery-thumb" data-caption="Rainy season - lush green landscape." alt="Komodo rainy season">
                 </div>
             </div>
         `,
@@ -1010,7 +1012,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Walking where emperors walked.",
         fullDesc: "These ruins felt different.\n\nMaybe it was the scale-the Library of Celsus towering overhead. Or maybe it was knowing that this was once one of the largest cities in the Roman Empire. Either way, Ephesus made ancient history feel immediate.",
-        image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821545/ephesus_lynbis.jpg"
     },
     {
         id: 10,
