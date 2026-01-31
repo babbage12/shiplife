@@ -396,7 +396,7 @@ const locations = [
             </div>
             
             <div class="story-section-panel">
-                <span class="section-tag-panel">Three Fun-Filled, Island-Hopping Years Later...</span>
+                <span class="section-tag-panel section-tag-glow">Three Fun-Filled, Island-Hopping Years Later...</span>
                 <h3 class="section-title-panel">Akaroa, New Zealand. November 2012.</h3>
                 <p>A note slipped under my door.</p>
                 <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
