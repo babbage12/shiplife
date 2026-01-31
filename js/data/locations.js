@@ -1444,6 +1444,11 @@ const locations = [
                 <h3 class="section-title-panel">Edge of the World</h3>
                 <p>There was something very peaceful and tranquil about New Zealand, but this feeling was magnified in spots like Akaroa.</p>
                 <p>The walk around the harbor almost compelled you along, and before you knew it you'd be standing at the edge - with the lighthouse and the ancient forest graveyard that was dying (pun intended) to be in a Stephen King movie.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769817323/IMG_0843_bhszx1.jpg" class="story-image" alt="Ancient forest graveyard">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769817327/IMG_0842_fj656g.jpg" class="story-image" alt="Stephen King graveyard vibes">
+                </div>
+                <p class="photo-caption-inline">The ancient forest graveyard - straight out of a Stephen King novel.</p>
             </div>
 
             <div class="story-section-panel">
