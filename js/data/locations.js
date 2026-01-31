@@ -792,6 +792,22 @@ const locations = [
                 <p>The whole island has this prehistoric energy. You half expect a pterodactyl to fly overhead.</p>
             </div>
 
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Two Faces</span>
+                <h3 class="section-title-panel">Same Island, Different World</h3>
+                <p>Komodo transforms completely depending on when you visit.</p>
+                <div class="story-gallery-grid">
+                    <div style="text-align: center;">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="story-image" alt="Komodo dry season">
+                        <p class="photo-caption-inline" style="margin-top: 0.5rem;"><strong>Dry Season (May-Oct)</strong><br>Brown savanna, African vibes</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="story-image" alt="Komodo rainy season">
+                        <p class="photo-caption-inline" style="margin-top: 0.5rem;"><strong>Rainy Season (Nov-Apr)</strong><br>Lush green, tropical paradise</p>
+                    </div>
+                </div>
+            </div>
+
             <div class="more-info-container" onclick="this.classList.toggle('active')">
                 <button class="more-info-btn">
                     <span class="info-icon">💡</span>
