@@ -297,8 +297,6 @@ const locations = [
                 <p>Darwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.</p>
             </div>
 
-            ${generateGallery('darwin', 'Crew Friends & Shiplife Moments')}
-            
             <div class="more-info-container" onclick="this.classList.toggle('active')">
                 <button class="more-info-btn">
                     <span class="info-icon">💡</span>
@@ -323,7 +321,7 @@ const locations = [
                 <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
-                        <span>More Photos</span>
+                        <span>More Photos of Shiplife</span>
                         <span class="gallery-count">34 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
