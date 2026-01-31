@@ -440,19 +440,28 @@ const locations = [
                 <span class="section-tag-panel">The Seabourn Experience</span>
                 <h3 class="section-title-panel">Not Your Average Cruise Ship</h3>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729030/IMG_0202_igk8i4.jpg" class="story-image" alt="Seabourn funnel">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767733813/IMG_0218_azftb2.jpg" class="story-image" alt="The Club">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769827243/seabourn_in_marseille_w6uyqy.jpg" class="story-image" alt="Seabourn in Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769827154/seabourn_in_amalfi_zxkxez.jpg" class="story-image" alt="Seabourn in Amalfi">
                 </div>
-                <p class="photo-caption-inline">The iconic Seabourn funnel. The Club on Deck 5 - my new stage.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767728099/IMG_0201_jrd2av.jpg" class="story-image" alt="Seabourn schedule">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825370/seabourn_goes_anywhere_it_wants_rlcqhm.jpg" class="story-image" alt="Seabourn goes anywhere">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825251/oddyssy_in_malta_ozbqnz.jpg" class="story-image" alt="Seabourn Odyssey in Malta">
                 </div>
-                <p class="photo-caption-inline">Saturday, March 2, 2013. My name in print on Seabourn. And yes, they always put me by the food.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825070/seabourn_sezzq5.jpg" class="story-image" alt="Seabourn ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824723/sojourn_2_jajz31.jpg" class="story-image" alt="Seabourn Sojourn">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823772/seabourn_naynld.jpg" class="story-image" alt="Seabourn ship">
+                </div>
+                <p class="photo-caption-inline">Seabourn ships go places bigger ships can only dream of. Marseille. Amalfi. Malta. Tucked into harbors and anchored off coastlines that mass-market cruise lines will never see.</p>
                 <p>Seabourn ships are more like huge luxury yachts than cruise ships. The guests were amazing. Doctors. Lawyers. Dignitaries. CEOs. Experts in horticulture, ancient history, penguins - you name it.</p>
                 <p>And the crew knew how to party.</p>
                 <p>Everyone was friendly. Everyone was professional.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767733813/IMG_0218_azftb2.jpg" class="story-image" alt="The Club">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn">
+                </div>
+                <p class="photo-caption-inline">The Club on Deck 5 - my stage. And yes, they always put me by the food.</p>
             </div>
             
             <div class="story-section-panel">
@@ -1001,7 +1010,7 @@ const locations = [
             </div>
         `,
         fullDesc: "I've never seen such concentrated beauty in such a small space.\n\nPortofino is tiny-you can walk the entire town in 15 minutes. But every corner is a photograph. Pastel buildings, super-yachts in the harbor, and espresso that costs as much as a meal anywhere else.",
-        image: "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823852/portofino_blnosm.jpg"
     },
     {
         id: 9,
@@ -4190,8 +4199,27 @@ const locations = [
         icon: "⚓",
         isDoor: false,
         shortDesc: "Bridges, beaches, and colonial history.",
-        fullDesc: "Placeholder description for Recife.",
-        image: ""
+        useRichContent: true,
+        richContent: `
+            <p>Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.</p>
+            <p>The old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.</p>
+
+            <div class="photo-gallery-section" id="recifeGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769826219/recife_1_swhgm9.jpg" class="gallery-thumb" data-caption="Francisco Brennand sculpture at Parque das Esculturas." alt="Brennand sculpture Recife">
+                </div>
+            </div>
+        `,
+        fullDesc: "Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.\n\nThe old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825894/recife_mlr7ts.jpg"
     },
     {
         id: 110,
@@ -4223,6 +4251,25 @@ const locations = [
         icon: "⛪",
         isDoor: false,
         shortDesc: "Where the cathedral rises from the sea.",
+        useRichContent: true,
+        richContent: `
+            <p>Amalfi was once a maritime republic rivaling Venice and Genoa.</p>
+            <p>The cathedral dominates the piazza, its Arab-Norman facade climbing 62 steps above the crowds. The town clings to cliffs so steep that the streets become staircases. Lemon groves terrace the hillsides. The coast that bears its name is one of the most beautiful drives on Earth.</p>
+
+            <div class="photo-gallery-section" id="amalfiGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823674/20150804_114120_kg0f2a.jpg" class="gallery-thumb" data-caption="Amalfi harbor from the water." alt="Amalfi harbor">
+                </div>
+            </div>
+        `,
         fullDesc: "Amalfi was once a maritime republic rivaling Venice and Genoa.\n\nThe cathedral dominates the piazza, its Arab-Norman facade climbing 62 steps above the crowds. The town clings to cliffs so steep that the streets become staircases. Lemon groves terrace the hillsides. The coast that bears its name is one of the most beautiful drives on Earth.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769804268/IMG_7001_wxe4a4.jpg"
     },
