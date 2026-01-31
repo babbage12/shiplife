@@ -983,6 +983,21 @@ const locations = [
             </div>
 
             <div class="story-section-panel">
+                <span class="section-tag-panel">The Journey</span>
+                <h3 class="section-title-panel">Walking to Portofino</h3>
+                <p>The best way to arrive at Portofino is on foot. The coastal path from Santa Margherita winds through olive groves and past hidden coves.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824113/walking_to_portofino_jjhdgl.jpg" class="story-image" alt="Walking to Portofino">
+                <p class="photo-caption-inline">The path hugs the coastline. Every turn reveals something new.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823951/portofino_hike_vxjb0v.jpg" class="story-image" alt="Hiking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824104/closer_to_portofino_zeglqn.jpg" class="story-image" alt="View approaching Portofino">
+                </div>
+                <p class="photo-caption-inline">Almost there. The villas and church tower come into view through the pines.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="story-image" alt="Arrival at Portofino">
+                <p class="photo-caption-inline">Arrival. Worth every step.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <span class="section-tag-panel">The Village</span>
                 <h3 class="section-title-panel">Concentrated Beauty</h3>
                 <p>I've never seen such concentrated beauty in such a small space.</p>
@@ -1016,12 +1031,16 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">1 image</span>
+                        <span class="gallery-count">5 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140713_Facebook_wjt37q.jpg" class="gallery-thumb" data-caption="Narrow alley leading to Portofino harbor." alt="Portofino alley">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824113/walking_to_portofino_jjhdgl.jpg" class="gallery-thumb" data-caption="The coastal path to Portofino." alt="Walking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823951/portofino_hike_vxjb0v.jpg" class="gallery-thumb" data-caption="Hiking through the hills." alt="Hiking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824104/closer_to_portofino_zeglqn.jpg" class="gallery-thumb" data-caption="Almost there - villas through the pines." alt="View approaching Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="gallery-thumb" data-caption="Arrival at Portofino harbor." alt="Arrival at Portofino">
                 </div>
             </div>
         `,
