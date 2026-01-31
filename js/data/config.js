@@ -124,6 +124,13 @@ const locationPortholeURLs = {
     "Šibenik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195368/sibenik_eb8ez8.png",
     "Venice, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195366/venice_hyidml.png",
     "Ravenna, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Ravenna_rmadgp.png",
+    "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Sanary-sur-Mer, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Antibes, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
     "St. Tropez, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195361/San_Tropz_zg4d3c.png",
     "Constanța, Romania": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Constanta_qcrxop.png",
     "Odessa, Ukraine": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Odessa_gzcd78.png",
@@ -145,10 +152,10 @@ const locationPortholeURLs = {
     "Falkland Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199444/falkland_islands_anuweu.png",
     "Beagle Channel, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/beagle_channel_p92ljy.png",
     "Puerto Montt, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",
+    "Castro, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",  // PLACEHOLDER
     "Punta Arenas, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Arenas_sfl1zj.png",
     "Valparaíso, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199439/Valparaiso_chile_jvearj.png",
     "Santiago, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199435/Santiago_njnykm.png",
-    "Concepción, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199435/Concepcion_zknx75.png",
     "Valdivia, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/Valdivia_a1i29g.png",
     "Buenos Aires, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/buenos_aires_kclfjm.png",
     "Montevideo, Uruguay": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/Montevideo_Uruguay_oq0zyq.png",

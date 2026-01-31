@@ -135,7 +135,7 @@ const locations = [
         isDoor: false,
         shortDesc: "First shore leave. The door stayed open.",
         fullDesc: "Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.\n\nMentally prepared for a call from the cruise director's office saying \"Thanks, but no thanks\" along with a plane ticket home.\n\nIt was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nFirst shore leave.\n\nTurns out, this was the first of many shore leaves over the next 12 years.\n\nThe door stayed open.",
-        image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816317/brisbane_iajcgd.jpg"
     },
     {
         id: 22,
@@ -636,7 +636,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Stepping through ancient gates into the Middle Ages.",
         fullDesc: "The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic.\n\nBut nothing prepared for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.",
-        image: "https://images.unsplash.com/photo-1555990538-1e6c3c10617e?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817982/dubrovnik_ihkkaj.jpg"
     },
     {
         id: 6,
@@ -1472,6 +1472,10 @@ const locations = [
                         <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-29_t7whzs.jpg" class="story-image" alt="Akaroa panorama">
                         <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-30_yrmpiw.jpg" class="story-image" alt="Akaroa lighthouse panorama">
                     </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817323/IMG_0843_bhszx1.jpg" class="story-image" alt="Akaroa graveyard">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817327/IMG_0842_fj656g.jpg" class="story-image" alt="Akaroa forest graveyard">
+                    </div>
                 </details>
             </div>
 
@@ -1505,7 +1509,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The cool little capital.",
         fullDesc: "New Zealand's capital lived up to its nickname-the coolest little capital in the world.\n\nCompact, walkable, with a thriving arts scene and some of the best craft beer in the Southern Hemisphere. Wellington felt like home.",
-        image: "https://images.unsplash.com/photo-1563806951900-5853e5e4fb06?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816673/wellington_dsv7qd.jpg"
     },
     {
         id: 15,
@@ -1527,7 +1531,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Vintage architecture and classic automobiles.",
         fullDesc: "Napier is famous for its Art Deco architecture, rebuilt after an earthquake in 1931.\n\nWalking these streets feels like stepping back into the Great Gatsby era. Classic cars line the boulevards. The whole town is a time capsule.",
-        image: "https://images.unsplash.com/photo-1581489067667-27a695e20603?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816605/Napier_ktolwj.jpg"
     },
     {
         id: 17,
@@ -1549,7 +1553,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Kingdom of Tonga.",
         fullDesc: "Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.\n\nIt is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here-slower, more intentional.",
-        image: "https://images.unsplash.com/photo-1589871162799-a864708764b8?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816004/tonga_jolrwg.jpg"
     },
     {
         id: 19,
@@ -1560,7 +1564,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The pearl of the Pacific.",
         fullDesc: "The water here is a color I didn't know existed.\n\nWe anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.",
-        image: "https://images.unsplash.com/photo-1532408840135-2d8f2b3e8964?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816171/bora_bora_fpjre2.jpg"
     },
     {
         id: 20,
@@ -1696,7 +1700,7 @@ const locations = [
         isDoor: false,
         shortDesc: "France in the South Pacific.",
         fullDesc: "New Caledonia is a surreal mashup of French culture and Pacific island life.\n\nBaguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.",
-        image: "https://images.unsplash.com/photo-1589179899630-5bd2b312b5a8?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817595/resort_pool_noumea_m9dbcy.jpg"
     },
     {
         id: 117,
@@ -1802,7 +1806,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The Whitsundays-where beauty meets foreboding.",
         fullDesc: "I worried a lot. Every time I jumped onto the catamaran tender until the moment I left, a constant feeling droned its way around my brain. Something doesn't feel right.\n\nAgain I imagined an earlier time. When walking in the sand didn't burn my toes. When the glare of the sun while at sea wasn't so offensive. When one might have been able to take a deep breath of the world around them and be grateful, instead of being pulled in two directions by the beauty and the foreboding evidence of climate change.\n\nI've never been anywhere so consistently uncomfortable temperature-wise. You just know that something is going terribly wrong with the planet.",
-        image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817012/arlie_beach_wnpbnq.jpg"
     },
     {
         id: 24,
@@ -2708,7 +2712,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Barcelona is Gaudí's city.\n\nThe Sagrada Família defies description-a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night. This city knows how to live.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738440/IMG_20140811_122138_cqwjid.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769805706/20150713_123849_xbyscp.jpg"
     },
     {
         id: 38,
@@ -2754,7 +2758,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "Sailing through Patagonia's dramatic channels.",
         fullDesc: "The Beagle Channel connects the Atlantic and Pacific through some of the most dramatic scenery on Earth. Named after Darwin's ship, this narrow passage winds between snow-capped mountains, past glaciers calving into the sea, and through waters so still they mirror the sky.",
-        image: "",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769814774/beagle_channl_xrs5y9.jpg",
         richContent: `
             <div class="demographics-strip">
                 <div class="demo-item">
@@ -3062,7 +3066,7 @@ const locations = [
             ${generateGallery('rio')}
         `,
         fullDesc: "Every time the ship docked in Rio, getting lost was inevitable. Something about this city wanted to keep you there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until finally reaching Copacabana and having a Corona.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769809159/20200209_075921_rvq35a.jpg"
     },
     {
         id: 46,
@@ -3143,7 +3147,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.\n\nLord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him. Pastel houses stack up the hillside, and the Church of St. Peter perches dramatically on the rocks.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810340/IMG_5581_nzmylf.jpg"
     },
     {
         id: 47,
@@ -3278,7 +3282,7 @@ const locations = [
             </div>
         `,
         fullDesc: "San Remo is where Italy comes to vacation.\n\nThe Casino is legendary. The flower market supplies much of Europe. Every February, the Sanremo Music Festival launches Italian pop careers. The old town climbs the hillside in a tangle of medieval streets.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810404/IMG_5475_cuf6vh.jpg"
     },
     {
         id: 53,
@@ -3374,7 +3378,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Marseille is France's oldest city and its most diverse.\n\nThe Old Port has welcomed ships for 2,600 years. The bouillabaisse is non-negotiable. The Calanques-limestone cliffs plunging into turquoise water-rival any coastline in the world. This isn't Paris. Marseille doesn't care.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803210/IMG_20140606_110847_b49lhd.jpg"
     },
     {
         id: 56,
@@ -3447,17 +3451,18 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">1 image</span>
+                        <span class="gallery-count">2 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769800957/PANO_20140702_094633_htivht.jpg" class="gallery-thumb" data-caption="Monaco harbor with superyacht 'Dubai' (one of the world's largest) and Seabourn Sojourn." alt="Monaco harbor with superyacht Dubai">
                 </div>
             </div>
         `,
         fullDesc: "Monaco is two square kilometers of concentrated wealth.\n\nThe Casino is palatial. The Grand Prix tears through the streets every May. The yachts in the harbor cost more than most neighborhoods. It's absurd and glamorous and nothing quite like anywhere else.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810619/20150815_144825_fcjtyg.jpg"
     },
     {
         id: 58,
@@ -3567,7 +3572,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The shortcut between oceans.",
         fullDesc: "The Panama Canal is one of humanity's greatest engineering achievements.\n\nTransiting through the locks, rising and falling between oceans, you feel the scale of what they built here. Ships from every nation queue to pass through. The jungle presses in from both sides. Connecting two oceans changed the world.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803417/20200311_100948_aus73q.jpg"
     },
     {
         id: 117,
@@ -3578,7 +3583,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where Spanish colonial history meets Caribbean soul.",
         fullDesc: "Old San Juan is a living postcard.\n\nCobblestone streets wind between pastel buildings. El Morro fortress guards the harbor as it has for 500 years. The rum flows freely, the music spills out of every doorway, and the mix of Spanish, African, and Taíno cultures creates something uniquely Puerto Rican.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769808723/20200124_110715_x1nxye.jpg"
     },
     {
         id: 65,
@@ -3589,7 +3594,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where history was made on the Black Sea.",
         fullDesc: "Yalta is where Roosevelt, Churchill, and Stalin divided up the post-war world.\n\nBut before the conference, it was the Russian Riviera-Tsars built palaces along this coast. The Swallow's Nest castle clings impossibly to its cliff. The Black Sea stretches to the horizon.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524741/IMG_3336_unx2bt.jpg"
     },
     {
         id: 66,
@@ -3600,7 +3605,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient Arabia with a modern soul.",
         fullDesc: "Muscat is what you hope the Middle East will be.\n\nThe Sultan Qaboos Grand Mosque is breathtaking. The old souks smell of frankincense. The mountains plunge to the sea. Oman has oil wealth but wears it lightly-this is Arabia without the excess.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524848/IMG_3858_nczhzc.jpg"
     },
     {
         id: 67,
@@ -3611,7 +3616,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient city on a tiny peninsula.",
         fullDesc: "Nessebar packs 3,000 years of history onto a peninsula barely larger than a football field.\n\nGreek ruins, Byzantine churches, Ottoman houses-all crammed together on streets barely wide enough to walk. The Black Sea surrounds it on three sides. UNESCO calls it one of Europe's richest towns for historic buildings.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524929/IMG_3277_jn2dkg.jpg"
     },
     {
         id: 68,
@@ -3622,7 +3627,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The impossible city built on water.",
         fullDesc: "Venice shouldn't exist, but it does-and has for over a thousand years.\n\nNo cars, no roads-just canals, bridges, and the most beautiful decay you'll ever see. The Piazza San Marco floods with acqua alta and tourists alike. Gondoliers navigate waters their families have worked for generations. Every corner reveals another impossible view.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769525228/IMG_2302_t26i3t.jpg"
     },
     {
         id: 69,
@@ -3655,7 +3660,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the outback meets the ocean.",
         fullDesc: "Broome was built on pearls and still has that frontier feel.\n\nCable Beach stretches for 22 kilometers of white sand. Camels walk the shoreline at sunset-a tradition from the Afghan cameleers who helped build the outback. The red pindan cliffs meet turquoise water. It's Australia at its most dramatic.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769801858/IMG_0196_dueq5z.jpg"
     },
     {
         id: 72,
@@ -3666,7 +3671,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Turkey's relaxed Aegean gem.",
         fullDesc: "Izmir has been a port city for three thousand years.\n\nThe ancient agora still stands in the city center. The waterfront promenade stretches for miles. The bazaar is less touristy than Istanbul's but just as atmospheric. This is Turkey's most progressive city, looking west across the Aegean toward Greece.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811340/Izmir_w6cmza.jpg"
     },
     {
         id: 73,
@@ -3677,7 +3682,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the Bahá'í gardens cascade to the sea.",
         fullDesc: "Haifa climbs Mount Carmel in terraces.\n\nThe Bahá'í Gardens are the showstopper-nineteen terraces of immaculate gardens cascading down the mountainside to the Mediterranean. Arabs and Jews live here in relative harmony. The German Colony serves excellent hummus. It's Israel's most liveable city.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769802091/IMG_20131015_121917_ebzafd.jpg"
     },
     {
         id: 74,
@@ -3688,7 +3693,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A colorful village on the Ionian coast.",
         fullDesc: "Parga tumbles down to its harbor in a cascade of pastel houses.\n\nThe Venetian castle watches over it all. The beaches nearby are some of Greece's best-kept secrets. Tour groups head to Corfu; those who know come here instead. It feels like the Greek islands, but it's on the mainland.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810786/IMG_20130917_130228_hrw12j.jpg"
     },
     {
         id: 75,
@@ -3699,7 +3704,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where yachts and lavender fields meet.",
         fullDesc: "Hvar has been famous since the ancient Greeks arrived.\n\nNow it's Croatia's answer to St. Tropez-superyachts in the harbor, beach clubs on the islands nearby, the beautiful and fashionable crowding the marble streets. But climb to the fortress above town and it's just you, the lavender-scented breeze, and views across a hundred islands.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769802180/IMG_3648_vdqbfm.jpg"
     },
     {
         id: 76,
@@ -3710,7 +3715,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Romania's window to the Black Sea.",
         fullDesc: "Placeholder description for Constanța.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811214/constanta_pqbuxd.jpg"
     },
     {
         id: 77,
@@ -3721,7 +3726,25 @@ const locations = [
         isDoor: false,
         shortDesc: "Wind, waves, and Turkish hospitality.",
         fullDesc: "Placeholder description for Çeşme.",
-        image: ""
+        useRichContent: true,
+        richContent: `
+            <p>Placeholder description for Çeşme.</p>
+
+            <div class="photo-gallery-section" id="cesmeGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769798481/IMG_3412_sonvnp.jpg" class="gallery-thumb" data-caption="Çeşme" alt="Çeşme">
+                </div>
+            </div>
+        `,
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769800172/IMG_20130910_135124_zvsakq.jpg"
     },
     {
         id: 78,
@@ -3732,7 +3755,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the Olympic flame begins its journey.",
         fullDesc: "Placeholder description for Katakolon.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769798766/IMG_3602_tgz9t9.jpg"
     },
     {
         id: 79,
@@ -3743,7 +3766,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Opera, architecture, and the famous steps.",
         fullDesc: "Placeholder description for Odessa.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799719/IMG_3327_t43wse.jpg"
     },
     {
         id: 80,
@@ -3754,7 +3777,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Gateway to one of the ancient world's great cities.",
         fullDesc: "Placeholder description for Kuşadası.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799095/IMG_3161_bht42h.jpg"
     },
     {
         id: 81,
@@ -3765,7 +3788,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Windmills, whitewash, and legendary nightlife.",
         fullDesc: "Placeholder description for Mykonos.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810900/IMG_20140620_120410_i3ltwo.jpg"
     },
     {
         id: 82,
@@ -3776,7 +3799,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Greece's first capital, still charming.",
         fullDesc: "Placeholder description for Nafplio.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799368/IMG_2996_hzlqdy.jpg"
     },
     {
         id: 83,
@@ -3787,7 +3810,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Homer wrote about this bay.",
         fullDesc: "Placeholder description for Pylos.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811070/pylos_gddewr.jpg"
     },
     {
         id: 84,
@@ -3798,7 +3821,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The mosaics here will leave you speechless.",
         fullDesc: "Placeholder description for Ravenna.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803566/IMG_2375_nmfzrq.jpg"
     },
     {
         id: 85,
@@ -3809,7 +3832,7 @@ const locations = [
         isDoor: false,
         shortDesc: "UNESCO-listed cathedral, Game of Thrones location.",
         fullDesc: "Šibenik is Croatia's oldest native town on the Adriatic - founded by Croats rather than Greeks or Romans.\n\nThe Cathedral of St. James is the crown jewel, a UNESCO World Heritage Site built entirely of stone and brick with no wooden supports. It took over a century to complete (1431-1536). The fortress above town, St. Michael's, was used as a Game of Thrones filming location for the Iron Bank of Braavos.\n\nSmaller and quieter than Split or Dubrovnik, Šibenik feels like discovering Croatia before the crowds found it.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803667/IMG_1752_xpouvp.jpg"
     },
     {
         id: 86,
@@ -3820,7 +3843,7 @@ const locations = [
         isDoor: false,
         shortDesc: "That famous beach with the rusted ship.",
         fullDesc: "Placeholder description for Zakynthos.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811177/zakinthos_uffa5b.jpg"
     },
     {
         id: 87,
@@ -3831,7 +3854,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The port for the Oracle's mountain.",
         fullDesc: "Placeholder description for Itea.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769798598/IMG_1301_artaae.jpg"
     },
     {
         id: 88,
@@ -4003,7 +4026,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Fiji's vibrant capital.",
         fullDesc: "Placeholder description for Suva.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769814482/fiji_xrsums.jpg"
     },
     {
         id: 95,
@@ -4058,7 +4081,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Peru's sprawling capital on the Pacific.",
         fullDesc: "Placeholder description for Lima.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769815535/20200305_125007_ulpo5m.jpg"
     },
     {
         id: 100,
@@ -4083,17 +4106,6 @@ const locations = [
         image: ""
     },
     {
-        id: 102,
-        title: "Concepción, Chile",
-        coords: [-36.83, -73.05],
-        tag: "University City",
-        icon: "⚓",
-        isDoor: false,
-        shortDesc: "Chile's second city.",
-        fullDesc: "Placeholder description for Concepción.",
-        image: ""
-    },
-    {
         id: 103,
         title: "Valdivia, Chile",
         coords: [-39.81, -73.24],
@@ -4114,6 +4126,17 @@ const locations = [
         shortDesc: "Where the lakes meet the fjords.",
         fullDesc: "Placeholder description for Puerto Montt.",
         image: ""
+    },
+    {
+        id: 122,
+        title: "Castro, Chile",
+        coords: [-42.48, -73.76],
+        tag: "Chiloé Island",
+        icon: "⛪",
+        isDoor: false,
+        shortDesc: "Colorful stilted houses and wooden churches.",
+        fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799840/IMG_6655_rwwdum.jpg"
     },
     {
         id: 105,
@@ -4146,7 +4169,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Tango, steak, and faded grandeur.",
         fullDesc: "Placeholder description for Buenos Aires.",
-        image: ""
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769806999/IMG_6420_qzn455.jpg"
     },
     {
         id: 108,
@@ -4180,5 +4203,104 @@ const locations = [
         shortDesc: "Brazil's sun-drenched northeast coast.",
         fullDesc: "Placeholder description for Fortaleza.",
         image: ""
+    },
+    {
+        id: 123,
+        title: "Ponza, Italy",
+        coords: [40.895, 12.958],
+        tag: "Pontine Islands",
+        icon: "🏝️",
+        isDoor: false,
+        shortDesc: "Ancient Roman hideaway in the Tyrrhenian Sea.",
+        fullDesc: "Ponza is the largest of the Pontine Islands, a volcanic archipelago off the coast between Rome and Naples.\n\nThe Romans carved cisterns and grottoes into these cliffs two thousand years ago. The harbor is ringed with pastel houses, and the beaches are accessible only by boat. This is where Romans escape when they want to disappear.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769800415/PANO_20140530_121202_f2hnrp.jpg"
+    },
+    {
+        id: 124,
+        title: "Amalfi, Italy",
+        coords: [40.634, 14.602],
+        tag: "Amalfi Coast",
+        icon: "⛪",
+        isDoor: false,
+        shortDesc: "Where the cathedral rises from the sea.",
+        fullDesc: "Amalfi was once a maritime republic rivaling Venice and Genoa.\n\nThe cathedral dominates the piazza, its Arab-Norman facade climbing 62 steps above the crowds. The town clings to cliffs so steep that the streets become staircases. Lemon groves terrace the hillsides. The coast that bears its name is one of the most beautiful drives on Earth.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769804268/IMG_7001_wxe4a4.jpg"
+    },
+    {
+        id: 125,
+        title: "Elba, Italy",
+        coords: [42.815, 10.318],
+        tag: "Napoleon's Exile",
+        icon: "👑",
+        isDoor: false,
+        shortDesc: "The island that couldn't hold an emperor.",
+        fullDesc: "Elba is where they sent Napoleon after his first fall.\n\nHe lasted ten months. The Medici fortresses of Portoferraio still crown the hills above the harbor, and pastel buildings tumble down to the waterfront. The island is beautiful enough that exile here hardly seems like punishment. Napoleon apparently agreed - he escaped and marched back to Paris for the Hundred Days.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769804712/IMG_7039_fbjze4.jpg"
+    },
+    {
+        id: 126,
+        title: "Bonifacio, Corsica",
+        coords: [41.387, 9.159],
+        tag: "City on the Cliff",
+        icon: "🏰",
+        isDoor: false,
+        shortDesc: "Medieval walls on borrowed time.",
+        fullDesc: "Bonifacio clings to limestone cliffs that are slowly crumbling into the sea.\n\nThe old town perches impossibly on the cliff edge, some buildings hanging over nothing but air. The citadel has guarded the strait between Corsica and Sardinia for 800 years. Below, the harbor shelters yachts where Genoese galleys once anchored. The cliffs glow white against the Mediterranean blue.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769805812/20150621_105547_atqiml.jpg"
+    },
+    {
+        id: 127,
+        title: "Barbados",
+        coords: [13.1939, -59.5432],
+        tag: "Little England",
+        icon: "🌴",
+        isDoor: false,
+        shortDesc: "Caribbean soul with British traditions.",
+        fullDesc: "Barbados is the Caribbean's easternmost island, where British colonial history meets warm island culture.\n\nThe rum here is legendary - Mount Gay has been distilling since 1703. Cricket is religion. The beaches are postcard-perfect, and Bridgetown's historic center is a UNESCO World Heritage Site. They drive on the left, take afternoon tea seriously, and throw the best crop-over festival in the region.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769808899/20200126_132420_neltyi.jpg"
+    },
+    {
+        id: 128,
+        title: "Sanary-sur-Mer, France",
+        coords: [43.12, 5.80],
+        tag: "Pointu Boats",
+        icon: "⛵",
+        isDoor: false,
+        shortDesc: "A Provençal fishing village with colorful boats.",
+        fullDesc: "Sanary-sur-Mer is the kind of place that makes you forget the rest of the world exists.\n\nThe harbor is lined with traditional pointu boats, their colorful hulls reflecting in the still water. The church tower of Saint-Nazaire watches over it all. German writers fled here during the Nazi era, and you can understand why. Some places just feel like sanctuary.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769818458/sanary-sur-mer_lhds8c.jpg"
+    },
+    {
+        id: 129,
+        title: "Antibes, France",
+        coords: [43.58, 7.13],
+        tag: "Picasso's Fortress",
+        icon: "🏰",
+        isDoor: false,
+        shortDesc: "Old town walls and a famous museum.",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Antibes has the kind of old town that makes you want to get lost on purpose.</p>
+                <p>The ramparts still stand, the market still bustles, and the Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.</p>
+            </div>
+
+            <div class="gallery-section">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        Gallery
+                        <span class="gallery-count">2 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1769818550/antibes_v00afy.jpg" class="gallery-thumb" data-caption="Le Vieil Antibes tile map" alt="Antibes tile map">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1769818667/antibes_market_ojkwca.jpg" class="gallery-thumb" data-caption="Antibes market" alt="Antibes market">
+                </div>
+            </div>
+        `,
+        fullDesc: "Antibes has the kind of old town that makes you want to get lost on purpose.\n\nThe ramparts still stand, the market still bustles, and the Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769818777/antibes_watchtower_kemxi6.jpg"
     }
 ];
