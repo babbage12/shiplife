@@ -124,13 +124,13 @@ const locationPortholeURLs = {
     "Šibenik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195368/sibenik_eb8ez8.png",
     "Venice, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195366/venice_hyidml.png",
     "Ravenna, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Ravenna_rmadgp.png",
-    "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Sanary-sur-Mer, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
-    "Antibes, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",  // PLACEHOLDER
+    "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00845__zqjdgd.png",
+    "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00846__rstxah.png",
+    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
+    "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00852__p4jual.png",
+    "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00857__dazqix.png",
+    "Sanary-sur-Mer, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00854__a1cxmz.png",
+    "Antibes, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896538/ComfyUI_00855__chqtla.png",
     "St. Tropez, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195361/San_Tropz_zg4d3c.png",
     "Constanța, Romania": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Constanta_qcrxop.png",
     "Odessa, Ukraine": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Odessa_gzcd78.png",
@@ -143,6 +143,7 @@ const locationPortholeURLs = {
     "Phuket, Thailand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Phuket_s3yyth.png",
     "Surabaya, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/surabaya_qw7xzj.png",
     "Semarang, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Semerang_lvy3te.png",
+    "Komodo Island, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896535/ComfyUI_00840__fycycg.png",
     "Dili, East Timor": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Dili_qfmvy8.png",
     "Tauranga, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/tauranga_2_kz6fnc.png",
     "Perth, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/perth_dpqn2h.png",
@@ -152,7 +153,7 @@ const locationPortholeURLs = {
     "Falkland Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199444/falkland_islands_anuweu.png",
     "Beagle Channel, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/beagle_channel_p92ljy.png",
     "Puerto Montt, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",
-    "Castro, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",  // PLACEHOLDER
+    "Castro, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00859__yfgdcx.png",
     "Punta Arenas, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Arenas_sfl1zj.png",
     "Valparaíso, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199439/Valparaiso_chile_jvearj.png",
     "Santiago, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199435/Santiago_njnykm.png",
@@ -168,6 +169,7 @@ const locationPortholeURLs = {
     "Queen Victoria (Cunard)": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206085/Queen_Vic_w9m3tz.png",
     "Amsterdam, Netherlands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206677/amstrdam_zk9uyu.png",
     "San Juan, Puerto Rico": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206678/san_juan_hw0fsw.png",
+    "Sea Days": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
 };
 
 // Per-location animated porthole videos
