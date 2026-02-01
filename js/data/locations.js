@@ -1556,9 +1556,46 @@ const locations = [
         tag: "Coolest Little Capital",
         icon: "🎉",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "The cool little capital.",
-        fullDesc: "New Zealand's capital lived up to its nickname-the coolest little capital in the world.\n\nCompact, walkable, with a thriving arts scene and some of the best craft beer in the Southern Hemisphere. Wellington felt like home.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816673/wellington_dsv7qd.jpg"
+        fullDesc: "New Zealand's capital lived up to its nickname—the coolest little capital in the world. Compact, walkable, with a thriving arts scene and some of the best craft beer in the Southern Hemisphere. Wellington felt like home.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816673/wellington_dsv7qd.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Wind</span>
+                <h3 class="section-title-panel">Windy Wellington</h3>
+                <p>They call it "Windy Wellington" and they're not exaggerating. The city sits on the Cook Strait, and the wind funnels through with startling force.</p>
+                <p>Locals don't carry umbrellas—they'd just invert. Instead, they lean into it, literally, walking at angles that would look absurd anywhere else.</p>
+                <p>But the wind keeps the air clean, the sky clear, and the city invigorated. Wellington earns its energy from the elements.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Culture</span>
+                <h3 class="section-title-panel">Coffee and Film</h3>
+                <p>Wellington punches above its weight culturally. The coffee scene rivals Melbourne's. Te Papa, the national museum, is genuinely world-class and free.</p>
+                <p>And then there's Weta Workshop—where Peter Jackson built Middle-earth. The Lord of the Rings wasn't just filmed here; it was invented here. The creative energy stuck around.</p>
+                <p>For a city of 215,000, Wellington has the cultural infrastructure of somewhere much larger.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🎬</span>
+                        <span>Capital Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Weta Workshop:</strong> The special effects company behind LOTR, Avatar, and countless other films is based here.</li>
+                        <li><strong>Cable Car:</strong> The iconic red cable car has been running since 1902.</li>
+                        <li><strong>Craft Beer:</strong> Wellington has more bars per capita than New York City.</li>
+                        <li><strong>Earthquake Zone:</strong> The city sits on a major fault line. Buildings are designed to sway.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 15,
@@ -1589,9 +1626,46 @@ const locations = [
         tag: "Bay of Plenty",
         icon: "🎸",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Mount Maunganui and white sand beaches.",
-        fullDesc: "A short drive from the port takes you to Mount Maunganui.\n\nWe would hike to the top for incredible views or just relax on some of the best beaches in New Zealand. The Bay of Plenty earned its name.",
-        image: "https://images.unsplash.com/photo-1596503920704-585573420077?w=1200"
+        fullDesc: "A short drive from the port takes you to Mount Maunganui. We would hike to the top for incredible views or just relax on some of the best beaches in New Zealand. The Bay of Plenty earned its name.",
+        image: "https://images.unsplash.com/photo-1596503920704-585573420077?w=1200",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Climb</span>
+                <h3 class="section-title-panel">The Mount</h3>
+                <p>Locals just call it "The Mount"—Mauao, an extinct volcanic cone that rises from the end of a sandy peninsula.</p>
+                <p>The hike to the top takes about 45 minutes. Not difficult, but steep enough to earn the views at the summit: 360 degrees of ocean, harbor, and coastline stretching toward infinity.</p>
+                <p>On clear mornings, the ship would be visible below, toy-sized against the blue. A reminder of scale.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">The Bay of Plenty</h3>
+                <p>Captain Cook named this bay in 1769 because the Māori communities here were so welcoming, so generous with provisions.</p>
+                <p>The name stuck. The beaches are among New Zealand's finest—white sand, gentle surf, warm enough to swim from November through April.</p>
+                <p>Tauranga itself has become a retirement destination for Kiwis seeking sun. After hiking the Mount and swimming in the bay, you understand why.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏔️</span>
+                        <span>Bay of Plenty</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Kiwifruit:</strong> Most of New Zealand's kiwifruit comes from this region.</li>
+                        <li><strong>Fastest Growing:</strong> Tauranga is one of New Zealand's fastest-growing cities.</li>
+                        <li><strong>The Name:</strong> "Mauao" means "caught by the dawn" in Māori—the mountain looks spectacular at sunrise.</li>
+                        <li><strong>Geothermal:</strong> Nearby Rotorua has famous geothermal features—bubbling mud, geysers, the smell of sulfur.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 18,
@@ -2276,9 +2350,46 @@ const locations = [
         tag: "Portuguese India",
         icon: "🏖️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where Portugal left its mark on India.",
-        fullDesc: "Goa is unlike anywhere else in India.\n\nFour centuries of Portuguese rule left behind baroque churches, whitewashed villas, and a laid-back attitude that feels more Mediterranean than subcontinental. The beaches are beautiful, the seafood is incredible, and the pace is wonderfully slow.",
-        image: ""
+        fullDesc: "Goa is unlike anywhere else in India. Four centuries of Portuguese rule left behind baroque churches, whitewashed villas, and a laid-back attitude that feels more Mediterranean than subcontinental.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Heritage</span>
+                <h3 class="section-title-panel">Where Portugal Met India</h3>
+                <p>Portugal arrived in Goa in 1510 and didn't leave until 1961—making this the longest European colonial presence in Asia.</p>
+                <p>The result is something unique: baroque churches next to Hindu temples. Vindaloo and sorpotel alongside fish curry. Catholic feast days celebrated with Indian fervor.</p>
+                <p>Goa doesn't feel like India. It doesn't feel like Portugal either. It's its own thing entirely.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Churches</span>
+                <h3 class="section-title-panel">Old Goa</h3>
+                <p>The old Portuguese capital—abandoned after plague in the 17th century—is now a UNESCO World Heritage Site.</p>
+                <p>The Basilica of Bom Jesus holds the remains of St. Francis Xavier. The Sé Cathedral was once the largest church in Asia. They sit in tropical overgrowth, grand and strange and beautiful.</p>
+                <p>It's a ghost town of empire, slowly being reclaimed by the jungle.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🇵🇹</span>
+                        <span>Portuguese India</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Annexation:</strong> India took Goa by force in 1961. Portugal didn't formally recognize this until 1974.</li>
+                        <li><strong>Feni:</strong> The local spirit, made from cashew fruit or coconut. Approach with caution.</li>
+                        <li><strong>Beach Culture:</strong> Goa's beaches became famous in the 1960s hippie trail. The party scene evolved from there.</li>
+                        <li><strong>Susegad:</strong> The Goan philosophy of life—take it easy, enjoy the moment. The Portuguese influence runs deep.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 115,
@@ -2287,9 +2398,46 @@ const locations = [
         tag: "Spice Coast",
         icon: "🌶️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Gateway to Karnataka's coast.",
-        fullDesc: "New Mangalore is the maritime gateway to Karnataka.\n\nThe port sits where the Western Ghats meet the Arabian Sea. Inland, the hills are carpeted with spice plantations-cardamom, pepper, coffee. The temples here are unique, with their own distinct Dravidian style.",
-        image: ""
+        fullDesc: "New Mangalore is the maritime gateway to Karnataka. The port sits where the Western Ghats meet the Arabian Sea. Inland, the hills are carpeted with spice plantations—cardamom, pepper, coffee.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Spices</span>
+                <h3 class="section-title-panel">The Flavor Trail</h3>
+                <p>This coastline is why Europeans sailed halfway around the world. Pepper, cardamom, cinnamon, cloves—the spices that built empires grew in these hills.</p>
+                <p>Drive inland from the port and the air changes. Coffee plantations cover the lower slopes. Higher up, cardamom and pepper vines climb through the forest.</p>
+                <p>It smells incredible. Literally. The whole region smells like a spice market.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Coast</span>
+                <h3 class="section-title-panel">Lesser-Known India</h3>
+                <p>Most tourists skip the Karnataka coast entirely, heading straight for Goa or Kerala. Their loss.</p>
+                <p>The temples here are uniquely beautiful—a distinct regional style you won't see anywhere else. The beaches are quieter. The seafood is extraordinary.</p>
+                <p>It's India without the tourist infrastructure. Which means it's harder, but also more real.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌶️</span>
+                        <span>Spice Coast Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Coffee Origin:</strong> Indian coffee was supposedly smuggled from Yemen in the 1600s. Karnataka now produces most of India's coffee.</li>
+                        <li><strong>Tulu Language:</strong> The local language is Tulu—one of India's oldest, with its own script.</li>
+                        <li><strong>St. Mary's Island:</strong> Hexagonal basalt columns offshore—like a tropical Giant's Causeway.</li>
+                        <li><strong>Fish Curry Rice:</strong> The regional staple. Fresh fish in coconut curry with red rice. Essential.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 33,
@@ -3227,9 +3375,46 @@ const locations = [
         tag: "Fragrant Harbour",
         icon: "🌃",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where East meets West in a forest of towers.",
-        fullDesc: "Hong Kong's skyline is the most dramatic on Earth.\n\nBy day, the harbor bustles with ferries and junks. By night, the Symphony of Lights turns the waterfront into a laser show. Dim sum carts rattle through morning restaurants. The Peak Tram climbs impossibly steep streets. Tradition and modernity collide on every corner.",
-        image: ""
+        fullDesc: "Hong Kong's skyline is the most dramatic on Earth. By day, the harbor bustles with ferries and junks. By night, the Symphony of Lights turns the waterfront into a laser show. Tradition and modernity collide on every corner.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Vertical</span>
+                <h3 class="section-title-panel">Vertical City</h3>
+                <p>Other cities have tall buildings. Hong Kong has a vertical civilization.</p>
+                <p>Seven million people packed onto a handful of mountainous islands. The only way to go is up. Apartments stack forty stories high. Shopping malls connect through elevated walkways. The street level is just one layer of a three-dimensional city.</p>
+                <p>Your neck hurts from looking up. The scale is overwhelming in the best way.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Contrast</span>
+                <h3 class="section-title-panel">Old and New</h3>
+                <p>In the morning, elderly women practice tai chi in waterfront parks while glass towers catch the sunrise behind them. Temples burn incense next to designer boutiques.</p>
+                <p>The Star Ferry still crosses the harbor for a few coins, just as it has since 1888. The MTR subway system is the most efficient on Earth. Both feel equally essential.</p>
+                <p>Hong Kong doesn't choose between tradition and modernity. It just layers them together.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌃</span>
+                        <span>Hong Kong Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Density:</strong> 6,800 people per square kilometer—one of the densest places on Earth.</li>
+                        <li><strong>The Peak:</strong> Victoria Peak offers the iconic skyline view. Take the tram up at sunset.</li>
+                        <li><strong>Dim Sum:</strong> Breakfast here means bamboo steamers, pushing carts, and tea. Essential experience.</li>
+                        <li><strong>The Name:</strong> "Hong Kong" means "Fragrant Harbor"—possibly from the incense trade.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 50,
@@ -3531,9 +3716,46 @@ const locations = [
         tag: "Hidden Bali",
         icon: "🌺",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "The Bali tourists don't see.",
-        fullDesc: "On Bali's quiet north coast, life moves at a different pace.\n\nNo crowds, no clubs-just fishing villages, black sand beaches, and terraced rice paddies climbing the volcanic slopes. This is the Bali that existed before the tourists came.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522980/IMG_4038_uylyls.jpg"
+        fullDesc: "On Bali's quiet north coast, life moves at a different pace. No crowds, no clubs—just fishing villages, black sand beaches, and terraced rice paddies climbing the volcanic slopes.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522980/IMG_4038_uylyls.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The North</span>
+                <h3 class="section-title-panel">Real Bali</h3>
+                <p>The tourists go to Kuta, Seminyak, Ubud. The cruise ships anchor off Celukan Bawang, on the north coast, where the old Bali still exists.</p>
+                <p>Here the beaches are black volcanic sand, the roads wind through rice terraces, and temples outnumber hotels a hundred to one.</p>
+                <p>It's what the whole island looked like before the world discovered it. Which is both beautiful and bittersweet.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Pace</span>
+                <h3 class="section-title-panel">Slower</h3>
+                <p>South Bali runs on tourism time—24/7 hustle, traffic jams, Instagram opportunities. The north runs on Bali time.</p>
+                <p>Fishing boats launch at dawn. Offerings appear at shrines each morning. Rice paddies change color with the seasons.</p>
+                <p>It's not untouched—nothing in Bali is untouched anymore—but it remembers what it used to be.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌺</span>
+                        <span>North Bali</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Temples:</strong> North Bali has some of the island's oldest temples, including Pura Beji with its ornate carvings.</li>
+                        <li><strong>Hot Springs:</strong> Volcanic hot springs dot the hillsides—natural spas with mountain views.</li>
+                        <li><strong>Dolphins:</strong> Lovina Beach is famous for dawn dolphin-watching trips.</li>
+                        <li><strong>The Divide:</strong> Mountains separate north from south—different weather, different vibe, different Bali.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 60,
@@ -3685,9 +3907,46 @@ const locations = [
         tag: "The Isolated City",
         icon: "🌅",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "The most remote major city on Earth.",
-        fullDesc: "Perth is closer to Singapore than to Sydney.\n\nThat isolation shapes everything about the place-the laid-back vibe, the pristine beaches, the feeling that you've reached the edge of the world. The Swan River cuts through the city, and the sunsets over the Indian Ocean are legendary.",
-        image: ""
+        fullDesc: "Perth is closer to Singapore than to Sydney. That isolation shapes everything about the place—the laid-back vibe, the pristine beaches, the feeling that you've reached the edge of the world.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Distance</span>
+                <h3 class="section-title-panel">2,000 Miles From Anywhere</h3>
+                <p>Perth is the most isolated major city on Earth. The nearest city of comparable size—Adelaide—is 2,700 kilometers away. Singapore is closer than Sydney.</p>
+                <p>You feel that distance. Not as loneliness, but as freedom. Perth developed its own culture because it had to. The pace is different. The beaches are emptier. The sunsets belong to you.</p>
+                <p>It's Australia's edge, in every sense.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Sunset</span>
+                <h3 class="section-title-panel">Indian Ocean Gold</h3>
+                <p>Perth is one of the few major Australian cities facing west, toward the Indian Ocean. The sunsets here are legendary.</p>
+                <p>The Swan River curves through downtown, and locals gather on its banks each evening to watch the sky turn colors that shouldn't exist—orange, pink, purple, gold.</p>
+                <p>It happens every day. Locals still stop to watch. That tells you something.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌅</span>
+                        <span>Perth Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Mining Wealth:</strong> Western Australia produces most of Australia's iron ore, gold, and natural gas. Perth is its capital.</li>
+                        <li><strong>Quokkas:</strong> Rottnest Island, just offshore, is home to quokkas—the "world's happiest animal."</li>
+                        <li><strong>Beach Weather:</strong> Perth averages 8 hours of sunshine per day—more than any other Australian capital.</li>
+                        <li><strong>Time Zone:</strong> Perth is 2-3 hours behind eastern Australia, depending on daylight saving.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 70,
@@ -3707,9 +3966,46 @@ const locations = [
         tag: "Pearl of the Kimberley",
         icon: "🐪",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where the outback meets the ocean.",
-        fullDesc: "Broome was built on pearls and still has that frontier feel.\n\nCable Beach stretches for 22 kilometers of white sand. Camels walk the shoreline at sunset-a tradition from the Afghan cameleers who helped build the outback. The red pindan cliffs meet turquoise water. It's Australia at its most dramatic.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769801858/IMG_0196_dueq5z.jpg"
+        fullDesc: "Broome was built on pearls and still has that frontier feel. Cable Beach stretches for 22 kilometers of white sand. Camels walk the shoreline at sunset—a tradition from the Afghan cameleers who helped build the outback.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769801858/IMG_0196_dueq5z.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">Where Outback Meets Ocean</h3>
+                <p>Cable Beach runs for 22 kilometers. That's not a typo. Twenty-two kilometers of white sand meeting turquoise water, backed by red pindan cliffs.</p>
+                <p>At sunset, camel trains walk the shoreline—a tradition dating back to the Afghan cameleers who helped open up the outback. It sounds like a tourist attraction. It is. But it's also genuinely beautiful.</p>
+                <p>The colors here are impossible: red, white, turquoise, and gold, all at once.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Phenomenon</span>
+                <h3 class="section-title-panel">Staircase to the Moon</h3>
+                <p>A few nights each month, when the full moon rises over Roebuck Bay at low tide, something magical happens.</p>
+                <p>Moonlight reflects off the exposed mudflats, creating the illusion of a golden staircase stretching from the shore to the moon itself.</p>
+                <p>Locals gather at Town Beach with picnic blankets and drinks. It's part astronomical event, part community ritual. Broome knows how to appreciate where it is.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🐪</span>
+                        <span>Kimberley Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Pearl Capital:</strong> Broome once supplied 80% of the world's mother-of-pearl. The industry still exists.</li>
+                        <li><strong>Japanese Cemetery:</strong> Hundreds of Japanese pearl divers are buried here—testament to the industry's dangers.</li>
+                        <li><strong>Dinosaur Footprints:</strong> The coastline has the world's most diverse dinosaur tracks, 130 million years old.</li>
+                        <li><strong>Wet/Dry:</strong> Two seasons—wet (monsoon) and dry. The dry season (May-October) is when to visit.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 72,
@@ -3945,9 +4241,46 @@ const locations = [
         tag: "New Nation",
         icon: "⚓",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "The world's newest nation, just after the war ended.",
-        fullDesc: "Placeholder description for Dili.",
-        image: ""
+        fullDesc: "East Timor (Timor-Leste) only became independent in 2002, after centuries of Portuguese rule and a brutal Indonesian occupation. When we visited, the scars were still visible. So was the resilience.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The History</span>
+                <h3 class="section-title-panel">A Nation Being Born</h3>
+                <p>East Timor declared independence from Portugal in 1975. Nine days later, Indonesia invaded. What followed was 24 years of occupation that killed an estimated quarter of the population.</p>
+                <p>Independence finally came in 2002, making it the first new sovereign state of the 21st century.</p>
+                <p>When we visited, bullet holes still marked buildings in Dili. UN peacekeepers still patrolled. The country was literally rebuilding from scratch.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The People</span>
+                <h3 class="section-title-panel">Resilience</h3>
+                <p>What struck me wasn't the poverty or the visible damage. It was how people carried themselves.</p>
+                <p>This was a population that had survived occupation, famine, and war. They were building a country from nothing—no institutions, no infrastructure, just determination.</p>
+                <p>Dili felt heavy with history. But also, somehow, hopeful.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🕊️</span>
+                        <span>Timor-Leste Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Languages:</strong> Portuguese and Tetum are official. Most people speak multiple local languages.</li>
+                        <li><strong>The Vote:</strong> In 1999, 78% voted for independence in a UN-supervised referendum.</li>
+                        <li><strong>Cristo Rei:</strong> A 27-meter statue of Christ overlooks Dili—a gift from Indonesia, ironically.</li>
+                        <li><strong>Coffee:</strong> Timor-Leste produces some of the world's best organic coffee. It's a major export.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 92,
@@ -4062,9 +4395,46 @@ const locations = [
         tag: "PNG Capital",
         icon: "⚓",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where cultures collide in the Pacific.",
-        fullDesc: "Placeholder description for Port Moresby.",
-        image: ""
+        fullDesc: "Port Moresby has a reputation. Guidebooks warn you about crime. Security briefings are thorough. It's not a place tourists visit casually—which makes it fascinating for those who do.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Reputation</span>
+                <h3 class="section-title-panel">The Port They Warn You About</h3>
+                <p>Every cruise line gives safety briefings. Port Moresby's are the most detailed.</p>
+                <p>Don't walk alone. Don't display valuables. Stay in groups. The warnings are real—PNG's capital has one of the highest crime rates in the Pacific.</p>
+                <p>But warning and reality are different things. We walked through markets, talked to locals, ate street food. What we found was a city struggling with modernity, not a war zone.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Diversity</span>
+                <h3 class="section-title-panel">800 Languages</h3>
+                <p>Papua New Guinea has over 800 distinct languages—more linguistic diversity than any other country on Earth.</p>
+                <p>Port Moresby is where these cultures collide. Highland warriors in traditional dress walk past businessmen in suits. Tribal identities remain strong even in the capital.</p>
+                <p>It's chaotic and raw and completely unlike anywhere else. Which is either a warning or an invitation, depending on who you are.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🦅</span>
+                        <span>PNG Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Languages:</strong> 839 living languages—12% of the world's total, in a country of 9 million people.</li>
+                        <li><strong>Independence:</strong> PNG gained independence from Australia in 1975.</li>
+                        <li><strong>Kokoda Track:</strong> The famous WWII trail starts near Port Moresby—brutal jungle fighting that defined the Pacific war.</li>
+                        <li><strong>Birds of Paradise:</strong> PNG has more species of birds of paradise than anywhere else on Earth.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 94,
@@ -4084,9 +4454,46 @@ const locations = [
         tag: "Polynesian Heart",
         icon: "🏝️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where Polynesian culture runs deep.",
-        fullDesc: "Placeholder description for Apia.",
-        image: ""
+        fullDesc: "Robert Louis Stevenson called Samoa home. The author of Treasure Island spent his final years here, and his grave sits atop Mount Vaea overlooking the harbor. He's still called 'Tusitala'—the teller of tales.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Pilgrimage</span>
+                <h3 class="section-title-panel">Tusitala's Grave</h3>
+                <p>I didn't expect to find one of literature's greatest storytellers buried on a hillside in Samoa. But Robert Louis Stevenson—the man who gave us Treasure Island and Dr. Jekyll and Mr. Hyde—chose this as his final home.</p>
+                <p>The Samoans called him "Tusitala," the teller of tales. He loved them back, defending their rights against colonial powers until his death in 1894. His grave sits atop Mount Vaea, a steep climb through tropical forest.</p>
+                <p>The inscription reads: "Home is the sailor, home from the sea, and the hunter home from the hill."</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Culture</span>
+                <h3 class="section-title-panel">Fa'a Samoa</h3>
+                <p>The Samoan way of life—fa'a Samoa—isn't a tourist attraction. It's a living system that governs everything from family structure to village politics.</p>
+                <p>Chiefs still hold real power. Sunday is sacred—everything closes. Extended family isn't just a concept; it's the foundation of society.</p>
+                <p>You feel it immediately stepping off the ship. The pace is different. The priorities are different. Time moves to its own rhythm here.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">📚</span>
+                        <span>Literary Samoa</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Stevenson's Home:</strong> His estate "Vailima" is now a museum. He wrote some of his best work here.</li>
+                        <li><strong>The Climb:</strong> The hike to his grave takes about 45 minutes—steep but worth it for the views.</li>
+                        <li><strong>Tattoo Origins:</strong> The word "tattoo" comes from the Samoan "tatau." Traditional tattooing here is a rite of passage.</li>
+                        <li><strong>Independent Spirit:</strong> Samoa was the first Pacific island nation to gain independence in the 20th century (1962).</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 96,
@@ -4095,9 +4502,46 @@ const locations = [
         tag: "Hidden Paradise",
         icon: "🏝️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "The jewel of the Cook Islands.",
-        fullDesc: "Placeholder description for Rarotonga.",
-        image: ""
+        fullDesc: "You can drive around the entire island in 45 minutes. There's one main road, no traffic lights, and everyone waves. It's the South Pacific distilled to its purest form.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Scale</span>
+                <h3 class="section-title-panel">The Smallest Place</h3>
+                <p>I've been to small places before. This was something else.</p>
+                <p>The entire island is 32 kilometers around. One road circles it. There are no traffic lights—not a single one. The bus runs clockwise in the morning, counterclockwise in the afternoon.</p>
+                <p>That's not quaint planning. That's just how things are when your entire country is smaller than most airports.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Wave</span>
+                <h3 class="section-title-panel">Everyone Waves</h3>
+                <p>Rent a scooter here and you'll develop a new reflex: the wave. Every passing vehicle, every person on the roadside—you wave. They wave back.</p>
+                <p>It's not performative friendliness. On an island this small, anonymity doesn't exist. Everyone knows everyone. Waving isn't courtesy; it's acknowledgment.</p>
+                <p>By the second day, you're waving without thinking. By the third, you wonder why you ever stopped.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏝️</span>
+                        <span>Island Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Population:</strong> About 13,000 people—and they outnumber tourists most of the year.</li>
+                        <li><strong>The Lagoon:</strong> A coral reef encircles the island, creating a shallow turquoise lagoon perfect for swimming.</li>
+                        <li><strong>Currency:</strong> New Zealand dollars, but the Cook Islands mint their own coins—including a triangular $2 coin.</li>
+                        <li><strong>Self-Governing:</strong> Free association with New Zealand since 1965. They handle their own affairs but share citizenship.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 97,
@@ -4106,9 +4550,46 @@ const locations = [
         tag: "Aloha Spirit",
         icon: "🏝️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where America meets the Pacific.",
-        fullDesc: "Placeholder description for Honolulu.",
-        image: ""
+        fullDesc: "Paradise, packaged. Arriving by cruise ship gives you a different perspective than the airport crowds—you see Diamond Head rising from the sea, Waikiki's high-rises catching the morning light. It's beautiful and commercial in equal measure.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Arrival</span>
+                <h3 class="section-title-panel">Paradise, Packaged</h3>
+                <p>There are two ways to arrive in Honolulu. Most people land at the airport, fight through baggage claim, and take a shuttle to their hotel.</p>
+                <p>Arriving by ship is different. You wake up to Diamond Head emerging from morning mist. The high-rises of Waikiki catch the early light. The harbor sits right downtown, a short walk from everything.</p>
+                <p>It's the same paradise everyone else sees—just from a better angle.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Honesty</span>
+                <h3 class="section-title-panel">Beautiful and Commercial</h3>
+                <p>I won't pretend Honolulu is undiscovered. It's one of the most touristed places on Earth. The ABC stores repeat every block. The mai tais cost too much. "Aloha" is printed on everything.</p>
+                <p>But the natural beauty doesn't care about commercialization. Diamond Head still dominates the skyline. The water is still impossibly blue. The trade winds still blow.</p>
+                <p>Hawaii became a cliché because it earned it.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌺</span>
+                        <span>Island Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Diamond Head:</strong> The iconic crater was formed 300,000 years ago. The hike to the summit takes about an hour.</li>
+                        <li><strong>Waikiki:</strong> Once a retreat for Hawaiian royalty, now home to 72,000 hotel rooms.</li>
+                        <li><strong>The Name:</strong> Honolulu means "sheltered harbor" in Hawaiian—exactly what made it valuable.</li>
+                        <li><strong>Spam Capital:</strong> Hawaii consumes more Spam per capita than any other state. It's on the menu at McDonald's.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 98,
@@ -4117,9 +4598,46 @@ const locations = [
         tag: "Walled City",
         icon: "🏛️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Colonial splendor on the Caribbean.",
-        fullDesc: "Placeholder description for Cartagena.",
-        image: ""
+        fullDesc: "Gabriel García Márquez set 'Love in the Time of Cholera' here, and you understand why within minutes. The walled old city feels like magical realism made real—crumbling balconies, bougainvillea cascading over fortress walls, heat that shimmers off the cobblestones.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Setting</span>
+                <h3 class="section-title-panel">Magical Realism Made Real</h3>
+                <p>Gabriel García Márquez didn't invent magical realism in Cartagena. He just wrote down what was already there.</p>
+                <p>The walled city looks exactly like you'd imagine a colonial Caribbean fortress should look—and somehow more so. Balconies overflow with flowers. Fortress walls glow orange at sunset. Heat rises from cobblestones in visible waves.</p>
+                <p>You walk through the old city and understand why Márquez set "Love in the Time of Cholera" here. The place demands stories.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Walls</span>
+                <h3 class="section-title-panel">Built to Survive</h3>
+                <p>These walls weren't decorative. They were built because pirates kept attacking.</p>
+                <p>For centuries, Cartagena was where Spanish treasure ships gathered before crossing the Atlantic. That made it a target. Sir Francis Drake ransomed the city. The French sacked it repeatedly.</p>
+                <p>So they built walls. Eleven kilometers of them. They still stand, and you can walk their entire length at sunset while the Caribbean burns orange.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">📚</span>
+                        <span>Literary Cartagena</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Gabo's City:</strong> García Márquez lived here and is buried here. His home is now a museum.</li>
+                        <li><strong>UNESCO Site:</strong> The old walled city has been a World Heritage Site since 1984.</li>
+                        <li><strong>The Heat:</strong> Average temperature is 32°C (90°F) year-round. The Spanish called it "The Heroic City" for surviving despite it.</li>
+                        <li><strong>Emerald Trade:</strong> Colombia produces 70-90% of the world's emeralds. Cartagena was their shipping point.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 99,
@@ -4139,9 +4657,46 @@ const locations = [
         tag: "Bohemian Port",
         icon: "🎨",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Chile's colorful, artistic port city.",
-        fullDesc: "Placeholder description for Valparaíso.",
-        image: ""
+        fullDesc: "Pablo Neruda kept a house here, perched on a hillside overlooking the harbor. He called Valparaíso 'a pile of absurd houses.' He meant it as a compliment. The city climbs 42 hills, connected by funiculars and covered in street art.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Poet</span>
+                <h3 class="section-title-panel">Neruda's City</h3>
+                <p>Pablo Neruda kept three houses in Chile. The one in Valparaíso—La Sebastiana—was his favorite.</p>
+                <p>He called this city "a pile of absurd houses." If you've seen how the buildings stack up the hillsides, defying gravity and urban planning, you understand. It was a compliment.</p>
+                <p>Neruda loved this place for its chaos, its color, its refusal to be organized. The city still feels that way.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ascensores</span>
+                <h3 class="section-title-panel">Riding the Funiculars</h3>
+                <p>Valparaíso has 42 hills. Walking them would kill you. So they built funiculars—ascensores—rickety wooden cars that climb at alarming angles.</p>
+                <p>Some date back to the 1880s. They creak and sway. The views justify the anxiety.</p>
+                <p>At the top, every surface is covered in murals. Street art isn't vandalism here; it's civic pride. The whole city is a gallery.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🎨</span>
+                        <span>The Bohemian Port</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>UNESCO Site:</strong> The historic quarter has been a World Heritage Site since 2003.</li>
+                        <li><strong>The Funiculars:</strong> Of the original 30 ascensores, about 7 still operate. Some are over 130 years old.</li>
+                        <li><strong>Naval History:</strong> Chile's navy is headquartered here. The city played a key role in the War of the Pacific.</li>
+                        <li><strong>New Year's Eve:</strong> The largest fireworks display in South America happens here—over the harbor.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 101,
@@ -4150,9 +4705,46 @@ const locations = [
         tag: "Andean Capital",
         icon: "🏛️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Chile's capital beneath the mountains.",
-        fullDesc: "Placeholder description for Santiago.",
-        image: ""
+        fullDesc: "The Andes don't frame Santiago—they dominate it. Snow-capped peaks over 6,000 meters high loom at the end of every street. On clear days, the mountains feel close enough to touch. The city exists in their shadow, and knows it.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Scale</span>
+                <h3 class="section-title-panel">In the Shadow of Giants</h3>
+                <p>Most cities have skylines. Santiago has the Andes.</p>
+                <p>The mountains don't sit politely in the background. They dominate. Peaks over 6,000 meters high rise at the end of city streets—snow-capped year-round, catching the sunrise before the city wakes.</p>
+                <p>On clear winter mornings, after rain washes the smog away, the mountains look close enough to touch. They're not. But the illusion is powerful.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Contrast</span>
+                <h3 class="section-title-panel">Wine and Altitude</h3>
+                <p>Within an hour of downtown, you can be in world-class wine country or at a ski resort. That's the strange geography of Santiago.</p>
+                <p>The Maipo Valley produces some of South America's best Cabernet Sauvignon. The Andes above it have powder through September. Both feel like they belong to different cities.</p>
+                <p>They don't. They belong to this one, stretched between sea level and the roof of the continent.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏔️</span>
+                        <span>The Andean Capital</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Elevation:</strong> Santiago sits at 520 meters—but the mountains visible from downtown exceed 6,500 meters.</li>
+                        <li><strong>Population:</strong> Over 7 million people—nearly half of Chile lives in the greater Santiago area.</li>
+                        <li><strong>The Smog:</strong> Trapped between mountains and coast, Santiago's air quality is often poor. Rain days are revelatory.</li>
+                        <li><strong>Wine Country:</strong> The Maipo and Colchagua valleys are less than 90 minutes away.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 103,
@@ -4161,9 +4753,46 @@ const locations = [
         tag: "Rivers & Rain",
         icon: "⚓",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Germany in the Chilean south.",
-        fullDesc: "Placeholder description for Valdivia.",
-        image: ""
+        fullDesc: "German immigrants arrived in the 1850s and never really left. Valdivia has beer halls, kuchen shops, and architecture that looks transplanted from Bavaria. The rivers are lined with sea lions begging at the fish market. It's wonderfully strange.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Heritage</span>
+                <h3 class="section-title-panel">Germany in Chile</h3>
+                <p>In the 1850s, the Chilean government invited German settlers to colonize the south. They came by the thousands—and brought everything with them.</p>
+                <p>Walk through Valdivia today and you'll find beer halls serving Kunstmann lager, bakeries selling kuchen, houses with steep pitched roofs designed for snow that rarely falls here.</p>
+                <p>It's not a theme park. These are fifth and sixth generation Chileans who happen to have German surnames and very strong opinions about beer.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The River</span>
+                <h3 class="section-title-panel">Sea Lions and Fish Markets</h3>
+                <p>The Calle-Calle River runs through town, and at the fish market, sea lions have learned to work the crowd.</p>
+                <p>They haul themselves onto the docks and bark at fishmongers, who toss them scraps. Tourists gather. The sea lions perform. Everyone gets what they came for.</p>
+                <p>It's chaotic and smells like fish and feels more authentic than any planned attraction.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🍺</span>
+                        <span>German Chile</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Kunstmann:</strong> Chile's most famous craft brewery started here. Tours include generous tastings.</li>
+                        <li><strong>The Earthquake:</strong> In 1960, the largest earthquake ever recorded (9.5) struck nearby. Valdivia was devastated.</li>
+                        <li><strong>University Town:</strong> The Universidad Austral gives Valdivia a youthful energy.</li>
+                        <li><strong>Rain:</strong> This is one of Chile's wettest cities. Bring layers.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 104,
@@ -4172,9 +4801,46 @@ const locations = [
         tag: "Gateway to Patagonia",
         icon: "⚓",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Where the lakes meet the fjords.",
-        fullDesc: "Placeholder description for Puerto Montt.",
-        image: ""
+        fullDesc: "This is where the Pan-American Highway ends and the fjords begin. South of Puerto Montt, Chile fragments into islands, channels, and glaciers. The road doesn't continue. Only boats do.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The End</span>
+                <h3 class="section-title-panel">Where the Road Stops</h3>
+                <p>The Pan-American Highway runs 30,000 kilometers from Alaska to the bottom of South America. It ends here.</p>
+                <p>South of Puerto Montt, Chile breaks apart. The mainland fractures into thousands of islands separated by fjords and channels. Roads become impossible. Ferries take over.</p>
+                <p>Standing at the port, looking south toward Patagonia, you're looking at the edge of the driveable world.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Market</span>
+                <h3 class="section-title-panel">Angelmó</h3>
+                <p>The fish market at Angelmó is reason enough to come. Stalls overflow with the strange bounty of cold southern waters—sea urchins, giant mussels, seaweed you've never seen before.</p>
+                <p>Locals eat curanto—a traditional stew of shellfish, meat, and potatoes—at plastic tables while seabirds circle overhead.</p>
+                <p>It's loud and crowded and smells like the sea. Perfect.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">⚓</span>
+                        <span>Gateway South</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Carretera Austral:</strong> Chile's famous "Southern Highway" starts here—700km of gravel through wilderness.</li>
+                        <li><strong>Salmon Capital:</strong> Chile is the world's second-largest salmon producer. Most of it ships through here.</li>
+                        <li><strong>Volcanoes:</strong> Osorno and Calbuco volcanoes are visible on clear days. Calbuco erupted spectacularly in 2015.</li>
+                        <li><strong>Climate:</strong> Prepare for rain. Puerto Montt averages 1,800mm annually.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 122,
@@ -4194,9 +4860,46 @@ const locations = [
         tag: "Edge of the World",
         icon: "🐧",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Chile's gateway to Antarctica.",
-        fullDesc: "Placeholder description for Punta Arenas.",
-        image: ""
+        fullDesc: "One of the southernmost cities on Earth. The wind never stops—locals walk at permanent angles. In the plaza stands a statue of Magellan. Touch the toe of the native at his feet, they say, and you'll return someday. Everyone touches it.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Wind</span>
+                <h3 class="section-title-panel">The End of the World (Part 1)</h3>
+                <p>Punta Arenas shares the title "southernmost city" with Ushuaia across the strait. The rivalry is real. Both claim the edge of the world.</p>
+                <p>What Punta Arenas definitely claims is the wind. It blows constantly from the west, hard enough that locals walk tilted into it. Trees grow sideways. Flags are perpetually horizontal.</p>
+                <p>You don't visit for the weather. You visit because beyond this point, there's only ocean and Antarctica.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Tradition</span>
+                <h3 class="section-title-panel">Touch the Toe</h3>
+                <p>In the main plaza stands a statue of Ferdinand Magellan, the first European to navigate the strait that bears his name.</p>
+                <p>At his feet sits a bronze native Fuegian. Touch his toe, the legend says, and you'll return to Patagonia someday. The toe is worn smooth and shiny from a century of hopeful hands.</p>
+                <p>I touched it. Superstition costs nothing.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🐧</span>
+                        <span>The Far South</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Latitude:</strong> 53°S—roughly equivalent to the position of Manchester in the north, but much colder.</li>
+                        <li><strong>The Strait:</strong> The Strait of Magellan was the only Pacific passage before the Panama Canal opened in 1914.</li>
+                        <li><strong>Penguins:</strong> Magellanic penguin colonies are a short drive from town.</li>
+                        <li><strong>Duty Free:</strong> Punta Arenas is a duty-free zone. Alcohol and electronics are notably cheaper.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 106,
@@ -4205,9 +4908,46 @@ const locations = [
         tag: "Laid-Back Capital",
         icon: "⚓",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Uruguay's charming riverside capital.",
-        fullDesc: "Placeholder description for Montevideo.",
-        image: ""
+        fullDesc: "Across the river from Buenos Aires, Montevideo feels like its quieter, more relaxed sibling. Same architecture, same café culture, but without the intensity. Locals carry thermoses of hot water everywhere, constantly refilling mate gourds. The pace is deliberately slow.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Contrast</span>
+                <h3 class="section-title-panel">The Quiet Neighbor</h3>
+                <p>Buenos Aires is a two-hour ferry ride across the River Plate. The cities share architecture, language, even the same nostalgic café culture.</p>
+                <p>But Montevideo is different. Quieter. Less anxious. Where BA is intense and dramatic, Montevideo is content to simply be.</p>
+                <p>It's the friend who doesn't need to be the center of attention. Comfortable in its own skin.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ritual</span>
+                <h3 class="section-title-panel">Mate Culture</h3>
+                <p>Everyone in Uruguay carries two things: a thermos of hot water and a mate gourd. I mean everyone.</p>
+                <p>Mate isn't just a drink here—it's a social ritual. Sharing mate means sharing conversation. The person holding the thermos controls the pace of the gathering.</p>
+                <p>Watch Uruguayans walking down the street, thermos tucked under one arm, sipping mate through a metal straw. It's a national identity in beverage form.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🧉</span>
+                        <span>Uruguay Facts</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>First World Cup:</strong> Uruguay hosted and won the first FIFA World Cup in 1930. The stadium still stands.</li>
+                        <li><strong>Population:</strong> About 3.5 million people total—half live in Montevideo.</li>
+                        <li><strong>Progressive Leader:</strong> First country in the world to legalize marijuana nationwide (2013).</li>
+                        <li><strong>Beef Culture:</strong> Uruguay has more cattle than people. The asado (barbecue) tradition rivals Argentina's.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 107,
@@ -4268,9 +5008,46 @@ const locations = [
         tag: "Northeast Sun",
         icon: "☀️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Brazil's sun-drenched northeast coast.",
-        fullDesc: "Placeholder description for Fortaleza.",
-        image: ""
+        fullDesc: "This isn't the Brazil of Rio or São Paulo. The northeast has its own identity—forró music, different accents, stronger African influences. Fortaleza is its biggest city: five million people, endless beaches, and a pace that makes Rio look uptight.",
+        image: "",
+        richContent: `
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Region</span>
+                <h3 class="section-title-panel">The Other Brazil</h3>
+                <p>Ask a foreigner about Brazil and they'll describe Rio—Copacabana, Christ the Redeemer, Carnival. That's one Brazil.</p>
+                <p>The northeast is another country entirely. Different music (forró instead of samba). Different accents. Stronger African and indigenous influences. Hotter, drier, and proudly distinct.</p>
+                <p>Fortaleza is its gateway—a sprawling city of five million that most travelers have never heard of.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Coast</span>
+                <h3 class="section-title-panel">Endless Summer</h3>
+                <p>Fortaleza has 300 days of sunshine per year. The beaches stretch for 25 kilometers. The water is bathwater-warm year-round.</p>
+                <p>Locals treat the beach not as an occasional destination but as an extension of their living rooms. After-work drinks happen in the sand. Business meetings happen in the sand. Life happens in the sand.</p>
+                <p>If you're looking for Brazil without the tourist infrastructure, start here.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">☀️</span>
+                        <span>Northeast Brazil</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Forró:</strong> The regional music genre—accordion-driven, good for dancing, played everywhere.</li>
+                        <li><strong>Jangadas:</strong> Traditional fishing rafts still dot the coastline. They've been used here for centuries.</li>
+                        <li><strong>Beach Park:</strong> One of the largest water parks in Latin America is here.</li>
+                        <li><strong>Cashews:</strong> Ceará state (where Fortaleza sits) produces most of Brazil's cashews.</li>
+                    </ul>
+                </div>
+            </div>
+        `
     },
     {
         id: 123,
