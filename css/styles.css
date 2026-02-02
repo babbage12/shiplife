@@ -2385,7 +2385,7 @@
            ============================================ */
         .next-door-prompt {
             position: fixed;
-            bottom: 10%;
+            bottom: 20%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 250;
@@ -2468,7 +2468,7 @@
             }
 
             .next-door-prompt {
-                bottom: 8%;
+                bottom: 18%;
                 padding: 0.6rem 1.25rem;
             }
         }
