@@ -5,17 +5,24 @@
 
 function buildLocationList() {
     const list = document.getElementById('locationList');
-    
+    const doorsComplete = isGuidedComplete();
+
     // Doors first
     const doors = locations.filter(l => l.isDoor);
     const others = locations.filter(l => !l.isDoor);
-    
+
     [...doors, ...others].forEach(loc => {
         const config = getIconConfig(loc.title);
-        
+
         const item = document.createElement('div');
         item.className = `location-item ${loc.isDoor ? 'door' : ''}`;
         item.setAttribute('data-style', config.style);
+        item.setAttribute('data-location-id', loc.id);
+
+        // Dim non-door entries during guided mode
+        if (!loc.isDoor && !doorsComplete) {
+            item.classList.add('dimmed');
+        }
         
         // Create icon container
         const iconDiv = document.createElement('div');
@@ -140,8 +147,15 @@ function closeMobileMenu() {
     const menu = document.getElementById('locationList');
     const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
-    
+
     menu.classList.remove('open');
     toggle.classList.remove('open');
     overlay.classList.remove('open');
+}
+
+// Undim sidebar items when all doors are visited
+function undimSidebarItems() {
+    document.querySelectorAll('.location-item.dimmed').forEach(item => {
+        item.classList.remove('dimmed');
+    });
 }

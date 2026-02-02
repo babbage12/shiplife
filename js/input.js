@@ -113,6 +113,19 @@ function onTouchTap(event) {
             if (marker.userData.title) {
                 const loc = marker.userData;
 
+                // Block clicks until intro modal has appeared (for first-time visitors)
+                const introModal = document.getElementById('introModal');
+                const progress = getProgress();
+                if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+                    return; // Wait for intro modal to appear
+                }
+
+                // Block clicks on dimmed markers during guided mode
+                if (marker.userData.isDimmed) {
+                    showDimmedMarkerMessage();
+                    return;
+                }
+
                 // LAZY LOAD: Trigger texture loading for this marker
                 if (USE_AI_PORTHOLES && !marker.userData.textureLoaded) {
                     lazyLoadTexture(loc.title, marker);
@@ -219,6 +232,19 @@ function onClick(event) {
     if (hoveredMarker) {
         const loc = hoveredMarker.userData;
 
+        // Block clicks until intro modal has appeared (for first-time visitors)
+        const introModal = document.getElementById('introModal');
+        const progress = getProgress();
+        if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+            return; // Wait for intro modal to appear
+        }
+
+        // Block clicks on dimmed markers during guided mode
+        if (hoveredMarker.userData.isDimmed) {
+            showDimmedMarkerMessage();
+            return;
+        }
+
         // LAZY LOAD: Trigger texture loading for this marker
         if (USE_AI_PORTHOLES && !hoveredMarker.userData.textureLoaded) {
             lazyLoadTexture(loc.title, hoveredMarker);
@@ -323,4 +349,43 @@ function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+// Show message when clicking a dimmed marker
+function showDimmedMarkerMessage() {
+    // Create temporary toast message
+    const existing = document.querySelector('.dimmed-marker-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'dimmed-marker-toast';
+    toast.innerHTML = `
+        <span class="toast-icon">🚪</span>
+        <span class="toast-text">Complete the three doors first</span>
+    `;
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(38, 42, 36, 0.95);
+        border: 1px solid rgba(212, 165, 116, 0.5);
+        border-radius: 25px;
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 250;
+        animation: toastSlideUp 0.3s ease-out;
+        font-size: 0.9rem;
+        color: #f5f0e8;
+    `;
+    document.body.appendChild(toast);
+
+    // Add animation and auto-remove
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
 }

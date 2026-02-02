@@ -38,8 +38,18 @@ function animate() {
             targetRotationX = TOLEDO_X;
             introComplete = true;
 
-            // Show tap/click hint after intro
-            showTapHint();
+            // Check if this is a first-time visitor (guided experience not complete)
+            const userProgress = getProgress();
+            console.log('User progress:', userProgress);
+            if (!userProgress.guidedComplete && !userProgress.introSeen) {
+                // Show intro modal for first-time visitors
+                console.log('Showing intro modal...');
+                setTimeout(() => showIntroModal(), 100);
+            } else {
+                // Returning visitor - show tap/click hint after intro
+                console.log('Showing tap hint (returning visitor)');
+                showTapHint();
+            }
         } else {
             // Set targets for smooth handoff
             targetRotationY = globe.rotation.y;
@@ -145,9 +155,10 @@ function animate() {
             marker.lookAt(camera.position);
         }
         
-        // Ensure marker is visible and fully opaque
+        // Ensure marker is visible (but respect dimming state)
         marker.visible = true;
-        if (marker.material.opacity !== undefined) {
+        // Don't override opacity for dimmed markers during guided mode
+        if (!marker.userData.isDimmed && marker.material.opacity !== undefined) {
             marker.material.opacity = 1.0;
         }
         
@@ -209,10 +220,88 @@ function animate() {
     renderer.render(scene, camera);
 }
 
+// ============================================
+// CELEBRATION SEQUENCE
+// Triggered after completing all three doors
+// ============================================
+
+function triggerDoorsCompleteSequence() {
+    // Mark guided mode as complete
+    markGuidedComplete();
+
+    // Step 1: Show celebratory message
+    showCelebrationMessage();
+
+    // Step 2: Flare all markers (after 500ms)
+    setTimeout(() => {
+        flareAllMarkers();
+        undimSidebarItems();
+    }, 500);
+
+    // Step 3: Spin globe to Mediterranean (after 2s)
+    setTimeout(() => {
+        spinToMediterranean();
+    }, 2000);
+
+    // Step 4: Fade message (after 4s)
+    setTimeout(() => {
+        hideCelebrationMessage();
+    }, 4000);
+}
+
+function showCelebrationMessage() {
+    const msg = document.createElement('div');
+    msg.id = 'celebration-message';
+    msg.className = 'celebration-message';
+    msg.innerHTML = `
+        <h2>The world is yours.</h2>
+        <p>120+ ports of call await.</p>
+    `;
+    document.body.appendChild(msg);
+    requestAnimationFrame(() => msg.classList.add('visible'));
+}
+
+function hideCelebrationMessage() {
+    const msg = document.getElementById('celebration-message');
+    if (msg) {
+        msg.classList.remove('visible');
+        setTimeout(() => msg.remove(), 500);
+    }
+}
+
+function spinToMediterranean() {
+    // Convert Mediterranean coords to globe rotation
+    const targetRotationX = MED_COORDS.lat * Math.PI / 180;
+    const lonRad = MED_COORDS.lon * (Math.PI / 180);
+    const baseTargetY = -lonRad - 1.55;
+
+    // Add extra spin for drama (1 full rotation + target)
+    const targetY = baseTargetY + Math.PI * 2;
+
+    // Start zoom-out transition, then rotate, then zoom-in
+    isTransitioning = true;
+    transitionPhase = 'zoom-out';
+    transitionStartTime = Date.now();
+
+    // Store target rotation for after zoom-out
+    pendingRotationY = targetY;
+    pendingRotationX = targetRotationX;
+    pendingLocation = null;
+    pendingZoomLocation = null;
+}
+
+// ============================================
+// TAP HINT
+// ============================================
+
 // Show tap/click hint after intro (works on both mobile and desktop)
+// Only shows for returning visitors - first-time visitors see the intro modal instead
 function showTapHint() {
     const hint = document.getElementById('mobileTapHint');
     if (!hint) return;
+
+    // Don't show this hint during guided mode - intro modal handles it
+    if (!isGuidedComplete()) return;
 
     // Show immediately
     hint.classList.add('visible');

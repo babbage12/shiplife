@@ -3,6 +3,15 @@
 // Constants, URLs, and global settings
 // ============================================
 
+// localStorage key for progress tracking
+const STORAGE_KEY = 'shiplife_progress';
+
+// Three narrative doors that must be visited
+const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
+
+// Mediterranean coordinates for celebration spin (Adriatic coast)
+const MED_COORDS = { lat: 42.5, lon: 14.0 };
+
 // Cloudinary base URL
 const CLOUDINARY_BASE = "https://res.cloudinary.com/de5jbyhxx/image/upload";
 
@@ -48,12 +57,12 @@ const locationPortholeURLs = {
     "Picton, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934726/marcie_00859__hg41ls.png",
     "Akaroa, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934782/marcie_00856__shstqa.png",
     "Wellington, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934920/marcie_00854__ddnt6o.png",
-    "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937260/marcie_00913__fvuzla.png",
+    "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977828/ComfyUI_00864__s9njoz.png",
     "Brisbane, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937320/marcie_00869__xtfnj3.png",
     "Portofino, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937437/marcie_00880__wrzehv.png",
     "Ephesus, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937501/marcie_00884__glotfr.png",
-    "Auckland, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950342/marcie_00954__cjlthw.png",
-    "Darwin, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950354/marcie_00920__gymcoe.png",
+    "Auckland, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977815/ComfyUI_00896__zn6bdc.png",
+    "Darwin, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977819/ComfyUI_00873__yfqqdw.png",
     "Rome, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",
     "Piran, Slovenia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950328/marcie_01050__qunmvg.png",
     "Sydney, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950196/marcie_00957__suiqhl.png",

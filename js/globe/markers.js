@@ -1,5 +1,8 @@
 const markerAnimations = new Map();
 
+// Dimming state for guided experience
+let markersAreDimmed = true; // Start dimmed until all doors visited
+
 // Color utility functions
 function lightenColor(hex, percent) {
     const num = parseInt(hex.replace('#', ''), 16);
@@ -1870,6 +1873,7 @@ function createMarkers() {
         const manualOverride = sizeOverrides[loc.title] || 1.0;
         
         // Size - doors are larger, apply manual overrides to all, density only to non-doors
+        const isGuidedMode = !isGuidedComplete();
         const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.029 * densityScale * manualOverride;
         
         let texture, spriteMaterial, canvas;
@@ -1877,6 +1881,10 @@ function createMarkers() {
 
         // Doors start closed (iris animation), regular icons start open
         const initialOpen = loc.isDoor ? 0 : 1;
+
+        // Determine if this marker should be dimmed during guided mode
+        const shouldDim = isGuidedMode && !loc.isDoor;
+        const dimOpacity = shouldDim ? 0.35 : 1.0;
 
         // Check if texture was pre-loaded (e.g., Toledo)
         if (USE_AI_PORTHOLES && locationTextures[loc.title]) {
@@ -1888,7 +1896,8 @@ function createMarkers() {
             // This ensures raycaster can detect the marker
             spriteMaterial = new THREE.SpriteMaterial({
                 map: texture,
-                transparent: true
+                transparent: true,
+                opacity: dimOpacity
             });
         } else {
             // Start with canvas-drawn icons, textures load progressively
@@ -1902,7 +1911,8 @@ function createMarkers() {
             texture = new THREE.CanvasTexture(canvas);
             spriteMaterial = new THREE.SpriteMaterial({
                 map: texture,
-                transparent: true
+                transparent: true,
+                opacity: dimOpacity
             });
         }
 
@@ -1931,6 +1941,7 @@ function createMarkers() {
         marker.userData.iconCanvas = canvas;
         marker.userData.useAIPorthole = textureAlreadyLoaded;
         marker.userData.textureLoaded = textureAlreadyLoaded;
+        marker.userData.isDimmed = shouldDim;
         
         // Initialize animation state - doors closed, regular open (reuse initialOpen from above)
         markerAnimations.set(loc.id, {
@@ -1943,4 +1954,61 @@ function createMarkers() {
         globe.add(marker);
         markers.push(marker);
     });
+}
+
+// Update marker dimming when doors are visited
+function updateMarkerDimming() {
+    if (allDoorsVisited()) {
+        markersAreDimmed = false;
+        markers.forEach(marker => {
+            if (!marker.userData.isDoor) {
+                marker.material.opacity = 1.0;
+                marker.userData.isDimmed = false;
+            }
+        });
+    }
+}
+
+// Animate all markers to full brightness (celebration flare)
+function flareAllMarkers() {
+    markersAreDimmed = false;
+    markers.forEach(marker => {
+        if (!marker.userData.isDoor && marker.userData.isDimmed) {
+            animateMarkerFlare(marker);
+        }
+    });
+}
+
+// Animate a single marker's opacity from dim to full
+function animateMarkerFlare(marker) {
+    const startOpacity = 0.35;
+    const endOpacity = 1.0;
+    const duration = 800;
+    const startTime = performance.now();
+    const originalScale = marker.scale.clone();
+
+    function animate(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+
+        marker.material.opacity = startOpacity + (endOpacity - startOpacity) * eased;
+
+        // Add brief scale pulse during animation
+        if (progress < 0.5) {
+            const pulseScale = 1 + progress * 0.15;
+            marker.scale.set(originalScale.x * pulseScale, originalScale.y * pulseScale, 1);
+        } else {
+            const pulseScale = 1 + (1 - progress) * 0.15;
+            marker.scale.set(originalScale.x * pulseScale, originalScale.y * pulseScale, 1);
+        }
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        } else {
+            marker.scale.copy(originalScale);
+            marker.userData.isDimmed = false;
+        }
+    }
+    requestAnimationFrame(animate);
 }

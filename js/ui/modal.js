@@ -1,6 +1,39 @@
 // ============================================
 // MODAL MODULE
-// Director's Commentary modal
+// Intro modal and Director's Commentary modal
+// ============================================
+
+// ============================================
+// INTRO MODAL - First-time visitor welcome
+// ============================================
+
+function showIntroModal() {
+    document.getElementById('introModal').classList.add('active');
+
+    // Start Toledo bouncing immediately so user sees it above the modal
+    const toledoDoor = locations.find(l => l.title === 'Toledo, Ohio');
+    if (toledoDoor) {
+        triggerBounce(toledoDoor.id);
+    }
+}
+
+function closeIntroModal() {
+    document.getElementById('introModal').classList.remove('active');
+    const progress = getProgress();
+    progress.introSeen = true;
+    saveProgress(progress);
+}
+
+// Close intro modal when first door is opened (called from panel.js)
+function closeIntroModalIfOpen() {
+    const modal = document.getElementById('introModal');
+    if (modal && modal.classList.contains('active')) {
+        closeIntroModal();
+    }
+}
+
+// ============================================
+// DIRECTOR'S COMMENTARY
 // ============================================
 
 function openCommentaryModal() {

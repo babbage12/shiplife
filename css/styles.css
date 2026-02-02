@@ -2182,4 +2182,278 @@
             50% { transform: translateY(-8px); }
         }
 
-        
+        /* ============================================
+           INTRO MODAL - First-Time Visitor Welcome
+           ============================================ */
+        .intro-modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 8%;
+            pointer-events: none;
+        }
+
+        .intro-modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .intro-modal {
+            background: linear-gradient(135deg, rgba(38, 42, 36, 0.95), rgba(28, 32, 26, 0.95));
+            border: 1px solid rgba(212, 165, 116, 0.4);
+            border-radius: 20px;
+            padding: 1.5rem 2rem;
+            max-width: 420px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+            pointer-events: auto;
+        }
+
+        .intro-modal-overlay.active .intro-modal {
+            transform: translateY(0);
+        }
+
+        .intro-modal h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--cream);
+            margin-bottom: 1rem;
+        }
+
+        .intro-modal .intro-text {
+            font-size: 1rem;
+            color: rgba(245, 240, 232, 0.8);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro-modal .intro-text:last-of-type {
+            margin-bottom: 2rem;
+            color: var(--gold-light);
+            font-style: italic;
+        }
+
+        .intro-doors {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .intro-door {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 12px;
+            background: rgba(212, 165, 116, 0.08);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        /* Door #1 has slightly brighter border */
+        .intro-door:nth-child(1) {
+            border-color: rgba(212, 165, 116, 0.5);
+        }
+
+        /* Doors #2 and #3 are dimmed */
+        .intro-door:nth-child(2),
+        .intro-door:nth-child(3) {
+            opacity: 0.4;
+        }
+
+        .intro-door-icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro-door-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro-door-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            display: block;
+        }
+
+        .intro-door-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem;
+            color: var(--cream);
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        .intro-instruction {
+            font-size: 0.85rem;
+            color: rgba(245, 240, 232, 0.6);
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 480px) {
+            .intro-modal {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+
+            .intro-modal h2 {
+                font-size: 1.5rem;
+            }
+
+            .intro-doors {
+                gap: 0.75rem;
+            }
+
+            .intro-door {
+                padding: 0.75rem;
+            }
+
+            .intro-door-icon {
+                font-size: 1.5rem;
+            }
+
+            .intro-start-btn {
+                padding: 0.875rem 2rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* ============================================
+           DIMMED MARKERS - Soft gating during guided mode
+           ============================================ */
+        .location-item.dimmed {
+            opacity: 0.35;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .location-item.dimmed:hover {
+            background: transparent;
+        }
+
+        /* ============================================
+           NEXT DOOR PROMPT - Floating prompt after closing a door
+           ============================================ */
+        .next-door-prompt {
+            position: fixed;
+            bottom: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 250;
+            background: linear-gradient(135deg, rgba(38, 42, 36, 0.98), rgba(28, 32, 26, 0.98));
+            border: 2px solid rgba(212, 165, 116, 0.5);
+            border-radius: 16px;
+            padding: 1.25rem 2rem;
+            text-align: center;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+            animation: promptSlideUp 0.4s ease-out;
+        }
+
+        @keyframes promptSlideUp {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        .next-door-prompt p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            color: var(--cream);
+            margin-bottom: 0.75rem;
+        }
+
+        .next-door-prompt button {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--gold), #b8956a);
+            border: none;
+            border-radius: 20px;
+            color: var(--navy);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .next-door-prompt button:hover {
+            transform: scale(1.05);
+        }
+
+        /* ============================================
+           CELEBRATION MESSAGE - After completing all doors
+           ============================================ */
+        .celebration-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 300;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            pointer-events: none;
+        }
+
+        .celebration-message.visible {
+            opacity: 1;
+        }
+
+        .celebration-message h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 30px rgba(212, 165, 116, 0.5),
+                         0 0 60px rgba(212, 165, 116, 0.3);
+        }
+
+        .celebration-message p {
+            font-size: 1.25rem;
+            color: var(--cream);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .celebration-message h2 {
+                font-size: 2rem;
+            }
+
+            .celebration-message p {
+                font-size: 1rem;
+            }
+
+            .next-door-prompt {
+                bottom: 20%;
+                padding: 1rem 1.5rem;
+            }
+        }
+
+

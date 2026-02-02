@@ -4,10 +4,16 @@
 // ============================================
 
 function showTooltip(loc, marker) {
+    // Don't show tooltip while intro modal is open
+    const introModal = document.getElementById('introModal');
+    if (introModal && introModal.classList.contains('active')) {
+        return;
+    }
+
     document.getElementById('tooltipTag').textContent = loc.tag;
     document.getElementById('tooltipTitle').textContent = loc.title;
     document.getElementById('tooltipDesc').textContent = loc.shortDesc;
-    
+
     updateTooltipPosition(marker);
     tooltip.classList.add('visible');
 }

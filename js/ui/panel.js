@@ -15,6 +15,9 @@ function openPanel(loc) {
     try {
         currentLocation = loc;
 
+        // Close intro modal if it's open (first-time visitor clicking Toledo)
+        closeIntroModalIfOpen();
+
         // Stop any bouncing animation when panel opens
         bouncingMarkerId = null;
         bounceStartTime = null;
@@ -268,7 +271,7 @@ function attachImageClickHandlers() {
 function closePanel() {
     // Stop background music with fade out
     stopBackgroundMusic();
-    
+
     // Pause video playback if current location has video
     if (currentLocation && locationVideos[currentLocation.title]) {
         const video = locationVideos[currentLocation.title];
@@ -276,7 +279,23 @@ function closePanel() {
         video.currentTime = 0; // Reset to beginning for next open
         console.log('Paused and reset video for:', currentLocation.title);
     }
-    
+
+    // Track door completion and show prompts during guided mode
+    if (currentLocation && currentLocation.isDoor && !isGuidedComplete()) {
+        const allComplete = markDoorVisited(currentLocation.title);
+        const doors = locations.filter(l => l.isDoor);
+        const doorIndex = doors.findIndex(d => d.id === currentLocation.id);
+
+        if (allComplete) {
+            // All doors complete - trigger celebration sequence after panel closes
+            setTimeout(() => triggerDoorsCompleteSequence(), 500);
+        } else if (doorIndex < doors.length - 1) {
+            // Show prompt for next door after panel closes
+            const nextDoor = doors[doorIndex + 1];
+            setTimeout(() => showNextDoorPrompt(nextDoor), 500);
+        }
+    }
+
     sidePanel.classList.remove('open');
     sidePanel.classList.remove('expanded');
     panelIsOpen = false; // Resume auto-rotation
@@ -285,6 +304,44 @@ function closePanel() {
 
 function expandPanel() {
     sidePanel.classList.add('expanded');
+}
+
+// Show floating prompt to continue to next door
+function showNextDoorPrompt(nextDoor) {
+    // Remove any existing prompt
+    const existing = document.querySelector('.next-door-prompt');
+    if (existing) existing.remove();
+
+    const doors = locations.filter(l => l.isDoor);
+    const nextDoorNum = doors.findIndex(d => d.id === nextDoor.id) + 1;
+
+    const prompt = document.createElement('div');
+    prompt.className = 'next-door-prompt';
+    prompt.innerHTML = `
+        <p>Door #${nextDoorNum} - Click icon to continue</p>
+        <button onclick="goToPromptedDoor(${nextDoor.id})">Go to Door</button>
+    `;
+    document.body.appendChild(prompt);
+
+    // Auto-dismiss after 6 seconds if no action
+    setTimeout(() => dismissNextDoorPrompt(), 6000);
+}
+
+function goToPromptedDoor(doorId) {
+    dismissNextDoorPrompt();
+    const door = locations.find(l => l.id === doorId);
+    if (door) {
+        focusLocation(door);
+    }
+}
+
+function dismissNextDoorPrompt() {
+    const prompt = document.querySelector('.next-door-prompt');
+    if (prompt) {
+        prompt.style.opacity = '0';
+        prompt.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => prompt.remove(), 300);
+    }
 }
 
 // Swipe up to expand panel on mobile

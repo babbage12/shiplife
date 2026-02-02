@@ -48,6 +48,43 @@ let pendingZoomLocation = null;
 const tooltip = document.getElementById('tooltip');
 const sidePanel = document.getElementById('sidePanel');
 
+// ============================================
+// PROGRESS TRACKING (localStorage)
+// ============================================
+
+function getProgress() {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored ? JSON.parse(stored) : { doorsVisited: [], introSeen: false, guidedComplete: false };
+}
+
+function saveProgress(progress) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+function markDoorVisited(locationTitle) {
+    const progress = getProgress();
+    if (!progress.doorsVisited.includes(locationTitle)) {
+        progress.doorsVisited.push(locationTitle);
+        saveProgress(progress);
+    }
+    return allDoorsVisited();
+}
+
+function allDoorsVisited() {
+    const progress = getProgress();
+    return DOORS_REQUIRED.every(d => progress.doorsVisited.includes(d));
+}
+
+function markGuidedComplete() {
+    const progress = getProgress();
+    progress.guidedComplete = true;
+    saveProgress(progress);
+}
+
+function isGuidedComplete() {
+    return getProgress().guidedComplete;
+}
+
 // Load video as texture (does NOT autoplay)
 function loadVideoTexture(url) {
     return new Promise((resolve) => {
