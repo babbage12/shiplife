@@ -892,7 +892,7 @@
         }
 
         /* Mobile adjustments for captain icon */
-        @media (max-width: 480px) {
+        @media (max-width: 768px) {
             .directors-commentary {
                 margin-left: 2rem;
             }
