@@ -303,7 +303,13 @@ function closePanel() {
     }
 
     // Track door completion and show prompts during guided mode
-    console.log('closePanel - isDoor:', currentLocation?.isDoor, 'isGuidedComplete:', isGuidedComplete());
+    const progress = getProgress();
+    console.log('=== CLOSE PANEL DEBUG ===');
+    console.log('currentLocation:', currentLocation?.title);
+    console.log('isDoor:', currentLocation?.isDoor);
+    console.log('localStorage progress:', JSON.stringify(progress));
+    console.log('isGuidedComplete():', isGuidedComplete());
+    console.log('doorsVisited:', progress.doorsVisited);
     if (currentLocation && currentLocation.isDoor && !isGuidedComplete()) {
         const allComplete = markDoorVisited(currentLocation.title);
         console.log('Door visited:', currentLocation.title, 'allComplete:', allComplete);

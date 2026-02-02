@@ -106,13 +106,16 @@ function animate() {
 
                     // End celebration when spin completes
                     if (celebrationInProgress) {
+                        console.log('=== CELEBRATION SPIN COMPLETE ===');
                         // Small delay to let users appreciate the result
                         setTimeout(() => {
                             celebrationInProgress = false;
+                            console.log('celebrationInProgress set to false');
                             // Show menu toggle button again (mobile)
                             const menuToggle = document.getElementById('menuToggle');
                             if (menuToggle) {
                                 menuToggle.style.display = '';
+                                console.log('Menu toggle shown again');
                             }
                         }, 1000);
                     }
@@ -245,18 +248,23 @@ function animate() {
 
 function triggerDoorsCompleteSequence() {
     console.log('=== CELEBRATION SEQUENCE STARTED ===');
+    console.log('celebrationInProgress was:', celebrationInProgress);
 
     // Mark guided mode as complete
     markGuidedComplete();
+    console.log('Marked guided complete. localStorage now:', JSON.stringify(getProgress()));
 
     // Block menu from opening during celebration
     celebrationInProgress = true;
 
     // Hide menu toggle button during celebration (mobile)
     const menuToggle = document.getElementById('menuToggle');
+    console.log('Looking for menuToggle element:', menuToggle);
     if (menuToggle) {
         menuToggle.style.display = 'none';
-        console.log('Menu toggle hidden');
+        console.log('Menu toggle hidden, current style:', menuToggle.style.display);
+    } else {
+        console.log('WARNING: menuToggle element not found!');
     }
 
     // Step 1: Show celebratory message
@@ -285,6 +293,7 @@ function triggerDoorsCompleteSequence() {
 }
 
 function showCelebrationMessage() {
+    console.log('=== SHOWING CELEBRATION MESSAGE ===');
     const msg = document.createElement('div');
     msg.id = 'celebration-message';
     msg.className = 'celebration-message';
@@ -293,7 +302,10 @@ function showCelebrationMessage() {
         <p>120+ ports of call await.</p>
     `;
     document.body.appendChild(msg);
-    requestAnimationFrame(() => msg.classList.add('visible'));
+    requestAnimationFrame(() => {
+        msg.classList.add('visible');
+        console.log('Celebration message visible');
+    });
 }
 
 function hideCelebrationMessage() {
@@ -305,6 +317,7 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
+    console.log('=== SPIN TO MEDITERRANEAN ===');
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
@@ -312,11 +325,13 @@ function spinToMediterranean() {
 
     // Add extra spin for drama (1 full rotation + target)
     const targetY = baseTargetY + Math.PI * 2;
+    console.log('Target rotation Y:', targetY, 'X:', targetRotationX);
 
     // Start zoom-out transition, then rotate, then zoom-in
     isTransitioning = true;
     transitionPhase = 'zoom-out';
     transitionStartTime = Date.now();
+    console.log('Transition started, phase:', transitionPhase);
 
     // Store target rotation for after zoom-out
     pendingRotationY = targetY;
@@ -327,6 +342,8 @@ function spinToMediterranean() {
 
 // Start the glow wave effect during celebration spin
 function startCelebrationGlowWave() {
+    console.log('=== GLOW WAVE STARTED ===');
+    console.log('markers count:', markers.length);
     celebrationGlowWaveActive = true;
     celebrationGlowStartTime = Date.now();
     markersGlowTriggered.clear();
@@ -369,6 +386,7 @@ function updateCelebrationGlowWave() {
         // Trigger glow when marker rotates into view (crosses from back to front)
         // Trigger earlier so effect is visible as markers come around
         if (dot > -0.4) {
+            console.log('Triggering glow for marker:', marker.userData.id, 'dot:', dot.toFixed(2));
             markersGlowTriggered.add(marker.userData.id);
             animateMarkerGlow(marker);
         }
