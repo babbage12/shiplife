@@ -2359,16 +2359,16 @@
            ============================================ */
         .next-door-prompt {
             position: fixed;
-            bottom: 35%;
+            bottom: 10%;
             left: 50%;
             transform: translateX(-50%);
             z-index: 250;
-            background: linear-gradient(135deg, rgba(38, 42, 36, 0.98), rgba(28, 32, 26, 0.98));
-            border: 2px solid rgba(212, 165, 116, 0.5);
-            border-radius: 16px;
-            padding: 1.25rem 2rem;
+            background: linear-gradient(135deg, rgba(38, 42, 36, 0.95), rgba(28, 32, 26, 0.95));
+            border: 1px solid rgba(212, 165, 116, 0.4);
+            border-radius: 12px;
+            padding: 0.75rem 1.5rem;
             text-align: center;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
             animation: promptSlideUp 0.4s ease-out;
         }
 
@@ -2385,26 +2385,17 @@
 
         .next-door-prompt p {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--cream);
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.25rem;
         }
 
-        .next-door-prompt button {
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, var(--gold), #b8956a);
-            border: none;
-            border-radius: 20px;
-            color: var(--navy);
+        .next-door-prompt .prompt-instruction {
             font-family: 'DM Sans', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .next-door-prompt button:hover {
-            transform: scale(1.05);
+            font-size: 0.85rem;
+            color: var(--gold-light);
+            font-style: italic;
+            margin-bottom: 0;
         }
 
         /* ============================================
@@ -2451,8 +2442,8 @@
             }
 
             .next-door-prompt {
-                bottom: 20%;
-                padding: 1rem 1.5rem;
+                bottom: 8%;
+                padding: 0.6rem 1.25rem;
             }
         }
 

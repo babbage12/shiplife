@@ -317,9 +317,10 @@ function showNextDoorPrompt(nextDoor) {
 
     const prompt = document.createElement('div');
     prompt.className = 'next-door-prompt';
+    // Globe already centers on next door, so just show simple instruction
     prompt.innerHTML = `
-        <p>Door #${nextDoorNum} - Click icon to continue</p>
-        <button onclick="goToPromptedDoor(${nextDoor.id})">Go to Door</button>
+        <p>Door #${nextDoorNum}: ${nextDoor.tag.split(': ')[1]}</p>
+        <p class="prompt-instruction">Click the icon to continue</p>
     `;
     document.body.appendChild(prompt);
 
