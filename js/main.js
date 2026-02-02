@@ -42,3 +42,14 @@ function initStars() {
 
 // Initialize when DOM is ready
 init();
+
+// Show initial state in debug panel
+setTimeout(() => {
+    const progress = getProgress();
+    debugLog('--- PAGE LOADED ---');
+    debugLog('guidedComplete: ' + progress.guidedComplete);
+    debugLog('doorsVisited: ' + progress.doorsVisited.length + '/3');
+    if (progress.guidedComplete) {
+        debugLog('⚠️ Already complete - tap "Clear Progress" to test again');
+    }
+}, 500);
