@@ -229,6 +229,9 @@ function triggerDoorsCompleteSequence() {
     // Mark guided mode as complete
     markGuidedComplete();
 
+    // Block menu from opening during celebration
+    celebrationInProgress = true;
+
     // Step 1: Show celebratory message
     showCelebrationMessage();
 
@@ -247,6 +250,11 @@ function triggerDoorsCompleteSequence() {
     setTimeout(() => {
         hideCelebrationMessage();
     }, 4000);
+
+    // Step 5: Allow menu to open (after 5s - full sequence complete)
+    setTimeout(() => {
+        celebrationInProgress = false;
+    }, 5000);
 }
 
 function showCelebrationMessage() {

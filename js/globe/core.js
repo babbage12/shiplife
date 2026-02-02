@@ -35,6 +35,9 @@ let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
 let targetCameraZ = 1.8;
 let currentZoomInDistance = baseZoomInDistance;
 
+// Celebration sequence state
+let celebrationInProgress = false;
+
 // Store density factors globally for zoom calculations
 let globalDensityFactors = null;
 

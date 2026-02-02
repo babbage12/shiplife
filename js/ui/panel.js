@@ -231,7 +231,13 @@ function viewAllLocations() {
     closePanel();
     // On mobile, open the locations menu; on desktop, list is already visible
     if (window.innerWidth <= 768) {
-        setTimeout(toggleMobileMenu, 300);
+        // If celebration is in progress, delay menu until it's done
+        if (celebrationInProgress) {
+            // Wait for celebration to complete (5 seconds total + small buffer)
+            setTimeout(toggleMobileMenu, 5500);
+        } else {
+            setTimeout(toggleMobileMenu, 300);
+        }
     }
 }
 
