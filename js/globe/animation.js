@@ -165,11 +165,11 @@ function animate() {
         if (isBouncing && bounceStartTime) {
             // Bounce animation - continuous until clicked
             const elapsed = Date.now() - bounceStartTime;
-            const cycleDuration = 1600; // Duration of one bounce cycle (slow, gentle)
+            const cycleDuration = 2500; // Duration of one bounce cycle (slow, gentle)
             const cycleProgress = (elapsed % cycleDuration) / cycleDuration;
 
-            // Continuous bouncing with larger amplitude (50% scale increase)
-            const bounce = 1 + Math.sin(cycleProgress * Math.PI * 2) * 0.5;
+            // Continuous bouncing with moderate amplitude (30% scale increase)
+            const bounce = 1 + Math.sin(cycleProgress * Math.PI * 2) * 0.3;
             marker.scale.set(baseScale * bounce, baseScaleY * bounce, 1);
         } else if (!hoveredMarker || hoveredMarker !== marker) {
             // Check if this marker's panel is currently open - if so, stay still
