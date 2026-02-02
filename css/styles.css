@@ -894,21 +894,21 @@
         /* Mobile adjustments for captain icon */
         @media (max-width: 480px) {
             .directors-commentary {
-                margin-left: 2.5rem;
+                margin-left: 3rem;
             }
 
             .commentary-trigger {
-                width: 95px;
-                height: 95px;
+                width: 70px;
+                height: 70px;
             }
 
             .click-me-text {
-                width: 115px;
-                height: 115px;
+                width: 88px;
+                height: 88px;
             }
 
             .click-me-text text {
-                font-size: 9px;
+                font-size: 8px;
             }
         }
 
@@ -2489,7 +2489,7 @@
             }
 
             .next-door-prompt {
-                bottom: 18%;
+                bottom: 35%;
                 padding: 0.6rem 1.25rem;
             }
         }
