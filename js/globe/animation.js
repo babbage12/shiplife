@@ -351,8 +351,8 @@ function updateCelebrationGlowWave() {
         const dot = markerDir.dot(cameraDir);
 
         // Trigger glow when marker rotates into view (crosses from back to front)
-        // Use a threshold slightly before center for earlier trigger
-        if (dot > -0.2) {
+        // Trigger earlier so effect is visible as markers come around
+        if (dot > -0.4) {
             markersGlowTriggered.add(marker.userData.id);
             animateMarkerGlow(marker);
         }
@@ -363,9 +363,8 @@ function updateCelebrationGlowWave() {
 function animateMarkerGlow(marker) {
     const startOpacity = 0.35;
     const endOpacity = 1.0;
-    const duration = 600;
+    const duration = 1000; // Longer duration for more visible effect
     const startTime = performance.now();
-    const originalScale = marker.scale.clone();
     const baseSize = marker.userData.baseSize * 2;
     const baseScaleY = marker.userData.useAIPorthole ? baseSize : baseSize * 1.1;
 
@@ -374,12 +373,17 @@ function animateMarkerGlow(marker) {
         const progress = Math.min(elapsed / duration, 1);
         const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
 
-        // Fade in opacity
-        marker.material.opacity = startOpacity + (endOpacity - startOpacity) * eased;
+        // Fade in opacity with initial bright flash
+        if (progress < 0.2) {
+            // Quick flash to full brightness
+            marker.material.opacity = startOpacity + (1.0 - startOpacity) * (progress / 0.2);
+        } else {
+            marker.material.opacity = endOpacity;
+        }
 
-        // Glow pulse - quick expansion then settle
-        const glowPhase = progress < 0.3 ? progress / 0.3 : 1 - (progress - 0.3) / 0.7;
-        const glowScale = 1 + glowPhase * 0.4; // Up to 40% larger at peak
+        // Dramatic glow pulse - big expansion then settle
+        const glowPhase = progress < 0.25 ? progress / 0.25 : 1 - (progress - 0.25) / 0.75;
+        const glowScale = 1 + glowPhase * 0.8; // Up to 80% larger at peak (was 40%)
         marker.scale.set(baseSize * glowScale, baseScaleY * glowScale, 1);
 
         if (progress < 1) {

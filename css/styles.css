@@ -2096,8 +2096,8 @@
         @media (max-width: 768px) {
             .menu-toggle {
                 display: flex !important;
-                left: 1rem !important;
-                right: auto !important;
+                left: auto !important;
+                right: 1rem !important;
                 top: auto !important;
                 bottom: 5rem !important;
                 transform: none !important;
