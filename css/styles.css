@@ -2107,6 +2107,15 @@
                 z-index: 350 !important;
             }
 
+            /* When menu is open, move toggle inside the menu (top right) */
+            .menu-toggle.open {
+                bottom: auto !important;
+                top: calc(100vh - 38vh + 0.75rem) !important;
+                right: 1rem !important;
+                width: 40px !important;
+                height: 40px !important;
+            }
+
             .menu-toggle span {
                 background: var(--navy) !important;
             }
