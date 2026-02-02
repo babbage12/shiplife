@@ -303,13 +303,16 @@ function closePanel() {
     }
 
     // Track door completion and show prompts during guided mode
+    console.log('closePanel - isDoor:', currentLocation?.isDoor, 'isGuidedComplete:', isGuidedComplete());
     if (currentLocation && currentLocation.isDoor && !isGuidedComplete()) {
         const allComplete = markDoorVisited(currentLocation.title);
+        console.log('Door visited:', currentLocation.title, 'allComplete:', allComplete);
         const doors = locations.filter(l => l.isDoor);
         const doorIndex = doors.findIndex(d => d.id === currentLocation.id);
 
         if (allComplete) {
             // All doors complete - set flag immediately so menu knows to wait
+            console.log('All doors complete! Setting celebrationInProgress = true');
             celebrationInProgress = true;
             // Trigger celebration sequence after panel closes
             setTimeout(() => triggerDoorsCompleteSequence(), 500);

@@ -244,6 +244,8 @@ function animate() {
 // ============================================
 
 function triggerDoorsCompleteSequence() {
+    console.log('=== CELEBRATION SEQUENCE STARTED ===');
+
     // Mark guided mode as complete
     markGuidedComplete();
 
@@ -254,10 +256,12 @@ function triggerDoorsCompleteSequence() {
     const menuToggle = document.getElementById('menuToggle');
     if (menuToggle) {
         menuToggle.style.display = 'none';
+        console.log('Menu toggle hidden');
     }
 
     // Step 1: Show celebratory message
     showCelebrationMessage();
+    console.log('Celebration message shown');
 
     // Step 2: Undim sidebar items (after 500ms)
     setTimeout(() => {
@@ -266,6 +270,7 @@ function triggerDoorsCompleteSequence() {
 
     // Step 3: Spin globe to Mediterranean and start glow wave (after 2s)
     setTimeout(() => {
+        console.log('Starting spin to Mediterranean');
         spinToMediterranean();
         startCelebrationGlowWave();
     }, 2000);
