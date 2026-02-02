@@ -387,8 +387,9 @@ sidePanel.addEventListener('scroll', function() {
     // Clear any existing timeout
     if (scrollTimeout) clearTimeout(scrollTimeout);
     
-    // If not at the bottom, show hint again after user stops scrolling
-    if (distanceFromBottom > 100) {
+    // If not at the bottom and has scrollable content, show hint again after user stops scrolling
+    const hasScrollableContent = scrollHeight > clientHeight + 50;
+    if (distanceFromBottom > 100 && hasScrollableContent) {
         scrollTimeout = setTimeout(() => {
             scrollHintBottom.classList.add('visible');
         }, 2000); // Reappear after 2 seconds of no scrolling
@@ -407,10 +408,14 @@ const observer = new MutationObserver(function(mutations) {
                 // Panel closed - hide hint immediately
                 scrollHintBottom.classList.remove('visible');
             } else if ((isMobile && isExpanded && isOpen) || (!isMobile && isOpen)) {
-                // Small delay to let panel open/expand first, then check if still open
+                // Small delay to let panel open/expand first, then check if still open and has scrollable content
                 setTimeout(() => {
                     if (sidePanel.classList.contains('open')) {
-                        scrollHintBottom.classList.add('visible');
+                        // Only show scroll hint if there's actually content to scroll
+                        const hasScrollableContent = sidePanel.scrollHeight > sidePanel.clientHeight + 50;
+                        if (hasScrollableContent) {
+                            scrollHintBottom.classList.add('visible');
+                        }
                     }
                 }, 500);
             }
