@@ -414,8 +414,8 @@ const observer = new MutationObserver(function(mutations) {
                 // Panel closed - hide hint immediately
                 scrollHintBottom.classList.remove('visible');
             } else if ((isMobile && isExpanded && isOpen) || (!isMobile && isOpen)) {
-                // Small delay to let panel open/expand first, then check if still open and has scrollable content
-                setTimeout(() => {
+                // Delay to let panel content load, then check if scrollable
+                const checkAndShowHint = () => {
                     if (sidePanel.classList.contains('open')) {
                         // Only show scroll hint if there's actually content to scroll
                         const hasScrollableContent = sidePanel.scrollHeight > sidePanel.clientHeight + 50;
@@ -423,7 +423,10 @@ const observer = new MutationObserver(function(mutations) {
                             scrollHintBottom.classList.add('visible');
                         }
                     }
-                }, 500);
+                };
+                // Check twice - once after initial render, once after images may have loaded
+                setTimeout(checkAndShowHint, 600);
+                setTimeout(checkAndShowHint, 1500);
             }
         }
     });
