@@ -153,9 +153,12 @@ function onTouchTap(event) {
                     pendingZoomLocation = loc; // Track for dynamic zoom
                 }
                 
+                // Stop bouncing immediately on click (visual feedback)
+                stopBounce();
+
                 // Check if this location has a video animation
                 const hasVideo = locationVideos[loc.title];
-                
+
                 // Helper function to open panel (now triggers midway through animation)
                 const openPanelForLocation = () => {
                     // Start background music for doors (if configured)
@@ -171,8 +174,8 @@ function onTouchTap(event) {
                             video.play().catch(e => console.warn('Video play failed:', e));
                             console.log('Playing video animation for:', loc.title);
 
-                            // Open panel after 40% of video duration (or 400ms minimum)
-                            const panelDelay = Math.max(400, (video.duration || 1) * 0.4 * 1000);
+                            // Open panel after short delay (800ms max to feel responsive)
+                            const panelDelay = Math.min(800, Math.max(300, (video.duration || 1) * 0.2 * 1000));
                             setTimeout(() => openPanel(loc), panelDelay);
                         } catch (e) {
                             console.warn('Video error, opening panel directly:', e);
@@ -272,9 +275,12 @@ function onClick(event) {
             pendingZoomLocation = loc; // Track for dynamic zoom
         }
         
+        // Stop bouncing immediately on click (visual feedback)
+        stopBounce();
+
         // Check if this location has a video animation
         const hasVideo = locationVideos[loc.title];
-        
+
         // Helper function to open panel (now triggers midway through animation)
         const openPanelForLocation = () => {
             // Start background music for doors (if configured)
@@ -290,8 +296,8 @@ function onClick(event) {
                     video.play().catch(e => console.warn('Video play failed:', e));
                     console.log('Playing video animation for:', loc.title);
 
-                    // Open panel after 40% of video duration (or 400ms minimum)
-                    const panelDelay = Math.max(400, (video.duration || 1) * 0.4 * 1000);
+                    // Open panel after short delay (800ms max to feel responsive)
+                    const panelDelay = Math.min(800, Math.max(300, (video.duration || 1) * 0.2 * 1000));
                     setTimeout(() => openPanel(loc), panelDelay);
                 } catch (e) {
                     console.warn('Video error, opening panel directly:', e);

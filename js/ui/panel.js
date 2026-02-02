@@ -5,8 +5,17 @@
 
 
 function triggerBounce(locationId) {
+    // Don't restart bounce if already bouncing this marker
+    if (bouncingMarkerId === locationId && bounceStartTime) {
+        return;
+    }
     bouncingMarkerId = locationId;
     bounceStartTime = Date.now();
+}
+
+function stopBounce() {
+    bouncingMarkerId = null;
+    bounceStartTime = null;
 }
 
 // Track current location for next door navigation
