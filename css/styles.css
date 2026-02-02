@@ -898,13 +898,13 @@
             }
 
             .commentary-trigger {
-                width: 70px;
-                height: 70px;
+                width: 85px;
+                height: 85px;
             }
 
             .click-me-text {
-                width: 88px;
-                height: 88px;
+                width: 95px;
+                height: 95px;
             }
 
             .click-me-text text {
@@ -2489,7 +2489,7 @@
             }
 
             .next-door-prompt {
-                bottom: 35%;
+                bottom: 28%;
                 padding: 0.6rem 1.25rem;
             }
         }
