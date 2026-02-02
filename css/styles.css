@@ -898,17 +898,17 @@
             }
 
             .commentary-trigger {
-                width: 80px;
-                height: 80px;
+                width: 95px;
+                height: 95px;
             }
 
             .click-me-text {
-                width: 100px;
-                height: 100px;
+                width: 115px;
+                height: 115px;
             }
 
             .click-me-text text {
-                font-size: 10px;
+                font-size: 9px;
             }
         }
 
