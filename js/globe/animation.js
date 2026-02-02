@@ -109,6 +109,11 @@ function animate() {
                         // Small delay to let users appreciate the result
                         setTimeout(() => {
                             celebrationInProgress = false;
+                            // Show menu toggle button again (mobile)
+                            const menuToggle = document.getElementById('menuToggle');
+                            if (menuToggle) {
+                                menuToggle.style.display = '';
+                            }
                         }, 1000);
                     }
                 }
@@ -244,6 +249,12 @@ function triggerDoorsCompleteSequence() {
 
     // Block menu from opening during celebration
     celebrationInProgress = true;
+
+    // Hide menu toggle button during celebration (mobile)
+    const menuToggle = document.getElementById('menuToggle');
+    if (menuToggle) {
+        menuToggle.style.display = 'none';
+    }
 
     // Step 1: Show celebratory message
     showCelebrationMessage();
