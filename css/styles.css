@@ -891,6 +891,27 @@
             animation-play-state: paused;
         }
 
+        /* Mobile adjustments for captain icon */
+        @media (max-width: 480px) {
+            .directors-commentary {
+                margin-left: 2.5rem;
+            }
+
+            .commentary-trigger {
+                width: 80px;
+                height: 80px;
+            }
+
+            .click-me-text {
+                width: 100px;
+                height: 100px;
+            }
+
+            .click-me-text text {
+                font-size: 10px;
+            }
+        }
+
         /* Modal Overlay for Commentary */
         .commentary-modal-overlay {
             position: fixed;
