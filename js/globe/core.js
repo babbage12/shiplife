@@ -143,7 +143,6 @@ async function lazyLoadTexture(locationTitle, marker) {
 function updateMarkerWithTexture(marker, texture, locationTitle) {
     if (!marker || !texture) return;
 
-    // Always use SpriteMaterial for markers (video plays separately on click)
     if (marker.material) {
         marker.material.map = texture;
         marker.material.needsUpdate = true;
@@ -391,7 +390,6 @@ async function init() {
 function createGlobe() {
     const textureLoader = new THREE.TextureLoader();
 
-    // Use static Earth texture - video caused red flash artifacts
     const earthTexture = textureLoader.load(
         'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
     );

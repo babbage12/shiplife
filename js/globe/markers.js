@@ -1670,71 +1670,6 @@ function getZoomDistanceForLocation(loc) {
     return Math.max(zoomDistance, minZoom);
 }
 
-// Custom shader material for video textures with black transparency (chroma key)
-function createVideoChromaMaterial(texture) {
-    const vertexShader = `
-        varying vec2 vUv;
-        void main() {
-            vUv = uv;
-            // Billboard behavior for sprites
-            vec4 mvPosition = modelViewMatrix * vec4(0.0, 0.0, 0.0, 1.0);
-            vec2 scale = vec2(
-                length(vec3(modelMatrix[0].xyz)),
-                length(vec3(modelMatrix[1].xyz))
-            );
-            mvPosition.xy += position.xy * scale;
-            gl_Position = projectionMatrix * mvPosition;
-        }
-    `;
-    
-    const fragmentShader = `
-        uniform sampler2D map;
-        uniform float threshold;
-        uniform float softness;
-        varying vec2 vUv;
-        
-        void main() {
-            vec4 texColor = texture2D(map, vUv);
-            
-            // Calculate brightness (luminance)
-            float brightness = (texColor.r + texColor.g + texColor.b) / 3.0;
-            
-            // Create soft edge around threshold
-            float alpha = smoothstep(threshold - softness, threshold + softness, brightness);
-            
-            // Also check for circular mask (porthole shape)
-            vec2 center = vec2(0.5, 0.5);
-            float dist = distance(vUv, center);
-            float radius = 0.46; // Porthole radius
-            float edgeSoftness = 0.02;
-            
-            // Only apply black transparency OUTSIDE the porthole circle
-            // Inside the circle, keep all pixels (including dark ones)
-            float insideCircle = 1.0 - smoothstep(radius - edgeSoftness, radius + edgeSoftness, dist);
-            
-            // Final alpha: inside circle = keep everything, outside = remove black
-            float finalAlpha = mix(alpha, 1.0, insideCircle) * texColor.a;
-            
-            gl_FragColor = vec4(texColor.rgb, finalAlpha);
-        }
-    `;
-    
-    const material = new THREE.ShaderMaterial({
-        uniforms: {
-            map: { value: texture },
-            threshold: { value: 0.15 }, // Black threshold (0-1)
-            softness: { value: 0.05 }   // Edge softness
-        },
-        vertexShader: vertexShader,
-        fragmentShader: fragmentShader,
-        transparent: true,
-        depthWrite: false,
-        side: THREE.DoubleSide
-    });
-    
-    return material;
-}
-
 function createMarkers() {
     // Pre-calculate density factors for all locations
     const densityFactors = calculateDensityFactors();
@@ -1887,8 +1822,7 @@ function createMarkers() {
             canvas = null;
             textureAlreadyLoaded = true;
 
-            // Always use SpriteMaterial for markers (video plays on click, not on marker)
-            // This ensures raycaster can detect the marker
+            // Use SpriteMaterial for raycaster compatibility
             spriteMaterial = new THREE.SpriteMaterial({
                 map: texture,
                 transparent: true,

@@ -182,7 +182,7 @@ function onTouchTap(event) {
                             setTimeout(() => openPanelForLocation(), 200);
                         }, delay);
                     } else {
-                        // Iris already open - handle video/panel
+                        // Iris already open
                         if (isSwitching) {
                             setTimeout(() => openPanelForLocation(), 800);
                         } else {
@@ -282,7 +282,7 @@ function onClick(event) {
                     setTimeout(() => openPanelForLocation(), 200);
                 }, delay);
             } else {
-                // Iris already open - handle video/panel
+                // Iris already open
                 if (isSwitching) {
                     setTimeout(() => openPanelForLocation(), 800);
                 } else {
