@@ -336,6 +336,7 @@ function updateCelebrationGlowWave() {
     }
 
     // Check each marker's position relative to camera view
+    let triggeredThisFrame = 0;
     markers.forEach(marker => {
         if (marker.userData.isDoor) return; // Skip doors
         if (!marker.userData.isDimmed) return; // Already lit
@@ -356,8 +357,12 @@ function updateCelebrationGlowWave() {
         if (dot > -0.4) {
             markersGlowTriggered.add(marker.userData.id);
             animateMarkerGlow(marker);
+            triggeredThisFrame++;
         }
     });
+    if (triggeredThisFrame > 0) {
+        console.log('Glow triggered:', triggeredThisFrame, 'markers. Total:', markersGlowTriggered.size);
+    }
 }
 
 // Animate a marker with a bright glow effect
@@ -371,6 +376,7 @@ function animateMarkerGlow(marker) {
 
     // Flag to prevent main animation loop from overriding glow
     marker.userData.isGlowing = true;
+    console.log('animateMarkerGlow START:', marker.userData.title, 'opacity:', marker.material.opacity, 'isDimmed:', marker.userData.isDimmed);
 
     function animate(currentTime) {
         const elapsed = currentTime - startTime;
