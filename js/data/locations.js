@@ -38,10 +38,10 @@ const locations = [
                 <p>Finding me as a kid was easy - just listen. The sound of drums, clarinet, guitar, or singing would lead you right to me. My mom, my grandma, my brother and sister - anyone who would listen became an audience. My great-grandma Gillette would hoist me up onto the doghouse where the Star Spangled Banner would ring out, the apples on the surrounding trees standing in as my crowd.</p>
                 <p>Made-up songs. Harmonies with the radio. Constant daydreaming that got me into a lot of trouble.</p>
                 <p>At age 7, when other kids were playing with Legos, my dad's Jazzmaster guitar became my new obsession.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
                 <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
                 <p>By thirteen, I had joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
                 <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
                 <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
                 <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
@@ -51,9 +51,9 @@ const locations = [
                 <span class="section-tag-panel">The Band</span>
                 <h3 class="section-title-panel">Touched</h3>
                 <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable dive bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768521382/1000006616_gt9tju.jpg" class="story-image" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="The band Touched, 1991">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="story-image" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="The band Touched, 1991">
                 <p class="photo-caption-inline">Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991">
                 <p class="photo-caption-inline">Touched at the 5 Seasons Hotel, Greensboro, NC. 1991.</p>
             </div>
             
@@ -72,7 +72,7 @@ const locations = [
                 <span class="section-tag-panel">The Spark</span>
                 <h3 class="section-title-panel">Visualizing the Escape</h3>
                 <p>In 2005, a few sets of guitar-vocal songs came together for my first solo gig in years. A good start, but there was still a ways to go. Escaping Toledo and making a real living playing music would require preparation.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig">
                 <p class="photo-caption-inline">2005. The first solo gig in years. The spark.</p>
                 <p>The most important step was visualizing where music could lead again. A scrapbook of exotic places took shape - images of grand hotels, cruise ships, distant stages.</p>
                 <p>Then one late night, a search for solo guitar gigs landed on a British talent website with an ad that read something like:</p>
@@ -113,18 +113,18 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520945/1000006610_rzhkon.jpg" class="gallery-thumb" data-caption="1983. Brothers of Badness playing our high school prom in Cuyahoga Falls." alt="Brothers of Badness 1983">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="gallery-thumb" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with Jazzmaster">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006615_kjgr2e.jpg" class="gallery-thumb" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768521382/1000006616_gt9tju.jpg" class="gallery-thumb" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="Touched 1991">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520944/1000006613_as1tu6.jpg" class="gallery-thumb" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Greensboro 1991">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="gallery-thumb" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig 2005">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767710239/brothers_of_badness_waogg5.jpg" class="gallery-thumb" data-caption="Brothers of Badness - the early band days." alt="Brothers of Badness">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="gallery-thumb" data-caption="1983. Brothers of Badness playing our high school prom in Cuyahoga Falls." alt="Brothers of Badness 1983">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="gallery-thumb" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with Jazzmaster">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006615_kjgr2e.jpg" class="gallery-thumb" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="gallery-thumb" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="Touched 1991">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="gallery-thumb" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Greensboro 1991">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="gallery-thumb" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig 2005">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/brothers_of_badness_waogg5.jpg" class="gallery-thumb" data-caption="Brothers of Badness - the early band days." alt="Brothers of Badness">
                 </div>
             </div>
         `,
         fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: this was a waste of time.\n\nThis was Door #1. The escape. This door opened the possibility of everything that came after.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768520945/1000006610_rzhkon.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg"
     },
     {
         id: 21,
@@ -135,7 +135,7 @@ const locations = [
         isDoor: false,
         shortDesc: "First shore leave. The door stayed open.",
         fullDesc: "Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.\n\nMentally prepared for a call from the cruise director's office saying \"Thanks, but no thanks\" along with a plane ticket home.\n\nIt was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nFirst shore leave.\n\nTurns out, this was the first of many shore leaves over the next 12 years.\n\nThe door stayed open.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816317/brisbane_iajcgd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816317/brisbane_iajcgd.jpg"
     },
     {
         id: 22,
@@ -176,13 +176,13 @@ const locations = [
                 <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
                 <p>Staying on and making it to Darwin without being handed a plane ticket home meant at least a full 4-month contract. And who knows - maybe an invitation to do it again.</p>
                 <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
                 <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
                 <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
                 <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist - Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Soundcheck at the Atlantis Lounge">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Soundcheck at the Atlantis Lounge">
                 </div>
                 <p class="photo-caption-inline">The Atlantis Showlounge - my name in print, and the view from soundcheck before the doors opened.</p>
             </div>
@@ -193,7 +193,7 @@ const locations = [
                     A Life in Motion
                     <span class="directors-commentary">
                         <span class="commentary-trigger" onclick="openCommentaryModal()" title="A Quick Story...">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768678993/ComfyUI_01292__jp0pvj.png" alt="Captain">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768678993/ComfyUI_01292__jp0pvj.png" alt="Captain">
                         </span>
                         <svg class="click-me-text" viewBox="0 0 100 100">
                             <defs>
@@ -212,7 +212,7 @@ const locations = [
                 </blockquote>
                 <p>Sitting there, the question hung in the air: am I ready for this? Ready to become the best version of myself? Because that's what this was going to take.</p>
                 <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526570/IMG_0109_dvahoj.jpg" class="story-image" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun in New Caledonia">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="story-image" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun in New Caledonia">
                 <p class="photo-caption-inline">Pacific Sun docked in New Caledonia.</p>
             </div>
             
@@ -221,18 +221,18 @@ const locations = [
                 <h3 class="section-title-panel">The Pacific Run</h3>
                 <p>The Pacific run took us through places previously only seen in documentaries. Turquoise water so clear you could count fish from the tender. Churches older than any building back home. Islands where time moved differently.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526487/Isle_of_Pines_tddsqy.jpg" class="story-image" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526493/134_cwcuy0.jpg" class="story-image" data-caption="Pool party in Bali." alt="Pool party in Bali">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526487/Isle_of_Pines_tddsqy.jpg" class="story-image" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526493/134_cwcuy0.jpg" class="story-image" data-caption="Pool party in Bali." alt="Pool party in Bali">
                 </div>
                 <p class="photo-caption-inline">Isle of Pines, New Caledonia. Pool party in Bali.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526496/bora_bora_z03zsr.jpg" class="story-image" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768527359/DSC00357_et8mzd.jpg" class="story-image" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526496/bora_bora_z03zsr.jpg" class="story-image" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg" class="story-image" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
                 </div>
                 <p class="photo-caption-inline">Bora Bora, French Polynesia. Semarang temple, Indonesia.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/darwin_star_jseq6c.jpg" class="story-image" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star Picture Theatre">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/DSC00286_ikuq8x.jpg" class="story-image" data-caption="Brisbane lit up at night." alt="Brisbane at night">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/darwin_star_jseq6c.jpg" class="story-image" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star Picture Theatre">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/DSC00286_ikuq8x.jpg" class="story-image" data-caption="Brisbane lit up at night." alt="Brisbane at night">
                 </div>
                 <p class="photo-caption-inline">The Star Picture Theatre in Darwin, and Brisbane lit up at night.</p>
             </div>
@@ -243,14 +243,14 @@ const locations = [
                 <p>They weren't just colleagues. They were professionals, equally dedicated to their craft. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
                 <p>There was humor and irony in every story told at sea. It just happened that way - so many people from such different places, bumping into each other's unfamiliar ways.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528418/crew_bar_urzrll.jpg" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
                 </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
                 <p class="photo-caption-inline">Goofing off in crew bar with shipmates.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768531847/008-3_zkgv14.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768531863/011-6_t1i6uf.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
                 </div>
                 <p class="photo-caption-inline">Aussie passengers know how to party.</p>
             </div>
@@ -259,14 +259,14 @@ const locations = [
                 <span class="section-tag-panel">The Stage</span>
                 <h3 class="section-title-panel">Playing With Friends</h3>
                 <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="story-image" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Playing with Hayden Smith">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="story-image" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Playing with Hayden Smith">
                 <p class="photo-caption-inline">Playing with my friend Hayden Smith in Smugglers Lounge.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="story-image" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden and I in Atlantis">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="story-image" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden and I in Atlantis">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="story-image" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden and I in Atlantis">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="story-image" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden and I in Atlantis">
                 </div>
                 <p class="photo-caption-inline">Hayden and I performing in Atlantis Lounge.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="story-image" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Playing with Lars">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="story-image" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Playing with Lars">
                 <p class="photo-caption-inline">Playing with my friend Lars in Smugglers Lounge.</p>
             </div>
             
@@ -274,10 +274,10 @@ const locations = [
                 <span class="section-tag-panel">Ship Celebrity</span>
                 <h3 class="section-title-panel">Cruise Director's Corner</h3>
                 <p>One day the cruise director extended an invitation to his daily TV show - broadcast to every cabin on the ship. Sat down, feeling pretty good about myself.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="story-image" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="story-image" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
                 <p class="photo-caption-inline">Cool. Calm. Collected.</p>
                 <p>Then the realization hit: 2,000 passengers were watching live. And suddenly, how humans sit became a complete mystery.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="story-image" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="story-image" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
                 <p class="photo-caption-inline">Where do hands go? What are hands? Why do I have hands?</p>
             </div>
             
@@ -286,7 +286,7 @@ const locations = [
                 <h3 class="section-title-panel">Litchfield National Park</h3>
                 <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds.</p>
                 <p>A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532403/033_tbuodb.jpg" class="story-image" alt="Litchfield National Park swimming hole">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="story-image" alt="Litchfield National Park swimming hole">
                 <p class="photo-caption-inline">Swimming in Litchfield. We saw the crocodile warning sign on our way out. Duh.</p>
                 <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
             </div>
@@ -327,44 +327,44 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/002_zzrowo.jpg" class="gallery-thumb" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645530/atlantis_brochure_kmknn5.jpg" class="gallery-thumb" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis brochure">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="gallery-thumb" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Atlantis soundcheck">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526570/IMG_0109_dvahoj.jpg" class="gallery-thumb" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun New Caledonia">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526487/Isle_of_Pines_tddsqy.jpg" class="gallery-thumb" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526493/134_cwcuy0.jpg" class="gallery-thumb" data-caption="Pool party in Bali." alt="Bali pool party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526496/bora_bora_z03zsr.jpg" class="gallery-thumb" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768527359/DSC00357_et8mzd.jpg" class="gallery-thumb" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/darwin_star_jseq6c.jpg" class="gallery-thumb" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767645531/DSC00286_ikuq8x.jpg" class="gallery-thumb" data-caption="Brisbane lit up at night." alt="Brisbane">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528418/crew_bar_urzrll.jpg" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768531847/008-3_zkgv14.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768531863/011-6_t1i6uf.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768526483/mark_cristian_iwhziq.jpg" class="gallery-thumb" data-caption="The crew bar - where the real stories got told. With friends." alt="Crew bar friends">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="gallery-thumb" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Hayden Smith">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis 2">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="gallery-thumb" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Lars">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768527425/IMG_0200_lgitre.jpg" class="gallery-thumb" data-caption="Shipmates." alt="Shipmates">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768527430/IMG_0198_v6fil7.jpg" class="gallery-thumb" data-caption="Crew sign." alt="Crew sign">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767643122/013_pzswfa.jpg" class="gallery-thumb" data-caption="Somewhere in the first week - still figuring out the rhythm." alt="First week">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532411/037_sgoss3.jpg" class="gallery-thumb" data-caption="Pacific Sun days." alt="Pacific Sun">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532320/SANY2959_wrkayt.jpg" class="gallery-thumb" data-caption="Shore leave." alt="Shore leave">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532586/IMG_0503_d8y8ux.jpg" class="gallery-thumb" data-caption="More adventures." alt="Adventures">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532591/IMG_0505_u3ofup.jpg" class="gallery-thumb" data-caption="On the road." alt="On the road">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532608/IMG_0375_2020-10-19T20_30_15.551_ng52kh.jpg" class="gallery-thumb" data-caption="Exploring." alt="Exploring">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg" class="gallery-thumb" data-caption="Crew adventures." alt="Crew adventures">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="gallery-thumb" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="gallery-thumb" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis brochure">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="gallery-thumb" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Atlantis soundcheck">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="gallery-thumb" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526487/Isle_of_Pines_tddsqy.jpg" class="gallery-thumb" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526493/134_cwcuy0.jpg" class="gallery-thumb" data-caption="Pool party in Bali." alt="Bali pool party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526496/bora_bora_z03zsr.jpg" class="gallery-thumb" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg" class="gallery-thumb" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/darwin_star_jseq6c.jpg" class="gallery-thumb" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/DSC00286_ikuq8x.jpg" class="gallery-thumb" data-caption="Brisbane lit up at night." alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526483/mark_cristian_iwhziq.jpg" class="gallery-thumb" data-caption="The crew bar - where the real stories got told. With friends." alt="Crew bar friends">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="gallery-thumb" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Hayden Smith">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis 2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="gallery-thumb" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Lars">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527425/IMG_0200_lgitre.jpg" class="gallery-thumb" data-caption="Shipmates." alt="Shipmates">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527430/IMG_0198_v6fil7.jpg" class="gallery-thumb" data-caption="Crew sign." alt="Crew sign">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767643122/013_pzswfa.jpg" class="gallery-thumb" data-caption="Somewhere in the first week - still figuring out the rhythm." alt="First week">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532411/037_sgoss3.jpg" class="gallery-thumb" data-caption="Pacific Sun days." alt="Pacific Sun">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532320/SANY2959_wrkayt.jpg" class="gallery-thumb" data-caption="Shore leave." alt="Shore leave">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532586/IMG_0503_d8y8ux.jpg" class="gallery-thumb" data-caption="More adventures." alt="Adventures">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532591/IMG_0505_u3ofup.jpg" class="gallery-thumb" data-caption="On the road." alt="On the road">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532608/IMG_0375_2020-10-19T20_30_15.551_ng52kh.jpg" class="gallery-thumb" data-caption="Exploring." alt="Exploring">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg" class="gallery-thumb" data-caption="Crew adventures." alt="Crew adventures">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
                 </div>
             </div>
         `,
         fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the door that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767643122/013_pzswfa.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767643122/013_pzswfa.jpg"
     },
     {
         id: 4,
@@ -391,7 +391,7 @@ const locations = [
                 <p>Riding bikes with shipmates. A white ship in the harbor.</p>
                 <p>Someone said, "That's Seabourn. Top cruise line in the world."</p>
                 <p>Watched it for a while. Got a little closer and snapped a photo.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns">
                 <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. Working on the Pacific Sun, already dreaming about this strange, elegant ship.</p>
             </div>
             
@@ -402,12 +402,12 @@ const locations = [
                 <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
                 <p>The call was made standing on the dock. C. Blackburn - the same agent who landed me that first ship - delivered the news.</p>
                 <p>Seabourn wanted a soloist. The number one rated small cruise ship in the world. The same ship seen in Cairns three years earlier!</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor">
                 <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
                 <p>An hour later I was eating oysters with my shipmates. Gagging. Laughing. Trying not to throw up.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729046/IMG_0831_ei47kw.jpg" class="story-image" alt="Oysters in Akaroa">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729046/IMG_0831_ei47kw.jpg" class="story-image" alt="Oysters in Akaroa">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters">
                 </div>
                 <p class="photo-caption-inline">Oysters with shipmates. Not my finest moment.</p>
                 <p>The door had just slid open.</p>
@@ -428,11 +428,11 @@ const locations = [
                 <h3 class="section-title-panel">Auckland, January 2013</h3>
                 <p>Same port where I boarded my first P&O ship in 2009.</p>
                 <p>Same gangway. Different universe.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727288/IMG_0145_v2vqtm.jpg" class="story-image" alt="Sky Tower Auckland">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727288/IMG_0145_v2vqtm.jpg" class="story-image" alt="Sky Tower Auckland">
                 <p class="photo-caption-inline">The Sky Tower - Auckland's needle. Watching over the harbor as I sailed in on a new ship.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767732747/IMG_0159_nx39vl.jpg" class="story-image" alt="Auckland Harbor from Seabourn">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767732747/IMG_0159_nx39vl.jpg" class="story-image" alt="Auckland Harbor from Seabourn">
                 <p class="photo-caption-inline">Auckland Harbor from the Odyssey. Pulling away from where it all started.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729034/IMG_0169_nnzkhu.jpg" class="story-image" alt="Leaving Auckland">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729034/IMG_0169_nnzkhu.jpg" class="story-image" alt="Leaving Auckland">
                 <p class="photo-caption-inline">Sky Tower fading behind us. A new chapter beginning.</p>
             </div>
             
@@ -440,26 +440,26 @@ const locations = [
                 <span class="section-tag-panel">The Seabourn Experience</span>
                 <h3 class="section-title-panel">Not Your Average Cruise Ship</h3>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769827243/seabourn_in_marseille_w6uyqy.jpg" class="story-image" alt="Seabourn in Marseille">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769827154/seabourn_in_amalfi_zxkxez.jpg" class="story-image" alt="Seabourn in Amalfi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769827243/seabourn_in_marseille_w6uyqy.jpg" class="story-image" alt="Seabourn in Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769827154/seabourn_in_amalfi_zxkxez.jpg" class="story-image" alt="Seabourn in Amalfi">
                 </div>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825370/seabourn_goes_anywhere_it_wants_rlcqhm.jpg" class="story-image" alt="Seabourn goes anywhere">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825251/oddyssy_in_malta_ozbqnz.jpg" class="story-image" alt="Seabourn Odyssey in Malta">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825370/seabourn_goes_anywhere_it_wants_rlcqhm.jpg" class="story-image" alt="Seabourn goes anywhere">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825251/oddyssy_in_malta_ozbqnz.jpg" class="story-image" alt="Seabourn Odyssey in Malta">
                 </div>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825070/seabourn_sezzq5.jpg" class="story-image" alt="Seabourn ship">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824723/sojourn_2_jajz31.jpg" class="story-image" alt="Seabourn Sojourn">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823772/seabourn_naynld.jpg" class="story-image" alt="Seabourn ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825070/seabourn_sezzq5.jpg" class="story-image" alt="Seabourn ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824723/sojourn_2_jajz31.jpg" class="story-image" alt="Seabourn Sojourn">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823772/seabourn_naynld.jpg" class="story-image" alt="Seabourn ship">
                 </div>
                 <p class="photo-caption-inline">Seabourn ships go places bigger ships can only dream of. Marseille. Amalfi. Malta. Tucked into harbors and anchored off coastlines that mass-market cruise lines will never see.</p>
                 <p>Seabourn ships are more like huge luxury yachts than cruise ships. The guests were amazing. Doctors. Lawyers. Dignitaries. CEOs. Experts in horticulture, ancient history, penguins - you name it.</p>
                 <p>And the crew knew how to party.</p>
                 <p>Everyone was friendly. Everyone was professional.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767733813/IMG_0218_azftb2.jpg" class="story-image" alt="The Club">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767733813/IMG_0218_azftb2.jpg" class="story-image" alt="The Club">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn">
                 </div>
                 <p class="photo-caption-inline">The Club on Deck 5 - my stage. And yes, they always put me by the food.</p>
             </div>
@@ -476,79 +476,79 @@ const locations = [
                 <h3 class="section-title-panel">Seabourn Gave Me the Rest of It</h3>
                 <div class="world-carousel" id="worldCarousel">
                     <div class="carousel-slide active">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767734543/IMG_3093_p55z1r.jpg" alt="Milos, Greece">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767734543/IMG_3093_p55z1r.jpg" alt="Milos, Greece">
                         <div class="carousel-caption"><span>Milos, Greece</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767737978/IMG_6712_bmwcxi.jpg" alt="Lemaire Channel, Antarctica">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767737978/IMG_6712_bmwcxi.jpg" alt="Lemaire Channel, Antarctica">
                         <div class="carousel-caption"><span>Lemaire Channel, Antarctica</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767739780/IMG_6538_tolutk.jpg" alt="Antarctica">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767739780/IMG_6538_tolutk.jpg" alt="Antarctica">
                         <div class="carousel-caption"><span>Antarctica</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738529/IMG_5536_ipjhwy.jpg" alt="St. Tropez">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738529/IMG_5536_ipjhwy.jpg" alt="St. Tropez">
                         <div class="carousel-caption"><span>St. Tropez</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736180/IMG_0914_u5kskn.jpg" alt="Mumbai">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736180/IMG_0914_u5kskn.jpg" alt="Mumbai">
                         <div class="carousel-caption"><span>Mumbai</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735553/IMG_1717_ggcmyu.jpg" alt="Kotor, Montenegro">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735553/IMG_1717_ggcmyu.jpg" alt="Kotor, Montenegro">
                         <div class="carousel-caption"><span>Kotor, Montenegro</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767737741/IMG_6834_ytmj8n.jpg" alt="South Georgia">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767737741/IMG_6834_ytmj8n.jpg" alt="South Georgia">
                         <div class="carousel-caption"><span>South Georgia</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738680/IMG_20140610_113551_fvskrb.jpg" alt="Ibiza, Spain">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738680/IMG_20140610_113551_fvskrb.jpg" alt="Ibiza, Spain">
                         <div class="carousel-caption"><span>Ibiza, Spain</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735952/IMG_0854_wmukmp.jpg" alt="Tel Aviv">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735952/IMG_0854_wmukmp.jpg" alt="Tel Aviv">
                         <div class="carousel-caption"><span>Tel Aviv</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736004/IMG_0687_znjvkv.jpg" alt="Egypt">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg" alt="Egypt">
                         <div class="carousel-caption"><span>Egypt</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738205/IMG_6691_g9fekn.jpg" alt="Ushuaia, Argentina">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738205/IMG_6691_g9fekn.jpg" alt="Ushuaia, Argentina">
                         <div class="carousel-caption"><span>Ushuaia, Argentina</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767734745/IMG_1778_fw5ihj.jpg" alt="Piran, Slovenia">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767734745/IMG_1778_fw5ihj.jpg" alt="Piran, Slovenia">
                         <div class="carousel-caption"><span>Piran, Slovenia</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738333/IMG_5961_m85dyt.jpg" alt="Salem, Massachusetts">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738333/IMG_5961_m85dyt.jpg" alt="Salem, Massachusetts">
                         <div class="carousel-caption"><span>Salem, Massachusetts</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735863/IMG_1155_qtda7b.jpg" alt="Malta">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg" alt="Malta">
                         <div class="carousel-caption"><span>Malta</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738440/IMG_20140811_122138_cqwjid.jpg" alt="Barcelona, Spain">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738440/IMG_20140811_122138_cqwjid.jpg" alt="Barcelona, Spain">
                         <div class="carousel-caption"><span>Barcelona, Spain</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735639/IMG_1240_swdpx7.jpg" alt="Syracuse, Sicily">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735639/IMG_1240_swdpx7.jpg" alt="Syracuse, Sicily">
                         <div class="carousel-caption"><span>Syracuse, Sicily</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768587596/IMG_1656_afip0q.jpg" alt="Seabourn Odyssey in Kotor, Montenegro">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768587596/IMG_1656_afip0q.jpg" alt="Seabourn Odyssey in Kotor, Montenegro">
                         <div class="carousel-caption"><span>Seabourn Odyssey in Kotor, Montenegro</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768587199/IMG_3004_uyulft.jpg" alt="Seabourn Odyssey in Nafplion, Greece">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768587199/IMG_3004_uyulft.jpg" alt="Seabourn Odyssey in Nafplion, Greece">
                         <div class="carousel-caption"><span>Seabourn Odyssey in Nafplion, Greece</span></div>
                     </div>
                     <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768587674/IMG_1278_urf1yi.jpg" alt="Seabourn Sojourn in Itea, Greece">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768587674/IMG_1278_urf1yi.jpg" alt="Seabourn Sojourn in Itea, Greece">
                         <div class="carousel-caption"><span>Seabourn Sojourn in Itea, Greece</span></div>
                     </div>
                     <div class="carousel-dots"></div>
@@ -585,21 +585,21 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729026/IMG_0220_r8svvx.jpg" class="gallery-thumb" data-caption="The Seabourn Odyssey in Cairns - the ship I'd later call home." alt="Seabourn Odyssey">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729047/IMG_0830_pv7td9.jpg" class="gallery-thumb" data-caption="Akaroa Harbor - where I got the call." alt="Akaroa Harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727288/IMG_0145_v2vqtm.jpg" class="gallery-thumb" data-caption="The Sky Tower - Auckland's needle." alt="Sky Tower">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767732747/IMG_0159_nx39vl.jpg" class="gallery-thumb" data-caption="Auckland Harbor from Seabourn." alt="Auckland Harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729034/IMG_0169_nnzkhu.jpg" class="gallery-thumb" data-caption="Leaving Auckland - a new chapter." alt="Leaving Auckland">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729030/IMG_0202_igk8i4.jpg" class="gallery-thumb" data-caption="The iconic Seabourn funnel." alt="Seabourn funnel">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767733813/IMG_0218_azftb2.jpg" class="gallery-thumb" data-caption="The Club - my new stage." alt="The Club">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767728099/IMG_0201_jrd2av.jpg" class="gallery-thumb" data-caption="My name in print on Seabourn." alt="Seabourn schedule">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="gallery-thumb" data-caption="At the piano on Seabourn." alt="At the piano">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532493/IMG_0227_psvuop.jpg" class="gallery-thumb" data-caption="Performing on Seabourn." alt="Performing">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729026/IMG_0220_r8svvx.jpg" class="gallery-thumb" data-caption="The Seabourn Odyssey in Cairns - the ship I'd later call home." alt="Seabourn Odyssey">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729047/IMG_0830_pv7td9.jpg" class="gallery-thumb" data-caption="Akaroa Harbor - where I got the call." alt="Akaroa Harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727288/IMG_0145_v2vqtm.jpg" class="gallery-thumb" data-caption="The Sky Tower - Auckland's needle." alt="Sky Tower">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767732747/IMG_0159_nx39vl.jpg" class="gallery-thumb" data-caption="Auckland Harbor from Seabourn." alt="Auckland Harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729034/IMG_0169_nnzkhu.jpg" class="gallery-thumb" data-caption="Leaving Auckland - a new chapter." alt="Leaving Auckland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729030/IMG_0202_igk8i4.jpg" class="gallery-thumb" data-caption="The iconic Seabourn funnel." alt="Seabourn funnel">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767733813/IMG_0218_azftb2.jpg" class="gallery-thumb" data-caption="The Club - my new stage." alt="The Club">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767728099/IMG_0201_jrd2av.jpg" class="gallery-thumb" data-caption="My name in print on Seabourn." alt="Seabourn schedule">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="gallery-thumb" data-caption="At the piano on Seabourn." alt="At the piano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532493/IMG_0227_psvuop.jpg" class="gallery-thumb" data-caption="Performing on Seabourn." alt="Performing">
                 </div>
             </div>
         `,
         fullDesc: "The first two doors had to be pushed open. This one just... opened.\n\nP&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. The whole world, it seemed.\n\nSeabourn gave me the rest of it.\n\nThree vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768586585/IMG_6563_ggigfv.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768586585/IMG_6563_ggigfv.jpg"
     },
     {
         id: 2,
@@ -610,7 +610,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A month as resident musician in an oligarch's playground.",
         fullDesc: "Ah...the Maldives. A shark-infested paradise.\n\nDaily walks through dense tropical forest. One day, the largest man I'd seen in my life came running towards me on the narrow path-one of the oligarchs' bodyguards. They were here for Christmas, and the island was flooded with them.\n\nReef sharks by the restaurant door. Millions bet on beach card games. At some point I had to stop myself from saying wow all the time.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767729034/IMG_0038_cbv7ss.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729034/IMG_0038_cbv7ss.jpg"
     },
     {
         id: 3,
@@ -621,7 +621,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Queen's Room Vocalist with a 9-piece orchestra.",
         fullDesc: "In 2019, a prestigious position opened up on the iconic Queen Victoria.\n\nThe Queen's Room was unlike anything experienced before. A grand ballroom where couples would waltz beneath crystal chandeliers while a nine-piece orchestra played.\n\nThis was old-world elegance at sea - white gloves, formal attire, and the kind of sophistication that harked back to the golden age of ocean travel.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821450/queen_v_wsuwn6.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821450/queen_v_wsuwn6.jpg"
     },
     {
         id: 116,
@@ -632,7 +632,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where bicycles rule and canals connect everything.",
         fullDesc: "Amsterdam is a city that flows.\n\nThe canals wind through centuries of history-gabled houses leaning into each other, houseboats lined up along the banks, bicycles everywhere. The museums are world-class, the brown cafés are cozy, and the city has a tolerance and openness that's refreshing.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769520695/DSCN0153_xibhy6.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769520695/DSCN0153_xibhy6.jpg"
     },
     {
         id: 5,
@@ -643,7 +643,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Stepping through ancient gates into the Middle Ages.",
         fullDesc: "The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic.\n\nBut nothing prepared for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817982/dubrovnik_ihkkaj.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817982/dubrovnik_ihkkaj.jpg"
     },
     {
         id: 6,
@@ -654,7 +654,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Spiritual awakenings and monkey forests.",
         fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from expectation. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821387/bali_y9gq2v.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821387/bali_y9gq2v.jpg"
     },
     {
         id: 120,
@@ -693,8 +693,8 @@ const locations = [
                 <p>Sea days are when the ship becomes a floating world unto itself. No port to rush to, no excursions to catch. Just the horizon in every direction.</p>
                 <p>For entertainers, sea days meant extra shows. The passengers had nowhere else to be, so they came to see us. For the crew, it was a chance to catch up - laundry, sleep, maybe a few hours on deck if you were lucky.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532511/IMG_0240_yg0xap.jpg" class="story-image" alt="Sea day view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg" class="story-image" alt="At sea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532511/IMG_0240_yg0xap.jpg" class="story-image" alt="Sea day view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg" class="story-image" alt="At sea">
                 </div>
                 <p class="photo-caption-inline">The view from deck. Nothing but water and sky.</p>
                 <p>There's a rhythm to sea days that you learn to love. The gentle roll of the ship. The sound of waves. The knowledge that for today, at least, the whole world is this vessel and everyone on it.</p>
@@ -730,13 +730,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532511/IMG_0240_yg0xap.jpg" class="gallery-thumb" data-caption="Endless horizon from the deck." alt="Sea day view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg" class="gallery-thumb" data-caption="Nothing but water and sky." alt="At sea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532511/IMG_0240_yg0xap.jpg" class="gallery-thumb" data-caption="Endless horizon from the deck." alt="Sea day view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg" class="gallery-thumb" data-caption="Nothing but water and sky." alt="At sea">
                 </div>
             </div>
         `,
         fullDesc: "Sea days are when the ship becomes a floating world unto itself. No port to rush to, no excursions to catch. Just the horizon in every direction.\n\nFor entertainers, sea days meant extra shows. For the crew, it was a chance to catch up. There's a rhythm to sea days that you learn to love.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532511/IMG_0240_yg0xap.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532511/IMG_0240_yg0xap.jpg"
     },
     {
         id: 119,
@@ -775,8 +775,8 @@ const locations = [
                 <p>Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle. They've been here for millions of years, unchanged.</p>
                 <p>We walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. One chomp and you're done for.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532337/DSC002971st_prbc0u.jpg" class="story-image" alt="Komodo dragon">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532348/DSC00313_iv0cyd.jpg" class="story-image" alt="Komodo dragon close-up">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg" class="story-image" alt="Komodo dragon">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532348/DSC00313_iv0cyd.jpg" class="story-image" alt="Komodo dragon close-up">
                 </div>
                 <p class="photo-caption-inline">Face to face with dragons. The rangers carried forked sticks - not that they'd help much.</p>
             </div>
@@ -785,8 +785,8 @@ const locations = [
                 <span class="section-tag-panel">The Island</span>
                 <h3 class="section-title-panel">Jurassic Park Vibes</h3>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532354/DSC00301_czqyrm.jpg" class="story-image" alt="Komodo landscape">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532360/DSC002982nd_rlitb4.jpg" class="story-image" alt="Komodo Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532354/DSC00301_czqyrm.jpg" class="story-image" alt="Komodo landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532360/DSC002982nd_rlitb4.jpg" class="story-image" alt="Komodo Island">
                 </div>
                 <p class="photo-caption-inline">The landscape feels like stepping back in time. Dry savanna, volcanic hills, and dragons.</p>
                 <p>The whole island has this prehistoric energy. You half expect a pterodactyl to fly overhead.</p>
@@ -798,11 +798,11 @@ const locations = [
                 <p>Komodo transforms completely depending on when you visit.</p>
                 <div class="story-gallery-grid">
                     <div style="text-align: center;">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="story-image" alt="Komodo dry season">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="story-image" alt="Komodo dry season">
                         <p class="photo-caption-inline" style="margin-top: 0.5rem;"><strong>Dry Season (May-Oct)</strong><br>Brown savanna, African vibes</p>
                     </div>
                     <div style="text-align: center;">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="story-image" alt="Komodo rainy season">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="story-image" alt="Komodo rainy season">
                         <p class="photo-caption-inline" style="margin-top: 0.5rem;"><strong>Rainy Season (Nov-Apr)</strong><br>Lush green, tropical paradise</p>
                     </div>
                 </div>
@@ -838,17 +838,17 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532337/DSC002971st_prbc0u.jpg" class="gallery-thumb" data-caption="Face to face with a Komodo dragon." alt="Komodo dragon">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532348/DSC00313_iv0cyd.jpg" class="gallery-thumb" data-caption="Prehistoric predator up close." alt="Komodo dragon close-up">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532354/DSC00301_czqyrm.jpg" class="gallery-thumb" data-caption="The Komodo landscape." alt="Komodo landscape">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532360/DSC002982nd_rlitb4.jpg" class="gallery-thumb" data-caption="Jurassic Park vibes." alt="Komodo Island">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="gallery-thumb" data-caption="Dry season - brown savanna terrain." alt="Komodo dry season">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="gallery-thumb" data-caption="Rainy season - lush green landscape." alt="Komodo rainy season">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg" class="gallery-thumb" data-caption="Face to face with a Komodo dragon." alt="Komodo dragon">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532348/DSC00313_iv0cyd.jpg" class="gallery-thumb" data-caption="Prehistoric predator up close." alt="Komodo dragon close-up">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532354/DSC00301_czqyrm.jpg" class="gallery-thumb" data-caption="The Komodo landscape." alt="Komodo landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532360/DSC002982nd_rlitb4.jpg" class="gallery-thumb" data-caption="Jurassic Park vibes." alt="Komodo Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769822864/komodo_compar_resizee_h55pu7.jpg" class="gallery-thumb" data-caption="Dry season - brown savanna terrain." alt="Komodo dry season">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg" class="gallery-thumb" data-caption="Rainy season - lush green landscape." alt="Komodo rainy season">
                 </div>
             </div>
         `,
         fullDesc: "Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle.\n\nWe walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. The whole island has this prehistoric energy.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532337/DSC002971st_prbc0u.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg"
     },
     {
         id: 7,
@@ -887,8 +887,8 @@ const locations = [
                 <p>At the end of the world, you reflect on how you got here. Ushuaia is dramatic in every sense - the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon.</p>
                 <p>We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="story-image" alt="Ushuaia harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="story-image" alt="Ushuaia mountains">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="story-image" alt="Ushuaia harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="story-image" alt="Ushuaia mountains">
                 </div>
                 <p class="photo-caption-inline">The harbor and mountains of Ushuaia. Patagonia at its most dramatic.</p>
             </div>
@@ -896,14 +896,14 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Ship</span>
                 <h3 class="section-title-panel">Seabourn Quest</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="story-image" alt="Seabourn Quest in Ushuaia">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="story-image" alt="Seabourn Quest in Ushuaia">
                 <p class="photo-caption-inline">The Seabourn Quest docked in Ushuaia - ready for Antarctica.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="story-image" alt="Ushuaia view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="story-image" alt="Ushuaia scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="story-image" alt="Ushuaia view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="story-image" alt="Ushuaia scenery">
                 </div>
                 <p class="photo-caption-inline">Views from Ushuaia - where South America ends and Antarctica begins.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="story-image" alt="Ushuaia landscape">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="story-image" alt="Ushuaia landscape">
                 <p class="photo-caption-inline">The dramatic landscape of Tierra del Fuego.</p>
             </div>
 
@@ -943,18 +943,18 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738205/IMG_6691_g9fekn.jpg" class="gallery-thumb" data-caption="Ushuaia - the southernmost city on Earth." alt="Ushuaia">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="gallery-thumb" data-caption="Ushuaia harbor." alt="Ushuaia harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="gallery-thumb" data-caption="Mountains of Ushuaia." alt="Ushuaia mountains">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="gallery-thumb" data-caption="Seabourn Quest in Ushuaia." alt="Seabourn Quest">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="gallery-thumb" data-caption="Ushuaia view." alt="Ushuaia view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="gallery-thumb" data-caption="Ushuaia scenery." alt="Ushuaia scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="gallery-thumb" data-caption="Tierra del Fuego landscape." alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738205/IMG_6691_g9fekn.jpg" class="gallery-thumb" data-caption="Ushuaia - the southernmost city on Earth." alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="gallery-thumb" data-caption="Ushuaia harbor." alt="Ushuaia harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="gallery-thumb" data-caption="Mountains of Ushuaia." alt="Ushuaia mountains">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="gallery-thumb" data-caption="Seabourn Quest in Ushuaia." alt="Seabourn Quest">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="gallery-thumb" data-caption="Ushuaia view." alt="Ushuaia view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="gallery-thumb" data-caption="Ushuaia scenery." alt="Ushuaia scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="gallery-thumb" data-caption="Tierra del Fuego landscape." alt="Tierra del Fuego">
                 </div>
             </div>
         `,
         fullDesc: "At the end of the world, you reflect on how you got here.\n\nUshuaia is dramatic in every sense-the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon. We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.\n\nI saw passionately-worded signs about the Falkland Islands-'Las Malvinas Son Argentinas.' Little did I know I'd be visiting those contested shores just days later.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738205/IMG_6691_g9fekn.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738205/IMG_6691_g9fekn.jpg"
     },
     {
         id: 8,
@@ -986,14 +986,14 @@ const locations = [
                 <span class="section-tag-panel">The Journey</span>
                 <h3 class="section-title-panel">Walking to Portofino</h3>
                 <p>The best way to arrive at Portofino is on foot. The coastal path from Santa Margherita winds through olive groves and past hidden coves.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824113/walking_to_portofino_jjhdgl.jpg" class="story-image" alt="Walking to Portofino">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824113/walking_to_portofino_jjhdgl.jpg" class="story-image" alt="Walking to Portofino">
                 <p class="photo-caption-inline">The path hugs the coastline. Every turn reveals something new.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823951/portofino_hike_vxjb0v.jpg" class="story-image" alt="Hiking to Portofino">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824104/closer_to_portofino_zeglqn.jpg" class="story-image" alt="View approaching Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823951/portofino_hike_vxjb0v.jpg" class="story-image" alt="Hiking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824104/closer_to_portofino_zeglqn.jpg" class="story-image" alt="View approaching Portofino">
                 </div>
                 <p class="photo-caption-inline">Almost there. The villas and church tower come into view through the pines.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="story-image" alt="Arrival at Portofino">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="story-image" alt="Arrival at Portofino">
                 <p class="photo-caption-inline">Arrival. Worth every step.</p>
             </div>
 
@@ -1037,15 +1037,15 @@ const locations = [
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140713_Facebook_wjt37q.jpg" class="gallery-thumb" data-caption="Narrow alley leading to Portofino harbor." alt="Portofino alley">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824113/walking_to_portofino_jjhdgl.jpg" class="gallery-thumb" data-caption="The coastal path to Portofino." alt="Walking to Portofino">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823951/portofino_hike_vxjb0v.jpg" class="gallery-thumb" data-caption="Hiking through the hills." alt="Hiking to Portofino">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824104/closer_to_portofino_zeglqn.jpg" class="gallery-thumb" data-caption="Almost there - villas through the pines." alt="View approaching Portofino">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="gallery-thumb" data-caption="Arrival at Portofino harbor." alt="Arrival at Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824113/walking_to_portofino_jjhdgl.jpg" class="gallery-thumb" data-caption="The coastal path to Portofino." alt="Walking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823951/portofino_hike_vxjb0v.jpg" class="gallery-thumb" data-caption="Hiking through the hills." alt="Hiking to Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824104/closer_to_portofino_zeglqn.jpg" class="gallery-thumb" data-caption="Almost there - villas through the pines." alt="View approaching Portofino">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png" class="gallery-thumb" data-caption="Arrival at Portofino harbor." alt="Arrival at Portofino">
                 </div>
             </div>
         `,
         fullDesc: "I've never seen such concentrated beauty in such a small space.\n\nPortofino is tiny-you can walk the entire town in 15 minutes. But every corner is a photograph. Pastel buildings, super-yachts in the harbor, and espresso that costs as much as a meal anywhere else.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823852/portofino_blnosm.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823852/portofino_blnosm.jpg"
     },
     {
         id: 9,
@@ -1056,7 +1056,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Walking where emperors walked.",
         fullDesc: "These ruins felt different.\n\nMaybe it was the scale-the Library of Celsus towering overhead. Or maybe it was knowing that this was once one of the largest cities in the Roman Empire. Either way, Ephesus made ancient history feel immediate.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769821545/ephesus_lynbis.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821545/ephesus_lynbis.jpg"
     },
     {
         id: 10,
@@ -1186,21 +1186,21 @@ const locations = [
                 <p>I boarded the Pacific Jewel with about a month left of dry dock.</p>
                 <p>The ship was not a ship. It was a construction site that happened to float.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037282/058_yjvfcg.jpg" class="story-image" data-caption="Pacific Jewel in dry dock, Singapore." alt="Pacific Jewel in dry dock">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/102_ly7caf.jpg" class="story-image" data-caption="The Jewel getting her name - one of the last things they do before leaving dry dock." alt="Jewel getting its name">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037282/058_yjvfcg.jpg" class="story-image" data-caption="Pacific Jewel in dry dock, Singapore." alt="Pacific Jewel in dry dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037276/102_ly7caf.jpg" class="story-image" data-caption="The Jewel getting her name - one of the last things they do before leaving dry dock." alt="Jewel getting its name">
                 </div>
                 <p class="photo-caption-inline">Pacific Jewel in dry dock. Workers everywhere. Scaffolding. Chaos. This was home now.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455518/100_ik4c2a.jpg" class="story-image" data-caption="Workers biking past the Jewel on their lunch break." alt="Dry dock workers biking">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455580/061_mtftgb.jpg" class="story-image" data-caption="The dry dock in full swing." alt="Dry dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455518/100_ik4c2a.jpg" class="story-image" data-caption="Workers biking past the Jewel on their lunch break." alt="Dry dock workers biking">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455580/061_mtftgb.jpg" class="story-image" data-caption="The dry dock in full swing." alt="Dry dock">
                 </div>
                 <p class="photo-caption-inline">Lunch break. Workers biking past like this was just another day. For them it was.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455594/057-2_fr8tmk.jpg" class="story-image" data-caption="Dry dock operations." alt="Dry dock">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455599/056-2_eekdld.jpg" class="story-image" data-caption="The Jewel being transformed." alt="Dry dock transformation">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455594/057-2_fr8tmk.jpg" class="story-image" data-caption="Dry dock operations." alt="Dry dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455599/056-2_eekdld.jpg" class="story-image" data-caption="The Jewel being transformed." alt="Dry dock transformation">
                 </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769462730/062_c5wqik.jpg" class="story-image" data-caption="Christmas decorations in dry dock." alt="Christmas in dry dock">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031185/060_mhyxga.jpg" class="story-image" data-caption="The Orient Bar during dry dock. Under construction." alt="Orient Bar under construction">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769462730/062_c5wqik.jpg" class="story-image" data-caption="Christmas decorations in dry dock." alt="Christmas in dry dock">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031185/060_mhyxga.jpg" class="story-image" data-caption="The Orient Bar during dry dock. Under construction." alt="Orient Bar under construction">
                 <p class="photo-caption-inline">The Orient Bar. Under construction. Plastic sheeting. Sawdust. Half-finished fixtures. But the piano worked.</p>
                 <p>Contractors everywhere. People yelling in languages I didn't recognize. Cafeteria lines a mile long. Project managers, welders, electricians, us.</p>
                 <p>We ate with them. Partied with them. Sweated through the sticky Singapore heat with them. Tripped over them.</p>
@@ -1214,17 +1214,17 @@ const locations = [
                 <blockquote class="story-quote">Malls meant two things: food and wifi.</blockquote>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769037282/072-2_hxubqq.jpg" class="story-image" data-caption="The Singapore MRT. Our escape route." alt="Singapore MRT">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037282/073_jozbht.jpg" class="story-image" data-caption="The MRT station." alt="Singapore MRT">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037282/073_jozbht.jpg" class="story-image" data-caption="The MRT station." alt="Singapore MRT">
                 </div>
                 <p class="photo-caption-inline">The MRT. Our escape route to air conditioning and wifi.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/012-2_m4xovl.jpg" class="story-image" data-caption="The electronics mall. My favorite spot in Singapore." alt="Electronics mall">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037276/012-2_m4xovl.jpg" class="story-image" data-caption="The electronics mall. My favorite spot in Singapore." alt="Electronics mall">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769454682/IMG_0302_fq3c0b.jpg" class="story-image" data-caption="Inside one of Singapore's massive malls." alt="Singapore mall interior">
                 </div>
                 <p class="photo-caption-inline">The electronics mall. My favorite spot in Singapore. Air conditioning. Wifi. Escape from the heat.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037276/081_rjivqx.jpg" class="story-image" data-caption="Marina Bay Sands under construction - we'd return in 2013 to see it finished." alt="Marina Bay Sands">
                 <p class="photo-caption-inline">Marina Bay Sands. Not even finished yet. We'd return in 2013 on Seabourn to see the completed towers.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037266/028-4_vgjdyu.jpg" class="story-image" data-caption="Musicians bonding in Singapore: Richard, Ashley, and Thomas." alt="Musicians bonding">
                 <p class="photo-caption-inline">Richard, Ashley, and Thomas. We were in this together.</p>
                 <div class="story-gallery-grid-small">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_80/v1769455525/094_n9zzxl.jpg" class="gallery-thumb" data-caption="Singapore streets." alt="Singapore">
@@ -1250,7 +1250,7 @@ const locations = [
                 <p>There were two other pianists in our group. Ashley, our band master. And Alexander, a child prodigy type, pure Liberace energy. Both were incredibly supportive. They had to be.</p>
                 <p>I was nervous as hell.</p>
                 <p>After dry dock, we sailed back to Auckland and then on to Sydney for the inaugural voyage. I practiced the whole way. Every spare moment at that piano, trying to expand my repertoire from 30 songs to something respectable.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/025_yqujzb.jpg" class="story-image" data-caption="The Orient Bar, finished." alt="The Orient Bar">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030580/025_yqujzb.jpg" class="story-image" data-caption="The Orient Bar, finished." alt="The Orient Bar">
                 <p class="photo-caption-inline">The Orient Bar. Finished. Elegant. Intimidating. The room that terrified me.</p>
                 <p>The first time I saw the finished Orient Bar, the elegant room, the beautiful baby grand, the view out to sea, my fear didn't go away.</p>
                 <p>It grew.</p>
@@ -1282,14 +1282,14 @@ const locations = [
                 <p>Darling Harbour, Sydney.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,a_90/v1769455293/039-3_z79ldk.jpg" class="story-image" data-caption="Getting ready to board on the red carpet. I've never been so nervous." alt="Red carpet boarding">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg" class="story-image" data-caption="Standing in front of the Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/030_lzogz2.jpg" class="story-image" data-caption="Standing in front of the Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
                 </div>
                 <p class="photo-caption-inline">I felt like a movie star. I was terrified. I've never been so nervous. I wasn't ready for this.</p>
                 <p>That's me. Standing in front of the Pacific Jewel. Opera House in the background. Black suit. Big smile.</p>
                 <p>The smile was real. So was the terror underneath it.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour." alt="Pacific Jewel in Sydney Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769454688/008-2_jyut47.jpg" class="story-image" data-caption="Pacific Jewel in Sydney Harbour." alt="Pacific Jewel in Sydney Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031021/026-5_r4ehv3.jpg" class="story-image" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
                 </div>
                 <p class="photo-caption-inline">Sydney Harbour. This was a big deal.</p>
                 <div class="story-gallery-grid-small">
@@ -1300,13 +1300,13 @@ const locations = [
                 <p class="photo-caption-inline">Darling Harbour. The Royal Botanic Garden. Even the locals came out to see what the fuss was about.</p>
                 <p>That night: the inaugural party. Pink Hummer limos pulling up. Crowds everywhere. A stage on the dock. Fireworks planned for midnight.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/035_lhmdeq.jpg" class="story-image" data-caption="The inaugural party setup. Pink Hummer limos." alt="Inaugural party setup">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031099/046-2_csspcp.jpg" class="story-image" data-caption="The deck party at night." alt="Deck party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/035_lhmdeq.jpg" class="story-image" data-caption="The inaugural party setup. Pink Hummer limos." alt="Inaugural party setup">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031099/046-2_csspcp.jpg" class="story-image" data-caption="The deck party at night." alt="Deck party">
                 </div>
                 <p class="photo-caption-inline">The setup. The deck party. Would it rain?</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037257/043-3_qkjmjo.jpg" class="story-image" data-caption="Musos waiting for the sky to clear. Would it rain?" alt="Waiting for fireworks">
                 <p class="photo-caption-inline">Musos waiting for the sky to clear.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/016-5_pqce0o.jpg" class="story-image" data-caption="Famous Australian talent showed up for the party." alt="Australian celebrity">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/016-5_pqce0o.jpg" class="story-image" data-caption="Famous Australian talent showed up for the party." alt="Australian celebrity">
                 <p class="photo-caption-inline">Big Australian talent showed up for the party.</p>
                 <p>I was either going to sink or swim in the days ahead.</p>
                 <p>No in-between.</p>
@@ -1317,11 +1317,11 @@ const locations = [
                 <h3 class="section-title-panel">The Opera House at Night</h3>
                 <p>We pulled away from the dock.</p>
                 <p>The Opera House slid past. Lit up. Glowing against the dark.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
                 <p class="photo-caption-inline">Through the porthole. Then past us. Then gone.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
                 <p class="photo-caption-inline">Fireworks lit up the harbour. The inaugural voyage had begun.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
                 <p class="photo-caption-inline">Sydney Showboat escorting us into the night.</p>
                 <p>Somewhere in that harbor, the guitarist I used to be stayed behind.</p>
                 <p>The pianist I was about to become?</p>
@@ -1333,7 +1333,7 @@ const locations = [
                 <h3 class="section-title-panel">The First Night</h3>
                 <p>I wasn't scheduled to play until the ship started pulling away from Darling Harbour.</p>
                 <p>By then it was late. Guests were still in their cabins after their first afternoon on board, still finding their way around. The Orient Bar was on Deck 7, towards the back of the ship. Not everyone would find it right away.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/004-6_gfk1p1.jpg" class="story-image" data-caption="Me at the piano in the Orient Bar." alt="Derrick at the piano">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/004-6_gfk1p1.jpg" class="story-image" data-caption="Me at the piano in the Orient Bar." alt="Derrick at the piano">
                 <p class="photo-caption-inline">Me at the piano. The Orient Bar. Elegant. Intimidating. Mostly windows.</p>
                 <p>A few people came in and sat down at first.</p>
                 <p>I played. The sound of a baby grand piano in a mostly empty room that was mostly windows. It was jarring. Every note hung in the air. Every squeak of the foot pedals. Every plink of my fingers on the keys.</p>
@@ -1343,13 +1343,13 @@ const locations = [
                 <p>And then suddenly, people started walking in from both sides of the bar. Fifty of them. Maybe more.</p>
                 <p>The Orient Bar came alive.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/005-7_muz86f.jpg" class="story-image" data-caption="My first night in the Orient." alt="First night Orient Bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/003-7_vqkbd8.jpg" class="story-image" data-caption="Me with guests in the Orient Bar." alt="With guests">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/005-7_muz86f.jpg" class="story-image" data-caption="My first night in the Orient." alt="First night Orient Bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/003-7_vqkbd8.jpg" class="story-image" data-caption="Me with guests in the Orient Bar." alt="With guests">
                 </div>
                 <p class="photo-caption-inline">The room came alive. Guests everywhere.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/002-7_bmhskm.jpg" class="story-image" data-caption="More guests in the Orient." alt="More guests">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/001-5_exb3r6.jpg" class="story-image" data-caption="The bar full of life." alt="Orient Bar guests">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037257/002-7_bmhskm.jpg" class="story-image" data-caption="More guests in the Orient." alt="More guests">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/001-5_exb3r6.jpg" class="story-image" data-caption="The bar full of life." alt="Orient Bar guests">
                 </div>
                 <p class="photo-caption-inline">This was what I'd been terrified of. This was what I'd been waiting for.</p>
                 <p>For the next four months, I often wished for that quiet piano room again. The one where I could hear each squeak of the pedals, each plink of the keys.</p>
@@ -1390,31 +1390,31 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg" class="gallery-thumb" data-caption="Standing in front of Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037282/058_yjvfcg.jpg" class="gallery-thumb" data-caption="Pacific Jewel in dry dock, Singapore." alt="Jewel in dry dock">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037276/102_ly7caf.jpg" class="gallery-thumb" data-caption="The Jewel getting her name." alt="Getting the name">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031185/060_mhyxga.jpg" class="gallery-thumb" data-caption="Orient Bar under construction." alt="Orient Bar construction">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/025_yqujzb.jpg" class="gallery-thumb" data-caption="The finished Orient Bar." alt="Orient Bar finished">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/Singapore_Panorama_ryrlix.jpg" class="gallery-thumb" data-caption="Singapore panorama." alt="Singapore">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037266/028-4_vgjdyu.jpg" class="gallery-thumb" data-caption="Musicians bonding in Singapore." alt="Musicians">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037267/049-2_utq92i.jpg" class="gallery-thumb" data-caption="My passenger cabin." alt="Cabin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037257/008-2_yeieuu.jpg" class="gallery-thumb" data-caption="Embarkation day." alt="Embarkation">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031021/026-5_r4ehv3.jpg" class="gallery-thumb" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/035_lhmdeq.jpg" class="gallery-thumb" data-caption="Inaugural party setup." alt="Party setup">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769035906/03-opera-house-dusk_b5zehq.jpg" class="gallery-thumb" data-caption="Opera House at dusk." alt="Opera House dusk">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030580/060_dczkem.jpg" class="gallery-thumb" data-caption="Opera House at night." alt="Opera House night">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769031099/046-2_csspcp.jpg" class="gallery-thumb" data-caption="Deck party at night." alt="Deck party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/045_ngolea.jpg" class="gallery-thumb" data-caption="Sydney Showboat escorting us." alt="Showboat">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/011-8_soq3q6.jpg" class="gallery-thumb" data-caption="Orient Bar filling up." alt="Bar filling">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/005-7_muz86f.jpg" class="gallery-thumb" data-caption="First night in the Orient." alt="First night">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/003-7_vqkbd8.jpg" class="gallery-thumb" data-caption="With guests." alt="With guests">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037256/001-5_exb3r6.jpg" class="gallery-thumb" data-caption="Orient Bar full of life." alt="Bar full">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769037243/004-6_gfk1p1.jpg" class="gallery-thumb" data-caption="My first performance." alt="First performance">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/030_lzogz2.jpg" class="gallery-thumb" data-caption="Standing in front of Pacific Jewel at Darling Harbour." alt="Derrick at Darling Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037282/058_yjvfcg.jpg" class="gallery-thumb" data-caption="Pacific Jewel in dry dock, Singapore." alt="Jewel in dry dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037276/102_ly7caf.jpg" class="gallery-thumb" data-caption="The Jewel getting her name." alt="Getting the name">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031185/060_mhyxga.jpg" class="gallery-thumb" data-caption="Orient Bar under construction." alt="Orient Bar construction">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030580/025_yqujzb.jpg" class="gallery-thumb" data-caption="The finished Orient Bar." alt="Orient Bar finished">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037257/Singapore_Panorama_ryrlix.jpg" class="gallery-thumb" data-caption="Singapore panorama." alt="Singapore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037266/028-4_vgjdyu.jpg" class="gallery-thumb" data-caption="Musicians bonding in Singapore." alt="Musicians">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037267/049-2_utq92i.jpg" class="gallery-thumb" data-caption="My passenger cabin." alt="Cabin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037257/008-2_yeieuu.jpg" class="gallery-thumb" data-caption="Embarkation day." alt="Embarkation">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031021/026-5_r4ehv3.jpg" class="gallery-thumb" data-caption="Sydney Harbour panorama." alt="Sydney Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/035_lhmdeq.jpg" class="gallery-thumb" data-caption="Inaugural party setup." alt="Party setup">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769035906/03-opera-house-dusk_b5zehq.jpg" class="gallery-thumb" data-caption="Opera House at dusk." alt="Opera House dusk">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030580/060_dczkem.jpg" class="gallery-thumb" data-caption="Opera House at night." alt="Opera House night">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769031099/046-2_csspcp.jpg" class="gallery-thumb" data-caption="Deck party at night." alt="Deck party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/045_ngolea.jpg" class="gallery-thumb" data-caption="Sydney Showboat escorting us." alt="Showboat">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/011-8_soq3q6.jpg" class="gallery-thumb" data-caption="Orient Bar filling up." alt="Bar filling">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/005-7_muz86f.jpg" class="gallery-thumb" data-caption="First night in the Orient." alt="First night">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/003-7_vqkbd8.jpg" class="gallery-thumb" data-caption="With guests." alt="With guests">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/001-5_exb3r6.jpg" class="gallery-thumb" data-caption="Orient Bar full of life." alt="Bar full">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/004-6_gfk1p1.jpg" class="gallery-thumb" data-caption="My first performance." alt="First performance">
                 </div>
             </div>
         `,
         fullDesc: "My agent called with a catch: P&O wanted me back, but not as a guitarist. They wanted me at the piano.\n\n'You do play piano, right?'\n\nWell. Yeah. Kind of.\n\nThe ship was transformed in Singapore. So was I.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769030579/030_lzogz2.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/030_lzogz2.jpg"
     },
     {
         id: 12,
@@ -1425,7 +1425,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Fjords that defy description.",
         fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532665/DSC00376_t661hp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532665/DSC00376_t661hp.jpg"
     },
     {
         id: 13,
@@ -1522,8 +1522,8 @@ const locations = [
                         <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-30_yrmpiw.jpg" class="story-image" alt="Akaroa lighthouse panorama">
                     </div>
                     <div class="story-gallery-grid">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817323/IMG_0843_bhszx1.jpg" class="story-image" alt="Akaroa graveyard">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817327/IMG_0842_fj656g.jpg" class="story-image" alt="Akaroa forest graveyard">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817323/IMG_0843_bhszx1.jpg" class="story-image" alt="Akaroa graveyard">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817327/IMG_0842_fj656g.jpg" class="story-image" alt="Akaroa forest graveyard">
                     </div>
                 </details>
             </div>
@@ -1559,7 +1559,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "The cool little capital.",
         fullDesc: "New Zealand's capital lived up to its nickname—the coolest little capital in the world. Compact, walkable, with a thriving arts scene and some of the best craft beer in the Southern Hemisphere. Wellington felt like home.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816673/wellington_dsv7qd.jpg",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816673/wellington_dsv7qd.jpg",
         richContent: `
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Wind</span>
@@ -1617,7 +1617,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Vintage architecture and classic automobiles.",
         fullDesc: "Napier is famous for its Art Deco architecture, rebuilt after an earthquake in 1931.\n\nWalking these streets feels like stepping back into the Great Gatsby era. Classic cars line the boulevards. The whole town is a time capsule.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816605/Napier_ktolwj.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816605/Napier_ktolwj.jpg"
     },
     {
         id: 17,
@@ -1676,7 +1676,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Kingdom of Tonga.",
         fullDesc: "Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.\n\nIt is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here-slower, more intentional.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816004/tonga_jolrwg.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816004/tonga_jolrwg.jpg"
     },
     {
         id: 19,
@@ -1687,7 +1687,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The pearl of the Pacific.",
         fullDesc: "The water here is a color I didn't know existed.\n\nWe anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769816171/bora_bora_fpjre2.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816171/bora_bora_fpjre2.jpg"
     },
     {
         id: 20,
@@ -1812,7 +1812,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Port Vila was supposed to be Isle of Pines. But when you're sandwiched between two cyclones on the maiden voyage of the Pacific Pearl - a voyage already marked by a falling chandelier - you take whatever safe harbor you can get. The captain docked with enough force to crack my cabin wall. The staff captain said I was lucky. I think I know what he meant.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768966739/IMG_0357_uylflq.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768966739/IMG_0357_uylflq.jpg"
     },
     {
         id: 111,
@@ -1823,7 +1823,7 @@ const locations = [
         isDoor: false,
         shortDesc: "France in the South Pacific.",
         fullDesc: "New Caledonia is a surreal mashup of French culture and Pacific island life.\n\nBaguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817595/resort_pool_noumea_m9dbcy.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817595/resort_pool_noumea_m9dbcy.jpg"
     },
     {
         id: 117,
@@ -1918,7 +1918,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Lifou was one of those places that felt like a secret. On the far side of the island was a swimming spot with water so clear it barely looked real. But it was the church on the hill that kept drawing me back - and the spider in the wooden fence who became my unlikely landmark friend.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768963793/New_Caldonia_church_t4pfw4.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768963793/New_Caldonia_church_t4pfw4.jpg"
     },
     {
         id: 23,
@@ -1929,7 +1929,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The Whitsundays-where beauty meets foreboding.",
         fullDesc: "I worried a lot. Every time I jumped onto the catamaran tender until the moment I left, a constant feeling droned its way around my brain. Something doesn't feel right.\n\nAgain I imagined an earlier time. When walking in the sand didn't burn my toes. When the glare of the sun while at sea wasn't so offensive. When one might have been able to take a deep breath of the world around them and be grateful, instead of being pulled in two directions by the beauty and the foreboding evidence of climate change.\n\nI've never been anywhere so consistently uncomfortable temperature-wise. You just know that something is going terribly wrong with the planet.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769817012/arlie_beach_wnpbnq.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817012/arlie_beach_wnpbnq.jpg"
     },
     {
         id: 24,
@@ -1941,7 +1941,7 @@ const locations = [
         shortDesc: "Half a day in rough seas, a pub, and someone's problems.",
         imageCaption: "Standing on disputed ground - days after reading 'Las Malvinas Son Argentinas' signs in Ushuaia.",
         fullDesc: "We stopped here for half a day during rough seas. Had a beer in one of the pubs and listened to a friend tell me all of her woes.\n\nUnique, memorable, and exhausting.\n\nThe irony wasn't lost on me-just days earlier in Ushuaia, I'd been reading those passionate anti-British posters about this very place. Now here I was, having a pint on the disputed ground itself.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142328_Facebook_bcerw1.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142328_Facebook_bcerw1.jpg"
     },
     {
         id: 25,
@@ -1952,7 +1952,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the Venus de Milo was found.",
         fullDesc: "Milos is what happens when a volcano meets the Aegean.\n\nThe beaches here aren't just beautiful-they're otherworldly. Sarakiniko looks like the surface of the moon. Kleftiko's sea caves glow turquoise. This island doesn't get the crowds of Santorini, and that's exactly why I loved it.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767734543/IMG_3093_p55z1r.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767734543/IMG_3093_p55z1r.jpg"
     },
     {
         id: 41,
@@ -2008,8 +2008,8 @@ const locations = [
                 <p>From the tender port, I took an excursion inland to Lipica - the birthplace of the famous Lipizzan horses. This historic stud farm has been breeding these magnificent white horses since 1580, making it one of the oldest in the world.</p>
                 <p>The classical dressage performance was breathtaking - watching these powerful horses move with such grace and precision, performing movements that have been perfected over centuries.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141730_Facebook_kjfnuv.jpg" class="story-image" data-caption="The Lipizzan horses performing classical dressage at Lipica." alt="Lipizzan horse performance at Lipica">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141721_Facebook_zyavdi.jpg" class="story-image" data-caption="Lipica Stud Farm - home of the Lipizzan breed since 1580." alt="Lipica Stud Farm horse show">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141730_Facebook_kjfnuv.jpg" class="story-image" data-caption="The Lipizzan horses performing classical dressage at Lipica." alt="Lipizzan horse performance at Lipica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141721_Facebook_zyavdi.jpg" class="story-image" data-caption="Lipica Stud Farm - home of the Lipizzan breed since 1580." alt="Lipica Stud Farm horse show">
                 </div>
                 <p class="photo-caption-inline">The famous Lipizzan horses at Lipica Stud Farm, birthplace of the breed.</p>
             </div>
@@ -2050,7 +2050,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Slovenia has only 47 kilometers of coastline. Piran is the jewel of it.\n\nVenetian architecture, narrow winding streets, and none of the crowds of nearby Croatia. We walked the sea wall at sunset and watched the fishing boats come in. Perfect.\n\nFrom here I took an excursion to Lipica - the birthplace of the famous Lipizzan horses, breeding these magnificent white horses since 1580.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767734745/IMG_1778_fw5ihj.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767734745/IMG_1778_fw5ihj.jpg"
     },
     {
         id: 27,
@@ -2095,8 +2095,8 @@ const locations = [
                 <h3 class="section-title-panel">1,350 Steps to the Top</h3>
                 <p>They climb straight up the mountain behind the old town - 1,350 steps to the fortress at the top. I made the climb. The view was worth every step.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735480/IMG_1657_xtlvwv.jpg" class="story-image" alt="Kotor from the walls">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735569/IMG_1696_o1sjn5.jpg" class="story-image" alt="Kotor old town">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735480/IMG_1657_xtlvwv.jpg" class="story-image" alt="Kotor from the walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735569/IMG_1696_o1sjn5.jpg" class="story-image" alt="Kotor old town">
                 </div>
                 <p class="photo-caption-inline">The view from the fortress walls, and the old town below.</p>
             </div>
@@ -2104,7 +2104,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Old Town</span>
                 <h3 class="section-title-panel">Medieval Perfection</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735553/IMG_1717_ggcmyu.jpg" class="story-image" alt="Kotor fortress walls">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735553/IMG_1717_ggcmyu.jpg" class="story-image" alt="Kotor fortress walls">
                 <p class="photo-caption-inline">The fortress walls - still standing after centuries.</p>
                 <p>Kotor's old town is a maze of narrow streets, hidden squares, and cats. So many cats. The Venetians built this place to last, and it has.</p>
             </div>
@@ -2139,14 +2139,14 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735553/IMG_1717_ggcmyu.jpg" class="gallery-thumb" data-caption="The fortress walls of Kotor." alt="Kotor walls">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735480/IMG_1657_xtlvwv.jpg" class="gallery-thumb" data-caption="View from the fortress walls." alt="Kotor view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735569/IMG_1696_o1sjn5.jpg" class="gallery-thumb" data-caption="Kotor old town from above." alt="Kotor old town">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735553/IMG_1717_ggcmyu.jpg" class="gallery-thumb" data-caption="The fortress walls of Kotor." alt="Kotor walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735480/IMG_1657_xtlvwv.jpg" class="gallery-thumb" data-caption="View from the fortress walls." alt="Kotor view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735569/IMG_1696_o1sjn5.jpg" class="gallery-thumb" data-caption="Kotor old town from above." alt="Kotor old town">
                 </div>
             </div>
         `,
         fullDesc: "The fjord approach to Kotor is dramatic enough. Then you see the walls.\n\nThey climb straight up the mountain behind the old town-1,350 steps to the fortress at the top. I made the climb. The view was worth every step.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735553/IMG_1717_ggcmyu.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735553/IMG_1717_ggcmyu.jpg"
     },
     {
         id: 28,
@@ -2157,7 +2157,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where Archimedes ran naked through the streets.",
         fullDesc: "Syracuse was once the most powerful city in the Greek world-bigger than Athens.\n\nThe ancient theater still hosts performances. The ear of Dionysius still echoes. And somewhere in these streets, Archimedes shouted 'Eureka!' and changed history.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735639/IMG_1240_swdpx7.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735639/IMG_1240_swdpx7.jpg"
     },
     {
         id: 29,
@@ -2196,8 +2196,8 @@ const locations = [
                 <p>Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.</p>
                 <p>Valletta is built on a grid - unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735863/IMG_1155_qtda7b.jpg" class="story-image" alt="Malta Grand Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="story-image" alt="Malta view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg" class="story-image" alt="Malta Grand Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="story-image" alt="Malta view">
                 </div>
                 <p class="photo-caption-inline">The Grand Harbour and the fortress walls of Valletta.</p>
             </div>
@@ -2232,13 +2232,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735863/IMG_1155_qtda7b.jpg" class="gallery-thumb" data-caption="Malta Grand Harbour." alt="Grand Harbour">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="gallery-thumb" data-caption="The fortress walls of Valletta." alt="Malta fortress">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg" class="gallery-thumb" data-caption="Malta Grand Harbour." alt="Grand Harbour">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="gallery-thumb" data-caption="The fortress walls of Valletta." alt="Malta fortress">
                 </div>
             </div>
         `,
         fullDesc: "Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.\n\nValletta is built on a grid-unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735863/IMG_1155_qtda7b.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg"
     },
     {
         id: 30,
@@ -2249,7 +2249,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient history meets beach culture.",
         fullDesc: "Tel Aviv is two cities in one.\n\nThere's the White City-4,000 Bauhaus buildings, more than anywhere else on Earth. And there's the beach scene-surfboards, cafes, and a energy that doesn't stop when the sun goes down. The contrast with nearby Jerusalem couldn't be starker.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767735952/IMG_0854_wmukmp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735952/IMG_0854_wmukmp.jpg"
     },
     {
         id: 31,
@@ -2287,8 +2287,8 @@ const locations = [
                 <h3 class="section-title-panel">Cleopatra's City</h3>
                 <p>Alexandria was founded by Alexander the Great and ruled by Cleopatra. The famous lighthouse is gone. The library burned. But the city endures - chaotic, loud, and utterly captivating.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736004/IMG_0687_znjvkv.jpg" class="story-image" alt="Alexandria corniche">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736027/IMG_0655_vpe0lu.jpg" class="story-image" alt="Alexandria waterfront">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg" class="story-image" alt="Alexandria corniche">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736027/IMG_0655_vpe0lu.jpg" class="story-image" alt="Alexandria waterfront">
                 </div>
                 <p class="photo-caption-inline">The corniche and waterfront - where the ancient lighthouse once guided ships into harbor.</p>
                 <p>Standing on the corniche, you feel the weight of all that history pushing up through the pavement.</p>
@@ -2324,13 +2324,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736004/IMG_0687_znjvkv.jpg" class="gallery-thumb" data-caption="Alexandria corniche." alt="Alexandria corniche">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736027/IMG_0655_vpe0lu.jpg" class="gallery-thumb" data-caption="Alexandria waterfront." alt="Alexandria waterfront">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg" class="gallery-thumb" data-caption="Alexandria corniche." alt="Alexandria corniche">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736027/IMG_0655_vpe0lu.jpg" class="gallery-thumb" data-caption="Alexandria waterfront." alt="Alexandria waterfront">
                 </div>
             </div>
         `,
         fullDesc: "Alexandria was founded by Alexander the Great and ruled by Cleopatra.\n\nThe famous lighthouse is gone. The library burned. But the city endures-chaotic, loud, and utterly captivating. Standing on the corniche, you feel the weight of all that history pushing up through the pavement.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736004/IMG_0687_znjvkv.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg"
     },
     {
         id: 32,
@@ -2341,7 +2341,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Sensory overload in the best way.",
         fullDesc: "Nothing prepares you for Mumbai.\n\nThe crowds. The colors. The sounds. The smells. It's overwhelming and exhilarating all at once. We visited the Gateway of India at sunset and watched the city come alive. Bollywood dreams and colonial grandeur, street food and skyscrapers-all crammed together.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767736180/IMG_0914_u5kskn.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736180/IMG_0914_u5kskn.jpg"
     },
     {
         id: 114,
@@ -2644,8 +2644,8 @@ const locations = [
                 <p>They call it Kodak Gap because everyone reaches for their camera. The Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains.</p>
                 <p>Time stops here.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="story-image" alt="Antarctica ice">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="story-image" alt="Antarctica landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="story-image" alt="Antarctica ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="story-image" alt="Antarctica landscape">
                 </div>
                 <p class="photo-caption-inline">Ice in every direction. The silence is overwhelming.</p>
             </div>
@@ -2654,8 +2654,8 @@ const locations = [
                 <span class="section-tag-panel">The Ice</span>
                 <h3 class="section-title-panel">A World of Blue and White</h3>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="story-image" alt="Antarctic ice formations">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951500/Screenshot_20260120_143046_Facebook_ssqrle.jpg" class="story-image" alt="Antarctic scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="story-image" alt="Antarctic ice formations">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951500/Screenshot_20260120_143046_Facebook_ssqrle.jpg" class="story-image" alt="Antarctic scenery">
                 </div>
                 <p class="photo-caption-inline">Every iceberg is different. Some are brilliant white, others glow blue from within.</p>
                 <p>You've never seen anything like it. And you never will again - each moment down here is unique, unrepeatable.</p>
@@ -2691,15 +2691,15 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767737978/IMG_6712_bmwcxi.jpg" class="gallery-thumb" data-caption="The Lemaire Channel." alt="Lemaire Channel">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="gallery-thumb" data-caption="Antarctic ice." alt="Ice">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="gallery-thumb" data-caption="Antarctic landscape." alt="Landscape">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="gallery-thumb" data-caption="Ice formations." alt="Ice formations">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767737978/IMG_6712_bmwcxi.jpg" class="gallery-thumb" data-caption="The Lemaire Channel." alt="Lemaire Channel">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="gallery-thumb" data-caption="Antarctic ice." alt="Ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="gallery-thumb" data-caption="Antarctic landscape." alt="Landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="gallery-thumb" data-caption="Ice formations." alt="Ice formations">
                 </div>
             </div>
         `,
         fullDesc: "They call it Kodak Gap because everyone reaches for their camera.\n\nThe Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains. Time stops here.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767737978/IMG_6712_bmwcxi.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767737978/IMG_6712_bmwcxi.jpg"
     },
     {
         id: 121,
@@ -2738,8 +2738,8 @@ const locations = [
                 <p>We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.</p>
                 <p>Sometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="story-image" alt="Petermann Island view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="story-image" alt="Petermann Island scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="story-image" alt="Petermann Island view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="story-image" alt="Petermann Island scenery">
                 </div>
                 <p class="photo-caption-inline">Views from the deck as we sailed past.</p>
             </div>
@@ -2748,12 +2748,12 @@ const locations = [
                 <span class="section-tag-panel">The Ice</span>
                 <h3 class="section-title-panel">Frozen Perfection</h3>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="story-image" alt="Antarctic scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="story-image" alt="Petermann ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="story-image" alt="Antarctic scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="story-image" alt="Petermann ice">
                 </div>
                 <p class="photo-caption-inline">Ice formations and glaciers along the coast.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="story-image" alt="Petermann Island landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="story-image" alt="Petermann Island landscape">
                 </div>
                 <p class="photo-caption-inline">Antarctica in all its frozen glory.</p>
             </div>
@@ -2788,16 +2788,16 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="gallery-thumb" data-caption="Petermann Island view." alt="Petermann view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="gallery-thumb" data-caption="Petermann scenery." alt="Petermann scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="gallery-thumb" data-caption="Antarctic scenery." alt="Antarctic scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="gallery-thumb" data-caption="Petermann ice." alt="Ice">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="gallery-thumb" data-caption="Antarctica frozen glory." alt="Frozen glory">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="gallery-thumb" data-caption="Petermann Island view." alt="Petermann view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="gallery-thumb" data-caption="Petermann scenery." alt="Petermann scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="gallery-thumb" data-caption="Antarctic scenery." alt="Antarctic scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="gallery-thumb" data-caption="Petermann ice." alt="Ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="gallery-thumb" data-caption="Antarctica frozen glory." alt="Frozen glory">
                 </div>
             </div>
         `,
         fullDesc: "We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.\n\nSometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg"
     },
     {
         id: 35,
@@ -2808,7 +2808,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The southernmost post office in the world.",
         fullDesc: "Port Lockroy is surreal.\n\nA tiny British base from the 1940s, now a museum and gift shop staffed by four people each summer. You can send postcards that take months to arrive. But the real attraction is the gentoo penguins-completely unafraid, waddling between visitors like we're the attraction.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767739780/IMG_6538_tolutk.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767739780/IMG_6538_tolutk.jpg"
     },
     {
         id: 37,
@@ -2853,18 +2853,18 @@ const locations = [
                 <h3 class="section-title-panel">Olympic Village & Museum</h3>
                 <p>I took a tour to the Olympic Village and museum from the 1992 Summer Games. The whole complex is still impressive - built to host the world, now a vibrant neighborhood.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="story-image" alt="Barcelona Olympic Village">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="story-image" alt="Barcelona Olympic site">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="story-image" alt="Barcelona Olympic Village">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="story-image" alt="Barcelona Olympic site">
                 </div>
                 <p class="photo-caption-inline">The Olympic Village - built for 1992, still going strong.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="story-image" alt="Olympic Museum">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141853_Facebook_njurfr.jpg" class="story-image" alt="Barcelona views">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="story-image" alt="Olympic Museum">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141853_Facebook_njurfr.jpg" class="story-image" alt="Barcelona views">
                 </div>
                 <p class="photo-caption-inline">The Olympic Museum and views of the city.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="story-image" alt="Barcelona cityscape">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="story-image" alt="Barcelona architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="story-image" alt="Barcelona cityscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="story-image" alt="Barcelona architecture">
                 </div>
                 <p class="photo-caption-inline">Barcelona from above - Mediterranean magic.</p>
             </div>
@@ -2899,17 +2899,17 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738440/IMG_20140811_122138_cqwjid.jpg" class="gallery-thumb" data-caption="Barcelona cityscape." alt="Barcelona">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="gallery-thumb" data-caption="Olympic Village." alt="Olympic Village">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="gallery-thumb" data-caption="Olympic site." alt="Olympic site">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="gallery-thumb" data-caption="Olympic Museum." alt="Museum">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="gallery-thumb" data-caption="Barcelona from above." alt="City view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="gallery-thumb" data-caption="Barcelona architecture." alt="Architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738440/IMG_20140811_122138_cqwjid.jpg" class="gallery-thumb" data-caption="Barcelona cityscape." alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="gallery-thumb" data-caption="Olympic Village." alt="Olympic Village">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="gallery-thumb" data-caption="Olympic site." alt="Olympic site">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="gallery-thumb" data-caption="Olympic Museum." alt="Museum">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="gallery-thumb" data-caption="Barcelona from above." alt="City view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="gallery-thumb" data-caption="Barcelona architecture." alt="Architecture">
                 </div>
             </div>
         `,
         fullDesc: "Barcelona is Gaudí's city.\n\nThe Sagrada Família defies description-a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night. This city knows how to live.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769805706/20150713_123849_xbyscp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769805706/20150713_123849_xbyscp.jpg"
     },
     {
         id: 38,
@@ -2920,7 +2920,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the beautiful people play.",
         fullDesc: "St. Tropez was a fishing village until Brigitte Bardot showed up.\n\nNow it's superyachts and champagne, designer boutiques and paparazzi. But wander away from the port and you find quiet squares, excellent rosé, and that golden Provençal light that painters have chased for centuries.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738529/IMG_5536_ipjhwy.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738529/IMG_5536_ipjhwy.jpg"
     },
     {
         id: 39,
@@ -2931,7 +2931,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Party island with a secret peaceful side.",
         fullDesc: "Everyone knows Ibiza for the clubs. But the island has another side.\n\nThe old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1767738680/IMG_20140610_113551_fvskrb.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738680/IMG_20140610_113551_fvskrb.jpg"
     },
     // New locations - January 2026
     {
@@ -2943,7 +2943,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the land runs out and the wind takes over.",
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg"
     },
     {
         id: 120,
@@ -2955,7 +2955,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "Sailing through Patagonia's dramatic channels.",
         fullDesc: "The Beagle Channel connects the Atlantic and Pacific through some of the most dramatic scenery on Earth. Named after Darwin's ship, this narrow passage winds between snow-capped mountains, past glaciers calving into the sea, and through waters so still they mirror the sky.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769814774/beagle_channl_xrs5y9.jpg",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769814774/beagle_channl_xrs5y9.jpg",
         richContent: `
             <div class="demographics-strip">
                 <div class="demo-item">
@@ -3023,7 +3023,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Coffee, culture, and hidden laneways.",
         fullDesc: "Melbourne takes its coffee seriously. Very seriously.\n\nThe city's famous laneways hide street art, tiny bars, and some of the best food in the Southern Hemisphere. It's Australia's answer to Europe-cultured, cosmopolitan, and endlessly interesting.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521371/IMG_20131226_105910_urj5kq.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521371/IMG_20131226_105910_urj5kq.jpg"
     },
     {
         id: 43,
@@ -3148,7 +3148,7 @@ const locations = [
             ${generateGallery('amazon')}
         `,
         fullDesc: "1,000 miles up the Amazon River is a city of two million people called Manaus. In that city is an opera house - the Teatro Amazonas, built during the rubber boom. I visited twice - the first time on a tributary excursion deep into the jungle, the second time I got lost in the west docks.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768952174/IMG_6136_bkdyes.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768952174/IMG_6136_bkdyes.jpg"
     },
     {
         id: 44,
@@ -3159,7 +3159,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A piece of Europe in North America.",
         fullDesc: "Quebec City is the only walled city north of Mexico.\n\nThe old town feels transported from France-cobblestone streets, sidewalk cafés, the imposing Château Frontenac watching over it all. In winter, it transforms into a snow-covered fairy tale.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521461/IMG_5903_bnajrx.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521461/IMG_5903_bnajrx.jpg"
     },
     {
         id: 45,
@@ -3263,7 +3263,7 @@ const locations = [
             ${generateGallery('rio')}
         `,
         fullDesc: "Every time the ship docked in Rio, getting lost was inevitable. Something about this city wanted to keep you there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until finally reaching Copacabana and having a Corona.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769809159/20200209_075921_rvq35a.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769809159/20200209_075921_rvq35a.jpg"
     },
     {
         id: 46,
@@ -3344,7 +3344,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.\n\nLord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him. Pastel houses stack up the hillside, and the Church of St. Peter perches dramatically on the rocks.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810340/IMG_5581_nzmylf.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810340/IMG_5581_nzmylf.jpg"
     },
     {
         id: 47,
@@ -3355,7 +3355,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Australia's southern outpost, gateway to Antarctica.",
         fullDesc: "Hobart sits in the shadow of Mount Wellington, looking out toward the pole.\n\nThis is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521843/023_nckajd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521843/023_nckajd.jpg"
     },
     {
         id: 48,
@@ -3366,7 +3366,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where whales come to the river.",
         fullDesc: "The Saguenay Fjord cuts deep into the Canadian Shield.\n\nBeluga whales gather where the cold fjord waters meet the St. Lawrence. The cliffs rise hundreds of feet on either side. In autumn, the forests explode in red and gold.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769521934/IMG_5899_nzg1xd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521934/IMG_5899_nzg1xd.jpg"
     },
     {
         id: 49,
@@ -3425,7 +3425,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where art and beauty were reinvented.",
         fullDesc: "Every street corner in Florence holds a masterpiece.\n\nMichelangelo's David. Brunelleschi's dome. The Uffizi's treasures. The Medici built this city into a monument to human achievement. Walking across the Ponte Vecchio at sunset, you understand why artists have been coming here for six hundred years.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522081/IMG_5442_szu1ta.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522081/IMG_5442_szu1ta.jpg"
     },
     {
         id: 51,
@@ -3436,7 +3436,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The volcano that never sleeps.",
         fullDesc: "Stromboli has been erupting continuously for over 2,000 years.\n\nSailors have used its glow to navigate these waters since ancient times. We anchored offshore at night and watched the orange explosions light up the sky every few minutes. The island itself is just the volcano-a few hundred people living on its slopes, trusting it to behave.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522184/IMG_0830_qjeyfg.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522184/IMG_0830_qjeyfg.jpg"
     },
     {
         id: 52,
@@ -3516,7 +3516,7 @@ const locations = [
             </div>
         `,
         fullDesc: "San Remo is where Italy comes to vacation.\n\nThe Casino is legendary. The flower market supplies much of Europe. Every February, the Sanremo Music Festival launches Italian pop careers. The old town climbs the hillside in a tangle of medieval streets.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810404/IMG_5475_cuf6vh.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810404/IMG_5475_cuf6vh.jpg"
     },
     {
         id: 53,
@@ -3527,7 +3527,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where Catalonia meets the sea.",
         fullDesc: "Roses sits on the Costa Brava-the 'wild coast'-near where Salvador Dalí made his home.\n\nThe bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522310/IMG_5245_zoii8t.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522310/IMG_5245_zoii8t.jpg"
     },
     {
         id: 54,
@@ -3538,7 +3538,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Wild beauty on the Isle of Beauty.",
         fullDesc: "Corsica is France, but barely.\n\nThe island has its own language, its own cuisine, its own fierce sense of identity. Propriano sits in the Gulf of Valinco, backed by mountains that drop straight to the sea. Napoleon was born just up the coast. The maquis-the fragrant scrubland-perfumes the air.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522398/IMG_20140607_120635_nogqsh.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522398/IMG_20140607_120635_nogqsh.jpg"
     },
     {
         id: 55,
@@ -3612,7 +3612,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Marseille is France's oldest city and its most diverse.\n\nThe Old Port has welcomed ships for 2,600 years. The bouillabaisse is non-negotiable. The Calanques-limestone cliffs plunging into turquoise water-rival any coastline in the world. This isn't Paris. Marseille doesn't care.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803210/IMG_20140606_110847_b49lhd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769803210/IMG_20140606_110847_b49lhd.jpg"
     },
     {
         id: 56,
@@ -3623,7 +3623,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A dozen different beaches on one small stretch.",
         fullDesc: "Le Lavandou is named for the lavender that once grew on these hills.\n\nThe town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522796/IMG_20140605_134214_uyyeui.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522796/IMG_20140605_134214_uyyeui.jpg"
     },
     {
         id: 57,
@@ -3696,7 +3696,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Monaco is two square kilometers of concentrated wealth.\n\nThe Casino is palatial. The Grand Prix tears through the streets every May. The yachts in the harbor cost more than most neighborhoods. It's absurd and glamorous and nothing quite like anywhere else.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810619/20150815_144825_fcjtyg.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810619/20150815_144825_fcjtyg.jpg"
     },
     {
         id: 58,
@@ -3707,7 +3707,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Greek island with an Italian accent.",
         fullDesc: "Corfu was Venetian for four hundred years, and it shows.\n\nThe old town has more in common with Venice than Athens. The Liston arcade could be in Bologna. But the olive groves and the crystal water are unmistakably Greek. Gerald Durrell grew up here. The Empress Sissi built her palace on the hill.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 59,
@@ -3719,7 +3719,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "The Bali tourists don't see.",
         fullDesc: "On Bali's quiet north coast, life moves at a different pace. No crowds, no clubs—just fishing villages, black sand beaches, and terraced rice paddies climbing the volcanic slopes.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769522980/IMG_4038_uylyls.jpg",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522980/IMG_4038_uylyls.jpg",
         richContent: `
             <div class="story-section-panel">
                 <span class="section-tag-panel">The North</span>
@@ -3766,7 +3766,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where cultures collide deliciously.",
         fullDesc: "Penang might have the best street food on Earth.\n\nChinese, Malay, Indian, Thai-all mixing in the hawker centers of George Town. The colonial architecture is UNESCO-protected. The temples are kaleidoscopic. Every meal is an adventure.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523078/IMG_3940_cbmzhe.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523078/IMG_3940_cbmzhe.jpg"
     },
     {
         id: 61,
@@ -3777,7 +3777,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where ambition knows no limits.",
         fullDesc: "Dubai shouldn't exist, and yet it does.\n\nA forest of impossible towers rising from the desert. Indoor ski slopes and artificial islands. The tallest building on Earth watching over it all. It's a monument to what happens when money and ambition have no restraints.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 113,
@@ -3788,7 +3788,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where tradition meets limitless ambition.",
         fullDesc: "Doha rose from the desert like a mirage made real.\n\nThe skyline is a showcase of architectural ambition-towers twisting and curving in impossible shapes. But walk through Souq Waqif and you're back in old Arabia, haggling over spices and textiles. The Museum of Islamic Art alone is worth the visit.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523194/PANO_20131030_100612_b6cnwl.jpg"
     },
     {
         id: 62,
@@ -3799,7 +3799,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Military convoy through pirate waters.",
         fullDesc: "This is where the tension began.\n\nShips don't just cruise through the Gulf of Aden and Red Sea casually. The threat of Somali piracy meant armed escorts, convoy formations, and a few days of heightened alertness. Fire hoses at the ready, extra watches posted, and the surreal sight of naval vessels flanking a cruise ship full of passengers sipping cocktails.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523558/IMG_0743_gxmqox.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523558/IMG_0743_gxmqox.jpg"
     },
     {
         id: 118,
@@ -3810,7 +3810,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The passage that changed world trade.",
         fullDesc: "The Suez Canal is 120 miles of engineering audacity.\n\nBefore it opened in 1869, ships had to sail around Africa. Now the desert slides past on both sides as you transit between the Mediterranean and the Red Sea. Camels watch from the banks. It's surreal.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523799/IMG_0722_wk3dxn.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523799/IMG_0722_wk3dxn.jpg"
     },
     {
         id: 112,
@@ -3821,7 +3821,7 @@ const locations = [
         isDoor: false,
         shortDesc: "World-class diving at the tip of Sinai.",
         fullDesc: "Sharm El Sheikh sits at the southern tip of the Sinai Peninsula where the Gulf of Aqaba meets the Gulf of Suez.\n\nThe coral reefs here are legendary-Ras Mohammed National Park is considered one of the top dive sites in the world. Crystal clear water, walls of colorful fish, and dramatic drop-offs into the deep blue.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769523893/IMG_0292_jmjzfl.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523893/IMG_0292_jmjzfl.jpg"
     },
     {
         id: 63,
@@ -3832,7 +3832,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Two continents, one magnificent city.",
         fullDesc: "Istanbul is the only city on Earth that spans two continents.\n\nThe Hagia Sophia. The Blue Mosque. The Grand Bazaar's endless warrens. The Bosphorus churning between Europe and Asia. Call to prayer mixing with ship horns. This city has been the center of empires for two thousand years, and it still feels like the center of something.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1769524178/IMG_3363_sd9rea.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524178/IMG_3363_sd9rea.jpg"
     },
     {
         id: 64,
@@ -3843,7 +3843,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The shortcut between oceans.",
         fullDesc: "The Panama Canal is one of humanity's greatest engineering achievements.\n\nTransiting through the locks, rising and falling between oceans, you feel the scale of what they built here. Ships from every nation queue to pass through. The jungle presses in from both sides. Connecting two oceans changed the world.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803417/20200311_100948_aus73q.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769803417/20200311_100948_aus73q.jpg"
     },
     {
         id: 117,
@@ -3854,7 +3854,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where Spanish colonial history meets Caribbean soul.",
         fullDesc: "Old San Juan is a living postcard.\n\nCobblestone streets wind between pastel buildings. El Morro fortress guards the harbor as it has for 500 years. The rum flows freely, the music spills out of every doorway, and the mix of Spanish, African, and Taíno cultures creates something uniquely Puerto Rican.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769808723/20200124_110715_x1nxye.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769808723/20200124_110715_x1nxye.jpg"
     },
     {
         id: 65,
@@ -3865,7 +3865,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where history was made on the Black Sea.",
         fullDesc: "Yalta is where Roosevelt, Churchill, and Stalin divided up the post-war world.\n\nBut before the conference, it was the Russian Riviera-Tsars built palaces along this coast. The Swallow's Nest castle clings impossibly to its cliff. The Black Sea stretches to the horizon.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524741/IMG_3336_unx2bt.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524741/IMG_3336_unx2bt.jpg"
     },
     {
         id: 66,
@@ -3876,7 +3876,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient Arabia with a modern soul.",
         fullDesc: "Muscat is what you hope the Middle East will be.\n\nThe Sultan Qaboos Grand Mosque is breathtaking. The old souks smell of frankincense. The mountains plunge to the sea. Oman has oil wealth but wears it lightly-this is Arabia without the excess.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524848/IMG_3858_nczhzc.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524848/IMG_3858_nczhzc.jpg"
     },
     {
         id: 67,
@@ -3887,7 +3887,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient city on a tiny peninsula.",
         fullDesc: "Nessebar packs 3,000 years of history onto a peninsula barely larger than a football field.\n\nGreek ruins, Byzantine churches, Ottoman houses-all crammed together on streets barely wide enough to walk. The Black Sea surrounds it on three sides. UNESCO calls it one of Europe's richest towns for historic buildings.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769524929/IMG_3277_jn2dkg.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524929/IMG_3277_jn2dkg.jpg"
     },
     {
         id: 68,
@@ -3898,7 +3898,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The impossible city built on water.",
         fullDesc: "Venice shouldn't exist, but it does-and has for over a thousand years.\n\nNo cars, no roads-just canals, bridges, and the most beautiful decay you'll ever see. The Piazza San Marco floods with acqua alta and tourists alike. Gondoliers navigate waters their families have worked for generations. Every corner reveals another impossible view.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769525228/IMG_2302_t26i3t.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769525228/IMG_2302_t26i3t.jpg"
     },
     {
         id: 69,
@@ -3969,7 +3969,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "Where the outback meets the ocean.",
         fullDesc: "Broome was built on pearls and still has that frontier feel. Cable Beach stretches for 22 kilometers of white sand. Camels walk the shoreline at sunset—a tradition from the Afghan cameleers who helped build the outback.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769801858/IMG_0196_dueq5z.jpg",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769801858/IMG_0196_dueq5z.jpg",
         richContent: `
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Beach</span>
@@ -4016,7 +4016,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Turkey's relaxed Aegean gem.",
         fullDesc: "Izmir has been a port city for three thousand years.\n\nThe ancient agora still stands in the city center. The waterfront promenade stretches for miles. The bazaar is less touristy than Istanbul's but just as atmospheric. This is Turkey's most progressive city, looking west across the Aegean toward Greece.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811340/Izmir_w6cmza.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769811340/Izmir_w6cmza.jpg"
     },
     {
         id: 73,
@@ -4027,7 +4027,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the Bahá'í gardens cascade to the sea.",
         fullDesc: "Haifa climbs Mount Carmel in terraces.\n\nThe Bahá'í Gardens are the showstopper-nineteen terraces of immaculate gardens cascading down the mountainside to the Mediterranean. Arabs and Jews live here in relative harmony. The German Colony serves excellent hummus. It's Israel's most liveable city.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769802091/IMG_20131015_121917_ebzafd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769802091/IMG_20131015_121917_ebzafd.jpg"
     },
     {
         id: 74,
@@ -4038,7 +4038,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A colorful village on the Ionian coast.",
         fullDesc: "Parga tumbles down to its harbor in a cascade of pastel houses.\n\nThe Venetian castle watches over it all. The beaches nearby are some of Greece's best-kept secrets. Tour groups head to Corfu; those who know come here instead. It feels like the Greek islands, but it's on the mainland.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810786/IMG_20130917_130228_hrw12j.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810786/IMG_20130917_130228_hrw12j.jpg"
     },
     {
         id: 75,
@@ -4049,7 +4049,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where yachts and lavender fields meet.",
         fullDesc: "Hvar has been famous since the ancient Greeks arrived.\n\nNow it's Croatia's answer to St. Tropez-superyachts in the harbor, beach clubs on the islands nearby, the beautiful and fashionable crowding the marble streets. But climb to the fortress above town and it's just you, the lavender-scented breeze, and views across a hundred islands.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769802180/IMG_3648_vdqbfm.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769802180/IMG_3648_vdqbfm.jpg"
     },
     {
         id: 76,
@@ -4060,7 +4060,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Romania's window to the Black Sea.",
         fullDesc: "Placeholder description for Constanța.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811214/constanta_pqbuxd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769811214/constanta_pqbuxd.jpg"
     },
     {
         id: 77,
@@ -4089,7 +4089,7 @@ const locations = [
                 </div>
             </div>
         `,
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769800172/IMG_20130910_135124_zvsakq.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769800172/IMG_20130910_135124_zvsakq.jpg"
     },
     {
         id: 78,
@@ -4100,7 +4100,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Where the Olympic flame begins its journey.",
         fullDesc: "Placeholder description for Katakolon.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769798766/IMG_3602_tgz9t9.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769798766/IMG_3602_tgz9t9.jpg"
     },
     {
         id: 79,
@@ -4111,7 +4111,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Opera, architecture, and the famous steps.",
         fullDesc: "Placeholder description for Odessa.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799719/IMG_3327_t43wse.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799719/IMG_3327_t43wse.jpg"
     },
     {
         id: 80,
@@ -4122,7 +4122,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Gateway to one of the ancient world's great cities.",
         fullDesc: "Placeholder description for Kuşadası.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799095/IMG_3161_bht42h.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799095/IMG_3161_bht42h.jpg"
     },
     {
         id: 81,
@@ -4133,7 +4133,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Windmills, whitewash, and legendary nightlife.",
         fullDesc: "Placeholder description for Mykonos.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769810900/IMG_20140620_120410_i3ltwo.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810900/IMG_20140620_120410_i3ltwo.jpg"
     },
     {
         id: 82,
@@ -4144,7 +4144,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Greece's first capital, still charming.",
         fullDesc: "Placeholder description for Nafplio.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799368/IMG_2996_hzlqdy.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799368/IMG_2996_hzlqdy.jpg"
     },
     {
         id: 83,
@@ -4155,7 +4155,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Homer wrote about this bay.",
         fullDesc: "Placeholder description for Pylos.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811070/pylos_gddewr.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769811070/pylos_gddewr.jpg"
     },
     {
         id: 84,
@@ -4166,7 +4166,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The mosaics here will leave you speechless.",
         fullDesc: "Placeholder description for Ravenna.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803566/IMG_2375_nmfzrq.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769803566/IMG_2375_nmfzrq.jpg"
     },
     {
         id: 85,
@@ -4177,7 +4177,7 @@ const locations = [
         isDoor: false,
         shortDesc: "UNESCO-listed cathedral, Game of Thrones location.",
         fullDesc: "Šibenik is Croatia's oldest native town on the Adriatic - founded by Croats rather than Greeks or Romans.\n\nThe Cathedral of St. James is the crown jewel, a UNESCO World Heritage Site built entirely of stone and brick with no wooden supports. It took over a century to complete (1431-1536). The fortress above town, St. Michael's, was used as a Game of Thrones filming location for the Iron Bank of Braavos.\n\nSmaller and quieter than Split or Dubrovnik, Šibenik feels like discovering Croatia before the crowds found it.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769803667/IMG_1752_xpouvp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769803667/IMG_1752_xpouvp.jpg"
     },
     {
         id: 86,
@@ -4188,7 +4188,7 @@ const locations = [
         isDoor: false,
         shortDesc: "That famous beach with the rusted ship.",
         fullDesc: "Placeholder description for Zakynthos.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769811177/zakinthos_uffa5b.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769811177/zakinthos_uffa5b.jpg"
     },
     {
         id: 87,
@@ -4199,7 +4199,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The port for the Oracle's mountain.",
         fullDesc: "Placeholder description for Itea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769798598/IMG_1301_artaae.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769798598/IMG_1301_artaae.jpg"
     },
     {
         id: 88,
@@ -4221,7 +4221,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Gateway to Borobudur.",
         fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world.\n\nWe took an excursion inland to see it. Nothing prepares you for the scale of the place. Thousands of intricate stone carvings, Buddha statues in bell-shaped stupas, all of it emerging from the jungle like something from another time.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768527359/DSC00357_et8mzd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg"
     },
     {
         id: 90,
@@ -4232,7 +4232,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Australia's remote island in the Indian Ocean.",
         fullDesc: "Christmas Island is famous for its annual red crab migration - millions of crabs making their way from the jungle to the sea.\n\nIt's one of Australia's most remote territories, sitting in the Indian Ocean closer to Indonesia than the mainland. The island is mostly national park, with rainforest, seabirds, and some of the most pristine reefs in the world.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768532294/IMG_0185_f0sgyf.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532294/IMG_0185_f0sgyf.jpg"
     },
     {
         id: 91,
@@ -4386,7 +4386,7 @@ const locations = [
             ${generateGallery('phuket')}
         `,
         fullDesc: "Phuket taught me a lesson I'll never forget. A night off, a bar with jungle animals painted on the walls, friendly strangers. One beer. One shot. Then nothing. I woke up in a strange room. My friend Martin is the reason I'm still here to tell this story.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80/v1768865557/PANO_20131118_134025_qd3r7o.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768865557/PANO_20131118_134025_qd3r7o.jpg"
     },
     {
         id: 93,
@@ -4445,7 +4445,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Fiji's vibrant capital.",
         fullDesc: "Placeholder description for Suva.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769814482/fiji_xrsums.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769814482/fiji_xrsums.jpg"
     },
     {
         id: 95,
@@ -4648,7 +4648,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Peru's sprawling capital on the Pacific.",
         fullDesc: "Placeholder description for Lima.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769815535/20200305_125007_ulpo5m.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769815535/20200305_125007_ulpo5m.jpg"
     },
     {
         id: 100,
@@ -4851,7 +4851,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Colorful stilted houses and wooden churches.",
         fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769799840/IMG_6655_rwwdum.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799840/IMG_6655_rwwdum.jpg"
     },
     {
         id: 105,
@@ -4958,7 +4958,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Tango, steak, and faded grandeur.",
         fullDesc: "Placeholder description for Buenos Aires.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769806999/IMG_6420_qzn455.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769806999/IMG_6420_qzn455.jpg"
     },
     {
         id: 108,
@@ -4994,12 +4994,12 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769826219/recife_1_swhgm9.jpg" class="gallery-thumb" data-caption="Francisco Brennand sculpture at Parque das Esculturas." alt="Brennand sculpture Recife">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769826219/recife_1_swhgm9.jpg" class="gallery-thumb" data-caption="Francisco Brennand sculpture at Parque das Esculturas." alt="Brennand sculpture Recife">
                 </div>
             </div>
         `,
         fullDesc: "Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.\n\nThe old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769825894/recife_mlr7ts.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825894/recife_mlr7ts.jpg"
     },
     {
         id: 110,
@@ -5058,7 +5058,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Ancient Roman hideaway in the Tyrrhenian Sea.",
         fullDesc: "Ponza is the largest of the Pontine Islands, a volcanic archipelago off the coast between Rome and Naples.\n\nThe Romans carved cisterns and grottoes into these cliffs two thousand years ago. The harbor is ringed with pastel houses, and the beaches are accessible only by boat. This is where Romans escape when they want to disappear.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769800415/PANO_20140530_121202_f2hnrp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769800415/PANO_20140530_121202_f2hnrp.jpg"
     },
     {
         id: 124,
@@ -5083,12 +5083,12 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/v1769823674/20150804_114120_kg0f2a.jpg" class="gallery-thumb" data-caption="Amalfi harbor from the water." alt="Amalfi harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823674/20150804_114120_kg0f2a.jpg" class="gallery-thumb" data-caption="Amalfi harbor from the water." alt="Amalfi harbor">
                 </div>
             </div>
         `,
         fullDesc: "Amalfi was once a maritime republic rivaling Venice and Genoa.\n\nThe cathedral dominates the piazza, its Arab-Norman facade climbing 62 steps above the crowds. The town clings to cliffs so steep that the streets become staircases. Lemon groves terrace the hillsides. The coast that bears its name is one of the most beautiful drives on Earth.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769804268/IMG_7001_wxe4a4.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769804268/IMG_7001_wxe4a4.jpg"
     },
     {
         id: 125,
@@ -5099,7 +5099,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The island that couldn't hold an emperor.",
         fullDesc: "Elba is where they sent Napoleon after his first fall.\n\nHe lasted ten months. The Medici fortresses of Portoferraio still crown the hills above the harbor, and pastel buildings tumble down to the waterfront. The island is beautiful enough that exile here hardly seems like punishment. Napoleon apparently agreed - he escaped and marched back to Paris for the Hundred Days.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769804712/IMG_7039_fbjze4.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769804712/IMG_7039_fbjze4.jpg"
     },
     {
         id: 126,
@@ -5110,7 +5110,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Medieval walls on borrowed time.",
         fullDesc: "Bonifacio clings to limestone cliffs that are slowly crumbling into the sea.\n\nThe old town perches impossibly on the cliff edge, some buildings hanging over nothing but air. The citadel has guarded the strait between Corsica and Sardinia for 800 years. Below, the harbor shelters yachts where Genoese galleys once anchored. The cliffs glow white against the Mediterranean blue.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769805812/20150621_105547_atqiml.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769805812/20150621_105547_atqiml.jpg"
     },
     {
         id: 127,
@@ -5121,7 +5121,7 @@ const locations = [
         isDoor: false,
         shortDesc: "Caribbean soul with British traditions.",
         fullDesc: "Barbados is the Caribbean's easternmost island, where British colonial history meets warm island culture.\n\nThe rum here is legendary - Mount Gay has been distilling since 1703. Cricket is religion. The beaches are postcard-perfect, and Bridgetown's historic center is a UNESCO World Heritage Site. They drive on the left, take afternoon tea seriously, and throw the best crop-over festival in the region.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769808899/20200126_132420_neltyi.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769808899/20200126_132420_neltyi.jpg"
     },
     {
         id: 128,
@@ -5132,7 +5132,7 @@ const locations = [
         isDoor: false,
         shortDesc: "A Provençal fishing village with colorful boats.",
         fullDesc: "Sanary-sur-Mer is the kind of place that makes you forget the rest of the world exists.\n\nThe harbor is lined with traditional pointu boats, their colorful hulls reflecting in the still water. The church tower of Saint-Nazaire watches over it all. German writers fled here during the Nazi era, and you can understand why. Some places just feel like sanctuary.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769818458/sanary-sur-mer_lhds8c.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769818458/sanary-sur-mer_lhds8c.jpg"
     },
     {
         id: 129,
@@ -5165,6 +5165,6 @@ const locations = [
             </div>
         `,
         fullDesc: "Antibes has the kind of old town that makes you want to get lost on purpose.\n\nThe ramparts still stand, the market still bustles, and the Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1769818777/antibes_watchtower_kemxi6.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769818777/antibes_watchtower_kemxi6.jpg"
     }
 ];
