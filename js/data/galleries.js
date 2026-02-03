@@ -69,6 +69,24 @@ const locationGalleries = {
         { src: "w_600,q_80,f_auto/v1769037242/006-9_vgsu3k.jpg", caption: "Musician friends: Adriano Moreira and Fabio at the inaugural party.", alt: "Adriano and Fabio" }
     ],
     
+    // DUBROVNIK
+    "dubrovnik": [
+        { src: "w_600,q_80,f_auto/v1770083616/Screen_Shot_2026-02-02_at_8.52.35_PM.jpg", caption: "Ship arriving - tendering into Dubrovnik.", alt: "Ship arriving in Dubrovnik" },
+        { src: "w_600,q_80,f_auto/v1770083740/IMG_2057.jpg", caption: "The Odyssey docked in Dubrovnik's new city.", alt: "The Odyssey in Dubrovnik" },
+        { src: "w_600,q_80,f_auto/v1770083897/IMG_2049.jpg", caption: "Coffee and a map - the perfect start.", alt: "Coffee and a map in Dubrovnik" },
+        { src: "w_600,q_80,f_auto/v1770083976/IMG_2073.jpg", caption: "Walking towards the old city.", alt: "Walking towards Dubrovnik" },
+        { src: "w_600,q_80,f_auto/v1770084065/IMG_2074.jpg", caption: "First glimpse of the walled city.", alt: "View of Dubrovnik" },
+        { src: "w_600,q_80,f_auto/v1770084166/IMG_2090.jpg", caption: "Inside the walled city - transported to the Middle Ages.", alt: "Inside the walled city" },
+        { src: "w_600,q_80,f_auto/v1770080877/IMG_2738.jpg", caption: "Walking through the old city.", alt: "Walking to the new city" },
+        { src: "w_600,q_80,f_auto/v1770080876/IMG_2739.jpg", caption: "Dubrovnik streets.", alt: "Dubrovnik streets" },
+        { src: "w_600,q_80,f_auto/v1770080875/IMG_2744.jpg", caption: "Dubrovnik architecture.", alt: "Dubrovnik architecture" },
+        { src: "w_600,q_80,f_auto/v1770080875/IMG_2749.jpg", caption: "Dubrovnik old town.", alt: "Dubrovnik old town" },
+        { src: "w_600,q_80,f_auto/v1770080865/IMG_2757.jpg", caption: "Dubrovnik scenery.", alt: "Dubrovnik scenery" },
+        { src: "w_600,q_80,f_auto/v1770080863/IMG_2762.jpg", caption: "Views from the old city.", alt: "Dubrovnik views" },
+        { src: "w_600,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg", caption: "Far above the walled city on questionable scooters.", alt: "Above Dubrovnik on scooters" },
+        { src: "w_600,q_80,f_auto/v1770080862/IMG_2770.jpg", caption: "Ocean kayaking around the city walls. Harder than it looks.", alt: "Ocean kayaking in Dubrovnik" },
+    ],
+
     // DARWIN - Crew Friends & Shiplife Moments
     "darwin": [
         { src: "v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg", caption: "Me and Dion.", alt: "Derrick and Dion" },
