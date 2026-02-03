@@ -301,7 +301,6 @@ function closePanel() {
         const doorIndex = doors.findIndex(d => d.id === currentLocation.id);
 
         if (allComplete) {
-            // All doors complete - set flag immediately so menu knows to wait
             celebrationInProgress = true;
             // Trigger celebration sequence after panel closes
             setTimeout(() => triggerDoorsCompleteSequence(), 500);
