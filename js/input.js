@@ -156,35 +156,13 @@ function onTouchTap(event) {
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
-                // Check if this location has a video animation
-                const hasVideo = locationVideos[loc.title];
-
-                // Helper function to open panel (now triggers midway through animation)
+                // Helper function to open panel
                 const openPanelForLocation = () => {
                     // Start background music for doors (if configured)
                     if (loc.isDoor && doorAudioTracks[loc.id]) {
                         playBackgroundMusic(loc.id);
                     }
-                    
-                    if (hasVideo) {
-                        // Play video and open panel midway through
-                        const video = locationVideos[loc.title];
-                        try {
-                            video.currentTime = 0; // Reset to start
-                            video.play().catch(e => console.warn('Video play failed:', e));
-                            console.log('Playing video animation for:', loc.title);
-
-                            // Open panel after short delay (800ms max to feel responsive)
-                            const panelDelay = Math.min(800, Math.max(300, (video.duration || 1) * 0.2 * 1000));
-                            setTimeout(() => openPanel(loc), panelDelay);
-                        } catch (e) {
-                            console.warn('Video error, opening panel directly:', e);
-                            openPanel(loc);
-                        }
-                    } else {
-                        // No video - open panel immediately
-                        openPanel(loc);
-                    }
+                    openPanel(loc);
                 };
 
                 // Doors have iris animation, regular icons don't
@@ -278,35 +256,13 @@ function onClick(event) {
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
-        // Check if this location has a video animation
-        const hasVideo = locationVideos[loc.title];
-
-        // Helper function to open panel (now triggers midway through animation)
+        // Helper function to open panel
         const openPanelForLocation = () => {
             // Start background music for doors (if configured)
             if (loc.isDoor && doorAudioTracks[loc.id]) {
                 playBackgroundMusic(loc.id);
             }
-
-            if (hasVideo) {
-                // Play video and open panel midway through
-                const video = locationVideos[loc.title];
-                try {
-                    video.currentTime = 0; // Reset to start
-                    video.play().catch(e => console.warn('Video play failed:', e));
-                    console.log('Playing video animation for:', loc.title);
-
-                    // Open panel after short delay (800ms max to feel responsive)
-                    const panelDelay = Math.min(800, Math.max(300, (video.duration || 1) * 0.2 * 1000));
-                    setTimeout(() => openPanel(loc), panelDelay);
-                } catch (e) {
-                    console.warn('Video error, opening panel directly:', e);
-                    openPanel(loc);
-                }
-            } else {
-                // No video - open panel immediately
-                openPanel(loc);
-            }
+            openPanel(loc);
         };
         
         // Doors have iris animation, regular icons don't

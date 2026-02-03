@@ -1735,11 +1735,6 @@ function createVideoChromaMaterial(texture) {
     return material;
 }
 
-// Track which locations use video (for special material handling)
-function isVideoTexture(locationTitle) {
-    return locationVideoURLs.hasOwnProperty(locationTitle);
-}
-
 function createMarkers() {
     // Pre-calculate density factors for all locations
     const densityFactors = calculateDensityFactors();
@@ -1918,7 +1913,7 @@ function createMarkers() {
 
         // Create Three.js sprite - always use Sprite for raycaster compatibility
         let marker = new THREE.Sprite(spriteMaterial);
-        marker.userData.isVideoMesh = false;
+
 
         // Position marker above surface
         const direction = position.clone().normalize();

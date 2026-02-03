@@ -91,41 +91,6 @@ function isGuidedComplete() {
     return getProgress().guidedComplete;
 }
 
-// Load video as texture (does NOT autoplay)
-function loadVideoTexture(url) {
-    return new Promise((resolve) => {
-        const timeout = setTimeout(() => {
-            console.warn('Video load timeout:', url);
-            resolve(null);
-        }, 8000);
-        
-        const video = document.createElement('video');
-        video.crossOrigin = 'anonymous';
-        video.loop = false;
-        video.muted = true;
-        video.playsInline = true;
-        video.preload = 'auto';
-        video.autoplay = false;
-        
-        video.onloadeddata = function() {
-            clearTimeout(timeout);
-            const texture = new THREE.VideoTexture(video);
-            texture.minFilter = THREE.LinearFilter;
-            texture.magFilter = THREE.LinearFilter;
-            console.log('Loaded video texture (paused):', url);
-            videoTextures.push({ video, texture });
-            resolve({ texture, video });
-        };
-        
-        video.onerror = () => {
-            clearTimeout(timeout);
-            console.error('Failed to load video:', url);
-            resolve(null);
-        };
-        
-        video.src = url;
-    });
-}
 
 // Track which textures are currently being loaded to prevent duplicate requests
 const textureLoadingPromises = {};
@@ -144,9 +109,8 @@ async function lazyLoadTexture(locationTitle, marker) {
 
     // Check if this location has a custom texture URL
     const imageUrl = locationPortholeURLs[locationTitle];
-    const videoUrl = locationVideoURLs[locationTitle];
 
-    if (!imageUrl && !videoUrl) {
+    if (!imageUrl) {
         return null; // No custom texture for this location
     }
 
@@ -156,15 +120,7 @@ async function lazyLoadTexture(locationTitle, marker) {
     textureLoadingPromises[locationTitle] = (async () => {
         let texture = null;
 
-        if (videoUrl) {
-            // Load video texture
-            const result = await loadVideoTexture(videoUrl);
-            if (result && result.texture) {
-                texture = result.texture;
-                locationVideos[locationTitle] = result.video;
-            }
-        } else if (imageUrl) {
-            // Load image texture
+        if (imageUrl) {
             texture = await loadTextureWithTransparentBlack(imageUrl, 65);
         }
 
@@ -325,17 +281,6 @@ async function init() {
         ]);
         console.log('All textures loaded (or timed out)');
 
-        // Also load Toledo video
-        if (locationVideoURLs["Toledo, Ohio"]) {
-            try {
-                const result = await loadVideoTexture(locationVideoURLs["Toledo, Ohio"]);
-                if (result && result.texture) {
-                    locationVideos["Toledo, Ohio"] = result.video;
-                }
-            } catch (e) {
-                console.warn('Toledo video failed:', e.message);
-            }
-        }
     }
     
     // Scene

@@ -22,8 +22,6 @@ const USE_AI_PORTHOLES = true;
 let portholeFrameTexture = null;
 let portholeSceneTexture = null;
 const locationTextures = {};
-const videoTextures = [];
-const locationVideos = {};
 
 // Toledo reference coordinates for initial globe position
 const TOLEDO_Y = -0.10;
@@ -179,11 +177,6 @@ const locationPortholeURLs = {
     "Amsterdam, Netherlands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206677/amstrdam_zk9uyu.png",
     "San Juan, Puerto Rico": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206678/san_juan_hw0fsw.png",
     "Sea Days": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
-};
-
-// Per-location animated porthole videos
-const locationVideoURLs = {
-    "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/video/upload/v1767948217/Wan2.2_image_to_video_00008__vbdcww.mp4",
 };
 
 // Icon configuration for each location

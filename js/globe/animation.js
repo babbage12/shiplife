@@ -168,11 +168,6 @@ function animate() {
         const baseScaleY = useAI ? marker.userData.baseSize * 2 : (isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
         const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
         
-        // Billboard video meshes to face camera
-        if (marker.userData.isVideoMesh) {
-            marker.lookAt(camera.position);
-        }
-        
         // Ensure marker is visible (but respect dimming and glowing state)
         marker.visible = true;
         // Don't override opacity for dimmed or glowing markers
@@ -217,26 +212,6 @@ function animate() {
         }
     });
     
-    // Update video textures each frame - smart update to prevent glitching
-    videoTextures.forEach(({ texture, video }) => {
-        // Update texture if:
-        // 1. Video is actively playing (for animation)
-        // 2. Video is paused but we haven't shown the current frame yet (for static display)
-        const isPlaying = !video.paused && !video.ended;
-        const isReady = video.readyState >= 2;
-
-        if (isReady) {
-            if (isPlaying) {
-                // Video is playing - update every frame
-                texture.needsUpdate = true;
-            } else if (!texture.userData?.lastFrameShown || texture.userData.lastFrameShown !== video.currentTime) {
-                // Video paused/ended - update once to show current frame, then stop
-                texture.needsUpdate = true;
-                texture.userData = texture.userData || {};
-                texture.userData.lastFrameShown = video.currentTime;
-            }
-        }
-    });
 
     renderer.render(scene, camera);
 }

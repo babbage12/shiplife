@@ -294,14 +294,6 @@ function closePanel() {
     // Stop background music with fade out
     stopBackgroundMusic();
 
-    // Pause video playback if current location has video
-    if (currentLocation && locationVideos[currentLocation.title]) {
-        const video = locationVideos[currentLocation.title];
-        video.pause();
-        video.currentTime = 0; // Reset to beginning for next open
-        console.log('Paused and reset video for:', currentLocation.title);
-    }
-
     // Track door completion and show prompts during guided mode
     console.log('closePanel - currentLocation:', currentLocation?.title, 'isDoor:', currentLocation?.isDoor, 'isGuidedComplete:', isGuidedComplete());
     if (currentLocation && currentLocation.isDoor && !isGuidedComplete()) {
