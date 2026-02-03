@@ -121,11 +121,6 @@ function animate() {
                 }
             }
         }
-        
-        // Update celebration glow wave (markers light up as they rotate into view)
-        if (celebrationGlowWaveActive) {
-            updateCelebrationGlowWave();
-        }
 
         // Normal interaction after intro
 
@@ -229,7 +224,6 @@ function animate() {
 // ============================================
 
 function triggerDoorsCompleteSequence() {
-    console.log('=== CELEBRATION SEQUENCE STARTED ===');
     // Mark guided mode as complete
     markGuidedComplete();
 
@@ -242,21 +236,21 @@ function triggerDoorsCompleteSequence() {
         menuToggle.style.display = 'none';
     }
 
-    // Step 1: Show celebratory message
+    // T+0: Show message + light up all markers at once
     showCelebrationMessage();
+    flareAllMarkers();
 
-    // Step 2: Undim sidebar items (after 500ms)
+    // T+500ms: Undim sidebar items
     setTimeout(() => {
         undimSidebarItems();
     }, 500);
 
-    // Step 3: Spin globe to Mediterranean and start glow wave (after 2s)
+    // T+2500ms: Spin globe to Mediterranean (pause to appreciate lights-on)
     setTimeout(() => {
         spinToMediterranean();
-        startCelebrationGlowWave();
-    }, 2000);
+    }, 2500);
 
-    // Step 4: Fade message (after 5s - give time to see the spin)
+    // T+5000ms: Fade message
     setTimeout(() => {
         hideCelebrationMessage();
     }, 5000);
@@ -288,7 +282,6 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
-    console.log('spinToMediterranean called');
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
@@ -307,104 +300,6 @@ function spinToMediterranean() {
     pendingRotationX = targetRotationX;
     pendingLocation = null;
     pendingZoomLocation = null;
-}
-
-// Start the glow wave effect during celebration spin
-function startCelebrationGlowWave() {
-    console.log('startCelebrationGlowWave called, dimmed markers:', markers.filter(m => m.userData.isDimmed).length);
-    celebrationGlowWaveActive = true;
-    celebrationGlowStartTime = Date.now();
-    markersGlowTriggered.clear();
-}
-
-// Check and trigger marker glow based on rotation position
-function updateCelebrationGlowWave() {
-    if (!celebrationGlowWaveActive) return;
-
-    const elapsed = Date.now() - celebrationGlowStartTime;
-
-    // Glow wave runs for about 3 seconds during the spin
-    if (elapsed > 4000) {
-        // End glow wave, make sure all remaining markers are lit
-        celebrationGlowWaveActive = false;
-        markers.forEach(marker => {
-            if (!marker.userData.isDoor && marker.userData.isDimmed && !markersGlowTriggered.has(marker.userData.id)) {
-                animateMarkerGlow(marker);
-            }
-        });
-        return;
-    }
-
-    // Check each marker's position relative to camera view
-    let triggeredThisFrame = 0;
-    markers.forEach(marker => {
-        if (marker.userData.isDoor) return; // Skip doors
-        if (!marker.userData.isDimmed) return; // Already lit
-        if (markersGlowTriggered.has(marker.userData.id)) return; // Already triggered
-
-        // Get marker's world position
-        const markerWorldPos = new THREE.Vector3();
-        marker.getWorldPosition(markerWorldPos);
-
-        // Check if marker is facing the camera (front half of globe)
-        // Dot product with camera direction - positive means facing camera
-        const cameraDir = new THREE.Vector3(0, 0, 1);
-        const markerDir = markerWorldPos.clone().normalize();
-        const dot = markerDir.dot(cameraDir);
-
-        // Trigger glow when marker rotates into view (crosses from back to front)
-        // Trigger earlier so effect is visible as markers come around
-        if (dot > -0.4) {
-            markersGlowTriggered.add(marker.userData.id);
-            animateMarkerGlow(marker);
-            triggeredThisFrame++;
-        }
-    });
-    if (triggeredThisFrame > 0) {
-        console.log('Glow triggered:', triggeredThisFrame, 'markers. Total:', markersGlowTriggered.size);
-    }
-}
-
-// Animate a marker with a bright glow effect
-function animateMarkerGlow(marker) {
-    const startOpacity = 0.35;
-    const endOpacity = 1.0;
-    const duration = 1000; // Longer duration for more visible effect
-    const startTime = performance.now();
-    const baseSize = marker.userData.baseSize * 2;
-    const baseScaleY = marker.userData.useAIPorthole ? baseSize : baseSize * 1.1;
-
-    // Flag to prevent main animation loop from overriding glow
-    marker.userData.isGlowing = true;
-    console.log('animateMarkerGlow START:', marker.userData.title, 'opacity:', marker.material.opacity, 'isDimmed:', marker.userData.isDimmed);
-
-    function animate(currentTime) {
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
-
-        // Fade in opacity with initial bright flash
-        if (progress < 0.2) {
-            // Quick flash to full brightness
-            marker.material.opacity = startOpacity + (1.0 - startOpacity) * (progress / 0.2);
-        } else {
-            marker.material.opacity = endOpacity;
-        }
-
-        // Dramatic glow pulse - big expansion then settle
-        const glowPhase = progress < 0.25 ? progress / 0.25 : 1 - (progress - 0.25) / 0.75;
-        const glowScale = 1 + glowPhase * 0.8; // Up to 80% larger at peak (was 40%)
-        marker.scale.set(baseSize * glowScale, baseScaleY * glowScale, 1);
-
-        if (progress < 1) {
-            requestAnimationFrame(animate);
-        } else {
-            marker.scale.set(baseSize, baseScaleY, 1);
-            marker.userData.isDimmed = false;
-            marker.userData.isGlowing = false;
-        }
-    }
-    requestAnimationFrame(animate);
 }
 
 // ============================================

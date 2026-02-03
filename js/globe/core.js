@@ -37,9 +37,6 @@ let currentZoomInDistance = baseZoomInDistance;
 
 // Celebration sequence state
 let celebrationInProgress = false;
-let celebrationGlowWaveActive = false;
-let celebrationGlowStartTime = null;
-let markersGlowTriggered = new Set(); // Track which markers have glowed
 
 // Store density factors globally for zoom calculations
 let globalDensityFactors = null;
