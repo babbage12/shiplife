@@ -106,16 +106,13 @@ function animate() {
 
                     // End celebration when spin completes
                     if (celebrationInProgress) {
-                        debugLog('🎉 Celebration spin complete!');
                         // Small delay to let users appreciate the result
                         setTimeout(() => {
                             celebrationInProgress = false;
-                            debugLog('Celebration ended');
                             // Show menu toggle button again (mobile)
                             const menuToggle = document.getElementById('menuToggle');
                             if (menuToggle) {
                                 menuToggle.style.display = '';
-                                debugLog('Menu button restored');
                             }
                         }, 1000);
                     }
@@ -247,11 +244,8 @@ function animate() {
 // ============================================
 
 function triggerDoorsCompleteSequence() {
-    debugLog('🎉 CELEBRATION STARTED!');
-
     // Mark guided mode as complete
     markGuidedComplete();
-    debugLog('Guided mode complete saved');
 
     // Block menu from opening during celebration
     celebrationInProgress = true;
@@ -260,14 +254,10 @@ function triggerDoorsCompleteSequence() {
     const menuToggle = document.getElementById('menuToggle');
     if (menuToggle) {
         menuToggle.style.display = 'none';
-        debugLog('Menu button hidden');
-    } else {
-        debugLog('⚠️ Menu button not found!');
     }
 
     // Step 1: Show celebratory message
     showCelebrationMessage();
-    console.log('Celebration message shown');
 
     // Step 2: Undim sidebar items (after 500ms)
     setTimeout(() => {
@@ -276,7 +266,6 @@ function triggerDoorsCompleteSequence() {
 
     // Step 3: Spin globe to Mediterranean and start glow wave (after 2s)
     setTimeout(() => {
-        console.log('Starting spin to Mediterranean');
         spinToMediterranean();
         startCelebrationGlowWave();
     }, 2000);
@@ -291,7 +280,6 @@ function triggerDoorsCompleteSequence() {
 }
 
 function showCelebrationMessage() {
-    debugLog('Showing celebration message');
     const msg = document.createElement('div');
     msg.id = 'celebration-message';
     msg.className = 'celebration-message';
@@ -314,7 +302,6 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
-    debugLog('🌍 Spinning to Mediterranean...');
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
@@ -327,7 +314,6 @@ function spinToMediterranean() {
     isTransitioning = true;
     transitionPhase = 'zoom-out';
     transitionStartTime = Date.now();
-    debugLog('Globe transition started');
 
     // Store target rotation for after zoom-out
     pendingRotationY = targetY;
@@ -338,7 +324,6 @@ function spinToMediterranean() {
 
 // Start the glow wave effect during celebration spin
 function startCelebrationGlowWave() {
-    debugLog('✨ Glow wave started (' + markers.length + ' markers)');
     celebrationGlowWaveActive = true;
     celebrationGlowStartTime = Date.now();
     markersGlowTriggered.clear();

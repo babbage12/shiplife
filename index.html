@@ -140,34 +140,6 @@
         <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
 
-    <!-- Debug Panel (for mobile testing) -->
-    <div id="debugPanel" style="
-        position: fixed !important;
-        bottom: 80px !important;
-        left: 10px !important;
-        right: 10px !important;
-        max-height: 180px;
-        background: rgba(0,0,0,0.95) !important;
-        color: #0f0;
-        font-family: monospace;
-        font-size: 12px;
-        padding: 10px;
-        border-radius: 8px;
-        border: 2px solid #0f0;
-        z-index: 999999 !important;
-        overflow-y: auto;
-        display: block !important;
-    ">
-        <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
-            <strong style="color: #fff;">DEBUG LOG</strong>
-            <div>
-                <button onclick="clearProgress()" style="background:#c00;color:#fff;border:none;padding:3px 8px;border-radius:4px;margin-right:5px;font-size:10px;">Clear Progress</button>
-                <button onclick="document.getElementById('debugPanel').style.display='none'" style="background:#333;color:#fff;border:none;padding:3px 8px;border-radius:4px;font-size:10px;">Hide</button>
-            </div>
-        </div>
-        <div id="debugLog">Waiting for actions...</div>
-    </div>
-
     <!-- Intro Modal for First-Time Visitors -->
     <div class="intro-modal-overlay" id="introModal">
         <div class="intro-modal">

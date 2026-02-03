@@ -3,30 +3,6 @@
 // Helper functions used across the application
 // ============================================
 
-// ============================================
-// DEBUG HELPERS (for mobile testing)
-// ============================================
-
-function debugLog(message) {
-    console.log(message);
-    const logEl = document.getElementById('debugLog');
-    if (logEl) {
-        const time = new Date().toLocaleTimeString().split(' ')[0];
-        logEl.innerHTML = `[${time}] ${message}<br>` + logEl.innerHTML;
-        // Keep only last 20 messages
-        const lines = logEl.innerHTML.split('<br>');
-        if (lines.length > 20) {
-            logEl.innerHTML = lines.slice(0, 20).join('<br>');
-        }
-    }
-}
-
-function clearProgress() {
-    localStorage.removeItem('shiplife_progress');
-    debugLog('✅ Progress cleared! Refresh the page to start fresh.');
-    alert('Progress cleared! Pull down to refresh the page.');
-}
-
 // Convert latitude/longitude to 3D vector position on globe
 function latLonToVector3(lat, lon, radius) {
     const phi = (90 - lat) * (Math.PI / 180);
