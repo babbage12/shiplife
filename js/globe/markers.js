@@ -1987,6 +1987,9 @@ function animateMarkerFlare(marker) {
     const startTime = performance.now();
     const originalScale = marker.scale.clone();
 
+    // Flag to prevent main animation loop from overriding flare
+    marker.userData.isGlowing = true;
+
     function animate(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
@@ -2008,6 +2011,7 @@ function animateMarkerFlare(marker) {
         } else {
             marker.scale.copy(originalScale);
             marker.userData.isDimmed = false;
+            marker.userData.isGlowing = false;
         }
     }
     requestAnimationFrame(animate);

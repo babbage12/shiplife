@@ -173,13 +173,16 @@ function animate() {
             marker.lookAt(camera.position);
         }
         
-        // Ensure marker is visible (but respect dimming state)
+        // Ensure marker is visible (but respect dimming and glowing state)
         marker.visible = true;
-        // Don't override opacity for dimmed markers during guided mode
-        if (!marker.userData.isDimmed && marker.material.opacity !== undefined) {
+        // Don't override opacity for dimmed or glowing markers
+        if (!marker.userData.isDimmed && !marker.userData.isGlowing && marker.material.opacity !== undefined) {
             marker.material.opacity = 1.0;
         }
-        
+
+        // Skip scale animations for markers currently in glow animation
+        if (marker.userData.isGlowing) return;
+
         if (isBouncing && bounceStartTime) {
             // Bounce animation - continuous until clicked
             const elapsed = Date.now() - bounceStartTime;
@@ -244,6 +247,7 @@ function animate() {
 // ============================================
 
 function triggerDoorsCompleteSequence() {
+    console.log('=== CELEBRATION SEQUENCE STARTED ===');
     // Mark guided mode as complete
     markGuidedComplete();
 
@@ -302,6 +306,7 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
+    console.log('spinToMediterranean called');
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
@@ -324,6 +329,7 @@ function spinToMediterranean() {
 
 // Start the glow wave effect during celebration spin
 function startCelebrationGlowWave() {
+    console.log('startCelebrationGlowWave called, dimmed markers:', markers.filter(m => m.userData.isDimmed).length);
     celebrationGlowWaveActive = true;
     celebrationGlowStartTime = Date.now();
     markersGlowTriggered.clear();
@@ -381,6 +387,9 @@ function animateMarkerGlow(marker) {
     const baseSize = marker.userData.baseSize * 2;
     const baseScaleY = marker.userData.useAIPorthole ? baseSize : baseSize * 1.1;
 
+    // Flag to prevent main animation loop from overriding glow
+    marker.userData.isGlowing = true;
+
     function animate(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
@@ -404,6 +413,7 @@ function animateMarkerGlow(marker) {
         } else {
             marker.scale.set(baseSize, baseScaleY, 1);
             marker.userData.isDimmed = false;
+            marker.userData.isGlowing = false;
         }
     }
     requestAnimationFrame(animate);

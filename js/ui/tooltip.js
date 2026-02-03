@@ -10,6 +10,11 @@ function showTooltip(loc, marker) {
         return;
     }
 
+    // Don't show tooltip while a location panel is open
+    if (currentLocation) {
+        return;
+    }
+
     document.getElementById('tooltipTag').textContent = loc.tag;
     document.getElementById('tooltipTitle').textContent = loc.title;
     document.getElementById('tooltipDesc').textContent = loc.shortDesc;
