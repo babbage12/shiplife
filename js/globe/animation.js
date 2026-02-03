@@ -86,9 +86,11 @@ function animate() {
                 camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
                 
                 // Check if globe rotation has settled (close enough to target)
-                // Use shortestAngleDiff since rotation values may differ by full rotations
-                const rotationSettled = 
-                    Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY)) < 0.05 &&
+                const yDiff = celebrationInProgress
+                    ? Math.abs(targetRotationY - globe.rotation.y)
+                    : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
+                const rotationSettled =
+                    yDiff < 0.05 &&
                     Math.abs(globe.rotation.x - targetRotationX) < 0.05;
                 
                 if (progress >= 1 && rotationSettled) {
@@ -141,8 +143,13 @@ function animate() {
         }
         
         // Always smooth-lerp toward target rotation
-        // Use shortest angular distance to avoid spinning the long way around
-        globe.rotation.y += shortestAngleDiff(globe.rotation.y, targetRotationY) * 0.05;
+        if (celebrationInProgress) {
+            // During celebration: use raw difference to allow full dramatic spin
+            globe.rotation.y += (targetRotationY - globe.rotation.y) * 0.05;
+        } else {
+            // Normal: use shortest angular distance to avoid spinning the long way around
+            globe.rotation.y += shortestAngleDiff(globe.rotation.y, targetRotationY) * 0.05;
+        }
         globe.rotation.x += (targetRotationX - globe.rotation.x) * 0.05;
         
         // Periodically normalize rotation values to prevent unbounded accumulation
