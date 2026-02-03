@@ -642,6 +642,82 @@ const locations = [
         icon: "🏰",
         isDoor: false,
         shortDesc: "Stepping through ancient gates into the Middle Ages.",
+        imagePosition: "center",
+        imageCaption: "The walled city of Dubrovnik from above.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏰</span>
+                    <span class="demo-value">Walled City</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Multiple Visits</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🛵</span>
+                    <span class="demo-value">Scooter Adventures</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🛶</span>
+                    <span class="demo-value">Ocean Kayaking</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Arrival</span>
+                <h3 class="section-title-panel">Two Ways In</h3>
+                <p>Sometimes the ship would tender, other times it would dock in the new city. Either way, the anticipation was the same.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083616/Screen_Shot_2026-02-02_at_8.52.35_PM.jpg" class="story-image" alt="Ship arriving in Dubrovnik">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083740/IMG_2057.jpg" class="story-image" alt="The Odyssey in Dubrovnik">
+                <p class="photo-caption-inline">The Odyssey docked in Dubrovnik's new city.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Setting Out</span>
+                <h3 class="section-title-panel">Coffee, a Map, and Gratitude</h3>
+                <p>I stopped for a cup of coffee and grabbed a map. This was going to be fun.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083897/IMG_2049.jpg" class="story-image" alt="Coffee and a map in Dubrovnik">
+                <p>I began to make my way down towards this magnificent city and again I had the realization of how much all of this means to me. To be able to do this. I am joyful and filled with gratitude.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083976/IMG_2073.jpg" class="story-image" alt="Walking towards Dubrovnik">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084065/IMG_2074.jpg" class="story-image" alt="View of Dubrovnik">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Old City</span>
+                <h3 class="section-title-panel">Through the Gates</h3>
+                <p>The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic. But nothing prepared for walking through those gates and being transported back into the Middle Ages.</p>
+                <p>It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084166/IMG_2090.jpg" class="story-image" alt="Inside the walled city">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080877/IMG_2738.jpg" class="story-image" alt="Walking to the new city">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080876/IMG_2739.jpg" class="story-image" alt="Dubrovnik streets">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2744.jpg" class="story-image" alt="Dubrovnik architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2749.jpg" class="story-image" alt="Dubrovnik old town">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080865/IMG_2757.jpg" class="story-image" alt="Dubrovnik scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080863/IMG_2762.jpg" class="story-image" alt="Dubrovnik views">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Adventures</span>
+                <h3 class="section-title-panel">Scooters and Kayaks</h3>
+                <p>I came in a different way once - we rented questionable scooters and ended up far above the walled city, looking at the border between Croatia and Serbia.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" alt="Above Dubrovnik on scooters">
+                <p class="photo-caption-inline">Far above the walled city on questionable scooters.</p>
+                <p>Heading home I saw some kayakers. Sounded like the perfect way to end the day, right? Ocean kayaking, you say? Sure... sign me up.</p>
+                <p>I noticed everyone in my group was pretty fit. So was I. Or so I thought. I was almost run over.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080862/IMG_2770.jpg" class="story-image" alt="Ocean kayaking in Dubrovnik">
+                <p class="photo-caption-inline">Ocean kayaking around the city walls. Harder than it looks.</p>
+            </div>
+        `,
         fullDesc: "The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic.\n\nBut nothing prepared for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817982/dubrovnik_ihkkaj.jpg"
     },
