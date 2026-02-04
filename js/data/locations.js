@@ -661,8 +661,8 @@ const locations = [
                     <span class="demo-value">Scooter Adventures</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🛶</span>
-                    <span class="demo-value">Ocean Kayaking</span>
+                    <span class="demo-icon">📖</span>
+                    <span class="demo-value">The Tin Soldier</span>
                 </div>
             </div>
 
@@ -674,23 +674,44 @@ const locations = [
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770163382/IMG_2049.jpg" class="story-image" data-caption="Looking back toward the new city." alt="Looking back toward the new city">
                 <p>And to the right of me, down the hill.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084065/IMG_2074.jpg" class="story-image" data-caption="Down the hill toward the walled city." alt="Down the hill toward the walled city">
-                <p>I stopped for a cup of coffee and bought a guide to the city.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083976/IMG_2073.jpg" class="story-image" data-caption="Coffee and a guide to the city." alt="Coffee and a guide to the city">
-                <p>And spent the next day and night immersed in the ancient sights and sounds of Dubrovnik.</p>
-            </div>
+                <p>I stopped for a cup of coffee and bought a guide to the city. And spent the next day and night immersed in the ancient sights and sounds of Dubrovnik.</p>
 
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Dream</span>
-                <h3 class="section-title-panel">The Steadfast Tin Soldier</h3>
-                <p>At some point it occurred to me. As a kid I'd read Hans Christian Andersen's <em>The Steadfast Tin Soldier</em> so many times that the illustrations had seared themselves into my subconscious - a tiny soldier, swept through the gutters in a paper boat, drifting toward a walled city. The story gave me fever dreams for years. Sometimes I was the soldier in the boat. Sometimes I watched from somewhere above. Once the boat fell into a gutter and vanished, just like in the story.</p>
-                <p>I'd forgotten all about it. And then, looking at those walls rising from the Adriatic, I realized where my mind had put me all those nights.</p>
-                <blockquote class="story-quote">The walled city from the dream was Dubrovnik. I'd been here before.</blockquote>
-                <p>Walking toward the gates, the feeling only deepened. It was like walking into a Hans Christian Andersen book - a strange and wonderful sensation.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149008/IMG_2113.jpg" class="story-image" data-caption="Walking toward the gates - like stepping into an Andersen book." alt="Walking toward the gates of Dubrovnik">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2116.jpg" class="story-image" data-caption="The tin soldier made it to the gates." alt="At the gates of Dubrovnik">
+                <div class="story-carousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084166/IMG_2090.jpg" alt="Inside the walled city">
+                        <div class="carousel-caption"><span>Inside the walled city</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080877/IMG_2738.jpg" alt="Walking through the old city">
+                        <div class="carousel-caption"><span>Walking through the old city</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080876/IMG_2739.jpg" alt="Dubrovnik streets">
+                        <div class="carousel-caption"><span>The ancient streets</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2744.jpg" alt="Dubrovnik architecture">
+                        <div class="carousel-caption"><span>Centuries of architecture</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080865/IMG_2757.jpg" alt="Dubrovnik scenery">
+                        <div class="carousel-caption"><span>Around every corner</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080863/IMG_2762.jpg" alt="Views from the old city">
+                        <div class="carousel-caption"><span>Views from the old city</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2123.jpg" alt="The old harbor">
+                        <div class="carousel-caption"><span>The old harbor</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148994/IMG_2137.jpg" alt="The bastions">
+                        <div class="carousel-caption"><span>The bastions along the city walls</span></div>
+                    </div>
+                    <div class="carousel-dots"></div>
                 </div>
-                <p class="photo-caption-inline">The tin soldier made it to the gates.</p>
             </div>
 
             <div class="story-section-panel">
@@ -698,25 +719,10 @@ const locations = [
                 <h3 class="section-title-panel">Through the Gates</h3>
                 <p>The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic. But nothing prepared for walking through those gates and being transported back into the Middle Ages.</p>
                 <blockquote class="story-quote">It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.</blockquote>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084166/IMG_2090.jpg" class="story-image" data-caption="Inside the walled city - transported to the Middle Ages." alt="Inside the walled city">
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080877/IMG_2738.jpg" class="story-image" data-caption="Walking through the old city." alt="Walking to the new city">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080876/IMG_2739.jpg" class="story-image" data-caption="Dubrovnik streets." alt="Dubrovnik streets">
-                </div>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2744.jpg" class="story-image" data-caption="Dubrovnik architecture." alt="Dubrovnik architecture">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2749.jpg" class="story-image" data-caption="Dubrovnik old town." alt="Dubrovnik old town">
-                </div>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080865/IMG_2757.jpg" class="story-image" data-caption="Dubrovnik scenery." alt="Dubrovnik scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080863/IMG_2762.jpg" class="story-image" data-caption="Views from the old city." alt="Dubrovnik views">
-                </div>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2123.jpg" class="story-image" data-caption="The old harbor." alt="Dubrovnik harbor">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149005/IMG_2120.jpg" class="story-image" data-caption="Cannons still guarding the walls." alt="Cannons on the city walls">
                 </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148994/IMG_2137.jpg" class="story-image" data-caption="The bastions - fortified towers projecting from the city walls." alt="Dubrovnik bastions">
-                <p class="photo-caption-inline">The bastions - fortified towers projecting from the city walls.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148991/IMG_2142.jpg" class="story-image" data-caption="Boats in the old harbor." alt="Boats in Dubrovnik harbor">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148990/IMG_2148.jpg" class="story-image" data-caption="Dubrovnik harbor boats." alt="Harbor boats">
@@ -725,15 +731,24 @@ const locations = [
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Adventures</span>
-                <h3 class="section-title-panel">Scooters and Kayaks</h3>
-                <p>One time we rented questionable scooters and ended up far above the walled city, looking at the border between Croatia and Serbia.</p>
+                <h3 class="section-title-panel">A Thousand Ways to Travel</h3>
+                <p>There were many ways to travel far in one day around the Med, and the crew knew all of the secrets. Bus stops, train routes, scooter rentals, ocean kayaking - cheat sheets were always being passed around. Short of skydiving, I think I tried the rest.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" data-caption="Far above the walled city on questionable scooters." alt="Above Dubrovnik on scooters">
                 <p class="photo-caption-inline">Far above the walled city on questionable scooters.</p>
-                <p>Heading home I saw some kayakers. Sounded like the perfect way to end the day, right? Ocean kayaking, you say? Sure... sign me up.</p>
-                <p>I noticed everyone in my group was pretty fit. So was I. Or so I thought.</p>
-                <blockquote class="story-quote">I was almost run over.</blockquote>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080862/IMG_2770.jpg" class="story-image" data-caption="Ocean kayaking around the city walls. Harder than it looks." alt="Ocean kayaking in Dubrovnik">
-                <p class="photo-caption-inline">Ocean kayaking around the city walls. Harder than it looks.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Dream</span>
+                <h3 class="section-title-panel">The Steadfast Tin Soldier</h3>
+                <p>At some point it occurred to me. As a kid I'd read Hans Christian Andersen's <em>The Steadfast Tin Soldier</em> so many times that the illustrations had seared themselves into my subconscious - a tiny soldier, swept through the gutters in a paper boat, drifting toward a walled city. The story gave me fever dreams for years. Sometimes I was the soldier in the boat. Sometimes I watched from somewhere above. Once the boat fell into a gutter and vanished, just like in the story.</p>
+                <p>I was fascinated by the story but so saddened that the soldier kept dying. I always wanted him to make it to the castle walls and finish the journey.</p>
+                <p>I'd forgotten all about it. But the memory rushed back to me in the walled city. When I passed through the walls of Dubrovnik, I didn't fail to see the irony of the moment.</p>
+                <blockquote class="story-quote">The tin soldier had finally made it beyond the gates. Alive to see all the mystery and magic of the walled city of Dubrovnik.</blockquote>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149008/IMG_2113.jpg" class="story-image" data-caption="Walking toward the gates - like stepping into an Andersen book." alt="Walking toward the gates of Dubrovnik">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2116.jpg" class="story-image" data-caption="The tin soldier made it to the gates." alt="At the gates of Dubrovnik">
+                </div>
+                <p class="photo-caption-inline">The tin soldier made it to the gates.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">

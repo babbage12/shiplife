@@ -98,6 +98,11 @@ function openPanel(loc) {
 
         document.getElementById('panelText').innerHTML = fullContent;
 
+        // Initialize any inline story carousels
+        if (typeof initStoryCarousels === 'function') {
+            initStoryCarousels();
+        }
+
         // Attach click handlers to story images for lightbox
         attachImageClickHandlers();
 
