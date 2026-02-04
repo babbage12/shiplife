@@ -717,7 +717,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Old City</span>
                 <h3 class="section-title-panel">Through the Gates</h3>
-                <p>The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic. But nothing prepared for walking through those gates and being transported back into the Middle Ages.</p>
+                <p>We had already seen a lot of ruins and ancient cities on our trip up the Adriatic. However, nothing prepared me for walking through those gates and being transported back into the Middle Ages.</p>
                 <blockquote class="story-quote">It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.</blockquote>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2749.jpg" class="story-image" data-caption="Dubrovnik old town." alt="Dubrovnik old town">
@@ -733,8 +733,8 @@ const locations = [
                 <span class="section-tag-panel">The Adventures</span>
                 <h3 class="section-title-panel">A Thousand Ways to Travel</h3>
                 <p>There were many ways to travel far in one day around the Med, and the crew knew all of the secrets. Bus stops, train routes, scooter rentals, ocean kayaking - cheat sheets were always being passed around. Short of skydiving, I think I tried the rest.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" data-caption="Far above the walled city on questionable scooters." alt="Above Dubrovnik on scooters">
-                <p class="photo-caption-inline">Far above the walled city on questionable scooters.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" data-caption="Ocean kayaking around the city walls." alt="Ocean kayaking in Dubrovnik">
+                <p class="photo-caption-inline">Ocean kayaking around the city walls.</p>
             </div>
 
             <div class="story-section-panel">
