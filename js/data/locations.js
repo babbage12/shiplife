@@ -1054,7 +1054,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">7 images</span>
+                        <span class="gallery-count">12 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1066,6 +1066,11 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="gallery-thumb" data-caption="Ushuaia view." alt="Ushuaia view">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="gallery-thumb" data-caption="Ushuaia scenery." alt="Ushuaia scenery">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="gallery-thumb" data-caption="Tierra del Fuego landscape." alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/IMG_6612.jpg" class="gallery-thumb" data-caption="Monte Olivia from the water." alt="Monte Olivia" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/IMG_6613.jpg" class="gallery-thumb" data-caption="Approaching Ushuaia." alt="Approaching Ushuaia" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/tierra_10.jpg" class="gallery-thumb" data-caption="Tierra del Fuego." alt="Tierra del Fuego" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/tierra3.jpg" class="gallery-thumb" data-caption="Tierra del Fuego scenery." alt="Tierra del Fuego scenery" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190757/IMG_6608.jpg" class="gallery-thumb" data-caption="Patagonian mountains." alt="Patagonian mountains" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
                 </div>
             </div>
         `,
@@ -3128,6 +3133,17 @@ const locations = [
                     </ul>
                 </div>
             </div>
+
+            <div class="photo-gallery-section" onclick="this.classList.toggle('active')">
+                <div class="gallery-header">
+                    <span class="gallery-icon">📸</span>
+                    <span>Photos</span>
+                    <span class="gallery-count">1</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770191212/Screen_Shot_2026-01-22_at_5.15.03_PM.png" alt="MV Captain Leonidas shipwreck in the Messier Channel" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                </div>
+            </div>
         `
     },
     {
@@ -4776,7 +4792,7 @@ const locations = [
         useRichContent: true,
         shortDesc: "Chile's colorful, artistic port city.",
         fullDesc: "Pablo Neruda kept a house here, perched on a hillside overlooking the harbor. He called Valparaíso 'a pile of absurd houses.' He meant it as a compliment. The city climbs 42 hills, connected by funiculars and covered in street art.",
-        image: "",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770191493/Screen_Shot_2026-02-04_at_2.52.06_AM.png",
         richContent: `
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Poet</span>
