@@ -101,9 +101,16 @@ function animate() {
 
                     // Trigger bounce animation for the target location
                     if (pendingLocation) {
-                        triggerBounce(pendingLocation.id);
-                        // Panel no longer auto-opens - user must click icon
+                        const loc = pendingLocation;
                         pendingLocation = null;
+
+                        if (autoOpenPanel) {
+                            autoOpenPanel = false;
+                            // Auto-open panel after brief pause to see the icon
+                            setTimeout(() => openPanel(loc), 400);
+                        } else {
+                            triggerBounce(loc.id);
+                        }
                     }
 
                     // End celebration when spin completes

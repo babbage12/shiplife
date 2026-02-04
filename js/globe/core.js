@@ -38,6 +38,9 @@ let currentZoomInDistance = baseZoomInDistance;
 // Celebration sequence state
 let celebrationInProgress = false;
 
+// Auto-open panel after spin completes (for guided door navigation)
+let autoOpenPanel = false;
+
 // Store density factors globally for zoom calculations
 let globalDensityFactors = null;
 

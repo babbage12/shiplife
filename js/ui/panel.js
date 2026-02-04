@@ -160,10 +160,9 @@ function goToNextDoor() {
     const nextDoorHint = document.getElementById('nextDoorHint');
     const nextDoorId = parseInt(nextDoorHint.dataset.nextDoorId);
     const nextDoor = locations.find(l => l.id === nextDoorId);
-    
+
     if (nextDoor) {
-        // Close panel and rotate globe to next door
-        // User must click the icon to open the door
+        autoOpenPanel = true;
         closePanel();
         focusLocation(nextDoor);
     }
@@ -304,7 +303,7 @@ function closePanel() {
             celebrationInProgress = true;
             // Trigger celebration sequence after panel closes
             setTimeout(() => triggerDoorsCompleteSequence(), 500);
-        } else if (doorIndex < doors.length - 1) {
+        } else if (doorIndex < doors.length - 1 && !autoOpenPanel) {
             // Show prompt for next door after panel closes
             const nextDoor = doors[doorIndex + 1];
             setTimeout(() => showNextDoorPrompt(nextDoor), 500);
@@ -332,11 +331,16 @@ function showNextDoorPrompt(nextDoor) {
 
     const prompt = document.createElement('div');
     prompt.className = 'next-door-prompt';
-    // Globe already centers on next door, so just show simple instruction
+    prompt.style.cursor = 'pointer';
     prompt.innerHTML = `
         <p>Door #${nextDoorNum}: ${nextDoor.tag.split(': ')[1]}</p>
-        <p class="prompt-instruction">Click the icon to continue</p>
+        <p class="prompt-instruction">Tap to continue</p>
     `;
+    prompt.addEventListener('click', () => {
+        dismissNextDoorPrompt();
+        autoOpenPanel = true;
+        focusLocation(nextDoor);
+    });
     document.body.appendChild(prompt);
 
     // Auto-dismiss after 6 seconds if no action
