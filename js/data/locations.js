@@ -668,11 +668,15 @@ const locations = [
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Arrival</span>
-                <h3 class="section-title-panel">Two Ways In</h3>
-                <p>Sometimes the ship would tender, other times it would dock in the new city. Either way, the anticipation was the same.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083616/Screen_Shot_2026-02-02_at_8.52.35_PM.jpg" class="story-image" data-caption="Ship arriving - tendering into Dubrovnik." alt="Ship arriving in Dubrovnik">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083740/IMG_2057.jpg" class="story-image" data-caption="The Odyssey docked in Dubrovnik's new city." alt="The Odyssey in Dubrovnik">
-                <p class="photo-caption-inline">The Odyssey docked in Dubrovnik's new city.</p>
+                <h3 class="section-title-panel">The Walk</h3>
+                <p>Sometimes the ship would tender, other times it would dock in the new city. Either way, the anticipation was the same. I would walk from the new city to the old, a few miles along the coast.</p>
+                <p>Looking back, I snapped this picture behind me.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770163382/IMG_2049.jpg" class="story-image" data-caption="Looking back toward the new city." alt="Looking back toward the new city">
+                <p>And to the right of me, down the hill.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084065/IMG_2074.jpg" class="story-image" data-caption="Down the hill toward the walled city." alt="Down the hill toward the walled city">
+                <p>I stopped for a cup of coffee and bought a guide to the city.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083976/IMG_2073.jpg" class="story-image" data-caption="Coffee and a guide to the city." alt="Coffee and a guide to the city">
+                <p>And spent the next day and night immersed in the ancient sights and sounds of Dubrovnik.</p>
             </div>
 
             <div class="story-section-panel">
@@ -687,19 +691,6 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2116.jpg" class="story-image" data-caption="The tin soldier made it to the gates." alt="At the gates of Dubrovnik">
                 </div>
                 <p class="photo-caption-inline">The tin soldier made it to the gates.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">Setting Out</span>
-                <h3 class="section-title-panel">Coffee, a Map, and Gratitude</h3>
-                <p>I stopped for a cup of coffee and grabbed a map. This was going to be fun.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083897/IMG_2049.jpg" class="story-image" data-caption="Coffee and a map - the perfect start." alt="Coffee and a map in Dubrovnik">
-                <p>I began to make my way down towards this magnificent city and again I had the realization of how much all of this means to me. To be able to do this.</p>
-                <blockquote class="story-quote">I am joyful and filled with gratitude.</blockquote>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083976/IMG_2073.jpg" class="story-image" data-caption="Walking towards the old city." alt="Walking towards Dubrovnik">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084065/IMG_2074.jpg" class="story-image" data-caption="First glimpse of the walled city." alt="View of Dubrovnik">
-                </div>
             </div>
 
             <div class="story-section-panel">
@@ -735,7 +726,7 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Adventures</span>
                 <h3 class="section-title-panel">Scooters and Kayaks</h3>
-                <p>I came in a different way once - we rented questionable scooters and ended up far above the walled city, looking at the border between Croatia and Serbia.</p>
+                <p>One time we rented questionable scooters and ended up far above the walled city, looking at the border between Croatia and Serbia.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" data-caption="Far above the walled city on questionable scooters." alt="Above Dubrovnik on scooters">
                 <p class="photo-caption-inline">Far above the walled city on questionable scooters.</p>
                 <p>Heading home I saw some kayakers. Sounded like the perfect way to end the day, right? Ocean kayaking, you say? Sure... sign me up.</p>
@@ -768,7 +759,7 @@ const locations = [
             ${generateGallery('dubrovnik')}
         `,
         fullDesc: "The rumors said it was a walled city. By the time we arrived, plenty of ancient ruins had been seen along both shores of the Adriatic.\n\nBut nothing prepared for walking through those gates and being transported back into the Middle Ages. It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817982/dubrovnik_ihkkaj.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770163556/IMG_3618.jpg"
     },
     {
         id: 6,
