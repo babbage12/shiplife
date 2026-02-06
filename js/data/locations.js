@@ -3919,66 +3919,7 @@ const locations = [
         fullDesc: "Venice shouldn't exist, but it does-and has for over a thousand years.\n\nNo cars, no roads-just canals, bridges, and the most beautiful decay you'll ever see. The Piazza San Marco floods with acqua alta and tourists alike. Gondoliers navigate waters their families have worked for generations. Every corner reveals another impossible view.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769525228/IMG_2302_t26i3t.jpg"
     },
-    {
-        id: 69,
-        title: "Perth, Australia",
-        coords: [-31.95, 115.86],
-        tag: "The Isolated City",
-        icon: "🌅",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "The most remote major city on Earth.",
-        fullDesc: "Perth is closer to Singapore than to Sydney. That isolation shapes everything about the place—the laid-back vibe, the pristine beaches, the feeling that you've reached the edge of the world.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Distance</span>
-                <h3 class="section-title-panel">2,000 Miles From Anywhere</h3>
-                <p>Perth is the most isolated major city on Earth. The nearest city of comparable size—Adelaide—is 2,700 kilometers away. Singapore is closer than Sydney.</p>
-                <p>You feel that distance. Not as loneliness, but as freedom. Perth developed its own culture because it had to. The pace is different. The beaches are emptier. The sunsets belong to you.</p>
-                <p>It's Australia's edge, in every sense.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Sunset</span>
-                <h3 class="section-title-panel">Indian Ocean Gold</h3>
-                <p>Perth is one of the few major Australian cities facing west, toward the Indian Ocean. The sunsets here are legendary.</p>
-                <p>The Swan River curves through downtown, and locals gather on its banks each evening to watch the sky turn colors that shouldn't exist—orange, pink, purple, gold.</p>
-                <p>It happens every day. Locals still stop to watch. That tells you something.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🌅</span>
-                        <span>Perth Facts</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Mining Wealth:</strong> Western Australia produces most of Australia's iron ore, gold, and natural gas. Perth is its capital.</li>
-                        <li><strong>Quokkas:</strong> Rottnest Island, just offshore, is home to quokkas—the "world's happiest animal."</li>
-                        <li><strong>Beach Weather:</strong> Perth averages 8 hours of sunshine per day—more than any other Australian capital.</li>
-                        <li><strong>Time Zone:</strong> Perth is 2-3 hours behind eastern Australia, depending on daylight saving.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 70,
-        title: "Adelaide, Australia",
-        coords: [-34.93, 138.60],
-        tag: "City of Churches",
-        icon: "🍷",
-        isDoor: false,
-        shortDesc: "Wine country meets festival city.",
-        fullDesc: "Adelaide was planned from the start-a grid of wide streets surrounded by parkland.\n\nThe Barossa Valley is just up the road, producing some of the world's best shiraz. The city transforms during festival season, punching well above its weight in arts and culture. It's Australia's most underrated city.",
-        image: ""
-    },
-    {
+        {
         id: 71,
         title: "Broome, Australia",
         coords: [-17.96, 122.24],
@@ -4220,18 +4161,7 @@ const locations = [
         fullDesc: "Placeholder description for Itea.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769798598/IMG_1301_artaae.jpg"
     },
-    {
-        id: 88,
-        title: "Surabaya, Indonesia",
-        coords: [-7.25, 112.75],
-        tag: "Java's Second City",
-        icon: "⚓",
-        isDoor: false,
-        shortDesc: "Indonesia's gritty, bustling port city.",
-        fullDesc: "Placeholder description for Surabaya.",
-        image: ""
-    },
-    {
+        {
         id: 89,
         title: "Semarang, Indonesia",
         coords: [-6.97, 110.42],
@@ -4253,55 +4183,7 @@ const locations = [
         fullDesc: "Christmas Island is famous for its annual red crab migration - millions of crabs making their way from the jungle to the sea.\n\nIt's one of Australia's most remote territories, sitting in the Indian Ocean closer to Indonesia than the mainland. The island is mostly national park, with rainforest, seabirds, and some of the most pristine reefs in the world.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532294/IMG_0185_f0sgyf.jpg"
     },
-    {
-        id: 91,
-        title: "Dili, East Timor",
-        coords: [-8.56, 125.57],
-        tag: "New Nation",
-        icon: "⚓",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "The world's newest nation, just after the war ended.",
-        fullDesc: "East Timor (Timor-Leste) only became independent in 2002, after centuries of Portuguese rule and a brutal Indonesian occupation. When we visited, the scars were still visible. So was the resilience.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The History</span>
-                <h3 class="section-title-panel">A Nation Being Born</h3>
-                <p>East Timor declared independence from Portugal in 1975. Nine days later, Indonesia invaded. What followed was 24 years of occupation that killed an estimated quarter of the population.</p>
-                <p>Independence finally came in 2002, making it the first new sovereign state of the 21st century.</p>
-                <p>When we visited, bullet holes still marked buildings in Dili. UN peacekeepers still patrolled. The country was literally rebuilding from scratch.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The People</span>
-                <h3 class="section-title-panel">Resilience</h3>
-                <p>What struck me wasn't the poverty or the visible damage. It was how people carried themselves.</p>
-                <p>This was a population that had survived occupation, famine, and war. They were building a country from nothing—no institutions, no infrastructure, just determination.</p>
-                <p>Dili felt heavy with history. But also, somehow, hopeful.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🕊️</span>
-                        <span>Timor-Leste Facts</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Languages:</strong> Portuguese and Tetum are official. Most people speak multiple local languages.</li>
-                        <li><strong>The Vote:</strong> In 1999, 78% voted for independence in a UN-supervised referendum.</li>
-                        <li><strong>Cristo Rei:</strong> A 27-meter statue of Christ overlooks Dili—a gift from Indonesia, ironically.</li>
-                        <li><strong>Coffee:</strong> Timor-Leste produces some of the world's best organic coffee. It's a major export.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+        {
         id: 92,
         title: "Phuket, Thailand",
         coords: [7.88, 98.39],
@@ -4407,55 +4289,7 @@ const locations = [
         fullDesc: "Phuket taught me a lesson I'll never forget. A night off, a bar with jungle animals painted on the walls, friendly strangers. One beer. One shot. Then nothing. I woke up in a strange room. My friend Martin is the reason I'm still here to tell this story.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768865557/PANO_20131118_134025_qd3r7o.jpg"
     },
-    {
-        id: 93,
-        title: "Port Moresby, Papua New Guinea",
-        coords: [-9.44, 147.18],
-        tag: "PNG Capital",
-        icon: "⚓",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Where cultures collide in the Pacific.",
-        fullDesc: "Port Moresby has a reputation. Guidebooks warn you about crime. Security briefings are thorough. It's not a place tourists visit casually—which makes it fascinating for those who do.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Reputation</span>
-                <h3 class="section-title-panel">The Port They Warn You About</h3>
-                <p>Every cruise line gives safety briefings. Port Moresby's are the most detailed.</p>
-                <p>Don't walk alone. Don't display valuables. Stay in groups. The warnings are real—PNG's capital has one of the highest crime rates in the Pacific.</p>
-                <p>But warning and reality are different things. We walked through markets, talked to locals, ate street food. What we found was a city struggling with modernity, not a war zone.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Diversity</span>
-                <h3 class="section-title-panel">800 Languages</h3>
-                <p>Papua New Guinea has over 800 distinct languages—more linguistic diversity than any other country on Earth.</p>
-                <p>Port Moresby is where these cultures collide. Highland warriors in traditional dress walk past businessmen in suits. Tribal identities remain strong even in the capital.</p>
-                <p>It's chaotic and raw and completely unlike anywhere else. Which is either a warning or an invitation, depending on who you are.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🦅</span>
-                        <span>PNG Facts</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Languages:</strong> 839 living languages—12% of the world's total, in a country of 9 million people.</li>
-                        <li><strong>Independence:</strong> PNG gained independence from Australia in 1975.</li>
-                        <li><strong>Kokoda Track:</strong> The famous WWII trail starts near Port Moresby—brutal jungle fighting that defined the Pacific war.</li>
-                        <li><strong>Birds of Paradise:</strong> PNG has more species of birds of paradise than anywhere else on Earth.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+        {
         id: 94,
         title: "Suva, Fiji",
         coords: [-18.14, 178.44],
@@ -4466,55 +4300,7 @@ const locations = [
         fullDesc: "Placeholder description for Suva.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769814482/fiji_xrsums.jpg"
     },
-        {
-        id: 98,
-        title: "Cartagena, Colombia",
-        coords: [10.39, -75.51],
-        tag: "Walled City",
-        icon: "🏛️",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Colonial splendor on the Caribbean.",
-        fullDesc: "Gabriel García Márquez set 'Love in the Time of Cholera' here, and you understand why within minutes. The walled old city feels like magical realism made real—crumbling balconies, bougainvillea cascading over fortress walls, heat that shimmers off the cobblestones.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Setting</span>
-                <h3 class="section-title-panel">Magical Realism Made Real</h3>
-                <p>Gabriel García Márquez didn't invent magical realism in Cartagena. He just wrote down what was already there.</p>
-                <p>The walled city looks exactly like you'd imagine a colonial Caribbean fortress should look—and somehow more so. Balconies overflow with flowers. Fortress walls glow orange at sunset. Heat rises from cobblestones in visible waves.</p>
-                <p>You walk through the old city and understand why Márquez set "Love in the Time of Cholera" here. The place demands stories.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Walls</span>
-                <h3 class="section-title-panel">Built to Survive</h3>
-                <p>These walls weren't decorative. They were built because pirates kept attacking.</p>
-                <p>For centuries, Cartagena was where Spanish treasure ships gathered before crossing the Atlantic. That made it a target. Sir Francis Drake ransomed the city. The French sacked it repeatedly.</p>
-                <p>So they built walls. Eleven kilometers of them. They still stand, and you can walk their entire length at sunset while the Caribbean burns orange.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">📚</span>
-                        <span>Literary Cartagena</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Gabo's City:</strong> García Márquez lived here and is buried here. His home is now a museum.</li>
-                        <li><strong>UNESCO Site:</strong> The old walled city has been a World Heritage Site since 1984.</li>
-                        <li><strong>The Heat:</strong> Average temperature is 32°C (90°F) year-round. The Spanish called it "The Heroic City" for surviving despite it.</li>
-                        <li><strong>Emerald Trade:</strong> Colombia produces 70-90% of the world's emeralds. Cartagena was their shipping point.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+            {
         id: 99,
         title: "Lima, Peru",
         coords: [-12.05, -77.04],
@@ -4573,151 +4359,7 @@ const locations = [
             </div>
         `
     },
-    {
-        id: 101,
-        title: "Santiago, Chile",
-        coords: [-33.45, -70.67],
-        tag: "Andean Capital",
-        icon: "🏛️",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Chile's capital beneath the mountains.",
-        fullDesc: "The Andes don't frame Santiago—they dominate it. Snow-capped peaks over 6,000 meters high loom at the end of every street. On clear days, the mountains feel close enough to touch. The city exists in their shadow, and knows it.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Scale</span>
-                <h3 class="section-title-panel">In the Shadow of Giants</h3>
-                <p>Most cities have skylines. Santiago has the Andes.</p>
-                <p>The mountains don't sit politely in the background. They dominate. Peaks over 6,000 meters high rise at the end of city streets—snow-capped year-round, catching the sunrise before the city wakes.</p>
-                <p>On clear winter mornings, after rain washes the smog away, the mountains look close enough to touch. They're not. But the illusion is powerful.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Contrast</span>
-                <h3 class="section-title-panel">Wine and Altitude</h3>
-                <p>Within an hour of downtown, you can be in world-class wine country or at a ski resort. That's the strange geography of Santiago.</p>
-                <p>The Maipo Valley produces some of South America's best Cabernet Sauvignon. The Andes above it have powder through September. Both feel like they belong to different cities.</p>
-                <p>They don't. They belong to this one, stretched between sea level and the roof of the continent.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🏔️</span>
-                        <span>The Andean Capital</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Elevation:</strong> Santiago sits at 520 meters—but the mountains visible from downtown exceed 6,500 meters.</li>
-                        <li><strong>Population:</strong> Over 7 million people—nearly half of Chile lives in the greater Santiago area.</li>
-                        <li><strong>The Smog:</strong> Trapped between mountains and coast, Santiago's air quality is often poor. Rain days are revelatory.</li>
-                        <li><strong>Wine Country:</strong> The Maipo and Colchagua valleys are less than 90 minutes away.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 103,
-        title: "Valdivia, Chile",
-        coords: [-39.81, -73.24],
-        tag: "Rivers & Rain",
-        icon: "⚓",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Germany in the Chilean south.",
-        fullDesc: "German immigrants arrived in the 1850s and never really left. Valdivia has beer halls, kuchen shops, and architecture that looks transplanted from Bavaria. The rivers are lined with sea lions begging at the fish market. It's wonderfully strange.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Heritage</span>
-                <h3 class="section-title-panel">Germany in Chile</h3>
-                <p>In the 1850s, the Chilean government invited German settlers to colonize the south. They came by the thousands—and brought everything with them.</p>
-                <p>Walk through Valdivia today and you'll find beer halls serving Kunstmann lager, bakeries selling kuchen, houses with steep pitched roofs designed for snow that rarely falls here.</p>
-                <p>It's not a theme park. These are fifth and sixth generation Chileans who happen to have German surnames and very strong opinions about beer.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The River</span>
-                <h3 class="section-title-panel">Sea Lions and Fish Markets</h3>
-                <p>The Calle-Calle River runs through town, and at the fish market, sea lions have learned to work the crowd.</p>
-                <p>They haul themselves onto the docks and bark at fishmongers, who toss them scraps. Tourists gather. The sea lions perform. Everyone gets what they came for.</p>
-                <p>It's chaotic and smells like fish and feels more authentic than any planned attraction.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🍺</span>
-                        <span>German Chile</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Kunstmann:</strong> Chile's most famous craft brewery started here. Tours include generous tastings.</li>
-                        <li><strong>The Earthquake:</strong> In 1960, the largest earthquake ever recorded (9.5) struck nearby. Valdivia was devastated.</li>
-                        <li><strong>University Town:</strong> The Universidad Austral gives Valdivia a youthful energy.</li>
-                        <li><strong>Rain:</strong> This is one of Chile's wettest cities. Bring layers.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 104,
-        title: "Puerto Montt, Chile",
-        coords: [-41.47, -72.94],
-        tag: "Gateway to Patagonia",
-        icon: "⚓",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Where the lakes meet the fjords.",
-        fullDesc: "This is where the Pan-American Highway ends and the fjords begin. South of Puerto Montt, Chile fragments into islands, channels, and glaciers. The road doesn't continue. Only boats do.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The End</span>
-                <h3 class="section-title-panel">Where the Road Stops</h3>
-                <p>The Pan-American Highway runs 30,000 kilometers from Alaska to the bottom of South America. It ends here.</p>
-                <p>South of Puerto Montt, Chile breaks apart. The mainland fractures into thousands of islands separated by fjords and channels. Roads become impossible. Ferries take over.</p>
-                <p>Standing at the port, looking south toward Patagonia, you're looking at the edge of the driveable world.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Market</span>
-                <h3 class="section-title-panel">Angelmó</h3>
-                <p>The fish market at Angelmó is reason enough to come. Stalls overflow with the strange bounty of cold southern waters—sea urchins, giant mussels, seaweed you've never seen before.</p>
-                <p>Locals eat curanto—a traditional stew of shellfish, meat, and potatoes—at plastic tables while seabirds circle overhead.</p>
-                <p>It's loud and crowded and smells like the sea. Perfect.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">⚓</span>
-                        <span>Gateway South</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>The Carretera Austral:</strong> Chile's famous "Southern Highway" starts here—700km of gravel through wilderness.</li>
-                        <li><strong>Salmon Capital:</strong> Chile is the world's second-largest salmon producer. Most of it ships through here.</li>
-                        <li><strong>Volcanoes:</strong> Osorno and Calbuco volcanoes are visible on clear days. Calbuco erupted spectacularly in 2015.</li>
-                        <li><strong>Climate:</strong> Prepare for rain. Puerto Montt averages 1,800mm annually.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+                {
         id: 122,
         title: "Castro, Chile",
         coords: [-42.48, -73.76],
@@ -4728,103 +4370,7 @@ const locations = [
         fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799840/IMG_6655_rwwdum.jpg"
     },
-    {
-        id: 105,
-        title: "Punta Arenas, Chile",
-        coords: [-53.16, -70.91],
-        tag: "Edge of the World",
-        icon: "🐧",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Chile's gateway to Antarctica.",
-        fullDesc: "One of the southernmost cities on Earth. The wind never stops—locals walk at permanent angles. In the plaza stands a statue of Magellan. Touch the toe of the native at his feet, they say, and you'll return someday. Everyone touches it.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Wind</span>
-                <h3 class="section-title-panel">The End of the World (Part 1)</h3>
-                <p>Punta Arenas shares the title "southernmost city" with Ushuaia across the strait. The rivalry is real. Both claim the edge of the world.</p>
-                <p>What Punta Arenas definitely claims is the wind. It blows constantly from the west, hard enough that locals walk tilted into it. Trees grow sideways. Flags are perpetually horizontal.</p>
-                <p>You don't visit for the weather. You visit because beyond this point, there's only ocean and Antarctica.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Tradition</span>
-                <h3 class="section-title-panel">Touch the Toe</h3>
-                <p>In the main plaza stands a statue of Ferdinand Magellan, the first European to navigate the strait that bears his name.</p>
-                <p>At his feet sits a bronze native Fuegian. Touch his toe, the legend says, and you'll return to Patagonia someday. The toe is worn smooth and shiny from a century of hopeful hands.</p>
-                <p>I touched it. Superstition costs nothing.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🐧</span>
-                        <span>The Far South</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Latitude:</strong> 53°S—roughly equivalent to the position of Manchester in the north, but much colder.</li>
-                        <li><strong>The Strait:</strong> The Strait of Magellan was the only Pacific passage before the Panama Canal opened in 1914.</li>
-                        <li><strong>Penguins:</strong> Magellanic penguin colonies are a short drive from town.</li>
-                        <li><strong>Duty Free:</strong> Punta Arenas is a duty-free zone. Alcohol and electronics are notably cheaper.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
-        id: 106,
-        title: "Montevideo, Uruguay",
-        coords: [-34.90, -56.19],
-        tag: "Laid-Back Capital",
-        icon: "⚓",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Uruguay's charming riverside capital.",
-        fullDesc: "Across the river from Buenos Aires, Montevideo feels like its quieter, more relaxed sibling. Same architecture, same café culture, but without the intensity. Locals carry thermoses of hot water everywhere, constantly refilling mate gourds. The pace is deliberately slow.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Contrast</span>
-                <h3 class="section-title-panel">The Quiet Neighbor</h3>
-                <p>Buenos Aires is a two-hour ferry ride across the River Plate. The cities share architecture, language, even the same nostalgic café culture.</p>
-                <p>But Montevideo is different. Quieter. Less anxious. Where BA is intense and dramatic, Montevideo is content to simply be.</p>
-                <p>It's the friend who doesn't need to be the center of attention. Comfortable in its own skin.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Ritual</span>
-                <h3 class="section-title-panel">Mate Culture</h3>
-                <p>Everyone in Uruguay carries two things: a thermos of hot water and a mate gourd. I mean everyone.</p>
-                <p>Mate isn't just a drink here—it's a social ritual. Sharing mate means sharing conversation. The person holding the thermos controls the pace of the gathering.</p>
-                <p>Watch Uruguayans walking down the street, thermos tucked under one arm, sipping mate through a metal straw. It's a national identity in beverage form.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🧉</span>
-                        <span>Uruguay Facts</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>First World Cup:</strong> Uruguay hosted and won the first FIFA World Cup in 1930. The stadium still stands.</li>
-                        <li><strong>Population:</strong> About 3.5 million people total—half live in Montevideo.</li>
-                        <li><strong>Progressive Leader:</strong> First country in the world to legalize marijuana nationwide (2013).</li>
-                        <li><strong>Beef Culture:</strong> Uruguay has more cattle than people. The asado (barbecue) tradition rivals Argentina's.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+            {
         id: 107,
         title: "Buenos Aires, Argentina",
         coords: [-34.60, -58.38],
@@ -4835,18 +4381,7 @@ const locations = [
         fullDesc: "Placeholder description for Buenos Aires.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769806999/IMG_6420_qzn455.jpg"
     },
-    {
-        id: 108,
-        title: "Salvador, Brazil",
-        coords: [-12.97, -38.50],
-        tag: "Afro-Brazilian Soul",
-        icon: "🎭",
-        isDoor: false,
-        shortDesc: "Where African and Brazilian cultures fuse.",
-        fullDesc: "Placeholder description for Salvador.",
-        image: ""
-    },
-    {
+        {
         id: 109,
         title: "Recife, Brazil",
         coords: [-8.05, -34.88],
@@ -4876,55 +4411,7 @@ const locations = [
         fullDesc: "Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.\n\nThe old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825894/recife_mlr7ts.jpg"
     },
-    {
-        id: 110,
-        title: "Fortaleza, Brazil",
-        coords: [-3.72, -38.54],
-        tag: "Northeast Sun",
-        icon: "☀️",
-        isDoor: false,
-        useRichContent: true,
-        shortDesc: "Brazil's sun-drenched northeast coast.",
-        fullDesc: "This isn't the Brazil of Rio or São Paulo. The northeast has its own identity—forró music, different accents, stronger African influences. Fortaleza is its biggest city: five million people, endless beaches, and a pace that makes Rio look uptight.",
-        image: "",
-        richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Region</span>
-                <h3 class="section-title-panel">The Other Brazil</h3>
-                <p>Ask a foreigner about Brazil and they'll describe Rio—Copacabana, Christ the Redeemer, Carnival. That's one Brazil.</p>
-                <p>The northeast is another country entirely. Different music (forró instead of samba). Different accents. Stronger African and indigenous influences. Hotter, drier, and proudly distinct.</p>
-                <p>Fortaleza is its gateway—a sprawling city of five million that most travelers have never heard of.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Coast</span>
-                <h3 class="section-title-panel">Endless Summer</h3>
-                <p>Fortaleza has 300 days of sunshine per year. The beaches stretch for 25 kilometers. The water is bathwater-warm year-round.</p>
-                <p>Locals treat the beach not as an occasional destination but as an extension of their living rooms. After-work drinks happen in the sand. Business meetings happen in the sand. Life happens in the sand.</p>
-                <p>If you're looking for Brazil without the tourist infrastructure, start here.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">☀️</span>
-                        <span>Northeast Brazil</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Forró:</strong> The regional music genre—accordion-driven, good for dancing, played everywhere.</li>
-                        <li><strong>Jangadas:</strong> Traditional fishing rafts still dot the coastline. They've been used here for centuries.</li>
-                        <li><strong>Beach Park:</strong> One of the largest water parks in Latin America is here.</li>
-                        <li><strong>Cashews:</strong> Ceará state (where Fortaleza sits) produces most of Brazil's cashews.</li>
-                    </ul>
-                </div>
-            </div>
-        `
-    },
-    {
+        {
         id: 123,
         title: "Ponza, Italy",
         coords: [40.895, 12.958],
