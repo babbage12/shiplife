@@ -2103,7 +2103,7 @@ const locations = [
         isDoor: false,
         shortDesc: "The postcard of the Aegean.",
         fullDesc: "Santorini needs no introduction.\n\nThe white-washed buildings cascading down volcanic cliffs, the blue domes, the sunsets that stop you in your tracks. It's touristy for a reason-some places really are as beautiful as the postcards suggest. Watching the sun sink into the caldera from Oia is something I'll never forget.",
-        image: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=1200"
+        image: "./images/hero/santorini/IMG_3470.jpg"
     },
     {
         id: 26,
