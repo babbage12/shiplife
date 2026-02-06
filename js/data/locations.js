@@ -4592,6 +4592,52 @@ const locations = [
         icon: "🍋",
         isDoor: false,
         shortDesc: "Perched above the Bay of Naples.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Sorrento sits on cliffs overlooking the Bay of Naples, with Vesuvius smoking on the horizon.</p>
+                <p>The town has drawn travelers for centuries - writers, artists, composers all fell for its lemon-scented air and impossible views. The old town's narrow streets wind past ceramics shops and limoncello vendors. From here you can see Capri floating in the bay, close enough to almost touch.</p>
+            </div>
+            <div class="photo-gallery-section" id="sorrentoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">26 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/sorrento/IMG_1103.JPG" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_4996.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_4997.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_4998.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_4999.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5002.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5003.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5004.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5005.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5006.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5762.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5763.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5764.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5765.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5767.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5768.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5771.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5772.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5773.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5775.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5776.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5778.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5779.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5780.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/IMG_5782.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="./images/gallery/sorrento/seabourn-in-amalfi.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                </div>
+            </div>
+        `,
         fullDesc: "Sorrento sits on cliffs overlooking the Bay of Naples, with Vesuvius smoking on the horizon.\n\nThe town has drawn travelers for centuries - writers, artists, composers all fell for its lemon-scented air and impossible views. The old town's narrow streets wind past ceramics shops and limoncello vendors. From here you can see Capri floating in the bay, close enough to almost touch.",
         image: "./images/hero/sorrento/IMG_1094.jpg"
     },
