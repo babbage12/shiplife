@@ -4585,6 +4585,17 @@ const locations = [
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769804268/IMG_7001_wxe4a4.jpg"
     },
     {
+        id: 133,
+        title: "Sorrento, Italy",
+        coords: [40.626, 14.376],
+        tag: "Lemon Groves & Cliffs",
+        icon: "🍋",
+        isDoor: false,
+        shortDesc: "Perched above the Bay of Naples.",
+        fullDesc: "Sorrento sits on cliffs overlooking the Bay of Naples, with Vesuvius smoking on the horizon.\n\nThe town has drawn travelers for centuries - writers, artists, composers all fell for its lemon-scented air and impossible views. The old town's narrow streets wind past ceramics shops and limoncello vendors. From here you can see Capri floating in the bay, close enough to almost touch.",
+        image: "./images/hero/sorrento/IMG_1094.jpg"
+    },
+    {
         id: 125,
         title: "Elba, Italy",
         coords: [42.815, 10.318],
