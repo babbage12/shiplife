@@ -7,22 +7,23 @@ Web-ready images hosted on GitHub. Older images remain on Cloudinary.
 ```
 images/
 ├── hero/          # Hero images for location panels
-│   └── {location-slug}.jpg
+│   └── {location-slug}/
+│       └── {image}.jpg
 └── gallery/       # Gallery photos organized by location
     └── {location-slug}/
-        └── {descriptive-name}.jpg
+        └── {image}.jpg
 ```
 
 ## Naming Convention
 
-**Location slugs** — lowercase, hyphens, no special chars:
-- `hong-kong.jpg`
-- `punta-arenas.jpg`
-- `port-moresby.jpg`
+**Location folders** — lowercase, hyphens, no special chars:
+- `hero/hong-kong/`
+- `hero/punta-arenas/`
+- `gallery/hong-kong/`
 
-**Gallery photos** — descriptive names:
-- `gallery/hong-kong/victoria-peak-view.jpg`
-- `gallery/hong-kong/star-ferry.jpg`
+**Image files** — descriptive names or numbers:
+- `hero/rome/27.jpg`
+- `gallery/rome/colosseum.jpg`
 
 ## Before Committing
 
@@ -34,10 +35,10 @@ images/
 
 ```javascript
 // Hero image
-image: "./images/hero/hong-kong.jpg"
+image: "./images/hero/rome/27.jpg"
 
 // Gallery images
 photos: [
-    { src: "./images/gallery/hong-kong/victoria-peak.jpg", caption: "View from Victoria Peak" }
+    { src: "./images/gallery/rome/colosseum.jpg", caption: "The Colosseum" }
 ]
 ```
