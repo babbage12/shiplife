@@ -3000,7 +3000,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">6 images</span>
+                        <span class="gallery-count">30 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -3011,6 +3011,30 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="gallery-thumb" data-caption="Olympic Museum." alt="Museum">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="gallery-thumb" data-caption="Barcelona from above." alt="City view">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="gallery-thumb" data-caption="Barcelona architecture." alt="Architecture">
+                    <img src="./images/gallery/barcelona/IMG_20140811_085632.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_090915.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_092621.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_093127.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094147.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094212.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094314.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094412.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094619.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094632.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094750.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094806.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094911.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_094915.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_095030.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_095425.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_100621.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_104456.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_105555.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_105601.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_105616.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_122138.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_122144.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="./images/gallery/barcelona/IMG_20140811_122645.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
                 </div>
             </div>
         `,
