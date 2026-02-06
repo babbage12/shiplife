@@ -1745,8 +1745,37 @@ const locations = [
         icon: "🍇",
         isDoor: false,
         shortDesc: "Gateway to wine country.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>To get here, we sailed through the stunning Queen Charlotte Sound.</p>
+                <p>Picton itself is small, but it's the gateway to Marlborough—New Zealand's premier wine region. Sauvignon Blanc country, with rolling hills that glow golden in the afternoon light.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="pictonGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">8 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/picton/IMG_20140106_092909.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_104919.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_110034.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_110114.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4320.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4325.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4329.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4338.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                </div>
+            </div>
+        `,
         fullDesc: "To get here, we sailed through the stunning Queen Charlotte Sound.\n\nPicton itself is small, but it's the gateway to Marlborough-New Zealand's premier wine region. Sauvignon Blanc country, with rolling hills that glow golden in the afternoon light.",
-        image: "https://images.unsplash.com/photo-1589328223253-9a3b65d64827?w=1200"
+        image: "./images/hero/picton/IMG_20140106_093426.jpg"
     },
     {
         id: 16,
