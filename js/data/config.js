@@ -175,6 +175,7 @@ const locationPortholeURLs = {
     "San Juan, Puerto Rico": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206678/san_juan_hw0fsw.png",
     "Sea Days": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
     "Armação dos Búzios, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
+    "Santarém, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
 };
 
 // Icon configuration for each location
