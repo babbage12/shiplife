@@ -1252,20 +1252,24 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">4 images</span>
+                        <span class="gallery-count">8 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141348_Facebook_xxhtbm.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141422_Facebook_z4qht5.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141240_Facebook_guktno.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140613_Facebook_vgrb9g.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-1.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-2.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-3.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-4.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/trains-station.jpeg" class="gallery-thumb" data-caption="Train station" alt="Rome">
+                    <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="gallery-thumb" data-caption="Civitavecchia" alt="Rome">
+                    <img src="./images/gallery/rome/ticket.jpeg" class="gallery-thumb" data-caption="Train ticket" alt="Rome">
+                    <img src="./images/gallery/rome/on.-train.jpeg" class="gallery-thumb" data-caption="On the train" alt="Rome">
                 </div>
             </div>
         `,
         fullDesc: "Every time I visited Rome, I found something new.\n\nThe Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.",
-        image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1200"
+        image: "./images/hero/rome/27.jpg"
     },
     {
         id: 11,
