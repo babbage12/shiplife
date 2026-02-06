@@ -177,6 +177,7 @@ const locationPortholeURLs = {
     "Armação dos Búzios, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
     "Santarém, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
     "Symi, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
+    "Sorrento, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937420/marcie_00878__wknyxo.png",
 };
 
 // Icon configuration for each location
