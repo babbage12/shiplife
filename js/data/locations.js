@@ -2102,6 +2102,37 @@ const locations = [
         icon: "🏛️",
         isDoor: false,
         shortDesc: "The postcard of the Aegean.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Santorini needs no introduction.</p>
+                <p>The white-washed buildings cascading down volcanic cliffs, the blue domes, the sunsets that stop you in your tracks. It's touristy for a reason—some places really are as beautiful as the postcards suggest. Watching the sun sink into the caldera from Oia is something I'll never forget.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="santoriniGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">10 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/santorini/IMG_3432.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3453.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3472.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3480.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3485.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3491.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3502.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3509.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3518.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3524.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                </div>
+            </div>
+        `,
         fullDesc: "Santorini needs no introduction.\n\nThe white-washed buildings cascading down volcanic cliffs, the blue domes, the sunsets that stop you in your tracks. It's touristy for a reason-some places really are as beautiful as the postcards suggest. Watching the sun sink into the caldera from Oia is something I'll never forget.",
         image: "./images/hero/santorini/IMG_3470.jpg"
     },
