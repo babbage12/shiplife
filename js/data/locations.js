@@ -3218,6 +3218,47 @@ const locations = [
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768952174/IMG_6136_bkdyes.jpg"
     },
     {
+        id: 131,
+        title: "Santarém, Brazil",
+        coords: [-2.43, -54.71],
+        tag: "Meeting of the Waters",
+        icon: "🌿",
+        isDoor: false,
+        shortDesc: "Where the Tapajós meets the Amazon.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Santarém sits at the confluence of the Tapajós and Amazon rivers—a meeting of the waters where the dark blue Tapajós flows alongside the muddy brown Amazon before slowly mixing.</p>
+                <p>This is deep Amazon territory. The city was founded in 1661 and served as a gateway to the interior. Today it's a glimpse of river life far from the tourist trail.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="santaremGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">9 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/santarem/IMG_6161.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6162.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6168.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6169.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6170.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6171.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6174.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6176.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="./images/gallery/santarem/IMG_6177.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                </div>
+            </div>
+        `,
+        fullDesc: "Santarém sits at the confluence of the Tapajós and Amazon rivers—a meeting of the waters where the dark blue Tapajós flows alongside the muddy brown Amazon before slowly mixing.",
+        image: "./images/hero/santarem/IMG_6160.jpg"
+    },
+    {
         id: 44,
         title: "Quebec City, Canada",
         coords: [46.81, -71.21],
