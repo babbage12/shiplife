@@ -1315,7 +1315,7 @@ const locations = [
             </div>
         `,
         fullDesc: "Every time I visited Rome, I found something new.\n\nThe Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.",
-        image: "./images/hero/rome/27.jpg"
+        image: "./images/gallery/rome/22.jpeg"
     },
     {
         id: 11,
