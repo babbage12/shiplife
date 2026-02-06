@@ -2118,6 +2118,56 @@ const locations = [
         image: "./images/hero/santorini/IMG_3470.jpg"
     },
     {
+        id: 132,
+        title: "Symi, Greece",
+        coords: [36.62, 27.84],
+        tag: "Painted Harbor",
+        icon: "🎨",
+        isDoor: false,
+        shortDesc: "Neoclassical houses cascade down to the harbor.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Symi is what happens when an island decides to be beautiful on purpose.</p>
+                <p>The neoclassical mansions in shades of ochre, terracotta, and pastel climb the hillsides around the harbor of Gialos. Once the sponge-diving capital of the Aegean, the island's wealth built these elegant houses. Now they're perfectly preserved, reflecting in the still harbor waters.</p>
+                <p>Away from the day-trippers who arrive from Rhodes, the upper town of Chorio rewards those who climb its 500 steps with narrow lanes, Byzantine churches, and views that stretch to Turkey.</p>
+            </div>
+            <div class="photo-gallery-section" id="symiGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">18 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/simi/IMG_5783.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5784.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5785.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5786.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5787.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5788.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5789.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5790.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5791.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5792.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5793.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5794.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5795.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5797.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5798.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5799.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5800.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="./images/gallery/simi/IMG_5801.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                </div>
+            </div>
+        `,
+        fullDesc: "Symi is what happens when an island decides to be beautiful on purpose.\n\nThe neoclassical mansions in shades of ochre, terracotta, and pastel climb the hillsides around the harbor of Gialos. Once the sponge-diving capital of the Aegean, the island's wealth built these elegant houses. Now they're perfectly preserved, reflecting in the still harbor waters.",
+        image: "./images/hero/simi/IMG_5796.jpeg"
+    },
+    {
         id: 26,
         title: "Piran, Slovenia",
         coords: [45.53, 13.57],
