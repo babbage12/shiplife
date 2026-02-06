@@ -1571,7 +1571,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">20 images</span>
+                        <span class="gallery-count">34 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1596,6 +1596,20 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/003-7_vqkbd8.jpg" class="gallery-thumb" data-caption="With guests." alt="With guests">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/001-5_exb3r6.jpg" class="gallery-thumb" data-caption="Orient Bar full of life." alt="Bar full">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/004-6_gfk1p1.jpg" class="gallery-thumb" data-caption="My first performance." alt="First performance">
+                    <img src="./images/gallery/sydney/001.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/003.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/012.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/023.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/030.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/036.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/048.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/049.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/050.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/051.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/Last Day on board the Sun...see you in 2011!.jpeg" class="gallery-thumb" data-caption="Last Day on board the Sun...see you in 2011!" alt="Last day on the Sun">
+                    <img src="./images/gallery/sydney/Maritime Museum.jpeg" class="gallery-thumb" data-caption="Maritime Museum" alt="Maritime Museum">
+                    <img src="./images/gallery/sydney/Nice Boat.jpeg" class="gallery-thumb" data-caption="Nice Boat" alt="Nice Boat">
+                    <img src="./images/gallery/sydney/sydney harbor bridge.jpeg" class="gallery-thumb" data-caption="Sydney Harbour Bridge" alt="Sydney Harbour Bridge">
                 </div>
             </div>
         `,
