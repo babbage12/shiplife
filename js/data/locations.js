@@ -3333,6 +3333,47 @@ const locations = [
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769809159/20200209_075921_rvq35a.jpg"
     },
     {
+        id: 130,
+        title: "Armação dos Búzios, Brazil",
+        coords: [-22.75, -41.88],
+        tag: "Brazilian Riviera",
+        icon: "🏖️",
+        isDoor: false,
+        shortDesc: "The St. Tropez of Brazil.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera—cobblestone streets, boutique hotels, and over 20 beaches to choose from.</p>
+                <p>The peninsula juts into the Atlantic, catching breezes from both sides. Each beach has its own personality: some wild and windswept, others calm and perfect for swimming.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="buziosGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">9 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/buzios/IMG_6181.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6188.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6195.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6198.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6207.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6226.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6230.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6233.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="./images/gallery/buzios/IMG_6235.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                </div>
+            </div>
+        `,
+        fullDesc: "Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera—cobblestone streets, boutique hotels, and over 20 beaches to choose from.",
+        image: "./images/hero/buzios/IMG_6213.jpg"
+    },
+    {
         id: 46,
         title: "Portovenere, Italy",
         coords: [44.05, 9.84],
