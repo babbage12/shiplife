@@ -742,7 +742,7 @@ const locations = [
                 <h3 class="section-title-panel">The Steadfast Tin Soldier</h3>
                 <p>At some point it occurred to me. As a kid I'd read Hans Christian Andersen's <em>The Steadfast Tin Soldier</em> so many times that the illustrations had seared themselves into my subconscious - a tiny soldier, swept through the gutters in a paper boat, drifting toward a walled city. The story gave me fever dreams for years. Sometimes I was the soldier in the boat. Sometimes I watched from somewhere above. Once the boat fell into a gutter and vanished, just like in the story.</p>
                 <p>I was fascinated by the story but so saddened that the soldier kept dying. I always wanted him to make it to the castle walls and finish the journey.</p>
-                <p>I'd forgotten all about the story and how real it seemed, but when I passed through the outer gate into the walled city, I didn't fail to see the irony.</p>
+                <p>I'd forgotten all about the story and how real it seemed to me as a child, but when I passed through the outer gate into the walled city, I didn't fail to see the irony.</p>
                 <blockquote class="story-quote">The tin soldier had finally made it beyond the gates. Alive to see all the mystery and magic of the walled city of Dubrovnik.</blockquote>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149008/IMG_2113.jpg" class="story-image" data-caption="Walking toward the gates - like stepping into an Andersen book." alt="Walking toward the gates of Dubrovnik">
