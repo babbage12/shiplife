@@ -1221,10 +1221,33 @@ const locations = [
             </div>
 
             <div class="story-section-panel">
+                <span class="section-tag-panel">Getting There</span>
+                <h3 class="section-title-panel">The Journey from the Port</h3>
+                <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="story-image" data-caption="Iconic statue near Civitavecchia port." alt="Civitavecchia statue">
+                <p class="photo-caption-inline">The port town of Civitavecchia. Rome is about 80km inland.</p>
+                <img src="./images/gallery/rome/ticket.jpeg" class="story-image" data-caption="Train ticket to Rome." alt="Train ticket">
+                <p class="photo-caption-inline">I bought my train ticket to the city.</p>
+                <img src="./images/gallery/rome/trains-station.jpeg" class="story-image" data-caption="Civitavecchia train station." alt="Train station">
+                <p class="photo-caption-inline">I hope I boarded the right train. I couldn't find anyone who spoke English and I was late getting to the right spot in the station.</p>
+                <img src="./images/gallery/rome/on.-train.jpeg" class="story-image" data-caption="On the train to Rome." alt="On the train">
+                <p class="photo-caption-inline">On the train. Still had no idea if I was going in the right direction.</p>
+                <img src="./images/gallery/rome/6.jpeg" class="story-image" data-caption="Finally arrived - the Colosseum." alt="The Colosseum">
+                <p class="photo-caption-inline">Finally, I arrived.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <span class="section-tag-panel">The Eternal City</span>
                 <h3 class="section-title-panel">Always Something New</h3>
-                <p>Every time I visited Rome, I found something new.</p>
-                <p>The Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.</p>
+                <p>Every time I visited Rome, I found something new. The Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning.</p>
+                <div class="story-gallery-grid">
+                    <img src="./images/gallery/rome/rome-1.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-2.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                </div>
+                <p class="photo-caption-inline">Rome rewards those who explore.</p>
+                <div class="story-gallery-grid">
+                    <img src="./images/gallery/rome/rome-3.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/rome-4.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                </div>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -1252,19 +1275,42 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">8 images</span>
+                        <span class="gallery-count">31 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
+                    <img src="./images/hero/rome/27.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="gallery-thumb" data-caption="Civitavecchia port" alt="Civitavecchia">
+                    <img src="./images/gallery/rome/ticket.jpeg" class="gallery-thumb" data-caption="Train ticket to Rome" alt="Train ticket">
+                    <img src="./images/gallery/rome/trains-station.jpeg" class="gallery-thumb" data-caption="Train station" alt="Train station">
+                    <img src="./images/gallery/rome/on.-train.jpeg" class="gallery-thumb" data-caption="On the train to Rome" alt="On the train">
+                    <img src="./images/gallery/rome/5.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/6.jpeg" class="gallery-thumb" data-caption="The Colosseum" alt="Colosseum">
+                    <img src="./images/gallery/rome/7.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/8.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/9.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/10.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/11.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/12.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/13.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/14.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/15.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/16.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/18.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/19.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/20.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/21.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/22.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/23.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/24.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/25.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/26.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="./images/gallery/rome/33.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
                     <img src="./images/gallery/rome/rome-1.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
                     <img src="./images/gallery/rome/rome-2.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
                     <img src="./images/gallery/rome/rome-3.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
                     <img src="./images/gallery/rome/rome-4.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/trains-station.jpeg" class="gallery-thumb" data-caption="Train station" alt="Rome">
-                    <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="gallery-thumb" data-caption="Civitavecchia" alt="Rome">
-                    <img src="./images/gallery/rome/ticket.jpeg" class="gallery-thumb" data-caption="Train ticket" alt="Rome">
-                    <img src="./images/gallery/rome/on.-train.jpeg" class="gallery-thumb" data-caption="On the train" alt="Rome">
                 </div>
             </div>
         `,
