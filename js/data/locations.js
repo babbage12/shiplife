@@ -135,6 +135,35 @@ const locations = [
         icon: "☀️",
         isDoor: false,
         shortDesc: "First shore leave. The door stayed open.",
+        useRichContent: true,
+        richContent: `
+            <p>Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.</p>
+            <p>Mentally prepared for a call from the cruise director's office saying "Thanks, but no thanks" along with a plane ticket home.</p>
+            <p>It was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.</p>
+            <p>But eventually the crew was let off the ship. Myself included.</p>
+            <p>First shore leave.</p>
+            <p>Turns out, this was the first of many shore leaves over the next 12 years.</p>
+            <p>The door stayed open.</p>
+
+            <div class="photo-gallery-section" id="brisbaneGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">6 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816317/brisbane_iajcgd.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="./images/gallery/brisbane/brisbane.jpeg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="./images/gallery/brisbane/003.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="./images/gallery/brisbane/036.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="./images/gallery/brisbane/038.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="./images/gallery/brisbane/George V.JPG" class="gallery-thumb" data-caption="George V Hotel, Brisbane" alt="George V Hotel">
+                </div>
+            </div>
+        `,
         fullDesc: "Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.\n\nMentally prepared for a call from the cruise director's office saying \"Thanks, but no thanks\" along with a plane ticket home.\n\nIt was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.\n\nBut eventually the crew was let off the ship. Myself included.\n\nFirst shore leave.\n\nTurns out, this was the first of many shore leaves over the next 12 years.\n\nThe door stayed open.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816317/brisbane_iajcgd.jpg"
     },
@@ -1847,6 +1876,76 @@ const locations = [
         shortDesc: "Vintage architecture and classic automobiles.",
         fullDesc: "Napier is famous for its Art Deco architecture, rebuilt after an earthquake in 1931.\n\nWalking these streets feels like stepping back into the Great Gatsby era. Classic cars line the boulevards. The whole town is a time capsule.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816605/Napier_ktolwj.jpg"
+    },
+    {
+        id: 130,
+        title: "Dunedin, New Zealand",
+        coords: [-45.8788, 170.5028],
+        tag: "Scottish Heritage",
+        icon: "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        isDoor: false,
+        shortDesc: "New Zealand's Edinburgh - Victorian grandeur at the bottom of the world.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Port Chalmers</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                    <span class="demo-value">Scottish Settlement</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">Victorian Architecture</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Edinburgh of the South</span>
+                <h3 class="section-title-panel">Gold Rush Grandeur</h3>
+                <p>Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.</p>
+                <p>The Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself (Dunedin is the Gaelic name for Edinburgh). Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.</p>
+                <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
+                <p class="photo-caption-inline">Port Chalmers, the historic port town where cruise ships dock. Victorian brick buildings and misty Otago hills.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Dunedin</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                        <span>Scottish New Zealand</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Steepest Street:</strong> Baldwin Street was once recognized as the world's steepest residential street.</li>
+                        <li><strong>Wildlife:</strong> The Otago Peninsula is home to royal albatross, yellow-eyed penguins, and fur seals.</li>
+                        <li><strong>University Town:</strong> The University of Otago (1869) is New Zealand's oldest university.</li>
+                        <li><strong>Cadbury:</strong> Dunedin was home to New Zealand's Cadbury chocolate factory for over 80 years.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="photo-gallery-section" id="dunedinGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">1 image</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers - Dunedin's cruise port" alt="Port Chalmers">
+                </div>
+            </div>
+        `,
+        fullDesc: "Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.\n\nThe Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself. Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.",
+        image: "./images/gallery/dunedin/port-chalmers.jpeg"
     },
         {
         id: 18,
