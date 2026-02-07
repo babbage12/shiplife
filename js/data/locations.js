@@ -1098,7 +1098,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">12 images</span>
+                        <span class="gallery-count">63 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1110,11 +1110,61 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="gallery-thumb" data-caption="Ushuaia view." alt="Ushuaia view">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="gallery-thumb" data-caption="Ushuaia scenery." alt="Ushuaia scenery">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="gallery-thumb" data-caption="Tierra del Fuego landscape." alt="Tierra del Fuego">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/IMG_6612.jpg" class="gallery-thumb" data-caption="Monte Olivia from the water." alt="Monte Olivia" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/IMG_6613.jpg" class="gallery-thumb" data-caption="Approaching Ushuaia." alt="Approaching Ushuaia" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/tierra_10.jpg" class="gallery-thumb" data-caption="Tierra del Fuego." alt="Tierra del Fuego" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/tierra3.jpg" class="gallery-thumb" data-caption="Tierra del Fuego scenery." alt="Tierra del Fuego scenery" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190757/IMG_6608.jpg" class="gallery-thumb" data-caption="Patagonian mountains." alt="Patagonian mountains" onclick="event.stopPropagation(); openLightbox(this.src.replace('w_400','w_1200'))" />
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/IMG_6612.jpg" class="gallery-thumb" data-caption="Monte Olivia from the water." alt="Monte Olivia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/IMG_6613.jpg" class="gallery-thumb" data-caption="Approaching Ushuaia." alt="Approaching Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/tierra_10.jpg" class="gallery-thumb" data-caption="Tierra del Fuego." alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/tierra3.jpg" class="gallery-thumb" data-caption="Tierra del Fuego scenery." alt="Tierra del Fuego scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190757/IMG_6608.jpg" class="gallery-thumb" data-caption="Patagonian mountains." alt="Patagonian mountains">
+                    <img src="./images/gallery/ushuaia/IMG_6579.jpg" class="gallery-thumb" data-caption="Ushuaia church" alt="Church">
+                    <img src="./images/gallery/ushuaia/IMG_6581.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6582.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6587.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6590.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6594.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6595.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6596.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6597.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6598.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6600.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6601.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6602.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6657.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6658.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6659.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6660.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6661.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6662.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6663.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6664.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6666.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6667.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6668.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6669.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6670.jpeg" class="gallery-thumb" data-caption="Ushuaia harbor" alt="Harbor">
+                    <img src="./images/gallery/ushuaia/IMG_6671.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6672.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6673.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6674.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6675.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6676.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6677.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6678.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6679.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6681.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6682.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6683.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6684.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6685.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6686.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6687.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6688.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6689.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6690.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6691.jpeg" class="gallery-thumb" data-caption="Ushuaia waterfront" alt="Waterfront">
+                    <img src="./images/gallery/ushuaia/IMG_6692.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6693.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6694.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="./images/gallery/ushuaia/IMG_6695.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                 </div>
             </div>
         `,
@@ -1600,7 +1650,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">63 images</span>
+                        <span class="gallery-count">35 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1625,49 +1675,21 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/003-7_vqkbd8.jpg" class="gallery-thumb" data-caption="With guests." alt="With guests">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/001-5_exb3r6.jpg" class="gallery-thumb" data-caption="Orient Bar full of life." alt="Bar full">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/004-6_gfk1p1.jpg" class="gallery-thumb" data-caption="My first performance." alt="First performance">
-                    <img src="./images/gallery/sydney/001.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                     <img src="./images/gallery/sydney/003.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/012.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/023.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/030.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/036.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/009 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/012.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/014.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/027.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/036.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                     <img src="./images/gallery/sydney/048.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                     <img src="./images/gallery/sydney/049.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/050.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/050.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                     <img src="./images/gallery/sydney/051.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                     <img src="./images/gallery/sydney/Last Day on board the Sun...see you in 2011!.jpeg" class="gallery-thumb" data-caption="Last Day on board the Sun...see you in 2011!" alt="Last day on the Sun">
                     <img src="./images/gallery/sydney/Maritime Museum.jpeg" class="gallery-thumb" data-caption="Maritime Museum" alt="Maritime Museum">
                     <img src="./images/gallery/sydney/Nice Boat.jpeg" class="gallery-thumb" data-caption="Nice Boat" alt="Nice Boat">
+                    <img src="./images/gallery/sydney/dance theatre.jpeg" class="gallery-thumb" data-caption="Dance Theatre" alt="Dance Theatre">
                     <img src="./images/gallery/sydney/sydney harbor bridge.jpeg" class="gallery-thumb" data-caption="Sydney Harbour Bridge" alt="Sydney Harbour Bridge">
-                    <img src="./images/gallery/sydney/002.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/002 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/003 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/004.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/005.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/006.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/007.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/008.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/009.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/009 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/011.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/014.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/022.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/027.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/031.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/033.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/034.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/049 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/053.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/056.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/059.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/069.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/073.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/075.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/090.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/098.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/123.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/128.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/129.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                 </div>
             </div>
         `,
@@ -1996,6 +2018,39 @@ const locations = [
         icon: "🏰",
         isDoor: false,
         shortDesc: "Kingdom of Tonga.",
+        useRichContent: true,
+        richContent: `
+            <p>Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.</p>
+            <p>It is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here - slower, more intentional. The signpost outside town points to everywhere else in the world, as if to say: you've reached the edge of things.</p>
+
+            <div class="photo-gallery-section" id="tongaGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">15 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/tonga/002.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/008.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/009.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/011.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/031.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/033 copy.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/034.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/049 2.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/053.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/056.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/059.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/069.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/073.JPG" class="gallery-thumb" data-caption="World signpost" alt="World signpost">
+                    <img src="./images/gallery/tonga/075.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="./images/gallery/tonga/tonga.jpeg" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                </div>
+            </div>
+        `,
         fullDesc: "Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.\n\nIt is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here-slower, more intentional.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816004/tonga_jolrwg.jpg"
     },
@@ -2007,6 +2062,48 @@ const locations = [
         icon: "🚤",
         isDoor: false,
         shortDesc: "The pearl of the Pacific.",
+        useRichContent: true,
+        richContent: `
+            <p>The water here is a color I didn't know existed.</p>
+            <p>We anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.</p>
+            <p>A group of us took a boat to a small motu and spent the afternoon swimming in water so clear it barely seemed to exist. Cold beers raised high. The kind of day you remember forever.</p>
+
+            <div class="photo-gallery-section" id="boraBoraGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">21 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/bora bora/bora bora baby.JPG" class="gallery-thumb" data-caption="Mount Otemanu" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/038.JPG" class="gallery-thumb" data-caption="Waterfall hike" alt="Waterfall">
+                    <img src="./images/gallery/bora bora/046.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/054.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/062.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/063.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/065.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/079.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/080.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/081.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/083.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/097.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/098.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/099.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/100.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/101.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/113.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/118.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/120.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/me and mark.JPG" class="gallery-thumb" data-caption="Me and Mark" alt="Me and Mark">
+                    <img src="./images/gallery/bora bora/off the main island bora bora - Copy.JPG" class="gallery-thumb" data-caption="Off the main island" alt="Off the main island">
+                    <img src="./images/gallery/bora bora/tahiti waterfall.JPG" class="gallery-thumb" data-caption="Tahiti waterfall" alt="Tahiti waterfall">
+                    <img src="./images/gallery/bora bora/grapefruit and apple.JPG" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
+                </div>
+            </div>
+        `,
         fullDesc: "The water here is a color I didn't know existed.\n\nWe anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816171/bora_bora_fpjre2.jpg"
     },
@@ -2240,17 +2337,6 @@ const locations = [
         `,
         fullDesc: "Lifou was one of those places that felt like a secret. On the far side of the island was a swimming spot with water so clear it barely looked real. But it was the church on the hill that kept drawing me back - and the spider in the wooden fence who became my unlikely landmark friend.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768963793/New_Caldonia_church_t4pfw4.jpg"
-    },
-    {
-        id: 23,
-        title: "Airlie Beach, Australia",
-        coords: [-20.2688, 148.7166],
-        tag: "Climate Anxiety",
-        icon: "🌡️",
-        isDoor: false,
-        shortDesc: "The Whitsundays-where beauty meets foreboding.",
-        fullDesc: "I worried a lot. Every time I jumped onto the catamaran tender until the moment I left, a constant feeling droned its way around my brain. Something doesn't feel right.\n\nAgain I imagined an earlier time. When walking in the sand didn't burn my toes. When the glare of the sun while at sea wasn't so offensive. When one might have been able to take a deep breath of the world around them and be grateful, instead of being pulled in two directions by the beauty and the foreboding evidence of climate change.\n\nI've never been anywhere so consistently uncomfortable temperature-wise. You just know that something is going terribly wrong with the planet.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817012/arlie_beach_wnpbnq.jpg"
     },
     {
         id: 24,
@@ -3272,8 +3358,36 @@ const locations = [
         icon: "🏔️",
         isDoor: false,
         shortDesc: "Where the land runs out and the wind takes over.",
+        useRichContent: true,
+        richContent: `
+            <p>The name means 'Land of Fire' but it feels more like the edge of everything.</p>
+            <p>Magellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.</p>
+            <p>Sailing through, you understand why early explorers thought they'd reached the end of the world. The mountains rise jagged and defiant from the water. The sky shifts from blue to grey in minutes. Everything feels raw and unfinished - like the earth is still deciding what it wants to be.</p>
+
+            <div class="photo-gallery-section" id="tierraDelFuegoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">10 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/tierra del fuego/tierra 2.jpg" class="gallery-thumb" data-caption="The jagged peaks of Tierra del Fuego" alt="Tierra del Fuego peaks">
+                    <img src="./images/gallery/tierra del fuego/tierra3.jpeg" class="gallery-thumb" data-caption="Ushuaia beneath the mountains" alt="Ushuaia">
+                    <img src="./images/gallery/tierra del fuego/IMG_6608.jpg" class="gallery-thumb" data-caption="View from Seabourn Quest" alt="View from ship">
+                    <img src="./images/gallery/tierra del fuego/IMG_6611.jpeg" class="gallery-thumb" data-caption="Ushuaia and the airport" alt="Ushuaia airport">
+                    <img src="./images/gallery/tierra del fuego/IMG_6612.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego landscape" alt="Landscape">
+                    <img src="./images/gallery/tierra del fuego/IMG_6613.jpeg" class="gallery-thumb" data-caption="Mountains meeting the sea" alt="Mountains">
+                    <img src="./images/gallery/tierra del fuego/IMG_6614.jpeg" class="gallery-thumb" data-caption="The dramatic horn peak" alt="Horn peak">
+                    <img src="./images/gallery/tierra del fuego/IMG_6619.jpeg" class="gallery-thumb" data-caption="Sailing through Tierra del Fuego" alt="Sailing">
+                    <img src="./images/gallery/tierra del fuego/tierra 10.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                </div>
+            </div>
+        `,
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg"
+        image: "./images/gallery/tierra del fuego/tierra 2.jpg"
     },
     {
         id: 120,
@@ -4941,5 +5055,117 @@ const locations = [
         `,
         fullDesc: "Antibes has the kind of old town that makes you want to get lost on purpose.\n\nThe ramparts still stand, the market still bustles, and the Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769818777/antibes_watchtower_kemxi6.jpg"
+    },
+    {
+        id: 134,
+        title: "Port Denarau, Fiji",
+        coords: [-17.7765, 177.3800],
+        tag: "Marina Paradise",
+        icon: "⛵",
+        isDoor: false,
+        shortDesc: "Fiji's resort marina, where superyachts meet palm trees.",
+        useRichContent: true,
+        richContent: `
+            <p>Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and the kind of yachts that make you wonder what you did wrong in life.</p>
+            <p>The sailing yacht Nirvana was docked here when we visited - a $35 million beauty owned by the founder of Mango. The Fiji flag flew from her mast alongside the Spanish ensign.</p>
+            <p>There used to be a Hard Rock Cafe right on the marina. It closed in 2020, but back then it was still going strong, serving up burgers while the tropical sun set over the palm trees.</p>
+
+            <div class="photo-gallery-section" id="fijiGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">9 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/figi/129.JPG" class="gallery-thumb" data-caption="Yacht Nirvana at Port Denarau" alt="Yacht Nirvana">
+                    <img src="./images/gallery/figi/123.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/128.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/132.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/133.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/134.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/135.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/158.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="./images/gallery/figi/Nirvana - Copy.JPG" class="gallery-thumb" data-caption="Yacht Nirvana" alt="Yacht Nirvana">
+                </div>
+            </div>
+        `,
+        fullDesc: "Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and superyachts.\n\nThe sailing yacht Nirvana was docked here when we visited - a $35 million beauty. There used to be a Hard Rock Cafe right on the marina.",
+        image: "./images/gallery/figi/129.JPG"
+    },
+    {
+        id: 135,
+        title: "Isle of Pines, New Caledonia",
+        coords: [-22.6167, 167.4833],
+        tag: "The Closest to Paradise",
+        icon: "🌴",
+        isDoor: false,
+        shortDesc: "A coral island ringed by impossibly clear water.",
+        useRichContent: true,
+        richContent: `
+            <p>The Isle of Pines is one of those places that makes the travel brochures seem like they undersold it.</p>
+            <p>The water is so clear you can see straight to the bottom from the deck. The crew gathered on the beach for the day - some swimming, some lounging, cold drinks in hand. The kind of crew day that made the contract worth it.</p>
+
+            <div class="photo-gallery-section" id="isleOfPinesGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">8 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/Isle of pines/054.JPG" class="gallery-thumb" data-caption="Crew day at the beach" alt="Crew day">
+                    <img src="./images/gallery/Isle of pines/033.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/046.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/023.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/030.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/023.jpeg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/030.jpeg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="./images/gallery/Isle of pines/DSC00026.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                </div>
+            </div>
+        `,
+        fullDesc: "The Isle of Pines is one of those places that makes the travel brochures seem like they undersold it.\n\nThe water is so clear you can see straight to the bottom from the deck. The crew gathered on the beach for the day.",
+        image: "./images/gallery/Isle of pines/054.JPG"
+    },
+    {
+        id: 136,
+        title: "Noumea, New Caledonia",
+        coords: [-22.2758, 166.4580],
+        tag: "France in the Pacific",
+        icon: "🇫🇷",
+        isDoor: false,
+        shortDesc: "A slice of France beneath the Southern Cross.",
+        useRichContent: true,
+        richContent: `
+            <p>Noumea is what happens when France plants itself in the middle of the South Pacific.</p>
+            <p>The baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture, markets selling tropical fruit, and children with smiles that light up the beach.</p>
+
+            <div class="photo-gallery-section" id="noumeaGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/New Caldonia/004.JPG" class="gallery-thumb" data-caption="Local children, Noumea" alt="Local children">
+                    <img src="./images/gallery/New Caldonia/002 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="./images/gallery/New Caldonia/003 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="./images/gallery/New Caldonia/005.JPG" class="gallery-thumb" data-caption="Beach hut" alt="Beach hut">
+                    <img src="./images/gallery/New Caldonia/006.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="./images/gallery/New Caldonia/014 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="./images/gallery/New Caldonia/015.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                </div>
+            </div>
+        `,
+        fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
+        image: "./images/gallery/New Caldonia/004.JPG"
     }
 ];

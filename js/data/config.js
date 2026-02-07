@@ -178,6 +178,9 @@ const locationPortholeURLs = {
     "Santarém, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
     "Symi, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
     "Sorrento, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937420/marcie_00878__wknyxo.png",
+    "Port Denarau, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
+    "Isle of Pines, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01275__iw0wwu.png",
+    "Noumea, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01275__iw0wwu.png",
 };
 
 // Icon configuration for each location
@@ -237,5 +240,9 @@ const ICON_CONFIG = {
     "Puerto Montt, Chile": { style: 'adventure', symbol: 'volcano', color: '#607080', accent: '#ff6b4a' },
     "Tierra del Fuego": { style: 'adventure', symbol: 'fire', color: '#ffa500', accent: '#ff4500' },
     // Indonesia - Wildlife
-    "Komodo Island, Indonesia": { style: 'adventure', symbol: 'komodo', color: '#556b2f', accent: '#8b7355' }
+    "Komodo Island, Indonesia": { style: 'adventure', symbol: 'komodo', color: '#556b2f', accent: '#8b7355' },
+    // Pacific Islands - New
+    "Port Denarau, Fiji": { style: 'paradise', symbol: 'yacht', color: '#4a90a0', accent: '#40e0d0' },
+    "Isle of Pines, New Caledonia": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+    "Noumea, New Caledonia": { style: 'culture', symbol: 'fleur', color: '#0055a4', accent: '#ffffff' }
 };
