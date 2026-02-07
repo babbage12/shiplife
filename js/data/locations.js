@@ -1600,7 +1600,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">34 images</span>
+                        <span class="gallery-count">63 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1639,6 +1639,35 @@ const locations = [
                     <img src="./images/gallery/sydney/Maritime Museum.jpeg" class="gallery-thumb" data-caption="Maritime Museum" alt="Maritime Museum">
                     <img src="./images/gallery/sydney/Nice Boat.jpeg" class="gallery-thumb" data-caption="Nice Boat" alt="Nice Boat">
                     <img src="./images/gallery/sydney/sydney harbor bridge.jpeg" class="gallery-thumb" data-caption="Sydney Harbour Bridge" alt="Sydney Harbour Bridge">
+                    <img src="./images/gallery/sydney/002.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/002 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/003 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/004.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/005.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/006.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/007.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/008.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/009.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/009 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/011.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/014.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/022.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/027.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/031.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/033.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/034.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/049 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/053.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/056.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/059.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/069.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/073.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/075.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/090.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/098.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/123.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/128.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="./images/gallery/sydney/129.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
                 </div>
             </div>
         `,
@@ -1907,7 +1936,7 @@ const locations = [
                 <h3 class="section-title-panel">Gold Rush Grandeur</h3>
                 <p>Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.</p>
                 <p>The Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself (Dunedin is the Gaelic name for Edinburgh). Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.</p>
-                <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
+                <img src="./images/gallery/Dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
                 <p class="photo-caption-inline">Port Chalmers, the historic port town where cruise ships dock. Victorian brick buildings and misty Otago hills.</p>
             </div>
 
@@ -1935,19 +1964,31 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">1 image</span>
+                        <span class="gallery-count">13 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers - Dunedin's cruise port" alt="Port Chalmers">
+                    <img src="./images/gallery/Dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
+                    <img src="./images/gallery/Dunedin/001.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/002.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/003.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/004.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/005.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/006.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/007.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/008.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/009.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/Dunedin/on-the-way-001.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="./images/gallery/Dunedin/on-the-way-002.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="./images/gallery/Dunedin/on-the-way-003.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
                 </div>
             </div>
         `,
         fullDesc: "Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.\n\nThe Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself. Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.",
-        image: "./images/gallery/dunedin/port-chalmers.jpeg"
+        image: "./images/gallery/Dunedin/port-chalmers.jpeg"
     },
-        {
+    {
         id: 18,
         title: "Tonga",
         coords: [-21.1393, -175.2018],
