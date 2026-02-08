@@ -3369,20 +3369,31 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">10 images</span>
+                        <span class="gallery-count">20 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="./images/gallery/tierra del fuego/tierra 2.jpg" class="gallery-thumb" data-caption="The jagged peaks of Tierra del Fuego" alt="Tierra del Fuego peaks">
                     <img src="./images/gallery/tierra del fuego/tierra3.jpeg" class="gallery-thumb" data-caption="Ushuaia beneath the mountains" alt="Ushuaia">
+                    <img src="./images/gallery/tierra del fuego/tierra 10.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/Screen Shot 2026-01-22 at 5.15.03 PM.jpg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6607.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
                     <img src="./images/gallery/tierra del fuego/IMG_6608.jpg" class="gallery-thumb" data-caption="View from Seabourn Quest" alt="View from ship">
+                    <img src="./images/gallery/tierra del fuego/IMG_6608.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6609.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
                     <img src="./images/gallery/tierra del fuego/IMG_6611.jpeg" class="gallery-thumb" data-caption="Ushuaia and the airport" alt="Ushuaia airport">
                     <img src="./images/gallery/tierra del fuego/IMG_6612.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego landscape" alt="Landscape">
-                    <img src="./images/gallery/tierra del fuego/IMG_6613.jpeg" class="gallery-thumb" data-caption="Mountains meeting the sea" alt="Mountains">
                     <img src="./images/gallery/tierra del fuego/IMG_6614.jpeg" class="gallery-thumb" data-caption="The dramatic horn peak" alt="Horn peak">
+                    <img src="./images/gallery/tierra del fuego/IMG_6615.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
                     <img src="./images/gallery/tierra del fuego/IMG_6619.jpeg" class="gallery-thumb" data-caption="Sailing through Tierra del Fuego" alt="Sailing">
-                    <img src="./images/gallery/tierra del fuego/tierra 10.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6620.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6621.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6622.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6623.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6624.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6625.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="./images/gallery/tierra del fuego/IMG_6626.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
                 </div>
             </div>
         `,
