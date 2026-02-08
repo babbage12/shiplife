@@ -1898,19 +1898,24 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">8 images</span>
+                        <span class="gallery-count">13 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="./images/gallery/picton/IMG_20140106_092909.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_20140106_104919.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_104942.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_20140106_110034.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_110054.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_20140106_110114.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_20140106_110547.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_4320.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_4325.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4328.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_4329.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="./images/gallery/picton/IMG_4338.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="./images/gallery/picton/IMG_4342.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                 </div>
             </div>
         `,
@@ -1958,7 +1963,7 @@ const locations = [
                 <h3 class="section-title-panel">Gold Rush Grandeur</h3>
                 <p>Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.</p>
                 <p>The Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself (Dunedin is the Gaelic name for Edinburgh). Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.</p>
-                <img src="./images/gallery/Dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
+                <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
                 <p class="photo-caption-inline">Port Chalmers, the historic port town where cruise ships dock. Victorian brick buildings and misty Otago hills.</p>
             </div>
 
@@ -1986,29 +1991,30 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">13 images</span>
+                        <span class="gallery-count">14 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/Dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
-                    <img src="./images/gallery/Dunedin/001.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/002.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/003.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/004.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/005.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/006.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/007.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/008.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/009.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/Dunedin/on-the-way-001.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="./images/gallery/Dunedin/on-the-way-002.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="./images/gallery/Dunedin/on-the-way-003.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
+                    <img src="./images/gallery/dunedin/001.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/002.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/003.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/004.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/005.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/006.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/007.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/008.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/009.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/022.JPG" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="./images/gallery/dunedin/on-the-way-001.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="./images/gallery/dunedin/on-the-way-002.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="./images/gallery/dunedin/on-the-way-003.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
                 </div>
             </div>
         `,
         fullDesc: "Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.\n\nThe Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself. Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.",
-        image: "./images/gallery/Dunedin/port-chalmers.jpeg"
+        image: "./images/gallery/dunedin/port-chalmers.jpeg"
     },
     {
         id: 18,
@@ -2073,12 +2079,13 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">21 images</span>
+                        <span class="gallery-count">25 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="./images/gallery/bora bora/bora bora baby.JPG" class="gallery-thumb" data-caption="Mount Otemanu" alt="Bora Bora">
+                    <img src="./images/gallery/bora bora/bora bora beach - Copy.JPG" class="gallery-thumb" data-caption="Bora Bora beach" alt="Bora Bora beach">
                     <img src="./images/gallery/bora bora/038.JPG" class="gallery-thumb" data-caption="Waterfall hike" alt="Waterfall">
                     <img src="./images/gallery/bora bora/046.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
                     <img src="./images/gallery/bora bora/054.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
@@ -2101,6 +2108,7 @@ const locations = [
                     <img src="./images/gallery/bora bora/off the main island bora bora - Copy.JPG" class="gallery-thumb" data-caption="Off the main island" alt="Off the main island">
                     <img src="./images/gallery/bora bora/tahiti waterfall.JPG" class="gallery-thumb" data-caption="Tahiti waterfall" alt="Tahiti waterfall">
                     <img src="./images/gallery/bora bora/grapefruit and apple.JPG" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
+                    <img src="./images/gallery/bora bora/grapefruit and apple - Copy.JPG" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
                 </div>
             </div>
         `,
@@ -2240,6 +2248,34 @@ const locations = [
         icon: "🇫🇷",
         isDoor: false,
         shortDesc: "France in the South Pacific.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>New Caledonia is a surreal mashup of French culture and Pacific island life.</p>
+                <p>Baguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="newCaledoniaGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/new Caldonia/002 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/003 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/004.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/005.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/006.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/014 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="./images/gallery/new Caldonia/015.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                </div>
+            </div>
+        `,
         fullDesc: "New Caledonia is a surreal mashup of French culture and Pacific island life.\n\nBaguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817595/resort_pool_noumea_m9dbcy.jpg"
     },
@@ -2382,20 +2418,35 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">10 images</span>
+                        <span class="gallery-count">25 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
+                    <img src="./images/gallery/santorini/IMG_20131001_111303.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20131001_114004.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20131001_140539.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20131001_141754.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20131001_141936.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20131001_141946.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20140526_090135.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20140526_090153.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20140526_095424.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_20140526_095448.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3432.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3453.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3463.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3472.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3480.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3485.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3488.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3491.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3494.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3502.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3509.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3518.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3521.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="./images/gallery/santorini/IMG_3522.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                     <img src="./images/gallery/santorini/IMG_3524.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                 </div>
             </div>
@@ -2424,13 +2475,11 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">18 images</span>
+                        <span class="gallery-count">16 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/simi/IMG_5783.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5784.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
                     <img src="./images/gallery/simi/IMG_5785.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
                     <img src="./images/gallery/simi/IMG_5786.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
                     <img src="./images/gallery/simi/IMG_5787.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
@@ -3078,7 +3127,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">4 images</span>
+                        <span class="gallery-count">28 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -3087,6 +3136,30 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="gallery-thumb" data-caption="Antarctic ice." alt="Ice">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="gallery-thumb" data-caption="Antarctic landscape." alt="Landscape">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="gallery-thumb" data-caption="Ice formations." alt="Ice formations">
+                    <img src="./images/gallery/antartica/IMG_6475.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6476.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6481.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6482.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6483.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6485.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6490.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6496.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6505.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6515.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6516.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6517.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6519.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6524.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6526.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6527.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6529.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6538.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6540.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6548.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6554.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6563.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6572.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="./images/gallery/antartica/IMG_6717.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
                 </div>
             </div>
         `,
@@ -3768,6 +3841,38 @@ const locations = [
             </div>
 
             ${generateGallery('rio')}
+
+            <div class="photo-gallery-section" id="rioLocalGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More from Rio</span>
+                        <span class="gallery-count">19 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/rio de janirio/IMG_6241.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6243.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6245.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6246.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6247.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6301.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6330.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6331.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6333.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6336.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6350.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6351.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6360.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6364.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6380.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6383.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6386.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6399.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="./images/gallery/rio de janirio/IMG_6410.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                </div>
+            </div>
         `,
         fullDesc: "Every time the ship docked in Rio, getting lost was inevitable. Something about this city wanted to keep you there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until finally reaching Copacabana and having a Corona.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769809159/20200209_075921_rvq35a.jpg"
@@ -4859,7 +4964,37 @@ const locations = [
         icon: "💃",
         isDoor: false,
         shortDesc: "Tango, steak, and faded grandeur.",
-        fullDesc: "Placeholder description for Buenos Aires.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <p>Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="buenosAiresGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">10 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/buenas aires/IMG_6415.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6416.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6417.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6418.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6425.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6428.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6430.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6431.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6433.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="./images/gallery/buenas aires/IMG_6438.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                </div>
+            </div>
+        `,
+        fullDesc: "Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769806999/IMG_6420_qzn455.jpg"
     },
         {
