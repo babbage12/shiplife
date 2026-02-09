@@ -3408,6 +3408,31 @@ const locations = [
         icon: "⛱️",
         isDoor: false,
         shortDesc: "Where the beautiful people play.",
+        useRichContent: true,
+        richContent: `
+            <p>St. Tropez was a fishing village until Brigitte Bardot showed up.</p>
+            <p>Now it's superyachts and champagne, designer boutiques and paparazzi. But wander away from the port and you find quiet squares, excellent rosé, and that golden Provençal light that painters have chased for centuries.</p>
+
+            <div class="photo-gallery-section" id="stTropezGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/St Tropez/IMG_5530.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5531.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5534.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5536.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5537.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5538.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="./images/gallery/St Tropez/IMG_5539.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                </div>
+            </div>
+        `,
         fullDesc: "St. Tropez was a fishing village until Brigitte Bardot showed up.\n\nNow it's superyachts and champagne, designer boutiques and paparazzi. But wander away from the port and you find quiet squares, excellent rosé, and that golden Provençal light that painters have chased for centuries.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738529/IMG_5536_ipjhwy.jpg"
     },
@@ -3419,6 +3444,35 @@ const locations = [
         icon: "🎉",
         isDoor: false,
         shortDesc: "Party island with a secret peaceful side.",
+        useRichContent: true,
+        richContent: `
+            <p>Everyone knows Ibiza for the clubs. But the island has another side.</p>
+            <p>The old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.</p>
+
+            <div class="photo-gallery-section" id="ibizaGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">11 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/ibiza/IMG_20140610_113531.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_113551.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_114901.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_135036.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_135303.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_142859.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140610_143010.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140618_140640.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140622_101512.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140622_101517.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="./images/gallery/ibiza/IMG_20140622_121033.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                </div>
+            </div>
+        `,
         fullDesc: "Everyone knows Ibiza for the clubs. But the island has another side.\n\nThe old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738680/IMG_20140610_113551_fvskrb.jpg"
     },
@@ -3561,6 +3615,31 @@ const locations = [
         icon: "☕",
         isDoor: false,
         shortDesc: "Coffee, culture, and hidden laneways.",
+        useRichContent: true,
+        richContent: `
+            <p>Melbourne takes its coffee seriously. Very seriously.</p>
+            <p>The city's famous laneways hide street art, tiny bars, and some of the best food in the Southern Hemisphere. It's Australia's answer to Europe - cultured, cosmopolitan, and endlessly interesting.</p>
+
+            <div class="photo-gallery-section" id="melbourneGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/melbourne/IMG_20131226_105910.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20131226_110025.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20131226_134739.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20131226_135223.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20131226_135305.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20140102_102009.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="./images/gallery/melbourne/IMG_20140103_165732.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                </div>
+            </div>
+        `,
         fullDesc: "Melbourne takes its coffee seriously. Very seriously.\n\nThe city's famous laneways hide street art, tiny bars, and some of the best food in the Southern Hemisphere. It's Australia's answer to Europe-cultured, cosmopolitan, and endlessly interesting.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521371/IMG_20131226_105910_urj5kq.jpg"
     },
@@ -3986,13 +4065,57 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">2 images</span>
+                        <span class="gallery-count">47 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141430_Facebook_j3ffyi.jpg" class="gallery-thumb" data-caption="Dramatic Ligurian coastline through fortress walls." alt="Portovenere coastal view">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951540/Screenshot_20260120_141412_Facebook_u7xh1q.jpg" class="gallery-thumb" data-caption="Brick archway framing turquoise waters." alt="Portovenere arch window">
+                    <img src="./images/gallery/Portovenere/IMG_5540.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5542.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5543.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5544.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5546.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5547.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5548.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5550.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5552.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5556.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5557.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5559.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5561.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5562.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5564.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5565.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5566.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5568.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5570.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5571.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5572.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5573.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5574.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5575.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5576.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5577.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5578.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5580.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5581.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5582.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5583.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5584.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5585.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5586.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5587.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5588.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5589.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5590.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5591.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5592.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5593.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5594.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5595.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
+                    <img src="./images/gallery/Portovenere/IMG_5596.jpeg" class="gallery-thumb" data-caption="Portovenere, Italy" alt="Portovenere">
                 </div>
             </div>
         `,
@@ -4029,6 +4152,51 @@ const locations = [
         icon: "🎨",
         isDoor: false,
         shortDesc: "Where art and beauty were reinvented.",
+        useRichContent: true,
+        richContent: `
+            <p>Every street corner in Florence holds a masterpiece.</p>
+            <p>Michelangelo's David. Brunelleschi's dome. The Uffizi's treasures. The Medici built this city into a monument to human achievement. Walking across the Ponte Vecchio at sunset, you understand why artists have been coming here for six hundred years.</p>
+
+            <div class="photo-gallery-section" id="florenceGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">27 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/florence/IMG_5410.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5413.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5417.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5421.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5424.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5426.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5427.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5428.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5429.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5430.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5432.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5435.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5436.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5437.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5441.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5442.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5443.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5445.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5452.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5454.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5455.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5456.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5457.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5459.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5460.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5461.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="./images/gallery/florence/IMG_5465.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                </div>
+            </div>
+        `,
         fullDesc: "Every street corner in Florence holds a masterpiece.\n\nMichelangelo's David. Brunelleschi's dome. The Uffizi's treasures. The Medici built this city into a monument to human achievement. Walking across the Ponte Vecchio at sunset, you understand why artists have been coming here for six hundred years.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522081/IMG_5442_szu1ta.jpg"
     },
@@ -4103,7 +4271,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">9 images</span>
+                        <span class="gallery-count">22 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -4117,6 +4285,19 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_140947_Facebook_sfthro.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140937_Facebook_lksenn.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140752_Facebook_qrpdwc.jpg" class="gallery-thumb" data-caption="Belle Époque villa on the Italian Riviera." alt="Riviera villa">
+                    <img src="./images/gallery/san remo/IMG_5469.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5470.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5472.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5473.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5476.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5477.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5478.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5479.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5480.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5481.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5674.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5675.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="./images/gallery/san remo/IMG_5680.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                 </div>
             </div>
         `,
@@ -4131,6 +4312,40 @@ const locations = [
         icon: "🎨",
         isDoor: false,
         shortDesc: "Where Catalonia meets the sea.",
+        useRichContent: true,
+        richContent: `
+            <p>Roses sits on the Costa Brava - the 'wild coast' - near where Salvador Dalí made his home.</p>
+            <p>The bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.</p>
+
+            <div class="photo-gallery-section" id="rosesGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">16 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/roses/IMG_5245.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5246.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5249.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5251.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5252.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5253.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5254.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5256.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5257.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5258.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5260.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5261.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5262.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5263.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5265.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="./images/gallery/roses/IMG_5266.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                </div>
+            </div>
+        `,
         fullDesc: "Roses sits on the Costa Brava-the 'wild coast'-near where Salvador Dalí made his home.\n\nThe bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522310/IMG_5245_zoii8t.jpg"
     },
@@ -4142,6 +4357,31 @@ const locations = [
         icon: "⛵",
         isDoor: false,
         shortDesc: "Wild beauty on the Isle of Beauty.",
+        useRichContent: true,
+        richContent: `
+            <p>Corsica is France, but barely.</p>
+            <p>The island has its own language, its own cuisine, its own fierce sense of identity. Propriano sits in the Gulf of Valinco, backed by mountains that drop straight to the sea. Napoleon was born just up the coast. The maquis - the fragrant scrubland - perfumes the air.</p>
+
+            <div class="photo-gallery-section" id="proprianoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/propriano/IMG_20140607_104657.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_104813.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_105149.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_105505.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_105507.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_120635.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="./images/gallery/propriano/IMG_20140607_120639.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                </div>
+            </div>
+        `,
         fullDesc: "Corsica is France, but barely.\n\nThe island has its own language, its own cuisine, its own fierce sense of identity. Propriano sits in the Gulf of Valinco, backed by mountains that drop straight to the sea. Napoleon was born just up the coast. The maquis-the fragrant scrubland-perfumes the air.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522398/IMG_20140607_120635_nogqsh.jpg"
     },
@@ -4678,7 +4918,41 @@ const locations = [
         icon: "🏛️",
         isDoor: false,
         shortDesc: "Windmills, whitewash, and legendary nightlife.",
-        fullDesc: "Placeholder description for Mykonos.",
+        useRichContent: true,
+        richContent: `
+            <p>Mykonos is the Cyclades distilled to its essence - windmills, whitewashed walls, and that impossible blue of the Aegean.</p>
+            <p>By day, the labyrinthine streets of Chora are a maze of boutiques and bougainvillea. By night, the island transforms into one of the Mediterranean's great party destinations. But slip away from the crowds and you find quiet beaches, ancient Delos just offshore, and pelicans wandering the waterfront like they own the place.</p>
+
+            <div class="photo-gallery-section" id="mykonosGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">16 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120319.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120347.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120410.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120413.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120433.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120436.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120601.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120728.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_120739.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_121029.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_121322.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_123523.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_132633.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_142040.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_142049.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="./images/gallery/Mykonos/IMG_20140620_143420.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                </div>
+            </div>
+        `,
+        fullDesc: "Mykonos is the Cyclades distilled to its essence - windmills, whitewashed walls, and that impossible blue of the Aegean. By day, the labyrinthine streets of Chora are a maze of boutiques and bougainvillea. By night, the island transforms into one of the Mediterranean's great party destinations.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810900/IMG_20140620_120410_i3ltwo.jpg"
     },
     {

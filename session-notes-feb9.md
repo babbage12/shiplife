@@ -81,4 +81,41 @@ Current gallery folders and their status:
 
 ---
 
+## Batch 2 - New Gallery Folders (Afternoon Session)
+
+### New Galleries Created
+
+| Location | Images | Notes |
+|----------|--------|-------|
+| St. Tropez | 7 | Converted to richContent with gallery |
+| Ibiza | 11 | Converted to richContent with gallery |
+| Melbourne | 7 | Converted to richContent with gallery |
+| Florence | 27 | Converted to richContent with gallery |
+| Roses | 16 | Converted to richContent with gallery |
+| Propriano | 7 | Converted to richContent with gallery |
+| Mykonos | 16 | Converted to richContent with gallery, updated placeholder text |
+
+### Existing Galleries Expanded
+
+| Location | Before | After | Change |
+|----------|--------|-------|--------|
+| Portovenere | 2 | 47 | +45 local images added to Cloudinary gallery |
+| San Remo | 9 | 22 | +13 local images added to Cloudinary gallery |
+
+### Folder Inventory - Batch 2
+
+| Folder | Files | Status |
+|--------|-------|--------|
+| Mykonos | 16 | Synced |
+| Portovenere | 45 | Synced |
+| St Tropez | 7 | Synced |
+| florence | 27 | Synced |
+| ibiza | 11 | Synced |
+| melbourne | 7 | Synced |
+| propriano | 7 | Synced |
+| roses | 16 | Synced |
+| san remo | 13 | Synced |
+
+---
+
 End of session.
