@@ -4446,13 +4446,35 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">2 images</span>
+                        <span class="gallery-count">24 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140907_Facebook_kw0y1a.jpg" class="gallery-thumb" data-caption="The Old Port with Fort Saint-Jean." alt="Marseille Old Port">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140553_Facebook_a4jsbz.jpg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5493.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5495.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5496.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5498.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5499.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5500.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5501.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5502.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5505.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5512.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5514.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5515.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5516.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5518.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5519.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5520.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5524.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5529.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5681.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5682.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5684.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="./images/gallery/marseille/IMG_5686.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
                 </div>
             </div>
         `,
