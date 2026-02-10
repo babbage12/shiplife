@@ -4577,13 +4577,19 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">2 images</span>
+                        <span class="gallery-count">8 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769800957/PANO_20140702_094633_htivht.jpg" class="gallery-thumb" data-caption="Monaco harbor with superyacht 'Dubai' (one of the world's largest) and Seabourn Sojourn." alt="Monaco harbor with superyacht Dubai">
+                    <img src="./images/gallery/monte carlo/IMG_20140602_092648.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="./images/gallery/monte carlo/IMG_20140602_092703.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="./images/gallery/monte carlo/IMG_20140602_093135.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="./images/gallery/monte carlo/IMG_20140602_093137.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="./images/gallery/monte carlo/IMG_20140602_100331.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="./images/gallery/monte carlo/IMG_20140605_122414.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
                 </div>
             </div>
         `,
