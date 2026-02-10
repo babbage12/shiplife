@@ -4162,38 +4162,29 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">27 images</span>
+                        <span class="gallery-count">18 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/florence/IMG_5410.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5413.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5417.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5421.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5424.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5426.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5427.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5428.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5429.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5430.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5432.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5435.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5436.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5437.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5441.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5442.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5443.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5445.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5452.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5454.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5455.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5456.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5457.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5459.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5460.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5461.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
-                    <img src="./images/gallery/florence/IMG_5465.jpeg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763527/IMG_5410.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763526/IMG_5413.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763567/IMG_5217.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763550/IMG_5229.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763546/IMG_5231.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763543/IMG_5233.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763538/IMG_5236.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763539/IMG_5237.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763533/IMG_5240.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763530/IMG_5242.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763530/IMG_5243.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763522/IMG_5421.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763522/IMG_5424.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763522/IMG_5426.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763517/IMG_5429.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763514/IMG_5430.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763502/IMG_5454.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770763499/IMG_5464.jpg" class="gallery-thumb" data-caption="Florence, Italy" alt="Florence">
                 </div>
             </div>
         `,
