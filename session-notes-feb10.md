@@ -61,4 +61,42 @@ Cloudinary migration session. Moved large gallery folders from GitHub to Cloudin
 
 ---
 
+## Repository Size Analysis
+
+**Current repo size:**
+- Total local: 13 GB
+- Git history (.git): 6.4 GB
+- Images folder: 1.2 GB (down from 1.5 GB)
+
+**GitHub limits:**
+- Soft limit: 1 GB (recommended)
+- Hard limit: 5 GB
+- **Current status: OVER LIMIT at 6.4 GB**
+
+**Problem identified:**
+GitHub is not designed for binary files like images. Git stores complete copies of every image in history, causing the repo to balloon. Even deleted images remain in git history forever unless purged.
+
+---
+
+## Decision: Full Cloudinary Migration + Git History Cleanup
+
+**Phase 1: Move all remaining images to Cloudinary**
+- Wait for monthly Cloudinary bandwidth reset (avoids hitting usage limits)
+- Migrate all remaining gallery images (~1.2 GB) to Cloudinary
+- Update all locations.js references to Cloudinary URLs
+- Delete all local image folders from working directory
+
+**Phase 2: Clean git history**
+- Use BFG Repo Cleaner or git filter-repo to purge all images from git history
+- This will rewrite history and require force push
+- Expected result: Reduce .git folder from 6.4 GB to ~1-2 GB
+- Repo will be safely under GitHub's 5 GB hard limit
+
+**Going forward:**
+- Never commit large binary files to git again
+- Keep git repo lean (code, config, docs only)
+- All images hosted on Cloudinary with URL references
+
+---
+
 End of session.
