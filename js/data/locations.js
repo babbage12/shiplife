@@ -2079,36 +2079,30 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">25 images</span>
+                        <span class="gallery-count">19 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/bora bora/bora bora baby.JPG" class="gallery-thumb" data-caption="Mount Otemanu" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/bora bora beach - Copy.JPG" class="gallery-thumb" data-caption="Bora Bora beach" alt="Bora Bora beach">
-                    <img src="./images/gallery/bora bora/038.JPG" class="gallery-thumb" data-caption="Waterfall hike" alt="Waterfall">
-                    <img src="./images/gallery/bora bora/046.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/054.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/062.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/063.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/065.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/079.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/080.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/081.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/083.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/097.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/098.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/099.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/100.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/101.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/113.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/118.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/120.JPG" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
-                    <img src="./images/gallery/bora bora/me and mark.JPG" class="gallery-thumb" data-caption="Me and Mark" alt="Me and Mark">
-                    <img src="./images/gallery/bora bora/off the main island bora bora - Copy.JPG" class="gallery-thumb" data-caption="Off the main island" alt="Off the main island">
-                    <img src="./images/gallery/bora bora/tahiti waterfall.JPG" class="gallery-thumb" data-caption="Tahiti waterfall" alt="Tahiti waterfall">
-                    <img src="./images/gallery/bora bora/grapefruit and apple.JPG" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
-                    <img src="./images/gallery/bora bora/grapefruit and apple - Copy.JPG" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764107/me_and_mark.jpg" class="gallery-thumb" data-caption="Me and Mark" alt="Me and Mark">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764108/098.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764109/038.jpg" class="gallery-thumb" data-caption="Waterfall hike" alt="Waterfall">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764111/046.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764114/054.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764114/063.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764117/062.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764118/065.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764119/079.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764122/083.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764123/080.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764128/100.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764127/tahiti_waterfall.jpg" class="gallery-thumb" data-caption="Tahiti waterfall" alt="Tahiti waterfall">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764133/097.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="gallery-thumb" data-caption="Off the main island" alt="Off the main island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764143/bora_bora_beach_-_Copy.jpg" class="gallery-thumb" data-caption="Bora Bora beach" alt="Bora Bora beach">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764145/grapefruit_and_apple.jpg" class="gallery-thumb" data-caption="Fresh fruit" alt="Fresh fruit">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764150/120.jpg" class="gallery-thumb" data-caption="Bora Bora" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770764155/bora_bora_baby.jpg" class="gallery-thumb" data-caption="Mount Otemanu" alt="Bora Bora">
                 </div>
             </div>
         `,
