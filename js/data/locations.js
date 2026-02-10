@@ -4467,6 +4467,31 @@ const locations = [
         icon: "🏖️",
         isDoor: false,
         shortDesc: "A dozen different beaches on one small stretch.",
+        useRichContent: true,
+        richContent: `
+            <p>Le Lavandou is named for the lavender that once grew on these hills.</p>
+            <p>The town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.</p>
+
+            <div class="photo-gallery-section" id="lavandouGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">7 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_122522.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_134218.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_134242.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_134353.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_135015.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_140634.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="./images/gallery/le lavendeu/IMG_20140605_140758.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                </div>
+            </div>
+        `,
         fullDesc: "Le Lavandou is named for the lavender that once grew on these hills.\n\nThe town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522796/IMG_20140605_134214_uyyeui.jpg"
     },
