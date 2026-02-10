@@ -1115,55 +1115,55 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190755/tierra_10.jpg" class="gallery-thumb" data-caption="Tierra del Fuego." alt="Tierra del Fuego">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190756/tierra3.jpg" class="gallery-thumb" data-caption="Tierra del Fuego scenery." alt="Tierra del Fuego scenery">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770190757/IMG_6608.jpg" class="gallery-thumb" data-caption="Patagonian mountains." alt="Patagonian mountains">
-                    <img src="./images/gallery/ushuaia/IMG_6579.jpg" class="gallery-thumb" data-caption="Ushuaia church" alt="Church">
-                    <img src="./images/gallery/ushuaia/IMG_6581.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6582.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6587.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6590.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6594.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6595.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762705/IMG_6579.jpg" class="gallery-thumb" data-caption="Ushuaia church" alt="Church">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762705/IMG_6581.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762704/IMG_6582.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762697/IMG_6587.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762697/IMG_6590.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762696/IMG_6594.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762695/IMG_6595.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6596.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6597.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6598.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6600.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762693/IMG_6597.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762692/IMG_6598.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762692/IMG_6600.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6601.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6602.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762535/IMG_6602.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6657.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6658.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6659.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762497/IMG_6659.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6660.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6661.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6662.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6663.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762501/IMG_6663.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6664.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6666.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6667.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762503/IMG_6666.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762504/IMG_6667.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6668.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6669.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762506/IMG_6669.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6670.jpeg" class="gallery-thumb" data-caption="Ushuaia harbor" alt="Harbor">
                     <img src="./images/gallery/ushuaia/IMG_6671.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6672.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6673.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6674.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6675.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762512/IMG_6675.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6676.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6677.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762514/IMG_6677.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6678.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6679.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6681.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6682.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6683.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6684.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762521/IMG_6684.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6685.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6686.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6687.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6688.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762525/IMG_6687.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762523/IMG_6688.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6689.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6690.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762526/IMG_6690.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6691.jpeg" class="gallery-thumb" data-caption="Ushuaia waterfront" alt="Waterfront">
-                    <img src="./images/gallery/ushuaia/IMG_6692.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6693.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6694.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762529/IMG_6692.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762529/IMG_6693.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762532/IMG_6694.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="./images/gallery/ushuaia/IMG_6695.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                 </div>
             </div>
