@@ -1122,49 +1122,49 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762697/IMG_6590.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762696/IMG_6594.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762695/IMG_6595.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6596.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6596.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762693/IMG_6597.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762692/IMG_6598.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762692/IMG_6600.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6601.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6601.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762535/IMG_6602.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6657.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6658.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6657.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6658.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762497/IMG_6659.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6660.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6661.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6662.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6660.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6661.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6662.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762501/IMG_6663.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6664.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6664.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762503/IMG_6666.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762504/IMG_6667.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6668.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6668.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762506/IMG_6669.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6670.jpeg" class="gallery-thumb" data-caption="Ushuaia harbor" alt="Harbor">
-                    <img src="./images/gallery/ushuaia/IMG_6671.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6672.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6673.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6674.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6670.jpeg" class="gallery-thumb" data-caption="Ushuaia harbor" alt="Harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6671.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6672.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6673.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6674.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762512/IMG_6675.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6676.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6676.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762514/IMG_6677.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6678.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6679.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6681.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6682.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6683.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6678.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6679.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6681.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6682.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6683.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762521/IMG_6684.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6685.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6686.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6685.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6686.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762525/IMG_6687.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762523/IMG_6688.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6689.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6689.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762526/IMG_6690.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6691.jpeg" class="gallery-thumb" data-caption="Ushuaia waterfront" alt="Waterfront">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6691.jpeg" class="gallery-thumb" data-caption="Ushuaia waterfront" alt="Waterfront">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762529/IMG_6692.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762529/IMG_6693.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770762532/IMG_6694.jpg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
-                    <img src="./images/gallery/ushuaia/IMG_6695.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ushuaia/IMG_6695.jpeg" class="gallery-thumb" data-caption="Ushuaia" alt="Ushuaia">
                 </div>
             </div>
         `,
@@ -1302,15 +1302,15 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">Getting There</span>
                 <h3 class="section-title-panel">The Journey from the Port</h3>
-                <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="story-image" data-caption="Iconic statue near Civitavecchia port." alt="Civitavecchia statue">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/iconic-statue-in-citivivechia.jpeg" class="story-image" data-caption="Iconic statue near Civitavecchia port." alt="Civitavecchia statue">
                 <p class="photo-caption-inline">The port town of Civitavecchia. Rome is about 80km inland.</p>
-                <img src="./images/gallery/rome/ticket.jpeg" class="story-image" data-caption="Train ticket to Rome." alt="Train ticket">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/ticket.jpeg" class="story-image" data-caption="Train ticket to Rome." alt="Train ticket">
                 <p class="photo-caption-inline">I bought my train ticket to the city.</p>
-                <img src="./images/gallery/rome/trains-station.jpeg" class="story-image" data-caption="Civitavecchia train station." alt="Train station">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/trains-station.jpeg" class="story-image" data-caption="Civitavecchia train station." alt="Train station">
                 <p class="photo-caption-inline">I hope I boarded the right train. I couldn't find anyone who spoke English and I was late getting to the right spot in the station.</p>
-                <img src="./images/gallery/rome/on.-train.jpeg" class="story-image" data-caption="On the train to Rome." alt="On the train">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/on.-train.jpeg" class="story-image" data-caption="On the train to Rome." alt="On the train">
                 <p class="photo-caption-inline">On the train. Still had no idea if I was going in the right direction.</p>
-                <img src="./images/gallery/rome/6.jpeg" class="story-image" data-caption="Finally arrived - the Colosseum." alt="The Colosseum">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/6.jpeg" class="story-image" data-caption="Finally arrived - the Colosseum." alt="The Colosseum">
                 <p class="photo-caption-inline">Finally, I arrived.</p>
             </div>
 
@@ -1319,13 +1319,13 @@ const locations = [
                 <h3 class="section-title-panel">Always Something New</h3>
                 <p>Every time I visited Rome, I found something new. The Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning.</p>
                 <div class="story-gallery-grid">
-                    <img src="./images/gallery/rome/rome-1.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-2.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-1.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-2.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
                 </div>
                 <p class="photo-caption-inline">Rome rewards those who explore.</p>
                 <div class="story-gallery-grid">
-                    <img src="./images/gallery/rome/rome-3.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-4.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-3.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-4.jpeg" class="story-image" data-caption="Rome, Italy" alt="Rome">
                 </div>
             </div>
 
@@ -1360,41 +1360,41 @@ const locations = [
                 </div>
                 <div class="gallery-grid">
                     <img src="./images/hero/rome/27.jpg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/iconic-statue-in-citivivechia.jpeg" class="gallery-thumb" data-caption="Civitavecchia port" alt="Civitavecchia">
-                    <img src="./images/gallery/rome/ticket.jpeg" class="gallery-thumb" data-caption="Train ticket to Rome" alt="Train ticket">
-                    <img src="./images/gallery/rome/trains-station.jpeg" class="gallery-thumb" data-caption="Train station" alt="Train station">
-                    <img src="./images/gallery/rome/on.-train.jpeg" class="gallery-thumb" data-caption="On the train to Rome" alt="On the train">
-                    <img src="./images/gallery/rome/5.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/6.jpeg" class="gallery-thumb" data-caption="The Colosseum" alt="Colosseum">
-                    <img src="./images/gallery/rome/7.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/8.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/9.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/10.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/11.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/12.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/13.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/14.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/15.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/16.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/18.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/19.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/20.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/21.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/22.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/23.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/24.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/25.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/26.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/33.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-1.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-2.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-3.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
-                    <img src="./images/gallery/rome/rome-4.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/iconic-statue-in-citivivechia.jpeg" class="gallery-thumb" data-caption="Civitavecchia port" alt="Civitavecchia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/ticket.jpeg" class="gallery-thumb" data-caption="Train ticket to Rome" alt="Train ticket">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/trains-station.jpeg" class="gallery-thumb" data-caption="Train station" alt="Train station">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/on.-train.jpeg" class="gallery-thumb" data-caption="On the train to Rome" alt="On the train">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/5.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/6.jpeg" class="gallery-thumb" data-caption="The Colosseum" alt="Colosseum">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/7.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/8.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/9.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/10.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/11.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/12.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/13.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/14.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/15.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/16.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/18.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/19.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/20.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/21.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/22.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/23.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/24.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/25.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/26.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/33.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-1.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-2.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-3.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/rome-4.jpeg" class="gallery-thumb" data-caption="Rome, Italy" alt="Rome">
                 </div>
             </div>
         `,
         fullDesc: "Every time I visited Rome, I found something new.\n\nThe Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning. Rome rewards those who explore.",
-        image: "./images/gallery/rome/22.jpeg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rome/22.jpeg"
     },
     {
         id: 11,
@@ -1675,21 +1675,21 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/003-7_vqkbd8.jpg" class="gallery-thumb" data-caption="With guests." alt="With guests">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037256/001-5_exb3r6.jpg" class="gallery-thumb" data-caption="Orient Bar full of life." alt="Bar full">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769037243/004-6_gfk1p1.jpg" class="gallery-thumb" data-caption="My first performance." alt="First performance">
-                    <img src="./images/gallery/sydney/003.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/009 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/012.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/014.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/027.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/036.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/048.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/049.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/050.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/051.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
-                    <img src="./images/gallery/sydney/Last Day on board the Sun...see you in 2011!.jpeg" class="gallery-thumb" data-caption="Last Day on board the Sun...see you in 2011!" alt="Last day on the Sun">
-                    <img src="./images/gallery/sydney/Maritime Museum.jpeg" class="gallery-thumb" data-caption="Maritime Museum" alt="Maritime Museum">
-                    <img src="./images/gallery/sydney/Nice Boat.jpeg" class="gallery-thumb" data-caption="Nice Boat" alt="Nice Boat">
-                    <img src="./images/gallery/sydney/dance theatre.jpeg" class="gallery-thumb" data-caption="Dance Theatre" alt="Dance Theatre">
-                    <img src="./images/gallery/sydney/sydney harbor bridge.jpeg" class="gallery-thumb" data-caption="Sydney Harbour Bridge" alt="Sydney Harbour Bridge">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/003.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/009 2.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/012.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/014.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/027.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/036.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/048.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/049.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/050.JPG" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/051.jpeg" class="gallery-thumb" data-caption="Sydney, Australia" alt="Sydney">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/Last Day on board the Sun...see you in 2011!.jpeg" class="gallery-thumb" data-caption="Last Day on board the Sun...see you in 2011!" alt="Last day on the Sun">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/Maritime Museum.jpeg" class="gallery-thumb" data-caption="Maritime Museum" alt="Maritime Museum">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/Nice Boat.jpeg" class="gallery-thumb" data-caption="Nice Boat" alt="Nice Boat">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/dance theatre.jpeg" class="gallery-thumb" data-caption="Dance Theatre" alt="Dance Theatre">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sydney/sydney harbor bridge.jpeg" class="gallery-thumb" data-caption="Sydney Harbour Bridge" alt="Sydney Harbour Bridge">
                 </div>
             </div>
         `,
@@ -1903,19 +1903,19 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/picton/IMG_20140106_092909.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_104919.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_104942.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_110034.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_110054.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_110114.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_20140106_110547.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4320.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4325.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4328.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4329.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4338.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
-                    <img src="./images/gallery/picton/IMG_4342.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_092909.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_104919.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_104942.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_110034.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_110054.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_110114.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_20140106_110547.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4320.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4325.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4328.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4329.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4338.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4342.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                 </div>
             </div>
         `,
@@ -2039,21 +2039,21 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/tonga/002.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/008.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/009.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/011.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/031.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/033 copy.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/034.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/049 2.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/053.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/056.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/059.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/069.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/073.JPG" class="gallery-thumb" data-caption="World signpost" alt="World signpost">
-                    <img src="./images/gallery/tonga/075.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
-                    <img src="./images/gallery/tonga/tonga.jpeg" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/002.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/008.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/009.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/011.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/031.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/033 copy.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/034.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/049 2.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/053.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/056.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/059.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/069.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/073.JPG" class="gallery-thumb" data-caption="World signpost" alt="World signpost">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/075.JPG" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tonga/tonga.jpeg" class="gallery-thumb" data-caption="Tonga" alt="Tonga">
                 </div>
             </div>
         `,
@@ -2260,13 +2260,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/new Caldonia/002 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/003 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/004.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/005.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/006.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/014 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
-                    <img src="./images/gallery/new Caldonia/015.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/003 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/005.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/006.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/014 2.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG" class="gallery-thumb" data-caption="New Caledonia" alt="New Caledonia">
                 </div>
             </div>
         `,
@@ -2417,31 +2417,31 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/santorini/IMG_20131001_111303.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20131001_114004.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20131001_140539.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20131001_141754.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20131001_141936.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20131001_141946.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20140526_090135.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20140526_090153.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20140526_095424.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_20140526_095448.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3432.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3453.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3463.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3472.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3480.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3485.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3488.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3491.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3494.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3502.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3509.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3518.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3521.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3522.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
-                    <img src="./images/gallery/santorini/IMG_3524.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_111303.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_114004.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_140539.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_141754.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_141936.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20131001_141946.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20140526_090135.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20140526_090153.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20140526_095424.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_20140526_095448.jpg" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3432.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3453.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3463.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3472.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3480.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3485.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3488.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3491.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3494.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3502.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3509.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3518.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3521.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3522.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santorini/IMG_3524.JPG" class="gallery-thumb" data-caption="Santorini" alt="Santorini">
                 </div>
             </div>
         `,
@@ -2474,22 +2474,22 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/simi/IMG_5785.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5786.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5787.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5788.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5789.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5790.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5791.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5792.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5793.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5794.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5795.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5797.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5798.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5799.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5800.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
-                    <img src="./images/gallery/simi/IMG_5801.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5785.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5786.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5787.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5788.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5789.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5790.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5791.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5792.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5793.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5794.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5795.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5797.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5798.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5799.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5800.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/simi/IMG_5801.jpeg" class="gallery-thumb" data-caption="Symi, Greece" alt="Symi">
                 </div>
             </div>
         `,
@@ -3495,31 +3495,31 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/tierra del fuego/tierra 2.jpg" class="gallery-thumb" data-caption="The jagged peaks of Tierra del Fuego" alt="Tierra del Fuego peaks">
-                    <img src="./images/gallery/tierra del fuego/tierra3.jpeg" class="gallery-thumb" data-caption="Ushuaia beneath the mountains" alt="Ushuaia">
-                    <img src="./images/gallery/tierra del fuego/tierra 10.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/Screen Shot 2026-01-22 at 5.15.03 PM.jpg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6607.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6608.jpg" class="gallery-thumb" data-caption="View from Seabourn Quest" alt="View from ship">
-                    <img src="./images/gallery/tierra del fuego/IMG_6608.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6609.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6611.jpeg" class="gallery-thumb" data-caption="Ushuaia and the airport" alt="Ushuaia airport">
-                    <img src="./images/gallery/tierra del fuego/IMG_6612.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego landscape" alt="Landscape">
-                    <img src="./images/gallery/tierra del fuego/IMG_6614.jpeg" class="gallery-thumb" data-caption="The dramatic horn peak" alt="Horn peak">
-                    <img src="./images/gallery/tierra del fuego/IMG_6615.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6619.jpeg" class="gallery-thumb" data-caption="Sailing through Tierra del Fuego" alt="Sailing">
-                    <img src="./images/gallery/tierra del fuego/IMG_6620.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6621.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6622.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6623.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6624.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6625.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
-                    <img src="./images/gallery/tierra del fuego/IMG_6626.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/tierra 2.jpg" class="gallery-thumb" data-caption="The jagged peaks of Tierra del Fuego" alt="Tierra del Fuego peaks">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/tierra3.jpeg" class="gallery-thumb" data-caption="Ushuaia beneath the mountains" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/tierra 10.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/Screen Shot 2026-01-22 at 5.15.03 PM.jpg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6607.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6608.jpg" class="gallery-thumb" data-caption="View from Seabourn Quest" alt="View from ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6608.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6609.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6611.jpeg" class="gallery-thumb" data-caption="Ushuaia and the airport" alt="Ushuaia airport">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6612.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego landscape" alt="Landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6614.jpeg" class="gallery-thumb" data-caption="The dramatic horn peak" alt="Horn peak">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6615.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6619.jpeg" class="gallery-thumb" data-caption="Sailing through Tierra del Fuego" alt="Sailing">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6620.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6621.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6622.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6623.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6624.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6625.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/IMG_6626.jpeg" class="gallery-thumb" data-caption="Tierra del Fuego" alt="Tierra del Fuego">
                 </div>
             </div>
         `,
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
-        image: "./images/gallery/tierra del fuego/tierra 2.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/tierra-del-fuego/tierra 2.jpg"
     },
     {
         id: 120,
@@ -3624,13 +3624,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/melbourne/IMG_20131226_105910.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20131226_110025.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20131226_134739.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20131226_135223.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20131226_135305.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20140102_102009.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
-                    <img src="./images/gallery/melbourne/IMG_20140103_165732.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20131226_105910.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20131226_110025.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20131226_134739.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20131226_135223.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20131226_135305.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20140102_102009.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/melbourne/IMG_20140103_165732.jpeg" class="gallery-thumb" data-caption="Melbourne, Australia" alt="Melbourne">
                 </div>
             </div>
         `,
@@ -3788,15 +3788,15 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/santarem/IMG_6161.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6162.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6168.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6169.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6170.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6171.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6174.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6176.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
-                    <img src="./images/gallery/santarem/IMG_6177.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6161.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6162.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6168.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6169.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6170.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6171.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6174.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6176.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/santarem/IMG_6177.jpg" class="gallery-thumb" data-caption="Santarém, Brazil" alt="Santarém">
                 </div>
             </div>
         `,
@@ -3925,25 +3925,25 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/rio de janirio/IMG_6241.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6243.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6245.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6246.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6247.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6301.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6330.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6331.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6333.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6336.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6350.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6351.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6360.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6364.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6380.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6383.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6386.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6399.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
-                    <img src="./images/gallery/rio de janirio/IMG_6410.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6241.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6243.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6245.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6246.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6247.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6301.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6330.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6331.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6333.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6336.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6350.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6351.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6360.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6364.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6380.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6383.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6386.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6399.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/rio-de-janirio/IMG_6410.jpeg" class="gallery-thumb" data-caption="Rio de Janeiro" alt="Rio">
                 </div>
             </div>
         `,
@@ -4271,19 +4271,19 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951550/Screenshot_20260120_140947_Facebook_sfthro.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140937_Facebook_lksenn.jpg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140752_Facebook_qrpdwc.jpg" class="gallery-thumb" data-caption="Belle Époque villa on the Italian Riviera." alt="Riviera villa">
-                    <img src="./images/gallery/san remo/IMG_5469.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5470.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5472.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5473.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5476.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5477.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5478.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5479.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5480.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5481.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5674.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5675.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
-                    <img src="./images/gallery/san remo/IMG_5680.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5469.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5470.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5472.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5473.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5476.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5477.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5478.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5479.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5480.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5481.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5674.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5675.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/san-remo/IMG_5680.jpeg" class="gallery-thumb" data-caption="San Remo, Italy" alt="San Remo">
                 </div>
             </div>
         `,
@@ -4313,22 +4313,22 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/roses/IMG_5245.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5246.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5249.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5251.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5252.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5253.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5254.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5256.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5257.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5258.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5260.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5261.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5262.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5263.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5265.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
-                    <img src="./images/gallery/roses/IMG_5266.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5245.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5246.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5249.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5251.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5252.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5253.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5254.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5256.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5257.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5258.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5260.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5261.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5262.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5263.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5265.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/IMG_5266.jpeg" class="gallery-thumb" data-caption="Roses, Spain" alt="Roses">
                 </div>
             </div>
         `,
@@ -4358,13 +4358,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/propriano/IMG_20140607_104657.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_104813.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_105149.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_105505.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_105507.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_120635.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
-                    <img src="./images/gallery/propriano/IMG_20140607_120639.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_104657.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_104813.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_105149.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_105505.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_105507.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_120635.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/propriano/IMG_20140607_120639.jpeg" class="gallery-thumb" data-caption="Propriano, Corsica" alt="Propriano">
                 </div>
             </div>
         `,
@@ -4439,28 +4439,28 @@ const locations = [
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951551/Screenshot_20260120_140907_Facebook_kw0y1a.jpg" class="gallery-thumb" data-caption="The Old Port with Fort Saint-Jean." alt="Marseille Old Port">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140553_Facebook_a4jsbz.jpg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5493.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5495.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5496.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5498.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5499.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5500.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5501.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5502.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5505.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5512.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5514.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5515.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5516.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5518.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5519.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5520.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5524.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5529.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5681.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5682.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5684.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
-                    <img src="./images/gallery/marseille/IMG_5686.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5493.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5495.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5496.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5498.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5499.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5500.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5501.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5502.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5505.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5512.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5514.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5515.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5516.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5518.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5519.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5520.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5524.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5529.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5681.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5682.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5684.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marseille/IMG_5686.jpeg" class="gallery-thumb" data-caption="Marseille, France" alt="Marseille">
                 </div>
             </div>
         `,
@@ -4490,13 +4490,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_122522.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_134218.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_134242.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_134353.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_135015.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_140634.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
-                    <img src="./images/gallery/le lavendeu/IMG_20140605_140758.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_122522.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_134218.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_134242.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_134353.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_135015.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_140634.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavendeu/IMG_20140605_140758.jpeg" class="gallery-thumb" data-caption="Le Lavandou, France" alt="Le Lavandou">
                 </div>
             </div>
         `,
@@ -4570,12 +4570,12 @@ const locations = [
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769800957/PANO_20140702_094633_htivht.jpg" class="gallery-thumb" data-caption="Monaco harbor with superyacht 'Dubai' (one of the world's largest) and Seabourn Sojourn." alt="Monaco harbor with superyacht Dubai">
-                    <img src="./images/gallery/monte carlo/IMG_20140602_092648.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
-                    <img src="./images/gallery/monte carlo/IMG_20140602_092703.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
-                    <img src="./images/gallery/monte carlo/IMG_20140602_093135.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
-                    <img src="./images/gallery/monte carlo/IMG_20140602_093137.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
-                    <img src="./images/gallery/monte carlo/IMG_20140602_100331.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
-                    <img src="./images/gallery/monte carlo/IMG_20140605_122414.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140602_092648.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140602_092703.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140602_093135.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140602_093137.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140602_100331.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/monte-carlo/IMG_20140605_122414.jpeg" class="gallery-thumb" data-caption="Monte Carlo, Monaco" alt="Monte Carlo">
                 </div>
             </div>
         `,
@@ -5406,32 +5406,32 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/sorrento/IMG_1103.JPG" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_4996.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_4997.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_4998.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_4999.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5002.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5003.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5004.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5005.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5006.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5762.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5763.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5764.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5765.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5767.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5768.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5771.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5772.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5773.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5775.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5776.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5778.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5779.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5780.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/IMG_5782.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
-                    <img src="./images/gallery/sorrento/seabourn-in-amalfi.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_1103.JPG" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_4996.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_4997.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_4998.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_4999.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5002.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5003.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5004.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5005.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5006.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5762.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5763.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5764.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5765.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5767.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5768.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5771.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5772.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5773.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5775.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5776.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5778.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5779.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5780.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/IMG_5782.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/sorrento/seabourn-in-amalfi.jpeg" class="gallery-thumb" data-caption="Sorrento, Italy" alt="Sorrento">
                 </div>
             </div>
         `,
