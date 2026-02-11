@@ -5294,16 +5294,16 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/buenas aires/IMG_6415.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6416.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6417.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6418.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6425.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6428.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6430.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6431.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6433.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
-                    <img src="./images/gallery/buenas aires/IMG_6438.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828227/shiplife/buenos-aires/kkiz4s1ngew0a6sgbl8d.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828228/shiplife/buenos-aires/wtmvciwlqrzoals1twqj.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828230/shiplife/buenos-aires/vekos56olytx2vjufoqa.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828231/shiplife/buenos-aires/pqegunhzhekrdy8chsjp.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828233/shiplife/buenos-aires/bszlfdfy76thy3mrffqb.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828234/shiplife/buenos-aires/d3grjrqdgavlw256mfog.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828236/shiplife/buenos-aires/oc3c4z2xld5hsomlrs2h.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828238/shiplife/buenos-aires/b83ym5ev0wyzgqgii70t.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828239/shiplife/buenos-aires/wqbd3vku0d0j5u0ke1dj.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770828241/shiplife/buenos-aires/ytgpn8uckdahvt4d1ifb.jpg" class="gallery-thumb" data-caption="Buenos Aires" alt="Buenos Aires">
                 </div>
             </div>
         `,
