@@ -1963,7 +1963,7 @@ const locations = [
                 <h3 class="section-title-panel">Gold Rush Grandeur</h3>
                 <p>Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.</p>
                 <p>The Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself (Dunedin is the Gaelic name for Edinburgh). Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.</p>
-                <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
                 <p class="photo-caption-inline">Port Chalmers, the historic port town where cruise ships dock. Victorian brick buildings and misty Otago hills.</p>
             </div>
 
@@ -1996,25 +1996,25 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/dunedin/port-chalmers.jpeg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
-                    <img src="./images/gallery/dunedin/001.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/002.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/003.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/004.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/005.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/006.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/007.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/008.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/009.jpeg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/022.JPG" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="./images/gallery/dunedin/on-the-way-001.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="./images/gallery/dunedin/on-the-way-002.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="./images/gallery/dunedin/on-the-way-003.jpeg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836757/shiplife/dunedin/tbqhft210vpo8s7uizav.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836768/shiplife/dunedin/tflscifiyxxzerg6bbk3.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836769/shiplife/dunedin/euakzrsgxmxao5jog87d.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836769/shiplife/dunedin/fmmf2a13jra1ozt6fm3b.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836773/shiplife/dunedin/xtvh4ezfveaxonxm1is5.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836782/shiplife/dunedin/i6kklt76xhh05dafr7qh.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836783/shiplife/dunedin/xsco0vd0kgzyvp45gj6t.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836784/shiplife/dunedin/fi3a3weze0bhyp684pgl.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836785/shiplife/dunedin/nrh6ouaaqu23xvzruaao.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/x7ibk9epxhahoj1t2n7g.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
                 </div>
             </div>
         `,
         fullDesc: "Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.\n\nThe Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself. Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.",
-        image: "./images/gallery/dunedin/port-chalmers.jpeg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg"
     },
     {
         id: 18,
