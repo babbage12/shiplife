@@ -4971,22 +4971,22 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120319.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120347.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120410.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120413.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120433.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120436.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120601.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120728.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_120739.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_121029.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_121322.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_123523.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_132633.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_142040.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_142049.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
-                    <img src="./images/gallery/Mykonos/IMG_20140620_143420.jpeg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826523/shiplife/mykonos/hbes6pcjphcgezt1xlvy.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826524/shiplife/mykonos/noaaofa01droopdivryk.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826524/shiplife/mykonos/hgpknqocxauhqv7i0tmq.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826525/shiplife/mykonos/camwa0mrjnw3hujzjlvq.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826526/shiplife/mykonos/ldotfzvypy129y6eapli.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826527/shiplife/mykonos/yi2cvhffwz3ohe5kalqt.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826528/shiplife/mykonos/ekcoagit6hcet3xpqdit.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826528/shiplife/mykonos/jzobjlt4sjp7ziokxcru.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826529/shiplife/mykonos/oclhdnh7geppbrgi9rdf.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826530/shiplife/mykonos/qqqxgklduflpjm7fb5cb.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826531/shiplife/mykonos/gmoptjdb2goobzz7ien5.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826532/shiplife/mykonos/psljuqbms4fkyco6prcd.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826533/shiplife/mykonos/t6nlzzbvcwgdmf9ueuce.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826535/shiplife/mykonos/bwygc3kz6tiu83l8b8vd.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826536/shiplife/mykonos/molo0nai9lchkeygcnz0.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826537/shiplife/mykonos/dybbjlw0vblxes7mxcdr.jpg" class="gallery-thumb" data-caption="Mykonos, Greece" alt="Mykonos">
                 </div>
             </div>
         `,
