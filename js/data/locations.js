@@ -156,11 +156,11 @@ const locations = [
                 </div>
                 <div class="gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816317/brisbane_iajcgd.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
-                    <img src="./images/gallery/brisbane/brisbane.jpeg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
-                    <img src="./images/gallery/brisbane/003.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
-                    <img src="./images/gallery/brisbane/036.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
-                    <img src="./images/gallery/brisbane/038.JPG" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
-                    <img src="./images/gallery/brisbane/George V.JPG" class="gallery-thumb" data-caption="George V Hotel, Brisbane" alt="George V Hotel">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827970/shiplife/brisbane/yy6wwmwaw75fugftzjw2.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827962/shiplife/brisbane/yvkbyzev0b4wz8f1dkcf.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827965/shiplife/brisbane/xbwwlhrrdjvpvxw1csfs.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827967/shiplife/brisbane/vkrugky6hmspuwkhz1w3.jpg" class="gallery-thumb" data-caption="Brisbane, Australia" alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827968/shiplife/brisbane/tnb45yy4lnewyl5qncbf.jpg" class="gallery-thumb" data-caption="George V Hotel, Brisbane" alt="George V Hotel">
                 </div>
             </div>
         `,
