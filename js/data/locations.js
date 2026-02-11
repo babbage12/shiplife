@@ -3364,30 +3364,30 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="gallery-thumb" data-caption="Olympic Museum." alt="Museum">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="gallery-thumb" data-caption="Barcelona from above." alt="City view">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="gallery-thumb" data-caption="Barcelona architecture." alt="Architecture">
-                    <img src="./images/gallery/barcelona/IMG_20140811_085632.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_090915.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_092621.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_093127.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094147.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094212.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094314.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094412.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094619.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094632.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094750.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094806.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094911.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_094915.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_095030.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_095425.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_100621.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_104456.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_105555.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_105601.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_105616.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_122138.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_122144.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
-                    <img src="./images/gallery/barcelona/IMG_20140811_122645.jpeg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827192/shiplife/barcelona/egtnbgzv8hmcmjlh498z.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827193/shiplife/barcelona/bphaumomyerkrem4qpgv.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827195/shiplife/barcelona/rrzlbgowqnprha1jt6ao.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827196/shiplife/barcelona/u54bvuk5wo3pb2b89coo.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827197/shiplife/barcelona/szzvjpktdwvwu9obehqb.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827198/shiplife/barcelona/ge3dx5s6vkggkyv7ktds.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827199/shiplife/barcelona/dgx6f6rojrbpl3q0seno.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827200/shiplife/barcelona/w67knyweyh4scizw02ir.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827201/shiplife/barcelona/nplkku1zoldmv81qwmvx.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827202/shiplife/barcelona/s7rwbacr9t5vtlvp94xu.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827203/shiplife/barcelona/yll9x0wopchnbg38ddtm.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827203/shiplife/barcelona/upleffrsjby7pzqralpq.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827204/shiplife/barcelona/b5ugz3pohf9gastxahub.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827205/shiplife/barcelona/f9n0bhmdhqytj5o7o5zo.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827206/shiplife/barcelona/zov5psf0rw6flla14il5.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827207/shiplife/barcelona/fb5mvaox8g0wg0m3rdht.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827207/shiplife/barcelona/wujcu7d9vxwjvcdwykmk.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827208/shiplife/barcelona/uvrmojc4b5ylmrvzgel2.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827210/shiplife/barcelona/nddlhirnfawquu3bxelc.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827211/shiplife/barcelona/oq9qnpdk5lq9o5b2fojl.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827212/shiplife/barcelona/aympfft45dactel1pv0m.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827213/shiplife/barcelona/zuuttlhxvpndc1h9bbfn.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827213/shiplife/barcelona/ze5iahr25bvhw4w7o5q1.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827214/shiplife/barcelona/jolybutenmxzbqzohtoa.jpg" class="gallery-thumb" data-caption="Barcelona, Spain" alt="Barcelona">
                 </div>
             </div>
         `,
