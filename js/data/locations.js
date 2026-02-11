@@ -3417,13 +3417,13 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/St Tropez/IMG_5530.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5531.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5534.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5536.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5537.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5538.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
-                    <img src="./images/gallery/St Tropez/IMG_5539.jpeg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826932/shiplife/st-tropez/sve0efvhgcxtzw24gzb8.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826933/shiplife/st-tropez/s0tmcuwwchbiedawytdl.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826935/shiplife/st-tropez/dcqrued9fv0yivzmugge.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826936/shiplife/st-tropez/uigff9kxp871azrxsvct.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826937/shiplife/st-tropez/xjz2ubcnhuzwe48tvrqv.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826938/shiplife/st-tropez/lekkbtf9cwl0uewqewer.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826939/shiplife/st-tropez/a20iloxqar6vpiqtpykw.jpg" class="gallery-thumb" data-caption="St. Tropez, France" alt="St. Tropez">
                 </div>
             </div>
         `,
