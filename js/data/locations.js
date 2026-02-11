@@ -5576,19 +5576,19 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/Isle of pines/054.JPG" class="gallery-thumb" data-caption="Crew day at the beach" alt="Crew day">
-                    <img src="./images/gallery/Isle of pines/033.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/046.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/023.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/030.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/023.jpeg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/030.jpeg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
-                    <img src="./images/gallery/Isle of pines/DSC00026.JPG" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826440/shiplife/isle-of-pines/tpdgnpy4lkvxtivahmf7.jpg" class="gallery-thumb" data-caption="Crew day at the beach" alt="Crew day">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826439/shiplife/isle-of-pines/uk5agubylcawarrc2cee.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826436/shiplife/isle-of-pines/nijbrcf7ieidnsdezmni.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826441/shiplife/isle-of-pines/xsihmnhudihg22sdon9o.jpg" class="gallery-thumb" data-caption="Isle of Pines" alt="Isle of Pines">
                 </div>
             </div>
         `,
         fullDesc: "The Isle of Pines is one of those places that makes the travel brochures seem like they undersold it.\n\nThe water is so clear you can see straight to the bottom from the deck. The crew gathered on the beach for the day.",
-        image: "./images/gallery/Isle of pines/054.JPG"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770826440/shiplife/isle-of-pines/tpdgnpy4lkvxtivahmf7.jpg"
     },
     {
         id: 136,
