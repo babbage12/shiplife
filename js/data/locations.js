@@ -3130,30 +3130,30 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="gallery-thumb" data-caption="Antarctic ice." alt="Ice">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="gallery-thumb" data-caption="Antarctic landscape." alt="Landscape">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="gallery-thumb" data-caption="Ice formations." alt="Ice formations">
-                    <img src="./images/gallery/antartica/IMG_6475.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6476.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6481.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6482.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6483.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6485.jpeg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6490.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6496.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6505.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6515.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6516.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6517.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6519.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6524.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6526.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6527.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6529.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6538.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6540.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6548.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6554.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6563.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6572.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
-                    <img src="./images/gallery/antartica/IMG_6717.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827084/shiplife/antarctica/cz6rlhamigbfcfbw8faz.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827084/shiplife/antarctica/faghm04wmznwajvdszes.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827085/shiplife/antarctica/ux0177l0qmgvoui6wrmk.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827086/shiplife/antarctica/l374c32lkf3ksks79tvb.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827087/shiplife/antarctica/qfbhbdqbi9gnj5kgcpcd.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827088/shiplife/antarctica/wmk00nufhvewnx7018x4.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827089/shiplife/antarctica/fhj7nt7uiygc6pwc4uar.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827089/shiplife/antarctica/wm33vuqpic9vazyqh16f.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827090/shiplife/antarctica/lrivcvhsifypjamvgbcu.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827091/shiplife/antarctica/pu088hiixohimq97yz1l.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827092/shiplife/antarctica/drctkc5k6peiwtzhgsuf.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827092/shiplife/antarctica/k77fzroa6wiyo3ocqrcs.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827093/shiplife/antarctica/d2sfwlw6rm5xbgckgg5e.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827094/shiplife/antarctica/z3jqg8oc4ljdfkq6mwbi.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827095/shiplife/antarctica/wbkb6rqndoiaozn5md9m.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827096/shiplife/antarctica/ahkf6k350iybuidff2qm.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827096/shiplife/antarctica/zoezb7sy5r76ni4hxbjn.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827097/shiplife/antarctica/novc4ww2pjcwdtfeejyj.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827098/shiplife/antarctica/lrqqg0f61hfaetevztno.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827104/shiplife/antarctica/ginvukjus348m6csofst.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827105/shiplife/antarctica/ffnkuluercsm3ay4un0m.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827106/shiplife/antarctica/uiw3c6i2pg8vj8sshquv.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827106/shiplife/antarctica/usgm1b6j5ww0mtlhany4.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770827108/shiplife/antarctica/qqfztbprqmzlphk4gd9r.jpg" class="gallery-thumb" data-caption="Antarctica" alt="Antarctica">
                 </div>
             </div>
         `,
