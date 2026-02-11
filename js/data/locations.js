@@ -3976,15 +3976,15 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/buzios/IMG_6181.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6188.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6195.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6198.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6207.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6226.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6230.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6233.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
-                    <img src="./images/gallery/buzios/IMG_6235.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829346/shiplife/buzios/wsvhzaiog6hitekvhjdk.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829347/shiplife/buzios/bn0dln20zdk8dunq4qdt.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829348/shiplife/buzios/uzskswlpltybmibbttpq.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829349/shiplife/buzios/fwpr8trcgizfsj9ltdco.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829350/shiplife/buzios/guamsdhhpyalmwmlmyf0.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829351/shiplife/buzios/qbwdsgyzlko0zqg6zkmd.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829352/shiplife/buzios/vwh7lu6te1npks7n4uep.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829353/shiplife/buzios/xihise9pnuje7dpeposb.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770829355/shiplife/buzios/zebudkszfnih7ztms5sl.jpg" class="gallery-thumb" data-caption="Búzios, Brazil" alt="Búzios">
                 </div>
             </div>
         `,
