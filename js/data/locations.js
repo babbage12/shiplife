@@ -38,6 +38,7 @@ const locations = [
                 <p>Finding me as a kid was easy - just listen. The sound of drums, clarinet, guitar, or singing would lead you right to me. My mom, my grandma, my brother and sister - anyone who would listen became an audience. My great-grandma Gillette would hoist me up onto the doghouse where the Star Spangled Banner would ring out, the apples on the surrounding trees standing in as my crowd.</p>
                 <p>Made-up songs. Harmonies with the radio. And the daydreaming - hours of it. Staring out classroom windows while the teacher's voice faded to background noise. None of it captured me. What captured me were the songs playing in my head, and imagining how far I could ride a horse into that field before the world ran out. Teachers didn't appreciate it. Report cards said things like 'needs to focus' and 'not working to potential.'</p>
                 <p>Once, sick with the flu and half-asleep on cough syrup, I dreamed I was a tin soldier drifting in a paper boat toward a walled city. Just a fever dream, but it stuck with me. I'd see that city again.</p>
+                <div class="story-break">· · ·</div>
                 <p>At age 7, when other kids were playing with Legos, my dad's Jazzmaster guitar became my new obsession.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
                 <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
@@ -49,9 +50,8 @@ const locations = [
             </div>
             
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Band</span>
                 <h3 class="section-title-panel">Touched</h3>
-                <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable dive bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
+                <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="story-image" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="The band Touched, 1991">
                 <p class="photo-caption-inline">Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991">
@@ -76,11 +76,11 @@ const locations = [
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig">
                 <p class="photo-caption-inline">2005. The first solo gig in years. The spark.</p>
                 <p>The most important step was visualizing where music could lead again. A scrapbook of exotic places took shape - images of grand hotels, cruise ships, distant stages.</p>
-                <p>Then one late night, a search for solo guitar gigs landed on a British talent website with an ad that read something like:</p>
+                <p>Then one late night, in a search for solo guitar gigs I landed on a British talent website with an ad that read something like:</p>
                 <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
                 <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
-                <blockquote class="story-quote">"Hi Derrick, I watched your video and you really sound good! We might have an opportunity for you in the very near future. Is there a good time to talk?"</blockquote>
-                <p>I left work early that day. The following month I was boarding a plane in Detroit. Destination: Auckland, NZ. Walking through that first door was the hardest thing ever. Everything got left behind - shoved into a storage space. Toledo faded in the rearview mirror on July 6th, 2009.</p>
+                <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future."</blockquote>
+                <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit, and Toledo - everything I had ever known - literally faded from view. Less than a month later, I was boarding a plane on my way to eventually Australia, where the next door was waiting to be opened.</p>
                 <blockquote class="story-quote final-quote">The lock fell away from Door #1 and opened to the possibility of everything that came after.</blockquote>
             </div>
             
@@ -204,7 +204,7 @@ const locations = [
                 <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
                 <p>Making it past that window meant the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
                 <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
-                <p>Staying on and making it to Darwin without being handed a plane ticket home meant at least a full 4-month contract. And who knows - maybe an invitation to do it again.</p>
+                <p>Staying on and making it to Darwin without being handed a free meal and a plane ticket home meant at least a full 4-month contract. I was already getting into the rhythm of this very different life, and I was enjoying it. I didn't want to leave any time soon.</p>
                 <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
                 <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
@@ -266,29 +266,19 @@ const locations = [
                 </div>
                 <p class="photo-caption-inline">The Star Picture Theatre in Darwin, and Brisbane lit up at night.</p>
             </div>
-            
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">Shipmates</span>
                 <h3 class="section-title-panel">Witnesses to the Strange</h3>
                 <p>They weren't just colleagues. They were professionals, equally dedicated to their craft. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
                 <p>There was humor and irony in every story told at sea. It just happened that way - so many people from such different places, bumping into each other's unfamiliar ways.</p>
+                <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar">
                 <p class="photo-caption-inline">Goofing off in crew bar with shipmates.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
-                </div>
-                <p class="photo-caption-inline">Aussie passengers know how to party.</p>
-            </div>
-            
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Stage</span>
-                <h3 class="section-title-panel">Playing With Friends</h3>
-                <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="story-image" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Playing with Hayden Smith">
                 <p class="photo-caption-inline">Playing with my friend Hayden Smith in Smugglers Lounge.</p>
                 <div class="story-gallery-grid">
@@ -298,8 +288,13 @@ const locations = [
                 <p class="photo-caption-inline">Hayden and I performing in Atlantis Lounge.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="story-image" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Playing with Lars">
                 <p class="photo-caption-inline">Playing with my friend Lars in Smugglers Lounge.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="story-image" data-caption="Aussie passengers know how to party." alt="Aussie passengers know how to party">
+                </div>
+                <p class="photo-caption-inline">Aussie passengers know how to party.</p>
             </div>
-            
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">Ship Celebrity</span>
                 <h3 class="section-title-panel">Cruise Director's Corner</h3>
@@ -310,21 +305,11 @@ const locations = [
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="story-image" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
                 <p class="photo-caption-inline">Where do hands go? What are hands? Why do I have hands?</p>
             </div>
-            
-            <div class="story-section-panel">
-                <span class="section-tag-panel">Day Trip</span>
-                <h3 class="section-title-panel">Litchfield National Park</h3>
-                <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds.</p>
-                <p>A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="story-image" alt="Litchfield National Park swimming hole">
-                <p class="photo-caption-inline">Swimming in Litchfield. We saw the crocodile warning sign on our way out. Duh.</p>
-                <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
-            </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Door #2</span>
                 <h3 class="section-title-panel">The Door That Opened Everything</h3>
-                <p>Darwin was the door that opened onto my future. From there, it was only a matter of time before the entire world opened up.</p>
+                <p>Darwin was the door that opened onto my future as a cruise ship musician. The following Door #3 opened to a world I honestly couldn't have imagined, no matter how big a daydreamer I had been as a kid.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -390,6 +375,12 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg" class="gallery-thumb" data-caption="Crew adventures." alt="Crew adventures">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
+                </div>
+                <div class="gallery-story-section">
+                    <h4 class="gallery-story-title">That Time We Were Almost Eaten by Crocodiles</h4>
+                    <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
+                    <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
                 </div>
             </div>
         `,
