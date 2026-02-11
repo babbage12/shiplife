@@ -5614,17 +5614,17 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/New Caldonia/004.JPG" class="gallery-thumb" data-caption="Local children, Noumea" alt="Local children">
-                    <img src="./images/gallery/New Caldonia/002 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
-                    <img src="./images/gallery/New Caldonia/003 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
-                    <img src="./images/gallery/New Caldonia/005.JPG" class="gallery-thumb" data-caption="Beach hut" alt="Beach hut">
-                    <img src="./images/gallery/New Caldonia/006.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
-                    <img src="./images/gallery/New Caldonia/014 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
-                    <img src="./images/gallery/New Caldonia/015.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG" class="gallery-thumb" data-caption="Local children, Noumea" alt="Local children">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/003 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/005.JPG" class="gallery-thumb" data-caption="Beach hut" alt="Beach hut">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/006.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/014 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
                 </div>
             </div>
         `,
         fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
-        image: "./images/gallery/New Caldonia/004.JPG"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG"
     }
 ];
