@@ -3453,17 +3453,17 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/ibiza/IMG_20140610_113531.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_113551.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_114901.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_135036.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_135303.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_142859.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140610_143010.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140618_140640.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140622_101512.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140622_101517.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
-                    <img src="./images/gallery/ibiza/IMG_20140622_121033.jpeg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837316/shiplife/ibiza/ephbyw32jtinr1jkj2ys.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837317/shiplife/ibiza/gtafp4elfoffkf99szii.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837318/shiplife/ibiza/ghicdyoulxxbrgxqqd2s.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837319/shiplife/ibiza/zqtcjcuossjgbkjct5ut.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837320/shiplife/ibiza/ptudhfojytuxfnbbetok.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837321/shiplife/ibiza/wpeauwld0pxal2o79qzk.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837322/shiplife/ibiza/vy8uyjkookbjmxfyybei.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837323/shiplife/ibiza/nvgth6p9ayceumtg98ca.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837324/shiplife/ibiza/pvzysfnqykgjo55prr9l.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837325/shiplife/ibiza/zeczsb0l4okjwrsoie7m.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770837326/shiplife/ibiza/cobmuqw8ytk8lwv9qmjh.jpg" class="gallery-thumb" data-caption="Ibiza, Spain" alt="Ibiza">
                 </div>
             </div>
         `,
@@ -5539,20 +5539,20 @@ const locations = [
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="./images/gallery/figi/129.JPG" class="gallery-thumb" data-caption="Yacht Nirvana at Port Denarau" alt="Yacht Nirvana">
-                    <img src="./images/gallery/figi/123.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/128.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/132.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/133.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/134.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/135.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/158.JPG" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="./images/gallery/figi/Nirvana - Copy.JPG" class="gallery-thumb" data-caption="Yacht Nirvana" alt="Yacht Nirvana">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836867/shiplife/figi/oh7lcv26vmsxcftvu9rl.jpg" class="gallery-thumb" data-caption="Yacht Nirvana at Port Denarau" alt="Yacht Nirvana">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836861/shiplife/figi/jaranvxvpwauxkca9o0b.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836866/shiplife/figi/sicjydbjflnmagnsqhag.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836868/shiplife/figi/qkulkxtdhmtpmofynskk.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836869/shiplife/figi/lc0gbmah1eyzaymzmjpe.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836870/shiplife/figi/v7ix2chhup4osjkoywvx.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836871/shiplife/figi/qdaurdhcpenfyjhwpb8d.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836873/shiplife/figi/xedg78fdmu2pmlagygsv.jpg" class="gallery-thumb" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg" class="gallery-thumb" data-caption="Yacht Nirvana" alt="Yacht Nirvana">
                 </div>
             </div>
         `,
         fullDesc: "Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and superyachts.\n\nThe sailing yacht Nirvana was docked here when we visited - a $35 million beauty. There used to be a Hard Rock Cafe right on the marina.",
-        image: "./images/gallery/figi/129.JPG"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836867/shiplife/figi/oh7lcv26vmsxcftvu9rl.jpg"
     },
     {
         id: 135,
