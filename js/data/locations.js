@@ -376,13 +376,12 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
                 </div>
-                <div class="gallery-story-section">
-                    <h4 class="gallery-story-title">That Time We Were Almost Eaten by Crocodiles</h4>
-                    <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
-                    <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
-                    <details class="collapsible-gallery">
-                        <summary>More photos from Litchfield (5)</summary>
+                <details class="collapsible-gallery">
+                    <summary>That Time We Were Almost Eaten by Crocodiles</summary>
+                    <div class="gallery-story-section">
+                        <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
+                        <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
                         <div class="story-gallery-grid">
                             <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/031.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
                             <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/039.jpg" class="story-image" data-caption="Litchfield waterfalls" alt="Litchfield">
@@ -392,8 +391,8 @@ const locations = [
                             <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/049.jpg" class="story-image" data-caption="Litchfield swimming hole" alt="Litchfield">
                         </div>
                         <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/053.jpg" class="story-image" data-caption="The crocodile-infested waters we were swimming in" alt="Litchfield">
-                    </details>
-                </div>
+                    </div>
+                </details>
             </div>
         `,
         fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the door that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
