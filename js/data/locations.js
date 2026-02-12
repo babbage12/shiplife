@@ -199,25 +199,6 @@ const locations = [
             </div>
             
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Proving Ground</span>
-                <h3 class="section-title-panel">The 14-Day Cruise</h3>
-                <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
-                <p>Making it past that window meant the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
-                <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
-                <p>Staying on and making it to Darwin without being handed a free meal and a plane ticket home meant at least a full 4-month contract. I was already getting into the rhythm of this very different life, and I was enjoying it. I didn't want to leave any time soon.</p>
-                <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
-                <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
-                <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
-                <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist - Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Soundcheck at the Atlantis Lounge">
-                </div>
-                <p class="photo-caption-inline">The Atlantis Showlounge - my name in print, and the view from soundcheck before the doors opened.</p>
-            </div>
-            
-            <div class="story-section-panel">
                 <span class="section-tag-panel">Orientation Day</span>
                 <h3 class="section-title-panel">
                     A Life in Motion
@@ -244,6 +225,25 @@ const locations = [
                 <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="story-image" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun in New Caledonia">
                 <p class="photo-caption-inline">Pacific Sun docked in New Caledonia.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Proving Ground</span>
+                <h3 class="section-title-panel">The 14-Day Cruise</h3>
+                <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
+                <p>Making it past that window meant the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
+                <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
+                <p>Staying on and making it to Darwin without being handed a free meal and a plane ticket home meant at least a full 4-month contract. I was already getting into the rhythm of this very different life, and I was enjoying it. I didn't want to leave any time soon.</p>
+                <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
+                <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
+                <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
+                <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist - Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Soundcheck at the Atlantis Lounge">
+                </div>
+                <p class="photo-caption-inline">The Atlantis Showlounge - my name in print, and the view from soundcheck before the doors opened.</p>
             </div>
             
             <div class="story-section-panel">
