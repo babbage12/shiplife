@@ -381,6 +381,15 @@ const locations = [
                     <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
                     <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/031.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/039.jpg" class="story-image" data-caption="Litchfield waterfalls" alt="Litchfield">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/040.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/049.jpg" class="story-image" data-caption="Litchfield swimming hole" alt="Litchfield">
+                    </div>
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/053.jpg" class="story-image" data-caption="The crocodile-infested waters we were swimming in" alt="Litchfield">
                 </div>
             </div>
         `,
@@ -803,9 +812,32 @@ const locations = [
         tag: "Temples & Jungles",
         icon: "🥭",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Spiritual awakenings and monkey forests.",
         fullDesc: "We did a 14-day cruise around the Indonesian archipelago on Seabourn.\n\nBali was somehow different from expectation. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821387/bali_y9gq2v.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821387/bali_y9gq2v.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>We did a 14-day cruise around the Indonesian archipelago on Seabourn.</p>
+                <p>Bali was somehow different from expectation. More spiritual. The temples seemed to breathe. The rice terraces looked hand-painted. And the monkey forest was exactly as chaotic as promised.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="baliGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Bali
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/bali/IMG_0229.jpg" class="gallery-thumb" data-caption="Bali temples" alt="Bali">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/bali/IMG_0238.jpg" class="gallery-thumb" data-caption="Bali landscapes" alt="Bali">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/bali/IMG_0239.jpg" class="gallery-thumb" data-caption="Bali scenery" alt="Bali">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/bali/IMG_0241.jpg" class="gallery-thumb" data-caption="Bali" alt="Bali">
+                </div>
+            </div>
+        `
     },
     {
         id: 120,
@@ -1260,9 +1292,68 @@ const locations = [
         tag: "Ancient Echoes",
         icon: "🏛️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Walking where emperors walked.",
         fullDesc: "These ruins felt different.\n\nMaybe it was the scale-the Library of Celsus towering overhead. Or maybe it was knowing that this was once one of the largest cities in the Roman Empire. Either way, Ephesus made ancient history feel immediate.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821545/ephesus_lynbis.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769821545/ephesus_lynbis.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>These ruins felt different.</p>
+                <p>Maybe it was the scale—the Library of Celsus towering overhead. Or maybe it was knowing that this was once one of the largest cities in the Roman Empire. Either way, Ephesus made ancient history feel immediate.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="ephesusGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Ephesus (40)
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/krgchk5isyezwenrvuqi.jpg" class="gallery-thumb" data-caption="Ephesus, Turkey" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/dvqpfsvkx1xwfpgfwaqk.jpg" class="gallery-thumb" data-caption="Ephesus ruins" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/pqjrpsvdw5nppnuxckmf.jpg" class="gallery-thumb" data-caption="Library of Celsus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/i099bcakiixzywxiaikf.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/c2f4rdikb77kkk3cebbs.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/mmdjpoghtir0bbjyvjv2.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/xwyhdwm6zacsnz86ikap.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/rw4ewqpudvs1gayit9wh.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/yit8eksrpxiiactnwy6h.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/h3a5jgeaip19kfepdppb.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/lrlepteazxxllnfgavdc.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/ozsbnhmtkcaoim9ixfwn.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/qczuk46gfuqdqwrqmj61.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/wviejqtv5klohzdpr975.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/ysmd2pdwc2ggllegytm1.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/ehv2pqed9kfbasyz2ovm.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/sisimyq9okitckxhwrjb.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/lfqpbrnvstkqaszqm8a0.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/stfs1kh5fialhbecfwma.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/delx2ub0t3ov9kupaayu.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/xv4mokncec8drxnwwqui.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/viawrbk3k4m5gtrwph1p.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/fxtnyfz2dgccf3v5yti9.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/elqsiil3shivg47hxqd2.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/xpq3hsp72puin1yv7msl.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/vepogna9c9wpjlopjb2v.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/yiasxtpue1eqdiuiglxr.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/wkcw2z3omgirsq5t5kzt.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/addbjqhkzwfygx0c4nx4.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/to9zcso5h0y5os5jwrek.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/jayslzrlgv1odv62kmmo.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/nddjqlabxrqku6k8z7ap.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/soxagsejl0gjikonyfn0.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/ymckt0ghrtpfpt9nt3vr.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/logqiyw6uoyesqbzaf3i.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/c1byckdz2y2hrauqvmu9.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/qldrmnap5p0rqn5oyty5.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/udabyczwwehxiaqpptyq.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/nf2g4fkdgxcqblxznz71.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ephesus/h259g3lahgtuyujocrfd.jpg" class="gallery-thumb" data-caption="Ephesus" alt="Ephesus">
+                </div>
+            </div>
+        `
     },
     {
         id: 10,
@@ -1694,9 +1785,35 @@ const locations = [
         tag: "Eighth Wonder",
         icon: "⛰️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Fjords that defy description.",
         fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532665/DSC00376_t661hp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532665/DSC00376_t661hp.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Rudyard Kipling called it the eighth wonder of the world.</p>
+                <p>He wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="fiordlandGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Fiordland
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00370.jpg" class="gallery-thumb" data-caption="Milford Sound" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00401.jpg" class="gallery-thumb" data-caption="Fiordland cliffs" alt="Fiordland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00402.jpg" class="gallery-thumb" data-caption="Waterfalls" alt="Fiordland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00406.jpg" class="gallery-thumb" data-caption="Fiordland" alt="Fiordland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00410.jpg" class="gallery-thumb" data-caption="Fiordland" alt="Fiordland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00416.jpg" class="gallery-thumb" data-caption="Fiordland" alt="Fiordland">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00417.jpg" class="gallery-thumb" data-caption="Fiordland" alt="Fiordland">
+                </div>
+            </div>
+        `
     },
     {
         id: 13,
@@ -1889,7 +2006,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">13 images</span>
+                        <span class="gallery-count">32 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -1907,6 +2024,25 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4329.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4338.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/picton/IMG_4342.jpg" class="gallery-thumb" data-caption="Picton, New Zealand" alt="Picton">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0421.jpg" class="gallery-thumb" data-caption="Marlborough wine country" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0424.jpg" class="gallery-thumb" data-caption="Marlborough vineyards" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0431.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0433.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0435.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0436.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0437.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0438.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0439.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0443.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0448.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0449.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0450.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0454.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0456.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0457.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0458.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0461.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/marlborough/IMG_0464.jpg" class="gallery-thumb" data-caption="Marlborough" alt="Marlborough">
                 </div>
             </div>
         `,
@@ -2678,6 +2814,59 @@ const locations = [
         icon: "🏛️",
         isDoor: false,
         shortDesc: "Where Archimedes ran naked through the streets.",
+        useRichContent: true,
+        richContent: `
+            <p>Syracuse was once the most powerful city in the Greek world - bigger than Athens.</p>
+            <p>The ancient theater still hosts performances. The ear of Dionysius still echoes. And somewhere in these streets, Archimedes shouted 'Eureka!' and changed history.</p>
+
+            <div class="photo-gallery-section" id="syracuseGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">35 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/ict6cdzzatrkg2kpyt1j.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/v4enc77o933ehdycfacy.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/lk0f6cjd0lutyehiov2p.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/yqysx8lti47yki18lqox.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/n31rsjiof3rkwlnolcgy.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/q8dieabqilcsvapk9txf.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/c5gdfwadjngcejs2lqms.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/vy9ljmcnhzx9tpl1dzlm.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/ij0zwipunaz7z8tjqzqm.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/booapz96lan4plbusnxg.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/tua74erjo7yiqayryork.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/ywn3qessmgwzba96aluy.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/hzst8cml36y1x5akvwal.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/zshfpzj6rejtl581c9hk.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/aswdr3yzebj1jdgtdiyz.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/myhtg60iiavop2xivlpk.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/koh3fkcj5ooua5hus3qz.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/tchjxkyl7g5nebf67xaq.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/obyl3geijw3f3pxbxb4t.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/kegwivloicdflc7caw3i.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/xhq2ggvkiqjtfgamjzoc.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/jhswrjbt5iefg2tfkrzc.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/lsbtfswef1frhckuosvv.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/or63wu8p7npno5crm4bt.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/j3modehmffc9ivo26llj.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/iscu6tkcmgvikuvbrntl.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/kqtmuuy8vqowhqcyjulq.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/kxdv59xxhxopalxv2aoj.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/bfbllcdynp3xntkwwguw.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/y6nhx0h9j1ievzugrah7.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/smh4gth5jh4swhnsjnco.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/yu0dzm9yndt5vzgtgpu9.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/odyqjanfvnisiwapmwov.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/iegd1trarrdqtnp5x1no.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/syracuse/trl3oz8hskyat50nzhrn.jpg" class="gallery-thumb" data-caption="Syracuse, Sicily" alt="Syracuse">
+                </div>
+            </div>
+        `,
         fullDesc: "Syracuse was once the most powerful city in the Greek world-bigger than Athens.\n\nThe ancient theater still hosts performances. The ear of Dionysius still echoes. And somewhere in these streets, Archimedes shouted 'Eureka!' and changed history.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735639/IMG_1240_swdpx7.jpg"
     },
@@ -4115,9 +4304,31 @@ const locations = [
         tag: "Island at the Edge",
         icon: "🏔️",
         isDoor: false,
+        useRichContent: true,
         shortDesc: "Australia's southern outpost, gateway to Antarctica.",
         fullDesc: "Hobart sits in the shadow of Mount Wellington, looking out toward the pole.\n\nThis is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521843/023_nckajd.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521843/023_nckajd.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Hobart sits in the shadow of Mount Wellington, looking out toward the pole.</p>
+                <p>This is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="hobartGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Hobart
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/hobart/IMG_0379.jpg" class="gallery-thumb" data-caption="Hobart, Tasmania" alt="Hobart">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/hobart/IMG_0380.jpg" class="gallery-thumb" data-caption="Hobart harbor" alt="Hobart">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/hobart/IMG_0385.jpg" class="gallery-thumb" data-caption="Mount Wellington" alt="Mount Wellington">
+                </div>
+            </div>
+        `
     },
     {
         id: 48,
@@ -5339,8 +5550,116 @@ const locations = [
         icon: "🏝️",
         isDoor: false,
         shortDesc: "Ancient Roman hideaway in the Tyrrhenian Sea.",
+        useRichContent: true,
+        richContent: `
+            <p>Ponza is the largest of the Pontine Islands, a volcanic archipelago off the coast between Rome and Naples.</p>
+            <p>The Romans carved cisterns and grottoes into these cliffs two thousand years ago. The harbor is ringed with pastel houses, and the beaches are accessible only by boat. This is where Romans escape when they want to disappear.</p>
+
+            <div class="photo-gallery-section" id="ponzaGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">49 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/kiawamxoxxp1zxhudd1h.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/cw2pwblasvvoajo8kts2.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/sdny0d1kowqfbuvefwio.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/a3ucouhoqun8k6elddso.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/osojhdyqtolifvzxt6eg.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/mqrm1u4aziavjbjbvi0u.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ihduxem2washjfnhs4lc.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/zkhmw9r29tt6q30gsw8n.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/j1a0dpwdcfn8n9hsdvnd.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/u47noigpmmeni699p2y8.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/vd1t1ayvaoj68c903km4.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ce6touodhwwrvuh0nve0.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/obdfbzutoryhba6xji79.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/lvatoqchnoai5lkh3bqq.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/cc5q4tll3vuchnbosltu.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/zu6vbsgxivkr2pgnjwug.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/f7mogk8torqzmeeqmow6.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/raf5ymyh93zc8chrkxwc.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/cqa92fq55j51ijep1hxx.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/edhgdhpiwcinxezqmudu.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/glxwn3wjsmcciefyzrja.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/qft9afkfqntwtfd9em8y.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/elgnorwieteuqvhauj4z.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/opjmth5kgv0vlyaqrhmd.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/qknhscxwnmwibj5imank.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ac7pyf6w9y41xqeqkg44.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/gydanjtyia84dhohe7xb.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/vllnbnpnytgt9yk6hmf7.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/aodybod7accfjt3wkwnu.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/nkgtvjasjmpqn3onmqe9.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ux5kttg1fplykv2ey2jb.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/u4k77hsrayobaxwvu6xb.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/nbqibh9ehy2zroqmxpau.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/cgdbfoxgrwzna5xkbfmi.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/py5ywkhyajtf51jhiqp9.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/nekk2k804sr9z0dcdebl.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/z0iiwcvlop38wa8q1nok.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/znlemizorwvtrgl9v14w.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/olb66e36vvyabawfycju.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/bowyjv5ffxfktmwiauca.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/syimxbg849cbrfdc8san.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/sbaslr0axpuflwwvicwi.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ixejd5nomz55a21fmavi.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/lypyfqv5nz0ykt4kxqiu.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ctpj954xpj4y9p1a9qts.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/tpudtkxylqbttmn7283p.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/eifd8rcdjju9rvhvf8ea.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/vksw7ctsemxo4qmnd7op.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ponza/ox36u4r3grwlkm1mcmhs.jpg" class="gallery-thumb" data-caption="Ponza, Italy" alt="Ponza">
+                </div>
+            </div>
+        `,
         fullDesc: "Ponza is the largest of the Pontine Islands, a volcanic archipelago off the coast between Rome and Naples.\n\nThe Romans carved cisterns and grottoes into these cliffs two thousand years ago. The harbor is ringed with pastel houses, and the beaches are accessible only by boat. This is where Romans escape when they want to disappear.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769800415/PANO_20140530_121202_f2hnrp.jpg"
+    },
+    {
+        id: 130,
+        title: "Lipari, Italy",
+        coords: [38.4674, 14.954],
+        tag: "Aeolian Islands",
+        icon: "🌋",
+        isDoor: false,
+        shortDesc: "Volcanic island jewel off the coast of Sicily.",
+        useRichContent: true,
+        richContent: `
+            <p>Lipari is the largest and most developed of the Aeolian Islands, a volcanic archipelago north of Sicily.</p>
+            <p>The Greeks called these islands home to Aeolus, keeper of the winds. The castle that dominates the harbor has been fortified since the Bronze Age. Obsidian from these slopes was traded across the ancient Mediterranean.</p>
+
+            <div class="photo-gallery-section" id="lipariGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos</span>
+                        <span class="gallery-count">12 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/vzey6gtcf1ljfviex7nq.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/kjpjn2jah938vui7hbvr.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/jvpftf5zawjrehpe2l3j.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/qt45zrc8wn5inx8o91kd.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/tniqqp9g0vojzdjpyufv.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/aicnq28db782xo18ccig.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/jcbkncbvodom1woeninq.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/dylzhruur8xwqgqasiwl.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/bgtcdqxeewwq1uchhfza.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/ydecspp2h6jvnhjuzz1i.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/ukhrqoepm9p59obco3fz.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/ku2f91vhhwkfsnmu1mus.jpg" class="gallery-thumb" data-caption="Lipari, Italy" alt="Lipari">
+                </div>
+            </div>
+        `,
+        fullDesc: "Lipari is the largest and most developed of the Aeolian Islands, a volcanic archipelago north of Sicily.\n\nThe Greeks called these islands home to Aeolus, keeper of the winds. The castle that dominates the harbor has been fortified since the Bronze Age.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lipari/vzey6gtcf1ljfviex7nq.jpg"
     },
     {
         id: 124,
@@ -5600,7 +5919,7 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">7 images</span>
+                        <span class="gallery-count">10 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
@@ -5611,11 +5930,156 @@ const locations = [
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/005.JPG" class="gallery-thumb" data-caption="Beach hut" alt="Beach hut">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/006.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/014 2.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/noumea/IMG_0091.jpg" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/noumea/IMG_0092.jpg" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/noumea/IMG_0094.jpg" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG" class="gallery-thumb" data-caption="Noumea" alt="Noumea">
                 </div>
             </div>
         `,
         fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG"
+    },
+    {
+        id: 137,
+        title: "Perth / Fremantle, Australia",
+        coords: [-32.0569, 115.7439],
+        tag: "Western Outpost",
+        icon: "🏖️",
+        isDoor: false,
+        useRichContent: true,
+        shortDesc: "Australia's most isolated city.",
+        fullDesc: "Perth is closer to Singapore than Sydney. It's Australia's most isolated major city, separated from the east by thousands of kilometers of desert.\n\nWe docked at Fremantle, the historic port town where old meets new.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/perth/IMG_0136.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Perth is closer to Singapore than Sydney. It's Australia's most isolated major city, separated from the east by thousands of kilometers of desert.</p>
+                <p>We docked at Fremantle, the historic port town where old meets new. The Fremantle Railway Station is a heritage gem.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="perthGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Perth
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/perth/IMG_0136.jpg" class="gallery-thumb" data-caption="Fremantle Railway Station" alt="Fremantle">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/perth/IMG_0137.jpg" class="gallery-thumb" data-caption="Fremantle" alt="Fremantle">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/perth/IMG_0138.jpg" class="gallery-thumb" data-caption="Fremantle" alt="Fremantle">
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 138,
+        title: "Broome, Australia",
+        coords: [-17.9614, 122.2359],
+        tag: "Pearling Town",
+        icon: "🐚",
+        isDoor: false,
+        useRichContent: true,
+        shortDesc: "Red dirt meets turquoise water.",
+        fullDesc: "Broome sits at the junction of the desert and the sea. Famous for its pearling history and Cable Beach, where camels walk along the sand at sunset.\n\nThe red pindan cliffs against the turquoise water create one of Australia's most striking landscapes.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/broome/005.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Broome sits at the junction of the desert and the sea. Famous for its pearling history and Cable Beach, where camels walk along the sand at sunset.</p>
+                <p>The red pindan cliffs against the turquoise water create one of Australia's most striking landscapes.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="broomeGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Broome
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/broome/005.jpg" class="gallery-thumb" data-caption="Broome, Australia" alt="Broome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/broome/IMG_0088.jpg" class="gallery-thumb" data-caption="Broome" alt="Broome">
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 139,
+        title: "Christmas Island, Australia",
+        coords: [-10.4475, 105.6904],
+        tag: "Red Crab Migration",
+        icon: "🦀",
+        isDoor: false,
+        useRichContent: true,
+        shortDesc: "Home of the famous red crab migration.",
+        fullDesc: "Christmas Island is an Australian territory in the Indian Ocean, famous for its annual red crab migration—when millions of crabs march from the forest to the sea.\n\nThe island is mostly national park, with dramatic cliffs and pristine rainforest.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Christmas Island is an Australian territory in the Indian Ocean, famous for its annual red crab migration—when millions of crabs march from the forest to the sea.</p>
+                <p>The island is mostly national park, with dramatic cliffs and pristine rainforest.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="christmasIslandGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Christmas Island
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0185.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0187.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0188.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0189.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0190.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0191.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/lombock.jpg" class="gallery-thumb" data-caption="Lombok stopover" alt="Lombok">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/wrong_side.jpg" class="gallery-thumb" data-caption="Christmas Island" alt="Christmas Island">
+                </div>
+            </div>
+        `
+    },
+    {
+        id: 140,
+        title: "Komodo Island, Indonesia",
+        coords: [-8.5500, 119.4500],
+        tag: "Dragons",
+        icon: "🦎",
+        isDoor: false,
+        useRichContent: true,
+        shortDesc: "Home of the Komodo dragon.",
+        fullDesc: "Komodo is where the dragons live. Real ones.\n\nThe Komodo dragon—the world's largest lizard—roams free on this island. Up to 3 meters long, with venomous saliva, they're the closest thing to dinosaurs walking the Earth today.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/DSC002971st.jpg",
+        richContent: `
+            <div class="story-section-panel">
+                <p>Komodo is where the dragons live. Real ones.</p>
+                <p>The Komodo dragon—the world's largest lizard—roams free on this island. Up to 3 meters long, with venomous saliva, they're the closest thing to dinosaurs walking the Earth today.</p>
+            </div>
+
+            <div class="photo-gallery-section" id="komodoGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📷</span>
+                        Photos from Komodo
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/DSC002971st.jpg" class="gallery-thumb" data-caption="Komodo dragon" alt="Komodo dragon">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2902.jpg" class="gallery-thumb" data-caption="Komodo Island" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2916.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2918.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2919.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2953.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2973.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/komodo/SANY2974.jpg" class="gallery-thumb" data-caption="Komodo" alt="Komodo">
+                </div>
+            </div>
+        `
     }
 ];
