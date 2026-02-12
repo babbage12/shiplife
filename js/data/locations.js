@@ -267,6 +267,69 @@ const locations = [
                 <p class="photo-caption-inline">The Star Picture Theatre in Darwin, and Brisbane lit up at night.</p>
             </div>
 
+            <div class="photo-gallery-section" id="darwinGallery">
+                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                    <span class="gallery-title">
+                        <span class="gallery-icon">📸</span>
+                        <span>More Photos of Shiplife</span>
+                        <span class="gallery-count">34 images</span>
+                    </span>
+                    <span class="gallery-toggle">▼</span>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="gallery-thumb" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="gallery-thumb" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis brochure">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="gallery-thumb" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Atlantis soundcheck">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="gallery-thumb" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun New Caledonia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526487/Isle_of_Pines_tddsqy.jpg" class="gallery-thumb" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526493/134_cwcuy0.jpg" class="gallery-thumb" data-caption="Pool party in Bali." alt="Bali pool party">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526496/bora_bora_z03zsr.jpg" class="gallery-thumb" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg" class="gallery-thumb" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/darwin_star_jseq6c.jpg" class="gallery-thumb" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/DSC00286_ikuq8x.jpg" class="gallery-thumb" data-caption="Brisbane lit up at night." alt="Brisbane">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526483/mark_cristian_iwhziq.jpg" class="gallery-thumb" data-caption="The crew bar - where the real stories got told. With friends." alt="Crew bar friends">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="gallery-thumb" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Hayden Smith">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis 2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="gallery-thumb" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Lars">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527425/IMG_0200_lgitre.jpg" class="gallery-thumb" data-caption="Shipmates." alt="Shipmates">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527430/IMG_0198_v6fil7.jpg" class="gallery-thumb" data-caption="Crew sign." alt="Crew sign">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767643122/013_pzswfa.jpg" class="gallery-thumb" data-caption="Somewhere in the first week - still figuring out the rhythm." alt="First week">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532411/037_sgoss3.jpg" class="gallery-thumb" data-caption="Pacific Sun days." alt="Pacific Sun">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532320/SANY2959_wrkayt.jpg" class="gallery-thumb" data-caption="Shore leave." alt="Shore leave">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532586/IMG_0503_d8y8ux.jpg" class="gallery-thumb" data-caption="More adventures." alt="Adventures">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532591/IMG_0505_u3ofup.jpg" class="gallery-thumb" data-caption="On the road." alt="On the road">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532608/IMG_0375_2020-10-19T20_30_15.551_ng52kh.jpg" class="gallery-thumb" data-caption="Exploring." alt="Exploring">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg" class="gallery-thumb" data-caption="Crew adventures." alt="Crew adventures">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
+                </div>
+                <details class="collapsible-gallery">
+                    <summary>That Time We Were Almost Eaten by Crocodiles</summary>
+                    <div class="gallery-story-section">
+                        <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
+                        <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
+                        <div class="story-gallery-grid">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/031.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/039.jpg" class="story-image" data-caption="Litchfield waterfalls" alt="Litchfield">
+                        </div>
+                        <div class="story-gallery-grid">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/040.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/049.jpg" class="story-image" data-caption="Litchfield swimming hole" alt="Litchfield">
+                        </div>
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/053.jpg" class="story-image" data-caption="The crocodile-infested waters we were swimming in" alt="Litchfield">
+                    </div>
+                </details>
+            </div>
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">Shipmates</span>
                 <h3 class="section-title-panel">Witnesses to the Strange</h3>
@@ -330,69 +393,6 @@ const locations = [
                         <li><strong>Youngest Capital:</strong> With a median age of 34.6, Darwin is Australia's youngest capital city.</li>
                     </ul>
                 </div>
-            </div>
-            
-            <div class="photo-gallery-section" id="darwinGallery">
-                <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
-                    <span class="gallery-title">
-                        <span class="gallery-icon">📸</span>
-                        <span>More Photos of Shiplife</span>
-                        <span class="gallery-count">34 images</span>
-                    </span>
-                    <span class="gallery-toggle">▼</span>
-                </div>
-                <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="gallery-thumb" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="gallery-thumb" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis brochure">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="gallery-thumb" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Atlantis soundcheck">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="gallery-thumb" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun New Caledonia">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526487/Isle_of_Pines_tddsqy.jpg" class="gallery-thumb" data-caption="Isle of Pines, New Caledonia." alt="Isle of Pines">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526493/134_cwcuy0.jpg" class="gallery-thumb" data-caption="Pool party in Bali." alt="Bali pool party">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526496/bora_bora_z03zsr.jpg" class="gallery-thumb" data-caption="Bora Bora, French Polynesia." alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg" class="gallery-thumb" data-caption="Semarang temple, Indonesia." alt="Semarang temple">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/darwin_star_jseq6c.jpg" class="gallery-thumb" data-caption="The Star Picture Theatre in Darwin." alt="Darwin Star">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/DSC00286_ikuq8x.jpg" class="gallery-thumb" data-caption="Brisbane lit up at night." alt="Brisbane">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="gallery-thumb" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off crew bar">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531847/008-3_zkgv14.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768531863/011-6_t1i6uf.jpg" class="gallery-thumb" data-caption="Aussie passengers know how to party." alt="Aussie passengers">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526483/mark_cristian_iwhziq.jpg" class="gallery-thumb" data-caption="The crew bar - where the real stories got told. With friends." alt="Crew bar friends">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="gallery-thumb" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Hayden Smith">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png" class="gallery-thumb" data-caption="Hayden and I performing in Atlantis Lounge." alt="Hayden Atlantis 2">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png" class="gallery-thumb" data-caption="Playing with my friend Lars in Smugglers Lounge." alt="Lars">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="gallery-thumb" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527425/IMG_0200_lgitre.jpg" class="gallery-thumb" data-caption="Shipmates." alt="Shipmates">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527430/IMG_0198_v6fil7.jpg" class="gallery-thumb" data-caption="Crew sign." alt="Crew sign">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767643122/013_pzswfa.jpg" class="gallery-thumb" data-caption="Somewhere in the first week - still figuring out the rhythm." alt="First week">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532411/037_sgoss3.jpg" class="gallery-thumb" data-caption="Pacific Sun days." alt="Pacific Sun">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532320/SANY2959_wrkayt.jpg" class="gallery-thumb" data-caption="Shore leave." alt="Shore leave">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532586/IMG_0503_d8y8ux.jpg" class="gallery-thumb" data-caption="More adventures." alt="Adventures">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532591/IMG_0505_u3ofup.jpg" class="gallery-thumb" data-caption="On the road." alt="On the road">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532608/IMG_0375_2020-10-19T20_30_15.551_ng52kh.jpg" class="gallery-thumb" data-caption="Exploring." alt="Exploring">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg" class="gallery-thumb" data-caption="Crew adventures." alt="Crew adventures">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg" class="gallery-thumb" data-caption="More memories." alt="Memories">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png" class="gallery-thumb" data-caption="Ship life." alt="Ship life">
-                </div>
-                <details class="collapsible-gallery">
-                    <summary>That Time We Were Almost Eaten by Crocodiles</summary>
-                    <div class="gallery-story-section">
-                        <p>A few hours from Darwin lies Litchfield National Park - waterfalls, swimming holes, and prehistoric-looking termite mounds. A group of us rented a van and drove out there. We found a beautiful swimming hole and jumped right in. Crystal clear water, surrounded by jungle. Paradise.</p>
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532403/033_tbuodb.jpg" class="gallery-story-image" data-caption="Swimming in Litchfield. We saw the crocodile warning sign on our way out." alt="Litchfield National Park swimming hole">
-                        <p>It wasn't until we were leaving that we noticed the sign: <strong>"CROCODILES INHABIT THIS AREA."</strong> We'd been splashing around for an hour.</p>
-                        <div class="story-gallery-grid">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/031.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/039.jpg" class="story-image" data-caption="Litchfield waterfalls" alt="Litchfield">
-                        </div>
-                        <div class="story-gallery-grid">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/040.jpg" class="story-image" data-caption="Litchfield" alt="Litchfield">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/049.jpg" class="story-image" data-caption="Litchfield swimming hole" alt="Litchfield">
-                        </div>
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/litchfield/053.jpg" class="story-image" data-caption="The crocodile-infested waters we were swimming in" alt="Litchfield">
-                    </div>
-                </details>
             </div>
         `,
         fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the door that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
