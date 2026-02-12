@@ -29,6 +29,17 @@ function animate() {
         // Gradually tilt to correct angle
         globe.rotation.x = 0.15 + (TOLEDO_X - 0.15) * easeOutQuart;
 
+        // Show modal early when globe visually appears stopped (easing ~99%)
+        if (easeOutQuart >= 0.99 && !introModalShown) {
+            introModalShown = true;
+            const userProgress = getProgress();
+            if (!userProgress.guidedComplete && !userProgress.introSeen) {
+                showIntroModal();
+            } else {
+                showTapHint();
+            }
+        }
+
         if (progress >= 1) {
             // Done - set final values
             camera.position.z = finalZoom;
@@ -37,19 +48,6 @@ function animate() {
             targetRotationY = TOLEDO_Y;
             targetRotationX = TOLEDO_X;
             introComplete = true;
-
-            // Check if this is a first-time visitor (guided experience not complete)
-            const userProgress = getProgress();
-            console.log('User progress:', userProgress);
-            if (!userProgress.guidedComplete && !userProgress.introSeen) {
-                // Show intro modal for first-time visitors
-                console.log('Showing intro modal...');
-                setTimeout(() => showIntroModal(), 100);
-            } else {
-                // Returning visitor - show tap/click hint after intro
-                console.log('Showing tap hint (returning visitor)');
-                showTapHint();
-            }
         } else {
             // Set targets for smooth handoff
             targetRotationY = globe.rotation.y;

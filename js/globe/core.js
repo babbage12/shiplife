@@ -16,6 +16,7 @@ let targetRotationXOnMouseDown = 0, targetRotationYOnMouseDown = 0;
 let introComplete = false;
 let introStartTime = null;
 let introStartY = 0;
+let introModalShown = false;
 
 // Panel state - controls whether globe auto-rotates
 let panelIsOpen = false;
