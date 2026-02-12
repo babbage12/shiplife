@@ -1366,6 +1366,7 @@ const locations = [
         icon: "🏟️",
         isDoor: false,
         shortDesc: "The eternal city never disappoints.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/v1770838005/shiplife/rome/xn0otmdalw0ppnagpzxu.jpg",
         imagePosition: "center",
         useRichContent: true,
         richContent: `
@@ -1387,15 +1388,16 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">Getting There</span>
                 <h3 class="section-title-panel">The Journey from the Port</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838027/shiplife/rome/ad2l2vhqoidqde7wkxez.jpg" class="story-image" data-caption="Iconic statue near Civitavecchia port." alt="Civitavecchia statue">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838012/shiplife/rome/girorp2kzs39ndiwhsab.jpg" class="story-image" data-caption="The port of Civitavecchia." alt="Civitavecchia port">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838010/shiplife/rome/l6fqmoutdg0tnj26sjgn.jpg" class="story-image" data-caption="The port town of Civitavecchia." alt="Civitavecchia port">
                 <p class="photo-caption-inline">The port town of Civitavecchia. Rome is about 80km inland.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838003/shiplife/rome/afsgrck9i4z3pqn6p6wb.jpg" class="story-image" data-caption="Train ticket to Rome." alt="Train ticket">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838028/shiplife/rome/pfwy9pa0hz92crmpnrxo.jpg" class="story-image" data-caption="Train ticket to Rome." alt="Train ticket">
                 <p class="photo-caption-inline">I bought my train ticket to the city.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838000/shiplife/rome/bijtthnfuufykoykynfw.jpg" class="story-image" data-caption="Civitavecchia train station." alt="Train station">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838029/shiplife/rome/msz5gefit3ybqzbch4w5.jpg" class="story-image" data-caption="Train tracks at Civitavecchia." alt="Train tracks">
                 <p class="photo-caption-inline">I hope I boarded the right train. I couldn't find anyone who spoke English and I was late getting to the right spot in the station.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838019/shiplife/rome/czvvwhqqlhitdtcpi5wj.jpg" class="story-image" data-caption="On the train to Rome." alt="On the train">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838021/shiplife/rome/pew93ifghhoqnuyqsieq.jpg" class="story-image" data-caption="View from the train to Rome." alt="View from train">
                 <p class="photo-caption-inline">On the train. Still had no idea if I was going in the right direction.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838002/shiplife/rome/ddlpxcctghpyhgpcoi96.jpg" class="story-image" data-caption="Finally arrived - the Colosseum." alt="The Colosseum">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838011/shiplife/rome/zxkjwys2pjwmq0pyxp3y.jpg" class="story-image" data-caption="The Colosseum." alt="The Colosseum">
                 <p class="photo-caption-inline">Finally, I arrived.</p>
             </div>
 
@@ -1405,14 +1407,40 @@ const locations = [
                 <p>Every time I visited Rome, I found something new. The Colosseum at sunset. A hidden trattoria in Trastevere. The way the light hits the Spanish Steps in the early morning.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838017/shiplife/rome/e0ameitjiqqu9e0mxi43.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838004/shiplife/rome/e9pz8a6daycsfx5pgcwr.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838018/shiplife/rome/kxyte3ynr7355ezc3lgq.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
                 </div>
                 <p class="photo-caption-inline">Rome rewards those who explore.</p>
                 <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838005/shiplife/rome/xn0otmdalw0ppnagpzxu.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838004/shiplife/rome/e9pz8a6daycsfx5pgcwr.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838006/shiplife/rome/prbj3sgvcfsnb1nlcqc9.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838014/shiplife/rome/qsrhsjw3lpcdnbr3yv7p.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                </div>
+                <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838016/shiplife/rome/fdgqcjiqjmlnewfg2lar.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838008/shiplife/rome/fh9wnajmt3blqcq0q09f.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838015/shiplife/rome/ovpgv5wsd5mgvbijcxhj.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
                 </div>
             </div>
+
+            <details class="collapsible-gallery">
+                <summary>More Roman Architecture</summary>
+                <div class="gallery-story-section">
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838008/shiplife/rome/fh9wnajmt3blqcq0q09f.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838003/shiplife/rome/vtdolegstghw3pmp9hnn.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838003/shiplife/rome/afsgrck9i4z3pqn6p6wb.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838002/shiplife/rome/ddlpxcctghpyhgpcoi96.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    </div>
+                    <div class="story-gallery-grid">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838001/shiplife/rome/gtuu19gmolzawnz26bkj.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838000/shiplife/rome/bijtthnfuufykoykynfw.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome">
+                    </div>
+                </div>
+            </details>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
                 <button class="more-info-btn">
