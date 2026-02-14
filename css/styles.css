@@ -439,6 +439,7 @@
             font-size: 0.9rem;
         }
 
+
         @media (max-width: 768px) {
             .scroll-hint-bottom {
                 right: 0;
@@ -478,8 +479,10 @@
         }
 
         .panel-content {
+            position: relative;
             padding: 2rem;
             padding-bottom: 3rem;
+            overflow: visible;
         }
 
         .panel-tag {
@@ -805,7 +808,7 @@
             border-top: 10px solid rgba(30, 60, 100, 0.95);
         }
 
-        .more-info-container:hover .more-info-popup,
+        /* Click-only - no hover trigger */
         .more-info-container.active .more-info-popup {
             opacity: 1;
             visibility: visible;
@@ -927,6 +930,21 @@
 
         .directors-commentary:hover .click-me-text {
             animation-play-state: paused;
+        }
+
+        /* Darwin captain - slightly smaller than default */
+        .darwin-captain .commentary-trigger {
+            width: 65px;
+            height: 65px;
+        }
+
+        .darwin-captain .click-me-text {
+            width: 100px;
+            height: 100px;
+        }
+
+        .darwin-captain .click-me-text text {
+            font-size: 11px;
         }
 
         /* Mobile adjustments for captain icon */
@@ -1828,8 +1846,25 @@
         .location-item.door .name {
             color: var(--gold);
             font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
         }
-        
+
+        .location-item.door .chapter-label {
+            font-size: 0.7rem;
+            color: rgba(212, 165, 116, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 400;
+        }
+
+        .location-item.door .location-name {
+            font-size: 0.9rem;
+            color: var(--gold);
+            font-weight: 500;
+        }
+
         /* Icon style indicators */
         .location-item[data-style="deco"] .icon {
             border-color: rgba(212, 165, 116, 0.5);
@@ -1959,7 +1994,8 @@
             .sidebar-scroll-hint {
                 display: none; /* Hide on mobile */
             }
-            
+
+
             /* Left menu - bottom sheet style */
             .location-list {
                 position: fixed;
@@ -2005,6 +2041,23 @@
             }
 
             .location-list .location-item.door .name {
+                color: #d4a574;
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.3;
+            }
+
+            .location-list .location-item.door .chapter-label {
+                font-size: 0.7rem;
+                color: rgba(212, 165, 116, 0.7);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                font-weight: 400;
+            }
+
+            .location-list .location-item.door .location-name {
+                font-size: 1rem;
                 color: #d4a574;
                 font-weight: 500;
             }
@@ -2440,11 +2493,79 @@
             margin-top: 0.25rem;
         }
 
-        .intro-instruction {
-            font-size: 0.85rem;
-            color: rgba(245, 240, 232, 0.6);
+        .intro-choices {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
             margin-top: 1.5rem;
-            margin-bottom: 0;
+        }
+
+        .intro-choice-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-family: inherit;
+        }
+
+        .intro-choice-btn.primary {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.3), rgba(212, 165, 116, 0.15));
+            border: 2px solid var(--gold);
+        }
+
+        .intro-choice-btn.primary:hover {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.4), rgba(212, 165, 116, 0.25));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(212, 165, 116, 0.3);
+        }
+
+        .intro-choice-btn.secondary {
+            background: rgba(245, 240, 232, 0.05);
+            border: 1px solid rgba(245, 240, 232, 0.2);
+        }
+
+        .intro-choice-btn.secondary:hover {
+            background: rgba(245, 240, 232, 0.1);
+            border-color: rgba(245, 240, 232, 0.4);
+        }
+
+        .intro-choice-btn .choice-label {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--cream);
+            margin-bottom: 0.25rem;
+        }
+
+        .intro-choice-btn.primary .choice-label {
+            color: var(--gold);
+        }
+
+        .intro-choice-btn .choice-desc {
+            font-size: 0.75rem;
+            color: rgba(245, 240, 232, 0.5);
+        }
+
+        @media (max-width: 480px) {
+            .intro-choices {
+                gap: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            .intro-choice-btn {
+                padding: 0.75rem 1rem;
+            }
+
+            .intro-choice-btn .choice-label {
+                font-size: 1rem;
+            }
+
+            .intro-choice-btn .choice-desc {
+                font-size: 0.7rem;
+            }
         }
 
         @media (max-width: 480px) {

@@ -152,7 +152,7 @@ function updateNextDoorButton(loc) {
         // This is a door and there's a next door
         const nextDoor = doors[doorIndex + 1];
         const nextDoorNum = doorIndex + 2;
-        nextDoorText.textContent = `Continue to Door #${nextDoorNum}`;
+        nextDoorText.textContent = `Continue to Chapter ${nextDoorNum}`;
         nextDoorHint.style.display = '';
         nextDoorHint.dataset.nextDoorId = nextDoor.id;
     } else {
@@ -292,6 +292,16 @@ function attachImageClickHandlers() {
             openLightbox(img.src, caption);
         };
     });
+
+    // Attach click handlers to more-info buttons (inline onclick doesn't work with innerHTML)
+    const moreInfoBtns = document.querySelectorAll('.panel-text .more-info-btn');
+    moreInfoBtns.forEach(btn => {
+        btn.onclick = function(e) {
+            e.stopPropagation();
+            const container = btn.closest('.more-info-container');
+            container.classList.toggle('active');
+        };
+    });
 }
 
 function closePanel() {
@@ -338,7 +348,7 @@ function showNextDoorPrompt(nextDoor) {
     prompt.className = 'next-door-prompt';
     prompt.style.cursor = 'pointer';
     prompt.innerHTML = `
-        <p>Door #${nextDoorNum}: ${nextDoor.tag.split(': ')[1]}</p>
+        <p>Chapter ${nextDoorNum}: ${nextDoor.tag.split(': ')[1]}</p>
         <p class="prompt-instruction">Tap to continue</p>
     `;
     prompt.addEventListener('click', () => {
@@ -441,3 +451,10 @@ const observer = new MutationObserver(function(mutations) {
     });
 });
 observer.observe(sidePanel, { attributes: true });
+
+// Close any open more-info popups when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.more-info-container')) {
+        document.querySelectorAll('.more-info-container.active').forEach(c => c.classList.remove('active'));
+    }
+});
