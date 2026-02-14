@@ -39,11 +39,27 @@ function buildLocationList() {
         renderSidebarIcon(canvas, config);
         iconDiv.appendChild(canvas);
         
-        // Create name
+        // Create name container
         const nameDiv = document.createElement('div');
         nameDiv.className = 'name';
-        nameDiv.textContent = loc.title;
-        
+
+        if (loc.isDoor) {
+            // Two-line entry for chapter locations
+            const doorIndex = doors.findIndex(d => d.id === loc.id);
+            const chapterLabel = document.createElement('span');
+            chapterLabel.className = 'chapter-label';
+            chapterLabel.textContent = `Chapter ${doorIndex + 1}`;
+
+            const locationName = document.createElement('span');
+            locationName.className = 'location-name';
+            locationName.textContent = loc.title;
+
+            nameDiv.appendChild(chapterLabel);
+            nameDiv.appendChild(locationName);
+        } else {
+            nameDiv.textContent = loc.title;
+        }
+
         item.appendChild(iconDiv);
         item.appendChild(nameDiv);
         
@@ -63,6 +79,9 @@ function buildLocationList() {
     
     // Setup sidebar scroll hint
     setupSidebarScrollHint();
+
+    // Update skip hint visibility
+    updateSkipHintVisibility();
 }
 
 function setupSidebarScrollHint() {
@@ -123,7 +142,7 @@ function focusLocation(loc) {
     pendingLocation = loc;
     pendingZoomLocation = loc;
 
-    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2));
+    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2), 'introComplete:', introComplete);
 }
 
 function toggleMobileMenu() {
@@ -158,4 +177,44 @@ function undimSidebarItems() {
     document.querySelectorAll('.location-item.dimmed').forEach(item => {
         item.classList.remove('dimmed');
     });
+}
+
+// Start guided journey - close modal and let user click Toledo
+function startGuidedJourney() {
+    const introModal = document.getElementById('introModal');
+    if (introModal) {
+        introModal.classList.remove('active');
+        // Mark intro as seen
+        const progress = getProgress();
+        progress.introSeen = true;
+        saveProgress(progress);
+    }
+}
+
+// Skip guided tour - trigger celebration and unlock everything
+function skipGuidedTour() {
+
+    // Close intro modal if open
+    const introModal = document.getElementById('introModal');
+    if (introModal && introModal.classList.contains('active')) {
+        introModal.classList.remove('active');
+        // Mark intro as seen
+        const progress = getProgress();
+        progress.introSeen = true;
+        saveProgress(progress);
+    }
+
+    // Trigger the celebration sequence (this also marks guided as complete)
+    triggerDoorsCompleteSequence();
+
+    // Undim all sidebar items
+    undimSidebarItems();
+}
+
+// Update skip hint visibility based on guided mode state
+function updateSkipHintVisibility() {
+    const skipLink = document.getElementById('skipIntroLink');
+    if (skipLink) {
+        skipLink.classList.toggle('hidden', isGuidedComplete());
+    }
 }

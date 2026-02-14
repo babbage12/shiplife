@@ -3,14 +3,14 @@ const locations = [
         id: 1,
         title: "Toledo, Ohio",
         coords: [41.6528, -83.5379],
-        tag: "Door #1: Escape",
+        tag: "Chapter 1: Escape",
         icon: "🚪",
         iconType: "door",
         iconSymbol: "steel-door",
         isDoor: true,
         shortDesc: "The cubicle wanted spreadsheets. I wanted music.",
-        imagePosition: "center",
-        imageCaption: "1983. Brothers of Badness playing our high school prom in Cuyahoga Falls.",
+        imagePosition: "top",
+        imageCaption: "Where it all started. Me and my dad's Jazzmaster.",
         useRichContent: true,
         richContent: `
             <div class="demographics-strip">
@@ -36,15 +36,22 @@ const locations = [
                 <h3 class="section-title-panel">The Doghouse</h3>
                 <p>My mom would tell you the singing came before the talking.</p>
                 <p>Finding me as a kid was easy - just listen. The sound of drums, clarinet, guitar, or singing would lead you right to me. My mom, my grandma, my brother and sister - anyone who would listen became an audience. My great-grandma Gillette would hoist me up onto the doghouse where the Star Spangled Banner would ring out, the apples on the surrounding trees standing in as my crowd.</p>
-                <p>Made-up songs. Harmonies with the radio. And the daydreaming - hours of it. Staring out classroom windows while the teacher's voice faded to background noise. None of it captured me. What captured me were the songs playing in my head, and imagining how far I could ride a horse into that field before the world ran out. Teachers didn't appreciate it. Report cards said things like 'needs to focus' and 'not working to potential.'</p>
-                <p>Once, sick with the flu and half-asleep on cough syrup, I dreamed I was a tin soldier drifting in a paper boat toward a walled city. Just a fever dream, but it stuck with me. I'd see that city again.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/me_as_a_kid" class="story-image" data-caption="Uncomfortable." alt="Me as a kid">
+                <p class="photo-caption-inline">Uncomfortable.</p>
+                <p>Made-up songs. Harmonies with the radio. And the daydreaming - hours of it. Staring out classroom windows while the teacher's voice faded to background noise. None of it captured me. What captured me were the songs playing in my head, and imagining how far I could ride a horse into that field before the world ran out. Teachers didn't appreciate it. Report cards said things like 'needs to focus' and 'not working to potential.' My mom saw it differently. She bought me a book called <em>The Boy Who Marches to the Beat of a Different Drummer</em>. I remember that fondly.</p>
                 <div class="story-break">· · ·</div>
-                <p>At age 7, when other kids were playing with Legos, my dad's Jazzmaster guitar became my new obsession.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="story-image" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with dad's Jazzmaster">
-                <p class="photo-caption-inline">Eight years old with my dad's Jazzmaster.</p>
+                <p>My brother showed me the guitar for the first time. It lived under my parents' bed in a burgundy leather case - Mom's '61 Gibson SG. I wasn't supposed to touch it, but once I saw that red glow, I had to see it again. I'd sneak into their room, open those latches with great gravity, and just stare. I dreamed of holding it.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/sweater_kid" class="story-image" data-caption="Different drummer, different dress code." alt="Sweater across the back">
+                <p class="photo-caption-inline">Different drummer, different dress code.</p>
+                <p>A few years of begging and I was playing my dad's slightly more beat up Jazzmaster (still worth a fortune if you happen to own one today). By thirteen, I'd convinced Mom to let me have the Gibson too. So there I was, a teenager with two vintage guitars now worth more than most cars. And like everyone did back then, I sold them both.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/lespaujr_uhaklg" class="story-image" data-caption="My mom's '61 Gibson SG. I dreamed of holding it. Then I sold it." alt="1961 Gibson SG">
+                <p class="photo-caption-inline">My mom's '61 Gibson SG. I dreamed of holding it. Then I sold it.</p>
                 <p>By thirteen, I had joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair">
                 <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
+                <p>A year or two later came an over-elaborate garage band project called Brothers of Badness. I remember us being pretty bad musically - but somehow we landed a high school prom gig in Cuyahoga Falls anyway.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="story-image" data-caption="Brothers of Badness. So we weren't exactly living up to our name... or were we?" alt="Brothers of Badness 1983">
+                <p class="photo-caption-inline">Brothers of Badness. So we weren't exactly living up to our name... or were we?</p>
                 <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
                 <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
             </div>
@@ -52,8 +59,8 @@ const locations = [
             <div class="story-section-panel">
                 <h3 class="section-title-panel">Touched</h3>
                 <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="story-image" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="The band Touched, 1991">
-                <p class="photo-caption-inline">Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/touched_band" class="story-image" data-caption="Touched in one of its many forms, from left to right: Phil Berg, myself, Kevin Korecki, Robin Florey, Dave Gierke, and Kim Buhler." alt="The band Touched">
+                <p class="photo-caption-inline">Touched in one of its many forms, from left to right: Phil Berg, myself, Kevin Korecki, Robin Florey, Dave Gierke, and Kim Buhler.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991">
                 <p class="photo-caption-inline">Touched at the 5 Seasons Hotel, Greensboro, NC. 1991.</p>
             </div>
@@ -81,7 +88,7 @@ const locations = [
                 <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
                 <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future."</blockquote>
                 <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit, and Toledo - everything I had ever known - literally faded from view. Less than a month later, I was boarding a plane on my way to eventually Australia, where the next door was waiting to be opened.</p>
-                <blockquote class="story-quote final-quote">The lock fell away from Door #1 and opened to the possibility of everything that came after.</blockquote>
+                <blockquote class="story-quote final-quote">The lock fell away from Chapter 1 and opened to the possibility of everything that came after.</blockquote>
             </div>
             
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -109,23 +116,24 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">7 images</span>
+                        <span class="gallery-count">8 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="gallery-thumb" data-caption="1983. Brothers of Badness playing our high school prom in Cuyahoga Falls." alt="Brothers of Badness 1983">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767713693/9_yr_jazzmaster_square_r8uajm.jpg" class="gallery-thumb" data-caption="Eight years old with my dad's Jazzmaster." alt="Age 8 with Jazzmaster">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/9_yr_jazzmaster_square_r8uajm" class="gallery-thumb" data-caption="Where it all started. Me and my dad's Jazzmaster." alt="Age 8 with Jazzmaster">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006615_kjgr2e.jpg" class="gallery-thumb" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="gallery-thumb" data-caption="Touched, 1991. That's me upper left with my dearest friends - Dave Gierke, Kevin Korecki, Phil Berg, Susan Korecki, Jill, and CJ." alt="Touched 1991">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/lespaujr_uhaklg" class="gallery-thumb" data-caption="My mom's '61 Gibson SG - if only I had kept it." alt="1961 Gibson SG">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="gallery-thumb" data-caption="1983. Brothers of Badness playing our high school prom in Cuyahoga Falls." alt="Brothers of Badness 1983">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768521382/1000006616_gt9tju.jpg" class="gallery-thumb" data-caption="Touched, 1991. That's me upper left with my dearest friends." alt="Touched 1991">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="gallery-thumb" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Greensboro 1991">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="gallery-thumb" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig 2005">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/brothers_of_badness_waogg5.jpg" class="gallery-thumb" data-caption="Brothers of Badness - the early band days." alt="Brothers of Badness">
                 </div>
             </div>
         `,
-        fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: this was a waste of time.\n\nThis was Door #1. The escape. This door opened the possibility of everything that came after.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg"
+        fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: this was a waste of time.\n\nThis was Chapter 1. The escape. This chapter opened the possibility of everything that came after.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/9_yr_jazzmaster_square_r8uajm"
     },
     {
         id: 21,
@@ -171,7 +179,7 @@ const locations = [
         id: 22,
         title: "Darwin, Australia",
         coords: [-12.4634, 130.8456],
-        tag: "Door #2: My First Contract",
+        tag: "Chapter 2: My First Contract",
         icon: "🚪",
         isDoor: true,
         shortDesc: "Making it to Darwin meant making it anywhere.",
@@ -197,25 +205,10 @@ const locations = [
                     <span class="demo-value">Northern Territory</span>
                 </div>
             </div>
-            
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">Orientation Day</span>
-                <h3 class="section-title-panel">
-                    A Life in Motion
-                    <span class="directors-commentary">
-                        <span class="commentary-trigger" onclick="openCommentaryModal()" title="A Quick Story...">
-                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768678993/ComfyUI_01292__jp0pvj.png" alt="Captain">
-                        </span>
-                        <svg class="click-me-text" viewBox="0 0 100 100">
-                            <defs>
-                                <path id="circlePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
-                            </defs>
-                            <text>
-                                <textPath href="#circlePath" startOffset="0%">CLICK ME • CLICK ME •</textPath>
-                            </text>
-                        </svg>
-                    </span>
-                </h3>
+                <h3 class="section-title-panel">A Life in Motion</h3>
                 <p>On the first day aboard, during orientation, the staff captain told us straight:</p>
                 <blockquote class="story-quote">
                     "Ship life will fulfill you, drain you, or wreck you emotionally. You can tell a lot about a person based on how they conduct themselves aboard a ship."
@@ -223,6 +216,21 @@ const locations = [
                 </blockquote>
                 <p>Sitting there, the question hung in the air: am I ready for this? Ready to become the best version of myself? Because that's what this was going to take.</p>
                 <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
+                <div style="text-align: center; margin: 1.25rem 0;">
+                    <span class="directors-commentary darwin-captain" style="margin-left: 0;">
+                        <span class="commentary-trigger" onclick="openCommentaryModal()" title="A Quick Story...">
+                            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768678993/ComfyUI_01292__jp0pvj.png" alt="Captain">
+                        </span>
+                        <svg class="click-me-text" viewBox="0 0 100 100">
+                            <defs>
+                                <path id="darwinCirclePath" d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0"/>
+                            </defs>
+                            <text>
+                                <textPath href="#darwinCirclePath" startOffset="0%">CLICK ME • CLICK ME •</textPath>
+                            </text>
+                        </svg>
+                    </span>
+                </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768526570/IMG_0109_dvahoj.jpg" class="story-image" data-caption="Pacific Sun docked in New Caledonia." alt="Pacific Sun in New Caledonia">
                 <p class="photo-caption-inline">Pacific Sun docked in New Caledonia.</p>
             </div>
@@ -325,9 +333,9 @@ const locations = [
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">Door #2</span>
-                <h3 class="section-title-panel">The Door That Opened Everything</h3>
-                <p>Darwin was the door that opened onto my future as a cruise ship musician. The following Door #3 opened to a world I honestly couldn't have imagined, no matter how big a daydreamer I had been as a kid.</p>
+                <span class="section-tag-panel">Chapter 2</span>
+                <h3 class="section-title-panel">The Chapter That Opened Everything</h3>
+                <p>Darwin was the chapter that opened onto my future as a cruise ship musician. The following Chapter 3 opened to a world I honestly couldn't have imagined, no matter how big a daydreamer I had been as a kid.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -396,14 +404,14 @@ const locations = [
                 </div>
             </div>
         `,
-        fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the door that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
+        fullDesc: "Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. But Darwin represented something else entirely: making it there meant staying onboard for a full contract.\n\nDarwin was the chapter that opened onto the future. From there, it was only a matter of time before the entire world opened up.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767643122/013_pzswfa.jpg"
     },
     {
         id: 4,
         title: "Auckland, New Zealand",
         coords: [-36.8509, 174.7645],
-        tag: "Door #3: Full Circle",
+        tag: "Chapter 3: Full Circle",
         icon: "🚪",
         isDoor: true,
         shortDesc: "2013: Joining the ship I once only dreamed about.",
@@ -498,9 +506,9 @@ const locations = [
             </div>
             
             <div class="story-section-panel">
-                <span class="section-tag-panel">Door #3</span>
+                <span class="section-tag-panel">Chapter 3</span>
                 <h3 class="section-title-panel">The Entire Globe</h3>
-                <p>Door #3 opened to the entire world.</p>
+                <p>Chapter 3 opened to the entire world.</p>
                 <p>Back in that little yellow house in Toledo, a dream had been conjured into reality through sheer force of will.</p>
             </div>
             
@@ -2117,12 +2125,51 @@ const locations = [
             </div>
 
             <div class="story-section-panel">
+                <span class="section-tag-panel">Sailing In</span>
+                <h3 class="section-title-panel">The Otago Peninsula</h3>
+                <p>The approach to Dunedin takes you through some of New Zealand's most dramatic coastal scenery. The Otago Peninsula rises from the sea in sheer volcanic cliffs, home to royal albatross, yellow-eyed penguins, and fur seals.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836788/shiplife/dunedin/x7ibk9epxhahoj1t2n7g.jpg" class="story-image" data-caption="The dramatic cliffs of the Otago Peninsula." alt="Otago Peninsula cliffs">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836785/shiplife/dunedin/nrh6ouaaqu23xvzruaao.jpg" class="story-image" data-caption="Volcanic cliffs rising from the sea." alt="Peninsula cliffs with boat">
+                </div>
+                <p class="photo-caption-inline">The volcanic cliffs of the Otago Peninsula. Small boats navigate the waters below.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <span class="section-tag-panel">The Edinburgh of the South</span>
                 <h3 class="section-title-panel">Gold Rush Grandeur</h3>
                 <p>Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.</p>
                 <p>The Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself (Dunedin is the Gaelic name for Edinburgh). Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg" class="story-image" data-caption="Port Chalmers - Dunedin's cruise port." alt="Port Chalmers">
-                <p class="photo-caption-inline">Port Chalmers, the historic port town where cruise ships dock. Victorian brick buildings and misty Otago hills.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836773/shiplife/dunedin/xtvh4ezfveaxonxm1is5.jpg" class="story-image" data-caption="Victorian Dunedin with the harbor beyond." alt="Dunedin town view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836757/shiplife/dunedin/tbqhft210vpo8s7uizav.jpg" class="story-image" data-caption="The town under misty Otago skies." alt="Dunedin with church spire">
+                </div>
+                <p class="photo-caption-inline">Port Chalmers' Victorian architecture, with church spires rising against the misty Otago hills.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836769/shiplife/dunedin/fmmf2a13jra1ozt6fm3b.jpg" class="story-image" data-caption="The Gothic stone church of Port Chalmers." alt="Gothic church">
+                <p class="photo-caption-inline">The Gothic stone church, a reminder of the Scottish settlers who built this town.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Port Chalmers</span>
+                <h3 class="section-title-panel">Where Ships Come In</h3>
+                <p>Cruise ships dock at Port Chalmers, a working harbor town about 15 minutes from Dunedin proper. Tour buses line up at the pier, ready to shuttle passengers to the city's attractions.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836768/shiplife/dunedin/tflscifiyxxzerg6bbk3.jpg" class="story-image" data-caption="The cruise terminal at Port Chalmers." alt="Cruise port with tugboat">
+                <p class="photo-caption-inline">Tugboat in the harbor, tour buses waiting on the pier. The cruise terminal nestled beneath the green hills.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836782/shiplife/dunedin/i6kklt76xhh05dafr7qh.jpg" class="story-image" data-caption="The working port with shipping containers." alt="Container port">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770836783/shiplife/dunedin/xsco0vd0kgzyvp45gj6t.jpg" class="story-image" data-caption="Misty hills above the harbor." alt="Harbor with hills">
+                </div>
+                <p class="photo-caption-inline">Port Chalmers is a working harbor. Shipping containers stack up beside the cruise berths.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836769/shiplife/dunedin/euakzrsgxmxao5jog87d.jpg" class="story-image" data-caption="A Princess ship in port - we weren't the only ones visiting." alt="Princess cruise ship">
+                <p class="photo-caption-inline">We weren't the only ship visiting that day. A Princess-class ship gleamed beside us.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Exploring</span>
+                <h3 class="section-title-panel">The Botanic Garden</h3>
+                <p>Dunedin's Botanic Garden is the oldest in New Zealand, established in 1863. On an overcast day, the formal gardens offered a peaceful escape from the bustle of the ship.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770836784/shiplife/dunedin/fi3a3weze0bhyp684pgl.jpg" class="story-image" data-caption="The formal gardens with their sculptural centerpiece." alt="Dunedin Botanic Garden">
+                <p class="photo-caption-inline">The formal flower beds in full bloom. Even under grey skies, the colors were brilliant.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -2149,30 +2196,20 @@ const locations = [
                     <span class="gallery-title">
                         <span class="gallery-icon">📸</span>
                         <span>More Photos</span>
-                        <span class="gallery-count">14 images</span>
+                        <span class="gallery-count">4 images</span>
                     </span>
                     <span class="gallery-toggle">▼</span>
                 </div>
                 <div class="gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg" class="gallery-thumb" data-caption="Port Chalmers" alt="Port Chalmers">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836757/shiplife/dunedin/tbqhft210vpo8s7uizav.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836768/shiplife/dunedin/tflscifiyxxzerg6bbk3.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836769/shiplife/dunedin/euakzrsgxmxao5jog87d.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836769/shiplife/dunedin/fmmf2a13jra1ozt6fm3b.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836773/shiplife/dunedin/xtvh4ezfveaxonxm1is5.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836782/shiplife/dunedin/i6kklt76xhh05dafr7qh.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836783/shiplife/dunedin/xsco0vd0kgzyvp45gj6t.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836784/shiplife/dunedin/fi3a3weze0bhyp684pgl.jpg" class="gallery-thumb" data-caption="Dunedin, New Zealand" alt="Dunedin">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836785/shiplife/dunedin/nrh6ouaaqu23xvzruaao.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/x7ibk9epxhahoj1t2n7g.jpg" class="gallery-thumb" data-caption="On the way to Dunedin" alt="On the way">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg" class="gallery-thumb" data-caption="Port Chalmers from above" alt="Port Chalmers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg" class="gallery-thumb" data-caption="The port and church" alt="Port area">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg" class="gallery-thumb" data-caption="Misty Otago hills" alt="Otago hills">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg" class="gallery-thumb" data-caption="Sailing past the peninsula cliffs" alt="Peninsula cliffs">
                 </div>
             </div>
         `,
         fullDesc: "Dunedin was once New Zealand's wealthiest and most populous city, built on gold rush riches in the 1860s.\n\nThe Scottish settlers left their mark everywhere - in the architecture, the street names, even the name itself. Victorian and Edwardian buildings line the streets, preserved because the gold ran out before anyone could afford to tear them down.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg"
     },
     {
         id: 18,
@@ -5117,8 +5154,30 @@ const locations = [
         icon: "⚓",
         isDoor: false,
         shortDesc: "Romania's window to the Black Sea.",
-        fullDesc: "Placeholder description for Constanța.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769811214/constanta_pqbuxd.jpg"
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Old Town</h3>
+                <p>Constanța is Romania's largest port and oldest continuously inhabited city - founded by the Greeks as Tomis around 600 BC. The poet Ovid spent his final years in exile here.</p>
+                <p>The old town has a faded grandeur to it. Pedestrian streets lined with art nouveau buildings, some beautifully restored, others waiting their turn. Shops, cafes, and not many tourists.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/constanta/img_3296" class="story-image" data-caption="Constanța's pedestrian quarter - old European charm on the Black Sea." alt="Constanta old town street">
+                <p class="photo-caption-inline">Constanța's pedestrian quarter - old European charm on the Black Sea.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/constanta/img_3297" class="story-image" data-caption="Summer afternoon in the city center." alt="Fountain square in Constanta">
+                <p class="photo-caption-inline">Summer afternoon in the city center.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Mamaia</h3>
+                <p>North of the old town stretches Mamaia - Romania's answer to the Riviera. A narrow strip of sand between the Black Sea and a lake, lined with hotels, clubs, and beach bars.</p>
+                <p>In summer, this place comes alive. Romanian vacationers, prices in Lei, and a party atmosphere that felt completely different from the typical Mediterranean cruise ports.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/constanta/img_3299" class="story-image" data-caption="Beach cabanas at Mamaia - Romania's summer playground." alt="Mamaia beach resort">
+                <p class="photo-caption-inline">Beach cabanas at Mamaia - Romania's summer playground.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/constanta/img_3298" class="story-image" data-caption="Mamaia nightlife - shots for 3 Lei." alt="Megalos Summer Club Mamaia">
+                <p class="photo-caption-inline">Mamaia nightlife - shots for 3 Lei.</p>
+            </div>
+        `,
+        fullDesc: "Constanța is Romania's largest port and oldest continuously inhabited city - founded by the Greeks around 600 BC. The old town has faded art nouveau charm, while nearby Mamaia offers Romania's answer to the Riviera.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/constanta/img_3296"
     },
     {
         id: 77,
@@ -5157,8 +5216,38 @@ const locations = [
         icon: "🏛️",
         isDoor: false,
         shortDesc: "Where the Olympic flame begins its journey.",
-        fullDesc: "Placeholder description for Katakolon.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769798766/IMG_3602_tgz9t9.jpg"
+        useRichContent: true,
+        richContent: `
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Two Wheels and a Tank of Gas</h3>
+                <p>Katakolon is a tiny port town on Greece's western Peloponnese coast. Most passengers pile onto buses bound for ancient Olympia - birthplace of the Olympic Games, where the flame is still lit every four years.</p>
+                <p>But I'd been to Olympia before. This time I wanted to see what the buses drove past.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3597" class="story-image" data-caption="The best way to see Greece." alt="Scooter mirror selfie">
+                <p class="photo-caption-inline">The best way to see Greece.</p>
+                <p>A rental scooter, a vague sense of direction, and a full tank of gas. The road out of town quickly narrowed into winding lanes through olive groves and sleepy villages. No tour groups. No schedule. Just the buzz of the engine and the smell of wild herbs baking in the sun.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3600" class="story-image" data-caption="Greek countryside - ancient ruins hiding in plain sight." alt="Rural Greece with ruins">
+                <p class="photo-caption-inline">Greek countryside - ancient ruins hiding in plain sight.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Hidden Cove</h3>
+                <p>Following hand-painted signs down dirt roads eventually led to a small beach cove. Locals swimming, a few other scooters parked in the shade. No facilities, no entrance fee - just the Ionian Sea and an afternoon to kill.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3602" class="story-image" data-caption="Found it. A hidden cove away from the cruise crowds." alt="Beach cove with scooters">
+                <p class="photo-caption-inline">Found it. A hidden cove away from the cruise crowds.</p>
+                <p>These are the moments that make ship life worth it. Not the famous sites everyone photographs, but the random turns that lead somewhere unexpected.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Back to Town</h3>
+                <p>Made it back to Katakolon with time to spare. The waterfront was lined with tavernas - blue awnings, white tablecloths, fishing boats bobbing at the dock. Cold beer, grilled octopus, and a view of the ship waiting in the harbor.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3594" class="story-image" data-caption="Katakolon's waterfront - tavernas and blue awnings." alt="Greek waterfront promenade">
+                <p class="photo-caption-inline">Katakolon's waterfront - tavernas and blue awnings.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3592" class="story-image" data-caption="Lunch with a view." alt="Waterfront cafe">
+                <p class="photo-caption-inline">Lunch with a view.</p>
+            </div>
+        `,
+        fullDesc: "Katakolon is a tiny port town on Greece's western Peloponnese coast. Most passengers pile onto buses bound for ancient Olympia. But I'd been there before. This time - a rental scooter, winding roads through olive groves, and a hidden beach cove away from the crowds.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/katakolon/img_3602"
     },
     {
         id: 79,
