@@ -244,9 +244,22 @@ const locationGalleries = {
     ],
 
     // CORFU (2 images)
+    // CORFU, GREECE (14 images)
     "corfu": [
-        { src: "shiplife/corfu/fortress_panorama.jpg", caption: "From the Old Fortress - Albania across the water, the marina below.", alt: "Corfu fortress panorama" },
-        { src: "shiplife/corfu/seabourn_ship.jpg", caption: "The Seabourn Odyssey waiting in the harbor.", alt: "Seabourn ship at Corfu" }
+        { src: "shiplife/corfu/IMG_4679", caption: "The Seabourn Odyssey in Corfu harbor.", alt: "Seabourn ship" },
+        { src: "shiplife/corfu/IMG_4683", caption: "The Venetian moat - once defense, now a quiet marina.", alt: "Fortress moat" },
+        { src: "shiplife/corfu/IMG_4685", caption: "British coat of arms - from the colonial period.", alt: "British coat of arms" },
+        { src: "shiplife/corfu/IMG_4690", caption: "Byzantine history timeline in the fortress museum.", alt: "History plaque" },
+        { src: "shiplife/corfu/IMG_4693", caption: "Through the archway - artifacts in the fortress courtyard.", alt: "Fortress courtyard" },
+        { src: "shiplife/corfu/IMG_4695", caption: "Venetian arcade in the Old Fortress.", alt: "Fortress arcade" },
+        { src: "shiplife/corfu/IMG_4698", caption: "The Winged Lion of St. Mark - Venice's symbol.", alt: "Lion of St Mark" },
+        { src: "shiplife/corfu/IMG_4700", caption: "Greek inscription about the Ionian parliament.", alt: "Greek plaque" },
+        { src: "shiplife/corfu/IMG_4703", caption: "Clock tower rising above ancient walls.", alt: "Clock tower" },
+        { src: "shiplife/corfu/IMG_4705", caption: "Cannons on the ramparts overlooking the sea.", alt: "Fortress cannons" },
+        { src: "shiplife/corfu/IMG_4708", caption: "Iron bars in the old fortress wall.", alt: "Fortress window" },
+        { src: "shiplife/corfu/IMG_4711", caption: "Flowers, old stone, and the endless Ionian.", alt: "Sea view with flowers" },
+        { src: "shiplife/corfu/fortress_panorama.jpg", caption: "From the Old Fortress - Albania across the water.", alt: "Corfu fortress panorama" },
+        { src: "shiplife/corfu/seabourn_ship.jpg", caption: "The Seabourn Odyssey in the harbor.", alt: "Seabourn ship at Corfu" }
     ],
 
     // DARWIN (33 images) - Title: "More Photos of Shiplife"
@@ -477,8 +490,37 @@ const locationGalleries = {
         { src: "v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg", caption: "Rainy season - lush green landscape.", alt: "Komodo rainy season" }
     ],
 
-    // KOTOR (3 images)
+    // KOTOR, MONTENEGRO (33 images)
     "kotor": [
+        { src: "shiplife/kotor/IMG_1415", caption: "Passing villages along the Bay of Kotor.", alt: "Bay village" },
+        { src: "shiplife/kotor/IMG_1422", caption: "Looking back through the fjord - ship's wake stretching to the horizon.", alt: "Ship wake in bay" },
+        { src: "shiplife/kotor/IMG_1434", caption: "Terracotta rooftops climbing the hillside.", alt: "Hillside village" },
+        { src: "shiplife/kotor/IMG_1465", caption: "A village reflected in the still waters of the bay.", alt: "Village reflection" },
+        { src: "shiplife/kotor/IMG_1469", caption: "Waterfront homes with the mountains behind.", alt: "Waterfront village" },
+        { src: "shiplife/kotor/IMG_1580", caption: "First glimpse of Kotor at the end of the bay.", alt: "Kotor approach" },
+        { src: "shiplife/kotor/IMG_1595", caption: "The mountain gorge above the old town.", alt: "Mountain gorge" },
+        { src: "shiplife/kotor/IMG_1599", caption: "The fortress walls climbing up from the moat.", alt: "Walls and moat" },
+        { src: "shiplife/kotor/IMG_1603", caption: "Crystal clear water in the old moat.", alt: "Clear moat water" },
+        { src: "shiplife/kotor/IMG_1612", caption: "Wandering the narrow streets of the old town.", alt: "Old town street" },
+        { src: "shiplife/kotor/IMG_1616", caption: "Cobblestones worn smooth by centuries of footsteps.", alt: "Cobblestones" },
+        { src: "shiplife/kotor/IMG_1619", caption: "Old town buildings and balconies.", alt: "Old buildings" },
+        { src: "shiplife/kotor/IMG_1622", caption: "Orange rooftops and mountain views.", alt: "Rooftop view" },
+        { src: "shiplife/kotor/IMG_1624", caption: "Historical plaque on the fortress wall.", alt: "Historical plaque" },
+        { src: "shiplife/kotor/IMG_1625", caption: "Bell tower rising above the rooftops.", alt: "Bell tower" },
+        { src: "shiplife/kotor/IMG_1630", caption: "Taking in the view from the fortress walls.", alt: "At the overlook" },
+        { src: "shiplife/kotor/IMG_1639", caption: "The ancient stone path climbing the mountain.", alt: "Stone path" },
+        { src: "shiplife/kotor/IMG_1650", caption: "Steep stone steps - 1,350 of them.", alt: "Fortress steps" },
+        { src: "shiplife/kotor/IMG_1656", caption: "Church tower with the Seabourn in the bay.", alt: "Church and ship" },
+        { src: "shiplife/kotor/IMG_1657", caption: "The old town and marina from the fortress.", alt: "Aerial view" },
+        { src: "shiplife/kotor/IMG_1660", caption: "Looking down the bay from the fortress ruins.", alt: "Bay from above" },
+        { src: "shiplife/kotor/IMG_1665", caption: "Ancient fortress gate with iron door.", alt: "Fortress gate" },
+        { src: "shiplife/kotor/IMG_1677", caption: "Narrow passage between fortress walls.", alt: "Fortress passage" },
+        { src: "shiplife/kotor/IMG_1705", caption: "Ruins near the top of the fortress.", alt: "Fortress ruins" },
+        { src: "shiplife/kotor/IMG_1716", caption: "The valley and gorge from near the summit.", alt: "Valley view" },
+        { src: "shiplife/kotor/IMG_2264", caption: "View through a hole in the old stone wall.", alt: "Through the wall" },
+        { src: "shiplife/kotor/IMG_2266", caption: "Montenegrin flag flying over the fortress.", alt: "Flag on fortress" },
+        { src: "shiplife/kotor/IMG_2615", caption: "Sunset light on the mountains as we depart.", alt: "Sunset mountains" },
+        { src: "shiplife/kotor/IMG_2621", caption: "Sailing out through the bay at dusk.", alt: "Dusk departure" },
         { src: "v1767735553/IMG_1717_ggcmyu.jpg", caption: "The fortress walls of Kotor.", alt: "Kotor walls" },
         { src: "v1767735480/IMG_1657_xtlvwv.jpg", caption: "View from the fortress walls.", alt: "Kotor view" },
         { src: "v1767735569/IMG_1696_o1sjn5.jpg", caption: "Kotor old town from above.", alt: "Kotor old town" }
@@ -541,12 +583,26 @@ const locationGalleries = {
     ],
 
     // LIPARI (5 images)
+    // LIPARI, ITALY (18 images)
     "lipari": [
+        { src: "shiplife/lipari/IMG_5152", caption: "The citadel with its cathedral and bell tower.", alt: "Citadel view" },
+        { src: "shiplife/lipari/IMG_5158", caption: "Approaching Lipari - citadel, harbor, and sailboats.", alt: "Lipari approach" },
+        { src: "shiplife/lipari/20150518_114641", caption: "Hotel Carasco on the main street.", alt: "Town street" },
+        { src: "shiplife/lipari/20150518_105629", caption: "The volcanic coastline.", alt: "Volcanic coast" },
+        { src: "shiplife/lipari/20150518_105813", caption: "Volcanic rocks and sea.", alt: "Rocky shore" },
+        { src: "shiplife/lipari/20150518_105844", caption: "Black volcanic stone.", alt: "Volcanic stone" },
+        { src: "shiplife/lipari/20150518_105846", caption: "The raw volcanic landscape.", alt: "Volcanic landscape" },
+        { src: "shiplife/lipari/20150518_105901", caption: "Waves on volcanic rock.", alt: "Waves on rocks" },
+        { src: "shiplife/lipari/20150518_113528", caption: "The citadel from a distance.", alt: "Distant citadel" },
+        { src: "shiplife/lipari/20150518_113751", caption: "Views of the harbor.", alt: "Harbor view" },
+        { src: "shiplife/lipari/20150518_113802", caption: "The citadel walls.", alt: "Citadel walls" },
+        { src: "shiplife/lipari/20150518_113822", caption: "Volcanic hills behind the town.", alt: "Volcanic hills" },
+        { src: "shiplife/lipari/20150518_113823", caption: "The harbor and hills.", alt: "Harbor hills" },
         { src: "v1771193159/shiplife/lipari/citadel_harbor.jpg", caption: "The ancient citadel rises above Lipari's colorful harbor.", alt: "Lipari citadel and harbor" },
-        { src: "v1771193161/shiplife/lipari/island_panorama.jpg", caption: "Volcanic peaks frame the island - home to Aeolus, keeper of the winds.", alt: "Lipari island panorama" },
-        { src: "v1771193163/shiplife/lipari/citadel_from_sea.jpg", caption: "Approaching Lipari by sea - fortified since the Bronze Age.", alt: "Lipari citadel from sea" },
-        { src: "v1771193165/shiplife/lipari/cruise_ship_arriving.jpg", caption: "The ship at anchor off Lipari's coast.", alt: "Cruise ship at Lipari" },
-        { src: "v1771193173/shiplife/lipari/citadel_silhouette.jpg", caption: "Dramatic light over the citadel - obsidian was traded from these slopes.", alt: "Lipari citadel silhouette" }
+        { src: "v1771193161/shiplife/lipari/island_panorama.jpg", caption: "Volcanic peaks frame the island.", alt: "Lipari island panorama" },
+        { src: "v1771193163/shiplife/lipari/citadel_from_sea.jpg", caption: "Fortified since the Bronze Age.", alt: "Lipari citadel from sea" },
+        { src: "v1771193165/shiplife/lipari/cruise_ship_arriving.jpg", caption: "The ship at anchor.", alt: "Cruise ship at Lipari" },
+        { src: "v1771193173/shiplife/lipari/citadel_silhouette.jpg", caption: "Dramatic light over the citadel.", alt: "Lipari citadel silhouette" }
     ],
 
     // MALTA (2 images)
@@ -1381,10 +1437,23 @@ const locationGalleries = {
     ],
 
     // ZAKYNTHOS (4 images)
+    // ZAKYNTHOS, GREECE (18 images)
     "zakynthos": [
-        { src: "shiplife/zakynthos/harbor_town.jpg", caption: "Zakynthos harbor - the town climbs the hillside.", alt: "Zakynthos harbor and town" },
+        { src: "shiplife/zakynthos/IMG_1374", caption: "First steps on Zakynthos - the Seabourn welcome tent and harbor town.", alt: "Arrival at harbor" },
+        { src: "shiplife/zakynthos/IMG_1376", caption: "Through the yacht masts, the town climbs the hillside.", alt: "Marina and hillside" },
+        { src: "shiplife/zakynthos/IMG_1380", caption: "The colorful harbor waterfront.", alt: "Harbor view" },
+        { src: "shiplife/zakynthos/IMG_1382", caption: "Palm trees and monuments in the main square.", alt: "Town square" },
+        { src: "shiplife/zakynthos/IMG_1384", caption: "Neoclassical elegance in the town center.", alt: "Statue and building" },
+        { src: "shiplife/zakynthos/IMG_1388", caption: "Wandering the waterfront.", alt: "Harbor promenade" },
+        { src: "shiplife/zakynthos/IMG_1394", caption: "Orthodox church exterior with golden mosaics.", alt: "Church facade" },
+        { src: "shiplife/zakynthos/IMG_1396", caption: "Inside the sanctuary.", alt: "Church interior" },
+        { src: "shiplife/zakynthos/IMG_1398", caption: "Centuries of devotion - frescoes and chandeliers.", alt: "Church frescoes" },
+        { src: "shiplife/zakynthos/IMG_1400", caption: "Byzantine frescoes meet colorful stained glass.", alt: "Fresco detail" },
+        { src: "shiplife/zakynthos/IMG_1402", caption: "Looking up - every surface covered in sacred art.", alt: "Church ceiling" },
+        { src: "shiplife/zakynthos/IMG_1404", caption: "Waving from the harbor - mountains and lighthouse behind.", alt: "Personal harbor shot" },
+        { src: "shiplife/zakynthos/harbor_town.jpg", caption: "Zakynthos harbor panorama.", alt: "Zakynthos harbor and town" },
         { src: "shiplife/zakynthos/marine_park_sign.jpg", caption: "National Marine Park - home to endangered Caretta caretta sea turtles.", alt: "Marine park sign" },
-        { src: "shiplife/zakynthos/church_frescoes.jpg", caption: "Golden frescoes and stained glass - centuries of devotion.", alt: "Orthodox church interior" },
+        { src: "shiplife/zakynthos/church_frescoes.jpg", caption: "Golden frescoes and stained glass.", alt: "Orthodox church interior" },
         { src: "shiplife/zakynthos/greek_souvlaki.jpg", caption: "Souvlaki, tzatziki, oregano fries. Simple and perfect.", alt: "Greek souvlaki lunch" }
     ],
 

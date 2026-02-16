@@ -1,3 +1,1864 @@
+// Shiplife Bundle - Generated 2026-02-16T18:09:38.788Z
+// This file combines all JS modules for faster loading.
+// Do not edit directly - modify source files and rebuild.
+
+
+// ============================================
+// SOURCE: js/data/config.js
+// ============================================
+
+// ============================================
+// CONFIGURATION
+// Constants, URLs, and global settings
+// ============================================
+
+// localStorage key for progress tracking
+const STORAGE_KEY = 'shiplife_progress';
+
+// Three narrative doors that must be visited
+const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
+
+// Mediterranean coordinates for celebration spin (Adriatic coast)
+const MED_COORDS = { lat: 42.5, lon: 14.0 };
+
+// Cloudinary base URL
+const CLOUDINARY_BASE = "https://res.cloudinary.com/de5jbyhxx/image/upload";
+
+// AI-generated porthole textures toggle
+const USE_AI_PORTHOLES = true;
+
+// Texture state (will be populated during init)
+let portholeFrameTexture = null;
+let portholeSceneTexture = null;
+const locationTextures = {};
+
+// Toledo reference coordinates for initial globe position
+const TOLEDO_Y = -0.10;
+const TOLEDO_X = (41.6528 * Math.PI / 180);
+
+// Animation timing
+const introDuration = 3000;
+const bounceDuration = 350;
+const zoomOutDistance = 4.05;
+const baseZoomInDistance = 2.16;
+const zoomOutDuration = 600;
+const zoomInDuration = 800;
+
+// Background music settings
+const MUSIC_FADE_DURATION = 1500;
+const MUSIC_MAX_VOLUME = 0.36;
+
+// Audio tracks for each door
+const doorAudioTracks = {
+};
+
+// Per-location porthole images
+const locationPortholeURLs = {
+    "Port Vila": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934122/marcie_00842__xyvw5f.png",
+    "Kotor, Montenegro": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934308/marcie_00795__dqtfrv.png",
+    "Milford Sound, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934562/marcie_00848__lsqvc7.png",
+    "Bora Bora": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934658/marcie_00863__d9cfov.png",
+    "Picton, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934726/marcie_00859__hg41ls.png",
+    "Akaroa, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934782/marcie_00856__shstqa.png",
+    "Wellington, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767934920/marcie_00854__ddnt6o.png",
+    "Toledo, Ohio": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977828/ComfyUI_00864__s9njoz.png",
+    "Brisbane, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937320/marcie_00869__xtfnj3.png",
+    "Portofino, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937437/marcie_00880__wrzehv.png",
+    "Ephesus, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937501/marcie_00884__glotfr.png",
+    "Auckland, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977815/ComfyUI_00896__zn6bdc.png",
+    "Darwin, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769977819/ComfyUI_00873__yfqqdw.png",
+    "Rome, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950310/marcie_01005__n4dbdz.png",
+    "Piran, Slovenia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950328/marcie_01050__qunmvg.png",
+    "Sydney, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950196/marcie_00957__suiqhl.png",
+    "Dubrovnik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950299/marcie_00998__uuyksn.png",
+    "Ushuaia, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767952701/marcie_01044__d7wlbn.png",
+    "Alexandria, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954446/marcie_01091__g6f37b.png",
+    "Milos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
+    "South Georgia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954452/marcie_01084__wkiyxh.png",
+    "Bali, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954456/marcie_01078__lmxp7z.png",
+    "Valletta, Malta": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954460/marcie_01076__naw5pw.png",
+    "Ibiza, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00974__skii8k.png",
+    "Santorini, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01097__hak9ts.png",
+    "Tierra del Fuego": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419439/ComfyUI_00633__qqmezn.png",
+    "Melbourne, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01199__xsa0xi.png",
+    "Amazon River": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419439/ComfyUI_00694__gxxmvo.png",
+    "Quebec City, Canada": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00700__i4ru8q.png",
+    "Rio de Janeiro, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419439/ComfyUI_00664__adibta.png",
+    "Barcelona, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00737__zthmxj.png",
+    "Portovenere, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00748__zuks5j.png",
+    "Hobart, Tasmania": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00693__bw21n8.png",
+    "Saguenay, Canada": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00709__desjzm.png",
+    "Hong Kong": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00787__rnq7fa.png",
+    "Florence, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00770__wxy82h.png",
+    "Stromboli, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00777__b33hq1.png",
+    "San Remo, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00757__cl8bge.png",
+    "Roses, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419413/ComfyUI_00985__lilp6z.png",
+    "Propriano, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00956__dx6t6k.png",
+    "Marseille, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00864__u1i1nf.png",
+    "Le Lavandou, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00869__hehrgj.png",
+    "Monte Carlo, Monaco": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00947__th5kfz.png",
+    "Syracuse, Sicily": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01146__x2yqx0.png",
+    "Corfu, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419413/ComfyUI_01013__sbssuy.png",
+    "Celukan Bawang, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419413/ComfyUI_01041__vthddf.png",
+    "Penang, Malaysia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419412/ComfyUI_01053__gndtyw.png",
+    "Mumbai, India": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419412/ComfyUI_01058__cz2too.png",
+    "Dubai, UAE": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01073__xbhngr.png",
+    "Tel Aviv, Israel": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01065__jwxuwx.png",
+    "Suez Canal, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01077__v2gdly.png",
+    "Istanbul, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01102__i1s5ok.png",
+    "Panama Canal": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419413/ComfyUI_01022__lqkdsf.png",
+    "Yalta, Ukraine": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511153/ComfyUI_01111__ydffje.png",
+    "Muscat, Oman": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419412/ComfyUI_01055__nn4tuv.png",
+    "Nessebar, Bulgaria": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01146__x2yqx0.png",
+    "Christmas Island": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01202__yd7eff.png",
+    "Rarotonga, Cook Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01206__duz5ib.png",
+    "Suva, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
+    "Apia, Samoa": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01218__asqixa.png",
+    "Honolulu, Hawaii": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01248__onhvwh.png",
+    "Tonga": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01211__atto6y.png",
+    "Port Moresby, Papua New Guinea": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01251__iagqxb.png",
+    "Airlie Beach, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511022/ComfyUI_01188__ooliee.png",
+    "Broome, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511022/ComfyUI_01189__khavtb.png",
+    "Napier, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511022/ComfyUI_01268__ydr8mk.png",
+    "Adelaide, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511022/ComfyUI_01197__qc3jjg.png",
+    "New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/ComfyUI_00857__dazqix.png",
+    "Lifou": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01275__iw0wwu.png",
+    "Mykonos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193104/Mykonos_n3an7b.png",
+    "Zakynthos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/zakinthos_ymkjrv.png",
+    "Nafplio, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Nafplio_fd5rjr.png",
+    "Katakolon, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Katakolon_lbryeo.png",
+    "Pylos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Pylos_b3icbt.png",
+    "Itea, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Itea_ryq4tt.png",
+    "Parga, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Parga_xm2s9k.png",
+    "Kuşadası, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Kusadasi_tdtdho.png",
+    "Izmir, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Izmir_lt6b9j.png",
+    "Çeşme, Turkey": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Cesme_siilbx.png",
+    "Hvar, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/hvar_s7glqy.png",
+    "Šibenik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195368/sibenik_eb8ez8.png",
+    "Venice, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195366/venice_hyidml.png",
+    "Ravenna, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Ravenna_rmadgp.png",
+    "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00845__zqjdgd.png",
+    "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00846__rstxah.png",
+    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
+    "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00852__p4jual.png",
+    "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00857__dazqix.png",
+    "Sanary-sur-Mer, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00854__a1cxmz.png",
+    "Antibes, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896538/ComfyUI_00855__chqtla.png",
+    "St. Tropez, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195361/San_Tropz_zg4d3c.png",
+    "Constanța, Romania": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Constanta_qcrxop.png",
+    "Odessa, Ukraine": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Odessa_gzcd78.png",
+    "Haifa, Israel": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Haifa_jfyzmb.png",
+    "Red Sea Transit": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/red_sea_transit_okduvq.png",
+    "Sharm El Sheikh, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Sharm_El_Sheikh_clrkiv.png",
+    "Doha, Qatar": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195630/Doha_uhyiqk.png",
+    "Mormugao, Goa": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197679/Mormugao_zppf54.png",
+    "New Mangalore, India": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/new_mangalore_h4sacg.png",
+    "Phuket, Thailand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Phuket_s3yyth.png",
+    "Surabaya, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/surabaya_qw7xzj.png",
+    "Semarang, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Semerang_lvy3te.png",
+    "Komodo Island, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896535/ComfyUI_00840__fycycg.png",
+    "Dili, East Timor": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Dili_qfmvy8.png",
+    "Tauranga, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/tauranga_2_kz6fnc.png",
+    "Perth, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/perth_dpqn2h.png",
+    "Lemaire Channel, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/Lemaire_channel_bp4n2s.png",
+    "Port Lockroy, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/port_lockroy_ysnts1.png",
+    "Petermann Island, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/port_lockroy_ysnts1.png",
+    "Falkland Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199444/falkland_islands_anuweu.png",
+    "Beagle Channel, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/beagle_channel_p92ljy.png",
+    "Puerto Montt, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",
+    "Castro, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00859__yfgdcx.png",
+    "Punta Arenas, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Arenas_sfl1zj.png",
+    "Valparaíso, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199439/Valparaiso_chile_jvearj.png",
+    "Santiago, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199435/Santiago_njnykm.png",
+    "Valdivia, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/Valdivia_a1i29g.png",
+    "Buenos Aires, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/buenos_aires_kclfjm.png",
+    "Montevideo, Uruguay": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199434/Montevideo_Uruguay_oq0zyq.png",
+    "Salvador, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206091/Salvador_2_y4xdnw.png",
+    "Recife, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/recife_ixq6j0.png",
+    "Fortaleza, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
+    "Cartagena, Colombia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206089/Cartegena_j8icg7.png",
+    "Lima, Peru": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206087/lima_tzjpsb.png",
+    "Reithi Rah, Maldives": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206085/maldives_jxswye.png",
+    "Queen Victoria (Cunard)": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206085/Queen_Vic_w9m3tz.png",
+    "Amsterdam, Netherlands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206677/amstrdam_zk9uyu.png",
+    "San Juan, Puerto Rico": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206678/san_juan_hw0fsw.png",
+    "Sea Days": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
+    "Armação dos Búzios, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
+    "Santarém, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769996938/ComfyUI_00854__a1cxmz.png",
+    "Symi, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
+    "Sorrento, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937420/marcie_00878__wknyxo.png",
+    "Port Denarau, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
+    "Isle of Pines, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/ComfyUI_00862__nxc2he.png",
+    "Noumea, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/ComfyUI_00800__xlrtaq.png",
+};
+
+// Icon configuration for each location
+const ICON_CONFIG = {
+    // Toledo - Wood Door
+    "Toledo, Ohio": { style: 'door', symbol: 'wood-door', color: '#6a5a4a', accent: '#d4a574' },
+    // Darwin - Wood Door  
+    "Darwin, Australia": { style: 'door', symbol: 'wood-door', color: '#6a5a4a', accent: '#d4a574' },
+    // Auckland - Gold Door
+    "Auckland, New Zealand": { style: 'door', symbol: 'wood-door', color: '#6a5a4a', accent: '#d4a574' },
+    // Art Deco - Luxury
+    "Queen Victoria (Cunard)": { style: 'deco', symbol: 'crown', color: '#d4a574', accent: '#ffd700' },
+    // Modern Minimal - Cities
+    "Brisbane, Australia": { style: 'minimal', symbol: 'sunrise', color: '#ffa500', accent: '#ffcc00' },
+    "Sydney, Australia": { style: 'minimal', symbol: 'fireworks', color: '#ff6b6b', accent: '#ffd700' },
+    "Wellington, New Zealand": { style: 'minimal', symbol: 'star', color: '#c0c8d0', accent: '#ff6b6b' },
+    "Napier, New Zealand": { style: 'minimal', symbol: 'car', color: '#607080', accent: '#d4a574' },
+    "Tel Aviv, Israel": { style: 'minimal', symbol: 'menorah', color: '#ffd700', accent: '#4a90a0' },
+    "Mumbai, India": { style: 'minimal', symbol: 'gateway', color: '#e07a5f', accent: '#ffd700' },
+    "Barcelona, Spain": { style: 'minimal', symbol: 'mosaic', color: '#e07a5f', accent: '#ffd700' },
+    // Heritage - Historic Sites
+    "Dubrovnik, Croatia": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#5a4a3a' },
+    "Ephesus, Turkey": { style: 'heritage', symbol: 'library', color: '#c9b896', accent: '#8b7355' },
+    "Rome, Italy": { style: 'heritage', symbol: 'colosseum', color: '#c9b896', accent: '#8b7355' },
+    "Milford Sound, New Zealand": { style: 'heritage', symbol: 'mountain', color: '#607080', accent: '#a0c0d0' },
+    "Milos, Greece": { style: 'heritage', symbol: 'venus', color: '#4a90a0', accent: '#ffffff' },
+    "Santorini, Greece": { style: 'heritage', symbol: 'column', color: '#1e90ff', accent: '#ffffff' },
+    "Syracuse, Sicily": { style: 'heritage', symbol: 'amphitheater', color: '#c9b896', accent: '#8b7355' },
+    "Kotor, Montenegro": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#5a4a3a' },
+    "Valletta, Malta": { style: 'heritage', symbol: 'cross', color: '#c9b896', accent: '#8b7355' },
+    "Alexandria, Egypt": { style: 'heritage', symbol: 'lighthouse', color: '#d4a574', accent: '#8b7355' },
+    // Paradise - Tropical
+    "Reithi Rah, Maldives": { style: 'paradise', symbol: 'shark', color: '#4a90a0', accent: '#2d5a6a' },
+    "Bali, Indonesia": { style: 'paradise', symbol: 'mango', color: '#ffa500', accent: '#228b22' },
+    "Bora Bora": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+    "Tonga": { style: 'paradise', symbol: 'whale', color: '#4a90a0', accent: '#2d5a6a' },
+    "Port Vila": { style: 'maritime', symbol: 'cyclone', color: '#1a1a2e', accent: '#4a90d9' },
+    "Lifou": { style: 'paradise', symbol: 'spider', color: '#2d5016', accent: '#90EE90' },
+    "Airlie Beach, Australia": { style: 'paradise', symbol: 'sun-hot', color: '#ff6b6b', accent: '#ffa500' },
+    "Ibiza, Spain": { style: 'paradise', symbol: 'dj', color: '#ff6b6b', accent: '#ffd700' },
+    "Amazon River": { style: 'culture', symbol: 'opera', color: '#f5e6d3', accent: '#8b4513' },
+    // Adventure - Remote
+    "Ushuaia, Argentina": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
+    "Falkland Islands": { style: 'adventure', symbol: 'beer', color: '#d4a574', accent: '#f5f0e8' },
+    "South Georgia": { style: 'adventure', symbol: 'whalingboat', color: '#8b4513', accent: '#a0522d' },
+    "Lemaire Channel, Antarctica": { style: 'adventure', symbol: 'iceberg', color: '#a0c0d0', accent: '#ffffff' },
+    "Port Lockroy, Antarctica": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
+    // Culture - Food, Wine, Music, Glamour
+    "Portofino, Italy": { style: 'culture', symbol: 'yacht', color: '#e07a5f', accent: '#2d5a6a' },
+    "Akaroa, New Zealand": { style: 'culture', symbol: 'wine', color: '#722f37', accent: '#d4a574' },
+    "Picton, New Zealand": { style: 'culture', symbol: 'grapes', color: '#4a0e4e', accent: '#228b22' },
+    "Tauranga, New Zealand": { style: 'culture', symbol: 'guitar', color: '#8b4513', accent: '#d4a574' },
+    "Piran, Slovenia": { style: 'culture', symbol: 'violin', color: '#4a90a0', accent: '#8b4513' },
+    "St. Tropez, France": { style: 'culture', symbol: 'champagne', color: '#e07a5f', accent: '#ffd700' },
+    // Patagonia - Chilean Fjords
+    "Beagle Channel, Chile": { style: 'adventure', symbol: 'fjord', color: '#607080', accent: '#4a90a0' },
+    "Puerto Montt, Chile": { style: 'adventure', symbol: 'volcano', color: '#607080', accent: '#ff6b4a' },
+    "Tierra del Fuego": { style: 'adventure', symbol: 'fire', color: '#ffa500', accent: '#ff4500' },
+    // Indonesia - Wildlife
+    "Komodo Island, Indonesia": { style: 'adventure', symbol: 'komodo', color: '#556b2f', accent: '#8b7355' },
+    // Pacific Islands - New
+    "Port Denarau, Fiji": { style: 'paradise', symbol: 'yacht', color: '#4a90a0', accent: '#40e0d0' },
+    "Isle of Pines, New Caledonia": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+    "Noumea, New Caledonia": { style: 'culture', symbol: 'fleur', color: '#0055a4', accent: '#ffffff' }
+};
+
+
+// ============================================
+// SOURCE: js/data/galleries.js
+// ============================================
+
+const locationGalleries = {
+    // AMAZON RIVER / MANAUS (20 images)
+    "amazon": [
+        { src: "v1768955858/IMG_6071_yay66j.jpg", caption: "Teatro Amazonas - the opera house in the jungle.", alt: "Teatro Amazonas exterior" },
+        { src: "v1768952174/IMG_6136_bkdyes.jpg", caption: "Sunset over the Rio Negro bridge - Manaus, Brazil.", alt: "Bridge at sunset" },
+        { src: "v1768961386/IMG_6160_ymulqf.jpg", caption: "Halfway to Manaus.", alt: "Amazon River journey" },
+        { src: "v1768961331/IMG_6005_b0cdt2.jpg", caption: "Docked on the Amazon.", alt: "Docked" },
+        { src: "v1768961199/IMG_6020_yyepgk.jpg", caption: "On the Amazon River.", alt: "Amazon River" },
+        { src: "v1768955835/IMG_6083_wcbeq4.jpg", caption: "Inside the Teatro Amazonas.", alt: "Teatro interior" },
+        { src: "v1768955810/IMG_6104_ve9cwn.jpg", caption: "Teatro Amazonas details.", alt: "Teatro interior details" },
+        { src: "v1768955785/IMG_6112_vqplpw.jpg", caption: "At the Teatro Amazonas with the horse carriage.", alt: "Derrick at Teatro with carriage" },
+        { src: "v1768955757/IMG_6129_hwafyh.jpg", caption: "Teatro Amazonas monument.", alt: "Teatro monument" },
+        { src: "v1768951605/Screenshot_20260120_134633_Facebook_upegbd.jpg", caption: "Meeting the locals - a python around my neck.", alt: "Snake around neck" },
+        { src: "v1768951523/Screenshot_20260120_142110_Facebook_sfqgia.jpg", caption: "Holding a sloth - 2012 tributary excursion.", alt: "Derrick holding sloth" },
+        { src: "v1768951523/Screenshot_20260120_142041_Facebook_qa7xiz.jpg", caption: "The sloth wasn't in any hurry to leave.", alt: "Sloth closeup" },
+        { src: "v1768951523/Screenshot_20260120_142055_Facebook_sdm2xc.jpg", caption: "Baby alligator - tributary wildlife.", alt: "Baby gator" },
+        { src: "v1768951604/Screenshot_20260120_134644_Facebook_vooudq.jpg", caption: "Another young crocodilian friend.", alt: "Baby croc" },
+        { src: "v1768951518/Screenshot_20260120_142140_Facebook_fladgt.jpg", caption: "A curious monkey in the Amazon.", alt: "Monkey" },
+        { src: "v1768951516/Screenshot_20260120_142200_Facebook_m2ofot.jpg", caption: "Bird's nest in the canopy.", alt: "Tree with nest" },
+        { src: "v1768951604/Screenshot_20260120_134703_Facebook_imcpbv.jpg", caption: "A floating market along the tributary.", alt: "Jungle market" },
+        { src: "v1768962276/IMG_6023_l1kkqd.jpg", caption: "Lost in Manaus.", alt: "Lost in Manaus" },
+        { src: "v1768962223/IMG_6027_ymbkko.jpg", caption: "Still lost in Manaus.", alt: "Still lost" },
+        { src: "v1768962156/IMG_6032_rcjr8i.jpg", caption: "Lost some more.", alt: "Lost some more" }
+    ],
+
+    // DUBROVNIK (21 images)
+    "dubrovnik": [
+        { src: "v1770083616/Screen_Shot_2026-02-02_at_8.52.35_PM.jpg", caption: "Ship arriving - tendering into Dubrovnik.", alt: "Ship arriving in Dubrovnik" },
+        { src: "v1770083740/IMG_2057.jpg", caption: "The Odyssey docked in Dubrovnik's new city.", alt: "The Odyssey in Dubrovnik" },
+        { src: "v1770083897/IMG_2049.jpg", caption: "Coffee and a map - the perfect start.", alt: "Coffee and a map in Dubrovnik" },
+        { src: "v1770083976/IMG_2073.jpg", caption: "Walking towards the old city.", alt: "Walking towards Dubrovnik" },
+        { src: "v1770084065/IMG_2074.jpg", caption: "First glimpse of the walled city.", alt: "View of Dubrovnik" },
+        { src: "v1770084166/IMG_2090.jpg", caption: "Inside the walled city - transported to the Middle Ages.", alt: "Inside the walled city" },
+        { src: "v1770080877/IMG_2738.jpg", caption: "Walking through the old city.", alt: "Walking to the new city" },
+        { src: "v1770080876/IMG_2739.jpg", caption: "Dubrovnik streets.", alt: "Dubrovnik streets" },
+        { src: "v1770080875/IMG_2744.jpg", caption: "Dubrovnik architecture.", alt: "Dubrovnik architecture" },
+        { src: "v1770080875/IMG_2749.jpg", caption: "Dubrovnik old town.", alt: "Dubrovnik old town" },
+        { src: "v1770080865/IMG_2757.jpg", caption: "Dubrovnik scenery.", alt: "Dubrovnik scenery" },
+        { src: "v1770080863/IMG_2762.jpg", caption: "Views from the old city.", alt: "Dubrovnik views" },
+        { src: "v1770149008/IMG_2113.jpg", caption: "Walking toward the gates - like stepping into an Andersen book.", alt: "Walking toward the gates" },
+        { src: "v1770149006/IMG_2116.jpg", caption: "The tin soldier made it to the gates.", alt: "At the gates of Dubrovnik" },
+        { src: "v1770149006/IMG_2123.jpg", caption: "The old harbor.", alt: "Dubrovnik harbor" },
+        { src: "v1770149005/IMG_2120.jpg", caption: "Cannons still guarding the walls.", alt: "Cannons on the city walls" },
+        { src: "v1770148994/IMG_2137.jpg", caption: "The bastions - fortified towers projecting from the city walls.", alt: "Dubrovnik bastions" },
+        { src: "v1770148991/IMG_2142.jpg", caption: "Boats in the old harbor.", alt: "Boats in Dubrovnik harbor" },
+        { src: "v1770148990/IMG_2148.jpg", caption: "Dubrovnik harbor boats.", alt: "Harbor boats" },
+        { src: "v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg", caption: "Far above the walled city on questionable scooters.", alt: "Above Dubrovnik on scooters" },
+        { src: "v1770080862/IMG_2770.jpg", caption: "Ocean kayaking around the city walls. Harder than it looks.", alt: "Ocean kayaking in Dubrovnik" }
+    ],
+
+    // PHUKET (8 images)
+    "phuket": [
+        { src: "v1768865557/PANO_20131118_134025_qd3r7o.jpg", caption: "Phuket beach panorama.", alt: "Beach panorama" },
+        { src: "v1768865640/IMG_20131113_105615_yzzp1y.jpg", caption: "Temple gate in Phuket.", alt: "Temple gate" },
+        { src: "v1768865556/IMG_20131118_135639_wcs0ae.jpg", caption: "Fresh fruit cart - Phuket streets.", alt: "Fruit cart" },
+        { src: "v1768865556/IMG_20131118_164928_wge65r.jpg", caption: "Patong Beach entrance at evening.", alt: "Patong Beach" },
+        { src: "v1768865557/PANO_20131118_182257_b9tvli.jpg", caption: "Sunset over Phuket.", alt: "Sunset panorama" },
+        { src: "v1768865679/IMG_20131118_184137_1_toim78.jpg", caption: "Making friends with the local wildlife.", alt: "Derrick with iguana" },
+        { src: "v1768866121/IMG_19700105_041151_dliaia.jpg", caption: "Martin and Yolonda - Martin found me and helped me get back to the ship.", alt: "Martin and Yolonda" },
+        { src: "v1768865556/IMG_20131118_184140_zmbgko.jpg", caption: "Another day in paradise.", alt: "Phuket closing" }
+    ],
+
+    // RIO DE JANEIRO (8 images)
+    "rio": [
+        { src: "v1768952763/IMG_6391_Large_kingel.jpg", caption: "The famous Selarón Steps - a mosaic tribute to Rio.", alt: "Selarón Steps" },
+        { src: "v1768952612/IMG_6283_kikfgu.jpg", caption: "Made it to the top - Cristo Redentor.", alt: "Derrick at Christ the Redeemer" },
+        { src: "v1768953058/IMG_6305_qqetec.jpg", caption: "The view from Corcovado.", alt: "View from Christ the Redeemer" },
+        { src: "v1768952929/IMG_6333_gg6lzs.jpg", caption: "Heading into the heart of the favela.", alt: "Entering the favela" },
+        { src: "v1768953014/IMG_6331_kvzk2o.jpg", caption: "Life in the favela.", alt: "Favela street scene" },
+        { src: "v1768952486/IMG_6346_lcg34g.jpg", caption: "Taking a break with a popsicle.", alt: "Popsicle in favela" },
+        { src: "v1768952860/IMG_6350_kjpilj.jpg", caption: "Another favela tour moment.", alt: "Favela tour" },
+        { src: "v1768953816/IMG_6366_h1ih0q.jpg", caption: "Copacabana Beach - where the chaos finally stops.", alt: "Copacabana Beach" }
+    ],
+
+    // ALEXANDRIA (2 images)
+    "alexandria": [
+        { src: "v1767736004/IMG_0687_znjvkv.jpg", caption: "Alexandria corniche.", alt: "Alexandria corniche" },
+        { src: "v1767736027/IMG_0655_vpe0lu.jpg", caption: "Alexandria waterfront.", alt: "Alexandria waterfront" }
+    ],
+
+    // AMALFI (1 images)
+    "amalfi": [
+        { src: "v1769823674/20150804_114120_kg0f2a.jpg", caption: "Amalfi harbor from the water.", alt: "Amalfi harbor" }
+    ],
+
+    // AUCKLAND (10 images)
+    "auckland": [
+        { src: "v1767729026/IMG_0220_r8svvx.jpg", caption: "The Seabourn Odyssey in Cairns - the ship I'd later call home.", alt: "Seabourn Odyssey" },
+        { src: "v1767729047/IMG_0830_pv7td9.jpg", caption: "Akaroa Harbor - where I got the call.", alt: "Akaroa Harbor" },
+        { src: "v1767727288/IMG_0145_v2vqtm.jpg", caption: "The Sky Tower - Auckland's needle.", alt: "Sky Tower" },
+        { src: "v1767732747/IMG_0159_nx39vl.jpg", caption: "Auckland Harbor from Seabourn.", alt: "Auckland Harbor" },
+        { src: "v1767729034/IMG_0169_nnzkhu.jpg", caption: "Leaving Auckland - a new chapter.", alt: "Leaving Auckland" },
+        { src: "v1767729030/IMG_0202_igk8i4.jpg", caption: "The iconic Seabourn funnel.", alt: "Seabourn funnel" },
+        { src: "v1767733813/IMG_0218_azftb2.jpg", caption: "The Club - my new stage.", alt: "The Club" },
+        { src: "v1767728099/IMG_0201_jrd2av.jpg", caption: "My name in print on Seabourn.", alt: "Seabourn schedule" },
+        { src: "v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png", caption: "At the piano on Seabourn.", alt: "At the piano" },
+        { src: "v1768532493/IMG_0227_psvuop.jpg", caption: "Performing on Seabourn.", alt: "Performing" }
+    ],
+
+    // BALI (24 images) - Title: "Photos from Bali"
+    "bali": [
+        { src: "shiplife/nw-australia-indonesia/lombock", caption: "Balinese dancers in traditional costume.", alt: "Balinese dancers" },
+        { src: "shiplife/bali/img_0277", caption: "Balinese temple with traditional architecture.", alt: "Balinese temple" },
+        { src: "shiplife/bali/img_0267", caption: "Ornate Garuda statue.", alt: "Garuda statue" },
+        { src: "shiplife/nw-australia-indonesia/img_0238", caption: "Street scene with souvenir stands.", alt: "Bali street" },
+        { src: "shiplife/nw-australia-indonesia/img_0257", caption: "Market stalls with clothing.", alt: "Market stalls" },
+        { src: "shiplife/bali/img_0275", caption: "Welcome at Poppies Lane.", alt: "Poppies Lane" },
+        { src: "shiplife/nw-australia-indonesia/img_0244", caption: "Fresh tropical fruit plate.", alt: "Tropical fruit" },
+        { src: "shiplife/nw-australia-indonesia/img_0245", caption: "Indonesian rice dish.", alt: "Indonesian food" },
+        { src: "shiplife/nw-australia-indonesia/img_0179", caption: "Lobster lunch with a cold beer.", alt: "Lobster lunch" },
+        { src: "shiplife/bali/img_0273", caption: "Colorfully painted jeep.", alt: "Painted jeep" },
+        { src: "shiplife/bali/img_0272", caption: "Hard Rock Cafe Bali.", alt: "Hard Rock Bali" },
+        { src: "shiplife/nw-australia-indonesia/rest2", caption: "Tropical garden pathway.", alt: "Garden path" },
+        { src: "shiplife/bali/img_0265", caption: "Sunset over Indonesian islands.", alt: "Indonesian sunset" },
+        { src: "shiplife/bali/img_0284", caption: "Traditional sailing boats in harbor.", alt: "Bali harbor" },
+        { src: "shiplife/bali/img_0239", caption: "Ship deck at sunset.", alt: "Ship sunset" },
+        { src: "shiplife/bali/img_0242", caption: "Sunset sky over Indonesia.", alt: "Sunset sky" },
+        { src: "shiplife/bali/img_0254", caption: "Ship deck with Indonesian mountains.", alt: "Ship view" },
+        { src: "shiplife/bali/img_0256", caption: "Mountains at sunset.", alt: "Mountain sunset" },
+        { src: "shiplife/bali/img_0259", caption: "Island silhouette at dusk.", alt: "Island silhouette" },
+        { src: "shiplife/bali/img_0279", caption: "Bali street with flowers.", alt: "Street scene" },
+        { src: "shiplife/bali/img_0286", caption: "Bali beach.", alt: "Beach" },
+        { src: "shiplife/bali/img_0288", caption: "Beach boardwalk.", alt: "Boardwalk" },
+        { src: "shiplife/nw-australia-indonesia/img_0177", caption: "Street food scene.", alt: "Street food" },
+        { src: "shiplife/nw-australia-indonesia/img_0191", caption: "Beach pier view.", alt: "Beach pier" }
+    ],
+
+    // BARCELONA (30 images)
+    "barcelona": [
+        { src: "v1767738440/IMG_20140811_122138_cqwjid.jpg", caption: "Barcelona cityscape.", alt: "Barcelona" },
+        { src: "v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg", caption: "Olympic Village.", alt: "Olympic Village" },
+        { src: "v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg", caption: "Olympic site.", alt: "Olympic site" },
+        { src: "v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg", caption: "Olympic Museum.", alt: "Museum" },
+        { src: "v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg", caption: "Barcelona from above.", alt: "City view" },
+        { src: "v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg", caption: "Barcelona architecture.", alt: "Architecture" },
+        { src: "v1770827192/shiplife/barcelona/egtnbgzv8hmcmjlh498z.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827193/shiplife/barcelona/bphaumomyerkrem4qpgv.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827195/shiplife/barcelona/rrzlbgowqnprha1jt6ao.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827196/shiplife/barcelona/u54bvuk5wo3pb2b89coo.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827197/shiplife/barcelona/szzvjpktdwvwu9obehqb.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827198/shiplife/barcelona/ge3dx5s6vkggkyv7ktds.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827199/shiplife/barcelona/dgx6f6rojrbpl3q0seno.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827200/shiplife/barcelona/w67knyweyh4scizw02ir.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827201/shiplife/barcelona/nplkku1zoldmv81qwmvx.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827202/shiplife/barcelona/s7rwbacr9t5vtlvp94xu.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827203/shiplife/barcelona/yll9x0wopchnbg38ddtm.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827203/shiplife/barcelona/upleffrsjby7pzqralpq.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827204/shiplife/barcelona/b5ugz3pohf9gastxahub.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827205/shiplife/barcelona/f9n0bhmdhqytj5o7o5zo.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827206/shiplife/barcelona/zov5psf0rw6flla14il5.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827207/shiplife/barcelona/fb5mvaox8g0wg0m3rdht.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827207/shiplife/barcelona/wujcu7d9vxwjvcdwykmk.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827208/shiplife/barcelona/uvrmojc4b5ylmrvzgel2.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827210/shiplife/barcelona/nddlhirnfawquu3bxelc.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827211/shiplife/barcelona/oq9qnpdk5lq9o5b2fojl.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827212/shiplife/barcelona/aympfft45dactel1pv0m.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827213/shiplife/barcelona/zuuttlhxvpndc1h9bbfn.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827213/shiplife/barcelona/ze5iahr25bvhw4w7o5q1.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
+        { src: "v1770827214/shiplife/barcelona/jolybutenmxzbqzohtoa.jpg", caption: "Barcelona, Spain", alt: "Barcelona" }
+    ],
+
+    // BORABORA (19 images)
+    "boraBora": [
+        { src: "v1770764107/me_and_mark.jpg", caption: "Me and Mark", alt: "Me and Mark" },
+        { src: "v1770764108/098.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764109/038.jpg", caption: "Waterfall hike", alt: "Waterfall" },
+        { src: "v1770764111/046.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764114/054.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764114/063.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764117/062.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764118/065.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764119/079.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764122/083.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764123/080.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764128/100.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764127/tahiti_waterfall.jpg", caption: "Tahiti waterfall", alt: "Tahiti waterfall" },
+        { src: "v1770764133/097.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764142/off_the_main_island_bora_bora_-_Copy.jpg", caption: "Off the main island", alt: "Off the main island" },
+        { src: "v1770764143/bora_bora_beach_-_Copy.jpg", caption: "Bora Bora beach", alt: "Bora Bora beach" },
+        { src: "v1770764145/grapefruit_and_apple.jpg", caption: "Fresh fruit", alt: "Fresh fruit" },
+        { src: "v1770764150/120.jpg", caption: "Bora Bora", alt: "Bora Bora" },
+        { src: "v1770764155/bora_bora_baby.jpg", caption: "Mount Otemanu", alt: "Bora Bora" }
+    ],
+
+    // BRISBANE (6 images)
+    "brisbane": [
+        { src: "v1769816317/brisbane_iajcgd.jpg", caption: "Brisbane, Australia", alt: "Brisbane" },
+        { src: "v1770827970/shiplife/brisbane/yy6wwmwaw75fugftzjw2.jpg", caption: "Brisbane, Australia", alt: "Brisbane" },
+        { src: "v1770827962/shiplife/brisbane/yvkbyzev0b4wz8f1dkcf.jpg", caption: "Brisbane, Australia", alt: "Brisbane" },
+        { src: "v1770827965/shiplife/brisbane/xbwwlhrrdjvpvxw1csfs.jpg", caption: "Brisbane, Australia", alt: "Brisbane" },
+        { src: "v1770827967/shiplife/brisbane/vkrugky6hmspuwkhz1w3.jpg", caption: "Brisbane, Australia", alt: "Brisbane" },
+        { src: "v1770827968/shiplife/brisbane/tnb45yy4lnewyl5qncbf.jpg", caption: "George V Hotel, Brisbane", alt: "George V Hotel" }
+    ],
+
+    // BUENOSAIRES (10 images)
+    "buenosAires": [
+        { src: "v1770828227/shiplife/buenos-aires/kkiz4s1ngew0a6sgbl8d.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828228/shiplife/buenos-aires/wtmvciwlqrzoals1twqj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828230/shiplife/buenos-aires/vekos56olytx2vjufoqa.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828231/shiplife/buenos-aires/pqegunhzhekrdy8chsjp.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828233/shiplife/buenos-aires/bszlfdfy76thy3mrffqb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828234/shiplife/buenos-aires/d3grjrqdgavlw256mfog.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828236/shiplife/buenos-aires/oc3c4z2xld5hsomlrs2h.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828238/shiplife/buenos-aires/b83ym5ev0wyzgqgii70t.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828239/shiplife/buenos-aires/wqbd3vku0d0j5u0ke1dj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
+        { src: "v1770828241/shiplife/buenos-aires/ytgpn8uckdahvt4d1ifb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" }
+    ],
+
+    // BUZIOS (9 images)
+    "buzios": [
+        { src: "v1770829346/shiplife/buzios/wsvhzaiog6hitekvhjdk.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829347/shiplife/buzios/bn0dln20zdk8dunq4qdt.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829348/shiplife/buzios/uzskswlpltybmibbttpq.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829349/shiplife/buzios/fwpr8trcgizfsj9ltdco.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829350/shiplife/buzios/guamsdhhpyalmwmlmyf0.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829351/shiplife/buzios/qbwdsgyzlko0zqg6zkmd.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829352/shiplife/buzios/vwh7lu6te1npks7n4uep.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829353/shiplife/buzios/xihise9pnuje7dpeposb.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
+        { src: "v1770829355/shiplife/buzios/zebudkszfnih7ztms5sl.jpg", caption: "Búzios, Brazil", alt: "Búzios" }
+    ],
+
+    // CESME (2 images)
+    "cesme": [
+        { src: "shiplife/cesme/town_square.jpg", caption: "Palm-lined town square - the unhurried heart of Çeşme.", alt: "Cesme town square" },
+        { src: "shiplife/cesme/street_scene.jpg", caption: "Local shops and cafés - where the real Turkey lives.", alt: "Cesme street scene" }
+    ],
+
+    // CHILEANFJORDS (1 images) - Title: "Photos"
+    "chileanFjords": [
+        { src: "v1770191212/Screen_Shot_2026-01-22_at_5.15.03_PM.png", caption: "MV Captain Leonidas shipwreck in the Messier Channel", alt: "MV Captain Leonidas shipwreck in the Messier Channel" }
+    ],
+
+    // CHRISTMASISLAND (9 images) - Title: "Photos from Christmas Island"
+    "christmasIsland": [
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0185.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0187.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0188.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0189.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0190.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0191.jpg", caption: "Christmas Island", alt: "Christmas Island" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/lombock.jpg", caption: "Lombok stopover", alt: "Lombok" },
+        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/wrong_side.jpg", caption: "Christmas Island", alt: "Christmas Island" }
+    ],
+
+    // CORFU (2 images)
+    // CORFU, GREECE (14 images)
+    "corfu": [
+        { src: "shiplife/corfu/IMG_4679", caption: "The Seabourn Odyssey in Corfu harbor.", alt: "Seabourn ship" },
+        { src: "shiplife/corfu/IMG_4683", caption: "The Venetian moat - once defense, now a quiet marina.", alt: "Fortress moat" },
+        { src: "shiplife/corfu/IMG_4685", caption: "British coat of arms - from the colonial period.", alt: "British coat of arms" },
+        { src: "shiplife/corfu/IMG_4690", caption: "Byzantine history timeline in the fortress museum.", alt: "History plaque" },
+        { src: "shiplife/corfu/IMG_4693", caption: "Through the archway - artifacts in the fortress courtyard.", alt: "Fortress courtyard" },
+        { src: "shiplife/corfu/IMG_4695", caption: "Venetian arcade in the Old Fortress.", alt: "Fortress arcade" },
+        { src: "shiplife/corfu/IMG_4698", caption: "The Winged Lion of St. Mark - Venice's symbol.", alt: "Lion of St Mark" },
+        { src: "shiplife/corfu/IMG_4700", caption: "Greek inscription about the Ionian parliament.", alt: "Greek plaque" },
+        { src: "shiplife/corfu/IMG_4703", caption: "Clock tower rising above ancient walls.", alt: "Clock tower" },
+        { src: "shiplife/corfu/IMG_4705", caption: "Cannons on the ramparts overlooking the sea.", alt: "Fortress cannons" },
+        { src: "shiplife/corfu/IMG_4708", caption: "Iron bars in the old fortress wall.", alt: "Fortress window" },
+        { src: "shiplife/corfu/IMG_4711", caption: "Flowers, old stone, and the endless Ionian.", alt: "Sea view with flowers" },
+        { src: "shiplife/corfu/fortress_panorama.jpg", caption: "From the Old Fortress - Albania across the water.", alt: "Corfu fortress panorama" },
+        { src: "shiplife/corfu/seabourn_ship.jpg", caption: "The Seabourn Odyssey in the harbor.", alt: "Seabourn ship at Corfu" }
+    ],
+
+    // DARWIN (33 images) - Title: "More Photos of Shiplife"
+    "darwin": [
+        { src: "v1767645531/002_zzrowo.jpg", caption: "Smugglers Lounge on the Pacific Sun - the proving ground.", alt: "Smugglers Lounge" },
+        { src: "v1767645530/atlantis_brochure_kmknn5.jpg", caption: "The Atlantis entertainment brochure - my name in print.", alt: "Atlantis brochure" },
+        { src: "v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg", caption: "Soundcheck at the Atlantis Lounge before the doors opened.", alt: "Atlantis soundcheck" },
+        { src: "v1768526570/IMG_0109_dvahoj.jpg", caption: "Pacific Sun docked in New Caledonia.", alt: "Pacific Sun New Caledonia" },
+        { src: "v1768526487/Isle_of_Pines_tddsqy.jpg", caption: "Isle of Pines, New Caledonia.", alt: "Isle of Pines" },
+        { src: "v1768526493/134_cwcuy0.jpg", caption: "Pool party in Bali.", alt: "Bali pool party" },
+        { src: "v1768526496/bora_bora_z03zsr.jpg", caption: "Bora Bora, French Polynesia.", alt: "Bora Bora" },
+        { src: "v1768527359/DSC00357_et8mzd.jpg", caption: "Semarang temple, Indonesia.", alt: "Semarang temple" },
+        { src: "v1767645531/darwin_star_jseq6c.jpg", caption: "The Star Picture Theatre in Darwin.", alt: "Darwin Star" },
+        { src: "v1767645531/DSC00286_ikuq8x.jpg", caption: "Brisbane lit up at night.", alt: "Brisbane" },
+        { src: "v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png", caption: "Goofing off in crew bar with shipmates.", alt: "Goofing off crew bar" },
+        { src: "v1768528418/crew_bar_urzrll.jpg", caption: "Goofing off in crew bar with shipmates.", alt: "Goofing off crew bar" },
+        { src: "v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png", caption: "Goofing off in crew bar with shipmates.", alt: "Goofing off crew bar" },
+        { src: "v1768531847/008-3_zkgv14.jpg", caption: "Aussie passengers know how to party.", alt: "Aussie passengers" },
+        { src: "v1768531863/011-6_t1i6uf.jpg", caption: "Aussie passengers know how to party.", alt: "Aussie passengers" },
+        { src: "v1768526483/mark_cristian_iwhziq.jpg", caption: "The crew bar - where the real stories got told. With friends.", alt: "Crew bar friends" },
+        { src: "v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png", caption: "Playing with my friend Hayden Smith in Smugglers Lounge.", alt: "Hayden Smith" },
+        { src: "v1768528813/Screen_Shot_2026-01-15_at_9.00.59_PM_i6usqj.png", caption: "Hayden and I performing in Atlantis Lounge.", alt: "Hayden Atlantis" },
+        { src: "v1768528773/Screen_Shot_2026-01-15_at_9.00.21_PM_ood4z7.png", caption: "Hayden and I performing in Atlantis Lounge.", alt: "Hayden Atlantis 2" },
+        { src: "v1768528580/Screen_Shot_2026-01-15_at_8.57.09_PM_eibhfs.png", caption: "Playing with my friend Lars in Smugglers Lounge.", alt: "Lars" },
+        { src: "v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png", caption: "Cruise Director's Corner. Cool, calm, collected.", alt: "TV show relaxed" },
+        { src: "v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png", caption: "Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?", alt: "TV show nervous" },
+        { src: "v1768527425/IMG_0200_lgitre.jpg", caption: "Shipmates.", alt: "Shipmates" },
+        { src: "v1768527430/IMG_0198_v6fil7.jpg", caption: "Crew sign.", alt: "Crew sign" },
+        { src: "v1767643122/013_pzswfa.jpg", caption: "Somewhere in the first week - still figuring out the rhythm.", alt: "First week" },
+        { src: "v1768532411/037_sgoss3.jpg", caption: "Pacific Sun days.", alt: "Pacific Sun" },
+        { src: "v1768532320/SANY2959_wrkayt.jpg", caption: "Shore leave.", alt: "Shore leave" },
+        { src: "v1768532586/IMG_0503_d8y8ux.jpg", caption: "More adventures.", alt: "Adventures" },
+        { src: "v1768532591/IMG_0505_u3ofup.jpg", caption: "On the road.", alt: "On the road" },
+        { src: "v1768532608/IMG_0375_2020-10-19T20_30_15.551_ng52kh.jpg", caption: "Exploring.", alt: "Exploring" },
+        { src: "v1768532638/IMG_0390_2020-10-19T20_30_25.484_lmm8za.jpg", caption: "Crew adventures.", alt: "Crew adventures" },
+        { src: "v1768532646/IMG_0369_2020-10-19T20_30_13.806_ih39fd.jpg", caption: "More memories.", alt: "Memories" },
+        { src: "v1768529189/Screen_Shot_2026-01-15_at_9.07.19_PM_cqqwpq.png", caption: "Ship life.", alt: "Ship life" }
+    ],
+
+    // DUBAI (2 images)
+    "dubai": [
+        { src: "shiplife/dubai/skyline_taxi.jpg", caption: "Dubai skyline from the taxi - a forest of impossible towers.", alt: "Dubai skyline" },
+        { src: "shiplife/dubai/mercedes_mall.jpg", caption: "Classic Gullwing at Chopard - only in Dubai.", alt: "Mercedes in Dubai mall" }
+    ],
+
+    // DUNEDIN (4 images)
+    "dunedin": [
+        { src: "v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg", caption: "Port Chalmers from above", alt: "Port Chalmers" },
+        { src: "v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg", caption: "The port and church", alt: "Port area" },
+        { src: "v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg", caption: "Misty Otago hills", alt: "Otago hills" },
+        { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" }
+    ],
+
+    // EPHESUS (40 images) - Title: "Photos from Ephesus (40)"
+    "ephesus": [
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/krgchk5isyezwenrvuqi.jpg", caption: "Ephesus, Turkey", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/dvqpfsvkx1xwfpgfwaqk.jpg", caption: "Ephesus ruins", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/pqjrpsvdw5nppnuxckmf.jpg", caption: "Library of Celsus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/i099bcakiixzywxiaikf.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/c2f4rdikb77kkk3cebbs.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/mmdjpoghtir0bbjyvjv2.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/xwyhdwm6zacsnz86ikap.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/rw4ewqpudvs1gayit9wh.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/yit8eksrpxiiactnwy6h.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/h3a5jgeaip19kfepdppb.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/lrlepteazxxllnfgavdc.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/ozsbnhmtkcaoim9ixfwn.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/qczuk46gfuqdqwrqmj61.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/wviejqtv5klohzdpr975.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/ysmd2pdwc2ggllegytm1.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v2pqed9kfbasyz2ovm.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/sisimyq9okitckxhwrjb.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/lfqpbrnvstkqaszqm8a0.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/stfs1kh5fialhbecfwma.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v9kupaayu.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v4mokncec8drxnwwqui.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/viawrbk3k4m5gtrwph1p.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v5yti9.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/elqsiil3shivg47hxqd2.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v7msl.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/vepogna9c9wpjlopjb2v.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/yiasxtpue1eqdiuiglxr.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/wkcw2z3omgirsq5t5kzt.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/addbjqhkzwfygx0c4nx4.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/to9zcso5h0y5os5jwrek.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "v1odv62kmmo.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/nddjqlabxrqku6k8z7ap.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/soxagsejl0gjikonyfn0.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/ymckt0ghrtpfpt9nt3vr.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/logqiyw6uoyesqbzaf3i.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/c1byckdz2y2hrauqvmu9.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/qldrmnap5p0rqn5oyty5.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/udabyczwwehxiaqpptyq.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/nf2g4fkdgxcqblxznz71.jpg", caption: "Ephesus", alt: "Ephesus" },
+        { src: "w_400,q_auto,f_auto/shiplife/ephesus/h259g3lahgtuyujocrfd.jpg", caption: "Ephesus", alt: "Ephesus" }
+    ],
+
+    // FIJI (9 images)
+    "fiji": [
+        { src: "v1770836867/shiplife/figi/oh7lcv26vmsxcftvu9rl.jpg", caption: "Yacht Nirvana at Port Denarau", alt: "Yacht Nirvana" },
+        { src: "v1770836861/shiplife/figi/jaranvxvpwauxkca9o0b.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836866/shiplife/figi/sicjydbjflnmagnsqhag.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836868/shiplife/figi/qkulkxtdhmtpmofynskk.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836869/shiplife/figi/lc0gbmah1eyzaymzmjpe.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836870/shiplife/figi/v7ix2chhup4osjkoywvx.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836871/shiplife/figi/qdaurdhcpenfyjhwpb8d.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836873/shiplife/figi/xedg78fdmu2pmlagygsv.jpg", caption: "Port Denarau", alt: "Port Denarau" },
+        { src: "v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg", caption: "Yacht Nirvana", alt: "Yacht Nirvana" }
+    ],
+
+    // FLORENCE (10 images) - Title: "Photos from Florence"
+    "florence": [
+        { src: "v1771203420/shiplife/florence/ufgedwyqgznjp1lc9eqe.jpg", caption: "The Piazza del Duomo - Baptistery under restoration with Brunelleschi's dome beyond.", alt: "Florence Duomo piazza" },
+        { src: "v1771203420/shiplife/florence/loyudpbij2pkjbswt6ck.jpg", caption: "The Duomo facade - pink, green, and white marble in geometric patterns.", alt: "Florence Duomo facade" },
+        { src: "v1771203420/shiplife/florence/ivkqnq0u0hzydgzt3x8b.jpg", caption: "The crowds on Via dei Calzaiuoli - everyone drawn to the same masterpiece.", alt: "Crowded street view of Duomo" },
+        { src: "v1771203420/shiplife/florence/hsggthukftrjyjoua4ll.jpg", caption: "Looking up at the Duomo - Gothic architecture reaching for the sky.", alt: "Duomo from below" },
+        { src: "v1771203420/shiplife/florence/cmx8bmmxn1vxzx1a8pdu.jpg", caption: "Giotto's Campanile beside the cathedral - 414 steps to the top.", alt: "Campanile and Duomo side" },
+        { src: "v1771203420/shiplife/florence/cc0zgndlgc9kitvgnnod.jpg", caption: "Horse carriage in the piazza - timeless Florence.", alt: "Horse carriage at Duomo" },
+        { src: "v1771203420/shiplife/florence/xdb1cnzsejvwnfd2f8sh.jpg", caption: "Inside the Duomo - soaring vaults and stained glass.", alt: "Duomo interior" },
+        { src: "v1771203420/shiplife/florence/d9kt2wakaxiwn4zeqo5c.jpg", caption: "Renaissance sculpture - the masters are everywhere here.", alt: "Renaissance sculpture" },
+        { src: "v1771203420/shiplife/florence/xt5eedzzl9i6juwsfxuo.jpg", caption: "The marble floor - centuries of footsteps have polished these stones.", alt: "Duomo marble floor" },
+        { src: "v1771203420/shiplife/florence/cohm7qm99uwvlazfwqwu.jpg", caption: "Even the horses take a lunch break in Florence.", alt: "Horse feeding in piazza" }
+    ],
+
+    // FIORDLAND (7 images) - Title: "Photos from Fiordland"
+    "fiordland": [
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00370.jpg", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00401.jpg", caption: "Fiordland cliffs", alt: "Fiordland" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00402.jpg", caption: "Waterfalls", alt: "Fiordland" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00406.jpg", caption: "Fiordland", alt: "Fiordland" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00410.jpg", caption: "Fiordland", alt: "Fiordland" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00416.jpg", caption: "Fiordland", alt: "Fiordland" },
+        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00417.jpg", caption: "Fiordland", alt: "Fiordland" }
+    ],
+
+    // FLORENCE (18 images)
+    "florence": [
+        { src: "v1770763527/IMG_5410.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763526/IMG_5413.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763567/IMG_5217.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763550/IMG_5229.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763546/IMG_5231.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763543/IMG_5233.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763538/IMG_5236.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763539/IMG_5237.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763533/IMG_5240.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763530/IMG_5242.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763530/IMG_5243.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763522/IMG_5421.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763522/IMG_5424.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763522/IMG_5426.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763517/IMG_5429.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763514/IMG_5430.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763502/IMG_5454.jpg", caption: "Florence, Italy", alt: "Florence" },
+        { src: "v1770763499/IMG_5464.jpg", caption: "Florence, Italy", alt: "Florence" }
+    ],
+
+    // HOBART (3 images) - Title: "Photos from Hobart"
+    "hobart": [
+        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0379.jpg", caption: "Hobart, Tasmania", alt: "Hobart" },
+        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0380.jpg", caption: "Hobart harbor", alt: "Hobart" },
+        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0385.jpg", caption: "Mount Wellington", alt: "Mount Wellington" }
+    ],
+
+    // HVAR (2 images)
+    "hvar": [
+        { src: "shiplife/hvar/harbor_fortress.jpg", caption: "Hvar harbor - the Spanish Fortress watches over superyachts and fishing boats alike.", alt: "Hvar harbor with fortress" },
+        { src: "shiplife/hvar/harbor_boats.jpg", caption: "Croatia's answer to St. Tropez.", alt: "Hvar harbor boats" }
+    ],
+
+    // ITEA (3 images)
+    "itea": [
+        { src: "shiplife/itea/misty_sunrise.jpg", caption: "Morning mist - appropriately mystical for the gateway to Delphi.", alt: "Misty sunrise at Itea" },
+        { src: "shiplife/itea/bay_view.jpg", caption: "The bay reflects Mount Parnassus in the calm morning.", alt: "Bay view" },
+        { src: "shiplife/itea/greek_church.jpg", caption: "Terracotta roofs and blue sky - quintessential Greece.", alt: "Greek church" }
+    ],
+
+    // IBIZA (11 images)
+    "ibiza": [
+        { src: "v1770837316/shiplife/ibiza/ephbyw32jtinr1jkj2ys.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837317/shiplife/ibiza/gtafp4elfoffkf99szii.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837318/shiplife/ibiza/ghicdyoulxxbrgxqqd2s.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837319/shiplife/ibiza/zqtcjcuossjgbkjct5ut.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837320/shiplife/ibiza/ptudhfojytuxfnbbetok.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837321/shiplife/ibiza/wpeauwld0pxal2o79qzk.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837322/shiplife/ibiza/vy8uyjkookbjmxfyybei.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837323/shiplife/ibiza/nvgth6p9ayceumtg98ca.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837324/shiplife/ibiza/pvzysfnqykgjo55prr9l.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837325/shiplife/ibiza/zeczsb0l4okjwrsoie7m.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
+        { src: "v1770837326/shiplife/ibiza/cobmuqw8ytk8lwv9qmjh.jpg", caption: "Ibiza, Spain", alt: "Ibiza" }
+    ],
+
+    // ISLEOFPINES (8 images)
+    "isleOfPines": [
+        { src: "v1770826440/shiplife/isle-of-pines/tpdgnpy4lkvxtivahmf7.jpg", caption: "Crew day at the beach", alt: "Crew day" },
+        { src: "v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826439/shiplife/isle-of-pines/uk5agubylcawarrc2cee.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826436/shiplife/isle-of-pines/nijbrcf7ieidnsdezmni.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "v1770826441/shiplife/isle-of-pines/xsihmnhudihg22sdon9o.jpg", caption: "Isle of Pines", alt: "Isle of Pines" }
+    ],
+
+    // ISTANBUL (12 images)
+    "istanbul": [
+        { src: "shiplife/istanbul/spice_market.jpg", caption: "The Spice Market - mountains of saffron, sumac, and Turkish delight.", alt: "Istanbul Spice Market" },
+        { src: "shiplife/istanbul/dolmabahce_palace.jpg", caption: "Dolmabahçe Palace gardens - Ottoman excess in marble.", alt: "Dolmabahce Palace" },
+        { src: "v1771203420/shiplife/istanbul/vnej55ugldrfwracvzx9.jpg", caption: "Ferries crossing the Bosphorus - the waterway between continents.", alt: "Bosphorus ferry traffic" },
+        { src: "v1771203420/shiplife/istanbul/aq0wvlrvxxxsdacnhk2z.jpg", caption: "Rumeli Fortress - built by Sultan Mehmed II before conquering Constantinople.", alt: "Rumeli Fortress wide view" },
+        { src: "v1771203420/shiplife/istanbul/wmqkwnirlv8dmhy65xlf.jpg", caption: "Rumeli Fortress towers rising from the Bosphorus shore.", alt: "Rumeli Fortress" },
+        { src: "v1771203420/shiplife/istanbul/zqnboqzhapitzuotpqpo.jpg", caption: "The massive fortress walls controlled the narrowest point of the strait.", alt: "Rumeli Fortress with boat" },
+        { src: "v1771203420/shiplife/istanbul/tu96jp4v9f92xavpkvj1.jpg", caption: "Colorful hillside houses along the Bosphorus waterfront.", alt: "Istanbul waterfront" },
+        { src: "v1771203420/shiplife/istanbul/bwbepgnsrznraz5tghiq.jpg", caption: "The Republic Monument in Taksim Square - commemorating the Turkish War of Independence.", alt: "Taksim Monument" },
+        { src: "v1771203420/shiplife/istanbul/xyxeo1jq28rmivmihrzr.jpg", caption: "Taksim Square - the heart of modern Istanbul.", alt: "Taksim Square" },
+        { src: "v1771203420/shiplife/istanbul/jsykrluoapxnb6354eok.jpg", caption: "A distant mosque through Istanbul's green hillsides.", alt: "Istanbul street view" },
+        { src: "v1771203420/shiplife/istanbul/hqoefaykny2gyjsn96e9.jpg", caption: "Mosque dome under restoration - Istanbul is always preserving its heritage.", alt: "Mosque dome" },
+        { src: "v1771203420/shiplife/istanbul/q0aftz0eb6gusoke8t8c.jpg", caption: "The golden details of Ottoman architecture.", alt: "Mosque dome detail" }
+    ],
+
+    // KOMODO (6 images)
+    "komodo": [
+        { src: "v1768532337/DSC002971st_prbc0u.jpg", caption: "Face to face with a Komodo dragon.", alt: "Komodo dragon" },
+        { src: "v1768532348/DSC00313_iv0cyd.jpg", caption: "Prehistoric predator up close.", alt: "Komodo dragon close-up" },
+        { src: "v1768532354/DSC00301_czqyrm.jpg", caption: "The Komodo landscape.", alt: "Komodo landscape" },
+        { src: "v1768532360/DSC002982nd_rlitb4.jpg", caption: "Jurassic Park vibes.", alt: "Komodo Island" },
+        { src: "v1769822864/komodo_compar_resizee_h55pu7.jpg", caption: "Dry season - brown savanna terrain.", alt: "Komodo dry season" },
+        { src: "v1769821345/here_is_what_komodo_looks_like_in_the_rainy_season_owwbxt.jpg", caption: "Rainy season - lush green landscape.", alt: "Komodo rainy season" }
+    ],
+
+    // KOTOR, MONTENEGRO (33 images)
+    "kotor": [
+        { src: "shiplife/kotor/IMG_1415", caption: "Passing villages along the Bay of Kotor.", alt: "Bay village" },
+        { src: "shiplife/kotor/IMG_1422", caption: "Looking back through the fjord - ship's wake stretching to the horizon.", alt: "Ship wake in bay" },
+        { src: "shiplife/kotor/IMG_1434", caption: "Terracotta rooftops climbing the hillside.", alt: "Hillside village" },
+        { src: "shiplife/kotor/IMG_1465", caption: "A village reflected in the still waters of the bay.", alt: "Village reflection" },
+        { src: "shiplife/kotor/IMG_1469", caption: "Waterfront homes with the mountains behind.", alt: "Waterfront village" },
+        { src: "shiplife/kotor/IMG_1580", caption: "First glimpse of Kotor at the end of the bay.", alt: "Kotor approach" },
+        { src: "shiplife/kotor/IMG_1595", caption: "The mountain gorge above the old town.", alt: "Mountain gorge" },
+        { src: "shiplife/kotor/IMG_1599", caption: "The fortress walls climbing up from the moat.", alt: "Walls and moat" },
+        { src: "shiplife/kotor/IMG_1603", caption: "Crystal clear water in the old moat.", alt: "Clear moat water" },
+        { src: "shiplife/kotor/IMG_1612", caption: "Wandering the narrow streets of the old town.", alt: "Old town street" },
+        { src: "shiplife/kotor/IMG_1616", caption: "Cobblestones worn smooth by centuries of footsteps.", alt: "Cobblestones" },
+        { src: "shiplife/kotor/IMG_1619", caption: "Old town buildings and balconies.", alt: "Old buildings" },
+        { src: "shiplife/kotor/IMG_1622", caption: "Orange rooftops and mountain views.", alt: "Rooftop view" },
+        { src: "shiplife/kotor/IMG_1624", caption: "Historical plaque on the fortress wall.", alt: "Historical plaque" },
+        { src: "shiplife/kotor/IMG_1625", caption: "Bell tower rising above the rooftops.", alt: "Bell tower" },
+        { src: "shiplife/kotor/IMG_1630", caption: "Taking in the view from the fortress walls.", alt: "At the overlook" },
+        { src: "shiplife/kotor/IMG_1639", caption: "The ancient stone path climbing the mountain.", alt: "Stone path" },
+        { src: "shiplife/kotor/IMG_1650", caption: "Steep stone steps - 1,350 of them.", alt: "Fortress steps" },
+        { src: "shiplife/kotor/IMG_1656", caption: "Church tower with the Seabourn in the bay.", alt: "Church and ship" },
+        { src: "shiplife/kotor/IMG_1657", caption: "The old town and marina from the fortress.", alt: "Aerial view" },
+        { src: "shiplife/kotor/IMG_1660", caption: "Looking down the bay from the fortress ruins.", alt: "Bay from above" },
+        { src: "shiplife/kotor/IMG_1665", caption: "Ancient fortress gate with iron door.", alt: "Fortress gate" },
+        { src: "shiplife/kotor/IMG_1677", caption: "Narrow passage between fortress walls.", alt: "Fortress passage" },
+        { src: "shiplife/kotor/IMG_1705", caption: "Ruins near the top of the fortress.", alt: "Fortress ruins" },
+        { src: "shiplife/kotor/IMG_1716", caption: "The valley and gorge from near the summit.", alt: "Valley view" },
+        { src: "shiplife/kotor/IMG_2264", caption: "View through a hole in the old stone wall.", alt: "Through the wall" },
+        { src: "shiplife/kotor/IMG_2266", caption: "Montenegrin flag flying over the fortress.", alt: "Flag on fortress" },
+        { src: "shiplife/kotor/IMG_2615", caption: "Sunset light on the mountains as we depart.", alt: "Sunset mountains" },
+        { src: "shiplife/kotor/IMG_2621", caption: "Sailing out through the bay at dusk.", alt: "Dusk departure" },
+        { src: "v1767735553/IMG_1717_ggcmyu.jpg", caption: "The fortress walls of Kotor.", alt: "Kotor walls" },
+        { src: "v1767735480/IMG_1657_xtlvwv.jpg", caption: "View from the fortress walls.", alt: "Kotor view" },
+        { src: "v1767735569/IMG_1696_o1sjn5.jpg", caption: "Kotor old town from above.", alt: "Kotor old town" }
+    ],
+
+    // KUSADASI (3 images)
+    "kusadasi": [
+        { src: "shiplife/kusadasi/hand_sculpture.jpg", caption: "The Hand of Peace sculpture releases doves over the harbor.", alt: "Hand sculpture with cruise ship" },
+        { src: "shiplife/kusadasi/turkish_breakfast.jpg", caption: "Turkish breakfast - an event, not a meal.", alt: "Turkish breakfast" },
+        { src: "shiplife/kusadasi/cruise_ships.jpg", caption: "Multiple ships crowd the popular Aegean port.", alt: "Cruise ships at Kusadasi" }
+    ],
+
+    // LAVANDOU (7 images)
+    "lavandou": [
+        { src: "v1770837535/shiplife/le-lavendeu/ao8b3gxy425t02rvz5cx.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837539/shiplife/le-lavendeu/g5njmun06hu4ih8ragyl.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837533/shiplife/le-lavendeu/j8bzq7aifb1pbctssib3.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837532/shiplife/le-lavendeu/kbjzbcui4ldg9lcza1wp.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837536/shiplife/le-lavendeu/lf1m6r8g83f6h2nqwyko.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837534/shiplife/le-lavendeu/v0tneg5dblhkpmqv7p36.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
+        { src: "v1770837537/shiplife/le-lavendeu/wu6zflcglkhvwythbnsl.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" }
+    ],
+
+    // LEMAIRE (28 images)
+    "lemaire": [
+        { src: "v1767737978/IMG_6712_bmwcxi.jpg", caption: "The Lemaire Channel.", alt: "Lemaire Channel" },
+        { src: "v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg", caption: "Antarctic ice.", alt: "Ice" },
+        { src: "v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg", caption: "Antarctic landscape.", alt: "Landscape" },
+        { src: "v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg", caption: "Ice formations.", alt: "Ice formations" },
+        { src: "v1770827084/shiplife/antarctica/cz6rlhamigbfcfbw8faz.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827084/shiplife/antarctica/faghm04wmznwajvdszes.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827085/shiplife/antarctica/ux0177l0qmgvoui6wrmk.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827086/shiplife/antarctica/l374c32lkf3ksks79tvb.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827087/shiplife/antarctica/qfbhbdqbi9gnj5kgcpcd.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827088/shiplife/antarctica/wmk00nufhvewnx7018x4.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827089/shiplife/antarctica/fhj7nt7uiygc6pwc4uar.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827089/shiplife/antarctica/wm33vuqpic9vazyqh16f.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827090/shiplife/antarctica/lrivcvhsifypjamvgbcu.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827091/shiplife/antarctica/pu088hiixohimq97yz1l.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827092/shiplife/antarctica/drctkc5k6peiwtzhgsuf.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827092/shiplife/antarctica/k77fzroa6wiyo3ocqrcs.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827093/shiplife/antarctica/d2sfwlw6rm5xbgckgg5e.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827094/shiplife/antarctica/z3jqg8oc4ljdfkq6mwbi.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827095/shiplife/antarctica/wbkb6rqndoiaozn5md9m.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827096/shiplife/antarctica/ahkf6k350iybuidff2qm.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827096/shiplife/antarctica/zoezb7sy5r76ni4hxbjn.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827097/shiplife/antarctica/novc4ww2pjcwdtfeejyj.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827098/shiplife/antarctica/lrqqg0f61hfaetevztno.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827104/shiplife/antarctica/ginvukjus348m6csofst.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827105/shiplife/antarctica/ffnkuluercsm3ay4un0m.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827106/shiplife/antarctica/uiw3c6i2pg8vj8sshquv.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827106/shiplife/antarctica/usgm1b6j5ww0mtlhany4.jpg", caption: "Antarctica", alt: "Antarctica" },
+        { src: "v1770827108/shiplife/antarctica/qqfztbprqmzlphk4gd9r.jpg", caption: "Antarctica", alt: "Antarctica" }
+    ],
+
+    // LIFOU (2 images)
+    "lifou": [
+        { src: "v1768963793/New_Caldonia_church_t4pfw4.jpg", caption: "The church on Lifou - I visited every time we called here.", alt: "Lifou church" },
+        { src: "v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png", caption: "The guardian spider of Lifou.", alt: "Spider on Lifou" }
+    ],
+
+    // LIPARI (5 images)
+    // LIPARI, ITALY (18 images)
+    "lipari": [
+        { src: "shiplife/lipari/IMG_5152", caption: "The citadel with its cathedral and bell tower.", alt: "Citadel view" },
+        { src: "shiplife/lipari/IMG_5158", caption: "Approaching Lipari - citadel, harbor, and sailboats.", alt: "Lipari approach" },
+        { src: "shiplife/lipari/20150518_114641", caption: "Hotel Carasco on the main street.", alt: "Town street" },
+        { src: "shiplife/lipari/20150518_105629", caption: "The volcanic coastline.", alt: "Volcanic coast" },
+        { src: "shiplife/lipari/20150518_105813", caption: "Volcanic rocks and sea.", alt: "Rocky shore" },
+        { src: "shiplife/lipari/20150518_105844", caption: "Black volcanic stone.", alt: "Volcanic stone" },
+        { src: "shiplife/lipari/20150518_105846", caption: "The raw volcanic landscape.", alt: "Volcanic landscape" },
+        { src: "shiplife/lipari/20150518_105901", caption: "Waves on volcanic rock.", alt: "Waves on rocks" },
+        { src: "shiplife/lipari/20150518_113528", caption: "The citadel from a distance.", alt: "Distant citadel" },
+        { src: "shiplife/lipari/20150518_113751", caption: "Views of the harbor.", alt: "Harbor view" },
+        { src: "shiplife/lipari/20150518_113802", caption: "The citadel walls.", alt: "Citadel walls" },
+        { src: "shiplife/lipari/20150518_113822", caption: "Volcanic hills behind the town.", alt: "Volcanic hills" },
+        { src: "shiplife/lipari/20150518_113823", caption: "The harbor and hills.", alt: "Harbor hills" },
+        { src: "v1771193159/shiplife/lipari/citadel_harbor.jpg", caption: "The ancient citadel rises above Lipari's colorful harbor.", alt: "Lipari citadel and harbor" },
+        { src: "v1771193161/shiplife/lipari/island_panorama.jpg", caption: "Volcanic peaks frame the island.", alt: "Lipari island panorama" },
+        { src: "v1771193163/shiplife/lipari/citadel_from_sea.jpg", caption: "Fortified since the Bronze Age.", alt: "Lipari citadel from sea" },
+        { src: "v1771193165/shiplife/lipari/cruise_ship_arriving.jpg", caption: "The ship at anchor.", alt: "Cruise ship at Lipari" },
+        { src: "v1771193173/shiplife/lipari/citadel_silhouette.jpg", caption: "Dramatic light over the citadel.", alt: "Lipari citadel silhouette" }
+    ],
+
+    // MALTA (2 images)
+    "malta": [
+        { src: "v1767735863/IMG_1155_qtda7b.jpg", caption: "Malta Grand Harbour.", alt: "Grand Harbour" },
+        { src: "v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg", caption: "The fortress walls of Valletta.", alt: "Malta fortress" }
+    ],
+
+    // MARSEILLE (24 images)
+    "marseille": [
+        { src: "v1768951551/Screenshot_20260120_140907_Facebook_kw0y1a.jpg", caption: "The Old Port with Fort Saint-Jean.", alt: "Marseille Old Port" },
+        { src: "v1768951563/Screenshot_20260120_140553_Facebook_a4jsbz.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837553/shiplife/marseille/c9dt9sld5dgzwvlo9oay.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837558/shiplife/marseille/cdvkucyc4bj5eampcqbm.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837545/shiplife/marseille/f9sioiiu8jcvjitfqdqw.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837549/shiplife/marseille/fl1fk4fqznbdgi2awwec.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837552/shiplife/marseille/fvjgeqzbdfa3y2yflcx2.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837554/shiplife/marseille/gzdcbkpg6fzoqhwxidcg.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837547/shiplife/marseille/gzyop0bsvspmytwxqx2q.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837559/shiplife/marseille/jd4hxbgfjzvcqvlc5ohj.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837557/shiplife/marseille/jwimz4o3bma8w6cyinzv.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837550/shiplife/marseille/m1c3p0fajiscq8mvx8t0.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837554/shiplife/marseille/pefy5sikzcqidanxaxso.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837541/shiplife/marseille/qwllaefndei02pc7oz3h.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837551/shiplife/marseille/tauaprizexiv1wbsibzs.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837545/shiplife/marseille/thjtmb6sfab0qgzxqho6.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837543/shiplife/marseille/ttt7gk3pwyjscamefrfz.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837540/shiplife/marseille/vnpyaypbojwh5uykivye.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837546/shiplife/marseille/xsncy47cl9x4rk48ju2y.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837543/shiplife/marseille/yvxw0ioxng1naiucfhbv.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837555/shiplife/marseille/z0lfoso6ybgo9kfkxri5.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837544/shiplife/marseille/z9fkzcfoffxwofdeagux.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837548/shiplife/marseille/zqq4amrwpznza4zbj27a.jpg", caption: "Marseille, France", alt: "Marseille" },
+        { src: "v1770837558/shiplife/marseille/zrvikdpjvjkejnfjvsle.jpg", caption: "Marseille, France", alt: "Marseille" }
+    ],
+
+    // MELBOURNE (7 images)
+    "melbourne": [
+        { src: "v1770837564/shiplife/melbourne/cuglgnapl76cttndzci9.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837560/shiplife/melbourne/dz6d9igyhsgu3vued5ti.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837565/shiplife/melbourne/f4vupdnbu4hzsgcgawag.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837562/shiplife/melbourne/i0tik2icez4ewp9csbzk.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837563/shiplife/melbourne/iqf32qe2xbasoixlb4ne.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837563/shiplife/melbourne/izntkpgc9z0fwy69je6e.jpg", caption: "Melbourne, Australia", alt: "Melbourne" },
+        { src: "v1770837561/shiplife/melbourne/tajgbycqxbqqyo2l6bwb.jpg", caption: "Melbourne, Australia", alt: "Melbourne" }
+    ],
+
+    // MILOS (22 images)
+    "milos": [
+        { src: "shiplife/milos/img_3098", caption: "The cove - possibly the most beautiful place I've ever been.", alt: "Milos cove" },
+        { src: "shiplife/milos/img_3104", caption: "Greek Orthodox chapel overlooking the bay.", alt: "Chapel with sea" },
+        { src: "shiplife/milos/img_3107", caption: "Volcanic landscape with ancient tower ruins.", alt: "Volcanic landscape" },
+        { src: "shiplife/milos/img_3094", caption: "Ancient ruins framing the Aegean.", alt: "Ancient doorway" },
+        { src: "shiplife/milos/img_3091", caption: "Boats in the calm turquoise bay.", alt: "Harbor boats" },
+        { src: "shiplife/milos/img_3089", caption: "Crystal clear water between volcanic rocks.", alt: "Clear water" },
+        { src: "shiplife/milos/img_3087", caption: "Red volcanic cliffs and turquoise water.", alt: "Volcanic cove" },
+        { src: "shiplife/milos/img_3086", caption: "Rural Milos - hay bales and volcanic hills.", alt: "Rural landscape" },
+        { src: "shiplife/milos/img_3084", caption: "Valley view with turquoise bay below.", alt: "Valley view" },
+        { src: "shiplife/milos/img_3074", caption: "The volcanic interior stretches to the sea.", alt: "Volcanic interior" },
+        { src: "shiplife/milos/img_3071", caption: "Flower-lined lanes through the village.", alt: "Village lane" },
+        { src: "shiplife/milos/img_3069", caption: "The quiet harbor of Adamas.", alt: "Adamas harbor" },
+        { src: "shiplife/milos/img_3067", caption: "Approaching Milos by tender.", alt: "Tender approach" },
+        { src: "shiplife/milos/img_3066", caption: "First view of the volcanic island.", alt: "Island approach" },
+        { src: "shiplife/milos/img_3088", caption: "The road descending to the fishing village.", alt: "Road to cove" },
+        { src: "shiplife/milos/img_3090", caption: "Fishing boats in the colorful harbor.", alt: "Fishing boats" },
+        { src: "shiplife/milos/img_3103", caption: "Classic Cycladic architecture against volcanic hills.", alt: "White chapel" },
+        { src: "shiplife/milos/img_3115", caption: "Red and white volcanic rock formations.", alt: "Volcanic colors" },
+        { src: "shiplife/milos/img_3113", caption: "The volcanic coastline stretches into the distance.", alt: "Coastline" },
+        { src: "shiplife/milos/img_3117", caption: "Red volcanic rock with ruins on hilltop.", alt: "Volcanic road" },
+        { src: "shiplife/milos/img_3118", caption: "The volcanic palette of Milos.", alt: "Rock formations" },
+        { src: "shiplife/milos/img_3123", caption: "Dusty roads leading toward the sea.", alt: "Island road" }
+    ],
+
+    // MONTECARLO (23 images)
+    "monteCarlo": [
+        { src: "v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1769800957/PANO_20140702_094633_htivht.jpg", caption: "Monaco harbor with superyacht 'Dubai' (one of the world's largest) and Seabourn Sojourn.", alt: "Monaco harbor with superyacht Dubai" },
+        { src: "v1770837566/shiplife/monte-carlo/a1zweyidukil2lt77fxe.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1770837570/shiplife/monte-carlo/b3f3tunoxllkwdimopck.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1770837567/shiplife/monte-carlo/dpsyzab3ojvvsvrgujpm.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1770837571/shiplife/monte-carlo/fc2x8xlckax7njbkakrz.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1770837569/shiplife/monte-carlo/kybmyxtzpnymuuyguryi.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1770837572/shiplife/monte-carlo/vyquvakllz8umbve8nti.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "shiplife/monte-carlo/20150814_104716", caption: "Monaco coastline", alt: "Monaco coastline" },
+        { src: "shiplife/monte-carlo/20150814_104830", caption: "Monaco harbor view", alt: "Monaco harbor" },
+        { src: "shiplife/monte-carlo/20150815_144825", caption: "Monaco waterfront", alt: "Monaco waterfront" },
+        { src: "shiplife/monte-carlo/img_20140702_100718", caption: "Monaco streets", alt: "Monaco streets" },
+        { src: "shiplife/monte-carlo/img_20140702_104814", caption: "Monaco architecture", alt: "Monaco architecture" },
+        { src: "shiplife/monte-carlo/img_20140702_111015", caption: "Monaco scenery", alt: "Monaco scenery" },
+        { src: "shiplife/monte-carlo/img_20140702_111949", caption: "Monaco views", alt: "Monaco views" },
+        { src: "shiplife/monte-carlo/img_20140702_113929", caption: "Monaco landscape", alt: "Monaco landscape" },
+        { src: "shiplife/monte-carlo/img_4762", caption: "Harbor with mountains behind", alt: "Monaco harbor and mountains" },
+        { src: "shiplife/monte-carlo/img_4768", caption: "Monaco marina", alt: "Monaco marina" },
+        { src: "shiplife/monte-carlo/img_4771", caption: "Yachts in Monaco", alt: "Monaco yachts" },
+        { src: "shiplife/monte-carlo/img_4773", caption: "Monaco port", alt: "Monaco port" },
+        { src: "shiplife/monte-carlo/img_4775", caption: "Monaco waterfront", alt: "Monaco waterfront" },
+        { src: "shiplife/monte-carlo/img_4777", caption: "Monaco harbor scene", alt: "Monaco harbor scene" },
+        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" }
+    ],
+
+    // MONTE-CARLO (alias with hyphen)
+    "monte-carlo": [
+        { src: "v1768951563/Screenshot_20260120_140644_Facebook_gnrifv.jpg", caption: "Monte Carlo, Monaco", alt: "Monte Carlo" },
+        { src: "v1769800957/PANO_20140702_094633_htivht.jpg", caption: "Monaco harbor with superyacht 'Dubai' (one of the world's largest) and Seabourn Sojourn.", alt: "Monaco harbor with superyacht Dubai" },
+        { src: "shiplife/monte-carlo/20150814_104716", caption: "Monaco coastline", alt: "Monaco coastline" },
+        { src: "shiplife/monte-carlo/20150814_104830", caption: "Monaco harbor view", alt: "Monaco harbor" },
+        { src: "shiplife/monte-carlo/20150815_144825", caption: "Monaco waterfront", alt: "Monaco waterfront" },
+        { src: "shiplife/monte-carlo/img_20140702_100718", caption: "Monaco streets", alt: "Monaco streets" },
+        { src: "shiplife/monte-carlo/img_20140702_104814", caption: "Monaco architecture", alt: "Monaco architecture" },
+        { src: "shiplife/monte-carlo/img_20140702_111015", caption: "Monaco scenery", alt: "Monaco scenery" },
+        { src: "shiplife/monte-carlo/img_20140702_111949", caption: "Monaco views", alt: "Monaco views" },
+        { src: "shiplife/monte-carlo/img_20140702_113929", caption: "Monaco landscape", alt: "Monaco landscape" },
+        { src: "shiplife/monte-carlo/img_4762", caption: "Harbor with mountains behind", alt: "Monaco harbor and mountains" },
+        { src: "shiplife/monte-carlo/img_4768", caption: "Monaco marina", alt: "Monaco marina" },
+        { src: "shiplife/monte-carlo/img_4771", caption: "Yachts in Monaco", alt: "Monaco yachts" },
+        { src: "shiplife/monte-carlo/img_4773", caption: "Monaco port", alt: "Monaco port" },
+        { src: "shiplife/monte-carlo/img_4775", caption: "Monaco waterfront", alt: "Monaco waterfront" },
+        { src: "shiplife/monte-carlo/img_4777", caption: "Monaco harbor scene", alt: "Monaco harbor scene" },
+        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" }
+    ],
+
+    // MYKONOS (16 images)
+    "mykonos": [
+        { src: "v1770826523/shiplife/mykonos/hbes6pcjphcgezt1xlvy.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826524/shiplife/mykonos/noaaofa01droopdivryk.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826524/shiplife/mykonos/hgpknqocxauhqv7i0tmq.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826525/shiplife/mykonos/camwa0mrjnw3hujzjlvq.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826526/shiplife/mykonos/ldotfzvypy129y6eapli.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826527/shiplife/mykonos/yi2cvhffwz3ohe5kalqt.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826528/shiplife/mykonos/ekcoagit6hcet3xpqdit.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826528/shiplife/mykonos/jzobjlt4sjp7ziokxcru.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826529/shiplife/mykonos/oclhdnh7geppbrgi9rdf.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826530/shiplife/mykonos/qqqxgklduflpjm7fb5cb.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826531/shiplife/mykonos/gmoptjdb2goobzz7ien5.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826532/shiplife/mykonos/psljuqbms4fkyco6prcd.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826533/shiplife/mykonos/t6nlzzbvcwgdmf9ueuce.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826535/shiplife/mykonos/bwygc3kz6tiu83l8b8vd.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826536/shiplife/mykonos/molo0nai9lchkeygcnz0.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
+        { src: "v1770826537/shiplife/mykonos/dybbjlw0vblxes7mxcdr.jpg", caption: "Mykonos, Greece", alt: "Mykonos" }
+    ],
+
+    // NAFPLIO (6 images)
+    "nafplio": [
+        { src: "shiplife/nafplio/fortress_window_view.jpg", caption: "The view through ancient stone - 999 steps to this moment.", alt: "View through fortress window" },
+        { src: "shiplife/nafplio/town_panorama.jpg", caption: "Nafplio spreads below - Greece's first capital after independence.", alt: "Town panorama from fortress" },
+        { src: "shiplife/nafplio/palamidi_fortress.jpg", caption: "Palamidi Fortress towers 216 meters above the town.", alt: "Palamidi fortress on hill" },
+        { src: "shiplife/nafplio/guard_tower.jpg", caption: "Venetian guard tower - still standing watch.", alt: "Guard tower at fortress" },
+        { src: "shiplife/nafplio/fortress_courtyard.jpg", caption: "Inside the fortress walls - centuries of history in every stone.", alt: "Fortress courtyard" },
+        { src: "shiplife/nafplio/greek_bakery.jpg", caption: "Fuel for the 999 steps - Greek pastries are non-negotiable.", alt: "Greek bakery" }
+    ],
+
+    // ODESSA (3 images)
+    "odessa": [
+        { src: "shiplife/odessa/cathedral.jpg", caption: "Transfiguration Cathedral - the Russian Empire's grandeur lives on.", alt: "Odessa cathedral" },
+        { src: "shiplife/odessa/mozart_hotel.jpg", caption: "Near the Mozart Hotel - cafés spill onto tree-lined boulevards.", alt: "Mozart Hotel area" },
+        { src: "shiplife/odessa/cafe_scene.jpg", caption: "Watching the world go by. This was before the war.", alt: "Odessa café" }
+    ],
+
+    // PARGA (2 images)
+    "parga": [
+        { src: "shiplife/parga/colorful_waterfront.jpg", caption: "Parga tumbles to the harbor in pastel houses - pink, yellow, orange.", alt: "Parga colorful waterfront" },
+        { src: "shiplife/parga/fortress_hill.jpg", caption: "The Venetian castle watches from the headland.", alt: "Parga fortress" }
+    ],
+
+    // NEWCALEDONIA (7 images)
+    "newCaledonia": [
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/003 2.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/005.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/006.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/014 2.JPG", caption: "New Caledonia", alt: "New Caledonia" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "New Caledonia", alt: "New Caledonia" }
+    ],
+
+    // NOUMEA (10 images)
+    "noumea": [
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG", caption: "Local children, Noumea", alt: "Local children" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/003 2.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/005.JPG", caption: "Beach hut", alt: "Beach hut" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/006.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/014 2.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0091.jpg", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0092.jpg", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0094.jpg", caption: "Noumea", alt: "Noumea" },
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "Noumea", alt: "Noumea" }
+    ],
+
+    // PERTH (3 images) - Title: "Photos from Perth"
+    "perth": [
+        { src: "w_400,q_auto,f_auto/shiplife/perth/IMG_0136.jpg", caption: "Fremantle Railway Station", alt: "Fremantle" },
+        { src: "w_400,q_auto,f_auto/shiplife/perth/IMG_0137.jpg", caption: "Fremantle", alt: "Fremantle" },
+        { src: "w_400,q_auto,f_auto/shiplife/perth/IMG_0138.jpg", caption: "Fremantle", alt: "Fremantle" }
+    ],
+
+    // PETERMANN (5 images)
+    "petermann": [
+        { src: "v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg", caption: "Petermann Island view.", alt: "Petermann view" },
+        { src: "v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg", caption: "Petermann scenery.", alt: "Petermann scenery" },
+        { src: "v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg", caption: "Antarctic scenery.", alt: "Antarctic scenery" },
+        { src: "v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg", caption: "Petermann ice.", alt: "Ice" },
+        { src: "v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg", caption: "Antarctica frozen glory.", alt: "Frozen glory" }
+    ],
+
+    // PICTON (32 images)
+    "picton": [
+        { src: "v1770837609/shiplife/picton/a75jk5tqntflpk9wwcwk.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837623/shiplife/picton/e93jzdzsfali3nrbmrkq.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837620/shiplife/picton/egwtokumppj5wangnich.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837616/shiplife/picton/iax9yzzmogufdjxvwv3i.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837615/shiplife/picton/jljkwet4r8r8baovpbde.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837618/shiplife/picton/kjvlwxdyjvme7mvkvgpa.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837614/shiplife/picton/my3r0xnfpzr4yiwvukp0.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837621/shiplife/picton/nqtld1hx8k8drodcgg8m.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837622/shiplife/picton/omqcabtbadcgqkjmkjdn.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837618/shiplife/picton/pm21y4ier4ex1uma3sw9.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837619/shiplife/picton/rdljebjpoelpiktvjhyt.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837619/shiplife/picton/wihm71n9j3mfwruprt8d.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "v1770837612/shiplife/picton/ybz52qrfh9vfbmuvm8zw.jpg", caption: "Picton, New Zealand", alt: "Picton" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0421.jpg", caption: "Marlborough wine country", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0424.jpg", caption: "Marlborough vineyards", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0431.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0433.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0435.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0436.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0437.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0438.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0439.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0443.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0448.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0449.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0450.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0454.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0456.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0457.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0458.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0461.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0464.jpg", caption: "Marlborough", alt: "Marlborough" }
+    ],
+
+    // PIRAN (2 images)
+    "piran": [
+        { src: "v1768951532/Screenshot_20260120_141730_Facebook_kjfnuv.jpg", caption: "The Lipizzan horses performing classical dressage at Lipica.", alt: "Lipizzan horse performance" },
+        { src: "v1768951532/Screenshot_20260120_141721_Facebook_zyavdi.jpg", caption: "Lipica Stud Farm - home of the Lipizzan breed since 1580.", alt: "Lipica Stud Farm horse show" }
+    ],
+
+    // PONZA (49 images)
+    "ponza": [
+        { src: "v1770852875/shiplife/ponza/a3ucouhoqun8k6elddso.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852895/shiplife/ponza/ac7pyf6w9y41xqeqkg44.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852898/shiplife/ponza/aodybod7accfjt3wkwnu.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852906/shiplife/ponza/bowyjv5ffxfktmwiauca.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852884/shiplife/ponza/cc5q4tll3vuchnbosltu.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852882/shiplife/ponza/ce6touodhwwrvuh0nve0.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852901/shiplife/ponza/cgdbfoxgrwzna5xkbfmi.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852887/shiplife/ponza/cqa92fq55j51ijep1hxx.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852910/shiplife/ponza/ctpj954xpj4y9p1a9qts.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852872/shiplife/ponza/cw2pwblasvvoajo8kts2.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852888/shiplife/ponza/edhgdhpiwcinxezqmudu.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852911/shiplife/ponza/eifd8rcdjju9rvhvf8ea.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852891/shiplife/ponza/elgnorwieteuqvhauj4z.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852885/shiplife/ponza/f7mogk8torqzmeeqmow6.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852889/shiplife/ponza/glxwn3wjsmcciefyzrja.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852897/shiplife/ponza/gydanjtyia84dhohe7xb.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852878/shiplife/ponza/ihduxem2washjfnhs4lc.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852909/shiplife/ponza/ixejd5nomz55a21fmavi.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852880/shiplife/ponza/j1a0dpwdcfn8n9hsdvnd.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852871/shiplife/ponza/kiawamxoxxp1zxhudd1h.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852883/shiplife/ponza/lvatoqchnoai5lkh3bqq.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852909/shiplife/ponza/lypyfqv5nz0ykt4kxqiu.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852877/shiplife/ponza/mqrm1u4aziavjbjbvi0u.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852901/shiplife/ponza/nbqibh9ehy2zroqmxpau.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852903/shiplife/ponza/nekk2k804sr9z0dcdebl.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852899/shiplife/ponza/nkgtvjasjmpqn3onmqe9.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852883/shiplife/ponza/obdfbzutoryhba6xji79.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852905/shiplife/ponza/olb66e36vvyabawfycju.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852892/shiplife/ponza/opjmth5kgv0vlyaqrhmd.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852876/shiplife/ponza/osojhdyqtolifvzxt6eg.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852913/shiplife/ponza/ox36u4r3grwlkm1mcmhs.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852902/shiplife/ponza/py5ywkhyajtf51jhiqp9.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852890/shiplife/ponza/qft9afkfqntwtfd9em8y.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852893/shiplife/ponza/qknhscxwnmwibj5imank.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852886/shiplife/ponza/raf5ymyh93zc8chrkxwc.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852908/shiplife/ponza/sbaslr0axpuflwwvicwi.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852873/shiplife/ponza/sdny0d1kowqfbuvefwio.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852907/shiplife/ponza/syimxbg849cbrfdc8san.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852911/shiplife/ponza/tpudtkxylqbttmn7283p.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852880/shiplife/ponza/u47noigpmmeni699p2y8.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852900/shiplife/ponza/u4k77hsrayobaxwvu6xb.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852899/shiplife/ponza/ux5kttg1fplykv2ey2jb.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852881/shiplife/ponza/vd1t1ayvaoj68c903km4.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852912/shiplife/ponza/vksw7ctsemxo4qmnd7op.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852897/shiplife/ponza/vllnbnpnytgt9yk6hmf7.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852904/shiplife/ponza/z0iiwcvlop38wa8q1nok.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852879/shiplife/ponza/zkhmw9r29tt6q30gsw8n.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852905/shiplife/ponza/znlemizorwvtrgl9v14w.jpg", caption: "Ponza, Italy", alt: "Ponza" },
+        { src: "v1770852885/shiplife/ponza/zu6vbsgxivkr2pgnjwug.jpg", caption: "Ponza, Italy", alt: "Ponza" }
+    ],
+
+    // PORTVILA (1 images)
+    "portVila": [
+        { src: "v1768966739/IMG_0357_uylflq.jpg", caption: "Hull damage on Pacific Pearl - the morning after Port Vila.", alt: "Hull damage on Pacific Pearl" }
+    ],
+
+    // PORTOFINO (5 images)
+    "portofino": [
+        { src: "v1768951563/Screenshot_20260120_140713_Facebook_wjt37q.jpg", caption: "Narrow alley leading to Portofino harbor.", alt: "Portofino alley" },
+        { src: "v1769824113/walking_to_portofino_jjhdgl.jpg", caption: "The coastal path to Portofino.", alt: "Walking to Portofino" },
+        { src: "v1769823951/portofino_hike_vxjb0v.jpg", caption: "Hiking through the hills.", alt: "Hiking to Portofino" },
+        { src: "v1769824104/closer_to_portofino_zeglqn.jpg", caption: "Almost there - villas through the pines.", alt: "View approaching Portofino" },
+        { src: "v1769824456/Screen_Shot_2026-01-30_at_8.54.52_PM_omqmyt.png", caption: "Arrival at Portofino harbor.", alt: "Arrival at Portofino" }
+    ],
+
+    // PORTOVENERE (47 images)
+    "portovenere": [
+        { src: "v1768951540/Screenshot_20260120_141430_Facebook_j3ffyi.jpg", caption: "Dramatic Ligurian coastline through fortress walls.", alt: "Portovenere coastal view" },
+        { src: "v1768951540/Screenshot_20260120_141412_Facebook_u7xh1q.jpg", caption: "Brick archway framing turquoise waters.", alt: "Portovenere arch window" },
+        { src: "v1770826599/shiplife/portovenere/eiply3iz2hfrosk6bwwi.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826605/shiplife/portovenere/lmx0ulaiyykeae7ebix5.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826609/shiplife/portovenere/j3yntgmp30jncomumhfr.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826610/shiplife/portovenere/s6o7dsxuvb6hyw5hiqr1.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826611/shiplife/portovenere/ethjjhdfwburvmh4dqim.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826612/shiplife/portovenere/joneeyf3opqubnd8ogrc.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826613/shiplife/portovenere/rso0lpmhfwiv2oghaabv.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826614/shiplife/portovenere/kl9btmm1zkiz0b6s01ku.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826615/shiplife/portovenere/zmcwiwqnm5uqftokkxqy.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826616/shiplife/portovenere/tg69veprlbnhvwsmopia.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826617/shiplife/portovenere/lfuqtjl4kzibib5zrxi7.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826618/shiplife/portovenere/l35f2prmj6sqbcurrnpl.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826619/shiplife/portovenere/roz4yiajrxxicnc7jhw7.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826620/shiplife/portovenere/egj2dekg4etbeq1osdve.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826620/shiplife/portovenere/iilqdfxgkoz8kt34xlif.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826622/shiplife/portovenere/jrrk7agmnoewlip2d4sq.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826623/shiplife/portovenere/le2zrrcxiv7pqshj6ouc.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826624/shiplife/portovenere/vjyfi6cpkrbtucr7nkjw.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826625/shiplife/portovenere/k1lyizyar3b0ejlnz104.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826627/shiplife/portovenere/dp4u1izzrr7vlnrvvns8.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826628/shiplife/portovenere/kquylcftlszesiikxzof.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826628/shiplife/portovenere/dpx4peuhwa6frf71jvcs.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826629/shiplife/portovenere/kmiw5swp5aapolyz380i.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826631/shiplife/portovenere/cvvdbfyyfe1ken5y4vqt.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826632/shiplife/portovenere/frvkubrz66e2u31wlx7y.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826633/shiplife/portovenere/fopgvvkgenka9msubp3q.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826634/shiplife/portovenere/tg4cwwggvuazjl6bvcu7.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826634/shiplife/portovenere/tbkc0ugwr6oyhbm0o39z.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826635/shiplife/portovenere/xolrxcjtvhzgdwjjap2u.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826636/shiplife/portovenere/m0coib6yb2pf5flvqh9z.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826637/shiplife/portovenere/wwxqrqjqrd0vqlrgjyr6.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826638/shiplife/portovenere/q0p0zkxcutri3jzgwvfw.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826639/shiplife/portovenere/zmngkspkfduq511atmk3.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826640/shiplife/portovenere/vc43mwqoaioqdbxk9hzb.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826642/shiplife/portovenere/nxiilhsgiycoh5zoy6uo.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826643/shiplife/portovenere/bxmxwoh068eyamhpyxrr.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826644/shiplife/portovenere/jsbmsnraqx1h1fpf1gq4.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826645/shiplife/portovenere/fdwispz1tt89ydhmdwpc.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826646/shiplife/portovenere/put42cceiv7qo0tt20xz.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826647/shiplife/portovenere/qkvmqnwa82yollazrsiw.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826647/shiplife/portovenere/ikpgd2vo67ljifpcrx7k.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826648/shiplife/portovenere/fjy0e2tzn5pqc2ckfr0r.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826649/shiplife/portovenere/wuxjxxinnbf0nffnepp1.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826650/shiplife/portovenere/anc3glsjuj9fatjk0ajq.jpg", caption: "Portovenere, Italy", alt: "Portovenere" },
+        { src: "v1770826651/shiplife/portovenere/wpjgivpui5yqcb2u3v42.jpg", caption: "Portovenere, Italy", alt: "Portovenere" }
+    ],
+
+    // PROPRIANO (7 images)
+    "propriano": [
+        { src: "v1770837631/shiplife/propriano/atzvpo25p31hm9tmsgap.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837630/shiplife/propriano/k8bhpejouslrjdjxjhix.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837629/shiplife/propriano/pv25rnook7kzrbhgyvtj.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
+        { src: "v1770837625/shiplife/propriano/x9qehbc8ph5bila1wxke.jpg", caption: "Propriano, Corsica", alt: "Propriano" }
+    ],
+
+    // PYLOS (6 images)
+    "pylos": [
+        { src: "shiplife/pylos/bay_rock_formations.jpg", caption: "Navarino Bay - where Homer set King Nestor's palace.", alt: "Pylos bay with rock formations" },
+        { src: "shiplife/pylos/bay_view_flowers.jpg", caption: "The bay that launched a thousand ships - or at least inspired them.", alt: "Bay view with flowers" },
+        { src: "shiplife/pylos/fortress_walls_cannon.jpg", caption: "Ottoman cannons still guard the fortress walls.", alt: "Fortress walls with cannon" },
+        { src: "shiplife/pylos/stone_archway.jpg", caption: "Through the fortress gates - centuries of history.", alt: "Stone archway" },
+        { src: "shiplife/pylos/ruby_princess.jpg", caption: "The Ruby Princess dwarfed our tender.", alt: "Ruby Princess cruise ship" },
+        { src: "shiplife/pylos/agave_fortress.jpg", caption: "Agave plants and ancient walls - the Mediterranean blend.", alt: "Agave with fortress" }
+    ],
+
+    // RAVENNA (2 images)
+    "ravenna": [
+        { src: "shiplife/ravenna/dante_tomb.jpg", caption: "At Dante's tomb - Florence still wants him back.", alt: "Dante's tomb in Ravenna" },
+        { src: "shiplife/ravenna/tomb_interior.jpg", caption: "Inside the tomb - modest for literature's greatest voice.", alt: "Interior of Dante's tomb" }
+    ],
+
+    // RECIFE (1 images)
+    "recife": [
+        { src: "v1769826219/recife_1_swhgm9.jpg", caption: "Francisco Brennand sculpture at Parque das Esculturas.", alt: "Brennand sculpture Recife" }
+    ],
+
+    // RIOLOCAL (19 images) - Title: "More from Rio"
+    "rioLocal": [
+        { src: "v1770837645/shiplife/rio-de-janirio/aluklvwect0pmoyjj0sx.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837643/shiplife/rio-de-janirio/cokkjzbsmu4jabatnap2.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837645/shiplife/rio-de-janirio/dwp0hwxbpeu7lkmnvahn.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837654/shiplife/rio-de-janirio/el2b9khtajymdfmlsxsm.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837649/shiplife/rio-de-janirio/exz7grswfhynezhcpu9o.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837652/shiplife/rio-de-janirio/f3ljlqi2lwipx9n8jk03.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837634/shiplife/rio-de-janirio/fl4o7cjskeqeze469yox.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837633/shiplife/rio-de-janirio/gcnofx4ybufmnasvht0k.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837632/shiplife/rio-de-janirio/gitb7xickoee9o8jrouc.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837653/shiplife/rio-de-janirio/kduk9qopwwwmj4yzqump.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837656/shiplife/rio-de-janirio/kjs6jfqw1ta0guoswhd9.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837638/shiplife/rio-de-janirio/n2mrrbnynybvb5gj4oih.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837648/shiplife/rio-de-janirio/nczdvds8ivtl3bfo2x39.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837651/shiplife/rio-de-janirio/objmsagstdagxyapwkuo.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837641/shiplife/rio-de-janirio/obpty2j28mj6lvl71llp.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837642/shiplife/rio-de-janirio/pfncjqwlfe87rhdfl6pt.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837648/shiplife/rio-de-janirio/qasmirpeu9toljzdqchv.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837651/shiplife/rio-de-janirio/qw0xxuvvzr61r5wibxw8.jpg", caption: "Rio de Janeiro", alt: "Rio" },
+        { src: "v1770837647/shiplife/rio-de-janirio/sfokpr7cvr0ii5zlou12.jpg", caption: "Rio de Janeiro", alt: "Rio" }
+    ],
+
+    // ROME (31 images)
+    "rome": [
+        { src: "./images/hero/rome/27.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838027/shiplife/rome/ad2l2vhqoidqde7wkxez.jpg", caption: "Pole position!", alt: "Cruise ships lined up at port" },
+        { src: "v1770838003/shiplife/rome/afsgrck9i4z3pqn6p6wb.jpg", caption: "Train ticket to Rome", alt: "Train ticket" },
+        { src: "v1770838000/shiplife/rome/bijtthnfuufykoykynfw.jpg", caption: "Train station", alt: "Train station" },
+        { src: "v1770838019/shiplife/rome/czvvwhqqlhitdtcpi5wj.jpg", caption: "On the train to Rome", alt: "On the train" },
+        { src: "v1770838012/shiplife/rome/g6yasevgsog29es9pxeb.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838002/shiplife/rome/ddlpxcctghpyhgpcoi96.jpg", caption: "The Colosseum", alt: "Colosseum" },
+        { src: "v1770838014/shiplife/rome/gb2pbsycelkux4dnlw7h.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838012/shiplife/rome/girorp2kzs39ndiwhsab.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838001/shiplife/rome/gtuu19gmolzawnz26bkj.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838018/shiplife/rome/kxyte3ynr7355ezc3lgq.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838010/shiplife/rome/l6fqmoutdg0tnj26sjgn.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838029/shiplife/rome/msz5gefit3ybqzbch4w5.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838016/shiplife/rome/nqj9dcaop3oltbj90itr.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838015/shiplife/rome/ovpgv5wsd5mgvbijcxhj.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838021/shiplife/rome/pew93ifghhoqnuyqsieq.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838028/shiplife/rome/pfwy9pa0hz92crmpnrxo.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838025/shiplife/rome/ppbdib0pqc3nqgt5gcbl.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838006/shiplife/rome/prbj3sgvcfsnb1nlcqc9.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838005/shiplife/rome/qkzqo3aleemwzy181gnb.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838014/shiplife/rome/qsrhsjw3lpcdnbr3yv7p.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838013/shiplife/rome/quivocfdmtgthgs0iblj.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838027/shiplife/rome/tfn2fbq3d8khdqwkgbki.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838003/shiplife/rome/vtdolegstghw3pmp9hnn.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838026/shiplife/rome/w5fsw2i3qqgeqeebgehs.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838005/shiplife/rome/xn0otmdalw0ppnagpzxu.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838011/shiplife/rome/zxkjwys2pjwmq0pyxp3y.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838017/shiplife/rome/e0ameitjiqqu9e0mxi43.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838004/shiplife/rome/e9pz8a6daycsfx5pgcwr.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838016/shiplife/rome/fdgqcjiqjmlnewfg2lar.jpg", caption: "Rome, Italy", alt: "Rome" },
+        { src: "v1770838008/shiplife/rome/fh9wnajmt3blqcq0q09f.jpg", caption: "Rome, Italy", alt: "Rome" }
+    ],
+
+    // ROSES (16 images)
+    "roses": [
+        { src: "v1770838044/shiplife/roses/bbh1qvq3ny3cihcum1cn.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838030/shiplife/roses/c5mrbgbobwfsl0j0t0s0.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838041/shiplife/roses/grh6tk3w9wwjjbk9dvgd.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838046/shiplife/roses/h6pd9kdeibwsrtpjvkvu.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838034/shiplife/roses/hhbpbbjtlv69edf8qnbn.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838046/shiplife/roses/ky6hnxtrwz0vfikyygc7.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838053/shiplife/roses/nl33s5rgv5agynk0jqcz.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838043/shiplife/roses/qninavdl6btzagely7j8.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838054/shiplife/roses/rw6nc32mrn5a4pwu1y0u.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838055/shiplife/roses/uttaskgxsujixcjmapbg.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838044/shiplife/roses/vdhbn5erobhicgzxipox.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838053/shiplife/roses/vl0iuqyffdrebnosjvox.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838042/shiplife/roses/wekwjpv66w8ajt5r9sln.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838049/shiplife/roses/wezv63qx4zyr32v1fknr.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838045/shiplife/roses/y51tysignmpfftmohhsz.jpg", caption: "Roses, Spain", alt: "Roses" },
+        { src: "v1770838052/shiplife/roses/zdzdfmqaasoafgku7fkz.jpg", caption: "Roses, Spain", alt: "Roses" }
+    ],
+
+    // SANREMO (22 images)
+    "sanRemo": [
+        { src: "v1768951541/Screenshot_20260120_141120_Facebook_dfrf7x.jpg", caption: "Bike riding along the coast.", alt: "San Remo bike path" },
+        { src: "v1768951550/Screenshot_20260120_141050_Facebook_nyprnl.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951550/Screenshot_20260120_141038_Facebook_wlpgmo.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951550/Screenshot_20260120_141103_Facebook_co0qs7.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951550/Screenshot_20260120_141026_Facebook_qce8id.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951550/Screenshot_20260120_141033_Facebook_wef5eu.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951550/Screenshot_20260120_140947_Facebook_sfthro.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951551/Screenshot_20260120_140937_Facebook_lksenn.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1768951551/Screenshot_20260120_140752_Facebook_qrpdwc.jpg", caption: "Belle Époque villa on the Italian Riviera.", alt: "Riviera villa" },
+        { src: "v1770838057/shiplife/san-remo/cz9tsy4ssnq2nsolxmdb.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838067/shiplife/san-remo/ez8vae8c6h2y4rahf4ft.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838060/shiplife/san-remo/ezttguzhrbgkx2zmbol1.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838063/shiplife/san-remo/gfhve9qrryjxfktppkhe.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838059/shiplife/san-remo/glilstsiudaamnvklage.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838061/shiplife/san-remo/it2f6ebddah7txyifh6u.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838069/shiplife/san-remo/jgk0woi8eplokpghiwbl.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838056/shiplife/san-remo/omf0vh8excfj30vg0rwq.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838069/shiplife/san-remo/qusabl6k9dbykhwonzj1.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838068/shiplife/san-remo/ukuogjg02rdnfrjyxxzb.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838061/shiplife/san-remo/wygykzdvpbpidutoyy06.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838058/shiplife/san-remo/xffkmjjqu3i3nishsoi8.jpg", caption: "San Remo, Italy", alt: "San Remo" },
+        { src: "v1770838066/shiplife/san-remo/ytpb2o0fyxjv7pwcsljj.jpg", caption: "San Remo, Italy", alt: "San Remo" }
+    ],
+
+    // SANTAREM (9 images)
+    "santarem": [
+        { src: "v1770838072/shiplife/santarem/bzanlghxizkmuowugqcv.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838074/shiplife/santarem/dud701scrzqhg4yh5bgw.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838071/shiplife/santarem/is7l4twnkannboxi28q8.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838070/shiplife/santarem/kgl5xmcw23uk75eg80j7.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838075/shiplife/santarem/n46sfbmcjrlpn44evbkd.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838073/shiplife/santarem/q3trk95sdoy2fzodb8wq.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838074/shiplife/santarem/r3cpf0yw45zxiyw4mhmj.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838076/shiplife/santarem/vqzrspn7p4v0s356hvah.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
+        { src: "v1770838076/shiplife/santarem/zhx72pnexjidruci7gh0.jpg", caption: "Santarém, Brazil", alt: "Santarém" }
+    ],
+
+    // SANTORINI (25 images)
+    "santorini": [
+        { src: "v1770838080/shiplife/santorini/aljul4gojqyyxosetoik.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838099/shiplife/santorini/atjmuacvwewbfoe1lozb.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838088/shiplife/santorini/awwho28aktc8azwpcuvb.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838089/shiplife/santorini/brp403ghvlcjdpki0gcq.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838099/shiplife/santorini/cowumnv6dxghnvsqmjj6.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838079/shiplife/santorini/dquh2nezop3dis1um4u1.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838089/shiplife/santorini/efggogcfem62xajvlirc.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838084/shiplife/santorini/fhmxath81gwidfg0emov.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838098/shiplife/santorini/gbgjcehyzrcp4rsts4di.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838085/shiplife/santorini/hjpdnoxqvg1dy0uq3hki.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838081/shiplife/santorini/kvjqb5njkzf4ajqovgqa.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838079/shiplife/santorini/lid2kiifti6za5iduxco.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838090/shiplife/santorini/m7hvyfdivysaoukz8kfb.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838095/shiplife/santorini/miwbwgzp3v1pdycmaklw.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838083/shiplife/santorini/n8iqwfp9o1jorudkfa7z.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838101/shiplife/santorini/nplivsfrefbil7z6ra2x.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838077/shiplife/santorini/oab6mba3usgo1rhpboyn.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838091/shiplife/santorini/oqn0bm9w34jniaggtrip.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838084/shiplife/santorini/slqrepqm9gnhv2ysw1jg.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838092/shiplife/santorini/sxqhpo61azvlufvmetjv.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838078/shiplife/santorini/utmegpvyofhfalyziced.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838097/shiplife/santorini/wh22sx9syk7kstefgmad.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838093/shiplife/santorini/wlzawgnv53uph90tgw6x.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838100/shiplife/santorini/wmhnphgnwq6zbjxrnncw.jpg", caption: "Santorini", alt: "Santorini" },
+        { src: "v1770838086/shiplife/santorini/xdhldky9xjjrenddnlow.jpg", caption: "Santorini", alt: "Santorini" }
+    ],
+
+    // SEADAYS (2 images)
+    "seaDays": [
+        { src: "v1768532511/IMG_0240_yg0xap.jpg", caption: "Endless horizon from the deck.", alt: "Sea day view" },
+        { src: "v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg", caption: "Nothing but water and sky.", alt: "At sea" }
+    ],
+
+    // SORRENTO (26 images)
+    "sorrento": [
+        { src: "v1770838130/shiplife/sorrento/bfyur8he8gdgr1yvxz14.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838135/shiplife/sorrento/c11rg8dpshpicr1ppumj.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838137/shiplife/sorrento/eaw6ao1czqbhfrzcunlg.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838128/shiplife/sorrento/fgcgjjx5fxdjsuhzwyd6.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838131/shiplife/sorrento/fmilrqdlwh0jrfeykvvd.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838131/shiplife/sorrento/g3qpm3m0bnp8lpk7yhof.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838126/shiplife/sorrento/h4mhzjkireiule9lhdmn.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838129/shiplife/sorrento/h7ssanbqgdgfnwvsbuly.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838120/shiplife/sorrento/haokv5ztmqxr2xrgl5ut.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838129/shiplife/sorrento/hsbj0xvfm3dejwfndm0u.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838127/shiplife/sorrento/iggi1nquxwuisfjodeut.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838123/shiplife/sorrento/jjgptcnxzutn7c6u2mcs.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838136/shiplife/sorrento/k8uifdozp2xrlljww6t4.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838142/shiplife/sorrento/l60qq8jzlq4uijzeibbq.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838144/shiplife/sorrento/mausodrn7uf5eaywld0q.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838142/shiplife/sorrento/of0frgcxx0lpayoo7pwr.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838121/shiplife/sorrento/qjol6wxil9pobftly6xl.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838145/shiplife/sorrento/qoiluoynmdruvylkek3s.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838132/shiplife/sorrento/rd6fayvqsaizmthlobo9.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838134/shiplife/sorrento/rfbd3uz5ea0yjcklb7pt.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838138/shiplife/sorrento/ru59icooqtb8ndaqfkdm.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838141/shiplife/sorrento/swtfdorjixhpa7fphp56.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838140/shiplife/sorrento/v1wqdjhij3vy3tqwa6j1.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838139/shiplife/sorrento/w79bhqhry9w7uxurqvs6.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838138/shiplife/sorrento/xg7wenx9xmhdwxucdpqi.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
+        { src: "v1770838143/shiplife/sorrento/yu42pcdhnho3vofhadre.jpg", caption: "Sorrento, Italy", alt: "Sorrento" }
+    ],
+
+    // STROMBOLI (2 images)
+    "stromboli": [
+        { src: "shiplife/stromboli/volcano_smoking.jpg", caption: "Stromboli smoking - the Lighthouse of the Mediterranean for 2,000 years.", alt: "Stromboli volcano" },
+        { src: "shiplife/stromboli/watching_volcano.jpg", caption: "Watching the volcano from the deck - trusting it to behave.", alt: "Watching Stromboli" }
+    ],
+
+    // SOUTHGEORGIA (14 images) - Title: "Photo Gallery"
+    "southGeorgia": [
+        { src: "v1768798857/IMG_6834_fx0gdi.jpg", caption: "The whale catcher Petrel with elephant seals on the beach.", alt: "Petrel and seals" },
+        { src: "v1768799519/IMG_6763_sxyz76.jpg", caption: "Seabourn Quest anchored at South Georgia.", alt: "Seabourn Quest" },
+        { src: "v1768799478/IMG_6773_qijzm5.jpg", caption: "Our excursion group exploring the island.", alt: "Excursion group" },
+        { src: "v1768799453/IMG_6776_iwumrm.jpg", caption: "Elephant seal enjoying a mud bath.", alt: "Elephant seal" },
+        { src: "v1768799428/IMG_6779_ustje1.jpg", caption: "Young fur seal in the tussock grass.", alt: "Baby seal" },
+        { src: "v1768799406/IMG_6787_uceutk.jpg", caption: "Standing at Shackleton's grave.", alt: "Shackleton's grave" },
+        { src: "v1768799381/IMG_6796_dvoe4m.jpg", caption: "King penguin and fur seal with the ruins behind.", alt: "Penguin and seal" },
+        { src: "v1768799349/IMG_6805_mzyioi.jpg", caption: "Antarctic fur seal portrait.", alt: "Fur seal" },
+        { src: "v1768799322/IMG_6818_qwfqd8.jpg", caption: "The whalers' church among the rust.", alt: "Church" },
+        { src: "v1768800003/IMG_6822_bz1res.jpg", caption: "Interpretive sign: Petrel and Workshops.", alt: "Infographic Petrel" },
+        { src: "v1768799273/IMG_6824_icgv5s.jpg", caption: "Interpretive sign: Meal Plant.", alt: "Infographic Meal Plant" },
+        { src: "v1768799215/IMG_6825_copy_llb0iz.jpg", caption: "Baby elephant seal - those eyes.", alt: "Baby elephant seal" },
+        { src: "v1768799893/IMG_6827_sichau.jpg", caption: "Anchor chains and wrecked boat.", alt: "Chains and wreck" },
+        { src: "v1768799182/IMG_6830_copy_s3qmyz.jpg", caption: "King penguin near the old pier.", alt: "King penguin" }
+    ],
+
+    // STTROPEZ (7 images)
+    "stTropez": [
+        { src: "v1770826932/shiplife/st-tropez/sve0efvhgcxtzw24gzb8.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826933/shiplife/st-tropez/s0tmcuwwchbiedawytdl.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826935/shiplife/st-tropez/dcqrued9fv0yivzmugge.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826936/shiplife/st-tropez/uigff9kxp871azrxsvct.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826937/shiplife/st-tropez/xjz2ubcnhuzwe48tvrqv.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826938/shiplife/st-tropez/lekkbtf9cwl0uewqewer.jpg", caption: "St. Tropez, France", alt: "St. Tropez" },
+        { src: "v1770826939/shiplife/st-tropez/a20iloxqar6vpiqtpykw.jpg", caption: "St. Tropez, France", alt: "St. Tropez" }
+    ],
+
+    // SYDNEY (35 images)
+    "sydney": [
+        { src: "v1769030579/030_lzogz2.jpg", caption: "Standing in front of Pacific Jewel at Darling Harbour.", alt: "Derrick at Darling Harbour" },
+        { src: "v1769037282/058_yjvfcg.jpg", caption: "Pacific Jewel in dry dock, Singapore.", alt: "Jewel in dry dock" },
+        { src: "v1769037276/102_ly7caf.jpg", caption: "The Jewel getting her name.", alt: "Getting the name" },
+        { src: "v1769031185/060_mhyxga.jpg", caption: "Orient Bar under construction.", alt: "Orient Bar construction" },
+        { src: "v1769030580/025_yqujzb.jpg", caption: "The finished Orient Bar.", alt: "Orient Bar finished" },
+        { src: "v1769037257/Singapore_Panorama_ryrlix.jpg", caption: "Singapore panorama.", alt: "Singapore" },
+        { src: "v1769037266/028-4_vgjdyu.jpg", caption: "Musicians bonding in Singapore.", alt: "Musicians" },
+        { src: "v1769037267/049-2_utq92i.jpg", caption: "My passenger cabin.", alt: "Cabin" },
+        { src: "v1769037257/008-2_yeieuu.jpg", caption: "Embarkation day.", alt: "Embarkation" },
+        { src: "v1769031021/026-5_r4ehv3.jpg", caption: "Sydney Harbour panorama.", alt: "Sydney Harbour" },
+        { src: "v1769030579/035_lhmdeq.jpg", caption: "Inaugural party setup.", alt: "Party setup" },
+        { src: "v1769035906/03-opera-house-dusk_b5zehq.jpg", caption: "Opera House at dusk.", alt: "Opera House dusk" },
+        { src: "v1769030580/060_dczkem.jpg", caption: "Opera House at night.", alt: "Opera House night" },
+        { src: "v1769031099/046-2_csspcp.jpg", caption: "Deck party at night.", alt: "Deck party" },
+        { src: "v1769030579/045_ngolea.jpg", caption: "Sydney Showboat escorting us.", alt: "Showboat" },
+        { src: "v1769037243/011-8_soq3q6.jpg", caption: "Orient Bar filling up.", alt: "Bar filling" },
+        { src: "v1769037243/005-7_muz86f.jpg", caption: "First night in the Orient.", alt: "First night" },
+        { src: "v1769037243/003-7_vqkbd8.jpg", caption: "With guests.", alt: "With guests" },
+        { src: "v1769037256/001-5_exb3r6.jpg", caption: "Orient Bar full of life.", alt: "Bar full" },
+        { src: "v1769037243/004-6_gfk1p1.jpg", caption: "My first performance.", alt: "First performance" },
+        { src: "v1770838399/shiplife/sydney/c01vxlfrxadnv7ux2jgg.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838401/shiplife/sydney/ddyne4gsdc7atednrr2d.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838396/shiplife/sydney/dentbhwpdrwpolzz1kqh.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838399/shiplife/sydney/foqs8395fjho9doevbth.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838401/shiplife/sydney/fuoygld8hb87nappezil.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838400/shiplife/sydney/lfr9gpuninqbvszytpj8.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838397/shiplife/sydney/lssj6vl7luszbxbgrosz.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838397/shiplife/sydney/mccsgwwcsxzlwmvbibeo.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838402/shiplife/sydney/qq5mcjbinjpyuvqjwbnk.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838393/shiplife/sydney/ru6iv3ojocn6wnll68qg.jpg", caption: "Sydney, Australia", alt: "Sydney" },
+        { src: "v1770838403/shiplife/sydney/txh8rgzc2l1fvrkrcy3z.jpg", caption: "Last Day on board the Sun...see you in 2011!", alt: "Last day on the Sun" },
+        { src: "v1770838392/shiplife/sydney/xmfnnyu9k2hqvm4y1n03.jpg", caption: "Maritime Museum", alt: "Maritime Museum" },
+        { src: "v1770838403/shiplife/sydney/y4bpcupvswfjbhtbzqeu.jpg", caption: "Nice Boat", alt: "Nice Boat" },
+        { src: "v1770838394/shiplife/sydney/ywiheemyxie9cpd8swhm.jpg", caption: "Dance Theatre", alt: "Dance Theatre" },
+        { src: "v1770838398/shiplife/sydney/yxbevtovdanazidszvu0.jpg", caption: "Sydney Harbour Bridge", alt: "Sydney Harbour Bridge" }
+    ],
+
+    // SYMI (16 images)
+    "symi": [
+        { src: "v1770838117/shiplife/simi/bgvlvsxj2y2ye0hc3pso.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838103/shiplife/simi/ck3m3lgxm1p3bawyzwyq.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838101/shiplife/simi/i7vcer31z09h9a6ttqr2.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838107/shiplife/simi/lsdpqbrdnztqps80w6oj.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838112/shiplife/simi/m1nb8rulumcnpw8tkkw9.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838109/shiplife/simi/p23o0mabijrec7qstk3v.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838115/shiplife/simi/pp9jayfmdej1m9ncop09.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838118/shiplife/simi/rpfnihapmigeps4cqpey.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838113/shiplife/simi/s9ttxmyez1vr6de5oiuh.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838111/shiplife/simi/udymsd53dk6ly2mshaum.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838114/shiplife/simi/vcst1xyevlegh2cstwwp.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838105/shiplife/simi/vds3f0rrwgnuegb9b5q8.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838108/shiplife/simi/wkrbyvhtdtrpkelsc7li.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838110/shiplife/simi/xgbmloy1oucn1pkjk7xh.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838114/shiplife/simi/yj1yrxw9sm4rspksgeiy.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "v1770838106/shiplife/simi/ysv8rvp7cpjtyoqywvmb.jpg", caption: "Symi, Greece", alt: "Symi" }
+    ],
+
+    // SYRACUSE (35 images)
+    "syracuse": [
+        { src: "v1770852931/shiplife/syracuse/aswdr3yzebj1jdgtdiyz.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852943/shiplife/syracuse/bfbllcdynp3xntkwwguw.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852926/shiplife/syracuse/booapz96lan4plbusnxg.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852924/shiplife/syracuse/c5gdfwadjngcejs2lqms.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852928/shiplife/syracuse/hzst8cml36y1x5akvwal.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852919/shiplife/syracuse/ict6cdzzatrkg2kpyt1j.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852947/shiplife/syracuse/iegd1trarrdqtnp5x1no.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852926/shiplife/syracuse/ij0zwipunaz7z8tjqzqm.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852940/shiplife/syracuse/iscu6tkcmgvikuvbrntl.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852939/shiplife/syracuse/j3modehmffc9ivo26llj.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852936/shiplife/syracuse/jhswrjbt5iefg2tfkrzc.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852935/shiplife/syracuse/kegwivloicdflc7caw3i.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852932/shiplife/syracuse/koh3fkcj5ooua5hus3qz.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852941/shiplife/syracuse/kqtmuuy8vqowhqcyjulq.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852942/shiplife/syracuse/kxdv59xxhxopalxv2aoj.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852921/shiplife/syracuse/lk0f6cjd0lutyehiov2p.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852937/shiplife/syracuse/lsbtfswef1frhckuosvv.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852931/shiplife/syracuse/myhtg60iiavop2xivlpk.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852922/shiplife/syracuse/n31rsjiof3rkwlnolcgy.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852934/shiplife/syracuse/obyl3geijw3f3pxbxb4t.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852946/shiplife/syracuse/odyqjanfvnisiwapmwov.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852938/shiplife/syracuse/or63wu8p7npno5crm4bt.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852923/shiplife/syracuse/q8dieabqilcsvapk9txf.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852945/shiplife/syracuse/smh4gth5jh4swhnsjnco.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852933/shiplife/syracuse/tchjxkyl7g5nebf67xaq.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852948/shiplife/syracuse/trl3oz8hskyat50nzhrn.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852927/shiplife/syracuse/tua74erjo7yiqayryork.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852919/shiplife/syracuse/v4enc77o933ehdycfacy.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852925/shiplife/syracuse/vy9ljmcnhzx9tpl1dzlm.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852936/shiplife/syracuse/xhq2ggvkiqjtfgamjzoc.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852944/shiplife/syracuse/y6nhx0h9j1ievzugrah7.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852921/shiplife/syracuse/yqysx8lti47yki18lqox.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852946/shiplife/syracuse/yu0dzm9yndt5vzgtgpu9.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852928/shiplife/syracuse/ywn3qessmgwzba96aluy.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" },
+        { src: "v1770852930/shiplife/syracuse/zshfpzj6rejtl581c9hk.jpg", caption: "Syracuse, Sicily", alt: "Syracuse" }
+    ],
+
+    // TIERRADELFUEGO (20 images)
+    "tierraDelFuego": [
+        { src: "v1770838417/shiplife/tierra-del-fuego/azocrgih4bpozyoyvsiu.jpg", caption: "The jagged peaks of Tierra del Fuego", alt: "Tierra del Fuego peaks" },
+        { src: "v1770838418/shiplife/tierra-del-fuego/caadlhdxp2xsmdspgg6v.jpg", caption: "Ushuaia beneath the mountains", alt: "Ushuaia" },
+        { src: "v1770838407/shiplife/tierra-del-fuego/d1p6snyoy07g2jmphfoh.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838406/shiplife/tierra-del-fuego/drqzcgfxra4w0p6xrpgf.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838410/shiplife/tierra-del-fuego/eauaimzdkcffcku4hhda.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838413/shiplife/tierra-del-fuego/eyl82br9yo8f3zt2wkbr.jpg", caption: "View from Seabourn Quest", alt: "View from ship" },
+        { src: "v1770838415/shiplife/tierra-del-fuego/gcw3ifegvfexbxr6kw5p.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838412/shiplife/tierra-del-fuego/h9wwty8whpwiwkzmnb31.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838413/shiplife/tierra-del-fuego/ntdnpq6gkk6ebgthq5rs.jpg", caption: "Ushuaia and the airport", alt: "Ushuaia airport" },
+        { src: "v1770838405/shiplife/tierra-del-fuego/nzqhrhvpaid5jxvob4pq.jpg", caption: "Tierra del Fuego landscape", alt: "Landscape" },
+        { src: "v1770838414/shiplife/tierra-del-fuego/odt8wzc8m45rcucvu32i.jpg", caption: "The dramatic horn peak", alt: "Horn peak" },
+        { src: "v1770838408/shiplife/tierra-del-fuego/oyzvnlrszvvernmi5vn7.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838404/shiplife/tierra-del-fuego/qf6oe693dl6nv8mwz9l5.jpg", caption: "Sailing through Tierra del Fuego", alt: "Sailing" },
+        { src: "v1770838406/shiplife/tierra-del-fuego/qoop6pwusvrhts8d2m2r.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838412/shiplife/tierra-del-fuego/r8nb1tckbnzr3qexv6kp.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838418/shiplife/tierra-del-fuego/r9qf9xgyoctrgqawgc3o.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838411/shiplife/tierra-del-fuego/scrnadsfftjdxgqwbr1c.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838410/shiplife/tierra-del-fuego/yeco4urbmyiewiolzgm6.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838408/shiplife/tierra-del-fuego/z9ygnj6pujxhy883rvzm.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" },
+        { src: "v1770838416/shiplife/tierra-del-fuego/zpd4yspp6vksqlfe1d2x.jpg", caption: "Tierra del Fuego", alt: "Tierra del Fuego" }
+    ],
+
+    // TOLEDO (8 images)
+    "toledo": [
+        { src: "w_1200,q_80,f_auto/9_yr_jazzmaster_square_r8uajm", caption: "Where it all started. Me and my dad's Jazzmaster.", alt: "Age 8 with Jazzmaster" },
+        { src: "v1768520944/1000006615_kjgr2e.jpg", caption: "Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.", alt: "5th Avenue" },
+        { src: "w_1200,q_80,f_auto/lespaujr_uhaklg", caption: "My mom's '61 Gibson SG - if only I had kept it.", alt: "1961 Gibson SG" },
+        { src: "v1768520945/1000006610_rzhkon.jpg", caption: "1983. Brothers of Badness playing our high school prom in Cuyahoga Falls.", alt: "Brothers of Badness 1983" },
+        { src: "v1768521382/1000006616_gt9tju.jpg", caption: "Touched, 1991. That's me upper left with my dearest friends.", alt: "Touched 1991" },
+        { src: "v1768520944/1000006613_as1tu6.jpg", caption: "Touched at the 5 Seasons Hotel, Greensboro, NC. 1991.", alt: "Greensboro 1991" },
+        { src: "v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png", caption: "2005. The first solo gig in years. The spark.", alt: "First solo gig 2005" },
+        { src: "v1767710239/brothers_of_badness_waogg5.jpg", caption: "Brothers of Badness - the early band days.", alt: "Brothers of Badness" }
+    ],
+
+    // TONGA (15 images)
+    "tonga": [
+        { src: "v1770838433/shiplife/tonga/aielbng94fsgzye6bbdv.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838429/shiplife/tonga/bbw7mkjkjwg6vnfsr8rs.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838424/shiplife/tonga/cabzj35msernktmcz0te.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838420/shiplife/tonga/cbzlnct4qvducquqveql.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838432/shiplife/tonga/cvrqbhs9l5d7zbzntjdg.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838421/shiplife/tonga/g971pobihvgf2wnnhikq.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838422/shiplife/tonga/kl9ouncqasywt6sus1pm.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838434/shiplife/tonga/nhbayjavdf3xnbfu9q9d.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838423/shiplife/tonga/nnly70dtjigyrgor8ezl.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838431/shiplife/tonga/nwzmh0zgpkn1vcfsxwbg.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838427/shiplife/tonga/s8yoso8jecurtiraciry.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838430/shiplife/tonga/scnkke4rgh896lkith62.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838428/shiplife/tonga/vn2oy9aff4ohai3ezspl.jpg", caption: "World signpost", alt: "World signpost" },
+        { src: "v1770838426/shiplife/tonga/vu1ebmhax6tsdxacngxy.jpg", caption: "Tonga", alt: "Tonga" },
+        { src: "v1770838425/shiplife/tonga/y9fef2mveqsktdflb1au.jpg", caption: "Tonga", alt: "Tonga" }
+    ],
+
+    // USHUAIA (62 images)
+    "ushuaia": [
+        { src: "v1767738205/IMG_6691_g9fekn.jpg", caption: "Ushuaia - the southernmost city on Earth.", alt: "Ushuaia" },
+        { src: "v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg", caption: "Ushuaia harbor.", alt: "Ushuaia harbor" },
+        { src: "v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg", caption: "Mountains of Ushuaia.", alt: "Ushuaia mountains" },
+        { src: "v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg", caption: "Seabourn Quest in Ushuaia.", alt: "Seabourn Quest" },
+        { src: "v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg", caption: "Ushuaia view.", alt: "Ushuaia view" },
+        { src: "v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg", caption: "Ushuaia scenery.", alt: "Ushuaia scenery" },
+        { src: "v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg", caption: "Tierra del Fuego landscape.", alt: "Tierra del Fuego" },
+        { src: "v1770190755/IMG_6612.jpg", caption: "Monte Olivia from the water.", alt: "Monte Olivia" },
+        { src: "v1770190756/IMG_6613.jpg", caption: "Approaching Ushuaia.", alt: "Approaching Ushuaia" },
+        { src: "v1770190755/tierra_10.jpg", caption: "Tierra del Fuego.", alt: "Tierra del Fuego" },
+        { src: "v1770190756/tierra3.jpg", caption: "Tierra del Fuego scenery.", alt: "Tierra del Fuego scenery" },
+        { src: "v1770190757/IMG_6608.jpg", caption: "Patagonian mountains.", alt: "Patagonian mountains" },
+        { src: "v1770762705/IMG_6579.jpg", caption: "Ushuaia church", alt: "Church" },
+        { src: "v1770762705/IMG_6581.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762704/IMG_6582.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762697/IMG_6587.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762697/IMG_6590.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762696/IMG_6594.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762695/IMG_6595.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838448/shiplife/ushuaia/boqxyge6jdjhxiogfeum.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762693/IMG_6597.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762692/IMG_6598.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762692/IMG_6600.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838465/shiplife/ushuaia/cmnissrwkw5d8vtc6bmi.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762535/IMG_6602.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838450/shiplife/ushuaia/coyrurarbyjexhzehbmq.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838452/shiplife/ushuaia/genfusm6zytcudv1otdn.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762497/IMG_6659.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838436/shiplife/ushuaia/gvnshfiotzhrkldv4yih.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838462/shiplife/ushuaia/i7i6r7k6kltw8uthq7zt.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838449/shiplife/ushuaia/kzzmnkk65ldmjm6tbkek.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762501/IMG_6663.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838440/shiplife/ushuaia/ldiznbwnxejhaaoyaej9.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762503/IMG_6666.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762504/IMG_6667.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838466/shiplife/ushuaia/lqky0523gozez72nam8m.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762506/IMG_6669.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838439/shiplife/ushuaia/lrw9bwjthjxa1oydzar4.jpg", caption: "Ushuaia harbor", alt: "Harbor" },
+        { src: "v1770838459/shiplife/ushuaia/mvifz6zp2aqacq9d4zgp.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838453/shiplife/ushuaia/mvqxqby3nwb0llyc7qwf.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838441/shiplife/ushuaia/nfwyrjeehniaez19xc3e.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838447/shiplife/ushuaia/nyadktsdu85p6sxnyqdv.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762512/IMG_6675.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838442/shiplife/ushuaia/o3d1km27u9wzlwvf6lyr.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762514/IMG_6677.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838454/shiplife/ushuaia/ooopz64qtv6ht6useoow.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838438/shiplife/ushuaia/pcxdc1452j924dzrljic.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838464/shiplife/ushuaia/qe0dofs2lyha9nyl6xnb.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838463/shiplife/ushuaia/qxytvwsznjdxm09aweer.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838451/shiplife/ushuaia/rexzj8yrw1ca2yjd4win.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762521/IMG_6684.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838461/shiplife/ushuaia/scstcucwcqeegmnuri87.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838442/shiplife/ushuaia/tl096c0tdjighn7rz9rj.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762525/IMG_6687.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762523/IMG_6688.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838447/shiplife/ushuaia/tvh50dmsih3jofkj2yyt.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762526/IMG_6690.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838456/shiplife/ushuaia/u79xwjfn2hflvpppp2p3.jpg", caption: "Ushuaia waterfront", alt: "Waterfront" },
+        { src: "v1770762529/IMG_6692.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762529/IMG_6693.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770762532/IMG_6694.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "v1770838463/shiplife/ushuaia/ucykeqkobsfmmzo7v1kz.jpg", caption: "Ushuaia", alt: "Ushuaia" }
+    ],
+
+    // ZAKYNTHOS (4 images)
+    // ZAKYNTHOS, GREECE (18 images)
+    "zakynthos": [
+        { src: "shiplife/zakynthos/IMG_1374", caption: "First steps on Zakynthos - the Seabourn welcome tent and harbor town.", alt: "Arrival at harbor" },
+        { src: "shiplife/zakynthos/IMG_1376", caption: "Through the yacht masts, the town climbs the hillside.", alt: "Marina and hillside" },
+        { src: "shiplife/zakynthos/IMG_1380", caption: "The colorful harbor waterfront.", alt: "Harbor view" },
+        { src: "shiplife/zakynthos/IMG_1382", caption: "Palm trees and monuments in the main square.", alt: "Town square" },
+        { src: "shiplife/zakynthos/IMG_1384", caption: "Neoclassical elegance in the town center.", alt: "Statue and building" },
+        { src: "shiplife/zakynthos/IMG_1388", caption: "Wandering the waterfront.", alt: "Harbor promenade" },
+        { src: "shiplife/zakynthos/IMG_1394", caption: "Orthodox church exterior with golden mosaics.", alt: "Church facade" },
+        { src: "shiplife/zakynthos/IMG_1396", caption: "Inside the sanctuary.", alt: "Church interior" },
+        { src: "shiplife/zakynthos/IMG_1398", caption: "Centuries of devotion - frescoes and chandeliers.", alt: "Church frescoes" },
+        { src: "shiplife/zakynthos/IMG_1400", caption: "Byzantine frescoes meet colorful stained glass.", alt: "Fresco detail" },
+        { src: "shiplife/zakynthos/IMG_1402", caption: "Looking up - every surface covered in sacred art.", alt: "Church ceiling" },
+        { src: "shiplife/zakynthos/IMG_1404", caption: "Waving from the harbor - mountains and lighthouse behind.", alt: "Personal harbor shot" },
+        { src: "shiplife/zakynthos/harbor_town.jpg", caption: "Zakynthos harbor panorama.", alt: "Zakynthos harbor and town" },
+        { src: "shiplife/zakynthos/marine_park_sign.jpg", caption: "National Marine Park - home to endangered Caretta caretta sea turtles.", alt: "Marine park sign" },
+        { src: "shiplife/zakynthos/church_frescoes.jpg", caption: "Golden frescoes and stained glass.", alt: "Orthodox church interior" },
+        { src: "shiplife/zakynthos/greek_souvlaki.jpg", caption: "Souvlaki, tzatziki, oregano fries. Simple and perfect.", alt: "Greek souvlaki lunch" }
+    ],
+
+    // SORRENTO (10 images)
+    "sorrento": [
+        { src: "shiplife/sorrento/axkk4etwgqjj6it10og9.jpg", caption: "Sorrento's dramatic cliffs rise from the sea - the town perches impossibly high above.", alt: "Sorrento cliffs from ship" },
+        { src: "shiplife/sorrento/ek9karju1s4khejlkooa.jpg", caption: "Morning coffee on the aft deck - Sorrento materializing through the mist.", alt: "Ship deck view of Sorrento" },
+        { src: "shiplife/sorrento/oiwjar7gmu1yli6jh2ch.jpg", caption: "Marina Piccola - fishing boats and ferries to Capri beneath the clifftop hotels.", alt: "Sorrento marina" },
+        { src: "shiplife/sorrento/m9ye6yar1ji2ugmjysnx.jpg", caption: "Marina Grande - the old fishing village where locals still mend nets.", alt: "Marina Grande Sorrento" },
+        { src: "shiplife/sorrento/o7cokeoxnidbzdnogjol.jpg", caption: "A table for two in a hidden courtyard - stone walls hold centuries of secrets.", alt: "Sorrento restaurant" },
+        { src: "shiplife/sorrento/nomau02eakr1t4phipxw.jpg", caption: "Through the archways of the old town - every turn reveals another postcard.", alt: "Sorrento archway" },
+        { src: "shiplife/sorrento/hkcqc4vyr4e6maw2dwet.jpg", caption: "Peppers drying on a balcony, paint peeling in the sun - this is the real Sorrento.", alt: "Sorrento old building" },
+        { src: "shiplife/sorrento/rerl61mnhxwsgan9r3ha.jpg", caption: "The fruit vendors of Via San Cesareo - lemons, peppers, and limoncello at every turn.", alt: "Sorrento fruit market" },
+        { src: "shiplife/sorrento/ojgmwuuc8eokfk6kumvc.jpg", caption: "Palm trees and Vespas - Piazza Tasso is the heart of Sorrento.", alt: "Sorrento street scene" },
+        { src: "shiplife/sorrento/yzgsvz5cj8r8z1fegejf.jpg", caption: "The Winged Victory in Piazza Sant'Antonino - watching over the town since 1892.", alt: "Sorrento statue" }
+    ],
+
+    // MYKONOS (10 images)
+    "mykonos": [
+        { src: "shiplife/mykonos/kx8jgpebx94sjtsx1gv1.jpg", caption: "Paraportiani - five churches fused into one, the most photographed in Greece.", alt: "Paraportiani church Mykonos" },
+        { src: "shiplife/mykonos/ovx558ltylc7yriwzfgt.jpg", caption: "The old harbor - blue dome, turquoise water, and the whitewashed town climbing the hill.", alt: "Mykonos harbor with church" },
+        { src: "shiplife/mykonos/jl35eyujz2wy4umami8n.jpg", caption: "Mykonos Town from the water - superyachts and fishing boats share the harbor.", alt: "Mykonos harbor panorama" },
+        { src: "shiplife/mykonos/yyv27n0rvlksrcn29dgy.jpg", caption: "Geraniums spill down the whitewashed steps - the Cyclades in a single frame.", alt: "Mykonos flower alley" },
+        { src: "shiplife/mykonos/fckjor4pfggvnkwwqgqa.jpg", caption: "The maze of Chora - designed to confuse pirates, now it confuses tourists.", alt: "Mykonos white alley" },
+        { src: "shiplife/mykonos/awo8a2q078lvol6d4dop.jpg", caption: "Petros holds court - the pelican has been the island's mascot since 1958.", alt: "Petros the pelican crowd" },
+        { src: "shiplife/mykonos/vqfcb2cffwofro0yhdmb.jpg", caption: "Petros knows he's famous - and expects to be treated accordingly.", alt: "Petros pelican close-up" },
+        { src: "shiplife/mykonos/lw2ayxd2wwuetcb0jvdq.jpg", caption: "Bougainvillea cascades over a doorway - red against white, the colors of Greece.", alt: "Mykonos bougainvillea" },
+        { src: "shiplife/mykonos/foehrmtcpagjgldkjps7.jpg", caption: "The windmills of Kato Mili - grinding grain for 400 years, now grinding out postcards.", alt: "Mykonos windmills" },
+        { src: "shiplife/mykonos/iqhfkemtntijyhepfxae.jpg", caption: "Our home away from home - the ship at anchor while Mykonos beckons.", alt: "Cruise ship Mykonos" }
+    ],
+
+    // SYMI (2 images)
+    "symi": [
+        { src: "shiplife/symi/oxwhgi12m3ndimo7qvvf.jpg", caption: "Gialos harbor - neoclassical mansions in ochre, terracotta, and pastel climbing the hillside.", alt: "Symi harbor panorama" },
+        { src: "shiplife/symi/roy8jrmfqz2lpj8ony1e.jpg", caption: "The old sponge-diving boat 'Lazy Days' - a reminder of Symi's seafaring past.", alt: "Old boat in Symi" }
+    ],
+
+    // PATMOS (2 images)
+    "patmos": [
+        { src: "shiplife/patmos/rjtogrq094i7zikfirqk.jpg", caption: "Vine-covered walkway leading through Skala - Mediterranean shade at its finest.", alt: "Vine archway in Patmos" },
+        { src: "shiplife/patmos/cvjtb5bjntmwfumkwhkq.jpg", caption: "A shaded plaza with bougainvillea and an old fountain - Patmos moves at its own pace.", alt: "Patmos plaza with bougainvillea" }
+    ],
+
+    // AMALFI (2 images)
+    "amalfi": [
+        { src: "shiplife/amalfi/tkjbkyzlldxujijjv61f.jpg", caption: "Amalfi Cathedral rises 62 steps above the piazza - Arab-Norman splendor.", alt: "Amalfi Cathedral steps" },
+        { src: "shiplife/amalfi/zgex8aw8xwxipsojhwk8.jpg", caption: "A presepe built into the cliff - miniature villages are an Amalfi tradition.", alt: "Amalfi miniature village" }
+    ],
+
+    // VENICE (10 images)
+    "venice": [
+        { src: "shiplife/venice/pcrxgne7lfvltufyldao.jpg", caption: "Water taxi approaching the Seabourn Odyssey - our floating home in Venice.", alt: "Water taxi approach to ship" },
+        { src: "shiplife/venice/ubmxlfji9t6ltpugk41h.jpg", caption: "The Seabourn Odyssey at her Venice berth - one of the most coveted ports in cruising.", alt: "Seabourn at Venice dock" },
+        { src: "shiplife/venice/subvvj68x70jjlrmetwd.jpg", caption: "Seabourn Odyssey - 32,000 tons of floating luxury, but small enough to reach Venice.", alt: "Seabourn Odyssey nameplate" },
+        { src: "shiplife/venice/kososcn3vkjncknnp2xl.jpg", caption: "The Molino Stucky - a flour mill turned five-star Hilton on Giudecca.", alt: "Molino Stucky Venice" },
+        { src: "shiplife/venice/fbbnjwmpcti64jsveq24.jpg", caption: "Chiesa dei Gesuati on Zattere - Tiepolo frescoes hide behind this facade.", alt: "Gesuati church Venice" },
+        { src: "shiplife/venice/cijkma2opab2kmuspcoq.jpg", caption: "Another view of the Gesuati - Venice has more churches than you could visit in a lifetime.", alt: "Gesuati from water" },
+        { src: "shiplife/venice/dd0ujjlypmrzkcsjfysv.jpg", caption: "The Grand Canal from a water taxi - centuries of palazzos slide past.", alt: "Grand Canal buildings" },
+        { src: "shiplife/venice/cvpd1i1wb2b8ysqvpl6h.jpg", caption: "Chiesa del Redentore - Palladio's masterpiece, built to celebrate the end of the plague.", alt: "Redentore church Venice" },
+        { src: "shiplife/venice/yzwkbp6jfbopfwa1cqxg.jpg", caption: "Santa Maria della Salute - the baroque sentinel at the mouth of the Grand Canal.", alt: "Salute church Venice" },
+        { src: "shiplife/venice/memsil77lclgh3on0xqv.jpg", caption: "The Campanile and Doge's Palace from the lagoon - the view that launched a thousand paintings.", alt: "St. Mark's Venice" }
+    ],
+
+    // PIRAN (1 image)
+    "piran": [
+        { src: "shiplife/piran/law5w9oip1potgbqmfqx.jpg", caption: "Tartini Square in the rain - Venetian architecture reflected in the wet cobblestones.", alt: "Piran Tartini Square" }
+    ],
+
+    // SIBENIK (2 images)
+    "sibenik": [
+        { src: "shiplife/sibenik/cwlvbuvgwxjmslatr4ga.jpg", caption: "Seabourn Odyssey at anchor in Šibenik's sheltered channel - the Adriatic at its bluest.", alt: "Cruise ship in Sibenik" },
+        { src: "shiplife/sibenik/s7mut4x79lbuib4s1gdn.jpg", caption: "St. James Cathedral - a UNESCO masterpiece built entirely of stone, no brick or wood.", alt: "Sibenik Cathedral" }
+    ],
+
+    // NESSEBAR (1 image)
+    "nessebar": [
+        { src: "shiplife/nessebar/zckdqow7dvu9ibcq1t3d.jpg", caption: "Byzantine church ruins in old Nessebar - 3,000 years of history on a tiny peninsula.", alt: "Nessebar old church" }
+    ],
+
+    // YALTA (2 images)
+    "yalta": [
+        { src: "shiplife/yalta/ybjawxdxghoritclgpcw.jpg", caption: "Lenin still watches over Yalta - a reminder of Crimea's Soviet past.", alt: "Lenin statue in Yalta" },
+        { src: "shiplife/yalta/uh0pt3wdx4ippa8isbuy.jpg", caption: "Chekhov characters in bronze - the writer made Yalta his home in his final years.", alt: "Yalta statues" }
+    ],
+
+    // CONSTANTA (1 image)
+    "constanta": [
+        { src: "shiplife/constanta/zb6qsdfqmua8cmolkohh.jpg", caption: "Fountains in Constanța's central plaza - Romania's window to the Black Sea.", alt: "Constanta fountain plaza" }
+    ],
+
+    // BAR HARBOR (2 images)
+    "barharbor": [
+        { src: "shiplife/barharbor/gpau0huzopooqciu5wwf.jpg", caption: "Wire moose sculpture on a rooftop - quintessential New England quirk.", alt: "Bar Harbor main street with moose" },
+        { src: "shiplife/barharbor/o5ian16uvryxwzuyplre.jpg", caption: "Town pier and waterfront park - fall colors on Frenchman Bay.", alt: "Bar Harbor waterfront" }
+    ],
+
+    // USHUAIA (2 images)
+    "ushuaia": [
+        { src: "shiplife/ushuaia/khlmo3e3y8rfctmniukp.jpg", caption: "Colorful buildings and church tower - the end of the world has its own charm.", alt: "Ushuaia colorful street" },
+        { src: "shiplife/ushuaia/c7xcneiwndvbqmewhsgh.jpg", caption: "San Martín pedestrian street - shopping at the bottom of the world, mountains above.", alt: "Ushuaia main street" }
+    ],
+};
+
+// Generate gallery HTML for a location
+function generateGallery(locationId, customTitle = "More Photos") {
+    const photos = locationGalleries[locationId];
+    if (!photos || photos.length === 0) return '';
+
+    const cloudinaryBase = "https://res.cloudinary.com/de5jbyhxx/image/upload";
+
+    let galleryHTML = `
+        <div class="photo-gallery-section" id="${locationId}Gallery">
+            <div class="gallery-header" onclick="this.parentElement.classList.toggle('expanded')">
+                <span class="gallery-title">
+                    <span class="gallery-icon">📸</span>
+                    <span>${customTitle}</span>
+                    <span class="gallery-count">${photos.length} ${photos.length === 1 ? 'image' : 'images'}</span>
+                </span>
+                <span class="gallery-toggle">▼</span>
+            </div>
+            <div class="gallery-grid">`;
+
+    photos.forEach(photo => {
+        // Strip any existing transformations from src (e.g., w_400,q_auto,f_auto/)
+        // Keep only the version/path portion starting with 'v' or the public_id
+        let cleanSrc = photo.src.replace(/^[^v]*(?=v\d)/, '');
+        galleryHTML += `
+                <img src="${cloudinaryBase}/w_400,q_auto,f_auto/${cleanSrc}" class="gallery-thumb" data-caption="${photo.caption}" alt="${photo.alt}">`;
+    });
+
+    galleryHTML += `
+            </div>
+        </div>`;
+
+    return galleryHTML;
+}
+
+
+// ============================================
+// SOURCE: js/data/locations.js
+// ============================================
+
 const locations = [
     {
         id: 1,
@@ -6879,3 +8740,4749 @@ an original composition inspired by this place.
         `
     }
 ];
+
+
+// ============================================
+// SOURCE: js/utils.js
+// ============================================
+
+// ============================================
+// UTILITY FUNCTIONS
+// Helper functions used across the application
+// ============================================
+
+// Convert latitude/longitude to 3D vector position on globe
+function latLonToVector3(lat, lon, radius) {
+    const phi = (90 - lat) * (Math.PI / 180);
+    const theta = (lon + 180) * (Math.PI / 180);
+    
+    return new THREE.Vector3(
+        -radius * Math.sin(phi) * Math.cos(theta),
+        radius * Math.cos(phi),
+        radius * Math.sin(phi) * Math.sin(theta)
+    );
+}
+
+// Shortest angle difference calculation (for smooth rotation)
+function shortestAngleDiff(current, target) {
+    const diff = target - current;
+    const fullRotation = Math.PI * 2;
+    return ((diff + fullRotation / 2) % fullRotation) - fullRotation / 2;
+}
+
+// Convert longitude to target Y rotation for globe
+function getTargetY(lon) {
+    // Interpolation points mapping longitude to globe Y rotation
+    if (lon <= -83.54) {
+        return -0.10;
+    } else if (lon <= -41.89) {
+        const t = (lon - (-83.54)) / (-41.89 - (-83.54));
+        return -0.10 + t * (-0.87 - (-0.10));
+    } else if (lon <= 5.37) {
+        const t = (lon - (-41.89)) / (5.37 - (-41.89));
+        return -0.87 + t * (-1.65 - (-0.87));
+    } else if (lon <= 9.21) {
+        const t = (lon - 5.37) / (9.21 - 5.37);
+        return -1.65 + t * (4.60 - (-1.65));
+    } else if (lon <= 12.50) {
+        const t = (lon - 9.21) / (12.50 - 9.21);
+        return 4.60 + t * (4.50 - 4.60);
+    } else if (lon <= 14.51) {
+        const t = (lon - 12.50) / (14.51 - 12.50);
+        return 4.50 + t * (4.42 - 4.50);
+    } else if (lon <= 130.85) {
+        const t = (lon - 14.51) / (130.85 - 14.51);
+        return 4.42 + t * (2.44 - 4.42);
+    } else if (lon <= 151.21) {
+        const t = (lon - 130.85) / (151.21 - 130.85);
+        return 2.44 + t * (2.10 - 2.44);
+    } else if (lon <= 153.03) {
+        const t = (lon - 151.21) / (153.03 - 151.21);
+        return 2.10 + t * (8.30 - 2.10);
+    } else if (lon <= 167.90) {
+        const t = (lon - 153.03) / (167.90 - 153.03);
+        return 8.30 + t * (8.10 - 8.30);
+    } else if (lon <= 174.78) {
+        const t = (lon - 167.90) / (174.78 - 167.90);
+        return 8.10 + t * (8.01 - 8.10);
+    } else if (lon <= 176.17) {
+        const t = (lon - 174.78) / (176.17 - 174.78);
+        return 8.01 + t * (7.93 - 8.01);
+    } else {
+        const t = (lon - 176.17) / (176.91 - 176.17);
+        return 7.93 + t * (7.90 - 7.93);
+    }
+}
+
+// Calculate density factor for each location based on nearby neighbors
+function calculateDensityFactors() {
+    const densityFactors = new Map();
+    const proximityThreshold = 15;
+    const minScale = 0.5;
+    const maxNeighbors = 6;
+    
+    locations.forEach(loc => {
+        if (loc.isDoor) {
+            densityFactors.set(loc.id, 1.0);
+            return;
+        }
+        
+        let neighborCount = 0;
+        locations.forEach(other => {
+            if (other.id === loc.id) return;
+            
+            const lat1 = loc.coords[0], lon1 = loc.coords[1];
+            const lat2 = other.coords[0], lon2 = other.coords[1];
+            const dLat = Math.abs(lat2 - lat1);
+            const dLon = Math.abs(lon2 - lon1);
+            const distance = Math.sqrt(dLat * dLat + dLon * dLon);
+            
+            if (distance < proximityThreshold) {
+                neighborCount++;
+            }
+        });
+        
+        const densityRatio = Math.min(neighborCount / maxNeighbors, 1.0);
+        const scaleFactor = 1.0 - (densityRatio * (1.0 - minScale));
+        
+        densityFactors.set(loc.id, scaleFactor);
+    });
+    
+    globalDensityFactors = densityFactors;
+    return densityFactors;
+}
+
+// Calculate zoom distance for a location
+function getZoomDistanceForLocation(loc) {
+    if (!globalDensityFactors || !loc) return baseZoomInDistance;
+    
+    const doorSize = 0.040;
+    const doorZoom = baseZoomInDistance;
+    
+    let iconSize;
+    if (loc.isDoor) {
+        iconSize = doorSize;
+    } else {
+        const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
+        const manualOverride = 1.0;
+        iconSize = 0.029 * densityFactor * manualOverride;
+    }
+    
+    const fullProportionalZoom = doorZoom * (iconSize / doorSize);
+    const blendFactor = 0.5;
+    const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
+    const minZoom = 1.20;
+    
+    return Math.max(zoomDistance, minZoom);
+}
+
+// Get pinch distance for touch events
+function getPinchDistance(touches) {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+
+// ============================================
+// SOURCE: js/globe/core.js
+// ============================================
+
+// ============================================
+// GLOBE CORE MODULE
+// Three.js scene, camera, globe, and textures
+// ============================================
+
+// Three.js global objects
+let scene, camera, renderer, globe, markers = [], markerSprites = [];
+let raycaster, mouse;
+let hoveredMarker = null;
+let isUserInteracting = false;
+let targetRotationX = 0, targetRotationY = 0;
+let mouseXOnMouseDown = 0, mouseYOnMouseDown = 0;
+let targetRotationXOnMouseDown = 0, targetRotationYOnMouseDown = 0;
+
+// Intro animation state
+let introComplete = false;
+let introStartTime = null;
+let introStartY = 0;
+let introModalShown = false;
+
+// Panel state - controls whether globe auto-rotates
+let panelIsOpen = false;
+let currentLocation = null;
+
+// Flag to prevent auto-opening panel when navigating
+let skipPanelOpen = false;
+
+// Bounce animation for focused icon
+let bouncingMarkerId = null;
+let bounceStartTime = null;
+
+// Zoom transition animation
+let isTransitioning = false;
+let transitionStartTime = null;
+let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
+let targetCameraZ = 1.8;
+let currentZoomInDistance = baseZoomInDistance;
+
+// Celebration sequence state
+let celebrationInProgress = false;
+
+// Auto-open panel after spin completes (for guided door navigation)
+let autoOpenPanel = false;
+
+// Store density factors globally for zoom calculations
+let globalDensityFactors = null;
+
+// Pending rotation/zoom targets
+let pendingRotationY = 0;
+let pendingRotationX = 0;
+let pendingLocation = null;
+let pendingZoomLocation = null;
+
+// DOM elements
+const tooltip = document.getElementById('tooltip');
+const sidePanel = document.getElementById('sidePanel');
+
+// ============================================
+// PROGRESS TRACKING (localStorage)
+// ============================================
+
+function getProgress() {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored ? JSON.parse(stored) : { doorsVisited: [], introSeen: false, guidedComplete: false };
+}
+
+function saveProgress(progress) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
+}
+
+function markDoorVisited(locationTitle) {
+    const progress = getProgress();
+    if (!progress.doorsVisited.includes(locationTitle)) {
+        progress.doorsVisited.push(locationTitle);
+        saveProgress(progress);
+    }
+    return allDoorsVisited();
+}
+
+function allDoorsVisited() {
+    const progress = getProgress();
+    return DOORS_REQUIRED.every(d => progress.doorsVisited.includes(d));
+}
+
+function markGuidedComplete() {
+    const progress = getProgress();
+    progress.guidedComplete = true;
+    saveProgress(progress);
+}
+
+function isGuidedComplete() {
+    return getProgress().guidedComplete;
+}
+
+
+// Track which textures are currently being loaded to prevent duplicate requests
+const textureLoadingPromises = {};
+
+// Lazy load a texture for a specific location when needed
+async function lazyLoadTexture(locationTitle, marker) {
+    // Already loaded?
+    if (locationTextures[locationTitle]) {
+        return locationTextures[locationTitle];
+    }
+
+    // Already loading? Return the existing promise
+    if (textureLoadingPromises[locationTitle]) {
+        return textureLoadingPromises[locationTitle];
+    }
+
+    // Check if this location has a custom texture URL
+    const imageUrl = locationPortholeURLs[locationTitle];
+
+    if (!imageUrl) {
+        return null; // No custom texture for this location
+    }
+
+    console.log(`Lazy loading texture for: ${locationTitle}`);
+
+    // Create the loading promise
+    textureLoadingPromises[locationTitle] = (async () => {
+        let texture = null;
+
+        if (imageUrl) {
+            texture = await loadTextureWithTransparentBlack(imageUrl, 65);
+        }
+
+        if (texture) {
+            locationTextures[locationTitle] = texture;
+
+            // Update the marker's material if provided
+            if (marker) {
+                updateMarkerWithTexture(marker, texture, locationTitle);
+            }
+        }
+
+        // Clean up loading promise
+        delete textureLoadingPromises[locationTitle];
+
+        return texture;
+    })();
+
+    return textureLoadingPromises[locationTitle];
+}
+
+// Update a marker's material with a newly loaded texture
+function updateMarkerWithTexture(marker, texture, locationTitle) {
+    if (!marker || !texture) return;
+
+    if (marker.material) {
+        marker.material.map = texture;
+        marker.material.needsUpdate = true;
+    }
+
+    // AI textures are square - adjust scale from canvas aspect ratio
+    const baseSize = marker.userData.baseSize;
+    if (baseSize) {
+        marker.scale.set(baseSize * 2, baseSize * 2, 1);
+    }
+
+    marker.userData.useAIPorthole = true;
+    marker.userData.textureLoaded = true;
+    console.log(`Applied texture to marker: ${locationTitle}`);
+}
+
+// Load image and make black pixels transparent (outside circular porthole)
+function loadTextureWithTransparentBlack(url, threshold = 60) {
+    return new Promise((resolve) => {
+        const timeout = setTimeout(() => {
+            console.warn('Image load timeout:', url);
+            resolve(null);
+        }, 10000);
+        
+        const img = new Image();
+        img.crossOrigin = 'anonymous';
+        img.onload = function() {
+            clearTimeout(timeout);
+            const canvas = document.createElement('canvas');
+            canvas.width = img.width;
+            canvas.height = img.height;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0);
+            
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            const data = imageData.data;
+            
+            const cx = canvas.width / 2;
+            const cy = canvas.height / 2;
+            const portholeRadius = Math.min(cx, cy) * 0.88;
+            
+            for (let y = 0; y < canvas.height; y++) {
+                for (let x = 0; x < canvas.width; x++) {
+                    const i = (y * canvas.width + x) * 4;
+                    const r = data[i];
+                    const g = data[i + 1];
+                    const b = data[i + 2];
+                    
+                    const dx = x - cx;
+                    const dy = y - cy;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (r < threshold && g < threshold && b < threshold && dist > portholeRadius) {
+                        data[i + 3] = 0;
+                    }
+                }
+            }
+            
+            ctx.putImageData(imageData, 0, 0);
+            
+            const texture = new THREE.CanvasTexture(canvas);
+            texture.needsUpdate = true;
+            console.log('Loaded with circular transparency:', url);
+            resolve(texture);
+        };
+        img.onerror = () => {
+            clearTimeout(timeout);
+            console.error('Failed to load:', url);
+            resolve(null);
+        };
+        img.src = url;
+    });
+}
+
+async function init() {
+    // Preload AI porthole textures - priority locations first, then rest
+    if (USE_AI_PORTHOLES) {
+        // Priority: Three doors + Australia (visible early in the experience)
+        const priorityLocations = [
+            "Toledo, Ohio",
+            "Darwin, Australia",
+            "Auckland, New Zealand",
+            "Sydney, Australia",
+            "Melbourne, Australia",
+            "Brisbane, Australia",
+            "Perth, Australia",
+            "Adelaide, Australia",
+            "Hobart, Tasmania",
+            "Airlie Beach, Australia",
+            "Broome, Australia"
+        ];
+
+        // Load priority locations first
+        console.log('Loading priority textures (doors + Australia)...');
+        const priorityPromises = priorityLocations
+            .filter(name => locationPortholeURLs[name])
+            .map(async (name) => {
+                try {
+                    const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
+                    if (texture) {
+                        locationTextures[name] = texture;
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${name}:`, e.message);
+                }
+            });
+
+        await Promise.all(priorityPromises);
+        console.log('Priority textures loaded');
+
+        // Load remaining textures - all in parallel with 20s total timeout
+        const remainingLocations = Object.keys(locationPortholeURLs)
+            .filter(name => !priorityLocations.includes(name));
+
+        console.log(`Loading ${remainingLocations.length} remaining textures...`);
+
+        const remainingPromises = remainingLocations.map(async (name) => {
+            try {
+                const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
+                if (texture) {
+                    locationTextures[name] = texture;
+                }
+            } catch (e) {
+                console.warn(`Failed to load ${name}:`, e.message);
+            }
+        });
+
+        // Wait for all with 20s timeout
+        await Promise.race([
+            Promise.all(remainingPromises),
+            new Promise(resolve => setTimeout(resolve, 20000))
+        ]);
+        console.log('All textures loaded (or timed out)');
+
+    }
+    
+    // Scene
+    scene = new THREE.Scene();
+    
+    // Camera
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 8;
+    
+    // Initialize rotation targets to Toledo
+    targetRotationY = TOLEDO_Y;
+    targetRotationX = TOLEDO_X;
+
+    // Renderer
+    renderer = new THREE.WebGLRenderer({
+        antialias: true,
+        alpha: true,
+        premultipliedAlpha: false,  // Fix iPad transparency
+        powerPreference: 'high-performance'
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setClearColor(0x0a1628, 1); // Match body background
+    document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+    // Handle WebGL context loss/restore
+    renderer.domElement.addEventListener('webglcontextlost', (e) => {
+        e.preventDefault();
+        console.warn('WebGL context lost');
+    });
+    renderer.domElement.addEventListener('webglcontextrestored', () => {
+        console.log('WebGL context restored');
+    });
+
+    // Raycaster for interaction
+    raycaster = new THREE.Raycaster();
+    mouse = new THREE.Vector2();
+
+    // Create globe
+    createGlobe();
+    
+    // Create markers
+    createMarkers();
+
+    // Lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.35);
+    scene.add(ambientLight);
+
+    const sunLight = new THREE.DirectionalLight(0xfff5e6, 1.2);
+    sunLight.position.set(5, 2, 5);
+    scene.add(sunLight);
+    
+    const fillLight = new THREE.DirectionalLight(0x4477aa, 0.25);
+    fillLight.position.set(-5, -1, -5);
+    scene.add(fillLight);
+    
+    const rimLight = new THREE.DirectionalLight(0x88aaff, 0.15);
+    rimLight.position.set(0, 5, -3);
+    scene.add(rimLight);
+
+    // Event listeners
+    renderer.domElement.addEventListener('mousedown', onMouseDown, false);
+    renderer.domElement.addEventListener('mousemove', onMouseMove, false);
+    renderer.domElement.addEventListener('mouseup', onMouseUp, false);
+    renderer.domElement.addEventListener('mouseleave', onMouseUp, false);
+    renderer.domElement.addEventListener('wheel', onMouseWheel, false);
+    renderer.domElement.addEventListener('click', onClick, false);
+    window.addEventListener('resize', onWindowResize, false);
+
+    // Touch events
+    renderer.domElement.addEventListener('touchstart', onTouchStart, { passive: false });
+    renderer.domElement.addEventListener('touchmove', onTouchMove, { passive: false });
+    renderer.domElement.addEventListener('touchend', onTouchEnd, false);
+    
+    // Tap detection for mobile
+    let touchStartTime;
+    let touchStartPos;
+    renderer.domElement.addEventListener('touchstart', (e) => {
+        touchStartTime = Date.now();
+        touchStartPos = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    }, false);
+    renderer.domElement.addEventListener('touchend', (e) => {
+        const touchDuration = Date.now() - touchStartTime;
+        const touch = e.changedTouches[0];
+        const moveDistance = Math.sqrt(
+            Math.pow(touch.clientX - touchStartPos.x, 2) + 
+            Math.pow(touch.clientY - touchStartPos.y, 2)
+        );
+        if (touchDuration < 300 && moveDistance < 10) {
+            onTouchTap(e);
+        }
+    }, false);
+
+    // Build location list
+    buildLocationList();
+
+    // Hide loading screen
+    setTimeout(() => {
+        document.getElementById('loading').classList.add('hidden');
+    }, 1000);
+
+    // Start animation
+    animate();
+
+    // Stars
+    initStars();
+
+}
+
+// Load textures progressively in background - staggered over 30 seconds for smooth globe animation
+function createGlobe() {
+    const textureLoader = new THREE.TextureLoader();
+
+    const earthTexture = textureLoader.load(
+        'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+    );
+    earthTexture.colorSpace = THREE.SRGBColorSpace;
+
+    console.log('Earth texture initialized');
+
+    const bumpMap = textureLoader.load(
+        'https://unpkg.com/three-globe/example/img/earth-topology.png'
+    );
+
+    const specularMap = textureLoader.load(
+        'https://unpkg.com/three-globe/example/img/earth-water.png'
+    );
+
+    const geometry = new THREE.SphereGeometry(1, 128, 128);
+
+    const material = new THREE.MeshPhongMaterial({
+        map: earthTexture,
+        bumpMap: bumpMap,
+        bumpScale: 0.015,
+        specularMap: specularMap,
+        specular: new THREE.Color(0x666666),
+        shininess: 25
+    });
+
+    globe = new THREE.Mesh(geometry, material);
+    scene.add(globe);
+
+    // Inner atmosphere
+    const innerAtmoGeometry = new THREE.SphereGeometry(1.01, 64, 64);
+    const innerAtmoMaterial = new THREE.ShaderMaterial({
+        vertexShader: `
+            varying vec3 vNormal;
+            varying vec3 vPosition;
+            void main() {
+                vNormal = normalize(normalMatrix * normal);
+                vPosition = position;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            varying vec3 vNormal;
+            void main() {
+                float intensity = pow(0.7 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.0);
+                vec3 atmosphereColor = mix(vec3(0.3, 0.6, 1.0), vec3(0.5, 0.8, 1.0), intensity);
+                gl_FragColor = vec4(atmosphereColor, intensity * 1.2);
+            }
+        `,
+        blending: THREE.AdditiveBlending,
+        side: THREE.BackSide,
+        transparent: true,
+        depthWrite: false
+    });
+    const innerAtmosphere = new THREE.Mesh(innerAtmoGeometry, innerAtmoMaterial);
+    globe.add(innerAtmosphere);
+    
+    // Middle atmosphere
+    const midAtmoGeometry = new THREE.SphereGeometry(1.08, 64, 64);
+    const midAtmoMaterial = new THREE.ShaderMaterial({
+        vertexShader: `
+            varying vec3 vNormal;
+            void main() {
+                vNormal = normalize(normalMatrix * normal);
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            varying vec3 vNormal;
+            void main() {
+                float intensity = pow(0.68 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.5);
+                vec3 glowColor = vec3(0.35, 0.55, 0.95);
+                gl_FragColor = vec4(glowColor, intensity * 0.7);
+            }
+        `,
+        blending: THREE.AdditiveBlending,
+        side: THREE.BackSide,
+        transparent: true,
+        depthWrite: false
+    });
+    const midAtmosphere = new THREE.Mesh(midAtmoGeometry, midAtmoMaterial);
+    globe.add(midAtmosphere);
+    
+    // Outer atmosphere
+    const outerAtmoGeometry = new THREE.SphereGeometry(1.18, 64, 64);
+    const outerAtmoMaterial = new THREE.ShaderMaterial({
+        vertexShader: `
+            varying vec3 vNormal;
+            void main() {
+                vNormal = normalize(normalMatrix * normal);
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        `,
+        fragmentShader: `
+            varying vec3 vNormal;
+            void main() {
+                float intensity = pow(0.55 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 4.0);
+                vec3 glowColor = vec3(0.25, 0.4, 0.8);
+                gl_FragColor = vec4(glowColor, intensity * 0.35);
+            }
+        `,
+        blending: THREE.AdditiveBlending,
+        side: THREE.BackSide,
+        transparent: true,
+        depthWrite: false
+    });
+    const outerAtmosphere = new THREE.Mesh(outerAtmoGeometry, outerAtmoMaterial);
+    globe.add(outerAtmosphere);
+}
+
+
+// ============================================
+// SOURCE: js/globe/markers.js
+// ============================================
+
+const markerAnimations = new Map();
+
+// Dimming state for guided experience
+let markersAreDimmed = true; // Start dimmed until all doors visited
+
+// Color utility functions
+function lightenColor(hex, percent) {
+    const num = parseInt(hex.replace('#', ''), 16);
+    const amt = Math.round(2.55 * percent);
+    const R = Math.min(255, (num >> 16) + amt);
+    const G = Math.min(255, ((num >> 8) & 0x00FF) + amt);
+    const B = Math.min(255, (num & 0x0000FF) + amt);
+    return `rgb(${R}, ${G}, ${B})`;
+}
+
+function darkenColor(hex, percent) {
+    const num = parseInt(hex.replace('#', ''), 16);
+    const amt = Math.round(2.55 * percent);
+    const R = Math.max(0, (num >> 16) - amt);
+    const G = Math.max(0, ((num >> 8) & 0x00FF) - amt);
+    const B = Math.max(0, (num & 0x0000FF) - amt);
+    return `rgb(${R}, ${G}, ${B})`;
+}
+
+// Draw iris aperture
+function drawIrisAperture(ctx, cx, cy, radius, closedAmount) {
+    if (closedAmount <= 0) return;
+    
+    const blades = 8;
+    const maxAngle = Math.PI / blades;
+    
+    ctx.save();
+    ctx.translate(cx, cy);
+    
+    for (let i = 0; i < blades; i++) {
+        const angle = (i / blades) * Math.PI * 2;
+        
+        ctx.save();
+        ctx.rotate(angle);
+        
+        const bladeOpenAngle = maxAngle * (1 - closedAmount * 0.95);
+        const bladeLength = radius * 1.3;
+        
+        // Smoky glass blade
+        const gradient = ctx.createLinearGradient(0, 0, bladeLength, 0);
+        gradient.addColorStop(0, 'rgba(40, 55, 75, 0.95)');
+        gradient.addColorStop(0.5, 'rgba(30, 45, 65, 0.9)');
+        gradient.addColorStop(1, 'rgba(20, 35, 55, 0.85)');
+        
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.arc(0, 0, bladeLength, -bladeOpenAngle, bladeOpenAngle);
+        ctx.closePath();
+        ctx.fill();
+        
+        // Blade edge highlight
+        ctx.strokeStyle = 'rgba(100, 130, 170, 0.3)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(Math.cos(bladeOpenAngle) * bladeLength, Math.sin(bladeOpenAngle) * bladeLength);
+        ctx.stroke();
+        
+        ctx.restore();
+    }
+    
+    // Center overlay when mostly closed
+    if (closedAmount > 0.3) {
+        const centerGrad = ctx.createRadialGradient(0, 0, 0, 0, 0, radius * (1 - closedAmount + 0.3));
+        centerGrad.addColorStop(0, 'rgba(35, 50, 70, 0.9)');
+        centerGrad.addColorStop(1, 'rgba(35, 50, 70, 0)');
+        ctx.fillStyle = centerGrad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    
+    ctx.restore();
+}
+
+// Draw brass porthole frame
+function drawPortholeFrame(ctx, cx, cy, radius) {
+    // Minimal elegant brass ring
+    const brassGrad = ctx.createLinearGradient(cx - radius, cy - radius, cx + radius, cy + radius);
+    brassGrad.addColorStop(0, '#e8c9a0');
+    brassGrad.addColorStop(0.3, '#d4af37');
+    brassGrad.addColorStop(0.7, '#b8956a');
+    brassGrad.addColorStop(1, '#8a6a3a');
+    
+    ctx.strokeStyle = brassGrad;
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.stroke();
+    
+    // Subtle highlight
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius - 1, -Math.PI * 0.7, -Math.PI * 0.2);
+    ctx.stroke();
+}
+
+// Draw brass base
+function drawPortholeBase(ctx, cx, baseY, isDoor) {
+    const baseWidth = isDoor ? 50 : 44;
+    
+    // Brass curved base
+    const brassGrad = ctx.createLinearGradient(0, baseY, 0, baseY + 16);
+    brassGrad.addColorStop(0, '#e8c9a0');
+    brassGrad.addColorStop(0.2, '#d4a574');
+    brassGrad.addColorStop(0.6, '#b8956a');
+    brassGrad.addColorStop(1, '#6a4a2a');
+    
+    ctx.fillStyle = brassGrad;
+    ctx.beginPath();
+    ctx.moveTo(cx - baseWidth / 2, baseY);
+    ctx.quadraticCurveTo(cx, baseY + 18, cx + baseWidth / 2, baseY);
+    ctx.lineTo(cx + baseWidth / 2 - 5, baseY + 12);
+    ctx.quadraticCurveTo(cx, baseY + 22, cx - baseWidth / 2 + 5, baseY + 12);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Highlight
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+    ctx.beginPath();
+    ctx.ellipse(cx, baseY + 4, baseWidth * 0.25, 3, 0, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+// Draw 3D perspective door (for door locations)
+function draw3DDoor(ctx, cx, cy, doorColor, openAmount) {
+    if (openAmount <= 0) return;
+    
+    ctx.save();
+    ctx.globalAlpha = openAmount;
+    ctx.translate(cx, cy);
+    
+    // Door shadow (offset for 3D effect)
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+    ctx.beginPath();
+    ctx.moveTo(-5, -20);
+    ctx.lineTo(16, -18);
+    ctx.lineTo(16, 20);
+    ctx.lineTo(-5, 22);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Door face (angled)
+    const doorGrad = ctx.createLinearGradient(-12, 0, 10, 0);
+    doorGrad.addColorStop(0, lightenColor(doorColor, 20));
+    doorGrad.addColorStop(0.5, doorColor);
+    doorGrad.addColorStop(1, darkenColor(doorColor, 30));
+    ctx.fillStyle = doorGrad;
+    ctx.beginPath();
+    ctx.moveTo(-12, -20);
+    ctx.lineTo(10, -18);
+    ctx.lineTo(10, 20);
+    ctx.lineTo(-12, 22);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Door edge (depth)
+    ctx.fillStyle = darkenColor(doorColor, 50);
+    ctx.beginPath();
+    ctx.moveTo(10, -18);
+    ctx.lineTo(16, -16);
+    ctx.lineTo(16, 18);
+    ctx.lineTo(10, 20);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Panel insets - top
+    ctx.fillStyle = darkenColor(doorColor, 20);
+    ctx.beginPath();
+    ctx.moveTo(-8, -16);
+    ctx.lineTo(6, -14);
+    ctx.lineTo(6, -4);
+    ctx.lineTo(-8, -6);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Panel insets - bottom
+    ctx.beginPath();
+    ctx.moveTo(-8, 2);
+    ctx.lineTo(6, 4);
+    ctx.lineTo(6, 16);
+    ctx.lineTo(-8, 18);
+    ctx.closePath();
+    ctx.fill();
+    
+    // Panel highlights
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.15)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-8, -16);
+    ctx.lineTo(6, -14);
+    ctx.moveTo(-8, 2);
+    ctx.lineTo(6, 4);
+    ctx.stroke();
+    
+    // Frame
+    ctx.strokeStyle = '#d4a574';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(-14, -22);
+    ctx.lineTo(12, -20);
+    ctx.lineTo(12, 22);
+    ctx.lineTo(-14, 24);
+    ctx.closePath();
+    ctx.stroke();
+    
+    // Frame highlight
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.2)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-14, -22);
+    ctx.lineTo(12, -20);
+    ctx.stroke();
+    
+    // Glowing knob
+    ctx.shadowColor = '#ffd700';
+    ctx.shadowBlur = 8;
+    ctx.fillStyle = '#ffd700';
+    ctx.beginPath();
+    ctx.arc(6, 2, 3, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Knob highlight
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+    ctx.beginPath();
+    ctx.arc(5, 1, 1.2, 0, Math.PI * 2);
+    ctx.fill();
+    
+    ctx.restore();
+}
+
+// Draw regular icon content (emoji)
+function drawRegularIcon(ctx, cx, cy, config, openAmount) {
+    if (openAmount <= 0) return;
+    
+    ctx.save();
+    ctx.globalAlpha = openAmount;
+    
+    // Use the same icon rendering as the sidebar
+    const color = config.color || '#d4a574';
+    const accent = config.accent || '#8b6914';
+    const symbol = config.symbol || 'default';
+    
+    // Scale icons to 150% for better visibility
+    ctx.translate(cx, cy);
+    ctx.scale(1.5, 1.5);
+    ctx.translate(-cx, -cy);
+    
+    renderIconSymbol(ctx, cx, cy, symbol, color, accent);
+    
+    ctx.restore();
+}
+
+// Shared icon rendering function (used by both globe and sidebar)
+function renderIconSymbol(ctx, cx, cy, symbol, color, accent) {
+    switch(symbol) {
+        case 'steel-door':
+            // Heavy steel door with padlock
+            ctx.fillStyle = '#2d3748';
+            ctx.fillRect(cx - 14, cy - 18, 28, 36);
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 11, cy - 15, 22, 30);
+            ctx.strokeStyle = '#2d3748';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx - 11, cy - 5);
+            ctx.lineTo(cx + 11, cy - 5);
+            ctx.moveTo(cx - 11, cy + 5);
+            ctx.lineTo(cx + 11, cy + 5);
+            ctx.stroke();
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 5, cy - 2, 10, 10);
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 4, 4, Math.PI, 0);
+            ctx.stroke();
+            ctx.fillStyle = '#1a1a1a';
+            ctx.beginPath();
+            ctx.arc(cx, cy + 3, 2, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'wood-door':
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 12, cy - 16, 24, 32);
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.strokeRect(cx - 10, cy - 14, 20, 28);
+            ctx.beginPath();
+            ctx.arc(cx + 6, cy, 3, 0, Math.PI * 2);
+            ctx.stroke();
+            break;
+            
+        case 'gold-door':
+            const goldGrad = ctx.createLinearGradient(cx - 12, 0, cx + 12, 0);
+            goldGrad.addColorStop(0, color);
+            goldGrad.addColorStop(0.5, accent);
+            goldGrad.addColorStop(1, color);
+            ctx.fillStyle = goldGrad;
+            ctx.fillRect(cx - 12, cy - 16, 24, 32);
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.strokeRect(cx - 12, cy - 16, 24, 32);
+            break;
+            
+        case 'crown':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy + 8);
+            ctx.lineTo(cx - 10, cy - 8);
+            ctx.lineTo(cx - 5, cy);
+            ctx.lineTo(cx, cy - 12);
+            ctx.lineTo(cx + 5, cy);
+            ctx.lineTo(cx + 10, cy - 8);
+            ctx.lineTo(cx + 14, cy + 8);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 12, 3, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'sunrise':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 5, 12, Math.PI, 0);
+            ctx.fill();
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 7; i++) {
+                const angle = Math.PI + (i / 6) * Math.PI;
+                ctx.beginPath();
+                ctx.moveTo(cx + Math.cos(angle) * 14, cy + 5 + Math.sin(angle) * 14);
+                ctx.lineTo(cx + Math.cos(angle) * 20, cy + 5 + Math.sin(angle) * 20);
+                ctx.stroke();
+            }
+            break;
+            
+        case 'fireworks':
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 8; i++) {
+                const angle = (i / 8) * Math.PI * 2;
+                ctx.beginPath();
+                ctx.moveTo(cx + Math.cos(angle) * 4, cy + Math.sin(angle) * 4);
+                ctx.lineTo(cx + Math.cos(angle) * 14, cy + Math.sin(angle) * 14);
+                ctx.stroke();
+            }
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 4, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'star':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            for (let i = 0; i < 5; i++) {
+                const outerAngle = (i / 5) * Math.PI * 2 - Math.PI / 2;
+                const innerAngle = ((i + 0.5) / 5) * Math.PI * 2 - Math.PI / 2;
+                if (i === 0) ctx.moveTo(cx + Math.cos(outerAngle) * 14, cy + Math.sin(outerAngle) * 14);
+                else ctx.lineTo(cx + Math.cos(outerAngle) * 14, cy + Math.sin(outerAngle) * 14);
+                ctx.lineTo(cx + Math.cos(innerAngle) * 6, cy + Math.sin(innerAngle) * 6);
+            }
+            ctx.closePath();
+            ctx.fill();
+            break;
+            
+        case 'car':
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 14, cy - 4, 28, 10);
+            ctx.fillRect(cx - 8, cy - 10, 16, 8);
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 8, cy + 8, 4, 0, Math.PI * 2);
+            ctx.arc(cx + 8, cy + 8, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#a0d8ef';
+            ctx.fillRect(cx - 6, cy - 8, 12, 5);
+            break;
+            
+        case 'fortress':
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 14, cy - 4, 28, 18);
+            ctx.fillRect(cx - 16, cy - 10, 8, 10);
+            ctx.fillRect(cx + 8, cy - 10, 8, 10);
+            ctx.fillRect(cx - 4, cy - 14, 8, 14);
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 3, cy + 4, 6, 10);
+            break;
+            
+        case 'column':
+        case 'arch':
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 12, cy - 14, 6, 28);
+            ctx.fillRect(cx + 6, cy - 14, 6, 28);
+            ctx.fillRect(cx - 14, cy - 16, 28, 4);
+            ctx.fillRect(cx - 14, cy + 12, 28, 4);
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 8, 8, Math.PI, 0);
+            ctx.fill();
+            break;
+            
+        case 'mountain':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 18, cy + 14);
+            ctx.lineTo(cx - 4, cy - 12);
+            ctx.lineTo(cx + 2, cy - 4);
+            ctx.lineTo(cx + 10, cy - 14);
+            ctx.lineTo(cx + 18, cy + 14);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy - 12);
+            ctx.lineTo(cx - 8, cy - 4);
+            ctx.lineTo(cx, cy - 6);
+            ctx.lineTo(cx + 2, cy - 4);
+            ctx.closePath();
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(cx + 10, cy - 14);
+            ctx.lineTo(cx + 6, cy - 6);
+            ctx.lineTo(cx + 14, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            break;
+            
+        case 'shark':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy);
+            ctx.quadraticCurveTo(cx, cy - 10, cx + 16, cy);
+            ctx.quadraticCurveTo(cx, cy + 6, cx - 16, cy);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 6);
+            ctx.lineTo(cx - 4, cy - 16);
+            ctx.lineTo(cx + 4, cy - 6);
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 8, cy - 2, 2, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'mango':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 2, 12, 16, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx - 2, cy - 12, 4, 6, -0.5, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'palm':
+            ctx.fillStyle = '#8b4513';
+            ctx.fillRect(cx - 2, cy, 4, 16);
+            ctx.fillStyle = accent;
+            for (let i = 0; i < 5; i++) {
+                const angle = -Math.PI / 2 + (i - 2) * 0.4;
+                ctx.beginPath();
+                ctx.moveTo(cx, cy);
+                ctx.quadraticCurveTo(
+                    cx + Math.cos(angle) * 10, cy + Math.sin(angle) * 10 - 5,
+                    cx + Math.cos(angle) * 16, cy + Math.sin(angle) * 16
+                );
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = accent;
+                ctx.stroke();
+            }
+            break;
+            
+        case 'whale':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 10);
+            ctx.quadraticCurveTo(cx - 6, cy, cx - 14, cy - 10);
+            ctx.quadraticCurveTo(cx - 10, cy - 6, cx, cy - 4);
+            ctx.quadraticCurveTo(cx + 10, cy - 6, cx + 14, cy - 10);
+            ctx.quadraticCurveTo(cx + 6, cy, cx, cy + 10);
+            ctx.fill();
+            break;
+            
+        case 'coffee':
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 8, cy - 6, 16, 16);
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(cx + 10, cy + 2, 6, -Math.PI / 2, Math.PI / 2);
+            ctx.stroke();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy - 10);
+            ctx.quadraticCurveTo(cx - 6, cy - 14, cx - 4, cy - 16);
+            ctx.quadraticCurveTo(cx, cy - 12, cx, cy - 10);
+            ctx.stroke();
+            break;
+            
+        case 'sun-hot':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 10, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 3;
+            for (let i = 0; i < 8; i++) {
+                const angle = (i / 8) * Math.PI * 2;
+                ctx.beginPath();
+                ctx.moveTo(cx + Math.cos(angle) * 12, cy + Math.sin(angle) * 12);
+                ctx.lineTo(cx + Math.cos(angle) * 16, cy + Math.sin(angle) * 16);
+                ctx.stroke();
+            }
+            break;
+            
+        case 'compass':
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 13, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 10);
+            ctx.lineTo(cx + 3, cy);
+            ctx.lineTo(cx, cy + 10);
+            ctx.lineTo(cx - 3, cy);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 10);
+            ctx.lineTo(cx + 3, cy);
+            ctx.lineTo(cx, cy - 2);
+            ctx.lineTo(cx - 3, cy);
+            ctx.closePath();
+            ctx.fill();
+            break;
+            
+        case 'penguin':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 2, 10, 14, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#f5f0e8';
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 6, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 2, cy - 6);
+            ctx.lineTo(cx, cy - 2);
+            ctx.lineTo(cx + 2, cy - 6);
+            ctx.fill();
+            break;
+        
+        case 'grave':
+            // Celtic cross for Shackleton's grave
+            ctx.fillStyle = color;
+            // Vertical beam
+            ctx.fillRect(cx - 2, cy - 12, 4, 22);
+            // Horizontal beam
+            ctx.fillRect(cx - 8, cy - 6, 16, 4);
+            // Circle behind cross intersection
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 4, 6, 0, Math.PI * 2);
+            ctx.stroke();
+            // Small base
+            ctx.fillRect(cx - 5, cy + 8, 10, 4);
+            break;
+        
+        case 'whalingboat':
+            // Rusty old whaling boat - weathered and listing
+            ctx.fillStyle = color; // rusty brown
+            // Hull - slightly tilted/listing
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy + 2);
+            ctx.lineTo(cx - 12, cy + 10);
+            ctx.lineTo(cx + 10, cy + 12);
+            ctx.lineTo(cx + 14, cy + 4);
+            ctx.closePath();
+            ctx.fill();
+            // Rust patches
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx - 4, cy + 7, 3, 2, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 6, cy + 6, 2, 1.5, -0.1, 0, Math.PI * 2);
+            ctx.fill();
+            // Broken mast - tilted
+            ctx.fillStyle = '#5c4033';
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate(-0.15);
+            ctx.fillRect(-1, -14, 2, 16);
+            ctx.restore();
+            // Tattered remnant of rigging
+            ctx.strokeStyle = '#4a3728';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(cx - 1, cy - 10);
+            ctx.lineTo(cx + 8, cy + 2);
+            ctx.stroke();
+            break;
+        
+        case 'beer':
+            // Beer mug with foam
+            ctx.fillStyle = color; // amber/golden
+            // Mug body
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy - 6);
+            ctx.lineTo(cx - 7, cy + 10);
+            ctx.lineTo(cx + 7, cy + 10);
+            ctx.lineTo(cx + 8, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            // Handle
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(cx + 12, cy + 2, 5, -Math.PI * 0.5, Math.PI * 0.5);
+            ctx.stroke();
+            // Foam top
+            ctx.fillStyle = accent; // white/cream foam
+            ctx.beginPath();
+            ctx.ellipse(cx - 4, cy - 8, 5, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 3, cy - 7, 5, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 10, 4, 3, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Foam drip
+            ctx.beginPath();
+            ctx.ellipse(cx - 6, cy - 4, 2, 3, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'boat':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy + 4);
+            ctx.lineTo(cx - 10, cy + 10);
+            ctx.lineTo(cx + 10, cy + 10);
+            ctx.lineTo(cx + 14, cy + 4);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 1, cy - 10, 2, 16);
+            ctx.beginPath();
+            ctx.moveTo(cx + 1, cy - 8);
+            ctx.lineTo(cx + 12, cy);
+            ctx.lineTo(cx + 1, cy + 4);
+            ctx.fill();
+            break;
+            
+        case 'wine':
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy - 10);
+            ctx.quadraticCurveTo(cx - 10, cy - 2, cx, cy + 2);
+            ctx.quadraticCurveTo(cx + 10, cy - 2, cx + 8, cy - 10);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 2);
+            ctx.lineTo(cx, cy + 12);
+            ctx.moveTo(cx - 6, cy + 12);
+            ctx.lineTo(cx + 6, cy + 12);
+            ctx.stroke();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 4, 5, 0, Math.PI);
+            ctx.fill();
+            break;
+            
+        case 'grapes':
+            ctx.fillStyle = color;
+            const grapePositions = [[0,-8],[5,-4],[-5,-4],[0,0],[8,0],[-8,0],[3,6],[-3,6],[0,10]];
+            grapePositions.forEach(([x, y]) => {
+                ctx.beginPath();
+                ctx.arc(cx + x, cy + y, 4, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 1, cy - 14, 2, 6);
+            break;
+            
+        case 'guitar':
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 6, 10, 8, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 2, 6, 5, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 2, cy - 16, 4, 14);
+            ctx.fillStyle = '#1a1a1a';
+            ctx.beginPath();
+            ctx.arc(cx, cy + 6, 3, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+        
+        // === NEW UNIQUE ICONS ===
+        
+        case 'colosseum':
+            // Roman Colosseum - arched structure
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 16, cy - 8, 32, 20);
+            // Arches
+            ctx.fillStyle = '#1a1a1a';
+            for (let i = -1; i <= 1; i++) {
+                ctx.beginPath();
+                ctx.arc(cx + i * 10, cy + 4, 4, Math.PI, 0);
+                ctx.fill();
+            }
+            // Top tier arches (smaller)
+            for (let i = -1; i <= 1; i++) {
+                ctx.beginPath();
+                ctx.arc(cx + i * 10, cy - 4, 3, Math.PI, 0);
+                ctx.fill();
+            }
+            // Curved top edge
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 8, 16, 4, 0, Math.PI, 0);
+            ctx.fill();
+            break;
+            
+        case 'library':
+            // Library of Celsus - facade with columns
+            ctx.fillStyle = color;
+            // Base structure
+            ctx.fillRect(cx - 14, cy - 6, 28, 20);
+            // Triangular pediment
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy - 6);
+            ctx.lineTo(cx, cy - 16);
+            ctx.lineTo(cx + 14, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            // Columns
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 12, cy - 4, 3, 16);
+            ctx.fillRect(cx - 4, cy - 4, 3, 16);
+            ctx.fillRect(cx + 1, cy - 4, 3, 16);
+            ctx.fillRect(cx + 9, cy - 4, 3, 16);
+            // Door
+            ctx.fillStyle = '#1a1a1a';
+            ctx.fillRect(cx - 3, cy + 4, 6, 10);
+            break;
+            
+        case 'venus':
+            // Venus de Milo silhouette
+            ctx.fillStyle = color;
+            // Head
+            ctx.beginPath();
+            ctx.arc(cx, cy - 10, 5, 0, Math.PI * 2);
+            ctx.fill();
+            // Torso (armless)
+            ctx.beginPath();
+            ctx.moveTo(cx - 6, cy - 4);
+            ctx.quadraticCurveTo(cx - 8, cy + 2, cx - 5, cy + 10);
+            ctx.lineTo(cx + 5, cy + 10);
+            ctx.quadraticCurveTo(cx + 8, cy + 2, cx + 6, cy - 4);
+            ctx.closePath();
+            ctx.fill();
+            // Draping
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy + 2);
+            ctx.quadraticCurveTo(cx, cy + 4, cx + 4, cy + 2);
+            ctx.stroke();
+            break;
+            
+        case 'amphitheater':
+            // Greek amphitheater - semicircle with tiers
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 6, 16, Math.PI, 0);
+            ctx.fill();
+            // Tier lines
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 6, 12, Math.PI, 0);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(cx, cy + 6, 8, Math.PI, 0);
+            ctx.stroke();
+            // Stage
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 6, cy + 4, 12, 4);
+            break;
+            
+        case 'lighthouse':
+            // Lighthouse of Alexandria
+            ctx.fillStyle = color;
+            // Tower (tapered)
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy + 14);
+            ctx.lineTo(cx - 4, cy - 8);
+            ctx.lineTo(cx + 4, cy - 8);
+            ctx.lineTo(cx + 8, cy + 14);
+            ctx.closePath();
+            ctx.fill();
+            // Light chamber
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 5, cy - 12, 10, 6);
+            // Light beam
+            ctx.fillStyle = '#ffd700';
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 14);
+            ctx.lineTo(cx - 8, cy - 20);
+            ctx.lineTo(cx + 8, cy - 20);
+            ctx.closePath();
+            ctx.fill();
+            break;
+            
+        case 'cross':
+            // Maltese Cross
+            ctx.fillStyle = color;
+            // Vertical bar
+            ctx.fillRect(cx - 3, cy - 14, 6, 28);
+            // Horizontal bar
+            ctx.fillRect(cx - 12, cy - 4, 24, 6);
+            // Pointed ends (V shapes)
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            // Top
+            ctx.moveTo(cx - 3, cy - 14);
+            ctx.lineTo(cx, cy - 18);
+            ctx.lineTo(cx + 3, cy - 14);
+            // Bottom
+            ctx.moveTo(cx - 3, cy + 14);
+            ctx.lineTo(cx, cy + 18);
+            ctx.lineTo(cx + 3, cy + 14);
+            // Left
+            ctx.moveTo(cx - 12, cy - 4);
+            ctx.lineTo(cx - 16, cy - 1);
+            ctx.lineTo(cx - 12, cy + 2);
+            // Right
+            ctx.moveTo(cx + 12, cy - 4);
+            ctx.lineTo(cx + 16, cy - 1);
+            ctx.lineTo(cx + 12, cy + 2);
+            ctx.fill();
+            break;
+            
+        case 'gateway':
+            // Gateway of India - arch monument
+            ctx.fillStyle = color;
+            // Main arch structure
+            ctx.fillRect(cx - 14, cy - 10, 6, 24);
+            ctx.fillRect(cx + 8, cy - 10, 6, 24);
+            // Top connecting piece
+            ctx.fillRect(cx - 14, cy - 14, 28, 6);
+            // Central arch
+            ctx.beginPath();
+            ctx.arc(cx, cy + 2, 8, Math.PI, 0);
+            ctx.fillStyle = '#1a1a1a';
+            ctx.fill();
+            // Decorative top
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 14, 4, Math.PI, 0);
+            ctx.fill();
+            break;
+            
+        case 'menorah':
+            // Menorah
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            // Base
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy + 14);
+            ctx.lineTo(cx + 8, cy + 14);
+            ctx.lineTo(cx + 4, cy + 10);
+            ctx.lineTo(cx - 4, cy + 10);
+            ctx.closePath();
+            ctx.fillStyle = color;
+            ctx.fill();
+            // Central stem
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 10);
+            ctx.lineTo(cx, cy - 8);
+            ctx.stroke();
+            // Branches (3 on each side)
+            const branchY = [cy - 8, cy - 8, cy - 8];
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy + 4);
+            ctx.quadraticCurveTo(cx - 10, cy - 4, cx - 10, cy - 8);
+            ctx.moveTo(cx - 6, cy + 2);
+            ctx.quadraticCurveTo(cx - 6, cy - 2, cx - 6, cy - 8);
+            ctx.moveTo(cx + 10, cy + 4);
+            ctx.quadraticCurveTo(cx + 10, cy - 4, cx + 10, cy - 8);
+            ctx.moveTo(cx + 6, cy + 2);
+            ctx.quadraticCurveTo(cx + 6, cy - 2, cx + 6, cy - 8);
+            ctx.stroke();
+            // Flames
+            ctx.fillStyle = accent;
+            [-10, -6, 0, 6, 10].forEach(x => {
+                ctx.beginPath();
+                ctx.ellipse(cx + x, cy - 11, 2, 3, 0, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            break;
+            
+        case 'mosaic':
+            // Gaudi-style mosaic pattern
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 14, 0, Math.PI * 2);
+            ctx.fill();
+            // Mosaic pieces
+            const colors = [accent, '#4a90a0', '#228b22', '#ffd700'];
+            const pieces = [
+                [-6, -6], [2, -8], [8, -2], [6, 6], [-2, 8], [-8, 2], [0, 0]
+            ];
+            pieces.forEach((pos, i) => {
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.beginPath();
+                ctx.moveTo(cx + pos[0], cy + pos[1]);
+                ctx.lineTo(cx + pos[0] + 4, cy + pos[1] - 2);
+                ctx.lineTo(cx + pos[0] + 6, cy + pos[1] + 2);
+                ctx.lineTo(cx + pos[0] + 2, cy + pos[1] + 4);
+                ctx.closePath();
+                ctx.fill();
+            });
+            break;
+            
+        case 'yacht':
+            // Luxury yacht
+            ctx.fillStyle = color;
+            // Hull
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 4);
+            ctx.lineTo(cx - 12, cy + 10);
+            ctx.lineTo(cx + 14, cy + 10);
+            ctx.lineTo(cx + 16, cy + 4);
+            ctx.quadraticCurveTo(cx + 14, cy + 2, cx - 14, cy + 2);
+            ctx.closePath();
+            ctx.fill();
+            // Cabin
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 8, cy - 2, 14, 6);
+            // Windows
+            ctx.fillStyle = '#a0d8ef';
+            ctx.fillRect(cx - 6, cy - 1, 3, 3);
+            ctx.fillRect(cx, cy - 1, 3, 3);
+            // Mast
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 1, cy - 10, 2, 10);
+            break;
+            
+        case 'violin':
+            // Violin (Tartini - Piran connection)
+            ctx.fillStyle = color;
+            // Body
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 8, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Waist curves
+            ctx.fillStyle = '#1a1a1a';
+            ctx.beginPath();
+            ctx.ellipse(cx - 8, cy + 2, 3, 5, 0.3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 8, cy + 2, 3, 5, -0.3, 0, Math.PI * 2);
+            ctx.fill();
+            // Neck
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 2, cy - 14, 4, 12);
+            // Scroll
+            ctx.beginPath();
+            ctx.arc(cx, cy - 16, 3, 0, Math.PI * 2);
+            ctx.fill();
+            // F-holes
+            ctx.strokeStyle = '#1a1a1a';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx - 3, cy);
+            ctx.quadraticCurveTo(cx - 4, cy + 4, cx - 2, cy + 6);
+            ctx.moveTo(cx + 3, cy);
+            ctx.quadraticCurveTo(cx + 4, cy + 4, cx + 2, cy + 6);
+            ctx.stroke();
+            break;
+            
+        case 'champagne':
+            // Champagne glass
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            // Glass bowl (flute shape)
+            ctx.beginPath();
+            ctx.moveTo(cx - 6, cy - 12);
+            ctx.lineTo(cx - 4, cy + 2);
+            ctx.lineTo(cx + 4, cy + 2);
+            ctx.lineTo(cx + 6, cy - 12);
+            ctx.stroke();
+            // Stem
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 2);
+            ctx.lineTo(cx, cy + 10);
+            ctx.stroke();
+            // Base
+            ctx.beginPath();
+            ctx.moveTo(cx - 6, cy + 10);
+            ctx.lineTo(cx + 6, cy + 10);
+            ctx.stroke();
+            // Bubbles
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 2, cy - 6, 2, 0, Math.PI * 2);
+            ctx.arc(cx + 1, cy - 2, 1.5, 0, Math.PI * 2);
+            ctx.arc(cx - 1, cy - 10, 1.5, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'dj':
+            // DJ turntable/headphones
+            ctx.fillStyle = color;
+            // Headphone band
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.arc(cx, cy - 4, 12, Math.PI, 0);
+            ctx.stroke();
+            // Ear cups
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 14, cy - 6, 6, 12);
+            ctx.fillRect(cx + 8, cy - 6, 6, 12);
+            // Record/vinyl underneath
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 8, 8, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#1a1a1a';
+            ctx.beginPath();
+            ctx.arc(cx, cy + 8, 3, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+            
+        case 'iceberg':
+            // Iceberg
+            ctx.fillStyle = color;
+            // Above water (visible part)
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy);
+            ctx.lineTo(cx - 4, cy - 14);
+            ctx.lineTo(cx + 2, cy - 8);
+            ctx.lineTo(cx + 8, cy - 12);
+            ctx.lineTo(cx + 12, cy);
+            ctx.closePath();
+            ctx.fill();
+            // Below water (larger, transparent)
+            ctx.fillStyle = 'rgba(160, 200, 220, 0.4)';
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy);
+            ctx.lineTo(cx - 8, cy + 14);
+            ctx.lineTo(cx + 10, cy + 14);
+            ctx.lineTo(cx + 14, cy);
+            ctx.closePath();
+            ctx.fill();
+            // Water line
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy);
+            ctx.lineTo(cx + 16, cy);
+            ctx.stroke();
+            break;
+            
+        case 'witch':
+            // Witch hat (Salem)
+            ctx.fillStyle = color;
+            // Hat cone
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 16);
+            ctx.lineTo(cx - 10, cy + 2);
+            ctx.lineTo(cx + 10, cy + 2);
+            ctx.closePath();
+            ctx.fill();
+            // Hat brim
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 2, 14, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Buckle
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 4, cy - 4, 8, 6);
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 2, cy - 2, 4, 3);
+            break;
+        
+        case 'opera':
+            // Theater/opera masks - comedy and tragedy
+            // Happy mask (left, slightly up)
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx - 7, cy - 2, 9, 11, -0.2, 0, Math.PI * 2);
+            ctx.fill();
+            // Happy face details
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 10, cy - 5, 2, 0, Math.PI * 2); // left eye
+            ctx.arc(cx - 4, cy - 6, 2, 0, Math.PI * 2);  // right eye
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx - 7, cy + 2, 4, 0, Math.PI); // smile
+            ctx.stroke();
+
+            // Sad mask (right, slightly down)
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx + 7, cy + 2, 9, 11, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            // Sad face details
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx + 4, cy - 1, 2, 0, Math.PI * 2);  // left eye
+            ctx.arc(cx + 10, cy, 2, 0, Math.PI * 2);     // right eye
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 7, cy + 8, 4, Math.PI, 0); // frown
+            ctx.stroke();
+            break;
+
+        case 'fire':
+            // Flames (for Tierra del Fuego - Land of Fire)
+            ctx.fillStyle = accent;
+            // Outer flame
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 16);
+            ctx.quadraticCurveTo(cx + 12, cy - 6, cx + 10, cy + 8);
+            ctx.quadraticCurveTo(cx + 6, cy + 12, cx, cy + 10);
+            ctx.quadraticCurveTo(cx - 6, cy + 12, cx - 10, cy + 8);
+            ctx.quadraticCurveTo(cx - 12, cy - 6, cx, cy - 16);
+            ctx.fill();
+            // Inner flame
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 10);
+            ctx.quadraticCurveTo(cx + 7, cy - 2, cx + 5, cy + 6);
+            ctx.quadraticCurveTo(cx + 2, cy + 8, cx, cy + 6);
+            ctx.quadraticCurveTo(cx - 2, cy + 8, cx - 5, cy + 6);
+            ctx.quadraticCurveTo(cx - 7, cy - 2, cx, cy - 10);
+            ctx.fill();
+            // Core
+            ctx.fillStyle = '#fff5e0';
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 2, 3, 5, 0, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'volcano':
+            // Snow-capped volcano (like Osorno)
+            ctx.fillStyle = color;
+            // Main cone
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 12);
+            ctx.lineTo(cx - 4, cy - 10);
+            ctx.lineTo(cx + 4, cy - 10);
+            ctx.lineTo(cx + 16, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Snow cap
+            ctx.fillStyle = '#f5f0e8';
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy - 10);
+            ctx.lineTo(cx, cy - 14);
+            ctx.lineTo(cx + 4, cy - 10);
+            ctx.lineTo(cx + 2, cy - 6);
+            ctx.lineTo(cx - 2, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            // Crater glow
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 12, 3, 2, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Smoke wisps
+            ctx.strokeStyle = 'rgba(200, 200, 200, 0.5)';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx - 1, cy - 14);
+            ctx.quadraticCurveTo(cx - 3, cy - 18, cx - 1, cy - 20);
+            ctx.moveTo(cx + 1, cy - 14);
+            ctx.quadraticCurveTo(cx + 4, cy - 17, cx + 2, cy - 21);
+            ctx.stroke();
+            break;
+
+        case 'fjord':
+            // Patagonian fjord - mountains with water channel
+            // Left mountain range
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx - 18, cy + 12);
+            ctx.lineTo(cx - 14, cy - 6);
+            ctx.lineTo(cx - 10, cy - 12);
+            ctx.lineTo(cx - 6, cy - 4);
+            ctx.lineTo(cx - 4, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Right mountain range
+            ctx.beginPath();
+            ctx.moveTo(cx + 4, cy + 12);
+            ctx.lineTo(cx + 6, cy - 2);
+            ctx.lineTo(cx + 10, cy - 10);
+            ctx.lineTo(cx + 14, cy - 4);
+            ctx.lineTo(cx + 18, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Snow caps
+            ctx.fillStyle = '#f5f0e8';
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy - 12);
+            ctx.lineTo(cx - 12, cy - 6);
+            ctx.lineTo(cx - 8, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(cx + 10, cy - 10);
+            ctx.lineTo(cx + 8, cy - 4);
+            ctx.lineTo(cx + 12, cy - 4);
+            ctx.closePath();
+            ctx.fill();
+            // Water channel between mountains
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy + 12);
+            ctx.lineTo(cx - 2, cy);
+            ctx.lineTo(cx + 2, cy);
+            ctx.lineTo(cx + 4, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Mist/atmosphere layer
+            ctx.fillStyle = 'rgba(200, 210, 220, 0.3)';
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 14, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'komodo':
+            // Komodo dragon - prehistoric lizard silhouette
+            ctx.fillStyle = color;
+            // Body - long and muscular
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 2);
+            ctx.quadraticCurveTo(cx - 10, cy - 4, cx, cy - 2);
+            ctx.quadraticCurveTo(cx + 8, cy - 4, cx + 14, cy);
+            ctx.quadraticCurveTo(cx + 8, cy + 6, cx, cy + 4);
+            ctx.quadraticCurveTo(cx - 10, cy + 6, cx - 16, cy + 2);
+            ctx.fill();
+            // Head - angular and predatory
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 2);
+            ctx.lineTo(cx - 22, cy - 2);
+            ctx.lineTo(cx - 20, cy + 4);
+            ctx.lineTo(cx - 16, cy + 2);
+            ctx.fill();
+            // Tail - long and powerful
+            ctx.beginPath();
+            ctx.moveTo(cx + 14, cy);
+            ctx.quadraticCurveTo(cx + 20, cy - 2, cx + 22, cy + 4);
+            ctx.quadraticCurveTo(cx + 18, cy + 2, cx + 14, cy + 2);
+            ctx.fill();
+            // Front leg
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy + 4);
+            ctx.lineTo(cx - 10, cy + 12);
+            ctx.lineTo(cx - 6, cy + 12);
+            ctx.lineTo(cx - 4, cy + 4);
+            ctx.fill();
+            // Back leg
+            ctx.beginPath();
+            ctx.moveTo(cx + 6, cy + 4);
+            ctx.lineTo(cx + 4, cy + 12);
+            ctx.lineTo(cx + 8, cy + 12);
+            ctx.lineTo(cx + 10, cy + 4);
+            ctx.fill();
+            // Eye
+            ctx.fillStyle = '#ffd700';
+            ctx.beginPath();
+            ctx.arc(cx - 18, cy, 2, 0, Math.PI * 2);
+            ctx.fill();
+            // Forked tongue
+            ctx.strokeStyle = '#ff4444';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(cx - 22, cy);
+            ctx.lineTo(cx - 26, cy - 2);
+            ctx.moveTo(cx - 22, cy);
+            ctx.lineTo(cx - 26, cy + 2);
+            ctx.stroke();
+            break;
+
+        default:
+            // Fallback - simple circle with pin
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 12, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+            ctx.fill();
+    }
+}
+
+// Main function to draw a porthole icon
+function drawPortholeIcon(canvas, config, isDoor, openAmount) {
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width;
+    const h = canvas.height;
+    
+    ctx.clearRect(0, 0, w, h);
+    
+    const cx = w / 2;
+    const cy = isDoor ? h / 2 : h / 2 - 12; // Center doors vertically (no base)
+    const radius = isDoor ? 44 : 38;
+    
+    if (isDoor) {
+        // === DOOR PORTHOLE: Clear glass with door visible behind ===
+        
+        // Layer 1: Dark interior behind the door
+        ctx.fillStyle = '#1a1a2e';
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius - 3, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Layer 2: The door (always visible through glass)
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius - 5, 0, Math.PI * 2);
+        ctx.clip();
+        draw3DDoor(ctx, cx, cy, config.color || '#6a5a4a', 1); // Always draw door at full opacity
+        ctx.restore();
+        
+        // Layer 3: Clear glass overlay with subtle reflections
+        drawClearGlass(ctx, cx, cy, radius - 3);
+        
+        // Layer 4: Brass porthole frame
+        drawPortholeFrame(ctx, cx, cy, radius);
+        
+        // NO BASE for doors
+        
+    } else {
+        // === REGULAR ICONS: Keep existing behavior ===
+        
+        // Layer 1: Black background
+        ctx.fillStyle = '#0a0a0a';
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius - 3, 0, Math.PI * 2);
+        ctx.fill();
+        
+        // Layer 2: The icon content
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius - 5, 0, Math.PI * 2);
+        ctx.clip();
+        drawRegularIcon(ctx, cx, cy, config, openAmount);
+        ctx.restore();
+        
+        // Layer 3: Brass porthole frame
+        drawPortholeFrame(ctx, cx, cy, radius);
+        
+        // Layer 4: Base for regular icons
+        drawPortholeBase(ctx, cx, cy + radius, isDoor);
+    }
+}
+
+// Draw clear glass effect for door portholes
+function drawClearGlass(ctx, cx, cy, radius) {
+    // Subtle blue-ish tint like real glass
+    ctx.fillStyle = 'rgba(200, 220, 240, 0.08)';
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Main highlight (top-left reflection)
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+    ctx.beginPath();
+    ctx.ellipse(cx - radius * 0.3, cy - radius * 0.3, radius * 0.35, radius * 0.15, -0.6, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Secondary smaller highlight
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.12)';
+    ctx.beginPath();
+    ctx.ellipse(cx - radius * 0.15, cy - radius * 0.5, radius * 0.15, radius * 0.06, -0.4, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Subtle rim light around edge
+    const rimGrad = ctx.createRadialGradient(cx, cy, radius * 0.7, cx, cy, radius);
+    rimGrad.addColorStop(0, 'rgba(255, 255, 255, 0)');
+    rimGrad.addColorStop(0.8, 'rgba(255, 255, 255, 0)');
+    rimGrad.addColorStop(1, 'rgba(255, 255, 255, 0.1)');
+    ctx.fillStyle = rimGrad;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.fill();
+}
+
+// Draw smoky glass bubble effect for regular icons
+function drawSmokyGlassBubble(ctx, cx, cy, radius) {
+    // Outer smoky edge
+    const smokyGrad = ctx.createRadialGradient(cx, cy, radius * 0.5, cx, cy, radius);
+    smokyGrad.addColorStop(0, 'rgba(30, 45, 65, 0)');
+    smokyGrad.addColorStop(0.6, 'rgba(30, 45, 65, 0.1)');
+    smokyGrad.addColorStop(0.85, 'rgba(25, 40, 60, 0.35)');
+    smokyGrad.addColorStop(1, 'rgba(20, 35, 55, 0.5)');
+    
+    ctx.fillStyle = smokyGrad;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Glass highlight (top left reflection)
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.15)';
+    ctx.beginPath();
+    ctx.ellipse(cx - radius * 0.3, cy - radius * 0.35, radius * 0.25, radius * 0.12, -0.5, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // Subtle inner rim highlight
+    ctx.strokeStyle = 'rgba(150, 180, 210, 0.2)';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.arc(cx, cy, radius - 1, 0, Math.PI * 2);
+    ctx.stroke();
+}
+
+// Map symbol names to emojis
+function getEmojiForSymbol(symbol) {
+    const emojiMap = {
+        'sunrise': '🌅',
+        'sunset': '🌅',
+        'palm': '🌴',
+        'waves': '🌊',
+        'star': '⭐',
+        'cocktail': '🍹',
+        'mountain': '🏔️',
+        'anchor': '⚓',
+        'ship': '🚢',
+        'compass': '🧭',
+        'guitar': '🎸',
+        'music': '🎵',
+        'crown': '👑',
+        'mask': '🎭',
+        'temple': '⛩️',
+        'church': '⛪',
+        'castle': '🏰',
+        'cityscape': '🏙️',
+        'island': '🏝️',
+        'fish': '🐟',
+        'coral': '🪸',
+        'whale': '🐋',
+        'dolphin': '🐬',
+        'turtle': '🐢',
+        'shell': '🐚',
+        'sparkle': '✨',
+        'fireworks': '🎆',
+        'car': '🚗',
+        'fortress': '🏰',
+        'column': '🏛️',
+        'arch': '🏛️',
+        'shark': '🦈',
+        'mango': '🥭',
+        'coffee': '☕',
+        'sun-hot': '☀️',
+        'penguin': '🐧',
+        'boat': '⛵',
+        'wine': '🍷',
+        'grapes': '🍇',
+        'default': '📍',
+        'wood-door': '🚪',
+        'gold-door': '🚪',
+        'steel-door': '🚪'
+    };
+    return emojiMap[symbol] || emojiMap['default'];
+}
+
+// Start iris open animation for a marker
+function startIrisAnimation(markerId, targetOpen, callback) {
+    let anim = markerAnimations.get(markerId);
+    if (!anim) {
+        anim = { openAmount: 0, targetOpen: 0, isAnimating: false, callback: null };
+        markerAnimations.set(markerId, anim);
+    }
+    
+    anim.targetOpen = targetOpen;
+    anim.callback = callback;
+    
+    if (!anim.isAnimating) {
+        anim.isAnimating = true;
+        animateIris(markerId);
+    }
+}
+
+// Animation loop for iris
+function animateIris(markerId) {
+    const anim = markerAnimations.get(markerId);
+    if (!anim) return;
+    
+    const diff = anim.targetOpen - anim.openAmount;
+    
+    if (Math.abs(diff) < 0.01) {
+        anim.openAmount = anim.targetOpen;
+        anim.isAnimating = false;
+        
+        // Redraw final state
+        updateMarkerTexture(markerId);
+        
+        // Call callback when animation completes
+        if (anim.callback && anim.targetOpen === 1) {
+            anim.callback();
+            anim.callback = null;
+        }
+        return;
+    }
+    
+    // Easing - faster for snappier animation
+    anim.openAmount += diff * 0.18;
+    
+    // Update the marker texture
+    updateMarkerTexture(markerId);
+    
+    requestAnimationFrame(() => animateIris(markerId));
+}
+
+// Update marker texture during animation
+function updateMarkerTexture(markerId) {
+    const marker = markers.find(m => m.userData.id === markerId);
+    if (!marker) return;
+    
+    const anim = markerAnimations.get(markerId);
+    if (!anim) return;
+    
+    // Skip canvas updates for AI porthole markers
+    if (marker.userData.useAIPorthole) return;
+    
+    const canvas = marker.userData.iconCanvas;
+    if (!canvas) return; // Safety check
+    
+    const config = marker.userData.iconConfig;
+    const isDoor = marker.userData.isDoor;
+    
+    drawPortholeIcon(canvas, config, isDoor, anim.openAmount);
+    
+    // Update Three.js texture
+    if (marker.material.map) {
+        marker.material.map.needsUpdate = true;
+    }
+}
+
+// Get current open amount for a marker
+function getMarkerOpenAmount(markerId) {
+    const anim = markerAnimations.get(markerId);
+    return anim ? anim.openAmount : 0;
+}
+
+function renderSidebarIcon(canvas, config) {
+    const ctx = canvas.getContext('2d');
+    const size = canvas.width;
+    const cx = size / 2;
+    const cy = size / 2;
+    
+    ctx.clearRect(0, 0, size, size);
+    
+    // Use the shared icon rendering function
+    renderIconSymbol(ctx, cx, cy, config.symbol, config.color, config.accent);
+}
+
+function getIconConfig(title) {
+    return ICON_CONFIG[title] || { style: 'minimal', symbol: 'default', color: '#d4a574', accent: '#8b6914' };
+}
+
+
+// Calculate density factor for each location based on nearby neighbors
+function calculateDensityFactors() {
+    const densityFactors = new Map();
+    const proximityThreshold = 15; // Degrees - locations within this range count as neighbors
+    const minScale = 0.5;  // Minimum scale factor (50% of original)
+    const maxNeighbors = 6; // At this many neighbors, hit minimum scale
+    
+    locations.forEach(loc => {
+        if (loc.isDoor) {
+            // Doors always stay full size
+            densityFactors.set(loc.id, 1.0);
+            return;
+        }
+        
+        // Count nearby non-door locations
+        let neighborCount = 0;
+        locations.forEach(other => {
+            if (other.id === loc.id) return;
+            
+            // Calculate great circle distance approximation
+            const lat1 = loc.coords[0], lon1 = loc.coords[1];
+            const lat2 = other.coords[0], lon2 = other.coords[1];
+            const dLat = Math.abs(lat2 - lat1);
+            const dLon = Math.abs(lon2 - lon1);
+            const distance = Math.sqrt(dLat * dLat + dLon * dLon);
+            
+            if (distance < proximityThreshold) {
+                neighborCount++;
+            }
+        });
+        
+        // Calculate scale factor: more neighbors = smaller icon
+        // 0 neighbors = 1.0 (full size)
+        // maxNeighbors or more = minScale
+        const densityRatio = Math.min(neighborCount / maxNeighbors, 1.0);
+        const scaleFactor = 1.0 - (densityRatio * (1.0 - minScale));
+        
+        densityFactors.set(loc.id, scaleFactor);
+    });
+    
+    // Store globally for zoom calculations
+    globalDensityFactors = densityFactors;
+    
+    return densityFactors;
+}
+
+// Calculate zoom distance for a location - smaller icons zoom closer to match door appearance
+function getZoomDistanceForLocation(loc) {
+    if (!globalDensityFactors || !loc) return baseZoomInDistance;
+    
+    // Door size is the reference
+    const doorSize = 0.040;
+    const doorZoom = baseZoomInDistance; // Doors zoom to this distance
+    
+    // Calculate this location's actual icon size
+    let iconSize;
+    if (loc.isDoor) {
+        iconSize = doorSize;
+    } else {
+        const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
+        const manualOverride = 1.0; // Could look up from sizeOverrides if needed
+        iconSize = 0.0232 * densityFactor * manualOverride;
+    }
+    
+    // Calculate full proportional zoom
+    const fullProportionalZoom = doorZoom * (iconSize / doorSize);
+    
+    // Blend 50% between base zoom and full proportional (middle ground)
+    const blendFactor = 0.5;
+    const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
+    
+    // Clamp to reasonable range
+    const minZoom = 1.20;
+    return Math.max(zoomDistance, minZoom);
+}
+
+// Offset positions for overlapping markers (lat/lng offset)
+// Moved outside createMarkers so it can be accessed by getDisplayCoords
+const markerOffsets = {
+    // New Zealand - spread out close locations
+    "Wellington, New Zealand": { latOffset: -0.5, lngOffset: -0.8 },
+    "Picton, New Zealand": { latOffset: 0.5, lngOffset: 0.8 },
+    "Auckland, New Zealand": { latOffset: 0.5, lngOffset: -0.6 },
+    "Tauranga, New Zealand": { latOffset: -0.5, lngOffset: 0.6 },
+    // Northern Adriatic - minimal offsets, rely on smaller sizes
+    "Venice, Italy": { latOffset: 0.4, lngOffset: -0.6 },
+    "Piran, Slovenia": { latOffset: -0.2, lngOffset: 0.6 },
+    "Ravenna, Italy": { latOffset: 0.2, lngOffset: 0.8 },
+    // Central Italy - spread along coast, onto land
+    "Florence, Italy": { latOffset: 0.3, lngOffset: -0.3 },
+    "Portovenere, Italy": { latOffset: 0.1, lngOffset: 0.3 },
+    "Portofino, Italy": { latOffset: 0.1, lngOffset: -0.6 },
+    // French Riviera - spread icons onto land (north), stagger east/west
+    "Marseille, France": { latOffset: 0.5, lngOffset: -1.0 },
+    "Sanary-sur-Mer, France": { latOffset: 0.8, lngOffset: -0.5 },
+    "Le Lavandou, France": { latOffset: 0.5, lngOffset: 0.2 },
+    "St. Tropez, France": { latOffset: 1.2, lngOffset: 0.6 },
+    "Antibes, France": { latOffset: 0.4, lngOffset: 0.5 },
+    "Monte Carlo, Monaco": { latOffset: 0.2, lngOffset: 0.9 },
+    "San Remo, Italy": { latOffset: 0.4, lngOffset: 1.0 },
+    "Roses, Spain": { latOffset: -0.3, lngOffset: 0.2 },
+    // Corsica
+    "Propriano, Corsica": { latOffset: -0.2, lngOffset: 0.2 },
+    // Adriatic south - minimal offsets
+    "Dubrovnik, Croatia": { latOffset: 0.2, lngOffset: -0.2 },
+    "Kotor, Montenegro": { latOffset: -0.2, lngOffset: 0.2 },
+    "Hvar, Croatia": { latOffset: -0.4, lngOffset: 0.4 },
+    "Šibenik, Croatia": { latOffset: 0.4, lngOffset: -0.4 },
+    // Western Greece - spread Corfu/Parga
+    "Corfu, Greece": { latOffset: 0.4, lngOffset: -0.3 },
+    "Parga, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    // Aegean - Turkish coast (Ephesus/Kuşadası are almost same spot!)
+    "Ephesus, Turkey": { latOffset: 0.4, lngOffset: 0.3 },
+    "Kuşadası, Turkey": { latOffset: -0.8, lngOffset: -0.3 },
+    "Izmir, Turkey": { latOffset: 0.4, lngOffset: -0.3 },
+    "Çeşme, Turkey": { latOffset: -0.4, lngOffset: 0.3 },
+    // Aegean - Cyclades islands
+    "Mykonos, Greece": { latOffset: 0.4, lngOffset: -0.3 },
+    "Santorini, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    "Milos, Greece": { latOffset: 0.3, lngOffset: -0.4 },
+    // Peloponnese ports - spread them out
+    "Itea, Greece": { latOffset: 0.5, lngOffset: -0.3 },
+    "Nafplio, Greece": { latOffset: -0.3, lngOffset: 0.4 },
+    "Katakolon, Greece": { latOffset: -0.5, lngOffset: -0.4 },
+    "Pylos, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    "Zakynthos, Greece": { latOffset: 0.4, lngOffset: -0.5 },
+    // Patagonia/Antarctica - spread apart
+    "Beagle Channel, Chile": { latOffset: 0.8, lngOffset: -2.5 },
+    "Lemaire Channel, Antarctica": { latOffset: -1.0, lngOffset: 2.0 },
+    "Ushuaia, Argentina": { latOffset: -0.6, lngOffset: 1.0 },
+    "Tierra del Fuego": { latOffset: -0.3, lngOffset: -1.5 },
+    "Petermann Island, Antarctica": { latOffset: -1.5, lngOffset: -2.5 },
+    "Port Lockroy, Antarctica": { latOffset: 1.0, lngOffset: 1.5 },
+    // Indonesia - Bali area
+    "Bali, Indonesia": { latOffset: -0.5, lngOffset: 1.2 },
+    "Celukan Bawang, Indonesia": { latOffset: 0.5, lngOffset: -1.2 }
+};
+
+// Helper function to get display coordinates (with offset applied)
+// Used by both marker clicks and sidebar clicks for consistent behavior
+function getDisplayCoords(loc) {
+    const offset = markerOffsets[loc.title];
+    if (offset) {
+        return [loc.coords[0] + offset.latOffset, loc.coords[1] + offset.lngOffset];
+    }
+    return loc.coords;
+}
+
+function createMarkers() {
+    // Pre-calculate density factors for all locations
+    const densityFactors = calculateDensityFactors();
+
+    // Manual size adjustments for specific locations (multiplier)
+    const sizeOverrides = {
+        "Queen Victoria (Cunard)": 1.10,
+        "Barcelona, Spain": 1.10,
+        "Ibiza, Spain": 1.10,
+        "Alexandria, Egypt": 1.10,
+        "Tel Aviv, Israel": 1.10,
+        // Northern Italy/Adriatic cluster - all shrunk uniformly
+        "Venice, Italy": 0.65,
+        "Piran, Slovenia": 0.65,
+        "Ravenna, Italy": 0.65,
+        "Florence, Italy": 0.65,
+        "Portovenere, Italy": 0.65,
+        "Portofino, Italy": 0.50,
+        "Dubrovnik, Croatia": 0.70,
+        "Kotor, Montenegro": 0.70,
+        "Hvar, Croatia": 0.70,
+        "Šibenik, Croatia": 0.65,
+        // Western Greece
+        "Corfu, Greece": 0.70,
+        "Parga, Greece": 0.65,
+        // Aegean - Turkish coast
+        "Ephesus, Turkey": 0.60,
+        "Kuşadası, Turkey": 0.72,
+        "Izmir, Turkey": 0.60,
+        "Çeşme, Turkey": 0.55,
+        // Aegean - Cyclades
+        "Mykonos, Greece": 0.80,
+        "Santorini, Greece": 0.80,
+        "Milos, Greece": 0.60,
+        // Peloponnese cluster
+        "Itea, Greece": 0.75,
+        "Nafplio, Greece": 0.55,
+        "Katakolon, Greece": 0.72,
+        "Pylos, Greece": 0.75,
+        "Zakynthos, Greece": 0.55,
+        // French Riviera cluster - smaller + offset handles spacing
+        "Marseille, France": 0.65,
+        "Sanary-sur-Mer, France": 0.60,
+        "Le Lavandou, France": 0.60,
+        "St. Tropez, France": 0.60,
+        "Antibes, France": 0.55,
+        "Monte Carlo, Monaco": 0.55,
+        "San Remo, Italy": 0.55,
+        "Roses, Spain": 0.85,
+        // Corsica
+        "Propriano, Corsica": 0.65,
+        // Other Italian
+        "Elba, Italy": 0.60,
+        "Stromboli, Italy": 0.75,
+        // Amalfi Coast
+        "Sorrento, Italy": 0.65,
+        "Amalfi, Italy": 0.60,
+        // Israel
+        "Haifa, Israel": 0.85,
+        // Indonesia
+        "Celukan Bawang, Indonesia": 0.80
+    };
+
+    locations.forEach((loc, index) => {
+        // Check for offset
+        const offset = markerOffsets[loc.title];
+        const displayLat = offset ? loc.coords[0] + offset.latOffset : loc.coords[0];
+        const displayLng = offset ? loc.coords[1] + offset.lngOffset : loc.coords[1];
+        
+        const position = latLonToVector3(displayLat, displayLng, 1.0);
+        const truePosition = latLonToVector3(loc.coords[0], loc.coords[1], 1.0);
+        const config = getIconConfig(loc.title);
+        
+        // Offsets are applied above - no visual anchor line needed
+        
+        // Get density-based scale factor
+        const densityScale = densityFactors.get(loc.id) || 1.0;
+        
+        // Check for manual override (applies to both doors and regular markers)
+        const manualOverride = sizeOverrides[loc.title] || 1.0;
+        
+        // Size - doors are larger, apply manual overrides to all, density only to non-doors
+        const isGuidedMode = !isGuidedComplete();
+        const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.0232 * densityScale * manualOverride;
+        
+        let texture, spriteMaterial, canvas;
+        let textureAlreadyLoaded = false;
+
+        // Doors start closed (iris animation), regular icons start open
+        const initialOpen = loc.isDoor ? 0 : 1;
+
+        // Determine if this marker should be dimmed during guided mode
+        const shouldDim = isGuidedMode && !loc.isDoor;
+        const dimOpacity = shouldDim ? 0.35 : 1.0;
+
+        // Check if texture was pre-loaded (e.g., Toledo)
+        if (USE_AI_PORTHOLES && locationTextures[loc.title]) {
+            texture = locationTextures[loc.title];
+            canvas = null;
+            textureAlreadyLoaded = true;
+
+            // Use SpriteMaterial for raycaster compatibility
+            spriteMaterial = new THREE.SpriteMaterial({
+                map: texture,
+                transparent: true,
+                opacity: dimOpacity
+            });
+        } else {
+            // Start with canvas-drawn icons, textures load progressively
+            canvas = document.createElement('canvas');
+            canvas.width = 128;
+            canvas.height = 150; // Taller for base
+
+            // Draw initial state
+            drawPortholeIcon(canvas, config, loc.isDoor, initialOpen);
+
+            texture = new THREE.CanvasTexture(canvas);
+            spriteMaterial = new THREE.SpriteMaterial({
+                map: texture,
+                transparent: true,
+                opacity: dimOpacity
+            });
+        }
+
+        // Create Three.js sprite - always use Sprite for raycaster compatibility
+        let marker = new THREE.Sprite(spriteMaterial);
+
+
+        // Position marker above surface
+        const direction = position.clone().normalize();
+        marker.position.copy(position).add(direction.multiplyScalar(0.015));
+
+        // Scale - AI textures are square, canvas icons are taller (have base)
+        const scaleX = baseSize * 2;
+        let scaleY;
+        if (textureAlreadyLoaded) {
+            scaleY = baseSize * 2; // AI textures are square
+        } else {
+            scaleY = loc.isDoor ? baseSize * 2 : baseSize * 2.35; // Canvas icons
+        }
+        marker.scale.set(scaleX, scaleY, 1);
+        
+        // Store data on marker for click handling and animation
+        marker.userData = { ...marker.userData, ...loc };
+        marker.userData.displayCoords = [displayLat, displayLng]; // Offset-adjusted coords for flying to
+        marker.userData.baseSize = baseSize;
+        marker.userData.iconConfig = config;
+        marker.userData.iconCanvas = canvas;
+        marker.userData.useAIPorthole = textureAlreadyLoaded;
+        marker.userData.textureLoaded = textureAlreadyLoaded;
+        marker.userData.isDimmed = shouldDim;
+        
+        // Initialize animation state - doors closed, regular open (reuse initialOpen from above)
+        markerAnimations.set(loc.id, {
+            openAmount: initialOpen,
+            targetOpen: initialOpen,
+            isAnimating: false,
+            callback: null
+        });
+        
+        globe.add(marker);
+        markers.push(marker);
+    });
+}
+
+// Update marker dimming when doors are visited
+function updateMarkerDimming() {
+    if (allDoorsVisited()) {
+        markersAreDimmed = false;
+        markers.forEach(marker => {
+            if (!marker.userData.isDoor) {
+                marker.material.opacity = 1.0;
+                marker.userData.isDimmed = false;
+            }
+        });
+    }
+}
+
+// Animate all markers to full brightness (celebration flare)
+function flareAllMarkers() {
+    markersAreDimmed = false;
+    markers.forEach(marker => {
+        if (!marker.userData.isDoor && marker.userData.isDimmed) {
+            animateMarkerFlare(marker);
+        }
+    });
+}
+
+// Animate a single marker's opacity from dim to full
+function animateMarkerFlare(marker) {
+    const startOpacity = 0.35;
+    const endOpacity = 1.0;
+    const duration = 800;
+    const startTime = performance.now();
+    const originalScale = marker.scale.clone();
+
+    // Flag to prevent main animation loop from overriding flare
+    marker.userData.isGlowing = true;
+
+    function animate(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+
+        marker.material.opacity = startOpacity + (endOpacity - startOpacity) * eased;
+
+        // Add brief scale pulse during animation
+        if (progress < 0.5) {
+            const pulseScale = 1 + progress * 0.15;
+            marker.scale.set(originalScale.x * pulseScale, originalScale.y * pulseScale, 1);
+        } else {
+            const pulseScale = 1 + (1 - progress) * 0.15;
+            marker.scale.set(originalScale.x * pulseScale, originalScale.y * pulseScale, 1);
+        }
+
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        } else {
+            marker.scale.copy(originalScale);
+            marker.userData.isDimmed = false;
+            marker.userData.isGlowing = false;
+        }
+    }
+    requestAnimationFrame(animate);
+}
+
+
+// ============================================
+// SOURCE: js/globe/animation.js
+// ============================================
+
+function animate() {
+    requestAnimationFrame(animate);
+    
+    // Cinematic intro - fast spins from space, settle on Toledo
+    if (!introComplete) {
+        if (!introStartTime) {
+            introStartTime = Date.now();
+            // Start with 4 full rotations ahead of Toledo
+            introStartY = TOLEDO_Y + Math.PI * 8;
+            globe.rotation.y = introStartY;
+            globe.rotation.x = 0.15;
+        }
+
+        const elapsed = Date.now() - introStartTime;
+        const totalDuration = 8400; // ~8.4 seconds (40% slower)
+        const progress = Math.min(elapsed / totalDuration, 1);
+
+        // Easing - fast start, smooth slowdown
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+
+        // Zoom from deep space to final position (closer on mobile)
+        const isMobile = window.innerWidth <= 768;
+        const finalZoom = isMobile ? 1.8 : 2.2;
+        camera.position.z = 20 - ((20 - finalZoom) * easeOutQuart);
+
+        // Spin from start position to Toledo
+        globe.rotation.y = introStartY - (introStartY - TOLEDO_Y) * easeOutQuart;
+
+        // Gradually tilt to correct angle
+        globe.rotation.x = 0.15 + (TOLEDO_X - 0.15) * easeOutQuart;
+
+        // Show modal early when globe visually appears stopped (easing ~99%)
+        if (easeOutQuart >= 0.99 && !introModalShown) {
+            introModalShown = true;
+            const userProgress = getProgress();
+            if (!userProgress.guidedComplete && !userProgress.introSeen) {
+                showIntroModal();
+            } else {
+                showTapHint();
+            }
+        }
+
+        if (progress >= 1) {
+            // Done - set final values
+            camera.position.z = finalZoom;
+            globe.rotation.y = TOLEDO_Y;
+            globe.rotation.x = TOLEDO_X;
+            targetRotationY = TOLEDO_Y;
+            targetRotationX = TOLEDO_X;
+            introComplete = true;
+        } else {
+            // Set targets for smooth handoff
+            targetRotationY = globe.rotation.y;
+            targetRotationX = globe.rotation.x;
+        }
+    } else {
+        // Handle zoom transition animation
+        if (isTransitioning) {
+            const elapsed = Date.now() - transitionStartTime;
+            
+            if (transitionPhase === 'zoom-out') {
+                const progress = Math.min(elapsed / zoomOutDuration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 2);
+                
+                // Zoom out
+                const startZ = camera.position.z;
+                camera.position.z = startZ + (zoomOutDistance - startZ) * easeOut * 0.1;
+                
+                if (progress >= 1) {
+                    // Switch to rotate phase - apply pending rotation
+                    targetRotationY = pendingRotationY;
+                    targetRotationX = pendingRotationX;
+                    transitionPhase = 'zoom-in';
+                    transitionStartTime = Date.now();
+                    
+                    // Calculate zoom distance based on target location's density
+                    currentZoomInDistance = getZoomDistanceForLocation(pendingZoomLocation || pendingLocation);
+                }
+            } else if (transitionPhase === 'zoom-in') {
+                const progress = Math.min(elapsed / zoomInDuration, 1);
+                const easeOut = 1 - Math.pow(1 - progress, 3);
+                
+                // Zoom in (closer for dense areas)
+                camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
+                
+                // Check if globe rotation has settled (close enough to target)
+                const yDiff = celebrationInProgress
+                    ? Math.abs(targetRotationY - globe.rotation.y)
+                    : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
+                const rotationSettled =
+                    yDiff < 0.05 &&
+                    Math.abs(globe.rotation.x - targetRotationX) < 0.05;
+                
+                if (progress >= 1 && rotationSettled) {
+                    isTransitioning = false;
+                    transitionPhase = 'none';
+                    camera.position.z = currentZoomInDistance;
+                    pendingZoomLocation = null;
+
+                    // Trigger bounce animation for the target location
+                    if (pendingLocation) {
+                        const loc = pendingLocation;
+                        pendingLocation = null;
+
+                        if (autoOpenPanel) {
+                            autoOpenPanel = false;
+                            // Auto-open panel after brief pause to see the icon
+                            setTimeout(() => openPanel(loc), 400);
+                        } else {
+                            triggerBounce(loc.id);
+                        }
+                    }
+
+                    // End celebration when spin completes
+                    if (celebrationInProgress) {
+                        // Small delay to let users appreciate the result
+                        setTimeout(() => {
+                            celebrationInProgress = false;
+                            // Show menu toggle button again (mobile)
+                            const menuToggle = document.getElementById('menuToggle');
+                            if (menuToggle) {
+                                menuToggle.style.display = '';
+                            }
+                        }, 1000);
+                    }
+                }
+            }
+        }
+
+        // Normal interaction after intro
+
+        // Only auto-rotate if:
+        // - User is not dragging
+        // - Panel is not open (user is not reading)
+        // - Not transitioning
+        if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
+            // Scale rotation speed based on zoom level - slower when zoomed in
+            const maxZoom = 4.5;  // zoomed out
+            const minZoom = 1.5;  // zoomed in close
+            const zoomFactor = (camera.position.z - minZoom) / (maxZoom - minZoom);
+            const rotationSpeed = 0.00003 + (zoomFactor * 0.00012); // 0.00003 to 0.00015
+            targetRotationY += rotationSpeed;
+        }
+        
+        // Always smooth-lerp toward target rotation
+        if (celebrationInProgress) {
+            // During celebration: use raw difference to allow full dramatic spin
+            globe.rotation.y += (targetRotationY - globe.rotation.y) * 0.05;
+        } else {
+            // Normal: use shortest angular distance to avoid spinning the long way around
+            globe.rotation.y += shortestAngleDiff(globe.rotation.y, targetRotationY) * 0.05;
+        }
+        globe.rotation.x += (targetRotationX - globe.rotation.x) * 0.05;
+        
+        // Periodically normalize rotation values to prevent unbounded accumulation
+        // This keeps values in a reasonable range without affecting visual appearance
+        if (Math.abs(globe.rotation.y) > Math.PI * 4) {
+            const normalize = Math.round(globe.rotation.y / (2 * Math.PI)) * 2 * Math.PI;
+            globe.rotation.y -= normalize;
+            targetRotationY -= normalize;
+        }
+        
+        // Update tooltip position to stay anchored to hovered marker
+        if (hoveredMarker && tooltip.classList.contains('visible')) {
+            updateTooltipPosition(hoveredMarker);
+        }
+    }
+    
+    // Marker animations
+    markers.forEach((marker, i) => {
+        const isDoor = marker.userData.isDoor;
+        const useAI = marker.userData.useAIPorthole;
+        const baseScale = marker.userData.baseSize * 2; // Original scale
+        // AI portholes are square, canvas ones have base
+        const baseScaleY = useAI ? marker.userData.baseSize * 2 : (isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
+        const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
+        
+        // Ensure marker is visible (but respect dimming and glowing state)
+        marker.visible = true;
+        // Don't override opacity for dimmed or glowing markers
+        if (!marker.userData.isDimmed && !marker.userData.isGlowing && marker.material.opacity !== undefined) {
+            marker.material.opacity = 1.0;
+        }
+
+        // Skip scale animations for markers currently in glow animation
+        if (marker.userData.isGlowing) return;
+
+        if (isBouncing && bounceStartTime) {
+            // Bounce animation - continuous until clicked
+            const elapsed = Date.now() - bounceStartTime;
+            const cycleDuration = 2500; // Duration of one bounce cycle (slow, gentle)
+            const cycleProgress = (elapsed % cycleDuration) / cycleDuration;
+
+            // Continuous bouncing with moderate amplitude (30% scale increase)
+            const bounce = 1 + Math.sin(cycleProgress * Math.PI * 2) * 0.3;
+            marker.scale.set(baseScale * bounce, baseScaleY * bounce, 1);
+        } else if (!hoveredMarker || hoveredMarker !== marker) {
+            // Check if this marker's panel is currently open - if so, stay still
+            const isPanelOpenForThis = currentLocation && currentLocation.id === marker.userData.id;
+            
+            if (isPanelOpenForThis) {
+                // Panel is open for this location - no animation, stay at base scale
+                marker.scale.set(baseScale, baseScaleY, 1);
+            } else if (isDoor) {
+                // Doors: only pulse when NO panel is open anywhere
+                if (currentLocation) {
+                    // Some panel is open - doors stay still
+                    marker.scale.set(baseScale, baseScaleY, 1);
+                } else {
+                    // No panel open - doors pulse to attract attention
+                    const pulse = 1 + Math.sin(Date.now() * 0.003 + i) * 0.1;
+                    marker.scale.set(baseScale * pulse, baseScaleY * pulse, 1);
+                }
+            } else if (useAI) {
+                // AI portholes: very gentle breathing (slower, subtler)
+                const breath = 1 + Math.sin(Date.now() * 0.0015 + i * 0.5) * 0.03;
+                marker.scale.set(baseScale * breath, baseScaleY * breath, 1);
+            }
+        }
+    });
+    
+
+    renderer.render(scene, camera);
+}
+
+// ============================================
+// CELEBRATION SEQUENCE
+// Triggered after completing all three doors
+// ============================================
+
+function triggerDoorsCompleteSequence() {
+    // Mark guided mode as complete
+    markGuidedComplete();
+
+    // Block menu from opening during celebration
+    celebrationInProgress = true;
+
+    // Hide menu toggle button during celebration (mobile)
+    const menuToggle = document.getElementById('menuToggle');
+    if (menuToggle) {
+        menuToggle.style.display = 'none';
+    }
+
+    // T+0: Show message + light up all markers at once
+    showCelebrationMessage();
+    flareAllMarkers();
+
+    // T+400ms: Start spinning to Mediterranean (overlaps with marker flare animation)
+    setTimeout(() => {
+        spinToMediterranean();
+    }, 400);
+
+    // T+800ms: Undim sidebar items (after flare animation completes)
+    setTimeout(() => {
+        undimSidebarItems();
+    }, 800);
+
+    // T+5000ms: Fade message
+    setTimeout(() => {
+        hideCelebrationMessage();
+    }, 5000);
+
+    // Note: celebrationInProgress is set to false in animation loop
+    // when spin completes (isTransitioning becomes false)
+}
+
+function showCelebrationMessage() {
+    const msg = document.createElement('div');
+    msg.id = 'celebration-message';
+    msg.className = 'celebration-message';
+    msg.innerHTML = `
+        <h2>The world is yours.</h2>
+        <p>120+ ports of call await.</p>
+    `;
+    document.body.appendChild(msg);
+    requestAnimationFrame(() => {
+        msg.classList.add('visible');
+    });
+}
+
+function hideCelebrationMessage() {
+    const msg = document.getElementById('celebration-message');
+    if (msg) {
+        msg.classList.remove('visible');
+        setTimeout(() => msg.remove(), 500);
+    }
+}
+
+function spinToMediterranean() {
+    // Convert Mediterranean coords to globe rotation
+    const targetRotationX = MED_COORDS.lat * Math.PI / 180;
+    const lonRad = MED_COORDS.lon * (Math.PI / 180);
+    const baseTargetY = -lonRad - 1.55;
+
+    // Add extra spin for drama (1 full rotation + target)
+    const targetY = baseTargetY + Math.PI * 2;
+
+    // Start zoom-out transition, then rotate, then zoom-in
+    isTransitioning = true;
+    transitionPhase = 'zoom-out';
+    transitionStartTime = Date.now();
+
+    // Store target rotation for after zoom-out
+    pendingRotationY = targetY;
+    pendingRotationX = targetRotationX;
+    pendingLocation = null;
+    pendingZoomLocation = null;
+}
+
+// ============================================
+// TAP HINT
+// ============================================
+
+// Show tap/click hint after intro (works on both mobile and desktop)
+// Only shows for returning visitors - first-time visitors see the intro modal instead
+function showTapHint() {
+    const hint = document.getElementById('mobileTapHint');
+    if (!hint) return;
+
+    // Don't show this hint during guided mode - intro modal handles it
+    if (!isGuidedComplete()) return;
+
+    // Show immediately
+    hint.classList.add('visible');
+
+    // Hide hint when user interacts or after 5 seconds
+    const hideHint = () => {
+        hint.classList.remove('visible');
+        document.removeEventListener('touchstart', hideHint);
+        document.removeEventListener('click', hideHint);
+    };
+
+    document.addEventListener('touchstart', hideHint, { once: true });
+    document.addEventListener('click', hideHint, { once: true });
+    setTimeout(hideHint, 5000);
+}
+
+
+
+// ============================================
+// SOURCE: js/ui/tooltip.js
+// ============================================
+
+// ============================================
+// TOOLTIP MODULE
+// Hover tooltips for location markers
+// ============================================
+
+function showTooltip(loc, marker) {
+    // Don't show tooltip while intro modal is open
+    const introModal = document.getElementById('introModal');
+    if (introModal && introModal.classList.contains('active')) {
+        return;
+    }
+
+    // Don't show tooltip while a location panel is open
+    if (currentLocation) {
+        return;
+    }
+
+    document.getElementById('tooltipTag').textContent = loc.tag;
+    document.getElementById('tooltipTitle').textContent = loc.title;
+    document.getElementById('tooltipDesc').textContent = loc.shortDesc;
+
+    updateTooltipPosition(marker);
+    tooltip.classList.add('visible');
+}
+
+function updateTooltipPosition(marker) {
+    const markerWorldPos = new THREE.Vector3();
+    marker.getWorldPosition(markerWorldPos);
+    
+    const screenPos = markerWorldPos.clone().project(camera);
+    
+    const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+    const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
+    
+    const offsetY = marker.userData.isDoor ? 85 : 70;
+    
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = (y + offsetY) + 'px';
+}
+
+function hideTooltip() {
+    tooltip.classList.remove('visible');
+}
+
+function checkHover(event) {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(markers);
+    
+    if (intersects.length > 0) {
+        const marker = intersects[0].object;
+        
+        if (marker.userData.title) {
+            hoveredMarker = marker;
+            showTooltip(marker.userData, marker);
+            document.body.style.cursor = 'pointer';
+            
+            // Highlight marker
+            const baseScale = marker.userData.baseSize * 2;
+            const useAI = marker.userData.useAIPorthole;
+            const baseScaleY = useAI ? marker.userData.baseSize * 2 : (marker.userData.isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
+            marker.scale.set(baseScale * 1.3, baseScaleY * 1.3, 1);
+        }
+    } else {
+        if (hoveredMarker) {
+            const baseScale = hoveredMarker.userData.baseSize * 2;
+            const useAI = hoveredMarker.userData.useAIPorthole;
+            const baseScaleY = useAI ? hoveredMarker.userData.baseSize * 2 : (hoveredMarker.userData.isDoor ? hoveredMarker.userData.baseSize * 2 : hoveredMarker.userData.baseSize * 2.2);
+            hoveredMarker.scale.set(baseScale, baseScaleY, 1);
+        }
+        hoveredMarker = null;
+        hideTooltip();
+        document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
+    }
+}
+
+
+// ============================================
+// SOURCE: js/ui/panel.js
+// ============================================
+
+// ============================================
+// PANEL MODULE
+// Side panel open/close/expand functionality
+// ============================================
+
+
+function triggerBounce(locationId) {
+    // Don't restart bounce if already bouncing this marker
+    if (bouncingMarkerId === locationId && bounceStartTime) {
+        return;
+    }
+    bouncingMarkerId = locationId;
+    bounceStartTime = Date.now();
+}
+
+function stopBounce() {
+    bouncingMarkerId = null;
+    bounceStartTime = null;
+}
+
+// Track current location for next door navigation
+
+function openPanel(loc) {
+    try {
+        currentLocation = loc;
+
+        // Close intro modal if it's open (first-time visitor clicking Toledo)
+        closeIntroModalIfOpen();
+
+        // Stop any bouncing animation when panel opens
+        bouncingMarkerId = null;
+        bounceStartTime = null;
+
+        // Hide tooltip when opening panel
+        hideTooltip();
+
+        // Preload hero image before showing panel content
+        const panelImage = document.getElementById('panelImage');
+
+        if (loc.image) {
+            // Hide current image while loading new one
+            panelImage.style.opacity = '0';
+
+            const preloadImg = new Image();
+            preloadImg.onload = () => {
+                panelImage.src = loc.image;
+                panelImage.style.opacity = '1';
+            };
+            preloadImg.onerror = () => {
+                panelImage.src = loc.image; // Try anyway
+                panelImage.style.opacity = '1';
+            };
+            preloadImg.src = loc.image;
+        }
+
+        panelImage.style.setProperty('--image-position', loc.imagePosition || 'center');
+        document.getElementById('panelImageCaption').textContent = loc.imageCaption || '';
+        document.getElementById('panelTag').textContent = loc.tag;
+        document.getElementById('panelTitle').textContent = loc.title;
+        
+        const paragraphs = loc.fullDesc.split('\n\n');
+        
+        // Show first paragraph as preview (truncated if too long)
+        let preview = paragraphs[0];
+        if (preview.length > 150) {
+            preview = preview.substring(0, 150) + '...';
+        }
+        document.getElementById('panelPreview').textContent = preview;
+        
+        // Check if location has rich HTML content
+        let fullContent;
+        if (loc.useRichContent && loc.richContent) {
+            fullContent = loc.richContent;
+        } else {
+            // Default: Full text for expanded view
+            fullContent = paragraphs.map(p => `<p>${p}</p>`).join('');
+        }
+        
+        // Support both single image and array of images
+        if (loc.storyImages && loc.storyImages.length > 0) {
+            fullContent += '<div class="story-gallery">';
+            loc.storyImages.forEach(img => {
+                fullContent += `<img src="${img}" class="story-image" alt="Story photo">`;
+            });
+            fullContent += '</div>';
+        } else if (loc.storyImage) {
+            fullContent += `<img src="${loc.storyImage}" class="story-image" alt="Story photo">`;
+        }
+
+        // Restore nextDoorHint to its original position before replacing innerHTML
+        // (it may have been moved inside panelText on a previous panel open)
+        const nextDoorHint = document.getElementById('nextDoorHint');
+        const panelContent = document.querySelector('.panel-content');
+        const locationsHint = document.querySelector('.locations-hint');
+        if (nextDoorHint && panelContent && locationsHint) {
+            panelContent.insertBefore(nextDoorHint, locationsHint);
+        }
+
+        document.getElementById('panelText').innerHTML = fullContent;
+
+        // Initialize any inline story carousels
+        if (typeof initStoryCarousels === 'function') {
+            initStoryCarousels();
+        }
+
+        // Attach click handlers to story images for lightbox
+        attachImageClickHandlers();
+
+        // Update next door button based on current location
+        updateNextDoorButton(loc);
+
+        // Move next door button right after the final quote if it exists
+        const finalQuote = document.querySelector('.final-quote');
+        if (finalQuote && nextDoorHint && loc.isDoor) {
+            finalQuote.parentNode.insertBefore(nextDoorHint, finalQuote.nextSibling);
+        }
+        
+        // Update three doors navigation
+        updateThreeDoorsNav(loc);
+        
+        // Open panel in expanded (full screen) state immediately
+        sidePanel.classList.add('expanded');
+        sidePanel.classList.add('open');
+        panelIsOpen = true; // Stop auto-rotation while reading
+
+        // Reset scroll position to top (do it immediately and after layout)
+        sidePanel.scrollTop = 0;
+        requestAnimationFrame(() => {
+            sidePanel.scrollTop = 0;
+        });
+
+        // Hide scroll hint until panel fully opens
+        document.getElementById('scrollHintBottom').classList.remove('visible');
+    } catch (error) {
+        console.error('Error opening panel:', error);
+        // Reset panel state on error
+        sidePanel.classList.remove('expanded');
+        sidePanel.classList.add('open');
+        panelIsOpen = true;
+    }
+}
+
+function updateNextDoorButton(loc) {
+    const nextDoorHint = document.getElementById('nextDoorHint');
+    const nextDoorText = document.getElementById('nextDoorText');
+    
+    // Find doors
+    const doors = locations.filter(l => l.isDoor);
+    const doorIndex = doors.findIndex(d => d.id === loc.id);
+    
+    if (loc.isDoor && doorIndex < doors.length - 1) {
+        // This is a door and there's a next door
+        const nextDoor = doors[doorIndex + 1];
+        const nextDoorNum = doorIndex + 2;
+        nextDoorText.textContent = `Continue to Chapter ${nextDoorNum}`;
+        nextDoorHint.style.display = '';
+        nextDoorHint.dataset.nextDoorId = nextDoor.id;
+    } else {
+        // Last door or not a door - hide the next door button
+        nextDoorHint.style.display = 'none';
+    }
+}
+
+function goToNextDoor() {
+    const nextDoorHint = document.getElementById('nextDoorHint');
+    const nextDoorId = parseInt(nextDoorHint.dataset.nextDoorId);
+    const nextDoor = locations.find(l => l.id === nextDoorId);
+
+    if (nextDoor) {
+        autoOpenPanel = true;
+        closePanel();
+        focusLocation(nextDoor);
+    }
+}
+
+function goToDoor(doorNum) {
+    const doors = locations.filter(l => l.isDoor);
+    const targetDoor = doors[doorNum - 1]; // doorNum is 1-indexed
+    
+    if (targetDoor) {
+        closePanel();
+        focusLocation(targetDoor);
+    }
+}
+
+function updateThreeDoorsNav(loc) {
+    const nav = document.getElementById('threeDoorsNav');
+    const buttons = nav.querySelectorAll('.door-nav-btn');
+    const labels = [
+        document.getElementById('doorLabel1'),
+        document.getElementById('doorLabel2'),
+        document.getElementById('doorLabel3')
+    ];
+    
+    // Show nav only for door locations, hide for others
+    if (loc && loc.isDoor) {
+        nav.classList.remove('hidden');
+        
+        // Find which door this is (1, 2, or 3)
+        const doors = locations.filter(l => l.isDoor);
+        const currentDoorIndex = doors.findIndex(d => d.id === loc.id);
+        const currentDoorNum = currentDoorIndex + 1;
+        
+        // Update button states
+        buttons.forEach((btn, i) => {
+            const doorNum = i + 1;
+            if (doorNum === currentDoorNum) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+        
+        // Update labels based on current door
+        labels.forEach((label, i) => {
+            const doorNum = i + 1;
+            label.classList.remove('active-label');
+            
+            if (doorNum === currentDoorNum) {
+                label.textContent = 'viewing';
+                label.classList.add('active-label');
+            } else if (doorNum < currentDoorNum) {
+                label.textContent = `back to ${doorNum}`;
+            } else {
+                label.textContent = `skip to ${doorNum}`;
+            }
+        });
+    } else {
+        // Hide nav for non-door locations
+        nav.classList.add('hidden');
+    }
+}
+
+function viewAllLocations() {
+    closePanel();
+    // On mobile, open the locations menu; on desktop, list is already visible
+    if (window.innerWidth <= 768) {
+        // If celebration is in progress, wait until it's actually done
+        if (celebrationInProgress) {
+            // Poll until celebration completes
+            const checkAndOpen = () => {
+                if (!celebrationInProgress) {
+                    setTimeout(toggleMobileMenu, 500);
+                } else {
+                    setTimeout(checkAndOpen, 500);
+                }
+            };
+            checkAndOpen();
+        } else {
+            setTimeout(toggleMobileMenu, 300);
+        }
+    }
+}
+
+// Lightbox functions
+function openLightbox(imgSrc, caption) {
+    document.getElementById('lightboxImg').src = imgSrc;
+    document.getElementById('lightboxCaption').textContent = caption || '';
+    document.getElementById('lightbox').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(event) {
+    // Only close if clicking the background or close button, not the image
+    if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close lightbox with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+// Attach click handlers to story images when panel content changes
+function attachImageClickHandlers() {
+    // Single story images (no navigation)
+    const storyImages = document.querySelectorAll('.panel-text .story-image');
+    storyImages.forEach(img => {
+        img.onclick = function() {
+            let caption = img.dataset.caption || '';
+            if (!caption) {
+                const nextEl = img.parentElement?.nextElementSibling;
+                if (nextEl && nextEl.classList.contains('photo-caption-inline')) {
+                    caption = nextEl.textContent;
+                }
+            }
+            openLightbox(img.src, caption);
+        };
+    });
+
+    // Gallery thumbnails - collect all images in each gallery for navigation
+    document.querySelectorAll('.gallery-grid').forEach(gallery => {
+        const thumbs = gallery.querySelectorAll('.gallery-thumb');
+        const galleryImages = Array.from(thumbs).map(img => ({
+            src: img.src,
+            caption: img.dataset.caption || img.alt || ''
+        }));
+
+        thumbs.forEach((img, index) => {
+            img.onclick = function() {
+                openLightbox(img.src, img.dataset.caption || img.alt || '', galleryImages, index);
+            };
+        });
+    });
+
+    // Attach click handlers to more-info buttons (inline onclick doesn't work with innerHTML)
+    const moreInfoBtns = document.querySelectorAll('.panel-text .more-info-btn');
+    moreInfoBtns.forEach(btn => {
+        btn.onclick = function(e) {
+            e.stopPropagation();
+            const container = btn.closest('.more-info-container');
+            container.classList.toggle('active');
+        };
+    });
+}
+
+function closePanel() {
+    // Stop background music with fade out
+    stopBackgroundMusic();
+
+    // Track door completion and show prompts during guided mode
+    if (currentLocation && currentLocation.isDoor && !isGuidedComplete()) {
+        const allComplete = markDoorVisited(currentLocation.title);
+        const doors = locations.filter(l => l.isDoor);
+        const doorIndex = doors.findIndex(d => d.id === currentLocation.id);
+
+        if (allComplete) {
+            celebrationInProgress = true;
+            // Trigger celebration sequence after panel closes
+            setTimeout(() => triggerDoorsCompleteSequence(), 500);
+        } else if (doorIndex < doors.length - 1 && !autoOpenPanel) {
+            // Show prompt for next door after panel closes
+            const nextDoor = doors[doorIndex + 1];
+            setTimeout(() => showNextDoorPrompt(nextDoor), 500);
+        }
+    }
+
+    sidePanel.classList.remove('open');
+    sidePanel.classList.remove('expanded');
+    panelIsOpen = false; // Resume auto-rotation
+    currentLocation = null;
+}
+
+function expandPanel() {
+    sidePanel.classList.add('expanded');
+}
+
+// Show floating prompt to continue to next door
+function showNextDoorPrompt(nextDoor) {
+    // Remove any existing prompt
+    const existing = document.querySelector('.next-door-prompt');
+    if (existing) existing.remove();
+
+    const doors = locations.filter(l => l.isDoor);
+    const nextDoorNum = doors.findIndex(d => d.id === nextDoor.id) + 1;
+
+    const prompt = document.createElement('div');
+    prompt.className = 'next-door-prompt';
+    prompt.style.cursor = 'pointer';
+    prompt.innerHTML = `
+        <p>Chapter ${nextDoorNum}: ${nextDoor.tag.split(': ')[1]}</p>
+        <p class="prompt-instruction">Tap to continue</p>
+    `;
+    prompt.addEventListener('click', () => {
+        dismissNextDoorPrompt();
+        autoOpenPanel = true;
+        focusLocation(nextDoor);
+    });
+    document.body.appendChild(prompt);
+
+    // Auto-dismiss after 6 seconds if no action
+    setTimeout(() => dismissNextDoorPrompt(), 6000);
+}
+
+function goToPromptedDoor(doorId) {
+    dismissNextDoorPrompt();
+    const door = locations.find(l => l.id === doorId);
+    if (door) {
+        focusLocation(door);
+    }
+}
+
+function dismissNextDoorPrompt() {
+    const prompt = document.querySelector('.next-door-prompt');
+    if (prompt) {
+        prompt.style.opacity = '0';
+        prompt.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => prompt.remove(), 300);
+    }
+}
+
+// Swipe up to expand panel on mobile
+let panelTouchStartY = 0;
+sidePanel.addEventListener('touchstart', function(e) {
+    panelTouchStartY = e.touches[0].clientY;
+}, { passive: true });
+
+sidePanel.addEventListener('touchend', function(e) {
+    const touchEndY = e.changedTouches[0].clientY;
+    const swipeDistance = panelTouchStartY - touchEndY;
+
+    // If swiped up more than 50px and panel is not expanded, expand it
+    if (swipeDistance > 50 && !sidePanel.classList.contains('expanded')) {
+        expandPanel();
+    }
+    // Swipe down to collapse is disabled - panel stays full screen until X is tapped
+}, { passive: true });
+
+// Scroll hint visibility based on scroll position
+const scrollHintBottom = document.getElementById('scrollHintBottom');
+let scrollTimeout = null;
+
+sidePanel.addEventListener('scroll', function() {
+    const scrollTop = sidePanel.scrollTop;
+    const scrollHeight = sidePanel.scrollHeight;
+    const clientHeight = sidePanel.clientHeight;
+    const distanceFromBottom = scrollHeight - scrollTop - clientHeight;
+    
+    // Hide hint while scrolling
+    scrollHintBottom.classList.remove('visible');
+    
+    // Clear any existing timeout
+    if (scrollTimeout) clearTimeout(scrollTimeout);
+    
+    // If not at the bottom and has scrollable content, show hint again after user stops scrolling
+    const hasScrollableContent = scrollHeight > clientHeight + 50;
+    if (distanceFromBottom > 100 && hasScrollableContent) {
+        scrollTimeout = setTimeout(() => {
+            scrollHintBottom.classList.add('visible');
+        }, 2000); // Reappear after 2 seconds of no scrolling
+    }
+}, { passive: true });
+
+// Show scroll hint when panel opens (desktop) or expands (mobile)
+const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+        if (mutation.attributeName === 'class') {
+            const isOpen = sidePanel.classList.contains('open');
+            const isExpanded = sidePanel.classList.contains('expanded');
+            const isMobile = window.innerWidth <= 768;
+
+            if (!isOpen) {
+                // Panel closed - hide hint immediately
+                scrollHintBottom.classList.remove('visible');
+            } else if ((isMobile && isExpanded && isOpen) || (!isMobile && isOpen)) {
+                // Delay to let panel content load, then check if scrollable
+                const checkAndShowHint = () => {
+                    if (sidePanel.classList.contains('open')) {
+                        // Only show scroll hint if there's actually content to scroll
+                        const hasScrollableContent = sidePanel.scrollHeight > sidePanel.clientHeight + 50;
+                        if (hasScrollableContent) {
+                            scrollHintBottom.classList.add('visible');
+                        }
+                    }
+                };
+                // Check twice - once after initial render, once after images may have loaded
+                setTimeout(checkAndShowHint, 600);
+                setTimeout(checkAndShowHint, 1500);
+            }
+        }
+    });
+});
+observer.observe(sidePanel, { attributes: true });
+
+// Close any open more-info popups when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.more-info-container')) {
+        document.querySelectorAll('.more-info-container.active').forEach(c => c.classList.remove('active'));
+    }
+});
+
+
+// ============================================
+// SOURCE: js/ui/sidebar.js
+// ============================================
+
+// ============================================
+// SIDEBAR MODULE
+// Location list and mobile menu
+// ============================================
+
+function buildLocationList() {
+    const list = document.getElementById('locationList');
+    const doorsComplete = isGuidedComplete();
+
+    // Doors first, then others alphabetically
+    const doors = locations.filter(l => l.isDoor);
+    const others = locations.filter(l => !l.isDoor)
+        .sort((a, b) => a.title.localeCompare(b.title));
+
+    [...doors, ...others].forEach(loc => {
+        const config = getIconConfig(loc.title);
+
+        const item = document.createElement('div');
+        item.className = `location-item ${loc.isDoor ? 'door' : ''}`;
+        item.setAttribute('data-style', config.style);
+        item.setAttribute('data-location-id', loc.id);
+
+        // Dim non-door entries during guided mode
+        if (!loc.isDoor && !doorsComplete) {
+            item.classList.add('dimmed');
+        }
+        
+        // Create icon container
+        const iconDiv = document.createElement('div');
+        iconDiv.className = 'icon';
+
+        // Store emoji for mobile fallback (via CSS ::before pseudo-element)
+        const emoji = loc.icon || '📍';
+        iconDiv.setAttribute('data-emoji', emoji);
+
+        // Create canvas for custom icon (desktop)
+        const canvas = document.createElement('canvas');
+        canvas.width = 64;
+        canvas.height = 64;
+        renderSidebarIcon(canvas, config);
+        iconDiv.appendChild(canvas);
+        
+        // Create name container
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'name';
+
+        if (loc.isDoor) {
+            // Two-line entry for chapter locations
+            const doorIndex = doors.findIndex(d => d.id === loc.id);
+            const chapterLabel = document.createElement('span');
+            chapterLabel.className = 'chapter-label';
+            chapterLabel.textContent = `Chapter ${doorIndex + 1}`;
+
+            const locationName = document.createElement('span');
+            locationName.className = 'location-name';
+            locationName.textContent = loc.title;
+
+            nameDiv.appendChild(chapterLabel);
+            nameDiv.appendChild(locationName);
+        } else {
+            nameDiv.textContent = loc.title;
+        }
+
+        item.appendChild(iconDiv);
+        item.appendChild(nameDiv);
+        
+        item.onclick = () => {
+            skipPanelOpen = true; // User must click icon to open story
+            focusLocation(loc);
+            closeMobileMenu();
+        };
+        list.appendChild(item);
+    });
+    
+    // Update locations count in panel hint
+    const countEl = document.getElementById('locationsCount');
+    if (countEl) {
+        countEl.textContent = locations.length + ' places';
+    }
+    
+    // Setup sidebar scroll hint
+    setupSidebarScrollHint();
+
+    // Update skip hint visibility
+    updateSkipHintVisibility();
+}
+
+function setupSidebarScrollHint() {
+    const list = document.getElementById('locationList');
+    const hint = document.getElementById('sidebarScrollHint');
+    if (!list || !hint) return;
+    
+    let scrollTimeout;
+    let hasReachedBottom = false;
+    
+    // Show hint initially after a short delay
+    setTimeout(() => {
+        if (list.scrollHeight > list.clientHeight && !hasReachedBottom) {
+            hint.classList.add('visible');
+        }
+    }, 1000);
+    
+    list.addEventListener('scroll', () => {
+        // Hide while scrolling
+        hint.classList.remove('visible');
+        
+        // Check if near bottom
+        const nearBottom = list.scrollTop + list.clientHeight >= list.scrollHeight - 50;
+        if (nearBottom) {
+            hasReachedBottom = true;
+        }
+        
+        // Show again after stopping (if not at bottom)
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            if (!hasReachedBottom && list.scrollHeight > list.clientHeight) {
+                hint.classList.add('visible');
+            }
+        }, 1500);
+    });
+}
+function focusLocation(loc) {
+    // Close panel immediately when navigating to new location
+    closePanel();
+
+    const lon = loc.coords[1]; // longitude (negative = west)
+    const lat = loc.coords[0]; // latitude (positive = north)
+
+    // Convert longitude to radians, with offset to match globe texture
+    const lonRad = lon * (Math.PI / 180);
+
+    // The globe rotation Y increases as we go west (negative longitude)
+    const targetY = -lonRad - 1.55;
+
+    // Start zoom-out transition, then rotate, then zoom-in
+    isTransitioning = true;
+    transitionPhase = 'zoom-out';
+    transitionStartTime = Date.now();
+
+    // Store target rotation for after zoom-out
+    pendingRotationY = targetY;
+    pendingRotationX = lat * (Math.PI / 180);
+    pendingLocation = loc;
+    pendingZoomLocation = loc;
+
+    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2), 'introComplete:', introComplete);
+}
+
+function toggleMobileMenu() {
+    const menu = document.getElementById('locationList');
+    const toggle = document.getElementById('menuToggle');
+    const overlay = document.getElementById('mobileOverlay');
+
+    // If opening the menu, close the story panel first
+    const isOpening = !menu.classList.contains('open');
+    if (isOpening && panelIsOpen) {
+        closePanel();
+    }
+
+    menu.classList.toggle('open');
+    toggle.classList.toggle('open');
+    overlay.classList.toggle('open');
+}
+
+// Close mobile menu when location selected
+function closeMobileMenu() {
+    const menu = document.getElementById('locationList');
+    const toggle = document.getElementById('menuToggle');
+    const overlay = document.getElementById('mobileOverlay');
+
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    overlay.classList.remove('open');
+}
+
+// Undim sidebar items when all doors are visited
+function undimSidebarItems() {
+    document.querySelectorAll('.location-item.dimmed').forEach(item => {
+        item.classList.remove('dimmed');
+    });
+}
+
+// Start guided journey - close modal and let user click Toledo
+function startGuidedJourney() {
+    const introModal = document.getElementById('introModal');
+    if (introModal) {
+        introModal.classList.remove('active');
+        // Mark intro as seen
+        const progress = getProgress();
+        progress.introSeen = true;
+        saveProgress(progress);
+    }
+}
+
+// Skip guided tour - trigger celebration and unlock everything
+function skipGuidedTour() {
+
+    // Close intro modal if open
+    const introModal = document.getElementById('introModal');
+    if (introModal && introModal.classList.contains('active')) {
+        introModal.classList.remove('active');
+        // Mark intro as seen
+        const progress = getProgress();
+        progress.introSeen = true;
+        saveProgress(progress);
+    }
+
+    // Trigger the celebration sequence (this also marks guided as complete)
+    triggerDoorsCompleteSequence();
+
+    // Undim all sidebar items
+    undimSidebarItems();
+}
+
+// Update skip hint visibility based on guided mode state
+function updateSkipHintVisibility() {
+    const skipLink = document.getElementById('skipIntroLink');
+    if (skipLink) {
+        skipLink.classList.toggle('hidden', isGuidedComplete());
+    }
+}
+
+
+// ============================================
+// SOURCE: js/ui/lightbox.js
+// ============================================
+
+// ============================================
+// LIGHTBOX MODULE
+// Image viewer for story photos with navigation
+// ============================================
+
+// Track current gallery for navigation
+let currentGalleryImages = [];
+let currentImageIndex = 0;
+
+function openLightbox(imgSrc, caption, galleryImages, index) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+
+    // Store gallery info for navigation
+    if (galleryImages && galleryImages.length > 0) {
+        currentGalleryImages = galleryImages;
+        currentImageIndex = index || 0;
+        // Show/hide nav arrows based on gallery size
+        updateNavArrows();
+    } else {
+        // Single image, no navigation
+        currentGalleryImages = [];
+        currentImageIndex = 0;
+        hideNavArrows();
+    }
+
+    // Remove width constraint for lightbox - serve original size
+    let fullSizeSrc = imgSrc;
+    if (imgSrc.includes('res.cloudinary.com')) {
+        fullSizeSrc = imgSrc.replace(/w_\d+,?/, '').replace(/,,/, ',');
+    }
+
+    // Show loading state - hide old image until new one loads
+    lightbox.classList.add('loading');
+    lightboxImage.style.opacity = '0';
+
+    // Set up load handler before changing src
+    lightboxImage.onload = function() {
+        lightbox.classList.remove('loading');
+        lightboxImage.style.opacity = '1';
+    };
+
+    lightboxImage.src = fullSizeSrc;
+    document.getElementById('lightboxCaption').textContent = caption || '';
+    lightbox.classList.add('active');
+}
+
+function showLightboxImage(index) {
+    if (currentGalleryImages.length === 0) return;
+
+    // Wrap around
+    if (index < 0) index = currentGalleryImages.length - 1;
+    if (index >= currentGalleryImages.length) index = 0;
+
+    currentImageIndex = index;
+    const img = currentGalleryImages[index];
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+
+    let fullSizeSrc = img.src;
+    if (fullSizeSrc.includes('res.cloudinary.com')) {
+        fullSizeSrc = fullSizeSrc.replace(/w_\d+,?/, '').replace(/,,/, ',');
+    }
+
+    // Show loading state
+    lightbox.classList.add('loading');
+    lightboxImage.style.opacity = '0';
+
+    lightboxImage.onload = function() {
+        lightbox.classList.remove('loading');
+        lightboxImage.style.opacity = '1';
+    };
+
+    lightboxImage.src = fullSizeSrc;
+    document.getElementById('lightboxCaption').textContent = img.caption || '';
+    updateNavArrows();
+}
+
+function lightboxPrev(event) {
+    event.stopPropagation();
+    if (currentGalleryImages.length > 1) {
+        showLightboxImage(currentImageIndex - 1);
+    }
+}
+
+function lightboxNext(event) {
+    event.stopPropagation();
+    if (currentGalleryImages.length > 1) {
+        showLightboxImage(currentImageIndex + 1);
+    }
+}
+
+function updateNavArrows() {
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    if (prevBtn && nextBtn) {
+        if (currentGalleryImages.length > 1) {
+            prevBtn.style.display = 'flex';
+            nextBtn.style.display = 'flex';
+        } else {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
+    }
+}
+
+function hideNavArrows() {
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    if (prevBtn) prevBtn.style.display = 'none';
+    if (nextBtn) nextBtn.style.display = 'none';
+}
+
+function closeLightbox(event) {
+    // Only close if clicking the overlay or close button, not the image or arrows
+    if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+        document.getElementById('lightbox').classList.remove('active');
+        currentGalleryImages = [];
+        currentImageIndex = 0;
+    }
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+    const lightbox = document.getElementById('lightbox');
+    if (!lightbox.classList.contains('active')) return;
+
+    if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+        currentGalleryImages = [];
+        currentImageIndex = 0;
+    } else if (e.key === 'ArrowLeft') {
+        lightboxPrev(e);
+    } else if (e.key === 'ArrowRight') {
+        lightboxNext(e);
+    }
+});
+
+
+// ============================================
+// SOURCE: js/ui/carousel.js
+// ============================================
+
+// ============================================
+// CAROUSEL MODULE
+// World tour slideshow functionality
+// + Story carousel support for inline carousels
+// ============================================
+
+let carouselInitialized = false;
+let carouselInterval = null;
+let currentSlide = 0;
+let carouselSlides = null;
+let carouselDots = null;
+
+function goToSlide(index) {
+    if (!carouselSlides || !carouselDots) return;
+    carouselSlides[currentSlide].classList.remove('active');
+    carouselDots[currentSlide].classList.remove('active');
+    currentSlide = index;
+    if (currentSlide >= carouselSlides.length) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = carouselSlides.length - 1;
+    carouselSlides[currentSlide].classList.add('active');
+    carouselDots[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+    goToSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    goToSlide(currentSlide - 1);
+}
+
+function resetCarouselTimer() {
+    if (carouselInterval) clearInterval(carouselInterval);
+    carouselInterval = setInterval(nextSlide, 4000);
+}
+
+function initCarousel() {
+    const carousel = document.getElementById('worldCarousel');
+    if (!carousel) return;
+
+    // Prevent duplicate initialization
+    if (carouselInitialized) {
+        resetCarouselTimer();
+        return;
+    }
+
+    carouselSlides = carousel.querySelectorAll('.carousel-slide');
+    const dotsContainer = carousel.querySelector('.carousel-dots');
+
+    // Clear any existing dots and arrows
+    dotsContainer.innerHTML = '';
+    const existingArrows = carousel.querySelectorAll('.carousel-arrow');
+    existingArrows.forEach(a => a.remove());
+
+    currentSlide = 0;
+
+    // Create dots
+    carouselSlides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dotsContainer.appendChild(dot);
+    });
+
+    carouselDots = dotsContainer.querySelectorAll('.carousel-dot');
+
+    // Add click handlers to dots
+    carouselDots.forEach((dot, i) => {
+        dot.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            goToSlide(i);
+            resetCarouselTimer();
+        });
+    });
+
+    // Create arrow buttons
+    const prevArrow = document.createElement('button');
+    prevArrow.className = 'carousel-arrow prev';
+    prevArrow.innerHTML = '‹';
+    prevArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        prevSlide();
+        resetCarouselTimer();
+    });
+
+    const nextArrow = document.createElement('button');
+    nextArrow.className = 'carousel-arrow next';
+    nextArrow.innerHTML = '›';
+    nextArrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        nextSlide();
+        resetCarouselTimer();
+    });
+
+    carousel.appendChild(prevArrow);
+    carousel.appendChild(nextArrow);
+
+    // Swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    carousel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    carousel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) { // minimum swipe distance
+            if (diff > 0) {
+                nextSlide(); // swipe left = next
+            } else {
+                prevSlide(); // swipe right = prev
+            }
+            resetCarouselTimer();
+        }
+    }, { passive: true });
+
+    // Pause on hover (desktop)
+    carousel.addEventListener('mouseenter', function() {
+        if (carouselInterval) clearInterval(carouselInterval);
+    });
+    carousel.addEventListener('mouseleave', function() {
+        resetCarouselTimer();
+    });
+
+    // Start auto-rotation
+    resetCarouselTimer();
+    carouselInitialized = true;
+}
+
+// ============================================
+// STORY CAROUSEL - inline carousels in rich content
+// Supports multiple independent instances
+// ============================================
+
+const storyCarousels = [];
+
+function initStoryCarousels() {
+    // Clean up previous instances
+    storyCarousels.forEach(sc => {
+        if (sc.interval) clearInterval(sc.interval);
+    });
+    storyCarousels.length = 0;
+
+    const carousels = document.querySelectorAll('.story-carousel:not([data-initialized])');
+    carousels.forEach(carousel => {
+        const slides = carousel.querySelectorAll('.carousel-slide');
+        if (slides.length === 0) return;
+
+        const dotsContainer = carousel.querySelector('.carousel-dots');
+        if (!dotsContainer) return;
+
+        // State for this carousel instance
+        const state = {
+            el: carousel,
+            slides: slides,
+            dots: null,
+            current: 0,
+            interval: null
+        };
+
+        // Clear existing dots/arrows
+        dotsContainer.innerHTML = '';
+        carousel.querySelectorAll('.carousel-arrow').forEach(a => a.remove());
+
+        // Create dots
+        slides.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+            dotsContainer.appendChild(dot);
+        });
+        state.dots = dotsContainer.querySelectorAll('.carousel-dot');
+
+        function goTo(index) {
+            state.slides[state.current].classList.remove('active');
+            state.dots[state.current].classList.remove('active');
+            state.current = index;
+            if (state.current >= state.slides.length) state.current = 0;
+            if (state.current < 0) state.current = state.slides.length - 1;
+            state.slides[state.current].classList.add('active');
+            state.dots[state.current].classList.add('active');
+        }
+
+        function resetTimer() {
+            if (state.interval) clearInterval(state.interval);
+            state.interval = setInterval(() => goTo(state.current + 1), 5000);
+        }
+
+        // Dot click handlers
+        state.dots.forEach((dot, i) => {
+            dot.addEventListener('click', e => {
+                e.preventDefault();
+                e.stopPropagation();
+                goTo(i);
+                resetTimer();
+            });
+        });
+
+        // Arrow buttons
+        const prevArrow = document.createElement('button');
+        prevArrow.className = 'carousel-arrow prev';
+        prevArrow.innerHTML = '‹';
+        prevArrow.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            goTo(state.current - 1);
+            resetTimer();
+        });
+
+        const nextArrow = document.createElement('button');
+        nextArrow.className = 'carousel-arrow next';
+        nextArrow.innerHTML = '›';
+        nextArrow.addEventListener('click', e => {
+            e.preventDefault();
+            e.stopPropagation();
+            goTo(state.current + 1);
+            resetTimer();
+        });
+
+        carousel.appendChild(prevArrow);
+        carousel.appendChild(nextArrow);
+
+        // Swipe support
+        let touchStartX = 0;
+        carousel.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', e => {
+            const diff = touchStartX - e.changedTouches[0].screenX;
+            if (Math.abs(diff) > 50) {
+                goTo(state.current + (diff > 0 ? 1 : -1));
+                resetTimer();
+            }
+        }, { passive: true });
+
+        // Pause on hover
+        carousel.addEventListener('mouseenter', () => {
+            if (state.interval) clearInterval(state.interval);
+        });
+        carousel.addEventListener('mouseleave', () => resetTimer());
+
+        // Mark initialized and start
+        carousel.setAttribute('data-initialized', 'true');
+        resetTimer();
+        storyCarousels.push(state);
+    });
+}
+
+// Initialize carousels when panel opens (observe for panel open)
+const carouselObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+        if (mutation.target.classList.contains('open')) {
+            setTimeout(() => {
+                initCarousel();
+                initStoryCarousels();
+            }, 100);
+        }
+    });
+});
+
+const sidePanelEl = document.getElementById('sidePanel');
+if (sidePanelEl) {
+    carouselObserver.observe(sidePanelEl, { attributes: true, attributeFilter: ['class'] });
+}
+
+
+// ============================================
+// SOURCE: js/ui/modal.js
+// ============================================
+
+// ============================================
+// MODAL MODULE
+// Intro modal and Director's Commentary modal
+// ============================================
+
+// ============================================
+// INTRO MODAL - First-time visitor welcome
+// ============================================
+
+function showIntroModal() {
+    document.getElementById('introModal').classList.add('active');
+
+    // Start Toledo bouncing immediately so user sees it above the modal
+    const toledoDoor = locations.find(l => l.title === 'Toledo, Ohio');
+    if (toledoDoor) {
+        triggerBounce(toledoDoor.id);
+    }
+
+    // Focus the primary button so user can click immediately without double-clicking
+    setTimeout(() => {
+        const primaryBtn = document.querySelector('.intro-choice-btn.primary');
+        if (primaryBtn) {
+            primaryBtn.focus();
+        }
+    }, 100);
+}
+
+function closeIntroModal() {
+    document.getElementById('introModal').classList.remove('active');
+    const progress = getProgress();
+    progress.introSeen = true;
+    saveProgress(progress);
+}
+
+// Close intro modal when first door is opened (called from panel.js)
+function closeIntroModalIfOpen() {
+    const modal = document.getElementById('introModal');
+    if (modal && modal.classList.contains('active')) {
+        closeIntroModal();
+    }
+}
+
+// ============================================
+// DIRECTOR'S COMMENTARY
+// ============================================
+
+function openCommentaryModal() {
+    document.getElementById('commentaryModal').classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeCommentaryModal(event) {
+    if (event.target === document.getElementById('commentaryModal')) {
+        document.getElementById('commentaryModal').classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const modal = document.getElementById('commentaryModal');
+        if (modal && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+});
+
+
+// ============================================
+// SOURCE: js/audio.js
+// ============================================
+
+// ============================================
+// AUDIO MODULE
+// Background music control with fade in/out
+// ============================================
+
+let musicFadeInterval = null;
+
+function playBackgroundMusic(doorId) {
+    const trackUrl = doorAudioTracks[doorId];
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    
+    if (!trackUrl || !backgroundMusic) {
+        return;
+    }
+    
+    // Stop any existing fade
+    if (musicFadeInterval) {
+        clearInterval(musicFadeInterval);
+        musicFadeInterval = null;
+    }
+    
+    // Set the source
+    backgroundMusic.src = trackUrl;
+    
+    // Start at zero volume
+    backgroundMusic.currentTime = 0;
+    backgroundMusic.volume = 0;
+    
+    // Play and fade in
+    backgroundMusic.play().then(() => {
+        const startTime = Date.now();
+        musicFadeInterval = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
+            backgroundMusic.volume = progress * MUSIC_MAX_VOLUME;
+            
+            if (progress >= 1) {
+                clearInterval(musicFadeInterval);
+                musicFadeInterval = null;
+            }
+        }, 50);
+    }).catch(err => {
+        console.error('Audio playback failed:', err.name, err.message);
+    });
+}
+
+function stopBackgroundMusic() {
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    if (!backgroundMusic || backgroundMusic.paused) return;
+    
+    // Stop any existing fade
+    if (musicFadeInterval) {
+        clearInterval(musicFadeInterval);
+        musicFadeInterval = null;
+    }
+    
+    // Fade out
+    const startVolume = backgroundMusic.volume;
+    const startTime = Date.now();
+    
+    musicFadeInterval = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
+        backgroundMusic.volume = startVolume * (1 - progress);
+        
+        if (progress >= 1) {
+            clearInterval(musicFadeInterval);
+            musicFadeInterval = null;
+            backgroundMusic.pause();
+            backgroundMusic.currentTime = 0;
+        }
+    }, 50);
+}
+
+
+// ============================================
+// SOURCE: js/input.js
+// ============================================
+
+// ============================================
+// INPUT MODULE
+// Mouse and touch event handlers
+// ============================================
+
+function onMouseDown(event) {
+    event.preventDefault();
+    isUserInteracting = true;
+    
+    // Hide tooltip when user starts interacting
+    hideTooltip();
+    
+    mouseXOnMouseDown = event.clientX;
+    mouseYOnMouseDown = event.clientY;
+    
+    // Capture current TARGET rotation (not globe rotation) for smooth continuation
+    targetRotationXOnMouseDown = targetRotationX;
+    targetRotationYOnMouseDown = targetRotationY;
+}
+
+function onMouseMove(event) {
+    if (isUserInteracting) {
+        targetRotationY = targetRotationYOnMouseDown + (event.clientX - mouseXOnMouseDown) * 0.002;
+        targetRotationX = targetRotationXOnMouseDown + (event.clientY - mouseYOnMouseDown) * 0.002;
+        targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
+    }
+    
+    checkHover(event);
+}
+
+function onMouseUp() {
+    isUserInteracting = false;
+}
+
+function onMouseWheel(event) {
+    event.preventDefault();
+    camera.position.z += event.deltaY * 0.002;
+    camera.position.z = Math.max(1.2, Math.min(4, camera.position.z));
+}
+
+// Touch events
+let touchStartX, touchStartY;
+let initialPinchDistance = null;
+let initialCameraZ = null;
+
+function onTouchStart(event) {
+    // Hide tooltip when user starts interacting
+    hideTooltip();
+    
+    if (event.touches.length === 1) {
+        isUserInteracting = true;
+        touchStartX = event.touches[0].clientX;
+        touchStartY = event.touches[0].clientY;
+        targetRotationXOnMouseDown = targetRotationX;
+        targetRotationYOnMouseDown = targetRotationY;
+    } else if (event.touches.length === 2) {
+        // Pinch zoom start
+        isUserInteracting = true;
+        initialPinchDistance = getPinchDistance(event.touches);
+        initialCameraZ = camera.position.z;
+    }
+}
+
+function onTouchMove(event) {
+    event.preventDefault();
+    
+    if (event.touches.length === 1 && isUserInteracting && !initialPinchDistance) {
+        // Single finger drag to rotate
+        targetRotationY = targetRotationYOnMouseDown + (event.touches[0].clientX - touchStartX) * 0.002;
+        targetRotationX = targetRotationXOnMouseDown + (event.touches[0].clientY - touchStartY) * 0.002;
+        targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
+    } else if (event.touches.length === 2 && initialPinchDistance) {
+        // Pinch to zoom
+        const currentDistance = getPinchDistance(event.touches);
+        const scale = initialPinchDistance / currentDistance;
+        camera.position.z = Math.max(1.2, Math.min(4, initialCameraZ * scale));
+    }
+}
+
+function onTouchEnd(event) {
+    if (event.touches.length === 0) {
+        isUserInteracting = false;
+        initialPinchDistance = null;
+        initialCameraZ = null;
+    } else if (event.touches.length === 1) {
+        // Switched from pinch to single touch
+        initialPinchDistance = null;
+        touchStartX = event.touches[0].clientX;
+        touchStartY = event.touches[0].clientY;
+        targetRotationXOnMouseDown = targetRotationX;
+        targetRotationYOnMouseDown = targetRotationY;
+    }
+}
+
+function getPinchDistance(touches) {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+// Mobile tap to select location
+function onTouchTap(event) {
+    if (event.changedTouches.length === 1) {
+        const touch = event.changedTouches[0];
+        mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(markers);
+
+        if (intersects.length > 0) {
+            const marker = intersects[0].object;
+            if (marker.userData.title) {
+                const loc = marker.userData;
+
+                // Block clicks until intro modal has appeared (for first-time visitors)
+                const introModal = document.getElementById('introModal');
+                const progress = getProgress();
+                if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+                    return; // Wait for intro modal to appear
+                }
+
+                // Block clicks on dimmed markers during guided mode
+                if (marker.userData.isDimmed) {
+                    showDimmedMarkerMessage();
+                    return;
+                }
+
+                // LAZY LOAD: Trigger texture loading for this marker
+                if (USE_AI_PORTHOLES && !marker.userData.textureLoaded) {
+                    lazyLoadTexture(loc.title, marker);
+                }
+                
+                // Check if we're switching to a different location
+                const isSwitching = currentLocation && currentLocation.id !== loc.id;
+                
+                // Close previous door's iris if switching (only for doors)
+                if (isSwitching && currentLocation && currentLocation.isDoor) {
+                    startIrisAnimation(currentLocation.id, 0, null);
+                }
+                
+                // If switching, trigger globe rotation
+                if (isSwitching) {
+                    closePanel();
+                    const lon = loc.coords[1];
+                    const lat = loc.coords[0];
+                    isTransitioning = true;
+                    transitionPhase = 'zoom-out';
+                    transitionStartTime = Date.now();
+                    pendingRotationY = getTargetY(lon);
+                    pendingRotationX = lat * (Math.PI / 180);
+                    pendingLocation = null;
+                    pendingZoomLocation = loc; // Track for dynamic zoom
+                }
+                
+                // Stop bouncing immediately on click (visual feedback)
+                stopBounce();
+
+                // Helper function to open panel
+                const openPanelForLocation = () => {
+                    // Start background music for doors (if configured)
+                    if (loc.isDoor && doorAudioTracks[loc.id]) {
+                        playBackgroundMusic(loc.id);
+                    }
+                    openPanel(loc);
+                };
+
+                // Doors have iris animation, regular icons don't
+                // But skip iris animation for AI texture markers (no canvas to animate)
+                const hasAITexture = marker.userData.useAIPorthole;
+
+                if (loc.isDoor && !hasAITexture) {
+                    const currentOpen = getMarkerOpenAmount(loc.id);
+
+                    if (currentOpen < 0.5) {
+                        // Iris is closed - start animation and open panel midway
+                        const delay = isSwitching ? 600 : 0;
+                        setTimeout(() => {
+                            startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
+
+                            // Open panel after 200ms (roughly halfway through iris animation)
+                            setTimeout(() => openPanelForLocation(), 200);
+                        }, delay);
+                    } else {
+                        // Iris already open
+                        if (isSwitching) {
+                            setTimeout(() => openPanelForLocation(), 800);
+                        } else {
+                            openPanelForLocation();
+                        }
+                    }
+                } else if (loc.isDoor && hasAITexture) {
+                    // Door with AI texture - no iris animation needed, just open panel
+                    if (isSwitching) {
+                        setTimeout(() => openPanelForLocation(), 800);
+                    } else {
+                        openPanelForLocation();
+                    }
+                } else {
+                    // Regular icons - no iris animation
+                    if (isSwitching) {
+                        setTimeout(() => openPanelForLocation(), 800);
+                    } else {
+                        openPanelForLocation();
+                    }
+                }
+            }
+        }
+    }
+}
+
+function onClick(event) {
+    if (hoveredMarker) {
+        const loc = hoveredMarker.userData;
+
+        // Block clicks until intro modal has appeared (for first-time visitors)
+        const introModal = document.getElementById('introModal');
+        const progress = getProgress();
+        if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+            return; // Wait for intro modal to appear
+        }
+
+        // Block clicks on dimmed markers during guided mode
+        if (hoveredMarker.userData.isDimmed) {
+            showDimmedMarkerMessage();
+            return;
+        }
+
+        // LAZY LOAD: Trigger texture loading for this marker
+        if (USE_AI_PORTHOLES && !hoveredMarker.userData.textureLoaded) {
+            lazyLoadTexture(loc.title, hoveredMarker);
+        }
+
+        // Check if we're switching to a different location
+        const isSwitching = currentLocation && currentLocation.id !== loc.id;
+        
+        // Close previous door's iris if switching (only for doors)
+        if (isSwitching && currentLocation && currentLocation.isDoor) {
+            startIrisAnimation(currentLocation.id, 0, null);
+        }
+        
+        // If switching, trigger globe rotation
+        if (isSwitching) {
+            closePanel();
+            // Use base coords for rotation
+            const lon = loc.coords[1];
+            const lat = loc.coords[0];
+            isTransitioning = true;
+            transitionPhase = 'zoom-out';
+            transitionStartTime = Date.now();
+            // Use same simple formula as sidebar.js (not getTargetY which has calibration issues)
+            const lonRad = lon * (Math.PI / 180);
+            pendingRotationY = -lonRad - 1.55;
+            pendingRotationX = lat * (Math.PI / 180);
+            pendingLocation = null;
+            pendingZoomLocation = loc; // Track for dynamic zoom
+        }
+        
+        // Stop bouncing immediately on click (visual feedback)
+        stopBounce();
+
+        // Helper function to open panel
+        const openPanelForLocation = () => {
+            // Start background music for doors (if configured)
+            if (loc.isDoor && doorAudioTracks[loc.id]) {
+                playBackgroundMusic(loc.id);
+            }
+            openPanel(loc);
+        };
+        
+        // Doors have iris animation, regular icons don't
+        // But skip iris animation for AI texture markers (no canvas to animate)
+        const hasAITexture = hoveredMarker.userData.useAIPorthole;
+
+        if (loc.isDoor && !hasAITexture) {
+            const currentOpen = getMarkerOpenAmount(loc.id);
+
+            if (currentOpen < 0.5) {
+                // Iris is closed - start animation and open panel midway
+                const delay = isSwitching ? 600 : 0;
+                setTimeout(() => {
+                    startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
+
+                    // Open panel after 200ms (roughly halfway through iris animation)
+                    setTimeout(() => openPanelForLocation(), 200);
+                }, delay);
+            } else {
+                // Iris already open
+                if (isSwitching) {
+                    setTimeout(() => openPanelForLocation(), 800);
+                } else {
+                    openPanelForLocation();
+                }
+            }
+        } else if (loc.isDoor && hasAITexture) {
+            // Door with AI texture - no iris animation needed, just open panel
+            if (isSwitching) {
+                setTimeout(() => openPanelForLocation(), 800);
+            } else {
+                openPanelForLocation();
+            }
+        } else {
+            // Regular icons - no iris animation
+            if (isSwitching) {
+                setTimeout(() => openPanelForLocation(), 800);
+            } else {
+                openPanelForLocation();
+            }
+        }
+    }
+}
+
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+// Show message when clicking a dimmed marker
+function showDimmedMarkerMessage() {
+    // Create temporary toast message
+    const existing = document.querySelector('.dimmed-marker-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.className = 'dimmed-marker-toast';
+    toast.innerHTML = `
+        <span class="toast-icon">🚪</span>
+        <span class="toast-text">Complete the three doors first</span>
+    `;
+    toast.style.cssText = `
+        position: fixed;
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(38, 42, 36, 0.95);
+        border: 1px solid rgba(212, 165, 116, 0.5);
+        border-radius: 25px;
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        z-index: 250;
+        animation: toastSlideUp 0.3s ease-out;
+        font-size: 0.9rem;
+        color: #f5f0e8;
+    `;
+    document.body.appendChild(toast);
+
+    // Add animation and auto-remove
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transition = 'opacity 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+    }, 2500);
+}
+
+
+// ============================================
+// SOURCE: js/main.js
+// ============================================
+
+// ============================================
+// MAIN MODULE
+// Application initialization and stars background
+// ============================================
+
+function initStars() {
+    const canvas = document.getElementById('stars');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    const stars = [];
+    for (let i = 0; i < 300; i++) {
+        stars.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            size: Math.random() * 1.5 + 0.5,
+            opacity: Math.random() * 0.5 + 0.3,
+            twinkle: Math.random() * Math.PI
+        });
+    }
+    
+    function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        stars.forEach(star => {
+            const opacity = star.opacity + Math.sin(Date.now() * 0.001 + star.twinkle) * 0.2;
+            ctx.beginPath();
+            ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(245, 240, 232, ${Math.max(0.1, opacity)})`;
+            ctx.fill();
+        });
+        requestAnimationFrame(drawStars);
+    }
+    
+    drawStars();
+    
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+}
+
+// Initialize when DOM is ready
+init();
+
