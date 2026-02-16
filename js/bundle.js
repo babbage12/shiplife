@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-16T18:09:38.788Z
+// Shiplife Bundle - Generated 2026-02-16T18:48:13.114Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -309,6 +309,31 @@ const locationGalleries = {
         { src: "v1770148990/IMG_2148.jpg", caption: "Dubrovnik harbor boats.", alt: "Harbor boats" },
         { src: "v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg", caption: "Far above the walled city on questionable scooters.", alt: "Above Dubrovnik on scooters" },
         { src: "v1770080862/IMG_2770.jpg", caption: "Ocean kayaking around the city walls. Harder than it looks.", alt: "Ocean kayaking in Dubrovnik" }
+    ],
+
+    // CORFU (21 images)
+    "corfu": [
+        { src: "shiplife/corfu/img_4711", caption: "Flowers, old stone, and the endless Ionian - Corfu at its most perfect.", alt: "Sea view from fortress" },
+        { src: "shiplife/corfu/img_4684", caption: "The moat between old and new fortress.", alt: "Fortress moat with boats" },
+        { src: "shiplife/corfu/img_4691", caption: "Inside the fortress walls.", alt: "Fortress interior" },
+        { src: "shiplife/corfu/img_4692", caption: "Venetian engineering built to withstand Ottoman sieges.", alt: "Fortress architecture" },
+        { src: "shiplife/corfu/img_4702", caption: "Clock tower and colorful buildings.", alt: "Town view with clock tower" },
+        { src: "shiplife/corfu/img_4705", caption: "Cannons still guard the ramparts.", alt: "Fortress cannons" },
+        { src: "shiplife/corfu/img_4679", caption: "The harbor spreads below the fortress.", alt: "Harbor view" },
+        { src: "shiplife/corfu/img_4686", caption: "Byzantine Collection of Corfu - museum entrance.", alt: "Museum sign" },
+        { src: "shiplife/corfu/img_4687", caption: "Byzantine frescoes and illuminated manuscripts.", alt: "Museum interior" },
+        { src: "shiplife/corfu/img_4694", caption: "Venetian arcades beneath the fortress rock.", alt: "Fortress arcades" },
+        { src: "shiplife/corfu/img_4696", caption: "Byzantine stone relief.", alt: "Stone medallion" },
+        { src: "shiplife/corfu/img_4697", caption: "Artifacts from a thousand years of faith.", alt: "Museum artifact" },
+        { src: "shiplife/corfu/img_4698", caption: "The Winged Lion of St. Mark - Venice's calling card.", alt: "Lion of St. Mark" },
+        { src: "shiplife/corfu/img_4699", caption: "Stone carvings from Byzantine churches.", alt: "Byzantine carvings" },
+        { src: "shiplife/corfu/img_4700", caption: "Historical Greek decree - the Ionian Islands join Greece.", alt: "Greek inscription" },
+        { src: "shiplife/corfu/img_4701", caption: "Treasures from Corfu's long history.", alt: "Museum piece" },
+        { src: "shiplife/corfu/img_4703", caption: "The clock tower against a brooding sky.", alt: "Clock tower" },
+        { src: "shiplife/corfu/img_4706", caption: "Walking the fortress grounds.", alt: "Fortress grounds" },
+        { src: "shiplife/corfu/img_4707", caption: "Venetian military architecture.", alt: "Fortress architecture" },
+        { src: "shiplife/corfu/img_4708", caption: "Centuries of defense against Ottoman siege.", alt: "Fortress view" },
+        { src: "shiplife/corfu/img_4709", caption: "The fortress that kept Corfu free.", alt: "Fortress panorama" }
     ],
 
     // PHUKET (8 images)
@@ -5796,41 +5821,74 @@ an original composition inspired by this place.
                     <span class="demo-icon">✍️</span>
                     <span class="demo-value">Byron's Grotto</span>
                 </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛪</span>
+                    <span class="demo-value">San Pietro Church</span>
+                </div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The View</span>
-                <h3 class="section-title-panel">Gateway to Cinque Terre</h3>
-                <p>Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951540/Screenshot_20260120_141430_Facebook_j3ffyi.jpg" class="story-image" data-caption="The dramatic Ligurian coastline seen through the fortress walls." alt="View through fortress window at Portovenere">
-                <p class="photo-caption-inline">The Ligurian coast through ancient stone.</p>
-                <p>Lord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him.</p>
+                <span class="section-tag-panel">Through Ancient Stone</span>
+                <h3 class="section-title-panel">Windows to the Sea</h3>
+                <p>The fortress walls frame everything here. Ancient stone openings become perfect windows to the Ligurian coast - the same views that soldiers and poets have contemplated for centuries.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_144805" class="story-image" data-caption="The Ligurian coast through fortress walls." alt="Coast through fortress window">
+                <p class="photo-caption-inline">The coast framed by ancient stone - a view unchanged since the Middle Ages.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145445" class="story-image" data-caption="Medieval columns framing the sea." alt="Columns and sea">
+                <p class="photo-caption-inline">Romanesque columns silhouetted against endless blue - sky melting into sea.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145933" class="story-image" data-caption="View through fortress opening." alt="Fortress view">
+                <p class="photo-caption-inline">Every window tells a story of defense, beauty, and the eternal Mediterranean.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5595" class="story-image" data-caption="Looking out from the fortress." alt="Fortress overlook">
+                <p class="photo-caption-inline">Lord Byron swam 5km across this bay to visit Shelley - you can see why.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Piazza</span>
+                <span class="section-tag-panel">The Fortress</span>
+                <h3 class="section-title-panel">Genoese Stronghold</h3>
+                <p>The Castello Doria dominates the headland, built by Genoa to defend against Pisan raids. Its weathered towers and walls have watched over the gulf for eight centuries.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5598" class="story-image" data-caption="View across the Gulf of La Spezia." alt="Gulf view">
+                <p class="photo-caption-inline">The Gulf of La Spezia spreads below - mountains, villages, and boats dotting the blue.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5601" class="story-image" data-caption="Coastal panorama from the fortress." alt="Panorama">
+                <p class="photo-caption-inline">From up here, the Romantic poets found their inspiration.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5575" class="story-image" data-caption="Fortress tower with coastal views." alt="Fortress tower">
+                <p class="photo-caption-inline">A weathered watchtower stands guard - eight centuries of salt wind and sun.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5560" class="story-image" data-caption="Dramatic coastline view." alt="Coastal view">
+                <p class="photo-caption-inline">The Ligurian coast stretches toward Cinque Terre, cliffs plunging into impossibly blue water.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Walking the Town</span>
                 <h3 class="section-title-panel">Medieval Colors</h3>
-                <p>The main piazza is pure Ligurian charm - pastel buildings in pink, orange, and yellow stacked against a medieval tower. Cafes spill onto the cobblestones.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/IMG_5541" class="story-image" data-caption="The main piazza with medieval tower and colorful buildings." alt="Portovenere piazza">
-                <p class="photo-caption-inline">The piazza - medieval tower, palm trees, and buildings in every shade of the Mediterranean palette.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/IMG_5545" class="story-image" data-caption="Sailboat in the bay." alt="Sailboat in bay">
-                <p class="photo-caption-inline">A sailboat glides across the bay - this is the life Byron and Shelley romanticized.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Churches</span>
-                <h3 class="section-title-panel">Romanesque Stripes</h3>
-                <p>Portovenere has two remarkable churches. San Lorenzo, with its dramatic black-and-white striped facade, sits in the heart of town. San Pietro perches impossibly on the rocky headland.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/IMG_5570" class="story-image" data-caption="Church of San Lorenzo with striped Romanesque facade." alt="San Lorenzo church">
-                <p class="photo-caption-inline">San Lorenzo - the striped marble facade dates to the 12th century.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Coast</span>
-                <h3 class="section-title-panel">Where Poets Dreamed</h3>
-                <p>The Ligurian coast stretches toward Cinque Terre, cliffs plunging into impossibly blue water. A bronze statue gazes out at the view - this is why they called it the Gulf of Poets.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/IMG_5560" class="story-image" data-caption="Dramatic coastline with statue gazing toward Cinque Terre." alt="Coastal view with statue">
-                <p class="photo-caption-inline">Bronze and stone and sea - the view that inspired Byron, Shelley, and countless others.</p>
+                <p>Beyond the fortress, Portovenere unfolds in layers of pastel and stone. The main piazza buzzes with visitors drawn to the same beauty that captivated Byron and Shelley.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_143243" class="story-image" data-caption="The main piazza with colorful buildings and medieval tower." alt="Main piazza">
+                <p class="photo-caption-inline">The piazza in full summer swing - cafes, palm trees, and the medieval tower standing watch.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145954" class="story-image" data-caption="Street scene in Portovenere." alt="Street scene">
+                <p class="photo-caption-inline">Narrow streets wind between buildings painted in every shade of the Mediterranean palette.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145636" class="story-image" data-caption="Town architecture." alt="Town buildings">
+                <p class="photo-caption-inline">Stone and stucco, shutters and flowers - the timeless Italian coastal village.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5553" class="story-image" data-caption="Village scene." alt="Village view">
+                <p class="photo-caption-inline">Every corner reveals another postcard view.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5568" class="story-image" data-caption="Coastal architecture." alt="Coastal view">
+                <p class="photo-caption-inline">The town hugs the rocky shore, buildings stacked up the hillside.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5574" class="story-image" data-caption="Fortress walls and pathways." alt="Fortress path">
+                <p class="photo-caption-inline">Ancient pathways wind along the fortress walls.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5584" class="story-image" data-caption="Church domes against the sky." alt="Church domes">
+                <p class="photo-caption-inline">Church domes rise against the Ligurian sky - San Lorenzo watching over the town.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5596" class="story-image" data-caption="Town overlook." alt="Town view">
+                <p class="photo-caption-inline">Looking back at the fortress from the town below.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5599" class="story-image" data-caption="Coastal scenery." alt="Coast">
+                <p class="photo-caption-inline">The endless blue that drew poets to call this the Gulf of Poets.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5607" class="story-image" data-caption="Village architecture." alt="Village">
+                <p class="photo-caption-inline">Laundry dries on lines strung between centuries-old buildings.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5610" class="story-image" data-caption="Harbor views." alt="Harbor">
+                <p class="photo-caption-inline">The harbor where fishing boats have moored for generations.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5611" class="story-image" data-caption="Final coastal view." alt="Coastal farewell">
+                <p class="photo-caption-inline">One last look at the coast that inspired some of English literature's greatest poems.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5543" class="story-image" data-caption="Town square activity." alt="Square">
+                <p class="photo-caption-inline">Summer crowds gather in the shade of the tower.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5541" class="story-image" data-caption="The colorful piazza." alt="Piazza">
+                <p class="photo-caption-inline">Pink, orange, yellow - the Mediterranean palette on full display.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_151743" class="story-image" data-caption="Farewell to Portovenere." alt="Farewell view">
+                <p class="photo-caption-inline">The Gulf of Poets - where Byron swam, Shelley wrote, and D.H. Lawrence found peace.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -5856,7 +5914,7 @@ an original composition inspired by this place.
             ${generateGallery('portovenere')}
         `,
         fullDesc: "Portovenere sits at the tip of a rugged peninsula, guarding the entrance to the Cinque Terre.\n\nLord Byron loved this place so much he swam across the bay to visit Shelley. The grotto where he contemplated the waves is now named for him. Pastel houses stack up the hillside, and the Church of St. Peter perches dramatically on the rocks.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769810340/IMG_5581_nzmylf.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5582"
     },
     {
         id: 47,
@@ -6324,8 +6382,8 @@ an original composition inspired by this place.
                     <span class="demo-value">Old Fortress</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🇬🇧</span>
-                    <span class="demo-value">British Period</span>
+                    <span class="demo-icon">☦️</span>
+                    <span class="demo-value">Byzantine Heritage</span>
                 </div>
                 <div class="demo-item">
                     <span class="demo-icon">📖</span>
@@ -6334,41 +6392,89 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Ship</span>
-                <h3 class="section-title-panel">Arriving in the Ionian</h3>
-                <p>The Seabourn glides into Corfu's harbor, the green hills rising behind the town. This is Greece, but not quite - four hundred years of Venetian rule left their mark on every street and building.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4679" class="story-image" data-caption="The Seabourn Odyssey in Corfu harbor." alt="Seabourn at Corfu">
-                <p class="photo-caption-inline">Home for the voyage - the Odyssey waiting in Corfu harbor.</p>
-            </div>
-
-            <div class="story-section-panel">
                 <span class="section-tag-panel">The Fortress</span>
                 <h3 class="section-title-panel">Venice's Eastern Outpost</h3>
-                <p>The Old Fortress dominates the town - a Venetian stronghold built to guard the entrance to the Adriatic. The moat still fills with small boats. The Lion of St. Mark still watches from the walls.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4683" class="story-image" data-caption="The Venetian moat with small boats." alt="Fortress moat">
-                <p class="photo-caption-inline">The moat - once a defense, now a quiet marina for fishing boats.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4698" class="story-image" data-caption="The Winged Lion of St. Mark - symbol of Venice." alt="Lion of St. Mark">
-                <p class="photo-caption-inline">The Winged Lion of St. Mark - Venice's calling card, still here after centuries.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4703" class="story-image" data-caption="Clock tower rising above the fortress walls." alt="Clock tower">
-                <p class="photo-caption-inline">The clock tower rises above the ancient walls - layers of history against a brooding sky.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">Inside the Walls</span>
-                <h3 class="section-title-panel">Centuries of Empire</h3>
-                <p>Inside the fortress, Venetian arcades give way to British monuments. Corfu passed through many hands - Byzantine, Venetian, French, British - before finally becoming Greek in 1864.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4695" class="story-image" data-caption="Venetian arcade in the fortress." alt="Fortress arcade">
-                <p class="photo-caption-inline">Venetian arcades - built for soldiers, now home to pigeons and tourists.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4705" class="story-image" data-caption="Fortress grounds with cannons overlooking the sea." alt="Fortress cannons">
+                <p>The Old Fortress dominates the town - a Venetian stronghold built to guard the entrance to the Adriatic. Corfu passed through many hands - Byzantine, Venetian, French, British - before finally becoming Greek in 1864.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4684" class="story-image" data-caption="The Venetian moat with boats." alt="Fortress moat">
+                <p class="photo-caption-inline">The moat between old and new fortress - once a defense, now a quiet marina.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4691" class="story-image" data-caption="Inside the fortress walls." alt="Fortress interior">
+                <p class="photo-caption-inline">Inside the fortress walls - layers of history from Byzantine to British.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4692" class="story-image" data-caption="Fortress architecture." alt="Fortress view">
+                <p class="photo-caption-inline">Venetian engineering built to withstand Ottoman sieges.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4702" class="story-image" data-caption="Clock tower and colorful buildings." alt="Town view">
+                <p class="photo-caption-inline">The clock tower rises above pastel buildings - Greek, Venetian, British all at once.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4705" class="story-image" data-caption="Fortress ramparts with cannons." alt="Fortress cannons">
                 <p class="photo-caption-inline">Cannons still guard the ramparts, pointed at an enemy that never comes.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4679" class="story-image" data-caption="Harbor view from the fortress." alt="Harbor view">
+                <p class="photo-caption-inline">The harbor spreads below - this is Greece, but not quite.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Views</span>
-                <h3 class="section-title-panel">Where Sea Meets Sky</h3>
-                <p>From the fortress walls, the Ionian Sea stretches toward Albania. Flowers cling to ancient stones. This is why empresses and writers chose Corfu - that particular quality of light, that sense of being at the edge of the world.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4711" class="story-image" data-caption="Sea view with flowers from the fortress walls." alt="Sea view">
-                <p class="photo-caption-inline">Flowers, old stone, and the endless Ionian - Corfu at its most perfect.</p>
+                <span class="section-tag-panel">The Museum</span>
+                <h3 class="section-title-panel">Byzantine Collection of Corfu</h3>
+                <p>Inside the fortress, the Byzantine Collection houses treasures from Corfu's thousand years under the Eastern Empire. Icons, frescoes, the Winged Lion of St. Mark - layers of faith and power preserved in stone and gold.</p>
+                <div class="world-carousel" id="byzantineCarousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4686" alt="Byzantine Collection entrance">
+                        <div class="carousel-caption"><span>Byzantine Collection of Corfu - museum entrance</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4687" alt="Museum interior with frescoes">
+                        <div class="carousel-caption"><span>Byzantine frescoes and illuminated manuscripts</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4694" alt="Fortress arcades">
+                        <div class="carousel-caption"><span>Venetian arcades beneath the fortress rock</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4696" alt="Stone medallion">
+                        <div class="carousel-caption"><span>Byzantine stone relief - centuries of devotion</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4697" alt="Museum artifact">
+                        <div class="carousel-caption"><span>Artifacts from a thousand years of faith</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4698" alt="Winged Lion of St. Mark">
+                        <div class="carousel-caption"><span>The Winged Lion of St. Mark - Venice's calling card</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4699" alt="Museum display">
+                        <div class="carousel-caption"><span>Stone carvings from Byzantine churches</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4700" alt="Greek inscription">
+                        <div class="carousel-caption"><span>Historical Greek decree - the Ionian Islands join Greece</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4701" alt="Museum piece">
+                        <div class="carousel-caption"><span>Treasures from Corfu's long history</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4703" alt="Clock tower">
+                        <div class="carousel-caption"><span>The clock tower against a brooding sky</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4705" alt="Fortress view">
+                        <div class="carousel-caption"><span>Cannons guard the Venetian ramparts</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4706" alt="Fortress grounds">
+                        <div class="carousel-caption"><span>Walking the fortress grounds</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4707" alt="Fortress architecture">
+                        <div class="carousel-caption"><span>Venetian military architecture</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4708" alt="Fortress view">
+                        <div class="carousel-caption"><span>Centuries of defense against Ottoman siege</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/corfu/img_4709" alt="Final fortress view">
+                        <div class="carousel-caption"><span>The fortress that kept Corfu free</span></div>
+                    </div>
+                </div>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -6394,7 +6500,7 @@ an original composition inspired by this place.
             ${generateGallery('corfu')}
         `,
         fullDesc: "Corfu was Venetian for four hundred years, and it shows. The old town has more in common with Venice than Athens. Gerald Durrell grew up here. The Empress Sissi built her palace on the hill.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/IMG_4683"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/corfu/img_4711"
     },
     {
         id: 59,
@@ -8174,12 +8280,14 @@ an original composition inspired by this place.
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Approach</span>
-                <h3 class="section-title-panel">Fortress on the Horizon</h3>
+                <h3 class="section-title-panel">First Glimpse</h3>
                 <p>The citadel appears first - a cathedral and bell tower rising from volcanic cliffs, fortified since the Bronze Age. This has been a landmark for Mediterranean sailors for five thousand years.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/IMG_5154" class="story-image" data-caption="Lipari's citadel rising above the harbor." alt="Lipari citadel">
-                <p class="photo-caption-inline">The citadel dominates everything - cathedral, bell tower, and ancient walls on volcanic rock.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/IMG_5150" class="story-image" data-caption="Dramatic silhouette of Lipari's fortress." alt="Citadel silhouette">
-                <p class="photo-caption-inline">Under moody skies, the fortress looks like it belongs in another century.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/20150518_114416" class="story-image" data-caption="Panoramic view of Lipari's harbor and town." alt="Lipari harbor panorama">
+                <p class="photo-caption-inline">The harbor curves around the bay - boats, hotels, and green volcanic hills stretching to the horizon.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/img_5151" class="story-image" data-caption="The citadel rising above Lipari's rooftops." alt="Citadel view">
+                <p class="photo-caption-inline">The citadel rises above the town's terracotta rooftops, ancient walls on volcanic rock.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/img_5152" class="story-image" data-caption="Lipari's dramatic skyline." alt="Lipari skyline">
+                <p class="photo-caption-inline">Cathedral, bell tower, and fortress - a silhouette unchanged for centuries.</p>
             </div>
 
             <div class="story-section-panel">

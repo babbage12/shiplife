@@ -48,6 +48,31 @@ const locationGalleries = {
         { src: "v1770080862/IMG_2770.jpg", caption: "Ocean kayaking around the city walls. Harder than it looks.", alt: "Ocean kayaking in Dubrovnik" }
     ],
 
+    // CORFU (21 images)
+    "corfu": [
+        { src: "shiplife/corfu/img_4711", caption: "Flowers, old stone, and the endless Ionian - Corfu at its most perfect.", alt: "Sea view from fortress" },
+        { src: "shiplife/corfu/img_4684", caption: "The moat between old and new fortress.", alt: "Fortress moat with boats" },
+        { src: "shiplife/corfu/img_4691", caption: "Inside the fortress walls.", alt: "Fortress interior" },
+        { src: "shiplife/corfu/img_4692", caption: "Venetian engineering built to withstand Ottoman sieges.", alt: "Fortress architecture" },
+        { src: "shiplife/corfu/img_4702", caption: "Clock tower and colorful buildings.", alt: "Town view with clock tower" },
+        { src: "shiplife/corfu/img_4705", caption: "Cannons still guard the ramparts.", alt: "Fortress cannons" },
+        { src: "shiplife/corfu/img_4679", caption: "The harbor spreads below the fortress.", alt: "Harbor view" },
+        { src: "shiplife/corfu/img_4686", caption: "Byzantine Collection of Corfu - museum entrance.", alt: "Museum sign" },
+        { src: "shiplife/corfu/img_4687", caption: "Byzantine frescoes and illuminated manuscripts.", alt: "Museum interior" },
+        { src: "shiplife/corfu/img_4694", caption: "Venetian arcades beneath the fortress rock.", alt: "Fortress arcades" },
+        { src: "shiplife/corfu/img_4696", caption: "Byzantine stone relief.", alt: "Stone medallion" },
+        { src: "shiplife/corfu/img_4697", caption: "Artifacts from a thousand years of faith.", alt: "Museum artifact" },
+        { src: "shiplife/corfu/img_4698", caption: "The Winged Lion of St. Mark - Venice's calling card.", alt: "Lion of St. Mark" },
+        { src: "shiplife/corfu/img_4699", caption: "Stone carvings from Byzantine churches.", alt: "Byzantine carvings" },
+        { src: "shiplife/corfu/img_4700", caption: "Historical Greek decree - the Ionian Islands join Greece.", alt: "Greek inscription" },
+        { src: "shiplife/corfu/img_4701", caption: "Treasures from Corfu's long history.", alt: "Museum piece" },
+        { src: "shiplife/corfu/img_4703", caption: "The clock tower against a brooding sky.", alt: "Clock tower" },
+        { src: "shiplife/corfu/img_4706", caption: "Walking the fortress grounds.", alt: "Fortress grounds" },
+        { src: "shiplife/corfu/img_4707", caption: "Venetian military architecture.", alt: "Fortress architecture" },
+        { src: "shiplife/corfu/img_4708", caption: "Centuries of defense against Ottoman siege.", alt: "Fortress view" },
+        { src: "shiplife/corfu/img_4709", caption: "The fortress that kept Corfu free.", alt: "Fortress panorama" }
+    ],
+
     // PHUKET (8 images)
     "phuket": [
         { src: "v1768865557/PANO_20131118_134025_qd3r7o.jpg", caption: "Phuket beach panorama.", alt: "Beach panorama" },
