@@ -242,12 +242,15 @@ function onClick(event) {
         // If switching, trigger globe rotation
         if (isSwitching) {
             closePanel();
+            // Use base coords for rotation
             const lon = loc.coords[1];
             const lat = loc.coords[0];
             isTransitioning = true;
             transitionPhase = 'zoom-out';
             transitionStartTime = Date.now();
-            pendingRotationY = getTargetY(lon);
+            // Use same simple formula as sidebar.js (not getTargetY which has calibration issues)
+            const lonRad = lon * (Math.PI / 180);
+            pendingRotationY = -lonRad - 1.55;
             pendingRotationX = lat * (Math.PI / 180);
             pendingLocation = null;
             pendingZoomLocation = loc; // Track for dynamic zoom

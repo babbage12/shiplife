@@ -1655,7 +1655,7 @@ function getZoomDistanceForLocation(loc) {
     } else {
         const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
         const manualOverride = 1.0; // Could look up from sizeOverrides if needed
-        iconSize = 0.029 * densityFactor * manualOverride;
+        iconSize = 0.0232 * densityFactor * manualOverride;
     }
     
     // Calculate full proportional zoom
@@ -1670,10 +1670,82 @@ function getZoomDistanceForLocation(loc) {
     return Math.max(zoomDistance, minZoom);
 }
 
+// Offset positions for overlapping markers (lat/lng offset)
+// Moved outside createMarkers so it can be accessed by getDisplayCoords
+const markerOffsets = {
+    // New Zealand - spread out close locations
+    "Wellington, New Zealand": { latOffset: -0.5, lngOffset: -0.8 },
+    "Picton, New Zealand": { latOffset: 0.5, lngOffset: 0.8 },
+    "Auckland, New Zealand": { latOffset: 0.5, lngOffset: -0.6 },
+    "Tauranga, New Zealand": { latOffset: -0.5, lngOffset: 0.6 },
+    // Northern Adriatic - minimal offsets, rely on smaller sizes
+    "Venice, Italy": { latOffset: 0.4, lngOffset: -0.6 },
+    "Piran, Slovenia": { latOffset: -0.2, lngOffset: 0.6 },
+    "Ravenna, Italy": { latOffset: 0.2, lngOffset: 0.8 },
+    // Central Italy - spread along coast, onto land
+    "Florence, Italy": { latOffset: 0.3, lngOffset: -0.3 },
+    "Portovenere, Italy": { latOffset: 0.1, lngOffset: 0.3 },
+    "Portofino, Italy": { latOffset: 0.1, lngOffset: -0.6 },
+    // French Riviera - spread icons onto land (north), stagger east/west
+    "Marseille, France": { latOffset: 0.5, lngOffset: -1.0 },
+    "Sanary-sur-Mer, France": { latOffset: 0.8, lngOffset: -0.5 },
+    "Le Lavandou, France": { latOffset: 0.5, lngOffset: 0.2 },
+    "St. Tropez, France": { latOffset: 1.2, lngOffset: 0.6 },
+    "Antibes, France": { latOffset: 0.4, lngOffset: 0.5 },
+    "Monte Carlo, Monaco": { latOffset: 0.2, lngOffset: 0.9 },
+    "San Remo, Italy": { latOffset: 0.4, lngOffset: 1.0 },
+    "Roses, Spain": { latOffset: -0.3, lngOffset: 0.2 },
+    // Corsica
+    "Propriano, Corsica": { latOffset: -0.2, lngOffset: 0.2 },
+    // Adriatic south - minimal offsets
+    "Dubrovnik, Croatia": { latOffset: 0.2, lngOffset: -0.2 },
+    "Kotor, Montenegro": { latOffset: -0.2, lngOffset: 0.2 },
+    "Hvar, Croatia": { latOffset: -0.4, lngOffset: 0.4 },
+    "Šibenik, Croatia": { latOffset: 0.4, lngOffset: -0.4 },
+    // Western Greece - spread Corfu/Parga
+    "Corfu, Greece": { latOffset: 0.4, lngOffset: -0.3 },
+    "Parga, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    // Aegean - Turkish coast (Ephesus/Kuşadası are almost same spot!)
+    "Ephesus, Turkey": { latOffset: 0.4, lngOffset: 0.3 },
+    "Kuşadası, Turkey": { latOffset: -0.8, lngOffset: -0.3 },
+    "Izmir, Turkey": { latOffset: 0.4, lngOffset: -0.3 },
+    "Çeşme, Turkey": { latOffset: -0.4, lngOffset: 0.3 },
+    // Aegean - Cyclades islands
+    "Mykonos, Greece": { latOffset: 0.4, lngOffset: -0.3 },
+    "Santorini, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    "Milos, Greece": { latOffset: 0.3, lngOffset: -0.4 },
+    // Peloponnese ports - spread them out
+    "Itea, Greece": { latOffset: 0.5, lngOffset: -0.3 },
+    "Nafplio, Greece": { latOffset: -0.3, lngOffset: 0.4 },
+    "Katakolon, Greece": { latOffset: -0.5, lngOffset: -0.4 },
+    "Pylos, Greece": { latOffset: -0.4, lngOffset: 0.3 },
+    "Zakynthos, Greece": { latOffset: 0.4, lngOffset: -0.5 },
+    // Patagonia/Antarctica - spread apart
+    "Beagle Channel, Chile": { latOffset: 0.8, lngOffset: -2.5 },
+    "Lemaire Channel, Antarctica": { latOffset: -1.0, lngOffset: 2.0 },
+    "Ushuaia, Argentina": { latOffset: -0.6, lngOffset: 1.0 },
+    "Tierra del Fuego": { latOffset: -0.3, lngOffset: -1.5 },
+    "Petermann Island, Antarctica": { latOffset: -1.5, lngOffset: -2.5 },
+    "Port Lockroy, Antarctica": { latOffset: 1.0, lngOffset: 1.5 },
+    // Indonesia - Bali area
+    "Bali, Indonesia": { latOffset: -0.5, lngOffset: 1.2 },
+    "Celukan Bawang, Indonesia": { latOffset: 0.5, lngOffset: -1.2 }
+};
+
+// Helper function to get display coordinates (with offset applied)
+// Used by both marker clicks and sidebar clicks for consistent behavior
+function getDisplayCoords(loc) {
+    const offset = markerOffsets[loc.title];
+    if (offset) {
+        return [loc.coords[0] + offset.latOffset, loc.coords[1] + offset.lngOffset];
+    }
+    return loc.coords;
+}
+
 function createMarkers() {
     // Pre-calculate density factors for all locations
     const densityFactors = calculateDensityFactors();
-    
+
     // Manual size adjustments for specific locations (multiplier)
     const sizeOverrides = {
         "Queen Victoria (Cunard)": 1.10,
@@ -1687,7 +1759,7 @@ function createMarkers() {
         "Ravenna, Italy": 0.65,
         "Florence, Italy": 0.65,
         "Portovenere, Italy": 0.65,
-        "Portofino, Italy": 0.70,
+        "Portofino, Italy": 0.50,
         "Dubrovnik, Croatia": 0.70,
         "Kotor, Montenegro": 0.70,
         "Hvar, Croatia": 0.70,
@@ -1711,79 +1783,28 @@ function createMarkers() {
         "Pylos, Greece": 0.75,
         "Zakynthos, Greece": 0.55,
         // French Riviera cluster - smaller + offset handles spacing
-        "Le Lavandou, France": 0.68,
-        "Monte Carlo, Monaco": 0.68,
-        "San Remo, Italy": 0.40,
-        "St. Tropez, France": 0.68,
-        "Marseille, France": 0.68,
+        "Marseille, France": 0.65,
+        "Sanary-sur-Mer, France": 0.60,
+        "Le Lavandou, France": 0.60,
+        "St. Tropez, France": 0.60,
+        "Antibes, France": 0.55,
+        "Monte Carlo, Monaco": 0.55,
+        "San Remo, Italy": 0.55,
         "Roses, Spain": 0.85,
+        // Corsica
+        "Propriano, Corsica": 0.65,
         // Other Italian
+        "Elba, Italy": 0.60,
         "Stromboli, Italy": 0.75,
+        // Amalfi Coast
+        "Sorrento, Italy": 0.65,
+        "Amalfi, Italy": 0.60,
         // Israel
         "Haifa, Israel": 0.85,
         // Indonesia
         "Celukan Bawang, Indonesia": 0.80
     };
-    
-    // Offset positions for overlapping markers (lat/lng offset)
-    const markerOffsets = {
-        // New Zealand - spread out close locations
-        "Wellington, New Zealand": { latOffset: -0.5, lngOffset: -0.8 },
-        "Picton, New Zealand": { latOffset: 0.5, lngOffset: 0.8 },
-        "Auckland, New Zealand": { latOffset: 0.5, lngOffset: -0.6 },
-        "Tauranga, New Zealand": { latOffset: -0.5, lngOffset: 0.6 },
-        // Northern Adriatic - minimal offsets, rely on smaller sizes
-        "Venice, Italy": { latOffset: 0.4, lngOffset: -0.6 },
-        "Piran, Slovenia": { latOffset: -0.2, lngOffset: 0.6 },
-        "Ravenna, Italy": { latOffset: -0.3, lngOffset: 0.5 },
-        // Central Italy - spread along coast
-        "Florence, Italy": { latOffset: 0.3, lngOffset: 0.2 },
-        "Portovenere, Italy": { latOffset: -0.5, lngOffset: 0.6 },
-        "Portofino, Italy": { latOffset: 0.4, lngOffset: -0.3 },
-        // French Riviera - stagger north/south to avoid overlap (increased spacing)
-        "Marseille, France": { latOffset: 1.2, lngOffset: -0.6 },
-        "Le Lavandou, France": { latOffset: -1.4, lngOffset: -0.4 },
-        "St. Tropez, France": { latOffset: 1.6, lngOffset: 0.4 },
-        "Monte Carlo, Monaco": { latOffset: -1.2, lngOffset: -0.6 },
-        "San Remo, Italy": { latOffset: -1.0, lngOffset: 0.6 },
-        "Roses, Spain": { latOffset: -0.3, lngOffset: 0.2 },
-        // Corsica
-        "Propriano, Corsica": { latOffset: -0.2, lngOffset: 0.2 },
-        // Adriatic south - minimal offsets
-        "Dubrovnik, Croatia": { latOffset: 0.2, lngOffset: -0.2 },
-        "Kotor, Montenegro": { latOffset: -0.2, lngOffset: 0.2 },
-        "Hvar, Croatia": { latOffset: -0.4, lngOffset: 0.4 },
-        "Šibenik, Croatia": { latOffset: 0.4, lngOffset: -0.4 },
-        // Western Greece - spread Corfu/Parga
-        "Corfu, Greece": { latOffset: 0.4, lngOffset: -0.3 },
-        "Parga, Greece": { latOffset: -0.4, lngOffset: 0.3 },
-        // Aegean - Turkish coast (Ephesus/Kuşadası are almost same spot!)
-        "Ephesus, Turkey": { latOffset: 0.4, lngOffset: 0.3 },
-        "Kuşadası, Turkey": { latOffset: -0.8, lngOffset: -0.3 },
-        "Izmir, Turkey": { latOffset: 0.4, lngOffset: -0.3 },
-        "Çeşme, Turkey": { latOffset: -0.4, lngOffset: 0.3 },
-        // Aegean - Cyclades islands
-        "Mykonos, Greece": { latOffset: 0.4, lngOffset: -0.3 },
-        "Santorini, Greece": { latOffset: -0.4, lngOffset: 0.3 },
-        "Milos, Greece": { latOffset: 0.3, lngOffset: -0.4 },
-        // Peloponnese ports - spread them out
-        "Itea, Greece": { latOffset: 0.5, lngOffset: -0.3 },
-        "Nafplio, Greece": { latOffset: -0.3, lngOffset: 0.4 },
-        "Katakolon, Greece": { latOffset: -0.5, lngOffset: -0.4 },
-        "Pylos, Greece": { latOffset: -0.4, lngOffset: 0.3 },
-        "Zakynthos, Greece": { latOffset: 0.4, lngOffset: -0.5 },
-        // Patagonia/Antarctica - spread apart
-        "Beagle Channel, Chile": { latOffset: 0.8, lngOffset: -2.5 },
-        "Lemaire Channel, Antarctica": { latOffset: -1.0, lngOffset: 2.0 },
-        "Ushuaia, Argentina": { latOffset: -0.6, lngOffset: 1.0 },
-        "Tierra del Fuego": { latOffset: -0.3, lngOffset: -1.5 },
-        "Petermann Island, Antarctica": { latOffset: -1.5, lngOffset: -2.5 },
-        "Port Lockroy, Antarctica": { latOffset: 1.0, lngOffset: 1.5 },
-        // Indonesia - Bali area
-        "Bali, Indonesia": { latOffset: -0.5, lngOffset: 1.2 },
-        "Celukan Bawang, Indonesia": { latOffset: 0.5, lngOffset: -1.2 }
-    };
-    
+
     locations.forEach((loc, index) => {
         // Check for offset
         const offset = markerOffsets[loc.title];
@@ -1804,7 +1825,7 @@ function createMarkers() {
         
         // Size - doors are larger, apply manual overrides to all, density only to non-doors
         const isGuidedMode = !isGuidedComplete();
-        const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.029 * densityScale * manualOverride;
+        const baseSize = loc.isDoor ? 0.040 * manualOverride : 0.0232 * densityScale * manualOverride;
         
         let texture, spriteMaterial, canvas;
         let textureAlreadyLoaded = false;
@@ -1865,6 +1886,7 @@ function createMarkers() {
         
         // Store data on marker for click handling and animation
         marker.userData = { ...marker.userData, ...loc };
+        marker.userData.displayCoords = [displayLat, displayLng]; // Offset-adjusted coords for flying to
         marker.userData.baseSize = baseSize;
         marker.userData.iconConfig = config;
         marker.userData.iconCanvas = canvas;

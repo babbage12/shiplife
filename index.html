@@ -137,6 +137,8 @@
     <!-- Lightbox for full-size images -->
     <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
         <span class="lightbox-close">&times;</span>
+        <span class="lightbox-prev" onclick="lightboxPrev(event)">&#10094;</span>
+        <span class="lightbox-next" onclick="lightboxNext(event)">&#10095;</span>
         <img src="" alt="Full size image" id="lightboxImage">
         <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
@@ -209,33 +211,27 @@
     <!-- External Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <!-- Data (must load first) -->
+    <!-- Bundled Application Code -->
+    <script src="js/bundle.js"></script>
+
+    <!-- Original script tags (for rollback, uncomment below and comment out bundle above)
     <script src="js/data/config.js"></script>
     <script src="js/data/galleries.js"></script>
     <script src="js/data/locations.js"></script>
-
-    <!-- Utilities -->
     <script src="js/utils.js"></script>
-
-    <!-- Globe -->
     <script src="js/globe/core.js"></script>
     <script src="js/globe/markers.js"></script>
     <script src="js/globe/animation.js"></script>
-
-    <!-- UI -->
     <script src="js/ui/tooltip.js"></script>
     <script src="js/ui/panel.js"></script>
     <script src="js/ui/sidebar.js"></script>
     <script src="js/ui/lightbox.js"></script>
     <script src="js/ui/carousel.js"></script>
     <script src="js/ui/modal.js"></script>
-
-    <!-- Input & Audio -->
     <script src="js/audio.js"></script>
     <script src="js/input.js"></script>
-
-    <!-- Main Initialization -->
     <script src="js/main.js"></script>
+    -->
 
 </body>
 </html>

@@ -15,6 +15,14 @@ function showIntroModal() {
     if (toledoDoor) {
         triggerBounce(toledoDoor.id);
     }
+
+    // Focus the primary button so user can click immediately without double-clicking
+    setTimeout(() => {
+        const primaryBtn = document.querySelector('.intro-choice-btn.primary');
+        if (primaryBtn) {
+            primaryBtn.focus();
+        }
+    }, 100);
 }
 
 function closeIntroModal() {

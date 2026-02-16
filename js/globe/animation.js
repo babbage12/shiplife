@@ -245,15 +245,15 @@ function triggerDoorsCompleteSequence() {
     showCelebrationMessage();
     flareAllMarkers();
 
-    // T+500ms: Undim sidebar items
-    setTimeout(() => {
-        undimSidebarItems();
-    }, 500);
-
-    // T+2500ms: Spin globe to Mediterranean (pause to appreciate lights-on)
+    // T+400ms: Start spinning to Mediterranean (overlaps with marker flare animation)
     setTimeout(() => {
         spinToMediterranean();
-    }, 2500);
+    }, 400);
+
+    // T+800ms: Undim sidebar items (after flare animation completes)
+    setTimeout(() => {
+        undimSidebarItems();
+    }, 800);
 
     // T+5000ms: Fade message
     setTimeout(() => {

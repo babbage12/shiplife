@@ -278,10 +278,10 @@ document.addEventListener('keydown', (e) => {
 
 // Attach click handlers to story images when panel content changes
 function attachImageClickHandlers() {
-    const storyImages = document.querySelectorAll('.panel-text .story-image, .panel-text .gallery-thumb');
+    // Single story images (no navigation)
+    const storyImages = document.querySelectorAll('.panel-text .story-image');
     storyImages.forEach(img => {
         img.onclick = function() {
-            // Get caption from data-caption attribute first, then fall back to next sibling
             let caption = img.dataset.caption || '';
             if (!caption) {
                 const nextEl = img.parentElement?.nextElementSibling;
@@ -291,6 +291,21 @@ function attachImageClickHandlers() {
             }
             openLightbox(img.src, caption);
         };
+    });
+
+    // Gallery thumbnails - collect all images in each gallery for navigation
+    document.querySelectorAll('.gallery-grid').forEach(gallery => {
+        const thumbs = gallery.querySelectorAll('.gallery-thumb');
+        const galleryImages = Array.from(thumbs).map(img => ({
+            src: img.src,
+            caption: img.dataset.caption || img.alt || ''
+        }));
+
+        thumbs.forEach((img, index) => {
+            img.onclick = function() {
+                openLightbox(img.src, img.dataset.caption || img.alt || '', galleryImages, index);
+            };
+        });
     });
 
     // Attach click handlers to more-info buttons (inline onclick doesn't work with innerHTML)

@@ -7,9 +7,10 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Doors first
+    // Doors first, then others alphabetically
     const doors = locations.filter(l => l.isDoor);
-    const others = locations.filter(l => !l.isDoor);
+    const others = locations.filter(l => !l.isDoor)
+        .sort((a, b) => a.title.localeCompare(b.title));
 
     [...doors, ...others].forEach(loc => {
         const config = getIconConfig(loc.title);

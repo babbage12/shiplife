@@ -1613,6 +1613,23 @@
             object-fit: contain;
             border-radius: 8px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+            transition: opacity 0.2s ease;
+        }
+
+        /* Loading spinner for lightbox */
+        .lightbox.loading::before {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid rgba(212, 165, 116, 0.3);
+            border-top-color: var(--gold);
+            border-radius: 50%;
+            animation: lightbox-spin 0.8s linear infinite;
+        }
+
+        @keyframes lightbox-spin {
+            to { transform: rotate(360deg); }
         }
 
         .lightbox-close {
@@ -1628,6 +1645,53 @@
 
         .lightbox-close:hover {
             color: var(--gold);
+        }
+
+        /* Lightbox navigation arrows */
+        .lightbox-prev,
+        .lightbox-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.5rem;
+            color: var(--cream);
+            cursor: pointer;
+            transition: color 0.3s, transform 0.2s;
+            z-index: 1001;
+            padding: 1rem;
+            user-select: none;
+            display: none;
+        }
+
+        .lightbox-prev {
+            left: 1rem;
+        }
+
+        .lightbox-next {
+            right: 1rem;
+        }
+
+        .lightbox-prev:hover,
+        .lightbox-next:hover {
+            color: var(--gold);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        /* Mobile adjustments for arrows */
+        @media (max-width: 768px) {
+            .lightbox-prev,
+            .lightbox-next {
+                font-size: 2rem;
+                padding: 0.75rem;
+            }
+
+            .lightbox-prev {
+                left: 0.5rem;
+            }
+
+            .lightbox-next {
+                right: 0.5rem;
+            }
         }
 
         .lightbox-caption {
@@ -2386,7 +2450,7 @@
             display: flex;
             align-items: flex-end;
             justify-content: center;
-            padding-bottom: 8%;
+            padding-bottom: 3%;
             pointer-events: none;
         }
 
@@ -2399,7 +2463,7 @@
             background: linear-gradient(135deg, rgba(38, 42, 36, 0.95), rgba(28, 32, 26, 0.95));
             border: 1px solid rgba(212, 165, 116, 0.4);
             border-radius: 20px;
-            padding: 1.5rem 2rem;
+            padding: 1.25rem 2rem 1.5rem;
             max-width: 420px;
             width: 90%;
             text-align: center;
@@ -2415,10 +2479,10 @@
 
         .intro-modal h2 {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2rem;
+            font-size: 1.85rem;
             font-weight: 300;
             color: var(--cream);
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .intro-modal .intro-text {
@@ -2429,7 +2493,7 @@
         }
 
         .intro-modal .intro-text:last-of-type {
-            margin-bottom: 2rem;
+            margin-bottom: 1.25rem;
             color: var(--gold-light);
             font-style: italic;
         }
@@ -2438,7 +2502,7 @@
             display: flex;
             justify-content: center;
             gap: 1.5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.25rem;
         }
 
         .intro-door {
@@ -2497,7 +2561,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
 
         .intro-choice-btn {
@@ -2725,6 +2789,269 @@
             .next-door-prompt {
                 bottom: 28%;
                 padding: 0.6rem 1.25rem;
+            }
+        }
+
+        /* ============================================
+           SONG PANEL STYLES
+           For locations designated as original songs
+           ============================================ */
+
+        .song-panel {
+            max-width: 100%;
+        }
+
+        .song-hero {
+            position: relative;
+            margin: -1rem -1rem 1.5rem -1rem;
+            overflow: hidden;
+        }
+
+        .song-artwork {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+        .song-title-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem 1.5rem;
+            background: linear-gradient(transparent, rgba(0,0,0,0.85));
+            color: white;
+        }
+
+        .song-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+            color: var(--gold);
+        }
+
+        .song-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            margin: 0.25rem 0;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .song-artist {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Audio Player */
+        .audio-player-container {
+            background: rgba(212, 165, 116, 0.1);
+            border: 1px solid rgba(212, 165, 116, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .song-player {
+            width: 100%;
+            margin-bottom: 0.75rem;
+            height: 40px;
+        }
+
+        .song-player::-webkit-media-controls-panel {
+            background: rgba(21, 34, 56, 0.9);
+        }
+
+        .player-links {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stream-link {
+            font-size: 0.75rem;
+            color: rgba(212, 165, 116, 0.8);
+            text-decoration: none;
+            padding: 0.3rem 0.75rem;
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+
+        .stream-link:hover {
+            background: rgba(212, 165, 116, 0.2);
+            color: var(--gold);
+        }
+
+        /* Lyrics Excerpt */
+        .lyrics-excerpt {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            text-align: center;
+            border-left: none;
+            padding: 1.25rem;
+            color: var(--gold);
+            line-height: 1.8;
+            background: rgba(212, 165, 116, 0.05);
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        /* Collapsible Lyrics */
+        .lyrics-section {
+            background: rgba(0,0,0,0.25);
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            cursor: pointer;
+            overflow: hidden;
+            border: 1px solid rgba(212, 165, 116, 0.15);
+        }
+
+        .lyrics-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .lyrics-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .lyrics-toggle {
+            transition: transform 0.3s;
+            opacity: 0.6;
+        }
+
+        .lyrics-section.expanded .lyrics-toggle {
+            transform: rotate(180deg);
+        }
+
+        .lyrics-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+        }
+
+        .lyrics-section.expanded .lyrics-content {
+            max-height: 2000px;
+        }
+
+        .lyrics-text {
+            padding: 0 1.5rem 1.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 0.95rem;
+            line-height: 1.9;
+            white-space: pre-wrap;
+            color: rgba(245, 240, 232, 0.85);
+        }
+
+        .lyrics-text .verse-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--gold);
+            opacity: 0.7;
+            margin-top: 1rem;
+            display: block;
+        }
+
+        /* Song Status Banner */
+        .song-status {
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.15), rgba(212, 165, 116, 0.05));
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .song-status .status-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .song-status .status-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            color: rgba(245, 240, 232, 0.8);
+            font-style: italic;
+        }
+
+        /* Release Info */
+        .song-release-info {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(212, 165, 116, 0.2);
+            text-align: center;
+        }
+
+        .release-date {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            margin-bottom: 1rem;
+        }
+
+        .share-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .share-prompt {
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        .share-btn {
+            font-size: 0.75rem;
+            color: var(--gold);
+            text-decoration: none;
+            padding: 0.4rem 1rem;
+            background: rgba(212, 165, 116, 0.15);
+            border-radius: 20px;
+            transition: all 0.2s;
+        }
+
+        .share-btn:hover {
+            background: rgba(212, 165, 116, 0.3);
+        }
+
+        /* Song panel mobile adjustments */
+        @media (max-width: 768px) {
+            .song-artwork {
+                height: 220px;
+            }
+
+            .song-name {
+                font-size: 1.5rem;
+            }
+
+            .lyrics-excerpt {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+
+            .player-links {
+                gap: 0.5rem;
+            }
+
+            .stream-link {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.6rem;
             }
         }
 
