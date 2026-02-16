@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-16T21:59:21.486Z
+// Shiplife Bundle - Generated 2026-02-16T23:30:48.898Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -5589,7 +5589,7 @@ an original composition inspired by this place.
         useRichContent: true,
         richContent: `
             <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ibiza/img_20140610_135303" class="hero-image" alt="Ibiza fortress">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,h_800,c_fill,g_south,q_auto,f_auto/shiplife/ibiza/img_20140610_135303" class="hero-image" alt="Ibiza fortress">
             </div>
 
             <div class="demographics-strip">
