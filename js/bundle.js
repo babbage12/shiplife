@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-16T21:49:33.946Z
+// Shiplife Bundle - Generated 2026-02-16T21:59:21.486Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -12959,11 +12959,20 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Doors first, then locations with rich panels, then others
+    // Check if a location has a complete story panel (2+ sections, 5+ inline images)
+    function isCompletePanel(loc) {
+        if (!loc.richContent) return false;
+        const sections = (loc.richContent.match(/story-section-panel/g) || []).length;
+        const storyImages = (loc.richContent.match(/story-image/g) || []).length;
+        const inlineImages = (loc.richContent.match(/inline-image/g) || []).length;
+        return sections >= 2 && (storyImages + inlineImages) >= 5;
+    }
+
+    // Doors first, then complete story panels, then others
     const doors = locations.filter(l => l.isDoor);
-    const withPanels = locations.filter(l => !l.isDoor && l.richContent)
+    const completePanels = locations.filter(l => !l.isDoor && isCompletePanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
-    const others = locations.filter(l => !l.isDoor && !l.richContent)
+    const others = locations.filter(l => !l.isDoor && !isCompletePanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
 
     // Helper to create a location item
@@ -13038,15 +13047,15 @@ function buildLocationList() {
     // Add chapters
     doors.forEach(loc => list.appendChild(createLocationItem(loc)));
 
-    // Add rich panel locations with divider
-    if (withPanels.length > 0) {
-        list.appendChild(createDivider(`Stories (${withPanels.length})`));
-        withPanels.forEach(loc => list.appendChild(createLocationItem(loc)));
+    // Add complete story panels with divider
+    if (completePanels.length > 0) {
+        list.appendChild(createDivider(`Stories (${completePanels.length})`));
+        completePanels.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
 
     // Add other locations with divider
     if (others.length > 0) {
-        list.appendChild(createDivider(`More Ports (${others.length})`));
+        list.appendChild(createDivider(`More Locations (${others.length})`));
         others.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
     
