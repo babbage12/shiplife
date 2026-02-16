@@ -2577,15 +2577,55 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="story-section-panel">
-                <p>Symi is what happens when an island decides to be beautiful on purpose.</p>
-                <p>The neoclassical mansions in shades of ochre, terracotta, and pastel climb the hillsides around the harbor of Gialos. Once the sponge-diving capital of the Aegean, the island's wealth built these elegant houses. Now they're perfectly preserved, reflecting in the still harbor waters.</p>
-                <p>Away from the day-trippers who arrive from Rhodes, the upper town of Chorio rewards those who climb its 500 steps with narrow lanes, Byzantine churches, and views that stretch to Turkey.</p>
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/symi/img_5795" class="hero-image" alt="Symi harbor">
             </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Dodecanese Islands</div>
+                <div class="demo-item"><span class="demo-icon">👥</span> Pop: 2,600</div>
+                <div class="demo-item"><span class="demo-icon">🧽</span> Sponge Diving</div>
+                <div class="demo-item"><span class="demo-icon">🎨</span> Neoclassical</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Harbor</span>
+                <h3 class="section-title-panel">Gialos - A Painted Amphitheater</h3>
+                <p>Symi is what happens when an island decides to be beautiful on purpose. The neoclassical mansions in shades of ochre, terracotta, and pastel climb the hillsides around the harbor of Gialos. Once the sponge-diving capital of the Aegean, the island's wealth built these elegant houses.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5786" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5786" data-caption="The colorful harbor" alt="Harbor view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5787" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5787" data-caption="Neoclassical facades" alt="Facades">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5791" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5791" data-caption="Reflections in the harbor" alt="Reflections">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5792" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5792" data-caption="Pastel houses" alt="Pastel houses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5793" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5793" data-caption="Symi's waterfront" alt="Waterfront">
+                </div>
+                <p class="photo-caption-inline">Now perfectly preserved, reflecting in the still harbor waters.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Exploring</span>
+                <h3 class="section-title-panel">Up the 500 Steps</h3>
+                <p>Away from the day-trippers who arrive from Rhodes, the upper town of Chorio rewards those who climb its 500 steps with narrow lanes, Byzantine churches, and views that stretch to Turkey.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5796" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5796" data-caption="Views from above" alt="Upper town view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5797" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5797" data-caption="Climbing to Chorio" alt="Chorio">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5799" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5799" data-caption="Island details" alt="Details">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5800" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5800" data-caption="Aegean blues" alt="Aegean">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/symi/img_5801" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/symi/img_5801" data-caption="Symi memories" alt="Symi">
+                </div>
+                <p class="photo-caption-inline">A gem of the Dodecanese, just a stone's throw from Turkey.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Symi' : '+ More about Symi'">+ More about Symi</p>
+            <div class="more-info-content">
+                <p>Symi's prosperity came from sponge diving and shipbuilding. At its peak in the early 20th century, the island had a population of 25,000—ten times today's number. The Italian occupation and the decline of the sponge trade led to emigration, but left the architecture frozen in time.</p>
+                <p>The Monastery of Panormitis, on the island's southern tip, is one of the most important pilgrimage sites in the Dodecanese, dedicated to the Archangel Michael.</p>
+            </div>
+
             ${generateGallery('symi')}
         `,
         fullDesc: "Symi is what happens when an island decides to be beautiful on purpose.\n\nThe neoclassical mansions in shades of ochre, terracotta, and pastel climb the hillsides around the harbor of Gialos. Once the sponge-diving capital of the Aegean, the island's wealth built these elegant houses. Now they're perfectly preserved, reflecting in the still harbor waters.",
-        image: "./images/hero/simi/IMG_5796.jpeg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/symi/img_5795"
     },
     {
         id: 26,
@@ -2843,6 +2883,38 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="story-image" alt="Malta view">
                 </div>
                 <p class="photo-caption-inline">The Grand Harbour and the fortress walls of Valletta.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Day Trip</span>
+                <h3 class="section-title-panel">Gozo - Malta's Sister Island</h3>
+                <p>A ferry ride from Malta brings you to Gozo - smaller, quieter, more rural. The Citadel rises above Victoria, and the churches here are some of the most ornate in the Mediterranean.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_103703" class="story-image" data-caption="The Citadel of Victoria, Gozo." alt="Gozo Citadel">
+                <p class="photo-caption-inline">The Citadel panorama - fortified hilltop town watching over the island.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_103607" class="story-image" data-caption="Gozo architecture." alt="Gozo town">
+                <p class="photo-caption-inline">Honey-colored limestone - the signature of Maltese architecture.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_104947" class="story-image" data-caption="Village street." alt="Village">
+                <p class="photo-caption-inline">Village streets where time moves slower than on the mainland.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_105651" class="story-image" data-caption="Gozo scene." alt="Gozo">
+                <p class="photo-caption-inline">The quieter pace of island life.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_110704" class="story-image" data-caption="Gozo view." alt="Gozo view">
+                <p class="photo-caption-inline">Views across the Maltese archipelago.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Churches</span>
+                <h3 class="section-title-panel">Baroque Splendor</h3>
+                <p>Gozo's churches are astonishing - baroque interiors dripping with gold, painted domes, marble floors. The Maltese take their faith seriously, and it shows.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_1148390" class="story-image" data-caption="Church interior." alt="Church">
+                <p class="photo-caption-inline">Stepping inside is like entering another world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115312" class="story-image" data-caption="Baroque altar and baldachin." alt="Altar">
+                <p class="photo-caption-inline">The baldachin rises toward the painted dome - gold and marble and centuries of devotion.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115325" class="story-image" data-caption="Church nave." alt="Church interior">
+                <p class="photo-caption-inline">Every surface decorated, every detail considered.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115822" class="story-image" data-caption="Ornate interior." alt="Church detail">
+                <p class="photo-caption-inline">The checkered floor, the golden altar - baroque at its finest.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150607_133045" class="story-image" data-caption="Final church view." alt="Church">
+                <p class="photo-caption-inline">Faith made visible in stone and gold.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -3151,77 +3223,79 @@ an original composition inspired by this place.
         tag: "Kodak Gap",
         icon: "🧊",
         isDoor: false,
-        shortDesc: "The most beautiful passage in Antarctica.",
+        shortDesc: "5am wake-up call: we might be going in.",
         imagePosition: "center",
-        imageCaption: "The Lemaire Channel - ice cliffs rising on both sides.",
         useRichContent: true,
         richContent: `
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/lemaire/img_6712" class="hero-image" alt="Lemaire Channel">
+            </div>
+
             <div class="demographics-strip">
-                <div class="demo-item">
-                    <span class="demo-icon">📍</span>
-                    <span class="demo-value">Antarctic Peninsula</span>
+                <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Peninsula</div>
+                <div class="demo-item"><span class="demo-icon">📷</span> "Kodak Gap"</div>
+                <div class="demo-item"><span class="demo-icon">📏</span> 1,600m Wide</div>
+                <div class="demo-item"><span class="demo-icon">🚢</span> Seabourn Quest</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">5am</span>
+                <h3 class="section-title-panel">The Captain's Announcement</h3>
+                <p>The captain came on early—around 5am—to tell us we might be going in. The Lemaire Channel isn't always passable. Ice can block the entrance entirely. Some days you have to turn back.</p>
+                <p>We waited. Then it looked like we might not try it. We waited some more.</p>
+                <p>Then it was a go.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6697" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6697" data-caption="Approaching the channel" alt="Approach">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6698" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6698" data-caption="We're going in" alt="Entering">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6699" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6699" data-caption="Ice cliffs rising" alt="Ice cliffs">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6702" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6702" data-caption="Into Kodak Gap" alt="Kodak Gap">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6703" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6703" data-caption="Towering walls of ice" alt="Ice walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6704" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6704" data-caption="The channel narrows" alt="Narrow passage">
                 </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🌡️</span>
-                    <span class="demo-value">-2°C Average</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">📷</span>
-                    <span class="demo-value">"Kodak Gap"</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🚢</span>
-                    <span class="demo-value">Seabourn</span>
-                </div>
+                <p class="photo-caption-inline">Everyone reached for their cameras. They call it Kodak Gap for a reason.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Passage</span>
-                <h3 class="section-title-panel">Kodak Gap</h3>
-                <p>They call it Kodak Gap because everyone reaches for their camera. The Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains.</p>
-                <p>Time stops here.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg" class="story-image" alt="Antarctica ice">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg" class="story-image" alt="Antarctica landscape">
+                <h3 class="section-title-panel">Through the Ice</h3>
+                <p>The Lemaire Channel is barely wide enough for the ship—only 1,600 meters at its narrowest. Ice cliffs tower on both sides. The water is so still it mirrors the mountains. Time stops here.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6706" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6706" data-caption="Mirror-still waters" alt="Still water">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6707" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6707" data-caption="Reflections" alt="Reflections">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6708" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6708" data-caption="Ice and sky" alt="Ice and sky">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6709" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6709" data-caption="Frozen silence" alt="Silence">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6710" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6710" data-caption="The passage continues" alt="Passage">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6711" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6711" data-caption="Antarctica's cathedral" alt="Cathedral">
                 </div>
-                <p class="photo-caption-inline">Ice in every direction. The silence is overwhelming.</p>
+                <p class="photo-caption-inline">You've never seen anything like it. And you never will again—each moment down here is unique, unrepeatable.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Ice</span>
-                <h3 class="section-title-panel">A World of Blue and White</h3>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg" class="story-image" alt="Antarctic ice formations">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951500/Screenshot_20260120_143046_Facebook_ssqrle.jpg" class="story-image" alt="Antarctic scenery">
+                <span class="section-tag-panel">Through to the Other Side</span>
+                <h3 class="section-title-panel">We Made It</h3>
+                <p>Every iceberg is different. Some are brilliant white, others glow blue from within. And then we were through—out the other side of one of the most beautiful passages on Earth.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6712" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6712" data-caption="The iconic view" alt="Iconic">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6713" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6713" data-caption="Emerging from the channel" alt="Emerging">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6714" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6714" data-caption="Looking back" alt="Looking back">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6715" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6715" data-caption="The other side" alt="Other side">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/lemaire/img_6716" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/lemaire/img_6716" data-caption="We made it through" alt="Through">
                 </div>
-                <p class="photo-caption-inline">Every iceberg is different. Some are brilliant white, others glow blue from within.</p>
-                <p>You've never seen anything like it. And you never will again - each moment down here is unique, unrepeatable.</p>
+                <p class="photo-caption-inline">Worth every minute of that 5am wake-up call.</p>
             </div>
 
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🧊</span>
-                        <span>The Frozen Passage</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Kodak Gap:</strong> Named because every passenger reaches for their camera - predating digital photography when Kodak film was king.</li>
-                        <li><strong>Narrow Passage:</strong> Only 1,600 meters wide at its narrowest point and 11 km long - some ships are too wide to pass through.</li>
-                        <li><strong>Discovery:</strong> First navigated in 1898 by Adrien de Gerlache's Belgian Antarctic Expedition aboard the Belgica.</li>
-                        <li><strong>Not Always Passable:</strong> Sometimes ice blocks the channel entirely and ships must turn back or find another route.</li>
-                        <li><strong>Wildlife Haven:</strong> Humpback whales, leopard seals, and various penguin species call these waters home.</li>
-                    </ul>
-                </div>
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Lemaire' : '+ More about Lemaire'">+ More about Lemaire</p>
+            <div class="more-info-content">
+                <p><strong>Kodak Gap:</strong> Named because every passenger reaches for their camera—predating digital photography when Kodak film was king.</p>
+                <p><strong>Narrow Passage:</strong> Only 1,600 meters wide at its narrowest point and 11 km long—some ships are too wide to pass through.</p>
+                <p><strong>Discovery:</strong> First navigated in 1898 by Adrien de Gerlache's Belgian Antarctic Expedition aboard the Belgica.</p>
+                <p><strong>Not Always Passable:</strong> Sometimes ice blocks the channel entirely and ships must turn back or find another route.</p>
             </div>
 
             ${generateGallery('lemaire')}
         `,
-        fullDesc: "They call it Kodak Gap because everyone reaches for their camera.\n\nThe Lemaire Channel is barely wide enough for the ship. Ice cliffs tower on both sides. Penguins porpoise through water so still it mirrors the mountains. Time stops here.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767737978/IMG_6712_bmwcxi.jpg"
+        fullDesc: "The captain came on at 5am: we might be going in. We waited. Then it looked like we might not try it. We waited some more. Then it was a go—and I snapped these photos on the way through Kodak Gap.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/lemaire/img_6712"
     },
     {
         id: 121,
@@ -3230,132 +3304,191 @@ an original composition inspired by this place.
         tag: "Penguin Paradise",
         icon: "🐧",
         isDoor: false,
-        shortDesc: "Sailing past penguin paradise.",
+        shortDesc: "4am wake-ups in the frozen silence.",
         imagePosition: "center",
         imageCaption: "Petermann Island from the deck of the ship.",
         useRichContent: true,
         richContent: `
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/petermann/20150217_092200" class="hero-image" alt="Antarctic morning">
+            </div>
+
             <div class="demographics-strip">
-                <div class="demo-item">
-                    <span class="demo-icon">📍</span>
-                    <span class="demo-value">Antarctic Peninsula</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🐧</span>
-                    <span class="demo-value">Penguin Colonies</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🌡️</span>
-                    <span class="demo-value">-5°C Average</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🚢</span>
-                    <span class="demo-value">Scenic Cruising</span>
-                </div>
+                <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Peninsula</div>
+                <div class="demo-item"><span class="demo-icon">🐧</span> Penguin Colonies</div>
+                <div class="demo-item"><span class="demo-icon">⏰</span> 4am Wake-Up</div>
+                <div class="demo-item"><span class="demo-icon">🚢</span> Zodiac Excursions</div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Passage</span>
-                <h3 class="section-title-panel">Sailing Past Paradise</h3>
-                <p>We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.</p>
-                <p>Sometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg" class="story-image" alt="Petermann Island view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg" class="story-image" alt="Petermann Island scenery">
+                <span class="section-tag-panel">Crew Duties</span>
+                <h3 class="section-title-panel">4am in Antarctica</h3>
+                <p>All musicians had additional duties on ships—usually minor things like training and crew drills. But in Antarctica, we were up at 4 in the morning, getting the boarding and offloading stations ready for the guests. Everyone had to be fitted in life jackets, excursion boots, and parkas before leaving on the Zodiac boats for the ice.</p>
+                <div class="image-row image-row-4">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_092200" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_092200" data-caption="4am - getting ready for excursions" alt="Morning prep">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_095324" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_095324" data-caption="Early morning Antarctic light" alt="Morning light">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6490" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6490" data-caption="Zodiac station setup" alt="Zodiac prep">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6534" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6534" data-caption="Ready for guests" alt="Morning prep">
                 </div>
-                <p class="photo-caption-inline">Views from the deck as we sailed past.</p>
+                <p class="photo-caption-inline">This also gave me the chance to take in the eerie quiet of the morning.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Ice</span>
-                <h3 class="section-title-panel">Frozen Perfection</h3>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg" class="story-image" alt="Antarctic scenery">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg" class="story-image" alt="Petermann ice">
+                <span class="section-tag-panel">Before Dawn</span>
+                <h3 class="section-title-panel">The Eerie Quiet</h3>
+                <p>Before the sun broke through, Antarctica was a world of silence and shadow. The ice stretched endlessly in every direction, and the only sounds were the gentle lapping of water against the hull and the occasional crack of a distant glacier.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6481" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6481" data-caption="Pre-dawn silence" alt="Pre-dawn">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6487" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6487" data-caption="The frozen world" alt="Frozen landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6485" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6485" data-caption="Antarctic stillness" alt="Stillness">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6467" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6467" data-caption="Ice in shadow" alt="Ice shadow">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6459" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6459" data-caption="Waiting for sunrise" alt="Pre-sunrise">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6451" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6451" data-caption="The quiet before" alt="Quiet morning">
                 </div>
-                <p class="photo-caption-inline">Ice formations and glaciers along the coast.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg" class="story-image" alt="Petermann Island landscape">
-                </div>
-                <p class="photo-caption-inline">Antarctica in all its frozen glory.</p>
+                <p class="photo-caption-inline">A world of ice and silence, waiting for the light.</p>
             </div>
 
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🐧</span>
-                        <span>Penguin Paradise</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Discovery:</strong> Named after German geographer August Petermann by the German Antarctic Expedition of 1873-74.</li>
-                        <li><strong>Penguin Colonies:</strong> Home to Adélie and Gentoo penguin colonies - thousands of breeding pairs during summer.</li>
-                        <li><strong>Historic Site:</strong> The Argentine Groussac Refuge was built here in 1955 and is now an Antarctic Historic Site.</li>
-                        <li><strong>Southernmost Birth:</strong> In 1978, Emilio Palma became the first person born in Antarctica, on the peninsula near here.</li>
-                        <li><strong>Scenic Cruising:</strong> Many expedition ships sail past without landing to minimize environmental impact on the wildlife.</li>
-                    </ul>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Wildlife</span>
+                <h3 class="section-title-panel">And Then... Penguins</h3>
+                <p>They appeared out of nowhere—waddling along the ice, diving into the water, completely unbothered by our presence. Thousands of them, going about their morning as if we weren't even there.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6443" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6443" data-caption="First penguin sighting" alt="Penguins">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6447" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6447" data-caption="The colony comes alive" alt="Penguin colony">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/img_6446" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/img_6446" data-caption="Unbothered by our presence" alt="Penguins on ice">
                 </div>
+                <p class="photo-caption-inline">Completely at home in their frozen paradise.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sunrise</span>
+                <h3 class="section-title-panel">The Sun Breaks Through</h3>
+                <p>And then the clouds parted. The ice transformed from grey to gold, from white to impossible shades of blue and pink. This is what we woke up for.</p>
+                <div class="image-row image-row-7">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_095324" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_095324" data-caption="First light" alt="First light">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_095348" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_095348" data-caption="Sun breaking through" alt="Sunrise">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_091633" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_091633" data-caption="Golden hour on ice" alt="Golden light">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_090228" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_090228" data-caption="Antarctica awakens" alt="Morning light">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_090307" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_090307" data-caption="Ice in morning light" alt="Morning ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_091022" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_091022" data-caption="The transformation" alt="Sunrise transformation">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/petermann/20150217_091114" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/petermann/20150217_091114" data-caption="What we woke up for" alt="Antarctic sunrise">
+                </div>
+                <p class="photo-caption-inline">This is why you wake up at 4am in Antarctica.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Petermann' : '+ More about Petermann'">+ More about Petermann</p>
+            <div class="more-info-content">
+                <p>Named after German geographer August Petermann by the German Antarctic Expedition of 1873-74. Home to Adélie and Gentoo penguin colonies—thousands of breeding pairs during summer.</p>
+                <p>The Argentine Groussac Refuge, built here in 1955, is now an Antarctic Historic Site. In 1978, Emilio Palma became the first person born in Antarctica, on the peninsula near here.</p>
             </div>
 
             ${generateGallery('petermann')}
         `,
-        fullDesc: "We didn't go ashore at Petermann Island - we sailed slowly past, cameras in hand, capturing the frozen landscape from the deck.\n\nSometimes that's enough. Sometimes watching from the ship gives you the full picture - the scale of the ice, the colonies dotting the shoreline, the impossible blue of glaciers meeting the sea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg"
+        fullDesc: "All musicians had additional duties on ships. In Antarctica, we were up at 4am getting Zodiac stations ready for guests. This gave me the chance to take in the eerie quiet of the morning—before the sun broke through and the penguins appeared.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/petermann/20150217_092200"
     },
     {
         id: 35,
-        title: "Port Lockroy, Antarctica",
-        coords: [-64.82, -63.49],
-        tag: "Penguin Post Office",
-        icon: "🐧",
+        title: "South Shetland Islands",
+        coords: [-62.0, -58.5],
+        tag: "Gateway to Antarctica",
+        icon: "🧊",
         isDoor: false,
-        tag: "🎵 Original Song",
+        shortDesc: "4am mysteries and sled rides on ice.",
         useRichContent: true,
         richContent: `
-        <div class="song-panel">
-            <div class="song-status">
-                <span class="status-label">Original Song</span>
-                <span class="status-text">Coming Soon</span>
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/south-shetlands/img_6563" class="hero-image" alt="Seabourn Quest in Antarctic waters">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Gateway</div>
+                <div class="demo-item"><span class="demo-icon">🌡️</span> -2°C Summer</div>
+                <div class="demo-item"><span class="demo-icon">🚢</span> Seabourn Quest</div>
+                <div class="demo-item"><span class="demo-icon">🛷</span> Sled Rides!</div>
             </div>
 
             <div class="story-section-panel">
-                <h3>Reserved for Music</h3>
-                <p>This location has been set aside for an original song. The music is being written as a tribute to this place and the memories it holds.</p>
-                <p><strong>Mood:</strong> Ethereal / Remote</p>
-                <p><strong>Theme:</strong> Postcards from nowhere, penguin colonies, ice silence</p>
-            </div>
-
-            <div class="lyrics-section" onclick="this.classList.toggle('expanded')">
-                <div class="lyrics-header">
-                    <span class="lyrics-title">
-                        <span class="lyrics-icon">📝</span>
-                        <span>Lyrics</span>
-                    </span>
-                    <span class="lyrics-toggle">▼</span>
+                <span class="section-tag-panel">Before Dawn</span>
+                <h3 class="section-title-panel">4am in Antarctica</h3>
+                <p>At 4am in Antarctica, things appear and disappear in the fog. Cliffs appear to hang in the sky. The horizon blurs until you can't tell where the ice ends and the clouds begin. It's disorienting and beautiful.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6464" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6464" data-caption="Fog and ice blur together" alt="Fog">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6465" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6465" data-caption="Cliffs hanging in the sky" alt="Cliffs in fog">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6470" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6470" data-caption="Where does the ice end?" alt="Ice and sky">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6475" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6475" data-caption="The world dissolves" alt="Fog landscape">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6472" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6472" data-caption="Eerie morning silence" alt="Morning silence">
                 </div>
-                <div class="lyrics-content">
-                    <div class="lyrics-text">
-<span class="verse-label">Coming Soon</span>
+                <p class="photo-caption-inline">The sky and the land blur together in the pre-dawn light.</p>
+            </div>
 
-Lyrics will appear here when the song is complete.
-
-This space is reserved for "Port Lockroy, Antarctica" -
-an original composition inspired by this place.
-                    </div>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sunrise</span>
+                <h3 class="section-title-panel">Then the Sky Opened Up</h3>
+                <p>Like the previous morning at Petermann Island, the sky opened up and the change was utterly breathtaking. The grey world transformed into impossible blues and whites.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6511" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6511" data-caption="The clouds begin to part" alt="Clouds parting">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6514" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6514" data-caption="Blue sky appears" alt="Blue sky">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6515" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6515" data-caption="The transformation" alt="Transformation">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6516" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6516" data-caption="Antarctica revealed" alt="Antarctica revealed">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6517" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6517" data-caption="Breathtaking" alt="Breathtaking view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6521" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6521" data-caption="Worth the 4am wake-up" alt="Morning glory">
                 </div>
+                <p class="photo-caption-inline">Utterly breathtaking.</p>
             </div>
 
-            <div class="audio-player-container">
-                <p style="text-align: center; font-size: 0.85rem; color: rgba(245,240,232,0.6); margin: 0;">
-                    🎵 Audio player will appear when song is released
-                </p>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Going Ashore</span>
+                <h3 class="section-title-panel">Crew Day on the Ice</h3>
+                <p>Today was special—several of us crew members were finally released from our afternoon shift to go ashore! After days of watching guests head out on Zodiacs, it was finally our turn to set foot on the frozen continent.</p>
+                <div class="image-row image-row-8">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6534" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6534" data-caption="Finally going ashore" alt="Going ashore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6535" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6535" data-caption="On the ice" alt="On ice">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6538" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6538" data-caption="Crew day!" alt="Crew day">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6539" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6539" data-caption="Exploring" alt="Exploring">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6540" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6540" data-caption="Antarctica!" alt="Antarctica">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6546" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6546" data-caption="Taking it all in" alt="Taking it in">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6548" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6548" data-caption="Walking on Antarctica" alt="Walking">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6553" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6553" data-caption="Our turn at last" alt="Crew ashore">
+                </div>
+                <p class="photo-caption-inline">Our turn at last to walk on the seventh continent.</p>
             </div>
-        </div>`,
-        fullDesc: "Port Lockroy is surreal.\n\nA tiny British base from the 1940s, now a museum and gift shop staffed by four people each summer. You can send postcards that take months to arrive. But the real attraction is the gentoo penguins-completely unafraid, waddling between visitors like we're the attraction.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767739780/IMG_6538_tolutk.jpg"
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Hill</span>
+                <h3 class="section-title-panel">The Great Antarctic Sled Ride</h3>
+                <p>We decided to climb a rather large hill. The penguins watched us with what I can only describe as bemused indifference. Higher and higher we climbed, until finally we all piled onto the sled...</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6556" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6556" data-caption="The climb begins" alt="Climbing">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6558" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6558" data-caption="Penguins watching" alt="Penguins watching">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6559" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6559" data-caption="Our audience" alt="Penguin audience">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6563" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6563" data-caption="Getting higher" alt="Higher up">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6565" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6565" data-caption="Ready to sled" alt="Ready to sled">
+                </div>
+                <p class="photo-caption-inline">We all piled on the sled and down we went!</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The End</span>
+                <h3 class="section-title-panel">A Day to Remember</h3>
+                <p>Some days stay with you forever. This was one of them.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6717" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6717" data-caption="Antarctica memories" alt="Memories">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-shetlands/img_6572" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-shetlands/img_6572" data-caption="Until next time" alt="Farewell">
+                </div>
+                <p class="photo-caption-inline">A crew day on the frozen continent we'll never forget.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about South Shetlands' : '+ More about South Shetlands'">+ More about South Shetlands</p>
+            <div class="more-info-content">
+                <p>The South Shetland Islands were discovered in 1819 by British merchant William Smith. Within two years, seal hunters had arrived in such numbers that the fur seal population was nearly wiped out.</p>
+                <p>Today the islands host research stations from multiple countries including Argentina, Chile, China, Russia, and others. Deception Island, with its flooded volcanic caldera, is one of the most visited sites in Antarctica.</p>
+            </div>
+
+            ${generateGallery('southShetlands')}
+        `,
+        fullDesc: "At 4am in Antarctica, things appear and disappear in the fog. Then the sky opens up and it's breathtaking. And on one special day, the crew got to go ashore and sled down a hill while penguins watched.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/south-shetlands/img_6563"
     },
     {
         id: 37,
@@ -3469,13 +3602,61 @@ an original composition inspired by this place.
         shortDesc: "Party island with a secret peaceful side.",
         useRichContent: true,
         richContent: `
-            <p>Everyone knows Ibiza for the clubs. But the island has another side.</p>
-            <p>The old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.</p>
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ibiza/img_20140610_135303" class="hero-image" alt="Ibiza fortress">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Balearic Islands</div>
+                <div class="demo-item"><span class="demo-icon">👥</span> Pop: 50,000</div>
+                <div class="demo-item"><span class="demo-icon">🏛️</span> UNESCO Old Town</div>
+                <div class="demo-item"><span class="demo-icon">🎉</span> Party Capital</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Other Ibiza</span>
+                <h3 class="section-title-panel">Dalt Vila - The Walled City</h3>
+                <p>Everyone knows Ibiza for the clubs. But the island has another side. The old town—Dalt Vila—is a UNESCO World Heritage site, a Renaissance fortress perched above the harbor. While the beaches pulse with electronic beats, the cobblestone streets up here have barely changed in centuries.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_113541" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_113541" data-caption="Views from Dalt Vila" alt="Old town view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_113551" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_113551" data-caption="The harbor below" alt="Harbor view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_114901" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_114901" data-caption="Statue in the old town" alt="Statue">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_135036" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_135036" data-caption="The fortress walls" alt="Fortress walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140622_100836" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140622_100836" data-caption="Historic architecture" alt="Architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140622_101517" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140622_101517" data-caption="Exploring the walled city" alt="Walled city">
+                </div>
+                <p class="photo-caption-inline">The Renaissance walls have stood guard since the 16th century.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">In the Harbor</span>
+                <h3 class="section-title-panel">The Clipper Ship</h3>
+                <p>Ibiza's harbor is a parade of vessels—superyachts, ferries, fishing boats. But nothing turns heads quite like a tall ship. When a clipper comes to port, it's a reminder that these waters have been sailed for millennia, long before the DJs arrived.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_142859" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_142859" data-caption="Clipper ship in Ibiza harbor" alt="Clipper ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_113638" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_113638" data-caption="Tall ship rigging" alt="Rigging">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/ibiza/img_20140610_143010" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/ibiza/img_20140610_143010" data-caption="A different kind of Ibiza vessel" alt="Tall ship">
+                </div>
+                <p class="photo-caption-inline">Old world meets new in the Balearics.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Celebrity Sighting</span>
+                <h3 class="section-title-panel">Boy George in Ibiza</h3>
+                <p>Ibiza has always attracted artists, musicians, and icons. When you're playing the clubs and bars, you never know who might walk in.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/ibiza/img_20140622_121033" class="story-image" data-caption="Boy George in Ibiza" alt="Boy George">
+                <p class="photo-caption-inline">A legend on the island of legends.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Ibiza' : '+ More about Ibiza'">+ More about Ibiza</p>
+            <div class="more-info-content">
+                <p>The Phoenicians founded a settlement here around 654 BC. The old town's walls were built by Charles V in the 16th century. Sunset at Café del Mar became a ritual in the 1980s. Ibiza is whatever you need it to be—ancient history or all-night party, secluded beach or world-famous club.</p>
+            </div>
 
             ${generateGallery('ibiza')}
         `,
         fullDesc: "Everyone knows Ibiza for the clubs. But the island has another side.\n\nThe old town is a UNESCO World Heritage site. The beaches in the north are quiet and pristine. Sunset at Café del Mar is a spiritual experience. Ibiza is whatever you need it to be.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738680/IMG_20140610_113551_fvskrb.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/ibiza/img_20140610_135303"
     },
     // New locations - January 2026
     {
@@ -4235,13 +4416,71 @@ an original composition inspired by this place.
         shortDesc: "Where Catalonia meets the sea.",
         useRichContent: true,
         richContent: `
-            <p>Roses sits on the Costa Brava - the 'wild coast' - near where Salvador Dalí made his home.</p>
-            <p>The bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.</p>
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/roses/img_5252" class="hero-image" alt="Roses harbor">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Costa Brava, Catalonia</div>
+                <div class="demo-item"><span class="demo-icon">👥</span> Pop: 20,000</div>
+                <div class="demo-item"><span class="demo-icon">🍽️</span> Suquet de peix</div>
+                <div class="demo-item"><span class="demo-icon">🎨</span> Dalí Country</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Wild Coast</span>
+                <h3 class="section-title-panel">The Bay of Roses</h3>
+                <p>Roses sits on the Costa Brava—the "wild coast"—near where Salvador Dalí made his home. The bay is one of the most beautiful in the Mediterranean, a perfect crescent of blue water flanked by ancient hills.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5253" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5253" data-caption="View across the bay" alt="Bay view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5249" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5249" data-caption="Roses harbor" alt="Harbor view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5245" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5245" data-caption="Boats in the marina" alt="Marina">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/20150623_115457" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/20150623_115457" data-caption="Along the coast" alt="Coastal view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5251" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5251" data-caption="The citadel walls" alt="Citadel">
+                </div>
+                <p class="photo-caption-inline">The bay has sheltered fishermen, Greeks, and dreamers for millennia.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Exploring</span>
+                <h3 class="section-title-panel">A Town Between Sea and Mountain</h3>
+                <p>El Bulli, once the world's best restaurant, was just down the road. The Greek ruins at Empúries are nearby. This corner of Catalonia punches above its weight. Walking through town, you feel the layers of history—Roman, medieval, modern—all coexisting under the Mediterranean sun.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5256" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5256" data-caption="Exploring the town" alt="Town street">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5257" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5257" data-caption="Local architecture" alt="Architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5265" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5265" data-caption="Town scene" alt="Town scene">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5254" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5254" data-caption="Catalan details" alt="Details">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5246" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5246" data-caption="Along the promenade" alt="Promenade">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/20150623_142632" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/20150623_142632" data-caption="Afternoon wandering" alt="Afternoon">
+                </div>
+                <p class="photo-caption-inline">Where the Pyrenees meet the sea.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Local Flavors</span>
+                <h3 class="section-title-panel">The Market at Roses</h3>
+                <p>Catalan markets are legendary for a reason. The saucisson, the olives, the local cheeses—everything speaks to centuries of tradition. The Costa Brava has its own culinary identity, distinct from the rest of Spain, and every market stall tells that story.</p>
+                <div class="image-row image-row-6">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5258" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5258" data-caption="Saucisson display" alt="Saucisson">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5259" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5259" data-caption="Market treasures" alt="Market goods">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5261" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5261" data-caption="Local specialties" alt="Specialties">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5262" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5262" data-caption="Catalan flavors" alt="Catalan goods">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5263" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5263" data-caption="Temptations everywhere" alt="Market stall">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5266" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5266" data-caption="Market memories" alt="Market scene">
+                </div>
+                <p class="photo-caption-inline">A feast for the senses in Dalí country.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Roses' : '+ More about Roses'">+ More about Roses</p>
+            <div class="more-info-content">
+                <p>Roses has been inhabited since the Neolithic period. The Greeks founded Rhode here in the 8th century BC—one of the earliest Greek settlements in Iberia. The citadel preserves layers of history from every era since.</p>
+                <p>Salvador Dalí lived in nearby Cadaqués and Port Lligat, drawing endless inspiration from this dramatic coastline. The Cap de Creus peninsula, just to the east, is said to be the easternmost point of the Iberian Peninsula.</p>
+            </div>
 
             ${generateGallery('roses')}
         `,
         fullDesc: "Roses sits on the Costa Brava-the 'wild coast'-near where Salvador Dalí made his home.\n\nThe bay is one of the most beautiful in the Mediterranean. The Greek ruins at Empúries are nearby. El Bulli, once the world's best restaurant, was just down the road. This corner of Catalonia punches above its weight.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522310/IMG_5245_zoii8t.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/roses/img_5252"
     },
     {
         id: 54,
@@ -4332,13 +4571,55 @@ an original composition inspired by this place.
         shortDesc: "A dozen different beaches on one small stretch.",
         useRichContent: true,
         richContent: `
-            <p>Le Lavandou is named for the lavender that once grew on these hills.</p>
-            <p>The town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.</p>
+            <div class="hero-section">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/le-lavandou/img_20140605_134218" class="hero-image" alt="Le Lavandou beach">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Côte d'Azur, Var</div>
+                <div class="demo-item"><span class="demo-icon">👥</span> Pop: 5,800</div>
+                <div class="demo-item"><span class="demo-icon">🏖️</span> 12 Beaches</div>
+                <div class="demo-item"><span class="demo-icon">🌿</span> Lavender Coast</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Coast</span>
+                <h3 class="section-title-panel">Twelve Beaches, Twelve Moods</h3>
+                <p>Le Lavandou is named for the lavender that once grew on these hills. The town claims twelve distinct beaches, each with its own character—from the golden sand of Grande Plage to the secluded coves hidden beneath the pines.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/img_20140605_122522" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/img_20140605_122522" data-caption="Arriving in Le Lavandou" alt="Arrival">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150807_124809" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150807_124809" data-caption="The Mediterranean shore" alt="Shore">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/img_20140605_134242" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/img_20140605_134242" data-caption="Côte d'Azur views" alt="Coast view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/img_20140605_135015" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/img_20140605_135015" data-caption="Beach day" alt="Beach">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150613_130635" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150613_130635" data-caption="The waterfront" alt="Waterfront">
+                </div>
+                <p class="photo-caption-inline">The Îles d'Hyères float on the horizon, beckoning day-trippers.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Where Painters Found the Light</h3>
+                <p>The light here attracted painters long before the tourists came. Théo van Rysselberghe, the Belgian neo-impressionist, made his home here. The town still feels like a secret—unhurried, authentic, a world away from the glamour of Saint-Tropez just up the coast.</p>
+                <div class="image-row image-row-5">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150613_131906" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150613_131906" data-caption="Town streets" alt="Town">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150613_135211" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150613_135211" data-caption="Afternoon exploring" alt="Exploring">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150613_190342" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150613_190342" data-caption="Evening light" alt="Evening">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150613_134743" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150613_134743" data-caption="Local color" alt="Local scene">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/le-lavandou/20150611_104847" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/le-lavandou/20150611_104847" data-caption="Le Lavandou charm" alt="Town charm">
+                </div>
+                <p class="photo-caption-inline">A quieter corner of the Côte d'Azur.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Le Lavandou' : '+ More about Le Lavandou'">+ More about Le Lavandou</p>
+            <div class="more-info-content">
+                <p>Le Lavandou's name likely comes from "lavadou"—a Provençal word for laundry washhouse—though the lavender legend persists. The fishing village began welcoming artists in the late 19th century, drawn by the extraordinary Mediterranean light.</p>
+                <p>The twelve beaches stretch from the town center to the Cap Bénat, each with its own personality. The offshore islands—Porquerolles, Port-Cros, and Île du Levant—are now a national park, preserving some of the last unspoiled coastline on the French Riviera.</p>
+            </div>
 
             ${generateGallery('lavandou')}
         `,
         fullDesc: "Le Lavandou is named for the lavender that once grew on these hills.\n\nThe town claims twelve distinct beaches, each with its own character. The Îles d'Hyères float offshore. The light here attracted painters long before the tourists came.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522796/IMG_20140605_134214_uyyeui.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/le-lavandou/img_20140605_134218"
     },
     {
         id: 57,
@@ -6493,63 +6774,75 @@ an original composition inspired by this place.
                     <span class="demo-value">Limoncello Origin</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🚢</span>
-                    <span class="demo-value">By Tender</span>
+                    <span class="demo-icon">⛵</span>
+                    <span class="demo-value">Tall Ships</span>
                 </div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Entrance</span>
-                <h3 class="section-title-panel">Porta della Marina</h3>
-                <p>You arrive by tender and walk through the Porta della Marina - the old sea gate. A ceramic tile mosaic shows the medieval Mediterranean, when Amalfi was a maritime power rivaling Venice and Genoa.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/e3amtj3asfaa2m9ebkks.jpg" class="story-image" data-caption="Porta della Marina - the ancient sea gate into Amalfi." alt="Porta della Marina">
-                <p class="photo-caption-inline">Porta della Marina. The ceramic map shows Amalfi's merchant routes across the Mediterranean.</p>
+                <span class="section-tag-panel">The Waterfront</span>
+                <h3 class="section-title-panel">Where Sailors Still Gather</h3>
+                <p>Amalfi's beach stretches along the shore, beach clubs and restaurants lining the waterfront. A tall ship anchors in the bay - a reminder that this coast has drawn sailors for a thousand years.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7019" class="story-image" data-caption="Amalfi waterfront with tall ship in the bay." alt="Amalfi waterfront">
+                <p class="photo-caption-inline">Beach clubs and umbrellas, a tall ship on the horizon - the Amalfi Coast at its finest.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7021" class="story-image" data-caption="Harbor promenade with flowers." alt="Harbor view">
+                <p class="photo-caption-inline">Flowers line the promenade, the town climbing the cliffs behind.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7004" class="story-image" data-caption="Colorful buildings against dramatic cliffs." alt="Cliff architecture">
+                <p class="photo-caption-inline">Pastel buildings cling to impossible cliffs - laundry drying in the Mediterranean sun.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7022" class="story-image" data-caption="Amalfi coastline." alt="Coastal view">
+                <p class="photo-caption-inline">The famous coast stretches toward Positano and beyond.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Cathedral</span>
-                <h3 class="section-title-panel">62 Steps to Heaven</h3>
-                <p>The Cathedral of Saint Andrew dominates the piazza. 62 steps climb to the Arab-Norman facade - a mix of influences from centuries of Mediterranean trade.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/ub3y6cvvdimz5mz5ujjy.jpg" class="story-image" data-caption="The Cathedral of Saint Andrew - 62 steps rise from the piazza." alt="Amalfi Cathedral">
-                <p class="photo-caption-inline">The cathedral rises above the piazza. The black and white stripes are unmistakably Arab-Norman.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/l8nwkkiyogb0gzyqobpm.jpg" class="story-image" data-caption="The cathedral and its famous staircase from the piazza." alt="Amalfi Cathedral from below">
-                <p class="photo-caption-inline">From the piazza, the cathedral dominates everything. It's been the heart of Amalfi for over a thousand years.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Streets</span>
+                <span class="section-tag-panel">The Town</span>
                 <h3 class="section-title-panel">Vertical Living</h3>
-                <p>Amalfi clings to cliffs so steep that the streets become staircases. Signs point in every direction - up to hotels, down to laundries, through to restaurants.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/abz45hl23vnqd0soo9jp.jpg" class="story-image" data-caption="Narrow streets with signs pointing every direction." alt="Amalfi streets">
-                <p class="photo-caption-inline">Signs everywhere. The streets here are a vertical maze.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/ow8oi8ydqwc2pez59b3c.jpg" class="story-image" data-caption="Steep streets built against the cliffs." alt="Steep Amalfi streets">
-                <p class="photo-caption-inline">The cliffs tower overhead. Houses are carved into the rock itself.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/ztjo3tclmnxnngtpz7mo.jpg" class="story-image" data-caption="A religious shrine over stone steps - typical Amalfi scene." alt="Amalfi stairway">
-                <p class="photo-caption-inline">A Madonna watches over another stairway. Religion and daily life intertwined.</p>
+                <p>Amalfi clings to cliffs so steep the streets become staircases. The cathedral rises above the piazza, its Arab-Norman facade a testament to centuries of Mediterranean trade. Cafes fill every corner, tourists and locals mixing in the summer heat.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6993" class="story-image" data-caption="Steep streets climbing the cliffside." alt="Steep street">
+                <p class="photo-caption-inline">The streets climb straight up - scooters parked impossibly, buildings carved into rock.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6995" class="story-image" data-caption="Town architecture." alt="Town view">
+                <p class="photo-caption-inline">Layer upon layer of Mediterranean life stacked against the mountain.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6997" class="story-image" data-caption="Piazza with cathedral bell tower." alt="Piazza scene">
+                <p class="photo-caption-inline">The piazza buzzes with life - cafes, ceramics, and the cathedral bell tower watching over all.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6999" class="story-image" data-caption="Street scene." alt="Street view">
+                <p class="photo-caption-inline">Narrow lanes wind through the old town, every corner a postcard.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7005" class="story-image" data-caption="Town detail." alt="Architecture detail">
+                <p class="photo-caption-inline">A thousand years of history in every weathered wall.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7007" class="story-image" data-caption="Amalfi scene." alt="Town scene">
+                <p class="photo-caption-inline">Life happens vertically here - up stairs, down alleys, across terraces.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7009" class="story-image" data-caption="Local architecture." alt="Buildings">
+                <p class="photo-caption-inline">The maritime republic that once rivaled Venice lives on in every stone.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7017" class="story-image" data-caption="Amalfi detail." alt="Town detail">
+                <p class="photo-caption-inline">Lemon groves terrace the hillsides - this is where limoncello was born.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7018" class="story-image" data-caption="Coastal view." alt="Coast">
+                <p class="photo-caption-inline">The coast that launched a thousand postcards.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7020" class="story-image" data-caption="Amalfi scene." alt="Town view">
+                <p class="photo-caption-inline">Where the mountain meets the sea, Amalfi found a way to exist.</p>
             </div>
 
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Details</span>
-                <h3 class="section-title-panel">Hidden Corners</h3>
-                <p>Wander off the main path and you find waterfalls, gardens, and locals' miniature village displays - tiny ceramic houses recreating the terraced hillsides.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/nlsiqy6tmxfqfjvca3gk.jpg" class="story-image" data-caption="Miniature ceramic village - a local tradition." alt="Miniature village">
-                <p class="photo-caption-inline">A miniature village recreating the terraced hillsides. These are a local tradition.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/md8uyubhetoryhjghcow.jpg" class="story-image" data-caption="Waterfall and lush greenery hidden in the town." alt="Amalfi waterfall">
-                <p class="photo-caption-inline">A waterfall hidden behind the main street. Green everywhere despite the vertical terrain.</p>
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Amalfi</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">⛪</span>
+                        <span>The Maritime Republic</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Maritime Power:</strong> Amalfi was one of Italy's four great maritime republics, rivaling Venice, Genoa, and Pisa in the medieval Mediterranean.</li>
+                        <li><strong>Amalfi Tables:</strong> The Tabula Amalphitana was one of the oldest maritime codes, governing Mediterranean trade for centuries.</li>
+                        <li><strong>The Cathedral:</strong> Built in the 9th century, the Cathedral of Saint Andrew houses the apostle's relics, brought from Constantinople.</li>
+                        <li><strong>Limoncello:</strong> The famous lemon liqueur originated on this coast, made from the sfusato amalfitano lemons grown on terraced hillsides.</li>
+                        <li><strong>UNESCO Site:</strong> The Amalfi Coast became a World Heritage Site in 1997 for its natural beauty and cultural landscape.</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Beach</span>
-                <h3 class="section-title-panel">Mediterranean Life</h3>
-                <p>The beach stretches out from the town center - umbrellas in neat rows, the yacht at anchor, the perfect blue of the Tyrrhenian Sea.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/yghluqddt4ixrsdigrnm.jpg" class="story-image" data-caption="Amalfi beach - colorful umbrellas and Mediterranean blue." alt="Amalfi beach">
-                <p class="photo-caption-inline">The beach. Yellow and blue umbrellas, a yacht offshore, the good life.</p>
-            </div>
-
-            ${generateGallery('amalfi', 'Photos from Amalfi')}
+            ${generateGallery('amalfi')}
         `,
         fullDesc: "Amalfi was once a maritime republic rivaling Venice and Genoa.\n\nThe cathedral dominates the piazza, its Arab-Norman facade climbing 62 steps above the crowds. The town clings to cliffs so steep that the streets become staircases. Lemon groves terrace the hillsides. The coast that bears its name is one of the most beautiful drives on Earth.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/amalfi/ub3y6cvvdimz5mz5ujjy.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7000"
     },
     {
         id: 133,
@@ -6562,50 +6855,173 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="story-section-panel">
-                <h3>The Clifftop Town</h3>
-                <p>Sorrento doesn't greet you - it reveals itself. As the ship rounds the point, the town materializes: a cascade of pastel buildings clinging to cliffs that drop straight into the Tyrrhenian Sea.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/axkk4etwgqjj6it10og9.jpg" alt="Sorrento cliffs" data-caption="Sorrento's cliffs rise dramatically from the sea - the town perches impossibly high above.">
-                <p>We'd anchor offshore and watch the ferries shuttle between Sorrento and Capri, that legendary island floating in the bay like a mirage. From the ship's deck, you could see Vesuvius smoking on the horizon - a reminder that this beautiful coast exists on borrowed time.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/ek9karju1s4khejlkooa.jpg" alt="Ship deck view" data-caption="Morning coffee on the aft deck - Sorrento materializing through the Mediterranean haze.">
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🍋</span>
+                    <span class="demo-value">Limoncello Country</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌋</span>
+                    <span class="demo-value">View of Vesuvius</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏖️</span>
+                    <span class="demo-value">Clifftop Town</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛴️</span>
+                    <span class="demo-value">Gateway to Capri</span>
+                </div>
             </div>
 
             <div class="story-section-panel">
-                <h3>Down to the Marina</h3>
-                <p>The tender ride to shore is half the experience. You approach the cliffs from sea level, craning your neck at the hotels and villas perched hundreds of feet above. Marina Grande is the old fishing village - colorful boats pulled up on the beach, nets drying in the sun.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/m9ye6yar1ji2ugmjysnx.jpg" alt="Marina Grande" data-caption="Marina Grande - the old fishing village where locals still mend nets between the tourist boats.">
-                <p>From here, you can take the stairs - and there are many stairs - up through the cliff face to the town proper. Or catch the little bus that winds up the hairpin roads. Either way, you arrive breathless.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/oiwjar7gmu1yli6jh2ch.jpg" alt="Marina Piccola" data-caption="Marina Piccola - where the ferries to Capri and Positano depart beneath clifftop hotels.">
+                <span class="section-tag-panel">The Approach</span>
+                <h3 class="section-title-panel">Cliffs Rising from the Sea</h3>
+                <p>Sorrento doesn't greet you - it reveals itself. As the ship rounds the point, the town materializes: a cascade of pastel buildings clinging to cliffs that drop straight into the Tyrrhenian Sea. Vesuvius smokes on the horizon.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/20150609_123556" class="story-image" data-caption="Approaching Sorrento." alt="Sorrento approach">
+                <p class="photo-caption-inline">The cliffs rise impossibly high - hotels and villas perched on the edge.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5763" class="story-image" data-caption="Sorrento coastline." alt="Coastline">
+                <p class="photo-caption-inline">The famous coastline stretches toward Positano and Amalfi.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0872" class="story-image" data-caption="Harbor view." alt="Harbor">
+                <p class="photo-caption-inline">Marina Piccola - where ferries depart for Capri beneath the clifftop hotels.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5765" class="story-image" data-caption="Town view." alt="Town">
+                <p class="photo-caption-inline">The town perches high above the water - a cascade of terracotta and pastel.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/20150804_114120" class="story-image" data-caption="Coastal panorama." alt="Panorama">
+                <p class="photo-caption-inline">From here you can see Capri floating in the bay like a mirage.</p>
             </div>
 
             <div class="story-section-panel">
-                <h3>The Old Town</h3>
-                <p>Sorrento's centro storico is a maze of narrow streets where every turn reveals another postcard. Via San Cesareo is the main artery - lined with ceramics shops, limoncello vendors, and leather goods. The scent of lemons is everywhere.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/rerl61mnhxwsgan9r3ha.jpg" alt="Fruit market" data-caption="The fruit vendors of Via San Cesareo - lemons, peppers, and limoncello at every turn.">
-                <p>But step off the tourist track and you find the real Sorrento - crumbling ochre buildings with peppers drying on balconies, old men playing cards in shaded courtyards, the kind of Italy that existed before the guidebooks arrived.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/hkcqc4vyr4e6maw2dwet.jpg" alt="Old town" data-caption="Peppers drying on a balcony, paint peeling in the sun - this is the real Sorrento.">
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/nomau02eakr1t4phipxw.jpg" alt="Archway" data-caption="Through the archways of the old town - centuries of footsteps have worn these stones smooth.">
+                <span class="section-tag-panel">The Food</span>
+                <h3 class="section-title-panel">Eating More in One Day Than a Week at Sea</h3>
+                <p>Life on a ship means measured portions, careful menus. Sorrento means surrender. The first day ashore, I probably ate more than I had in the previous week. Pastries for breakfast. Gelato mid-morning. A long lunch. More gelato. Then dinner.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5766" class="story-image" data-caption="Restaurant courtyard." alt="Restaurant">
+                <p class="photo-caption-inline">A table in a hidden courtyard - stone walls, white tablecloths, surrender.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/20150804_123310" class="story-image" data-caption="Local cuisine." alt="Food">
+                <p class="photo-caption-inline">Fresh mozzarella, tomatoes still warm from the sun, local wine.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5771" class="story-image" data-caption="Street scene." alt="Street">
+                <p class="photo-caption-inline">The scent of lemons everywhere - this is limoncello country.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0880" class="story-image" data-caption="Market scene." alt="Market">
+                <p class="photo-caption-inline">The markets overflow - peppers, lemons, tomatoes piled high.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0894" class="story-image" data-caption="Fruit market." alt="Fruit market">
+                <p class="photo-caption-inline">La fragola - strawberries, oranges, the colors of the coast.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0902" class="story-image" data-caption="Pastry display." alt="Pastries">
+                <p class="photo-caption-inline">Pastries for breakfast. And maybe second breakfast.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0905" class="story-image" data-caption="Gelato." alt="Gelato">
+                <p class="photo-caption-inline">Gelato mid-morning. Then again mid-afternoon. It's research.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0909" class="story-image" data-caption="Food scene." alt="Food">
+                <p class="photo-caption-inline">By evening I'd eaten more than the previous week combined.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0903" class="story-image" data-caption="Italian treats." alt="Treats">
+                <p class="photo-caption-inline">No regrets. This is what port days are for.</p>
             </div>
 
             <div class="story-section-panel">
-                <h3>Piazza Tasso</h3>
-                <p>Piazza Tasso is the heart of Sorrento - named for the Renaissance poet who was born here. This is where locals and tourists mingle over espresso, where Vespas weave through the traffic, where the evening passeggiata begins.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/ojgmwuuc8eokfk6kumvc.jpg" alt="Piazza Tasso" data-caption="Palm trees and Vespas - the essence of Sorrento in a single frame.">
-                <p>Nearby, the Winged Victory stands in Piazza Sant'Antonino - watching over the town since 1892, commemorating Sorrentines who died in Italy's wars of unification.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/yzgsvz5cj8r8z1fegejf.jpg" alt="Victory statue" data-caption="The Winged Victory - a silent witness to over a century of Sorrento's story.">
+                <span class="section-tag-panel">The Streets</span>
+                <h3 class="section-title-panel">The Old Town</h3>
+                <p>Sorrento's centro storico is a maze of narrow streets where every turn reveals another postcard. Via San Cesareo is the main artery - ceramics, leather, limoncello at every turn.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5779" class="story-image" data-caption="Old town street." alt="Street">
+                <p class="photo-caption-inline">Narrow lanes where scooters somehow squeeze through.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0881" class="story-image" data-caption="Town architecture." alt="Architecture">
+                <p class="photo-caption-inline">Ochre walls, green shutters, the timeless Mediterranean.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0883" class="story-image" data-caption="Street scene." alt="Street scene">
+                <p class="photo-caption-inline">Every corner a postcard, every alley a discovery.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0886" class="story-image" data-caption="Local life." alt="Local life">
+                <p class="photo-caption-inline">Step off the tourist track and find the real Sorrento.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0899" class="story-image" data-caption="Town detail." alt="Detail">
+                <p class="photo-caption-inline">Peppers drying on balconies, old men playing cards.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0913" class="story-image" data-caption="Walking the streets." alt="Walking">
+                <p class="photo-caption-inline">The kind of Italy that existed before the guidebooks arrived.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0914" class="story-image" data-caption="Sorrento views." alt="Views">
+                <p class="photo-caption-inline">Views around every corner.</p>
             </div>
 
             <div class="story-section-panel">
-                <h3>The Long Lunch</h3>
-                <p>Lunch in Sorrento is never quick. You find a courtyard restaurant - stone walls, white tablecloths, a carafe of local wine - and surrender to the rhythm. Fresh mozzarella, tomatoes still warm from the sun, pasta with clams, and always, always limoncello to finish.</p>
-                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/o7cokeoxnidbzdnogjol.jpg" alt="Restaurant" data-caption="A table for two in a hidden courtyard - stone walls hold centuries of secrets.">
-                <p>By the time you finish, the afternoon light has softened, and the walk back to the marina feels like a dream. Sorrento has that effect - it makes you forget you have anywhere else to be.</p>
+                <span class="section-tag-panel">The Piazzas</span>
+                <h3 class="section-title-panel">Where Life Happens</h3>
+                <p>Piazza Tasso is the heart of Sorrento - where locals and tourists mingle over espresso, where Vespas weave through traffic, where the evening passeggiata begins.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0917" class="story-image" data-caption="Piazza scene." alt="Piazza">
+                <p class="photo-caption-inline">The main piazza - the heartbeat of Sorrento.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0919" class="story-image" data-caption="Town square." alt="Square">
+                <p class="photo-caption-inline">Named for the Renaissance poet Torquato Tasso, born here in 1544.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0922" class="story-image" data-caption="Local gathering." alt="Gathering">
+                <p class="photo-caption-inline">Espresso, conversation, the rhythm of Italian life.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0923" class="story-image" data-caption="Evening scene." alt="Evening">
+                <p class="photo-caption-inline">As evening comes, the passeggiata begins.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0926" class="story-image" data-caption="Town life." alt="Town life">
+                <p class="photo-caption-inline">Sorrento makes you forget you have anywhere else to be.</p>
             </div>
 
-            ${generateGallery('sorrento', 'More from Sorrento')}
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Coast</span>
+                <h3 class="section-title-panel">Exploring the Peninsula</h3>
+                <p>Beyond the town, the Sorrentine Peninsula unfolds - lemon groves, ancient villages, views that stop you in your tracks.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1031" class="story-image" data-caption="Peninsula view." alt="Peninsula">
+                <p class="photo-caption-inline">The coast stretches toward Positano.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1032" class="story-image" data-caption="Coastal scenery." alt="Coast">
+                <p class="photo-caption-inline">Cliffs and sea, the eternal Mediterranean.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1038" class="story-image" data-caption="Views." alt="Views">
+                <p class="photo-caption-inline">Every viewpoint more stunning than the last.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1048" class="story-image" data-caption="Lemon groves." alt="Lemons">
+                <p class="photo-caption-inline">Lemon groves terrace the hillsides - this is where limoncello was born.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1072" class="story-image" data-caption="Scenery." alt="Scenery">
+                <p class="photo-caption-inline">The Tyrrhenian Sea impossibly blue below.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1073" class="story-image" data-caption="Coastal path." alt="Path">
+                <p class="photo-caption-inline">Paths wind along the cliffs.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1078" class="story-image" data-caption="Exploration." alt="Exploration">
+                <p class="photo-caption-inline">Writers, artists, composers - they all fell for these views.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1082" class="story-image" data-caption="Panorama." alt="Panorama">
+                <p class="photo-caption-inline">The bay curves away toward Naples and Vesuvius.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1095" class="story-image" data-caption="Coast view." alt="Coast view">
+                <p class="photo-caption-inline">A reminder that this beautiful coast exists on borrowed time.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1097" class="story-image" data-caption="Sorrento vista." alt="Vista">
+                <p class="photo-caption-inline">The town that has drawn travelers for centuries.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1100" class="story-image" data-caption="Clifftop view." alt="Clifftop">
+                <p class="photo-caption-inline">Perched impossibly on the clifftops.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1106" class="story-image" data-caption="Final coast view." alt="Final view">
+                <p class="photo-caption-inline">The Sorrentine Peninsula - Italy at its most beautiful.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_4996" class="story-image" data-caption="2014 return." alt="2014">
+                <p class="photo-caption-inline">I came back in 2014 - some places demand a return.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_4998" class="story-image" data-caption="Second visit." alt="Second visit">
+                <p class="photo-caption-inline">The same views, the same magic.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5002" class="story-image" data-caption="Return trip." alt="Return">
+                <p class="photo-caption-inline">Sorrento never disappoints.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_5006" class="story-image" data-caption="Final image." alt="Final">
+                <p class="photo-caption-inline">Until next time, Sorrento.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Moment</span>
+                <h3 class="section-title-panel">The Mill That Called to Me</h3>
+                <p>Back in 2012, I was home on leave, still working the South Pacific circuit. I saw a photograph online of an ancient mill, swallowed by a gorge, covered in vegetation. Something about it stuck with me. I thought: I want to move beyond the Pacific. I want to see places like this.</p>
+                <p>Then Door 3 opened. I joined the Mediterranean circuit. And one day in Sorrento, I found myself standing at the edge of that gorge, looking down at that exact mill - the Valle dei Mulini, the Valley of the Mills.</p>
+                <p>What a moment that was. The image that had called to me for years, finally real beneath my feet.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1041" class="story-image" data-caption="The Valley of the Mills - the image that called to me before I even knew I'd get there." alt="Valle dei Mulini">
+                <p class="photo-caption-inline">The Valle dei Mulini. The photograph that called to me for years - and there I am, finally standing above it.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Sorrento</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🍋</span>
+                        <span>The Clifftop Town</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Valle dei Mulini:</strong> The Valley of the Mills is a deep gorge in the center of Sorrento, where 13th-century flour mills operated until the 1940s. Now abandoned and overgrown, it's one of Italy's most haunting sights.</li>
+                        <li><strong>Torquato Tasso:</strong> The Renaissance poet, author of "Jerusalem Delivered," was born in Sorrento in 1544. The main piazza bears his name.</li>
+                        <li><strong>Limoncello:</strong> The famous lemon liqueur originated on this coast, made from sfusato amalfitano lemons - a variety found nowhere else.</li>
+                        <li><strong>Gateway to Capri:</strong> Ferries depart regularly from Marina Piccola to the legendary island, just 5km offshore.</li>
+                        <li><strong>Vesuvius View:</strong> On clear days, the volcano that buried Pompeii is visible smoking on the horizon - a reminder of the coast's precarious beauty.</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('sorrento')}
         `,
         fullDesc: "Sorrento sits on cliffs overlooking the Bay of Naples, with Vesuvius smoking on the horizon.\n\nThe town has drawn travelers for centuries - writers, artists, composers all fell for its lemon-scented air and impossible views. The old town's narrow streets wind past ceramics shops and limoncello vendors. From here you can see Capri floating in the bay, close enough to almost touch.",
-        image: "./images/hero/sorrento/IMG_1094.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1094"
     },
     {
         id: 125,
@@ -6819,24 +7235,24 @@ an original composition inspired by this place.
         id: 129,
         title: "Antibes, France",
         coords: [43.25, 7.05],
-        tag: "Picasso's Fortress",
-        icon: "🏰",
+        tag: "Market Morning",
+        icon: "🫒",
         isDoor: false,
-        shortDesc: "Old town walls and a famous museum.",
+        shortDesc: "The best market on the Côte d'Azur.",
         useRichContent: true,
         richContent: `
             <div class="demographics-strip">
                 <div class="demo-item">
-                    <span class="demo-icon">🏰</span>
-                    <span class="demo-value">Château Grimaldi</span>
+                    <span class="demo-icon">🫒</span>
+                    <span class="demo-value">Provençal Market</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🎨</span>
-                    <span class="demo-value">Picasso Museum</span>
+                    <span class="demo-icon">🧀</span>
+                    <span class="demo-value">Local Cheese</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🛡️</span>
-                    <span class="demo-value">Old Ramparts</span>
+                    <span class="demo-icon">🌿</span>
+                    <span class="demo-value">Herbs de Provence</span>
                 </div>
                 <div class="demo-item">
                     <span class="demo-icon">☀️</span>
@@ -6845,26 +7261,71 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Old Town</span>
-                <h3 class="section-title-panel">Where Getting Lost is the Point</h3>
-                <p>Antibes has the kind of old town that makes you want to get lost on purpose. The ramparts still stand, the market still bustles.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150816_103313" class="story-image" data-caption="The old town of Antibes on the French Riviera." alt="Antibes old town">
-                <p class="photo-caption-inline">Narrow streets lead through centuries of Mediterranean history.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_094258" class="story-image" data-caption="Antibes waterfront." alt="Antibes waterfront">
+                <span class="section-tag-panel">The Market</span>
+                <h3 class="section-title-panel">Marché Provençal</h3>
+                <p>The Marché Provençal in Antibes is legendary - a sensory explosion of olives, cheese, spices, and the colors of Provence. Every morning the covered market fills with vendors and locals who've been shopping here for generations.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150816_103313" class="story-image" data-caption="Olives in every variety at the Antibes market." alt="Olive stall">
+                <p class="photo-caption-inline">Olives in every variety - green, black, stuffed, marinated, herbed.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095310" class="story-image" data-caption="French cheese selection." alt="Cheese display">
+                <p class="photo-caption-inline">The cheese counter - a geography lesson in French dairy.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_094836" class="story-image" data-caption="Market scene." alt="Market">
+                <p class="photo-caption-inline">Every stall a work of art, every vendor an expert.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095513" class="story-image" data-caption="Provençal display." alt="Provençal goods">
+                <p class="photo-caption-inline">Provence in a single frame - lavender, ceramics, and that famous light.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095643" class="story-image" data-caption="Market treats." alt="Market treats">
+                <p class="photo-caption-inline">Treats and treasures at every turn.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_103348" class="story-image" data-caption="Market atmosphere." alt="Market scene">
+                <p class="photo-caption-inline">The morning light streaming through the market stalls.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_105943" class="story-image" data-caption="Local goods." alt="Local goods">
+                <p class="photo-caption-inline">This is what the French mean by "terroir" - the taste of a place.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/antibes_market" class="story-image" data-caption="Spices of Provence." alt="Spice stall">
+                <p class="photo-caption-inline">Spices in rainbow rows - saffron, herbes de Provence, piment d'Espelette.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Artist</span>
-                <h3 class="section-title-panel">Picasso's Light</h3>
-                <p>The Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095228" class="story-image" data-caption="The light that inspired Picasso." alt="Antibes light">
-                <p class="photo-caption-inline">The same Mediterranean light that drew Picasso still bathes these stones.</p>
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Beyond the Market</h3>
+                <p>Beyond the market, Antibes reveals itself slowly. The old ramparts still stand, the ceramic tile map shows centuries of history, and the watchtower keeps watch over it all.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_094258" class="story-image" data-caption="Ceramic map of Antibes." alt="Tile map">
+                <p class="photo-caption-inline">A ceramic map of the old town - every street a story.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150816_140928" class="story-image" data-caption="Antibes scene." alt="Town view">
+                <p class="photo-caption-inline">The Côte d'Azur light that drew Picasso and countless others.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150818_155645" class="story-image" data-caption="Old town." alt="Old town">
+                <p class="photo-caption-inline">Narrow streets where every corner hides a café or gallery.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_105951" class="story-image" data-caption="Town detail." alt="Town detail">
+                <p class="photo-caption-inline">The kind of place that makes you forget the rest of the world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_120958" class="story-image" data-caption="Town architecture." alt="Architecture">
+                <p class="photo-caption-inline">Mediterranean architecture at its finest.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/antibes_watchtower" class="story-image" data-caption="The watchtower of Antibes." alt="Watchtower">
+                <p class="photo-caption-inline">The old watchtower - keeping guard over the Côte d'Azur since the Middle Ages.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_214933" class="story-image" data-caption="Night panorama of the Côte d'Azur from the ship." alt="Night panorama">
+                <p class="photo-caption-inline">Sailing away at night - the lights of the Riviera stretching into the darkness.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Antibes</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🫒</span>
+                        <span>The Provençal Market Town</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Marché Provençal:</strong> The covered market has operated daily (except Mondays) since 1895, making it one of the oldest continuous markets on the Riviera.</li>
+                        <li><strong>Picasso Museum:</strong> The Château Grimaldi houses works Picasso created during his stay in 1946. He was so inspired by the light that he left 23 paintings and 44 drawings.</li>
+                        <li><strong>Roman Origins:</strong> Antibes was founded as Antipolis by Greek colonists from Marseille around 340 BC.</li>
+                        <li><strong>Port Vauban:</strong> One of the largest marinas in Europe, where superyachts dock alongside fishing boats.</li>
+                        <li><strong>Graham Greene:</strong> The novelist lived in Antibes for his final years, calling it "the only place I've ever wanted to live."</li>
+                    </ul>
+                </div>
             </div>
 
             ${generateGallery('antibes')}
         `,
-        fullDesc: "Antibes has the kind of old town that makes you want to get lost on purpose.\n\nThe ramparts still stand, the market still bustles, and the Château Grimaldi still holds Picasso's work. He spent a few months here in 1946 and left behind paintings that never left. The light on the Côte d'Azur does something to artists.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150816_103313"
+        fullDesc: "The Marché Provençal in Antibes is legendary - a sensory explosion of olives, cheese, spices, and the colors of Provence.\n\nEvery morning the covered market fills with vendors and locals who've been shopping here for generations. Beyond the market, the old town reveals itself slowly - ramparts, narrow streets, and the famous light that drew Picasso.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/antibes_market_2"
     },
     {
         id: 134,

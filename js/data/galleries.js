@@ -105,7 +105,41 @@ const locationGalleries = {
 
     // AMALFI (1 images)
     "amalfi": [
-        { src: "v1769823674/20150804_114120_kg0f2a.jpg", caption: "Amalfi harbor from the water.", alt: "Amalfi harbor" }
+        { src: "shiplife/amalfi/img_7000", caption: "The Cathedral of Saint Andrew - 62 steps rise from the piazza.", alt: "Amalfi Cathedral" },
+        { src: "shiplife/amalfi/img_7019", caption: "Beach clubs and a tall ship on the horizon.", alt: "Amalfi waterfront" },
+        { src: "shiplife/amalfi/img_7021", caption: "Flowers line the harbor promenade.", alt: "Harbor view" },
+        { src: "shiplife/amalfi/img_7004", caption: "Pastel buildings cling to impossible cliffs.", alt: "Cliff architecture" },
+        { src: "shiplife/amalfi/img_7022", caption: "The coast stretches toward Positano.", alt: "Coastal view" },
+        { src: "shiplife/amalfi/img_6993", caption: "Streets climb straight up the cliffside.", alt: "Steep street" },
+        { src: "shiplife/amalfi/img_6995", caption: "Mediterranean life stacked against the mountain.", alt: "Town view" },
+        { src: "shiplife/amalfi/img_6997", caption: "The piazza with cathedral bell tower.", alt: "Piazza scene" },
+        { src: "shiplife/amalfi/img_6999", caption: "Narrow lanes wind through old town.", alt: "Street view" },
+        { src: "shiplife/amalfi/img_7005", caption: "A thousand years of history in every wall.", alt: "Architecture detail" },
+        { src: "shiplife/amalfi/img_7007", caption: "Life happens vertically here.", alt: "Town scene" },
+        { src: "shiplife/amalfi/img_7009", caption: "The maritime republic lives on.", alt: "Buildings" },
+        { src: "shiplife/amalfi/img_7017", caption: "Lemon groves terrace the hillsides.", alt: "Hillside view" },
+        { src: "shiplife/amalfi/img_7018", caption: "The coast that launched a thousand postcards.", alt: "Coast" },
+        { src: "shiplife/amalfi/img_7020", caption: "Where the mountain meets the sea.", alt: "Town view" }
+    ],
+
+    // ANTIBES (15 images)
+    "antibes": [
+        { src: "shiplife/antibes/antibes_market_2", caption: "The Marché Provençal - legendary market of the Côte d'Azur.", alt: "Antibes market" },
+        { src: "shiplife/antibes/20150816_103313", caption: "Olives in every variety.", alt: "Olive stall" },
+        { src: "shiplife/antibes/20150820_095310", caption: "French cheese - a geography lesson in dairy.", alt: "Cheese display" },
+        { src: "shiplife/antibes/20150820_094836", caption: "Every stall a work of art.", alt: "Market scene" },
+        { src: "shiplife/antibes/20150820_095513", caption: "Provence in a single frame.", alt: "Provençal display" },
+        { src: "shiplife/antibes/20150820_095643", caption: "Treats and treasures at every turn.", alt: "Market treats" },
+        { src: "shiplife/antibes/20150820_103348", caption: "Morning light streaming through the stalls.", alt: "Market atmosphere" },
+        { src: "shiplife/antibes/20150820_105943", caption: "The taste of terroir.", alt: "Local goods" },
+        { src: "shiplife/antibes/antibes_market", caption: "Spices in rainbow rows.", alt: "Spice stall" },
+        { src: "shiplife/antibes/20150820_094258", caption: "Ceramic map of the old town.", alt: "Tile map" },
+        { src: "shiplife/antibes/20150816_140928", caption: "The famous Côte d'Azur light.", alt: "Town view" },
+        { src: "shiplife/antibes/20150818_155645", caption: "Narrow streets and hidden cafés.", alt: "Old town" },
+        { src: "shiplife/antibes/20150820_105951", caption: "A place to forget the world.", alt: "Town detail" },
+        { src: "shiplife/antibes/20150820_120958", caption: "Mediterranean architecture at its finest.", alt: "Architecture" },
+        { src: "shiplife/antibes/antibes_watchtower", caption: "The old watchtower keeping guard.", alt: "Watchtower" },
+        { src: "shiplife/antibes/20150820_214933", caption: "Night panorama - sailing away from the Riviera.", alt: "Night panorama" }
     ],
 
     // AUCKLAND (10 images)
@@ -463,7 +497,19 @@ const locationGalleries = {
     ],
 
     // IBIZA (11 images)
+    // IBIZA (21 images)
     "ibiza": [
+        { src: "shiplife/ibiza/img_20140610_135303", caption: "The fortress of Dalt Vila rises above the harbor.", alt: "Ibiza fortress" },
+        { src: "shiplife/ibiza/img_20140610_113541", caption: "Views from Dalt Vila.", alt: "Old town view" },
+        { src: "shiplife/ibiza/img_20140610_113551", caption: "The harbor below.", alt: "Harbor view" },
+        { src: "shiplife/ibiza/img_20140610_114901", caption: "Statue in the old town.", alt: "Statue" },
+        { src: "shiplife/ibiza/img_20140610_135036", caption: "The fortress walls.", alt: "Fortress walls" },
+        { src: "shiplife/ibiza/img_20140622_100836", caption: "Historic architecture.", alt: "Architecture" },
+        { src: "shiplife/ibiza/img_20140622_101517", caption: "Exploring the walled city.", alt: "Walled city" },
+        { src: "shiplife/ibiza/img_20140610_142859", caption: "Clipper ship in Ibiza harbor.", alt: "Clipper ship" },
+        { src: "shiplife/ibiza/img_20140610_113638", caption: "Tall ship rigging.", alt: "Rigging" },
+        { src: "shiplife/ibiza/img_20140610_143010", caption: "A different kind of Ibiza vessel.", alt: "Tall ship" },
+        { src: "shiplife/ibiza/img_20140622_121033", caption: "Boy George in Ibiza.", alt: "Boy George" },
         { src: "v1770837316/shiplife/ibiza/ephbyw32jtinr1jkj2ys.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
         { src: "v1770837317/shiplife/ibiza/gtafp4elfoffkf99szii.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
         { src: "v1770837318/shiplife/ibiza/ghicdyoulxxbrgxqqd2s.jpg", caption: "Ibiza, Spain", alt: "Ibiza" },
@@ -559,46 +605,48 @@ const locationGalleries = {
     ],
 
     // LAVANDOU (7 images)
+    // LE LAVANDOU (20 images)
     "lavandou": [
-        { src: "v1770837535/shiplife/le-lavendeu/ao8b3gxy425t02rvz5cx.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837539/shiplife/le-lavendeu/g5njmun06hu4ih8ragyl.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837533/shiplife/le-lavendeu/j8bzq7aifb1pbctssib3.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837532/shiplife/le-lavendeu/kbjzbcui4ldg9lcza1wp.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837536/shiplife/le-lavendeu/lf1m6r8g83f6h2nqwyko.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837534/shiplife/le-lavendeu/v0tneg5dblhkpmqv7p36.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" },
-        { src: "v1770837537/shiplife/le-lavendeu/wu6zflcglkhvwythbnsl.jpg", caption: "Le Lavandou, France", alt: "Le Lavandou" }
+        { src: "shiplife/le-lavandou/img_20140605_134218", caption: "Le Lavandou beach - where the Côte d'Azur meets tranquility.", alt: "Le Lavandou beach" },
+        { src: "shiplife/le-lavandou/img_20140605_122522", caption: "Arriving in Le Lavandou.", alt: "Arrival" },
+        { src: "shiplife/le-lavandou/20150807_124809", caption: "The Mediterranean shore.", alt: "Shore" },
+        { src: "shiplife/le-lavandou/img_20140605_134242", caption: "Côte d'Azur views.", alt: "Coast view" },
+        { src: "shiplife/le-lavandou/20150613_130635", caption: "The waterfront promenade.", alt: "Waterfront" },
+        { src: "shiplife/le-lavandou/20150613_131906", caption: "Town streets.", alt: "Town" },
+        { src: "shiplife/le-lavandou/20150613_135211", caption: "Afternoon exploring.", alt: "Exploring" },
+        { src: "shiplife/le-lavandou/20150613_190342", caption: "Evening light on the coast.", alt: "Evening" },
+        { src: "shiplife/le-lavandou/20150613_134743", caption: "Local color.", alt: "Local scene" },
+        { src: "shiplife/le-lavandou/20150611_104847", caption: "Le Lavandou charm.", alt: "Town charm" },
+        { src: "shiplife/le-lavandou/20150613_131900", caption: "Exploring the town.", alt: "Town exploration" },
+        { src: "shiplife/le-lavandou/20150613_134615", caption: "Mediterranean moments.", alt: "Mediterranean" },
+        { src: "shiplife/le-lavandou/20150613_134737", caption: "Along the shore.", alt: "Shore walk" },
+        { src: "shiplife/le-lavandou/20150613_202401", caption: "Evening by the sea.", alt: "Evening scene" },
+        { src: "shiplife/le-lavandou/img_20140605_134214", caption: "The famous Lavandou light.", alt: "Lavandou light" },
+        { src: "shiplife/le-lavandou/img_20140605_134353", caption: "Coastal views.", alt: "Coastal" },
+        { src: "shiplife/le-lavandou/img_20140605_135004", caption: "Beach time.", alt: "Beach" },
+        { src: "shiplife/le-lavandou/img_20140605_140634", caption: "The twelve beaches stretch on.", alt: "Beaches" },
+        { src: "shiplife/le-lavandou/img_20140605_140758", caption: "A quieter corner of the Riviera.", alt: "Riviera" }
     ],
 
-    // LEMAIRE (28 images)
+    // LEMAIRE CHANNEL (17 images)
     "lemaire": [
-        { src: "v1767737978/IMG_6712_bmwcxi.jpg", caption: "The Lemaire Channel.", alt: "Lemaire Channel" },
-        { src: "v1768951494/Screenshot_20260120_143541_Facebook_uhmala.jpg", caption: "Antarctic ice.", alt: "Ice" },
-        { src: "v1768951499/Screenshot_20260120_143110_Facebook_jzwqvt.jpg", caption: "Antarctic landscape.", alt: "Landscape" },
-        { src: "v1768951499/Screenshot_20260120_143100_Facebook_biirxg.jpg", caption: "Ice formations.", alt: "Ice formations" },
-        { src: "v1770827084/shiplife/antarctica/cz6rlhamigbfcfbw8faz.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827084/shiplife/antarctica/faghm04wmznwajvdszes.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827085/shiplife/antarctica/ux0177l0qmgvoui6wrmk.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827086/shiplife/antarctica/l374c32lkf3ksks79tvb.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827087/shiplife/antarctica/qfbhbdqbi9gnj5kgcpcd.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827088/shiplife/antarctica/wmk00nufhvewnx7018x4.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827089/shiplife/antarctica/fhj7nt7uiygc6pwc4uar.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827089/shiplife/antarctica/wm33vuqpic9vazyqh16f.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827090/shiplife/antarctica/lrivcvhsifypjamvgbcu.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827091/shiplife/antarctica/pu088hiixohimq97yz1l.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827092/shiplife/antarctica/drctkc5k6peiwtzhgsuf.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827092/shiplife/antarctica/k77fzroa6wiyo3ocqrcs.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827093/shiplife/antarctica/d2sfwlw6rm5xbgckgg5e.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827094/shiplife/antarctica/z3jqg8oc4ljdfkq6mwbi.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827095/shiplife/antarctica/wbkb6rqndoiaozn5md9m.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827096/shiplife/antarctica/ahkf6k350iybuidff2qm.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827096/shiplife/antarctica/zoezb7sy5r76ni4hxbjn.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827097/shiplife/antarctica/novc4ww2pjcwdtfeejyj.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827098/shiplife/antarctica/lrqqg0f61hfaetevztno.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827104/shiplife/antarctica/ginvukjus348m6csofst.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827105/shiplife/antarctica/ffnkuluercsm3ay4un0m.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827106/shiplife/antarctica/uiw3c6i2pg8vj8sshquv.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827106/shiplife/antarctica/usgm1b6j5ww0mtlhany4.jpg", caption: "Antarctica", alt: "Antarctica" },
-        { src: "v1770827108/shiplife/antarctica/qqfztbprqmzlphk4gd9r.jpg", caption: "Antarctica", alt: "Antarctica" }
+        { src: "shiplife/lemaire/img_6697", caption: "The captain's 5am announcement - we might attempt the channel.", alt: "Early morning approach" },
+        { src: "shiplife/lemaire/img_6698", caption: "Waiting to see if conditions will allow passage.", alt: "Channel entrance" },
+        { src: "shiplife/lemaire/img_6699", caption: "The narrow passage begins to open up.", alt: "Lemaire Channel view" },
+        { src: "shiplife/lemaire/img_6702", caption: "Ice and mountains tower on both sides.", alt: "Mountain walls" },
+        { src: "shiplife/lemaire/img_6703", caption: "Threading through the channel.", alt: "Navigating the channel" },
+        { src: "shiplife/lemaire/img_6704", caption: "Pristine Antarctic scenery.", alt: "Scenic view" },
+        { src: "shiplife/lemaire/img_6706", caption: "The dramatic cliffsides of Lemaire.", alt: "Cliff walls" },
+        { src: "shiplife/lemaire/img_6707", caption: "Ice formations along the channel.", alt: "Ice formations" },
+        { src: "shiplife/lemaire/img_6708", caption: "Reflections in the still water.", alt: "Water reflections" },
+        { src: "shiplife/lemaire/img_6709", caption: "Deep into Kodak Gap.", alt: "Deep channel" },
+        { src: "shiplife/lemaire/img_6710", caption: "Mountain peaks pierce the sky.", alt: "Mountain peaks" },
+        { src: "shiplife/lemaire/img_6711", caption: "The raw beauty of Antarctica.", alt: "Antarctic beauty" },
+        { src: "shiplife/lemaire/img_6712", caption: "We made it through.", alt: "Channel passage" },
+        { src: "shiplife/lemaire/img_6713", caption: "Looking back at the channel.", alt: "Looking back" },
+        { src: "shiplife/lemaire/img_6714", caption: "The other side of Lemaire.", alt: "Channel exit" },
+        { src: "shiplife/lemaire/img_6715", caption: "A successful transit.", alt: "Successful passage" },
+        { src: "shiplife/lemaire/img_6716", caption: "The unforgettable Lemaire Channel.", alt: "Final view" }
     ],
 
     // LIFOU (2 images)
@@ -633,7 +681,18 @@ const locationGalleries = {
     // MALTA (2 images)
     "malta": [
         { src: "v1767735863/IMG_1155_qtda7b.jpg", caption: "Malta Grand Harbour.", alt: "Grand Harbour" },
-        { src: "v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg", caption: "The fortress walls of Valletta.", alt: "Malta fortress" }
+        { src: "v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg", caption: "The fortress walls of Valletta.", alt: "Malta fortress" },
+        { src: "shiplife/gozo/20150606_105819", caption: "Cathedral facade on Gozo.", alt: "Gozo cathedral" },
+        { src: "shiplife/gozo/20150606_103703", caption: "The Citadel panorama on Gozo.", alt: "Gozo Citadel" },
+        { src: "shiplife/gozo/20150606_103607", caption: "Honey-colored limestone architecture.", alt: "Gozo town" },
+        { src: "shiplife/gozo/20150606_104947", caption: "Village streets on Gozo.", alt: "Village" },
+        { src: "shiplife/gozo/20150606_105651", caption: "The quieter pace of island life.", alt: "Gozo scene" },
+        { src: "shiplife/gozo/20150606_110704", caption: "Views across the Maltese archipelago.", alt: "Gozo view" },
+        { src: "shiplife/gozo/20150606_1148390", caption: "Church interior.", alt: "Church" },
+        { src: "shiplife/gozo/20150606_115312", caption: "Baroque altar and golden baldachin.", alt: "Altar" },
+        { src: "shiplife/gozo/20150606_115325", caption: "Every surface decorated.", alt: "Church interior" },
+        { src: "shiplife/gozo/20150606_115822", caption: "Baroque splendor.", alt: "Church detail" },
+        { src: "shiplife/gozo/20150607_133045", caption: "Faith made visible in stone and gold.", alt: "Church" }
     ],
 
     // MARSEILLE (24 images)
@@ -825,12 +884,58 @@ const locationGalleries = {
     ],
 
     // PETERMANN (5 images)
+    // PETERMANN ISLAND (19 images)
     "petermann": [
-        { src: "v1768951516/Screenshot_20260120_142452_Facebook_zta5nb.jpg", caption: "Petermann Island view.", alt: "Petermann view" },
-        { src: "v1768951510/Screenshot_20260120_142516_Facebook_mylwm6.jpg", caption: "Petermann scenery.", alt: "Petermann scenery" },
-        { src: "v1768951511/Screenshot_20260120_142511_Facebook_a9x73n.jpg", caption: "Antarctic scenery.", alt: "Antarctic scenery" },
-        { src: "v1768951515/Screenshot_20260120_142458_Facebook_kuzkx0.jpg", caption: "Petermann ice.", alt: "Ice" },
-        { src: "v1768951516/Screenshot_20260120_142444_Facebook_woat2s.jpg", caption: "Antarctica frozen glory.", alt: "Frozen glory" }
+        { src: "shiplife/petermann/20150217_092200", caption: "4am - getting ready for Antarctic excursions.", alt: "Morning prep" },
+        { src: "shiplife/petermann/20150217_095324", caption: "Early morning Antarctic light.", alt: "Morning light" },
+        { src: "shiplife/petermann/img_6490", caption: "Zodiac station setup.", alt: "Zodiac prep" },
+        { src: "shiplife/petermann/img_6534", caption: "Ready for guests.", alt: "Morning prep" },
+        { src: "shiplife/petermann/img_6481", caption: "Pre-dawn silence.", alt: "Pre-dawn" },
+        { src: "shiplife/petermann/img_6487", caption: "The frozen world before sunrise.", alt: "Frozen landscape" },
+        { src: "shiplife/petermann/img_6485", caption: "Antarctic stillness.", alt: "Stillness" },
+        { src: "shiplife/petermann/img_6467", caption: "Ice in shadow.", alt: "Ice shadow" },
+        { src: "shiplife/petermann/img_6459", caption: "Waiting for sunrise.", alt: "Pre-sunrise" },
+        { src: "shiplife/petermann/img_6451", caption: "The quiet before.", alt: "Quiet morning" },
+        { src: "shiplife/petermann/img_6443", caption: "First penguin sighting.", alt: "Penguins" },
+        { src: "shiplife/petermann/img_6447", caption: "The colony comes alive.", alt: "Penguin colony" },
+        { src: "shiplife/petermann/img_6446", caption: "Unbothered by our presence.", alt: "Penguins on ice" },
+        { src: "shiplife/petermann/20150217_095348", caption: "Sun breaking through.", alt: "Sunrise" },
+        { src: "shiplife/petermann/20150217_091633", caption: "Golden hour on Antarctic ice.", alt: "Golden light" },
+        { src: "shiplife/petermann/20150217_090228", caption: "Antarctica awakens.", alt: "Morning light" },
+        { src: "shiplife/petermann/20150217_090307", caption: "Ice in morning light.", alt: "Morning ice" },
+        { src: "shiplife/petermann/20150217_091022", caption: "The transformation.", alt: "Sunrise transformation" },
+        { src: "shiplife/petermann/20150217_091114", caption: "What we woke up for.", alt: "Antarctic sunrise" }
+    ],
+
+    // SOUTH SHETLAND ISLANDS (27 images)
+    "southShetlands": [
+        { src: "shiplife/south-shetlands/img_6563", caption: "Seabourn Quest navigating Antarctic waters.", alt: "Ship in Antarctica" },
+        { src: "shiplife/south-shetlands/route_map", caption: "Our route from Ushuaia to the Antarctic Peninsula.", alt: "Route map" },
+        { src: "shiplife/south-shetlands/img_6464", caption: "4am - fog and ice blur together.", alt: "Fog" },
+        { src: "shiplife/south-shetlands/img_6465", caption: "Cliffs hanging in the sky.", alt: "Cliffs in fog" },
+        { src: "shiplife/south-shetlands/img_6470", caption: "Where does the ice end?", alt: "Ice and sky" },
+        { src: "shiplife/south-shetlands/img_6475", caption: "The world dissolves.", alt: "Fog landscape" },
+        { src: "shiplife/south-shetlands/img_6472", caption: "Eerie morning silence.", alt: "Morning silence" },
+        { src: "shiplife/south-shetlands/img_6511", caption: "The clouds begin to part.", alt: "Clouds parting" },
+        { src: "shiplife/south-shetlands/img_6514", caption: "Blue sky appears.", alt: "Blue sky" },
+        { src: "shiplife/south-shetlands/img_6515", caption: "The transformation.", alt: "Transformation" },
+        { src: "shiplife/south-shetlands/img_6516", caption: "Antarctica revealed.", alt: "Antarctica revealed" },
+        { src: "shiplife/south-shetlands/img_6517", caption: "Breathtaking.", alt: "Breathtaking view" },
+        { src: "shiplife/south-shetlands/img_6521", caption: "Worth the 4am wake-up.", alt: "Morning glory" },
+        { src: "shiplife/south-shetlands/img_6534", caption: "Finally going ashore.", alt: "Going ashore" },
+        { src: "shiplife/south-shetlands/img_6535", caption: "On the ice.", alt: "On ice" },
+        { src: "shiplife/south-shetlands/img_6538", caption: "Crew day on Antarctica!", alt: "Crew day" },
+        { src: "shiplife/south-shetlands/img_6539", caption: "Exploring the frozen continent.", alt: "Exploring" },
+        { src: "shiplife/south-shetlands/img_6540", caption: "Walking on Antarctica.", alt: "Walking" },
+        { src: "shiplife/south-shetlands/img_6546", caption: "Taking it all in.", alt: "Taking it in" },
+        { src: "shiplife/south-shetlands/img_6548", caption: "Crew ashore.", alt: "Crew ashore" },
+        { src: "shiplife/south-shetlands/img_6553", caption: "Our turn at last.", alt: "Our turn" },
+        { src: "shiplife/south-shetlands/img_6556", caption: "The climb begins.", alt: "Climbing" },
+        { src: "shiplife/south-shetlands/img_6558", caption: "Penguins watching us climb.", alt: "Penguins watching" },
+        { src: "shiplife/south-shetlands/img_6559", caption: "Our penguin audience.", alt: "Penguin audience" },
+        { src: "shiplife/south-shetlands/img_6565", caption: "Ready to sled.", alt: "Ready to sled" },
+        { src: "shiplife/south-shetlands/img_6572", caption: "A day to remember.", alt: "Farewell" },
+        { src: "shiplife/south-shetlands/img_6717", caption: "Antarctica memories.", alt: "Memories" }
     ],
 
     // PICTON (32 images)
@@ -1083,24 +1188,26 @@ const locationGalleries = {
         { src: "v1770838008/shiplife/rome/fh9wnajmt3blqcq0q09f.jpg", caption: "Rome, Italy", alt: "Rome" }
     ],
 
-    // ROSES (16 images)
+    // ROSES (18 images)
     "roses": [
-        { src: "v1770838044/shiplife/roses/bbh1qvq3ny3cihcum1cn.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838030/shiplife/roses/c5mrbgbobwfsl0j0t0s0.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838041/shiplife/roses/grh6tk3w9wwjjbk9dvgd.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838046/shiplife/roses/h6pd9kdeibwsrtpjvkvu.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838034/shiplife/roses/hhbpbbjtlv69edf8qnbn.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838046/shiplife/roses/ky6hnxtrwz0vfikyygc7.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838053/shiplife/roses/nl33s5rgv5agynk0jqcz.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838043/shiplife/roses/qninavdl6btzagely7j8.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838054/shiplife/roses/rw6nc32mrn5a4pwu1y0u.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838055/shiplife/roses/uttaskgxsujixcjmapbg.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838044/shiplife/roses/vdhbn5erobhicgzxipox.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838053/shiplife/roses/vl0iuqyffdrebnosjvox.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838042/shiplife/roses/wekwjpv66w8ajt5r9sln.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838049/shiplife/roses/wezv63qx4zyr32v1fknr.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838045/shiplife/roses/y51tysignmpfftmohhsz.jpg", caption: "Roses, Spain", alt: "Roses" },
-        { src: "v1770838052/shiplife/roses/zdzdfmqaasoafgku7fkz.jpg", caption: "Roses, Spain", alt: "Roses" }
+        { src: "shiplife/roses/img_5252", caption: "The bay of Roses - where the Pyrenees meet the sea.", alt: "Roses harbor" },
+        { src: "shiplife/roses/img_5253", caption: "View across the bay to the mountains.", alt: "Bay view" },
+        { src: "shiplife/roses/img_5249", caption: "The harbor at Roses.", alt: "Harbor" },
+        { src: "shiplife/roses/img_5245", caption: "Boats in the marina.", alt: "Marina" },
+        { src: "shiplife/roses/20150623_115457", caption: "Along the Costa Brava.", alt: "Coastal view" },
+        { src: "shiplife/roses/img_5251", caption: "The old citadel walls.", alt: "Citadel" },
+        { src: "shiplife/roses/img_5256", caption: "Exploring the town.", alt: "Town street" },
+        { src: "shiplife/roses/img_5257", caption: "Catalan architecture.", alt: "Architecture" },
+        { src: "shiplife/roses/img_5265", caption: "Town scene.", alt: "Town" },
+        { src: "shiplife/roses/img_5254", caption: "Details of the old town.", alt: "Details" },
+        { src: "shiplife/roses/img_5246", caption: "The seaside promenade.", alt: "Promenade" },
+        { src: "shiplife/roses/20150623_142632", caption: "Afternoon wandering.", alt: "Afternoon" },
+        { src: "shiplife/roses/img_5258", caption: "Saucisson at the market.", alt: "Saucisson" },
+        { src: "shiplife/roses/img_5259", caption: "Market treasures.", alt: "Market" },
+        { src: "shiplife/roses/img_5261", caption: "Local specialties.", alt: "Specialties" },
+        { src: "shiplife/roses/img_5262", caption: "Catalan flavors.", alt: "Catalan goods" },
+        { src: "shiplife/roses/img_5263", caption: "Temptations at every turn.", alt: "Market stall" },
+        { src: "shiplife/roses/img_5266", caption: "Market memories from Dalí country.", alt: "Market scene" }
     ],
 
     // SANREMO (22 images)
@@ -1179,32 +1286,50 @@ const locationGalleries = {
 
     // SORRENTO (26 images)
     "sorrento": [
-        { src: "v1770838130/shiplife/sorrento/bfyur8he8gdgr1yvxz14.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838135/shiplife/sorrento/c11rg8dpshpicr1ppumj.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838137/shiplife/sorrento/eaw6ao1czqbhfrzcunlg.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838128/shiplife/sorrento/fgcgjjx5fxdjsuhzwyd6.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838131/shiplife/sorrento/fmilrqdlwh0jrfeykvvd.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838131/shiplife/sorrento/g3qpm3m0bnp8lpk7yhof.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838126/shiplife/sorrento/h4mhzjkireiule9lhdmn.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838129/shiplife/sorrento/h7ssanbqgdgfnwvsbuly.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838120/shiplife/sorrento/haokv5ztmqxr2xrgl5ut.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838129/shiplife/sorrento/hsbj0xvfm3dejwfndm0u.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838127/shiplife/sorrento/iggi1nquxwuisfjodeut.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838123/shiplife/sorrento/jjgptcnxzutn7c6u2mcs.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838136/shiplife/sorrento/k8uifdozp2xrlljww6t4.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838142/shiplife/sorrento/l60qq8jzlq4uijzeibbq.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838144/shiplife/sorrento/mausodrn7uf5eaywld0q.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838142/shiplife/sorrento/of0frgcxx0lpayoo7pwr.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838121/shiplife/sorrento/qjol6wxil9pobftly6xl.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838145/shiplife/sorrento/qoiluoynmdruvylkek3s.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838132/shiplife/sorrento/rd6fayvqsaizmthlobo9.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838134/shiplife/sorrento/rfbd3uz5ea0yjcklb7pt.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838138/shiplife/sorrento/ru59icooqtb8ndaqfkdm.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838141/shiplife/sorrento/swtfdorjixhpa7fphp56.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838140/shiplife/sorrento/v1wqdjhij3vy3tqwa6j1.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838139/shiplife/sorrento/w79bhqhry9w7uxurqvs6.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838138/shiplife/sorrento/xg7wenx9xmhdwxucdpqi.jpg", caption: "Sorrento, Italy", alt: "Sorrento" },
-        { src: "v1770838143/shiplife/sorrento/yu42pcdhnho3vofhadre.jpg", caption: "Sorrento, Italy", alt: "Sorrento" }
+        { src: "shiplife/sorrento/img_1094", caption: "Sorrento's dramatic cliffs and tower - the view that defines the coast.", alt: "Sorrento cliffs" },
+        { src: "shiplife/sorrento/20150609_123556", caption: "Approaching Sorrento from the sea.", alt: "Sorrento approach" },
+        { src: "shiplife/sorrento/20150804_114120", caption: "Coastal panorama - Capri floating in the bay.", alt: "Coastal panorama" },
+        { src: "shiplife/sorrento/20150804_123310", caption: "Local cuisine - fresh and unforgettable.", alt: "Food" },
+        { src: "shiplife/sorrento/img_5763", caption: "The famous coastline stretches toward Positano.", alt: "Coastline" },
+        { src: "shiplife/sorrento/img_5765", caption: "Town perched high above the water.", alt: "Town view" },
+        { src: "shiplife/sorrento/img_5766", caption: "Restaurant courtyard with stone walls.", alt: "Restaurant" },
+        { src: "shiplife/sorrento/img_5771", caption: "The scent of lemons everywhere.", alt: "Street" },
+        { src: "shiplife/sorrento/img_5779", caption: "Narrow lanes of the old town.", alt: "Old town" },
+        { src: "shiplife/sorrento/img_0872", caption: "Marina Piccola - ferries to Capri.", alt: "Harbor" },
+        { src: "shiplife/sorrento/img_0880", caption: "Markets overflow with fresh produce.", alt: "Market" },
+        { src: "shiplife/sorrento/img_0881", caption: "Ochre walls and green shutters.", alt: "Architecture" },
+        { src: "shiplife/sorrento/img_0883", caption: "Every corner a postcard.", alt: "Street scene" },
+        { src: "shiplife/sorrento/img_0886", caption: "The real Sorrento off the tourist track.", alt: "Local life" },
+        { src: "shiplife/sorrento/img_0894", caption: "La fragola - the colors of the coast.", alt: "Fruit market" },
+        { src: "shiplife/sorrento/img_0899", caption: "Peppers drying on balconies.", alt: "Town detail" },
+        { src: "shiplife/sorrento/img_0902", caption: "Pastries for breakfast.", alt: "Pastries" },
+        { src: "shiplife/sorrento/img_0903", caption: "No regrets - this is what port days are for.", alt: "Treats" },
+        { src: "shiplife/sorrento/img_0905", caption: "Gelato research - essential work.", alt: "Gelato" },
+        { src: "shiplife/sorrento/img_0909", caption: "Ate more in one day than a week at sea.", alt: "Food scene" },
+        { src: "shiplife/sorrento/img_0913", caption: "The Italy before the guidebooks.", alt: "Walking" },
+        { src: "shiplife/sorrento/img_0914", caption: "Views around every corner.", alt: "Views" },
+        { src: "shiplife/sorrento/img_0917", caption: "Piazza Tasso - heartbeat of Sorrento.", alt: "Piazza" },
+        { src: "shiplife/sorrento/img_0919", caption: "Named for the poet Torquato Tasso.", alt: "Square" },
+        { src: "shiplife/sorrento/img_0922", caption: "Espresso and conversation.", alt: "Gathering" },
+        { src: "shiplife/sorrento/img_0923", caption: "The evening passeggiata begins.", alt: "Evening" },
+        { src: "shiplife/sorrento/img_0926", caption: "Sorrento makes you forget time.", alt: "Town life" },
+        { src: "shiplife/sorrento/img_1031", caption: "The coast stretches toward Positano.", alt: "Peninsula" },
+        { src: "shiplife/sorrento/img_1032", caption: "Cliffs and sea, eternal Mediterranean.", alt: "Coast" },
+        { src: "shiplife/sorrento/img_1038", caption: "Every viewpoint more stunning.", alt: "Views" },
+        { src: "shiplife/sorrento/img_1041", caption: "Valle dei Mulini - the mill that called to me.", alt: "Valley of Mills" },
+        { src: "shiplife/sorrento/img_1048", caption: "Lemon groves terrace the hillsides.", alt: "Lemons" },
+        { src: "shiplife/sorrento/img_1072", caption: "The Tyrrhenian Sea impossibly blue.", alt: "Scenery" },
+        { src: "shiplife/sorrento/img_1073", caption: "Paths wind along the cliffs.", alt: "Coastal path" },
+        { src: "shiplife/sorrento/img_1078", caption: "Writers and artists fell for these views.", alt: "Exploration" },
+        { src: "shiplife/sorrento/img_1082", caption: "The bay curves toward Vesuvius.", alt: "Panorama" },
+        { src: "shiplife/sorrento/img_1095", caption: "Beautiful coast on borrowed time.", alt: "Coast view" },
+        { src: "shiplife/sorrento/img_1097", caption: "Drawing travelers for centuries.", alt: "Vista" },
+        { src: "shiplife/sorrento/img_1100", caption: "Perched impossibly on clifftops.", alt: "Clifftop" },
+        { src: "shiplife/sorrento/img_1106", caption: "Italy at its most beautiful.", alt: "Final view" },
+        { src: "shiplife/sorrento/img_4996", caption: "Returned in 2014 - some places demand it.", alt: "2014" },
+        { src: "shiplife/sorrento/img_4998", caption: "Same views, same magic.", alt: "Second visit" },
+        { src: "shiplife/sorrento/img_5002", caption: "Sorrento never disappoints.", alt: "Return" },
+        { src: "shiplife/sorrento/img_5006", caption: "Until next time, Sorrento.", alt: "Final" }
     ],
 
     // STROMBOLI (2 images)
@@ -1282,22 +1407,19 @@ const locationGalleries = {
     ],
 
     // SYMI (16 images)
+    // SYMI (11 images)
     "symi": [
-        { src: "v1770838117/shiplife/simi/bgvlvsxj2y2ye0hc3pso.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838103/shiplife/simi/ck3m3lgxm1p3bawyzwyq.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838101/shiplife/simi/i7vcer31z09h9a6ttqr2.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838107/shiplife/simi/lsdpqbrdnztqps80w6oj.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838112/shiplife/simi/m1nb8rulumcnpw8tkkw9.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838109/shiplife/simi/p23o0mabijrec7qstk3v.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838115/shiplife/simi/pp9jayfmdej1m9ncop09.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838118/shiplife/simi/rpfnihapmigeps4cqpey.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838113/shiplife/simi/s9ttxmyez1vr6de5oiuh.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838111/shiplife/simi/udymsd53dk6ly2mshaum.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838114/shiplife/simi/vcst1xyevlegh2cstwwp.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838105/shiplife/simi/vds3f0rrwgnuegb9b5q8.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838108/shiplife/simi/wkrbyvhtdtrpkelsc7li.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838110/shiplife/simi/xgbmloy1oucn1pkjk7xh.jpg", caption: "Symi, Greece", alt: "Symi" },
-        { src: "v1770838114/shiplife/simi/yj1yrxw9sm4rspksgeiy.jpg", caption: "Symi, Greece", alt: "Symi" },
+        { src: "shiplife/symi/img_5795", caption: "The painted harbor of Symi - neoclassical perfection.", alt: "Symi harbor" },
+        { src: "shiplife/symi/img_5786", caption: "The colorful waterfront.", alt: "Harbor view" },
+        { src: "shiplife/symi/img_5787", caption: "Neoclassical facades climbing the hillside.", alt: "Facades" },
+        { src: "shiplife/symi/img_5791", caption: "Reflections in the still harbor waters.", alt: "Reflections" },
+        { src: "shiplife/symi/img_5792", caption: "Pastel houses of Gialos.", alt: "Pastel houses" },
+        { src: "shiplife/symi/img_5793", caption: "Symi's waterfront.", alt: "Waterfront" },
+        { src: "shiplife/symi/img_5796", caption: "Views from the upper town.", alt: "Upper town view" },
+        { src: "shiplife/symi/img_5797", caption: "Climbing to Chorio.", alt: "Chorio" },
+        { src: "shiplife/symi/img_5799", caption: "Island details.", alt: "Details" },
+        { src: "shiplife/symi/img_5800", caption: "Aegean blues.", alt: "Aegean" },
+        { src: "shiplife/symi/img_5801", caption: "Symi memories.", alt: "Symi" },
         { src: "v1770838106/shiplife/simi/ysv8rvp7cpjtyoqywvmb.jpg", caption: "Symi, Greece", alt: "Symi" }
     ],
 
@@ -1483,18 +1605,6 @@ const locationGalleries = {
     ],
 
     // SORRENTO (10 images)
-    "sorrento": [
-        { src: "shiplife/sorrento/axkk4etwgqjj6it10og9.jpg", caption: "Sorrento's dramatic cliffs rise from the sea - the town perches impossibly high above.", alt: "Sorrento cliffs from ship" },
-        { src: "shiplife/sorrento/ek9karju1s4khejlkooa.jpg", caption: "Morning coffee on the aft deck - Sorrento materializing through the mist.", alt: "Ship deck view of Sorrento" },
-        { src: "shiplife/sorrento/oiwjar7gmu1yli6jh2ch.jpg", caption: "Marina Piccola - fishing boats and ferries to Capri beneath the clifftop hotels.", alt: "Sorrento marina" },
-        { src: "shiplife/sorrento/m9ye6yar1ji2ugmjysnx.jpg", caption: "Marina Grande - the old fishing village where locals still mend nets.", alt: "Marina Grande Sorrento" },
-        { src: "shiplife/sorrento/o7cokeoxnidbzdnogjol.jpg", caption: "A table for two in a hidden courtyard - stone walls hold centuries of secrets.", alt: "Sorrento restaurant" },
-        { src: "shiplife/sorrento/nomau02eakr1t4phipxw.jpg", caption: "Through the archways of the old town - every turn reveals another postcard.", alt: "Sorrento archway" },
-        { src: "shiplife/sorrento/hkcqc4vyr4e6maw2dwet.jpg", caption: "Peppers drying on a balcony, paint peeling in the sun - this is the real Sorrento.", alt: "Sorrento old building" },
-        { src: "shiplife/sorrento/rerl61mnhxwsgan9r3ha.jpg", caption: "The fruit vendors of Via San Cesareo - lemons, peppers, and limoncello at every turn.", alt: "Sorrento fruit market" },
-        { src: "shiplife/sorrento/ojgmwuuc8eokfk6kumvc.jpg", caption: "Palm trees and Vespas - Piazza Tasso is the heart of Sorrento.", alt: "Sorrento street scene" },
-        { src: "shiplife/sorrento/yzgsvz5cj8r8z1fegejf.jpg", caption: "The Winged Victory in Piazza Sant'Antonino - watching over the town since 1892.", alt: "Sorrento statue" }
-    ],
 
     // MYKONOS (10 images)
     "mykonos": [
@@ -1511,22 +1621,12 @@ const locationGalleries = {
     ],
 
     // SYMI (2 images)
-    "symi": [
-        { src: "shiplife/symi/oxwhgi12m3ndimo7qvvf.jpg", caption: "Gialos harbor - neoclassical mansions in ochre, terracotta, and pastel climbing the hillside.", alt: "Symi harbor panorama" },
-        { src: "shiplife/symi/roy8jrmfqz2lpj8ony1e.jpg", caption: "The old sponge-diving boat 'Lazy Days' - a reminder of Symi's seafaring past.", alt: "Old boat in Symi" }
-    ],
-
     // PATMOS (2 images)
     "patmos": [
         { src: "shiplife/patmos/rjtogrq094i7zikfirqk.jpg", caption: "Vine-covered walkway leading through Skala - Mediterranean shade at its finest.", alt: "Vine archway in Patmos" },
         { src: "shiplife/patmos/cvjtb5bjntmwfumkwhkq.jpg", caption: "A shaded plaza with bougainvillea and an old fountain - Patmos moves at its own pace.", alt: "Patmos plaza with bougainvillea" }
     ],
 
-    // AMALFI (2 images)
-    "amalfi": [
-        { src: "shiplife/amalfi/tkjbkyzlldxujijjv61f.jpg", caption: "Amalfi Cathedral rises 62 steps above the piazza - Arab-Norman splendor.", alt: "Amalfi Cathedral steps" },
-        { src: "shiplife/amalfi/zgex8aw8xwxipsojhwk8.jpg", caption: "A presepe built into the cliff - miniature villages are an Amalfi tradition.", alt: "Amalfi miniature village" }
-    ],
 
     // VENICE (10 images)
     "venice": [
