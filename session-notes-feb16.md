@@ -103,11 +103,37 @@ Major progress on Antarctic locations and Mediterranean panels. Completed 7 loca
 
 ---
 
+## Sidebar Reorganization
+
+Reorganized the sidebar to highlight complete story panels:
+
+1. **Chapters** (3) - Toledo, Darwin, Auckland
+2. **Stories (45)** - Complete panels with 2+ sections and 5+ inline images
+3. **More Locations (73)** - Everything else
+
+Added section dividers with counts. Complete panels are now prominently featured.
+
+---
+
+## Fixes
+
+- **Ibiza hero image:** Was showing mostly sky. Added Cloudinary `g_south` gravity to focus on the buildings at bottom of frame.
+
+---
+
 ## Files Modified
 | File | Changes |
 |------|---------|
-| `js/data/locations.js` | Roses, Le Lavandou, Ibiza, Symi, Petermann, South Shetlands, Lemaire panels |
+| `js/data/locations.js` | Roses, Le Lavandou, Ibiza, Symi, Petermann, South Shetlands, Lemaire panels; Ibiza hero crop fix |
 | `js/data/galleries.js` | Added/updated galleries for all 7 locations |
+| `js/ui/sidebar.js` | Reorganized to show complete panels (45) separately from other locations (73) |
+| `css/styles.css` | Added sidebar divider styling |
+
+---
+
+## Documentation Created
+- `session-notes-feb16.md` - This file
+- `shiplife-project-summary.html` - Comprehensive project summary (printable to PDF)
 
 ---
 
