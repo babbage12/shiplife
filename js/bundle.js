@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-17T18:19:57.110Z
+// Shiplife Bundle - Generated 2026-02-17T19:11:16.648Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1601,7 +1601,7 @@ const locationGalleries = {
         { src: "v1770838076/shiplife/santarem/zhx72pnexjidruci7gh0.jpg", caption: "Santarém, Brazil", alt: "Santarém" }
     ],
 
-    // SANTORINI (25 images)
+    // SANTORINI (46 images)
     "santorini": [
         { src: "v1770838080/shiplife/santorini/aljul4gojqyyxosetoik.jpg", caption: "Santorini", alt: "Santorini" },
         { src: "v1770838099/shiplife/santorini/atjmuacvwewbfoe1lozb.jpg", caption: "Santorini", alt: "Santorini" },
@@ -1627,7 +1627,29 @@ const locationGalleries = {
         { src: "v1770838097/shiplife/santorini/wh22sx9syk7kstefgmad.jpg", caption: "Santorini", alt: "Santorini" },
         { src: "v1770838093/shiplife/santorini/wlzawgnv53uph90tgw6x.jpg", caption: "Santorini", alt: "Santorini" },
         { src: "v1770838100/shiplife/santorini/wmhnphgnwq6zbjxrnncw.jpg", caption: "Santorini", alt: "Santorini" },
-        { src: "v1770838086/shiplife/santorini/xdhldky9xjjrenddnlow.jpg", caption: "Santorini", alt: "Santorini" }
+        { src: "v1770838086/shiplife/santorini/xdhldky9xjjrenddnlow.jpg", caption: "Santorini", alt: "Santorini" },
+        // New additions
+        { src: "shiplife/santorini/img_3466", caption: "Rooftops and terraces with the ship anchored in the caldera, Nea Kameni beyond.", alt: "Caldera view with ship" },
+        { src: "shiplife/santorini/img_3470", caption: "The classic Santorini - white domes cascading down to the deep blue caldera.", alt: "White domes and caldera" },
+        { src: "shiplife/santorini/img_3472", caption: "Bronze figure perched on a wall, the Orthodox cathedral dome rising behind.", alt: "Sculpture and cathedral" },
+        { src: "shiplife/santorini/img_3473", caption: "Detail of Cycladic architecture - curves and whitewash against endless blue.", alt: "Cycladic architecture" },
+        { src: "shiplife/santorini/img_3477", caption: "Bell tower silhouette against the Aegean sky.", alt: "Bell tower" },
+        { src: "shiplife/santorini/img_3478", caption: "Orthodox church dome with its distinctive cross.", alt: "Church dome" },
+        { src: "shiplife/santorini/img_3479", caption: "Layers of white - terraces stepping down toward the sea.", alt: "Terraced buildings" },
+        { src: "shiplife/santorini/img_3480", caption: "Shadows and light on Cycladic walls.", alt: "Light and shadow" },
+        { src: "shiplife/santorini/img_3481", caption: "The bustling promenade of Fira - tourists and locals sharing the clifftop path.", alt: "Fira promenade" },
+        { src: "shiplife/santorini/img_3488", caption: "Wine barrels stacked in a Santorini winery - volcanic soil makes distinctive wine.", alt: "Wine barrels" },
+        { src: "shiplife/santorini/img_3492", caption: "Stained glass window - teal and burgundy in the afternoon light.", alt: "Stained glass" },
+        { src: "shiplife/santorini/img_3493", caption: "Old wooden door with wrought iron - centuries of island life.", alt: "Traditional door" },
+        { src: "shiplife/santorini/img_3496", caption: "The Catholic Cathedral's pink bell tower beside a white Orthodox dome - two faiths sharing the clifftop.", alt: "Church towers" },
+        { src: "shiplife/santorini/img_3502", caption: "Volcanic stone wall with caldera view - building with what the volcano provides.", alt: "Volcanic stone" },
+        { src: "shiplife/santorini/img_3503", caption: "Terrace dining with the infinite blue beyond.", alt: "Terrace view" },
+        { src: "shiplife/santorini/img_3506", caption: "Bougainvillea and terracotta - color punctuating the white.", alt: "Bougainvillea terrace" },
+        { src: "shiplife/santorini/img_3511", caption: "Looking down at the old port - the zigzag path carved into the cliff.", alt: "Old port view" },
+        { src: "shiplife/santorini/img_3518", caption: "Cave houses carved into the volcanic rock.", alt: "Cave houses" },
+        { src: "shiplife/santorini/img_3522", caption: "The Catholic Cathedral of St. John the Baptist - yellow dome and ornate bell tower.", alt: "Catholic Cathedral" },
+        { src: "shiplife/santorini/img_3523", caption: "Detail of the cathedral's neoclassical architecture.", alt: "Cathedral detail" },
+        { src: "shiplife/santorini/img_3525", caption: "The famous Santorini donkeys - still carrying passengers up the 588 steps from the old port.", alt: "Santorini donkeys" }
     ],
 
     // SEADAYS (2 images)
@@ -4775,10 +4797,13 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The View</span>
                 <h3 class="section-title-panel">The Postcard Made Real</h3>
                 <p>There's a reason Santorini is on every Greece travel poster. The white-washed buildings. The blue domes. The impossible blue of the Aegean below.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/eu9npl4slyyyfpepxksz.jpg" class="story-image" data-caption="The classic Santorini view - white buildings cascading down volcanic cliffs." alt="White buildings with ship in caldera">
-                <p class="photo-caption-inline">The classic Santorini view - and yes, that's Seabourn in the caldera below.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/b9kypafd84gaiaf5clz0.jpg" class="story-image" data-caption="Cruise ships anchored in the caldera with the volcanic island Nea Kameni beyond." alt="Cruise ship in caldera">
-                <p class="photo-caption-inline">Ships anchor in the caldera. Behind them, Nea Kameni - the volcanic island still growing from eruptions.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/santorini/img_3511" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/santorini/img_3511" data-caption="Fira cascading down the volcanic cliffs" alt="Fira town view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/santorini/img_3466" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/santorini/img_3466" data-caption="The caldera with Nea Kameni beyond" alt="Caldera view">
+                </div>
+                <p class="photo-caption-inline">Left: Fira cascading down the volcanic cliffs to the old port. Right: The flooded caldera with Nea Kameni - the volcano still growing.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/santorini/img_3470" class="story-image" data-caption="White domes cascading down to the caldera." alt="White domes and caldera">
+                <p class="photo-caption-inline">Domes upon domes, terraces upon terraces - the classic view that launched a thousand postcards.</p>
             </div>
 
             <div class="story-section-panel">
@@ -4787,6 +4812,8 @@ an original composition inspired by this place.
                 <p>Before the cable car, the only way up from the old port was by donkey. The stone steps still wind up the cliff face, carved by centuries of hooves and feet.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/w4dpnl8gzx2ibhllyd6z.jpg" class="story-image" data-caption="The old port below the cliffs - traditional boats still ferry passengers." alt="Old port with boat">
                 <p class="photo-caption-inline">The old port nestled below the cliffs. Traditional boats still ferry passengers from ships at anchor.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/santorini/img_3525" class="story-image" data-caption="The famous Santorini donkeys - still carrying passengers up 588 steps." alt="Santorini donkeys">
+                <p class="photo-caption-inline">The famous donkeys of Santorini - still carrying passengers up 588 steps from the old port. Some things haven't changed in centuries.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/fak4vfvkzksog9onloyy.jpg" class="story-image" data-caption="Houses carved directly into the volcanic rock." alt="Cliff houses">
                 <p class="photo-caption-inline">Houses carved directly into the volcanic rock. Living with the volcano, not against it.</p>
             </div>
@@ -4797,6 +4824,8 @@ an original composition inspired by this place.
                 <p>Fira is the capital - perched on the caldera rim, full of shops, restaurants, and the relentless flow of tourists. But step off the main path and you find quiet corners.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/gcxwoaxhvwtwhzfgzmjg.jpg" class="story-image" data-caption="A quiet courtyard - the Greek arch framing traditional architecture." alt="Greek courtyard">
                 <p class="photo-caption-inline">A quiet courtyard off the main path. The Greek arch. The terracotta pots. The whitewash.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/santorini/img_3496" class="story-image" data-caption="The Catholic Cathedral's pink tower beside a white Orthodox dome." alt="Church towers">
+                <p class="photo-caption-inline">The Catholic Cathedral's pink bell tower beside a white Orthodox dome - two faiths sharing the clifftop for centuries.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1771203420/shiplife/santorini/vxllo2hmxhpjwybu9tmm.jpg" class="story-image" data-caption="Hotel Atlantis - classic Cycladic architecture in brilliant white." alt="Hotel Atlantis">
                 <p class="photo-caption-inline">Hotel Atlantis. The name seems appropriate for an island that may have inspired the legend.</p>
             </div>
