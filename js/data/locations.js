@@ -2779,6 +2779,97 @@ an original composition inspired by this place.
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/symi/img_5795"
     },
     {
+        id: 140,
+        title: "Patmos, Greece",
+        coords: [37.32, 26.55],
+        tag: "Island of the Apocalypse",
+        icon: "📜",
+        isDoor: false,
+        shortDesc: "Where John wrote Revelation - and where I found the perfect pasta.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item"><span class="demo-icon">📍</span> Dodecanese Islands</div>
+                <div class="demo-item"><span class="demo-icon">👥</span> Pop: 3,000</div>
+                <div class="demo-item"><span class="demo-icon">📜</span> UNESCO Site</div>
+                <div class="demo-item"><span class="demo-icon">🛵</span> Scooter Required</div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">September 2013</span>
+                <h3 class="section-title-panel">A Mission: Find Pasta</h3>
+                <p>Some people come to Patmos for spiritual reasons. The island where Saint John the Theologian received the visions that became the Book of Revelation draws pilgrims from around the world. The Cave of the Apocalypse, the Monastery of St. John crowning the hill - sacred ground.</p>
+                <p>I came for pasta.</p>
+                <p>Not that I'm irreverent. But when you've got limited time in port and the ship's been at sea for days, sometimes the soul craves something specific. Fresh pasta with tomatoes and feta, ideally with a view of the Aegean. That was my mission.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/patmos/img_20130911_121433" class="story-image" data-caption="The view from above Skala" alt="Skala port view">
+                <p class="photo-caption-inline">The view from above Skala - our ship at anchor in waters where apostles once sailed.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Scooter</span>
+                <h3 class="section-title-panel">Two Wheels and Dusty Roads</h3>
+                <p>The only way to properly explore a Greek island is on two wheels. I found a scooter rental near the port and took off up the winding roads, determined to see as much of Patmos as possible before finding my lunch.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/patmos/pano_20130911_131604" class="story-image" data-caption="The view from my scooter" alt="Scooter POV">
+                <p class="photo-caption-inline">My shadow and the handlebars - dusty roads leading somewhere delicious.</p>
+                <p>The roads on Patmos are narrow and sun-bleached, winding through hills covered in wild herbs. Every turn revealed another postcard view - white villages against blue sky, the monastery watching from above, fishing boats dotted in coves below.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_20130911_122138" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_20130911_122138" data-caption="Stopped to take in the view" alt="Panoramic view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_20130911_122115" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_20130911_122115" data-caption="The bay spread out below" alt="Bay view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3421" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3421" data-caption="The fishing harbor" alt="Fishing harbor">
+                </div>
+                <p class="photo-caption-inline">Pulled over constantly - too beautiful not to stop.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sacred Ground</span>
+                <h3 class="section-title-panel">The Island of Revelation</h3>
+                <p>Around 95 AD, the Roman Emperor Domitian exiled John the Apostle to this tiny island. In a cave halfway up the mountain, John received his apocalyptic visions - the Four Horsemen, the Seven Seals, the New Jerusalem. The Book of Revelation was born here.</p>
+                <p>The Monastery of Saint John the Theologian was built in 1088 and still dominates the island's skyline. Visible from almost anywhere on Patmos, its gray fortress walls house Byzantine treasures and a library of ancient manuscripts.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_20130913_125543" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_20130913_125543" data-caption="Bell tower against blue sky" alt="Church bell tower">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3416" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3416" data-caption="The bells of Patmos" alt="Church bells">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3429" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3429" data-caption="The monastery on the hill" alt="Monastery view">
+                </div>
+                <p class="photo-caption-inline">Over 300 churches serve 3,000 residents - Patmos takes its faith seriously.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Wandering</span>
+                <h3 class="section-title-panel">The Lanes of Skala</h3>
+                <p>Back in the port town of Skala, I parked the scooter and wandered. Whitewashed buildings, stone arches, bougainvillea dripping from every wall. The lanes are designed for shade - vine-covered tunnels that keep the worst of the midday sun at bay.</p>
+                <div class="image-row image-row-4">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3415" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3415" data-caption="The main square" alt="Town square">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3418" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3418" data-caption="Stone arches" alt="Arched colonnade">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3420" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3420" data-caption="Vine tunnel" alt="Vine pathway">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/patmos/img_3423" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/patmos/img_3423" data-caption="Another shaded lane" alt="Vine archway">
+                </div>
+                <p class="photo-caption-inline">The Greeks mastered shade architecture centuries ago.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/patmos/img_20130913_141319" class="story-image" data-caption="Local residents" alt="Geese in square">
+                <p class="photo-caption-inline">Even the geese seem unhurried. Nothing moves fast on the Island of the Apocalypse.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Reward</span>
+                <h3 class="section-title-panel">Mission Accomplished</h3>
+                <p>Finally, at a trattoria near the harbor, I found what I'd been searching for. A table with a view of the bay, the monastery visible on the hill, and a plate of fresh spaghetti with tomatoes and local feta arriving with a smile.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/patmos/img_3431" class="story-image" data-caption="The perfect pasta" alt="Fresh pasta">
+                <p class="photo-caption-inline">Worth every dusty mile. Fresh spaghetti with tomatoes and feta - simple, perfect, Patmos.</p>
+                <p>Saint John had his visions in a cave. I had mine in a restaurant. His changed the world. Mine just made my day.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Patmos' : '+ More about Patmos'">+ More about Patmos</p>
+            <div class="more-info-content">
+                <p>Patmos has been a UNESCO World Heritage Site since 1999, recognized for the historic center of Chora, the Monastery of Saint John, and the Cave of the Apocalypse. The monastery's library contains over 13,000 books and manuscripts, including some of the oldest in the Orthodox world.</p>
+                <p>The island remained relatively isolated for centuries, which preserved both its architecture and its contemplative atmosphere. Tourism exists, but Patmos retains a spiritual quality that sets it apart from more commercialized Greek islands.</p>
+            </div>
+
+            ${generateGallery('patmos')}
+        `,
+        fullDesc: "Some people come to Patmos for spiritual reasons - the island where Saint John received the visions that became the Book of Revelation. I came for pasta. Armed with a rented scooter, I explored the sacred island's dusty roads, whitewashed villages, and vine-shaded lanes until I found the perfect trattoria with a view of the monastery and a plate of fresh spaghetti.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,h_800,c_fill,g_south,q_80,f_auto/shiplife/patmos/img_20130911_122952"
+    },
+    {
         id: 26,
         title: "Piran, Slovenia",
         coords: [45.53, 13.57],
@@ -4685,6 +4776,40 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">The Old Port - 2,600 years of maritime history.</p>
                 <p>The Old Port has welcomed ships for 2,600 years. The bouillabaisse is non-negotiable. The Calanques - limestone cliffs plunging into turquoise water - rival any coastline in the world.</p>
                 <p>This isn't Paris. Marseille doesn't care.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150809_102506" class="story-image" data-caption="Fort Saint-Jean guards the harbor entrance." alt="Fort Saint-Jean">
+                <p class="photo-caption-inline">Fort Saint-Jean - where the Mediterranean meets 800 years of history.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">MuCEM</span>
+                <h3 class="section-title-panel">Where Mediterranean Cultures Converge</h3>
+                <p>The Museum of European and Mediterranean Civilizations opened in 2013, a striking cube of latticed concrete connected to Fort Saint-Jean by a dramatic footbridge. Inside, 2,600 years of Mediterranean civilization unfold.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/img_20140606_093315" class="story-image" data-caption="MuCEM - the latticed cube that redefined Marseille's waterfront." alt="MuCEM exterior">
+                <p class="photo-caption-inline">MuCEM's striking architecture drew me in from the port.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/img_20140606_123656" class="story-image" data-caption="Ancient water wheel - Mediterranean engineering preserved." alt="Water wheel">
+                <p class="photo-caption-inline">Ancient engineering - a water wheel that once sustained life around the sea.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/img_20140606_130225" class="story-image" data-caption="Navigation instruments - astrolabes and sextants." alt="Navigation instruments">
+                <p class="photo-caption-inline">The tools that made Mediterranean trade possible - astrolabes, sextants, the mathematics of the sea.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/img_20140606_131050" class="story-image" data-caption="Carnival costumes from across Europe and the Mediterranean." alt="Carnival costumes">
+                <p class="photo-caption-inline">The carnival exhibit was beautifully unsettling - centuries of masks and ritual.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Climb</span>
+                <h3 class="section-title-panel">Walking to La Bonne Mère</h3>
+                <p>Every Marseillais knows her - Notre Dame de la Garde, "La Bonne Mère," the Good Mother who watches over the city from her hilltop perch. You can take the tourist train. You can take the bus. Or you can walk, like I did, straight up from the port.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150711_150950" class="story-image" data-caption="The Old Port with Notre Dame de la Garde visible on the hill." alt="Old Port with basilica">
+                <p class="photo-caption-inline">From the port, she's always there - golden statue glinting in the sun. The walk calls.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150809_103456" class="story-image" data-caption="Street signs pointing to Notre Dame de la Garde." alt="Direction signs">
+                <p class="photo-caption-inline">The signs point upward. Always upward.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150809_104124" class="story-image" data-caption="Notre Dame de la Garde emerges through the trees." alt="Basilica through trees">
+                <p class="photo-caption-inline">Through the pines, she appears - closer with every switchback.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150809_111645" class="story-image" data-caption="View from Notre Dame de la Garde to the Frioul islands." alt="Island view">
+                <p class="photo-caption-inline">At the top, the reward: the Frioul islands, Château d'If, the whole Mediterranean spread below.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/20150809_113332" class="story-image" data-caption="Tourists on the terrace at Notre Dame de la Garde." alt="Summit terrace">
+                <p class="photo-caption-inline">Everyone catches their breath here. The climb is worth every step.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/marseille/img_5518" class="story-image" data-caption="Notre Dame de la Garde - La Bonne Mère watches over Marseille." alt="Notre Dame de la Garde">
+                <p class="photo-caption-inline">La Bonne Mère - the Good Mother. For 850 years, she's watched over sailors, fishermen, and wanderers like me.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -4852,6 +4977,8 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">The Grand Prix is never far from anyone's mind here.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4784" class="story-image" data-caption="The Monaco Grand Prix circuit map - through city streets and tunnel." alt="Circuit map">
                 <p class="photo-caption-inline">The circuit winds through the streets where you're walking - 78 laps, 260 km/h, inches from the barriers.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4791" class="story-image" data-caption="Race cars on the Monaco circuit - visible through the barriers." alt="Grand Prix racing">
+                <p class="photo-caption-inline">The barriers go up, the cars scream through - and you're close enough to feel the heat.</p>
             </div>
 
             <div class="story-section-panel">
@@ -4862,6 +4989,10 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">Old fortress cannons overlook the modern principality - a reminder of Monaco's strategic past.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_5630" class="story-image" data-caption="An octopus sculpture in the palace gardens." alt="Octopus sculpture">
                 <p class="photo-caption-inline">Prince Albert's commitment to ocean conservation shows up in unexpected places.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_20140702_101103" class="story-image" data-caption="Cousteau's yellow submarine outside the Oceanographic Museum." alt="Cousteau submarine">
+                <p class="photo-caption-inline">Jacques Cousteau directed the Oceanographic Museum for over 30 years. His legacy is everywhere.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_20140702_124632" class="story-image" data-caption="Hermes by Arman (1987) in the gardens." alt="Hermes sculpture">
+                <p class="photo-caption-inline">Modern art meets Mediterranean gardens - Arman's Hermes stands watch over the sea.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_5636" class="story-image" data-caption="Romantic sculpture surrounded by flowers in the gardens." alt="Garden sculpture">
             </div>
 
@@ -4873,6 +5004,8 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">A proper cheese selection. This is still France, after all - or close enough.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4800" class="story-image" data-caption="French pastries in a Monaco patisserie." alt="Pastry display">
                 <p class="photo-caption-inline">Every pastry is a small work of art. The prices reflect the zip code.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_20140702_115517" class="story-image" data-caption="Lunch in Monaco - lasagna, salad, and white wine." alt="Monaco lunch">
+                <p class="photo-caption-inline">A proper Monaco lunch. The prices match the view.</p>
             </div>
 
             <div class="story-section-panel">
@@ -4881,6 +5014,12 @@ an original composition inspired by this place.
                 <p>In Monaco, a Ferrari parked on the street barely warrants a second glance. Superyachts with helipads are routine. This is a place where excess is the baseline, and ordinary wealth is invisible.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4807" class="story-image" data-caption="A red Ferrari 458 parked casually on a Monaco street." alt="Ferrari">
                 <p class="photo-caption-inline">Just another car parked on a Monaco street. Here, this is ordinary.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4768" class="story-image" data-caption="White Rolls-Royce Phantom Drophead with custom chrome wheels." alt="Rolls-Royce">
+                <p class="photo-caption-inline">A Rolls-Royce Phantom Drophead - because why not?</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_5613" class="story-image" data-caption="Amadeus (70m) and Dubai (162m) - legendary superyachts side by side." alt="Amadeus and Dubai superyachts">
+                <p class="photo-caption-inline">The expedition yacht Amadeus beside Dubai - one of the world's largest private yachts at 162 meters.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_20140602_092703" class="story-image" data-caption="Lady Moura - her name spelled in 24-karat gold." alt="Lady Moura superyacht">
+                <p class="photo-caption-inline">Lady Moura - 105 meters of floating opulence. Her name is spelled out in solid gold lettering.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">

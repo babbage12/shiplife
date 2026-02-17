@@ -741,7 +741,27 @@ const locationGalleries = {
         { src: "v1770837555/shiplife/marseille/z0lfoso6ybgo9kfkxri5.jpg", caption: "Marseille, France", alt: "Marseille" },
         { src: "v1770837544/shiplife/marseille/z9fkzcfoffxwofdeagux.jpg", caption: "Marseille, France", alt: "Marseille" },
         { src: "v1770837548/shiplife/marseille/zqq4amrwpznza4zbj27a.jpg", caption: "Marseille, France", alt: "Marseille" },
-        { src: "v1770837558/shiplife/marseille/zrvikdpjvjkejnfjvsle.jpg", caption: "Marseille, France", alt: "Marseille" }
+        { src: "v1770837558/shiplife/marseille/zrvikdpjvjkejnfjvsle.jpg", caption: "Marseille, France", alt: "Marseille" },
+        // MuCEM Museum - June 2014
+        { src: "shiplife/marseille/img_20140606_093315", caption: "MuCEM - Museum of European and Mediterranean Civilizations.", alt: "MuCEM exterior" },
+        { src: "shiplife/marseille/img_20140606_123656", caption: "Ancient water wheel in MuCEM - Mediterranean engineering.", alt: "Water wheel artifact" },
+        { src: "shiplife/marseille/img_20140606_125657", caption: "Historic map of Marseille - centuries of maritime history.", alt: "Historic Marseille map" },
+        { src: "shiplife/marseille/img_20140606_125847", caption: "Painting depicting Mediterranean life.", alt: "Museum painting" },
+        { src: "shiplife/marseille/img_20140606_130225", caption: "Navigation instruments - astrolabes and sextants.", alt: "Navigation instruments" },
+        { src: "shiplife/marseille/img_20140606_131000", caption: "Carnival traditions of Europe and the Mediterranean.", alt: "Carnival exhibit" },
+        { src: "shiplife/marseille/img_20140606_131050", caption: "Traditional carnival costumes - hauntingly beautiful.", alt: "Carnival costumes" },
+        { src: "shiplife/marseille/img_20140606_105834", caption: "Église des Réformés - Gothic spires along La Canebière.", alt: "Church spires" },
+        // The Climb to Notre Dame - Aug 2015
+        { src: "shiplife/marseille/20150525_105755", caption: "The Palais de la Bourse - heart of Marseille commerce.", alt: "Palais de la Bourse" },
+        { src: "shiplife/marseille/20150711_150950", caption: "Old Port with Notre Dame de la Garde watching from the hill.", alt: "Old Port view" },
+        { src: "shiplife/marseille/20150809_102506", caption: "Fort Saint-Jean at the harbor entrance.", alt: "Fort Saint-Jean" },
+        { src: "shiplife/marseille/20150809_103033", caption: "Winged lion sculpture - beginning the ascent.", alt: "Winged lion" },
+        { src: "shiplife/marseille/20150809_103456", caption: "Street signs point the way: Notre Dame de la Garde.", alt: "Direction signs" },
+        { src: "shiplife/marseille/20150809_104124", caption: "The basilica emerges through the trees.", alt: "Notre Dame through trees" },
+        { src: "shiplife/marseille/20150809_111514", caption: "Panorama of Marseille from the summit.", alt: "City panorama" },
+        { src: "shiplife/marseille/20150809_111645", caption: "View to the Frioul islands and Château d'If.", alt: "Island view" },
+        { src: "shiplife/marseille/20150809_113332", caption: "Tourists rest on the terrace - the climb is worth it.", alt: "Summit terrace" },
+        { src: "shiplife/marseille/img_5518", caption: "Notre Dame de la Garde - 'La Bonne Mère' watches over Marseille.", alt: "Notre Dame de la Garde" }
     ],
 
     // MELBOURNE (7 images)
@@ -805,7 +825,31 @@ const locationGalleries = {
         { src: "shiplife/monte-carlo/img_4773", caption: "Monaco port", alt: "Monaco port" },
         { src: "shiplife/monte-carlo/img_4775", caption: "Monaco waterfront", alt: "Monaco waterfront" },
         { src: "shiplife/monte-carlo/img_4777", caption: "Monaco harbor scene", alt: "Monaco harbor scene" },
-        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" }
+        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" },
+        // New batch - Feb 2026
+        { src: "shiplife/monte-carlo/img_20140602_092703", caption: "Lady Moura - 105m superyacht with her name spelled in 24-karat gold.", alt: "Lady Moura superyacht" },
+        { src: "shiplife/monte-carlo/img_5613", caption: "Amadeus and Dubai - two legendary superyachts side by side in Monaco harbor.", alt: "Amadeus and Dubai superyachts" },
+        { src: "shiplife/monte-carlo/img_4767", caption: "Black Legend - sleek black superyacht in the harbor.", alt: "Black Legend yacht" },
+        { src: "shiplife/monte-carlo/img_20140702_095946", caption: "The Oceanographic Museum rises from the cliff face - founded by Prince Albert I in 1910.", alt: "Oceanographic Museum from sea" },
+        { src: "shiplife/monte-carlo/img_20140702_101103", caption: "Cousteau's yellow submarine outside the Oceanographic Museum.", alt: "Cousteau submarine" },
+        { src: "shiplife/monte-carlo/img_20140702_112147", caption: "Fontvieille harbor from the palace heights - yachts packed into every slip.", alt: "Fontvieille harbor from above" },
+        { src: "shiplife/monte-carlo/img_20140702_112400", caption: "Palace cannons and cannonballs - Monaco's military past on display.", alt: "Palace cannons" },
+        { src: "shiplife/monte-carlo/img_20140702_113850", caption: "Monument to Prince Albert I - for his 25 years of reign.", alt: "Prince Albert I monument" },
+        { src: "shiplife/monte-carlo/img_5664", caption: "Prince Albert I statue with the palace behind.", alt: "Prince Albert I statue" },
+        { src: "shiplife/monte-carlo/img_7121", caption: "The Prince's Palace on the Rock - seat of the Grimaldi family since 1297.", alt: "Prince's Palace on the Rock" },
+        { src: "shiplife/monte-carlo/img_7155", caption: "Palace square - tourists gather among cannons with the modern city rising behind.", alt: "Palace square panorama" },
+        { src: "shiplife/monte-carlo/img_7111", caption: "Monaco from above - two square kilometers of wealth climbing the hillside.", alt: "Monaco panorama" },
+        { src: "shiplife/monte-carlo/img_20140702_113335", caption: "Cherub fountain in the palace gardens.", alt: "Garden fountain" },
+        { src: "shiplife/monte-carlo/img_20140702_124632", caption: "Hermes by Arman (1987) - modern sculpture meets Mediterranean gardens.", alt: "Hermes sculpture by Arman" },
+        { src: "shiplife/monte-carlo/img_5670", caption: "Bronze figure in the palace gardens.", alt: "Garden sculpture" },
+        { src: "shiplife/monte-carlo/img_5672", caption: "Garden sculpture surrounded by flowers.", alt: "Garden sculpture with flowers" },
+        { src: "shiplife/monte-carlo/img_4789", caption: "The fruit market - colorful awnings and fresh produce in the old town.", alt: "Monaco fruit market" },
+        { src: "shiplife/monte-carlo/img_4768", caption: "Rolls-Royce Phantom Drophead - just another car on a Monaco street.", alt: "Rolls-Royce in Monaco" },
+        { src: "shiplife/monte-carlo/img_4791", caption: "The Grand Prix circuit - race cars visible through the barriers.", alt: "Monaco Grand Prix circuit" },
+        { src: "shiplife/monte-carlo/img_4794", caption: "Paddock area with BRIEFING sign - the race infrastructure stays year-round.", alt: "Grand Prix paddock" },
+        { src: "shiplife/monte-carlo/img_4798", caption: "Renault Twizy - official Grand Prix de Monaco support vehicle.", alt: "Renault Twizy GP vehicle" },
+        { src: "shiplife/monte-carlo/img_20140702_115517", caption: "Lunch in Monaco - lasagna, salad, and a glass of white wine.", alt: "Monaco lunch" },
+        { src: "shiplife/monte-carlo/img_20140702_121634", caption: "Dessert - because Monaco.", alt: "Monaco dessert" }
     ],
 
     // MONTE-CARLO (alias with hyphen)
@@ -826,7 +870,31 @@ const locationGalleries = {
         { src: "shiplife/monte-carlo/img_4773", caption: "Monaco port", alt: "Monaco port" },
         { src: "shiplife/monte-carlo/img_4775", caption: "Monaco waterfront", alt: "Monaco waterfront" },
         { src: "shiplife/monte-carlo/img_4777", caption: "Monaco harbor scene", alt: "Monaco harbor scene" },
-        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" }
+        { src: "shiplife/monte-carlo/img_4779", caption: "Monaco boats", alt: "Monaco boats" },
+        // New batch - Feb 2026
+        { src: "shiplife/monte-carlo/img_20140602_092703", caption: "Lady Moura - 105m superyacht with her name spelled in 24-karat gold.", alt: "Lady Moura superyacht" },
+        { src: "shiplife/monte-carlo/img_5613", caption: "Amadeus and Dubai - two legendary superyachts side by side in Monaco harbor.", alt: "Amadeus and Dubai superyachts" },
+        { src: "shiplife/monte-carlo/img_4767", caption: "Black Legend - sleek black superyacht in the harbor.", alt: "Black Legend yacht" },
+        { src: "shiplife/monte-carlo/img_20140702_095946", caption: "The Oceanographic Museum rises from the cliff face - founded by Prince Albert I in 1910.", alt: "Oceanographic Museum from sea" },
+        { src: "shiplife/monte-carlo/img_20140702_101103", caption: "Cousteau's yellow submarine outside the Oceanographic Museum.", alt: "Cousteau submarine" },
+        { src: "shiplife/monte-carlo/img_20140702_112147", caption: "Fontvieille harbor from the palace heights - yachts packed into every slip.", alt: "Fontvieille harbor from above" },
+        { src: "shiplife/monte-carlo/img_20140702_112400", caption: "Palace cannons and cannonballs - Monaco's military past on display.", alt: "Palace cannons" },
+        { src: "shiplife/monte-carlo/img_20140702_113850", caption: "Monument to Prince Albert I - for his 25 years of reign.", alt: "Prince Albert I monument" },
+        { src: "shiplife/monte-carlo/img_5664", caption: "Prince Albert I statue with the palace behind.", alt: "Prince Albert I statue" },
+        { src: "shiplife/monte-carlo/img_7121", caption: "The Prince's Palace on the Rock - seat of the Grimaldi family since 1297.", alt: "Prince's Palace on the Rock" },
+        { src: "shiplife/monte-carlo/img_7155", caption: "Palace square - tourists gather among cannons with the modern city rising behind.", alt: "Palace square panorama" },
+        { src: "shiplife/monte-carlo/img_7111", caption: "Monaco from above - two square kilometers of wealth climbing the hillside.", alt: "Monaco panorama" },
+        { src: "shiplife/monte-carlo/img_20140702_113335", caption: "Cherub fountain in the palace gardens.", alt: "Garden fountain" },
+        { src: "shiplife/monte-carlo/img_20140702_124632", caption: "Hermes by Arman (1987) - modern sculpture meets Mediterranean gardens.", alt: "Hermes sculpture by Arman" },
+        { src: "shiplife/monte-carlo/img_5670", caption: "Bronze figure in the palace gardens.", alt: "Garden sculpture" },
+        { src: "shiplife/monte-carlo/img_5672", caption: "Garden sculpture surrounded by flowers.", alt: "Garden sculpture with flowers" },
+        { src: "shiplife/monte-carlo/img_4789", caption: "The fruit market - colorful awnings and fresh produce in the old town.", alt: "Monaco fruit market" },
+        { src: "shiplife/monte-carlo/img_4768", caption: "Rolls-Royce Phantom Drophead - just another car on a Monaco street.", alt: "Rolls-Royce in Monaco" },
+        { src: "shiplife/monte-carlo/img_4791", caption: "The Grand Prix circuit - race cars visible through the barriers.", alt: "Monaco Grand Prix circuit" },
+        { src: "shiplife/monte-carlo/img_4794", caption: "Paddock area with BRIEFING sign - the race infrastructure stays year-round.", alt: "Grand Prix paddock" },
+        { src: "shiplife/monte-carlo/img_4798", caption: "Renault Twizy - official Grand Prix de Monaco support vehicle.", alt: "Renault Twizy GP vehicle" },
+        { src: "shiplife/monte-carlo/img_20140702_115517", caption: "Lunch in Monaco - lasagna, salad, and a glass of white wine.", alt: "Monaco lunch" },
+        { src: "shiplife/monte-carlo/img_20140702_121634", caption: "Dessert - because Monaco.", alt: "Monaco dessert" }
     ],
 
     // MYKONOS (16 images)
@@ -1644,8 +1712,36 @@ const locationGalleries = {
     ],
 
     // SYMI (2 images)
-    // PATMOS (2 images)
+    // PATMOS (22 images)
     "patmos": [
+        // Hero
+        { src: "shiplife/patmos/img_20130911_122952", caption: "Bougainvillea cascading down whitewashed walls, framing the Aegean - quintessential Patmos.", alt: "Bougainvillea and sea view" },
+        // The scooter adventure
+        { src: "shiplife/patmos/pano_20130911_131604", caption: "The view from my rented scooter - dusty roads and the promise of pasta somewhere ahead.", alt: "Scooter POV on Patmos road" },
+        { src: "shiplife/patmos/img_20130911_122138", caption: "Stopped to take in the view - my scooter waits below while the entire island spreads out before me.", alt: "Panoramic view with scooter" },
+        // Port and harbor views
+        { src: "shiplife/patmos/img_20130911_121433", caption: "Looking down at Skala from the hillside - the ship at anchor in the bay where John once landed.", alt: "Skala port from above" },
+        { src: "shiplife/patmos/img_20130911_122115", caption: "The wide bay of Patmos - our ship a small white dot against volcanic hills.", alt: "Bay view with cruise ship" },
+        { src: "shiplife/patmos/img_3421", caption: "The fishing harbor - generations of boats have moored here since Byzantine times.", alt: "Patmos fishing harbor" },
+        { src: "shiplife/patmos/pano_20130913_124836", caption: "The harbor panorama - fishing boats, white churches, and the monastery watching from above.", alt: "Harbor panorama" },
+        { src: "shiplife/patmos/img_20130913_124800", caption: "Boats jostle for space in Skala's harbor - the white chapel standing sentinel.", alt: "Harbor with boats and chapel" },
+        // Churches and architecture
+        { src: "shiplife/patmos/img_20130913_125543", caption: "A white bell tower rises above the greenery - Patmos has over 300 churches for 3,000 residents.", alt: "White church bell tower" },
+        { src: "shiplife/patmos/img_3416", caption: "The bells of Patmos - calling the faithful as they have for a thousand years.", alt: "Church bells" },
+        // The village
+        { src: "shiplife/patmos/img_3415", caption: "The main square of Skala - whitewashed arches and Sophie's Shop in the shade.", alt: "Skala town square" },
+        { src: "shiplife/patmos/img_3418", caption: "Stone arches and wrought-iron lanterns - the architecture hasn't changed in centuries.", alt: "Arched colonnade" },
+        { src: "shiplife/patmos/img_20130913_141319", caption: "Local color - even the geese seem unhurried on this sacred island.", alt: "Geese in town square" },
+        // Vine walkways
+        { src: "shiplife/patmos/img_3420", caption: "A living tunnel of vines - shade is precious under the Greek sun.", alt: "Vine-covered pathway" },
+        { src: "shiplife/patmos/img_3423", caption: "Another vine archway beckoning deeper into the village.", alt: "Vine tunnel" },
+        { src: "shiplife/patmos/img_3427", caption: "The bay glimpsed through leaves - framed like a postcard.", alt: "Sea view through vines" },
+        // The restaurant and pasta
+        { src: "shiplife/patmos/img_3422", caption: "The Skala Hotel trattoria - where my pasta quest finally ended.", alt: "Skala Hotel restaurant" },
+        { src: "shiplife/patmos/img_3425", caption: "A fountain burbles in the bougainvillea-draped plaza - the perfect spot to rest.", alt: "Plaza with fountain" },
+        { src: "shiplife/patmos/img_3429", caption: "The view from my table - the monastery of St. John crowning the hill while I waited for lunch.", alt: "Restaurant view of monastery" },
+        { src: "shiplife/patmos/img_3431", caption: "The reward: fresh spaghetti with tomatoes and local feta. Worth every dusty mile.", alt: "Fresh pasta lunch" },
+        // Original images
         { src: "shiplife/patmos/rjtogrq094i7zikfirqk.jpg", caption: "Vine-covered walkway leading through Skala - Mediterranean shade at its finest.", alt: "Vine archway in Patmos" },
         { src: "shiplife/patmos/cvjtb5bjntmwfumkwhkq.jpg", caption: "A shaded plaza with bougainvillea and an old fountain - Patmos moves at its own pace.", alt: "Patmos plaza with bougainvillea" }
     ],

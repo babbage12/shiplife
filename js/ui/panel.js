@@ -278,19 +278,64 @@ document.addEventListener('keydown', (e) => {
 
 // Attach click handlers to story images when panel content changes
 function attachImageClickHandlers() {
-    // Single story images (no navigation)
-    const storyImages = document.querySelectorAll('.panel-text .story-image');
-    storyImages.forEach(img => {
-        img.onclick = function() {
-            let caption = img.dataset.caption || '';
+    // Helper to get caption for an image
+    function getCaption(img) {
+        let caption = img.dataset.caption || '';
+        if (!caption) {
+            // Check for data-full attribute's caption
+            if (img.dataset.full) {
+                caption = img.dataset.caption || '';
+            }
+            // Check for following caption element
             if (!caption) {
                 const nextEl = img.parentElement?.nextElementSibling;
                 if (nextEl && nextEl.classList.contains('photo-caption-inline')) {
                     caption = nextEl.textContent;
                 }
             }
-            openLightbox(img.src, caption);
+            // Fall back to alt text
+            if (!caption) {
+                caption = img.alt || '';
+            }
+        }
+        return caption;
+    }
+
+    // Hero/panel image - make it clickable
+    const panelImage = document.getElementById('panelImage');
+    if (panelImage && panelImage.src) {
+        panelImage.style.cursor = 'pointer';
+        panelImage.onclick = function() {
+            const caption = document.getElementById('panelImageCaption')?.textContent ||
+                           document.getElementById('panelTitle')?.textContent || '';
+            openLightbox(panelImage.src, caption);
         };
+    }
+
+    // Single story images (no navigation)
+    const storyImages = document.querySelectorAll('.panel-text .story-image');
+    storyImages.forEach(img => {
+        img.style.cursor = 'pointer';
+        img.onclick = function() {
+            openLightbox(img.src, getCaption(img));
+        };
+    });
+
+    // Inline images in image rows - make them clickable with navigation within their row
+    document.querySelectorAll('.image-row').forEach(row => {
+        const inlineImages = row.querySelectorAll('.inline-image');
+        const rowImages = Array.from(inlineImages).map(img => ({
+            src: img.dataset.full || img.src,
+            caption: img.dataset.caption || img.alt || ''
+        }));
+
+        inlineImages.forEach((img, index) => {
+            img.style.cursor = 'pointer';
+            img.onclick = function() {
+                const fullSrc = img.dataset.full || img.src;
+                openLightbox(fullSrc, img.dataset.caption || img.alt || '', rowImages, index);
+            };
+        });
     });
 
     // Gallery thumbnails - collect all images in each gallery for navigation
@@ -302,10 +347,22 @@ function attachImageClickHandlers() {
         }));
 
         thumbs.forEach((img, index) => {
+            img.style.cursor = 'pointer';
             img.onclick = function() {
                 openLightbox(img.src, img.dataset.caption || img.alt || '', galleryImages, index);
             };
         });
+    });
+
+    // Any other images in panel-text that might not have a specific class
+    const allPanelImages = document.querySelectorAll('.panel-text img:not(.story-image):not(.inline-image):not(.gallery-thumb)');
+    allPanelImages.forEach(img => {
+        if (!img.onclick) {
+            img.style.cursor = 'pointer';
+            img.onclick = function() {
+                openLightbox(img.src, getCaption(img));
+            };
+        }
     });
 
     // Attach click handlers to more-info buttons (inline onclick doesn't work with innerHTML)
