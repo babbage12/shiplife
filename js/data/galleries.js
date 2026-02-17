@@ -444,14 +444,35 @@ const locationGalleries = {
     ],
 
     // FIORDLAND (7 images) - Title: "Photos from Fiordland"
+    // FIORDLAND / MILFORD SOUND (27 images)
     "fiordland": [
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00370.jpg", caption: "Milford Sound", alt: "Milford Sound" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00401.jpg", caption: "Fiordland cliffs", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00402.jpg", caption: "Waterfalls", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00406.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00410.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00416.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00417.jpg", caption: "Fiordland", alt: "Fiordland" }
+        { src: "shiplife/fiordland/img_4278", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4282", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4207", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_0802", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/fiordland/img_4169", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4185", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4188", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4191", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4195", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4206", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4211", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4217", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4231", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4237", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4241", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4244", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4263", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4288", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4290", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4292", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/nz-fiords/DSC00370", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/nz-fiords/DSC00401", caption: "Fiordland cliffs", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00402", caption: "Waterfalls", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00406", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00410", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00416", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00417", caption: "Fiordland", alt: "Fiordland" }
     ],
 
     // FLORENCE (18 images)
@@ -1580,7 +1601,9 @@ const locationGalleries = {
         { src: "v1770762529/IMG_6692.jpg", caption: "Ushuaia", alt: "Ushuaia" },
         { src: "v1770762529/IMG_6693.jpg", caption: "Ushuaia", alt: "Ushuaia" },
         { src: "v1770762532/IMG_6694.jpg", caption: "Ushuaia", alt: "Ushuaia" },
-        { src: "v1770838463/shiplife/ushuaia/ucykeqkobsfmmzo7v1kz.jpg", caption: "Ushuaia", alt: "Ushuaia" }
+        { src: "v1770838463/shiplife/ushuaia/ucykeqkobsfmmzo7v1kz.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "shiplife/ushuaia/khlmo3e3y8rfctmniukp", caption: "Colorful buildings and church tower.", alt: "Ushuaia colorful street" },
+        { src: "shiplife/ushuaia/c7xcneiwndvbqmewhsgh", caption: "San Martín pedestrian street.", alt: "Ushuaia main street" }
     ],
 
     // ZAKYNTHOS (4 images)
@@ -1673,13 +1696,7 @@ const locationGalleries = {
     "barharbor": [
         { src: "shiplife/barharbor/gpau0huzopooqciu5wwf.jpg", caption: "Wire moose sculpture on a rooftop - quintessential New England quirk.", alt: "Bar Harbor main street with moose" },
         { src: "shiplife/barharbor/o5ian16uvryxwzuyplre.jpg", caption: "Town pier and waterfront park - fall colors on Frenchman Bay.", alt: "Bar Harbor waterfront" }
-    ],
-
-    // USHUAIA (2 images)
-    "ushuaia": [
-        { src: "shiplife/ushuaia/khlmo3e3y8rfctmniukp.jpg", caption: "Colorful buildings and church tower - the end of the world has its own charm.", alt: "Ushuaia colorful street" },
-        { src: "shiplife/ushuaia/c7xcneiwndvbqmewhsgh.jpg", caption: "San Martín pedestrian street - shopping at the bottom of the world, mountains above.", alt: "Ushuaia main street" }
-    ],
+    ]
 };
 
 // Generate gallery HTML for a location

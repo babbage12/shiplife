@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-16T23:30:48.898Z
+// Shiplife Bundle - Generated 2026-02-17T00:57:30.873Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -707,14 +707,35 @@ const locationGalleries = {
     ],
 
     // FIORDLAND (7 images) - Title: "Photos from Fiordland"
+    // FIORDLAND / MILFORD SOUND (27 images)
     "fiordland": [
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00370.jpg", caption: "Milford Sound", alt: "Milford Sound" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00401.jpg", caption: "Fiordland cliffs", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00402.jpg", caption: "Waterfalls", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00406.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00410.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00416.jpg", caption: "Fiordland", alt: "Fiordland" },
-        { src: "w_400,q_auto,f_auto/shiplife/nz-fiords/DSC00417.jpg", caption: "Fiordland", alt: "Fiordland" }
+        { src: "shiplife/fiordland/img_4278", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4282", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4207", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_0802", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/fiordland/img_4169", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4185", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4188", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4191", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4195", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4206", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4211", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4217", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4231", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4237", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4241", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4244", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4263", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4288", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4290", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/fiordland/img_4292", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/nz-fiords/DSC00370", caption: "Milford Sound", alt: "Milford Sound" },
+        { src: "shiplife/nz-fiords/DSC00401", caption: "Fiordland cliffs", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00402", caption: "Waterfalls", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00406", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00410", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00416", caption: "Fiordland", alt: "Fiordland" },
+        { src: "shiplife/nz-fiords/DSC00417", caption: "Fiordland", alt: "Fiordland" }
     ],
 
     // FLORENCE (18 images)
@@ -1843,7 +1864,9 @@ const locationGalleries = {
         { src: "v1770762529/IMG_6692.jpg", caption: "Ushuaia", alt: "Ushuaia" },
         { src: "v1770762529/IMG_6693.jpg", caption: "Ushuaia", alt: "Ushuaia" },
         { src: "v1770762532/IMG_6694.jpg", caption: "Ushuaia", alt: "Ushuaia" },
-        { src: "v1770838463/shiplife/ushuaia/ucykeqkobsfmmzo7v1kz.jpg", caption: "Ushuaia", alt: "Ushuaia" }
+        { src: "v1770838463/shiplife/ushuaia/ucykeqkobsfmmzo7v1kz.jpg", caption: "Ushuaia", alt: "Ushuaia" },
+        { src: "shiplife/ushuaia/khlmo3e3y8rfctmniukp", caption: "Colorful buildings and church tower.", alt: "Ushuaia colorful street" },
+        { src: "shiplife/ushuaia/c7xcneiwndvbqmewhsgh", caption: "San Martín pedestrian street.", alt: "Ushuaia main street" }
     ],
 
     // ZAKYNTHOS (4 images)
@@ -1936,13 +1959,7 @@ const locationGalleries = {
     "barharbor": [
         { src: "shiplife/barharbor/gpau0huzopooqciu5wwf.jpg", caption: "Wire moose sculpture on a rooftop - quintessential New England quirk.", alt: "Bar Harbor main street with moose" },
         { src: "shiplife/barharbor/o5ian16uvryxwzuyplre.jpg", caption: "Town pier and waterfront park - fall colors on Frenchman Bay.", alt: "Bar Harbor waterfront" }
-    ],
-
-    // USHUAIA (2 images)
-    "ushuaia": [
-        { src: "shiplife/ushuaia/khlmo3e3y8rfctmniukp.jpg", caption: "Colorful buildings and church tower - the end of the world has its own charm.", alt: "Ushuaia colorful street" },
-        { src: "shiplife/ushuaia/c7xcneiwndvbqmewhsgh.jpg", caption: "San Martín pedestrian street - shopping at the bottom of the world, mountains above.", alt: "Ushuaia main street" }
-    ],
+    ]
 };
 
 // Generate gallery HTML for a location
@@ -3100,53 +3117,73 @@ an original composition inspired by this place.
         richContent: `
             <div class="demographics-strip">
                 <div class="demo-item">
-                    <span class="demo-icon">👥</span>
-                    <span class="demo-value">~75,000</span>
-                </div>
-                <div class="demo-item">
                     <span class="demo-icon">📍</span>
                     <span class="demo-value">Tierra del Fuego</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🌡️</span>
-                    <span class="demo-value">5°C Average</span>
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Seabourn Quest</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🚢</span>
-                    <span class="demo-value">Gateway to Antarctica</span>
+                    <span class="demo-icon">🧭</span>
+                    <span class="demo-value">54°S</span>
                 </div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Edge</span>
-                <h3 class="section-title-panel">End of the World</h3>
-                <p>At the end of the world, you reflect on how you got here. Ushuaia is dramatic in every sense - the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon.</p>
-                <p>We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.</p>
+                <p>The end of the world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6607" class="story-image" alt="Tierra del Fuego">
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142818_Facebook_ih92zd.jpg" class="story-image" alt="Ushuaia harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142812_Facebook_ciehuo.jpg" class="story-image" alt="Ushuaia mountains">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770190757/IMG_6608" class="story-image" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770190755/IMG_6612" class="story-image" alt="Tierra del Fuego">
                 </div>
-                <p class="photo-caption-inline">The harbor and mountains of Ushuaia. Patagonia at its most dramatic.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Ship</span>
-                <h3 class="section-title-panel">Seabourn Quest</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142914_Facebook_upooxg.jpg" class="story-image" alt="Seabourn Quest in Ushuaia">
-                <p class="photo-caption-inline">The Seabourn Quest docked in Ushuaia - ready for Antarctica.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951505/Screenshot_20260120_142800_Facebook_whfmrz.jpg" class="story-image" alt="Ushuaia view">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951509/Screenshot_20260120_142749_Facebook_khyv8k.jpg" class="story-image" alt="Ushuaia scenery">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6615" class="story-image" alt="Tierra del Fuego">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6619" class="story-image" alt="Tierra del Fuego">
                 </div>
-                <p class="photo-caption-inline">Views from Ushuaia - where South America ends and Antarctica begins.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951504/Screenshot_20260120_142900_Facebook_pmbpnw.jpg" class="story-image" alt="Ushuaia landscape">
-                <p class="photo-caption-inline">The dramatic landscape of Tierra del Fuego.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Signs</span>
-                <h3 class="section-title-panel">Las Malvinas Son Argentinas</h3>
-                <p>I saw passionately-worded signs about the Falkland Islands - "Las Malvinas Son Argentinas." Little did I know I'd be visiting those contested shores just days later.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6621" class="story-image" alt="Tierra del Fuego">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6606" class="story-image" alt="Ushuaia">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6601" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762692/IMG_6600" class="story-image" alt="Ushuaia">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762692/IMG_6598" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762693/IMG_6597" class="story-image" alt="Ushuaia">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6588" class="story-image" alt="Ushuaia">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6586" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762704/IMG_6582" class="story-image" alt="Ushuaia">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762705/IMG_6581" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762705/IMG_6579" class="story-image" alt="Ushuaia">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/20150224_131338" class="story-image" alt="Ushuaia">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6577" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762697/IMG_6587" class="story-image" alt="Ushuaia">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762696/IMG_6594" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762695/IMG_6595" class="story-image" alt="Ushuaia">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838465/shiplife/ushuaia/cmnissrwkw5d8vtc6bmi" class="story-image" alt="Ushuaia">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762535/IMG_6602" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838462/shiplife/ushuaia/i7i6r7k6kltw8uthq7zt" class="story-image" alt="Ushuaia">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838466/shiplife/ushuaia/lqky0523gozez72nam8m" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762504/IMG_6667" class="story-image" alt="Ushuaia">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770762521/IMG_6684" class="story-image" alt="Ushuaia">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762529/IMG_6692" class="story-image" alt="Ushuaia">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/c7xcneiwndvbqmewhsgh" class="story-image" alt="Ushuaia">
+                </div>
+                <p>Fin del Mundo.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -3171,8 +3208,8 @@ an original composition inspired by this place.
 
             ${generateGallery('ushuaia')}
         `,
-        fullDesc: "At the end of the world, you reflect on how you got here.\n\nUshuaia is dramatic in every sense-the jagged mountains, the fierce winds, the knowledge that Antarctica lies just beyond the horizon. We stayed here overnight, which is rare. I walked the streets feeling like an explorer at the edge of a map.\n\nI saw passionately-worded signs about the Falkland Islands-'Las Malvinas Son Argentinas.' Little did I know I'd be visiting those contested shores just days later.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738205/IMG_6691_g9fekn.jpg"
+        fullDesc: "The end of the world. Fin del Mundo.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/ushuaia/img_6607"
     },
     {
         id: 8,
@@ -3705,11 +3742,44 @@ an original composition inspired by this place.
         useRichContent: true,
         shortDesc: "Fjords that defy description.",
         fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532665/DSC00376_t661hp.jpg",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/fiordland/img_4278",
         richContent: `
             <div class="story-section-panel">
-                <p>Rudyard Kipling called it the eighth wonder of the world.</p>
-                <p>He wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.</p>
+                <p>Rudyard Kipling called it the eighth wonder of the world. He wasn't wrong.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4169" class="story-image" alt="Milford Sound">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4185" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4188" class="story-image" alt="Milford Sound">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4191" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4195" class="story-image" alt="Milford Sound">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4206" class="story-image" alt="Milford Sound">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4207" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4211" class="story-image" alt="Milford Sound">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4217" class="story-image" alt="Milford Sound">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4231" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4237" class="story-image" alt="Milford Sound">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4241" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4244" class="story-image" alt="Milford Sound">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4263" class="story-image" alt="Milford Sound">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4282" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_0802" class="story-image" alt="Fiordland">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4288" class="story-image" alt="Milford Sound">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4290" class="story-image" alt="Milford Sound">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4292" class="story-image" alt="Milford Sound">
+                <p>It was one of those rare moments where everyone on deck just fell silent.</p>
             </div>
 
             ${generateGallery('fiordland')}
