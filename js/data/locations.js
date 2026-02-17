@@ -2132,13 +2132,62 @@ an original composition inspired by this place.
         shortDesc: "Kingdom of Tonga.",
         useRichContent: true,
         richContent: `
-            <p>Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.</p>
-            <p>It is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here - slower, more intentional. The signpost outside town points to everywhere else in the world, as if to say: you've reached the edge of things.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Nuku'alofa</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Pacific Pearl</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">👑</span>
+                    <span class="demo-value">Kingdom</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Drive</span>
+                <h3 class="section-title-panel">Shore Leave</h3>
+                <p>We took advantage of shore leave and headed inland.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838433/shiplife/tonga/aielbng94fsgzye6bbdv.jpg" class="story-image" alt="Tonga">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838420/shiplife/tonga/cbzlnct4qvducquqveql.jpg" class="story-image" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838432/shiplife/tonga/cvrqbhs9l5d7zbzntjdg.jpg" class="story-image" alt="Tonga">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838422/shiplife/tonga/kl9ouncqasywt6sus1pm.jpg" class="story-image" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838434/shiplife/tonga/nhbayjavdf3xnbfu9q9d.jpg" class="story-image" alt="Tonga">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838423/shiplife/tonga/nnly70dtjigyrgor8ezl.jpg" class="story-image" alt="Tonga">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838431/shiplife/tonga/nwzmh0zgpkn1vcfsxwbg.jpg" class="story-image" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838427/shiplife/tonga/s8yoso8jecurtiraciry.jpg" class="story-image" alt="Tonga">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838430/shiplife/tonga/scnkke4rgh896lkith62.jpg" class="story-image" alt="Tonga">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838428/shiplife/tonga/vn2oy9aff4ohai3ezspl.jpg" class="story-image" alt="World signpost">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838426/shiplife/tonga/vu1ebmhax6tsdxacngxy.jpg" class="story-image" alt="Tonga">
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Show</span>
+                <h3 class="section-title-panel">Polynesian Culture</h3>
+                <p>A Polynesian show and local cuisine.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838429/shiplife/tonga/bbw7mkjkjwg6vnfsr8rs.jpg" class="story-image" alt="Polynesian show">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838424/shiplife/tonga/cabzj35msernktmcz0te.jpg" class="story-image" alt="Polynesian show">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838421/shiplife/tonga/g971pobihvgf2wnnhikq.jpg" class="story-image" alt="Local cuisine">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770838425/shiplife/tonga/y9fef2mveqsktdflb1au.jpg" class="story-image" alt="Tonga">
+            </div>
 
             ${generateGallery('tonga')}
         `,
-        fullDesc: "Arriving in Nuku'alofa, you feel the deep Polynesian culture immediately.\n\nIt is one of the few places where Sunday is strictly observed as a day of rest and church. The pace is different here-slower, more intentional.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816004/tonga_jolrwg.jpg"
+        fullDesc: "We took advantage of shore leave for a Polynesian show and local cuisine.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770838429/shiplife/tonga/bbw7mkjkjwg6vnfsr8rs.jpg"
     },
     {
         id: 19,
@@ -2150,14 +2199,63 @@ an original composition inspired by this place.
         shortDesc: "The pearl of the Pacific.",
         useRichContent: true,
         richContent: `
-            <p>The water here is a color I didn't know existed.</p>
-            <p>We anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.</p>
-            <p>A group of us took a boat to a small motu and spent the afternoon swimming in water so clear it barely seemed to exist. Cold beers raised high. The kind of day you remember forever.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">French Polynesia</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Pacific Pearl</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛰️</span>
+                    <span class="demo-value">Mount Otemanu</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <p>The water here is a color I didn't know existed.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764155/bora_bora_baby.jpg" class="story-image" alt="Mount Otemanu">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="story-image" alt="Off the main island">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764143/bora_bora_beach_-_Copy.jpg" class="story-image" alt="Bora Bora beach">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764108/098.jpg" class="story-image" alt="Bora Bora">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764111/046.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/054.jpg" class="story-image" alt="Bora Bora">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/063.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764117/062.jpg" class="story-image" alt="Bora Bora">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764118/065.jpg" class="story-image" alt="Bora Bora">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764119/079.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764122/083.jpg" class="story-image" alt="Bora Bora">
+                </div>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764123/080.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764128/100.jpg" class="story-image" alt="Bora Bora">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764133/097.jpg" class="story-image" alt="Bora Bora">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764150/120.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764107/me_and_mark.jpg" class="story-image" alt="Me and Mark">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764109/038.jpg" class="story-image" alt="Waterfall hike">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764127/tahiti_waterfall.jpg" class="story-image" alt="Tahiti waterfall">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764145/grapefruit_and_apple.jpg" class="story-image" alt="Fresh fruit">
+                </div>
+                <p>The kind of day you remember forever.</p>
+            </div>
 
             ${generateGallery('boraBora')}
         `,
-        fullDesc: "The water here is a color I didn't know existed.\n\nWe anchored in the lagoon and the view of Mount Otemanu is something I will never forget. Bora Bora is the kind of place that feels too beautiful to be real.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769816171/bora_bora_fpjre2.jpg"
+        fullDesc: "The water here is a color I didn't know existed. The kind of day you remember forever.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770764155/bora_bora_baby.jpg"
     },
     {
         id: 20,
