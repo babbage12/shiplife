@@ -2728,10 +2728,6 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/symi/img_5795" class="hero-image" alt="Symi harbor">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Dodecanese Islands</div>
                 <div class="demo-item"><span class="demo-icon">👥</span> Pop: 2,600</div>
@@ -3469,10 +3465,6 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/lemaire/img_6712" class="hero-image" alt="Lemaire Channel">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Peninsula</div>
                 <div class="demo-item"><span class="demo-icon">📷</span> "Kodak Gap"</div>
@@ -3551,10 +3543,6 @@ an original composition inspired by this place.
         imageCaption: "Petermann Island from the deck of the ship.",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/petermann/20150217_092200" class="hero-image" alt="Antarctic morning">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Peninsula</div>
                 <div class="demo-item"><span class="demo-icon">🐧</span> Penguin Colonies</div>
@@ -3639,10 +3627,6 @@ an original composition inspired by this place.
         shortDesc: "4am mysteries and sled rides on ice.",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/south-shetlands/img_6563" class="hero-image" alt="Seabourn Quest in Antarctic waters">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Antarctic Gateway</div>
                 <div class="demo-item"><span class="demo-icon">🌡️</span> -2°C Summer</div>
@@ -3844,10 +3828,6 @@ an original composition inspired by this place.
         shortDesc: "Party island with a secret peaceful side.",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,h_800,c_fill,g_south,q_auto,f_auto/shiplife/ibiza/img_20140610_135303" class="hero-image" alt="Ibiza fortress">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Balearic Islands</div>
                 <div class="demo-item"><span class="demo-icon">👥</span> Pop: 50,000</div>
@@ -4658,10 +4638,6 @@ an original composition inspired by this place.
         shortDesc: "Where Catalonia meets the sea.",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/roses/img_5252" class="hero-image" alt="Roses harbor">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Costa Brava, Catalonia</div>
                 <div class="demo-item"><span class="demo-icon">👥</span> Pop: 20,000</div>
@@ -4847,10 +4823,6 @@ an original composition inspired by this place.
         shortDesc: "A dozen different beaches on one small stretch.",
         useRichContent: true,
         richContent: `
-            <div class="hero-section">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/le-lavandou/img_20140605_134218" class="hero-image" alt="Le Lavandou beach">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item"><span class="demo-icon">📍</span> Côte d'Azur, Var</div>
                 <div class="demo-item"><span class="demo-icon">👥</span> Pop: 5,800</div>
