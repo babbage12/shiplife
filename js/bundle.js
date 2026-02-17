@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-17T18:03:36.586Z
+// Shiplife Bundle - Generated 2026-02-17T18:14:13.255Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -13246,6 +13246,22 @@ function attachImageClickHandlers() {
             e.stopPropagation();
             const container = btn.closest('.more-info-container');
             container.classList.toggle('active');
+        };
+    });
+
+    // Attach click handlers to more-info-toggle elements (text-based expandable sections)
+    const moreInfoToggles = document.querySelectorAll('.panel-text .more-info-toggle');
+    moreInfoToggles.forEach(toggle => {
+        toggle.onclick = function() {
+            const content = toggle.nextElementSibling;
+            if (content && content.classList.contains('more-info-content')) {
+                content.classList.toggle('expanded');
+                // Update toggle text
+                const locationName = toggle.textContent.replace(/^[+−] ?(More|Less) about /, '');
+                toggle.textContent = content.classList.contains('expanded')
+                    ? `− Less about ${locationName}`
+                    : `+ More about ${locationName}`;
+            }
         };
     });
 }

@@ -374,6 +374,22 @@ function attachImageClickHandlers() {
             container.classList.toggle('active');
         };
     });
+
+    // Attach click handlers to more-info-toggle elements (text-based expandable sections)
+    const moreInfoToggles = document.querySelectorAll('.panel-text .more-info-toggle');
+    moreInfoToggles.forEach(toggle => {
+        toggle.onclick = function() {
+            const content = toggle.nextElementSibling;
+            if (content && content.classList.contains('more-info-content')) {
+                content.classList.toggle('expanded');
+                // Update toggle text
+                const locationName = toggle.textContent.replace(/^[+−] ?(More|Less) about /, '');
+                toggle.textContent = content.classList.contains('expanded')
+                    ? `− Less about ${locationName}`
+                    : `+ More about ${locationName}`;
+            }
+        };
+    });
 }
 
 function closePanel() {
