@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T03:08:33.680Z
+// Shiplife Bundle - Generated 2026-02-18T16:36:34.324Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1190,11 +1190,19 @@ const locationGalleries = {
         { src: "shiplife/nafplio/greek_bakery.jpg", caption: "Fuel for the 999 steps - Greek pastries are non-negotiable.", alt: "Greek bakery" }
     ],
 
-    // ODESSA (3 images)
+    // ODESSA (11 images)
     "odessa": [
-        { src: "shiplife/odessa/cathedral.jpg", caption: "Transfiguration Cathedral - the Russian Empire's grandeur lives on.", alt: "Odessa cathedral" },
-        { src: "shiplife/odessa/mozart_hotel.jpg", caption: "Near the Mozart Hotel - cafés spill onto tree-lined boulevards.", alt: "Mozart Hotel area" },
-        { src: "shiplife/odessa/cafe_scene.jpg", caption: "Watching the world go by. This was before the war.", alt: "Odessa café" }
+        { src: "shiplife/odessa/odessa-port-sculpture", caption: "The 'Golden Child' sculpture at the port - Odessa's welcome to arriving ships.", alt: "Port sculpture" },
+        { src: "shiplife/odessa/odessa-cathedral-park", caption: "Transfiguration Cathedral from the park, pigeons scattering across cobblestones.", alt: "Cathedral from park" },
+        { src: "shiplife/odessa/odessa-cathedral-closeup", caption: "The cathedral's dome and bell tower - neoclassical grandeur.", alt: "Cathedral closeup" },
+        { src: "shiplife/odessa/odessa-vorontsov-monument", caption: "At the Vorontsov monument - the man who built modern Odessa.", alt: "Vorontsov monument" },
+        { src: "shiplife/odessa/odessa-mozart-hotel", caption: "The Mozart Hotel area - cafés spill onto tree-lined boulevards.", alt: "Mozart Hotel" },
+        { src: "shiplife/odessa/odessa-ornate-facade", caption: "Ornate facades with caryatids - echoes of empire on every street.", alt: "Ornate building" },
+        { src: "shiplife/odessa/odessa-cafe-candid", caption: "Settling into a sidewalk café, watching the world go by.", alt: "Café scene" },
+        { src: "shiplife/odessa/odessa-cafe-meal", caption: "Omelette and bruschetta - a leisurely afternoon in Odessa.", alt: "Café meal" },
+        { src: "shiplife/odessa/cathedral.jpg", caption: "Transfiguration Cathedral - another angle of imperial splendor.", alt: "Odessa cathedral" },
+        { src: "shiplife/odessa/mozart_hotel.jpg", caption: "Near the Mozart Hotel - where old Odessa still breathes.", alt: "Mozart Hotel area" },
+        { src: "shiplife/odessa/cafe_scene.jpg", caption: "This was before the war.", alt: "Odessa café" }
     ],
 
     // PARGA (22 images)
@@ -8609,14 +8617,46 @@ an original composition inspired by this place.
         shortDesc: "Opera, architecture, and the famous steps.",
         useRichContent: true,
         richContent: `
-            <p>Odessa was once the Russian Empire's window to the world - a cosmopolitan port where merchants, sailors, and artists mingled. The city still carries that grandeur in its neoclassical architecture and tree-lined boulevards.</p>
-            <p>The Transfiguration Cathedral dominates the skyline with its dome and columns. Cafés spill onto sidewalks near the Mozart Hotel. We watched the world go by over coffee, pigeons scattering across cobblestones.</p>
-            <p>This was before the war. I hope the city's beauty survives what's come since.</p>
+            <div class="demographics-strip">
+                <span>Black Sea Coast</span>
+                <span>Pop. 1 Million</span>
+                <span>Founded 1794</span>
+                <span>June 2013</span>
+            </div>
+
+            <h3>Nothing Else to Do But Wander</h3>
+            <p>Odessa was once the Russian Empire's window to the world - a cosmopolitan port where merchants, sailors, and artists mingled beneath neoclassical facades. There's no must-see museum, no ruins to tick off. You just walk.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/odessa/odessa-cathedral-park" class="story-image" data-caption="Transfiguration Cathedral from the park - pigeons scatter across the cobblestones." alt="Cathedral from park">
+
+            <h3>The Man Who Built Odessa</h3>
+            <p>Prince Mikhail Vorontsov was Governor-General of this region for thirty years. He built the boulevards, the port, the palaces. His statue still stands on Primorsky Boulevard - "from grateful compatriots, 1863." I posed beneath it, arms wide, in a city he would barely recognize.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/odessa/odessa-vorontsov-monument" class="inline-image" data-caption="At the Vorontsov monument - the man who built modern Odessa." alt="Vorontsov monument">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/odessa/odessa-ornate-facade" class="inline-image" data-caption="Ornate facades with caryatids - echoes of empire on every street." alt="Ornate facade">
+            </div>
+
+            <h3>Tree-Lined Boulevards</h3>
+            <p>The tree-lined boulevards feel European in the best way - cafés spilling onto sidewalks near the Mozart Hotel, old men playing chess in the parks, the Transfiguration Cathedral's dome rising above it all. The architecture still carries imperial grandeur, though the empire is long gone.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/odessa/odessa-cathedral-closeup" class="story-image" data-caption="The cathedral's dome and bell tower - neoclassical splendor." alt="Cathedral closeup">
+
+            <h3>Café Life</h3>
+            <p>Eventually you sit. There's no hurry. An omelette, some bruschetta, a coffee that arrives when it arrives. You watch the world go by. Laptop open, sunglasses on, shade from the umbrellas. This is how Odessa works - the city rewards those who slow down.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/odessa/odessa-cafe-candid" class="inline-image" data-caption="Settling into a sidewalk café." alt="Café scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/odessa/odessa-cafe-meal" class="inline-image" data-caption="Omelette and bruschetta - a leisurely afternoon." alt="Café meal">
+            </div>
+
+            <h3>Before the War</h3>
+            <p>This was June 2013. The boulevards were peaceful, the cafés were full, the city's beauty seemed permanent. I hope some of it survives what's come since.</p>
 
             ${generateGallery('odessa')}
         `,
         fullDesc: "Odessa was once the Russian Empire's window to the world - a cosmopolitan port with neoclassical grandeur. The Transfiguration Cathedral, tree-lined boulevards, sidewalk cafés. This was before the war.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/odessa/cathedral.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/odessa/odessa-port-sculpture"
     },
     {
         id: 80,
@@ -12793,6 +12833,7 @@ function animateMarkerFlare(marker) {
 }
 
 
+
 // ============================================
 // SOURCE: js/globe/animation.js
 // ============================================
@@ -12888,13 +12929,14 @@ function animate() {
                 camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
                 
                 // Check if globe rotation has settled (close enough to target)
+                // Tighter threshold (0.01 rad = ~0.5 degrees) to ensure globe is truly still
                 const yDiff = celebrationInProgress
                     ? Math.abs(targetRotationY - globe.rotation.y)
                     : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
                 const rotationSettled =
-                    yDiff < 0.05 &&
-                    Math.abs(globe.rotation.x - targetRotationX) < 0.05;
-                
+                    yDiff < 0.01 &&
+                    Math.abs(globe.rotation.x - targetRotationX) < 0.01;
+
                 if (progress >= 1 && rotationSettled) {
                     isTransitioning = false;
                     transitionPhase = 'none';
@@ -12907,9 +12949,10 @@ function animate() {
                         pendingLocation = null;
 
                         // Find the marker for this location and trigger sky bounce
+                        // Small delay to ensure globe is fully settled before bloom appears
                         const targetMarker = markers.find(m => m.userData.id === loc.id);
                         if (targetMarker) {
-                            triggerSkyBounce(targetMarker);
+                            setTimeout(() => triggerSkyBounce(targetMarker), 50);
                         }
 
                         if (autoOpenPanel) {

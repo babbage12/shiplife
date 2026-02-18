@@ -89,13 +89,14 @@ function animate() {
                 camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
                 
                 // Check if globe rotation has settled (close enough to target)
+                // Tighter threshold (0.01 rad = ~0.5 degrees) to ensure globe is truly still
                 const yDiff = celebrationInProgress
                     ? Math.abs(targetRotationY - globe.rotation.y)
                     : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
                 const rotationSettled =
-                    yDiff < 0.05 &&
-                    Math.abs(globe.rotation.x - targetRotationX) < 0.05;
-                
+                    yDiff < 0.01 &&
+                    Math.abs(globe.rotation.x - targetRotationX) < 0.01;
+
                 if (progress >= 1 && rotationSettled) {
                     isTransitioning = false;
                     transitionPhase = 'none';
@@ -108,9 +109,10 @@ function animate() {
                         pendingLocation = null;
 
                         // Find the marker for this location and trigger sky bounce
+                        // Small delay to ensure globe is fully settled before bloom appears
                         const targetMarker = markers.find(m => m.userData.id === loc.id);
                         if (targetMarker) {
-                            triggerSkyBounce(targetMarker);
+                            setTimeout(() => triggerSkyBounce(targetMarker), 50);
                         }
 
                         if (autoOpenPanel) {

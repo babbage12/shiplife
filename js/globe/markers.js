@@ -1967,3 +1967,4 @@ function animateMarkerFlare(marker) {
     }
     requestAnimationFrame(animate);
 }
+

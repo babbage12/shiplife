@@ -927,11 +927,19 @@ const locationGalleries = {
         { src: "shiplife/nafplio/greek_bakery.jpg", caption: "Fuel for the 999 steps - Greek pastries are non-negotiable.", alt: "Greek bakery" }
     ],
 
-    // ODESSA (3 images)
+    // ODESSA (11 images)
     "odessa": [
-        { src: "shiplife/odessa/cathedral.jpg", caption: "Transfiguration Cathedral - the Russian Empire's grandeur lives on.", alt: "Odessa cathedral" },
-        { src: "shiplife/odessa/mozart_hotel.jpg", caption: "Near the Mozart Hotel - cafés spill onto tree-lined boulevards.", alt: "Mozart Hotel area" },
-        { src: "shiplife/odessa/cafe_scene.jpg", caption: "Watching the world go by. This was before the war.", alt: "Odessa café" }
+        { src: "shiplife/odessa/odessa-port-sculpture", caption: "The 'Golden Child' sculpture at the port - Odessa's welcome to arriving ships.", alt: "Port sculpture" },
+        { src: "shiplife/odessa/odessa-cathedral-park", caption: "Transfiguration Cathedral from the park, pigeons scattering across cobblestones.", alt: "Cathedral from park" },
+        { src: "shiplife/odessa/odessa-cathedral-closeup", caption: "The cathedral's dome and bell tower - neoclassical grandeur.", alt: "Cathedral closeup" },
+        { src: "shiplife/odessa/odessa-vorontsov-monument", caption: "At the Vorontsov monument - the man who built modern Odessa.", alt: "Vorontsov monument" },
+        { src: "shiplife/odessa/odessa-mozart-hotel", caption: "The Mozart Hotel area - cafés spill onto tree-lined boulevards.", alt: "Mozart Hotel" },
+        { src: "shiplife/odessa/odessa-ornate-facade", caption: "Ornate facades with caryatids - echoes of empire on every street.", alt: "Ornate building" },
+        { src: "shiplife/odessa/odessa-cafe-candid", caption: "Settling into a sidewalk café, watching the world go by.", alt: "Café scene" },
+        { src: "shiplife/odessa/odessa-cafe-meal", caption: "Omelette and bruschetta - a leisurely afternoon in Odessa.", alt: "Café meal" },
+        { src: "shiplife/odessa/cathedral.jpg", caption: "Transfiguration Cathedral - another angle of imperial splendor.", alt: "Odessa cathedral" },
+        { src: "shiplife/odessa/mozart_hotel.jpg", caption: "Near the Mozart Hotel - where old Odessa still breathes.", alt: "Mozart Hotel area" },
+        { src: "shiplife/odessa/cafe_scene.jpg", caption: "This was before the war.", alt: "Odessa café" }
     ],
 
     // PARGA (22 images)
