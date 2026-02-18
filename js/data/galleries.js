@@ -1862,6 +1862,15 @@ const locationGalleries = {
         { src: "shiplife/muscat/muscat-souk-03", caption: "The souk smells of frankincense and possibility.", alt: "Muscat Oman" },
         { src: "shiplife/muscat/muscat-souk-05", caption: "Lost in the labyrinth of shops.", alt: "Muscat Oman" },
         { src: "shiplife/muscat/muscat-souk-treasures", caption: "Silver chests, copper trays, khanjars - the artisan tradition lives on.", alt: "Muscat Oman" }
+    ],
+
+    // PENANG (5 gallery images)
+    "penang": [
+        { src: "shiplife/penang/penang-94-gallery", caption: "More scenes from Penang.", alt: "Penang Malaysia" },
+        { src: "shiplife/penang/penang-105-gallery", caption: "The colors of Penang.", alt: "Penang Malaysia" },
+        { src: "shiplife/penang/penang-107-gallery", caption: "Temple details.", alt: "Penang Malaysia" },
+        { src: "shiplife/penang/penang-109-gallery", caption: "Penang scenery.", alt: "Penang Malaysia" },
+        { src: "shiplife/penang/penang-110-gallery", caption: "A day in Penang.", alt: "Penang Malaysia" }
     ]
 };
 

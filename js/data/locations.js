@@ -5221,50 +5221,113 @@ an original composition inspired by this place.
         tag: "Pearl of the Orient",
         icon: "🍜",
         isDoor: false,
-        tag: "🎵 Original Song",
         useRichContent: true,
         richContent: `
-        <div class="song-panel">
-            <div class="song-status">
-                <span class="status-label">Original Song</span>
-                <span class="status-text">Coming Soon</span>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🕐</span>
+                    <span class="demo-value">12 Hours</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚗</span>
+                    <span class="demo-value">Hired Driver</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🛕</span>
+                    <span class="demo-value">Temples</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛰️</span>
+                    <span class="demo-value">Penang Hill</span>
+                </div>
             </div>
 
             <div class="story-section-panel">
-                <h3>Reserved for Music</h3>
-                <p>This location has been set aside for an original song. The music is being written as a tribute to this place and the memories it holds.</p>
-                <p><strong>Mood:</strong> Exotic / Sensory</p>
-                <p><strong>Theme:</strong> Spice markets, street art, colonial echoes</p>
+                <span class="section-tag-panel">Arriving</span>
+                <h3 class="section-title-panel">Mariner of the Seas</h3>
+                <p>We spotted the Mariner of the Seas as we were pulling in to dock. Twelve hours to explore Penang and absolutely no idea what to do with them.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-03-mariner-of-seas" class="story-image" data-caption="The Mariner of the Seas in port as we arrived." alt="Mariner of the Seas">
+                <p class="photo-caption-inline">The Mariner of the Seas in port as we arrived.</p>
             </div>
 
-            <div class="lyrics-section" onclick="this.classList.toggle('expanded')">
-                <div class="lyrics-header">
-                    <span class="lyrics-title">
-                        <span class="lyrics-icon">📝</span>
-                        <span>Lyrics</span>
-                    </span>
-                    <span class="lyrics-toggle">▼</span>
-                </div>
-                <div class="lyrics-content">
-                    <div class="lyrics-text">
-<span class="verse-label">Coming Soon</span>
-
-Lyrics will appear here when the song is complete.
-
-This space is reserved for "Penang, Malaysia" -
-an original composition inspired by this place.
-                    </div>
-                </div>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Solution</span>
+                <h3 class="section-title-panel">Hire a Driver</h3>
+                <p>So I did what all crew members do when they're in this situation: hired a driver to take me as far away from port as he could. This guy had a hundred different places he could show me, and we drove all over visiting shrines and temples.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-47-colorful" class="story-image" data-caption="Kek Lok Si Temple - one of the largest Buddhist temples in Southeast Asia." alt="Kek Lok Si Temple">
+                <p class="photo-caption-inline">Kek Lok Si Temple - one of the largest Buddhist temples in Southeast Asia.</p>
+                <p>First stop: <em>Kek Lok Si</em>, the "Temple of Supreme Bliss." Founded in 1890 by Hokkien immigrants, it sprawls across a hillside in Air Itam. The seven-story Pagoda of Ten Thousand Buddhas rises above everything, fusing Chinese, Thai, and Burmese architectural styles. But it's the 30-meter bronze statue of Kuan Yin—the Goddess of Mercy—that dominates the skyline, completed in 2002 after twelve years of construction. You can see her serene face from miles away, watching over Penang with that tilted, knowing expression.</p>
             </div>
 
-            <div class="audio-player-container">
-                <p style="text-align: center; font-size: 0.85rem; color: rgba(245,240,232,0.6); margin: 0;">
-                    🎵 Audio player will appear when song is released
-                </p>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Cultural Immersion</span>
+                <h3 class="section-title-panel">Colors Like Never Before</h3>
+                <p>Colors like I had never seen before. So culturally different was this city that I was left stunned and amazed at what I had seen. The shrines and temples seemed endless, each more vibrant than the last.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-15-colorful" class="story-image" data-caption="Every surface alive with color." alt="Colorful temple">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-18-temple" class="story-image" data-caption="Intricate temple details." alt="Temple details">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-24-temple" class="story-image" data-caption="Stunned and amazed." alt="Temple">
+                <p class="photo-caption-inline">Every shrine more vibrant than the last.</p>
             </div>
-        </div>`,
-        fullDesc: "Penang might have the best street food on Earth.\n\nChinese, Malay, Indian, Thai-all mixing in the hawker centers of George Town. The colonial architecture is UNESCO-protected. The temples are kaleidoscopic. Every meal is an adventure.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769523078/IMG_3940_cbmzhe.jpg"
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">In a Daze</span>
+                <h3 class="section-title-panel">A Kaleidoscope of Temples</h3>
+                <p>My guide didn't speak English very well, but it was better than my Hokkien. The locals call this place <em>Pī-néng</em> in the Hokkien dialect—the language of the Chinese immigrants who helped build George Town into a trading powerhouse. We communicated through gestures and pointing as he led me through temple after temple, each one more ornate than the last.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-26-colorful" class="story-image" data-caption="Another kaleidoscopic scene." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-29-colorful" class="story-image" data-caption="Wandering in a daze of color." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-33-colorful" class="story-image" data-caption="Every angle revealed something new." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-37-colorful" class="story-image" data-caption="Lost in the visual overload." alt="Temple scene">
+                <p class="photo-caption-inline">Wandering in a daze of color.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Lunch</span>
+                <h3 class="section-title-panel">Mystery Meal</h3>
+                <p>I managed to get across to my driver that I was hungry and he acknowledged by speeding off up a mountain and dropping me in front of this tiny store where I had a bowl of prawn and pork rib broth with thick yellow noodles. I didn't know exactly what I was ordering but it was a delicious surprise.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-45-food-place" class="story-image" data-caption="Hokkien mee - the signature dish of Penang." alt="Hokkien mee">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-46-food-place" class="story-image" data-caption="A delicious surprise." alt="Lunch in Penang">
+                <p class="photo-caption-inline">Penang's famous <em>Hokkien mee</em> - worth the detour up the mountain.</p>
+                <p>Penang has been called the street food capital of Asia, and now I understood why. Chinese, Malay, Indian, and Thai influences all collide in the hawker centers, creating something entirely its own.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">More Temples</span>
+                <h3 class="section-title-panel">The Tour Continues</h3>
+                <p>After lunch, more colorful places. I was in a daze visiting all of these temples, each one more elaborate than the last. The statues, the architecture, the sheer density of visual detail—overwhelming in the best way.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-49-colorful" class="story-image" data-caption="More visual overload." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-51-colorful" class="story-image" data-caption="Elaborate details everywhere." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-53-colorful" class="story-image" data-caption="Wandering in a daze." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-63-colorful" class="story-image" data-caption="Continuing the colorful journey." alt="Temple scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-64-colorful" class="story-image" data-caption="One of many memorable moments." alt="Temple scene">
+                <p class="photo-caption-inline">Overwhelming in the best way.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Penang Hill</span>
+                <h3 class="section-title-panel">The Ascent</h3>
+                <p>Then we headed up Penang Hill—<em>Bukit Bendera</em> in Malay. At 833 meters, it's been a retreat from the tropical heat since the 1780s when British colonials first established it as a hill station. They used to be carried up in sedan chairs by teams of porters. In 1923, the Swiss-built funicular railway opened, one of the steepest tunnel railways in the world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-88-hill-ascent" class="story-image" data-caption="Beginning the ascent up Penang Hill." alt="Penang Hill ascent">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-89-penang-hill" class="story-image" data-caption="Making our way up." alt="Penang Hill">
+                <p class="photo-caption-inline">The funicular climbs through jungle to the summit.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Views</span>
+                <h3 class="section-title-panel">Mind Blown</h3>
+                <p>But the overlook blew my mind. From the top of Penang Hill, the entire island spread out below—the city, the strait, the ships in port. Everything I'd seen that day suddenly made sense from up here.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-65-overlook" class="story-image" data-caption="The view that blew my mind." alt="Overlook view">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-67-overlook" class="story-image" data-caption="Looking out over the island." alt="Overlook view">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-68-overlook" class="story-image" data-caption="The strait and the city below." alt="Overlook view">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-83-overlook" class="story-image" data-caption="Everything visible from the top." alt="Overlook view">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-84-overlook" class="story-image" data-caption="A day well spent." alt="Overlook view">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-91-hilltop-view" class="story-image" data-caption="Views from the summit." alt="Hilltop view">
+                <p class="photo-caption-inline">Views from the summit of Penang Hill.</p>
+            </div>
+
+            ${typeof generateGallery === 'function' ? generateGallery('penang') : ''}
+        `,
+        fullDesc: "Twelve hours to explore Penang and no idea what to do. So I hired a driver.\n\nHe took me to temples I didn't know existed, colors I'd never seen, food I couldn't identify. Then up Penang Hill for views that put it all in perspective. One of the most overwhelming sensory days of my life.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/penang/penang-73-overlook"
     },
     {
         id: 61,
