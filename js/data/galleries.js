@@ -1452,6 +1452,23 @@ const locationGalleries = {
         { src: "shiplife/semarang/semarang-borobudur-temple-07", caption: "Gamelan musicians with wayang shadow puppets - Javanese culture on display.", alt: "Gamelan musicians" }
     ],
 
+    // ŠIBENIK (13 images)
+    "sibenik": [
+        { src: "shiplife/sibenik/sibenik-hero", caption: "Medieval stone and centuries of stories.", alt: "Šibenik old town" },
+        { src: "shiplife/sibenik/sibenik-port-01", caption: "Walking from the port into town.", alt: "Port approach" },
+        { src: "shiplife/sibenik/sibenik-port-02", caption: "The harbor stretches along the coast.", alt: "Harbor view" },
+        { src: "shiplife/sibenik/sibenik-port-03", caption: "First glimpse of the old town rising above.", alt: "Old town from port" },
+        { src: "shiplife/sibenik/sibenik-port-04", caption: "Stone facades and Adriatic light.", alt: "Stone buildings" },
+        { src: "shiplife/sibenik/sibenik-oldtown-01", caption: "Into the medieval streets.", alt: "Old town street" },
+        { src: "shiplife/sibenik/sibenik-oldtown-02", caption: "Every corner a new discovery.", alt: "Old town corner" },
+        { src: "shiplife/sibenik/sibenik-oldtown-03", caption: "Stone worn smooth by centuries of footsteps.", alt: "Stone streets" },
+        { src: "shiplife/sibenik/sibenik-oldtown-04", caption: "The old town unfolds in layers.", alt: "Old town layers" },
+        { src: "shiplife/sibenik/sibenik-streets-01", caption: "Just how old were these streets?", alt: "Ancient streets" },
+        { src: "shiplife/sibenik/sibenik-streets-02", caption: "Knights and warriors once walked here.", alt: "Historic streets" },
+        { src: "shiplife/sibenik/sibenik-food-01", caption: "The search for food - always an adventure.", alt: "Food search" },
+        { src: "shiplife/sibenik/sibenik-food-02", caption: "Croatian cuisine to restore the spirit.", alt: "Croatian food" }
+    ],
+
     // SORRENTO (26 images)
     "sorrento": [
         { src: "shiplife/sorrento/img_1094", caption: "Sorrento's dramatic cliffs and tower - the view that defines the coast.", alt: "Sorrento cliffs" },

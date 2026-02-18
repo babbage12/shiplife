@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šibenik, Croatia - Image Selector</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 { color: #ffd700; margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 20px; }
+        .context {
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffd700;
+        }
+        .context h3 { color: #ffd700; margin-top: 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .image-card {
+            background: #2a2a4e;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 3px solid transparent;
+        }
+        .image-card:hover { transform: scale(1.02); }
+        .image-card.selected {
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .image-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .image-info { padding: 10px; }
+        .image-name { font-weight: bold; color: #ffd700; }
+        .image-index { color: #888; font-size: 0.9em; }
+        .selected-count {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+        .output {
+            margin-top: 30px;
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .output h3 { color: #ffd700; margin-top: 0; }
+        .output pre {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.85em;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Šibenik, Croatia - Image Selector</h1>
+    <p class="subtitle">36 images from BBCSO drive</p>
+
+    <div class="context">
+        <h3>About Šibenik</h3>
+        <p>Medieval Croatian city on the Adriatic coast. Known for the UNESCO-listed Cathedral of St. James (Katedrala sv. Jakova), built entirely of stone without mortar. Narrow stone streets, fortresses, and stunning views of the Dalmatian islands.</p>
+    </div>
+
+    <div class="grid" id="imageGrid"></div>
+
+    <div class="selected-count" id="selectedCount">0 selected</div>
+
+    <div class="output">
+        <h3>Selected Images</h3>
+        <pre id="selectedList">Click images to select them...</pre>
+    </div>
+
+    <script>
+        const basePath = '/Volumes/BBCSO/Sibinek, Croatia/';
+
+        const images = [
+            'IMG_1725.JPG', 'IMG_1726.JPG', 'IMG_1727.JPG', 'IMG_1729.JPG', 'IMG_1730.JPG',
+            'IMG_1731.JPG', 'IMG_1732.JPG', 'IMG_1733.JPG', 'IMG_1734.JPG', 'IMG_1738.JPG',
+            'IMG_1739.JPG', 'IMG_1740.JPG', 'IMG_1741.JPG', 'IMG_1742.JPG', 'IMG_1743.JPG',
+            'IMG_1744.JPG', 'IMG_1745.JPG', 'IMG_1746.JPG', 'IMG_1747.JPG', 'IMG_1748.JPG',
+            'IMG_1749.JPG', 'IMG_1750.JPG', 'IMG_1751.JPG', 'IMG_1752.JPG', 'IMG_1752.jpeg',
+            'IMG_1753.JPG', 'IMG_1754.JPG', 'IMG_1755.JPG', 'IMG_1756.JPG', 'IMG_1757.JPG',
+            'IMG_1758.JPG', 'IMG_1759.JPG', 'IMG_1760.JPG', 'IMG_1761.JPG', 'IMG_1762.JPG',
+            'IMG_1763.JPG'
+        ];
+
+        const selected = new Set();
+        const grid = document.getElementById('imageGrid');
+        const countEl = document.getElementById('selectedCount');
+        const listEl = document.getElementById('selectedList');
+
+        images.forEach((file, i) => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            card.innerHTML = `
+                <img src="file://${basePath}${file}" alt="${file}">
+                <div class="image-info">
+                    <div class="image-name">${file}</div>
+                    <div class="image-index">#${i + 1}</div>
+                </div>
+            `;
+            card.addEventListener('click', () => {
+                if (selected.has(file)) {
+                    selected.delete(file);
+                    card.classList.remove('selected');
+                } else {
+                    selected.add(file);
+                    card.classList.add('selected');
+                }
+                updateOutput();
+            });
+            grid.appendChild(card);
+        });
+
+        function updateOutput() {
+            countEl.textContent = `${selected.size} selected`;
+            if (selected.size === 0) {
+                listEl.textContent = 'Click images to select them...';
+            } else {
+                const orderedSelection = images.filter(img => selected.has(img));
+                listEl.textContent = orderedSelection.map((img, i) => `#${images.indexOf(img) + 1}: ${img}`).join('\n');
+            }
+        }
+    </script>
+</body>
+</html>

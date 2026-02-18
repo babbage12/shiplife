@@ -18,8 +18,8 @@
 
 | Status | Count | % |
 |--------|-------|---|
-| DONE | 52 | 44% |
-| PARTIAL | 28 | 24% |
+| DONE | 54 | 45% |
+| PARTIAL | 26 | 22% |
 | SONG PANEL | 20 | 17% |
 | NOT STARTED | 19 | 16% |
 | **TOTAL** | **119** | |
@@ -82,6 +82,8 @@ These have rich story content with multiple sections and inline images.
 50. Zakynthos, Greece
 51. Semarang, Indonesia
 52. Itea, Greece
+53. Parga, Greece
+54. Šibenik, Croatia
 
 ---
 
@@ -96,16 +98,14 @@ These have rich story content with multiple sections and inline images.
 6. Lemaire Channel, Antarctica
 7. Nessebar, Bulgaria
 8. New Caledonia
-9. Parga, Greece - **7 sections, just needs images**
-10. Perth / Fremantle, Australia
-11. Picton, New Zealand
-12. Roses, Spain
-13. Santarém, Brazil
-14. South Shetland Islands
-15. Symi, Greece
-16. Valparaíso, Chile
-17. Wellington, New Zealand
-18. Šibenik, Croatia
+9. Perth / Fremantle, Australia
+10. Picton, New Zealand
+11. Roses, Spain
+12. Santarém, Brazil
+13. South Shetland Islands
+14. Symi, Greece
+15. Valparaíso, Chile
+16. Wellington, New Zealand
 
 ### Need Narrative Expansion (have images, minimal structure):
 19. Alexandria, Egypt
@@ -177,9 +177,8 @@ Do not suggest for expansion - these use song/lyric format by design.
 ## PRIORITY WORK ORDER
 
 ### Quick Wins (PARTIAL with images on BBCSO):
-- Parga, Greece - already has 7 sections, just add images
-- Šibenik, Croatia - 38 images on drive
 - Buenos Aires - 33 images on drive
+- Symi, Greece - needs images
 
 ### High-Value NOT STARTED (lots of images on BBCSO):
 - Semarang/Borobudur - 68 images, world-class temple
@@ -198,6 +197,7 @@ Do not suggest for expansion - these use song/lyric format by design.
 
 | Date | Location | Change |
 |------|----------|--------|
+| Feb 18, 2026 | Šibenik, Croatia | Full story panel with 13 images (music as anchor) |
 | Feb 18, 2026 | Itea, Greece | Full story panel with 19 images (Easter morning) |
 | Feb 18, 2026 | Semarang, Indonesia | Full story panel with 8 images (Borobudur) |
 | Feb 18, 2026 | Odessa, Ukraine | Added 8 images, expanded story |

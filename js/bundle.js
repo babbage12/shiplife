@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T20:31:47.341Z
+// Shiplife Bundle - Generated 2026-02-18T21:11:49.120Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1716,6 +1716,23 @@ const locationGalleries = {
         { src: "shiplife/semarang/semarang-borobudur-temple-05", caption: "Tour guide explains the stupas at the upper levels.", alt: "Guide at stupas" },
         { src: "shiplife/semarang/semarang-borobudur-temple-06", caption: "Among the bell-shaped stupas - each containing a Buddha statue.", alt: "At the stupas" },
         { src: "shiplife/semarang/semarang-borobudur-temple-07", caption: "Gamelan musicians with wayang shadow puppets - Javanese culture on display.", alt: "Gamelan musicians" }
+    ],
+
+    // ŠIBENIK (13 images)
+    "sibenik": [
+        { src: "shiplife/sibenik/sibenik-hero", caption: "Medieval stone and centuries of stories.", alt: "Šibenik old town" },
+        { src: "shiplife/sibenik/sibenik-port-01", caption: "Walking from the port into town.", alt: "Port approach" },
+        { src: "shiplife/sibenik/sibenik-port-02", caption: "The harbor stretches along the coast.", alt: "Harbor view" },
+        { src: "shiplife/sibenik/sibenik-port-03", caption: "First glimpse of the old town rising above.", alt: "Old town from port" },
+        { src: "shiplife/sibenik/sibenik-port-04", caption: "Stone facades and Adriatic light.", alt: "Stone buildings" },
+        { src: "shiplife/sibenik/sibenik-oldtown-01", caption: "Into the medieval streets.", alt: "Old town street" },
+        { src: "shiplife/sibenik/sibenik-oldtown-02", caption: "Every corner a new discovery.", alt: "Old town corner" },
+        { src: "shiplife/sibenik/sibenik-oldtown-03", caption: "Stone worn smooth by centuries of footsteps.", alt: "Stone streets" },
+        { src: "shiplife/sibenik/sibenik-oldtown-04", caption: "The old town unfolds in layers.", alt: "Old town layers" },
+        { src: "shiplife/sibenik/sibenik-streets-01", caption: "Just how old were these streets?", alt: "Ancient streets" },
+        { src: "shiplife/sibenik/sibenik-streets-02", caption: "Knights and warriors once walked here.", alt: "Historic streets" },
+        { src: "shiplife/sibenik/sibenik-food-01", caption: "The search for food - always an adventure.", alt: "Food search" },
+        { src: "shiplife/sibenik/sibenik-food-02", caption: "Croatian cuisine to restore the spirit.", alt: "Croatian food" }
     ],
 
     // SORRENTO (26 images)
@@ -8931,15 +8948,92 @@ an original composition inspired by this place.
         shortDesc: "UNESCO-listed cathedral, Game of Thrones location.",
         useRichContent: true,
         richContent: `
-            <div class="story-section-panel">
-                <p>Šibenik is Croatia's oldest native town on the Adriatic - founded by Croats rather than Greeks or Romans.</p>
-                <p>The Cathedral of St. James is the crown jewel, a UNESCO World Heritage Site built entirely of stone and brick with no wooden supports. It took over a century to complete (1431-1536). The fortress above town, St. Michael's, was used as a Game of Thrones filming location for the Iron Bank of Braavos.</p>
-                <p>Smaller and quieter than Split or Dubrovnik, Šibenik feels like discovering Croatia before the crowds found it. We anchored in the sheltered channel and tendered ashore to explore its steep medieval streets.</p>
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/sibenik/sibenik-hero" class="story-image" alt="Šibenik old town">
             </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">⛪</span>
+                    <span class="demo-value">UNESCO Cathedral</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏰</span>
+                    <span class="demo-value">Medieval Fortress</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🎬</span>
+                    <span class="demo-value">Game of Thrones</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇭🇷</span>
+                    <span class="demo-value">Oldest Croatian Town</span>
+                </div>
+            </div>
+
+            <h3>From Port to Town</h3>
+            <p>I went looking for food, as usual. And found myself once again steeped in historical architecture and medieval tales of knights and warriors, heroes and villains.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-port-01" class="inline-image" data-caption="Walking from the port into town." alt="Port approach">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-port-02" class="inline-image" data-caption="The harbor stretches along the coast." alt="Harbor view">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-port-03" class="inline-image" data-caption="First glimpse of the old town rising above." alt="Old town from port">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-port-04" class="inline-image" data-caption="Stone facades and Adriatic light." alt="Stone buildings">
+            </div>
+
+            <h3>The Old Town</h3>
+            <p>Šibenik is Croatia's oldest native town on the Adriatic - founded by Croats rather than Greeks or Romans. The Cathedral of St. James took over a century to build, entirely of stone and brick with no wooden supports. The fortress above, St. Michael's, became Braavos in Game of Thrones.</p>
+
+            <p>But facts like these barely register when you're walking the actual streets. The weight of all that history - it was truly enough to extinguish my energy level entirely.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-oldtown-01" class="inline-image" data-caption="Into the medieval streets." alt="Old town street">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-oldtown-02" class="inline-image" data-caption="Every corner a new discovery." alt="Old town corner">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-oldtown-03" class="inline-image" data-caption="Stone worn smooth by centuries of footsteps." alt="Stone streets">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-oldtown-04" class="inline-image" data-caption="The old town unfolds in layers." alt="Old town layers">
+            </div>
+
+            <h3>Ancient Streets</h3>
+            <p>Just how old were these streets? How many generations had walked this same stone, worn smooth now under my feet? Knights and warriors once stood where I stood. Heroes and villains both.</p>
+
+            <p>Days like this both invigorated my soul and extinguished my energy level. Most nights I would just drop into bed and fall immediately asleep, allowing my mind to rest from the day's adventures - only to do it all over again the next morning.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-streets-01" class="inline-image" data-caption="Just how old were these streets?" alt="Ancient streets">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-streets-02" class="inline-image" data-caption="Knights and warriors once walked here." alt="Historic streets">
+            </div>
+
+            <p>I was spending half my wages on traveling as far away from the boat as I could, making it back sometimes within minutes of the all-aboard. It would constantly remind me of what I used to tell my mom: "I was just trying to see how far I could get before nightfall."</p>
+
+            <h3>Two Lives</h3>
+            <p>And then to perform at night. Every night new faces would show up in the lounge - passengers for whom "Hey honey, James Taylor is performing in Paris next week, wanna go?" was a normal conversation. In striving to reach that level, to live up to their extraordinary lives, I found the music became my anchor.</p>
+
+            <p>Not an escape from reality this time, but the opposite - the one real thing that kept me grounded when reality itself became almost too much to process.</p>
+
+            <p>Months into this life, a nagging feeling finally crystallized: I was missing things. Important things. But wandering these foreign streets alone, catching scents I couldn't name, reading faces that ranged from welcoming to wary - this was its own kind of knowing.</p>
+
+            <p>I was careful to leave no trace, to disturb nothing, to pass through like a ghost. But these places left plenty of marks on me - some never to be forgotten.</p>
+
+            <p>The loneliness would come later. For now, reality was expanding faster than imagination ever could.</p>
+
+            <h3>Food!</h3>
+            <p>Eventually, the original mission succeeded.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-food-01" class="inline-image" data-caption="The search for food - always an adventure." alt="Food search">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/sibenik/sibenik-food-02" class="inline-image" data-caption="Croatian cuisine to restore the spirit." alt="Croatian food">
+            </div>
+
             ${generateGallery('sibenik')}
         `,
         fullDesc: "Šibenik is Croatia's oldest native town on the Adriatic - founded by Croats rather than Greeks or Romans.\n\nThe Cathedral of St. James is the crown jewel, a UNESCO World Heritage Site built entirely of stone and brick with no wooden supports. It took over a century to complete (1431-1536). The fortress above town, St. Michael's, was used as a Game of Thrones filming location for the Iron Bank of Braavos.\n\nSmaller and quieter than Split or Dubrovnik, Šibenik feels like discovering Croatia before the crowds found it.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769803667/IMG_1752_xpouvp.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/sibenik/sibenik-hero"
     },
     {
         id: 86,
