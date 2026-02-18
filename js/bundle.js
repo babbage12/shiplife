@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T21:11:49.120Z
+// Shiplife Bundle - Generated 2026-02-18T22:57:18.561Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -517,18 +517,27 @@ const locationGalleries = {
         { src: "v1770827968/shiplife/brisbane/tnb45yy4lnewyl5qncbf.jpg", caption: "George V Hotel, Brisbane", alt: "George V Hotel" }
     ],
 
-    // BUENOSAIRES (10 images)
+    // BUENOS AIRES (9 images)
     "buenosAires": [
-        { src: "v1770828227/shiplife/buenos-aires/kkiz4s1ngew0a6sgbl8d.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828228/shiplife/buenos-aires/wtmvciwlqrzoals1twqj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828230/shiplife/buenos-aires/vekos56olytx2vjufoqa.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828231/shiplife/buenos-aires/pqegunhzhekrdy8chsjp.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828233/shiplife/buenos-aires/bszlfdfy76thy3mrffqb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828234/shiplife/buenos-aires/d3grjrqdgavlw256mfog.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828236/shiplife/buenos-aires/oc3c4z2xld5hsomlrs2h.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828238/shiplife/buenos-aires/b83ym5ev0wyzgqgii70t.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828239/shiplife/buenos-aires/wqbd3vku0d0j5u0ke1dj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828241/shiplife/buenos-aires/ytgpn8uckdahvt4d1ifb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" }
+        { src: "shiplife/buenos-aires/buenos-aires-hero", caption: "Buenos Aires - walking the wide boulevards.", alt: "Buenos Aires" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-01", caption: "Exploring the city on foot.", alt: "Walking Buenos Aires" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-02", caption: "European architecture, South American soul.", alt: "Architecture" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-03", caption: "Hunting for wifi and coffee.", alt: "Street scene" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-04", caption: "The Paris of the South.", alt: "Buenos Aires street" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-01", caption: "Downtown bustle.", alt: "Downtown" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-02", caption: "City life in motion.", alt: "City life" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-03", caption: "Finding our way.", alt: "Street exploration" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-04", caption: "Another day, another city.", alt: "Buenos Aires" }
+    ],
+
+    // CASTRO (6 images)
+    "castro": [
+        { src: "shiplife/castro/castro-hero", caption: "Castro, capital of Chiloé Island.", alt: "Castro" },
+        { src: "shiplife/castro/castro-sail-01", caption: "Approaching Chiloé Island.", alt: "Sail in" },
+        { src: "shiplife/castro/castro-sail-02", caption: "Patagonian waters.", alt: "Sail in" },
+        { src: "shiplife/castro/castro-sail-03", caption: "UNESCO wooden churches dot the island.", alt: "Churches" },
+        { src: "shiplife/castro/castro-sail-04", caption: "The colors of Castro.", alt: "Palafitos" },
+        { src: "shiplife/castro/castro-sail-05", caption: "Where the mainland ends.", alt: "Castro" }
     ],
 
     // BUZIOS (9 images)
@@ -9462,7 +9471,7 @@ an original composition inspired by this place.
             </div>
         `
     },
-                {
+    {
         id: 122,
         title: "Castro, Chile",
         coords: [-42.48, -73.76],
@@ -9470,10 +9479,54 @@ an original composition inspired by this place.
         icon: "⛪",
         isDoor: false,
         shortDesc: "Colorful stilted houses and wooden churches.",
+        useRichContent: true,
+        richContent: `
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero" class="story-image" alt="Castro, Chiloé Island">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">⛪</span>
+                    <span class="demo-value">Wooden Churches</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏠</span>
+                    <span class="demo-value">Palafitos</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏔️</span>
+                    <span class="demo-value">Patagonia</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇨🇱</span>
+                    <span class="demo-value">Chiloé Island</span>
+                </div>
+            </div>
+
+            <h3>The Sail In</h3>
+            <p>Some places you remember for the adventures that unfolded. Others, simply for the beauty of arriving. Castro was one of those sail-ins that stays with you - the mist lifting off Chiloé Island, revealing the colorful palafitos perched on stilts along the water's edge.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-01" class="inline-image" data-caption="Approaching Chiloé Island." alt="Sail in">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-02" class="inline-image" data-caption="Patagonian waters." alt="Sail in">
+            </div>
+
+            <p>Not every port leaves a trail of wild stories. Sometimes what you remember is the light, the stillness, the way a place looked before you even set foot on shore.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-03" class="inline-image" data-caption="UNESCO wooden churches dot the island." alt="Churches">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-04" class="inline-image" data-caption="The colors of Castro." alt="Palafitos">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-05" class="story-image" data-caption="Chiloé - where the mainland ends and something else begins." alt="Castro">
+
+            ${generateGallery('castro')}
+        `,
         fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799840/IMG_6655_rwwdum.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero"
     },
-            {
+    {
         id: 107,
         title: "Buenos Aires, Argentina",
         coords: [-34.60, -58.38],
@@ -9484,14 +9537,61 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="story-section-panel">
-                <p>Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.</p>
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/buenos-aires/buenos-aires-hero" class="story-image" alt="Buenos Aires">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">💃</span>
+                    <span class="demo-value">Tango</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🥩</span>
+                    <span class="demo-value">Steak</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">☕</span>
+                    <span class="demo-value">Café Culture</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">European Architecture</span>
+                </div>
+            </div>
+
+            <h3>Walking</h3>
+            <p>Another city where we would just walk and walk. Sometimes alone, sometimes three or four of us would venture out together, scouring the city for wifi, coffee, and some food. The essentials.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-01" class="inline-image" data-caption="Exploring the city on foot." alt="Walking">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-02" class="inline-image" data-caption="European architecture, South American soul." alt="Architecture">
+            </div>
+
+            <p>Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and more soul.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-03" class="inline-image" data-caption="Hunting for wifi and coffee." alt="Street scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-04" class="inline-image" data-caption="The Paris of the South." alt="Boulevard">
+            </div>
+
+            <h3>Downtown</h3>
+            <p>The bustle of downtown. People rushing, traffic flowing, life happening in every direction. We were just passing through, ghosts with cameras, collecting moments before heading back to the ship.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-01" class="inline-image" data-caption="Downtown bustle." alt="Downtown">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-02" class="inline-image" data-caption="City life in motion." alt="City life">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-03" class="inline-image" data-caption="Finding our way." alt="Street">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-04" class="inline-image" data-caption="Another day, another city." alt="Buenos Aires">
             </div>
 
             ${generateGallery('buenosAires')}
         `,
         fullDesc: "Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769806999/IMG_6420_qzn455.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/buenos-aires/buenos-aires-hero"
     },
         {
         id: 109,
@@ -14193,20 +14293,29 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Check if a location has a complete story panel (2+ sections, 5+ inline images)
+    // Check if a location has a complete story panel (1+ sections, 4+ images)
     function isCompletePanel(loc) {
         if (!loc.richContent) return false;
-        const sections = (loc.richContent.match(/story-section-panel/g) || []).length;
+        // Count <h3 sections (matches both <h3> and <h3 class="...">)
+        const h3Sections = (loc.richContent.match(/<h3[\s>]/g) || []).length;
         const storyImages = (loc.richContent.match(/story-image/g) || []).length;
         const inlineImages = (loc.richContent.match(/inline-image/g) || []).length;
-        return sections >= 2 && (storyImages + inlineImages) >= 5;
+        return h3Sections >= 1 && (storyImages + inlineImages) >= 4;
     }
 
-    // Doors first, then complete story panels, then others
+    // Check if a location is a song panel
+    function isSongPanel(loc) {
+        if (!loc.richContent) return false;
+        return loc.richContent.includes('song-panel');
+    }
+
+    // Doors first, then complete story panels, then others (not songs), then songs at bottom
     const doors = locations.filter(l => l.isDoor);
-    const completePanels = locations.filter(l => !l.isDoor && isCompletePanel(l))
+    const completePanels = locations.filter(l => !l.isDoor && isCompletePanel(l) && !isSongPanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
-    const others = locations.filter(l => !l.isDoor && !isCompletePanel(l))
+    const incomplete = locations.filter(l => !l.isDoor && !isCompletePanel(l) && !isSongPanel(l))
+        .sort((a, b) => a.title.localeCompare(b.title));
+    const songPanels = locations.filter(l => !l.isDoor && isSongPanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
 
     // Helper to create a location item
@@ -14287,10 +14396,16 @@ function buildLocationList() {
         completePanels.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
 
-    // Add other locations with divider
-    if (others.length > 0) {
-        list.appendChild(createDivider(`More Locations (${others.length})`));
-        others.forEach(loc => list.appendChild(createLocationItem(loc)));
+    // Add incomplete locations with divider
+    if (incomplete.length > 0) {
+        list.appendChild(createDivider(`More Locations (${incomplete.length})`));
+        incomplete.forEach(loc => list.appendChild(createLocationItem(loc)));
+    }
+
+    // Add song panels at the bottom
+    if (songPanels.length > 0) {
+        list.appendChild(createDivider(`Songs (${songPanels.length})`));
+        songPanels.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
     
     // Update locations count in panel hint

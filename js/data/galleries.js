@@ -251,18 +251,27 @@ const locationGalleries = {
         { src: "v1770827968/shiplife/brisbane/tnb45yy4lnewyl5qncbf.jpg", caption: "George V Hotel, Brisbane", alt: "George V Hotel" }
     ],
 
-    // BUENOSAIRES (10 images)
+    // BUENOS AIRES (9 images)
     "buenosAires": [
-        { src: "v1770828227/shiplife/buenos-aires/kkiz4s1ngew0a6sgbl8d.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828228/shiplife/buenos-aires/wtmvciwlqrzoals1twqj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828230/shiplife/buenos-aires/vekos56olytx2vjufoqa.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828231/shiplife/buenos-aires/pqegunhzhekrdy8chsjp.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828233/shiplife/buenos-aires/bszlfdfy76thy3mrffqb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828234/shiplife/buenos-aires/d3grjrqdgavlw256mfog.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828236/shiplife/buenos-aires/oc3c4z2xld5hsomlrs2h.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828238/shiplife/buenos-aires/b83ym5ev0wyzgqgii70t.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828239/shiplife/buenos-aires/wqbd3vku0d0j5u0ke1dj.jpg", caption: "Buenos Aires", alt: "Buenos Aires" },
-        { src: "v1770828241/shiplife/buenos-aires/ytgpn8uckdahvt4d1ifb.jpg", caption: "Buenos Aires", alt: "Buenos Aires" }
+        { src: "shiplife/buenos-aires/buenos-aires-hero", caption: "Buenos Aires - walking the wide boulevards.", alt: "Buenos Aires" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-01", caption: "Exploring the city on foot.", alt: "Walking Buenos Aires" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-02", caption: "European architecture, South American soul.", alt: "Architecture" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-03", caption: "Hunting for wifi and coffee.", alt: "Street scene" },
+        { src: "shiplife/buenos-aires/buenos-aires-walk-04", caption: "The Paris of the South.", alt: "Buenos Aires street" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-01", caption: "Downtown bustle.", alt: "Downtown" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-02", caption: "City life in motion.", alt: "City life" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-03", caption: "Finding our way.", alt: "Street exploration" },
+        { src: "shiplife/buenos-aires/buenos-aires-downtown-04", caption: "Another day, another city.", alt: "Buenos Aires" }
+    ],
+
+    // CASTRO (6 images)
+    "castro": [
+        { src: "shiplife/castro/castro-hero", caption: "Castro, capital of Chiloé Island.", alt: "Castro" },
+        { src: "shiplife/castro/castro-sail-01", caption: "Approaching Chiloé Island.", alt: "Sail in" },
+        { src: "shiplife/castro/castro-sail-02", caption: "Patagonian waters.", alt: "Sail in" },
+        { src: "shiplife/castro/castro-sail-03", caption: "UNESCO wooden churches dot the island.", alt: "Churches" },
+        { src: "shiplife/castro/castro-sail-04", caption: "The colors of Castro.", alt: "Palafitos" },
+        { src: "shiplife/castro/castro-sail-05", caption: "Where the mainland ends.", alt: "Castro" }
     ],
 
     // BUZIOS (9 images)

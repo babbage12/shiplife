@@ -7,20 +7,29 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Check if a location has a complete story panel (2+ sections, 5+ inline images)
+    // Check if a location has a complete story panel (1+ sections, 4+ images)
     function isCompletePanel(loc) {
         if (!loc.richContent) return false;
-        const sections = (loc.richContent.match(/story-section-panel/g) || []).length;
+        // Count <h3 sections (matches both <h3> and <h3 class="...">)
+        const h3Sections = (loc.richContent.match(/<h3[\s>]/g) || []).length;
         const storyImages = (loc.richContent.match(/story-image/g) || []).length;
         const inlineImages = (loc.richContent.match(/inline-image/g) || []).length;
-        return sections >= 2 && (storyImages + inlineImages) >= 5;
+        return h3Sections >= 1 && (storyImages + inlineImages) >= 4;
     }
 
-    // Doors first, then complete story panels, then others
+    // Check if a location is a song panel
+    function isSongPanel(loc) {
+        if (!loc.richContent) return false;
+        return loc.richContent.includes('song-panel');
+    }
+
+    // Doors first, then complete story panels, then others (not songs), then songs at bottom
     const doors = locations.filter(l => l.isDoor);
-    const completePanels = locations.filter(l => !l.isDoor && isCompletePanel(l))
+    const completePanels = locations.filter(l => !l.isDoor && isCompletePanel(l) && !isSongPanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
-    const others = locations.filter(l => !l.isDoor && !isCompletePanel(l))
+    const incomplete = locations.filter(l => !l.isDoor && !isCompletePanel(l) && !isSongPanel(l))
+        .sort((a, b) => a.title.localeCompare(b.title));
+    const songPanels = locations.filter(l => !l.isDoor && isSongPanel(l))
         .sort((a, b) => a.title.localeCompare(b.title));
 
     // Helper to create a location item
@@ -101,10 +110,16 @@ function buildLocationList() {
         completePanels.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
 
-    // Add other locations with divider
-    if (others.length > 0) {
-        list.appendChild(createDivider(`More Locations (${others.length})`));
-        others.forEach(loc => list.appendChild(createLocationItem(loc)));
+    // Add incomplete locations with divider
+    if (incomplete.length > 0) {
+        list.appendChild(createDivider(`More Locations (${incomplete.length})`));
+        incomplete.forEach(loc => list.appendChild(createLocationItem(loc)));
+    }
+
+    // Add song panels at the bottom
+    if (songPanels.length > 0) {
+        list.appendChild(createDivider(`Songs (${songPanels.length})`));
+        songPanels.forEach(loc => list.appendChild(createLocationItem(loc)));
     }
     
     // Update locations count in panel hint

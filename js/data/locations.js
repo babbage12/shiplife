@@ -7227,7 +7227,7 @@ an original composition inspired by this place.
             </div>
         `
     },
-                {
+    {
         id: 122,
         title: "Castro, Chile",
         coords: [-42.48, -73.76],
@@ -7235,10 +7235,54 @@ an original composition inspired by this place.
         icon: "⛪",
         isDoor: false,
         shortDesc: "Colorful stilted houses and wooden churches.",
+        useRichContent: true,
+        richContent: `
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero" class="story-image" alt="Castro, Chiloé Island">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">⛪</span>
+                    <span class="demo-value">Wooden Churches</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏠</span>
+                    <span class="demo-value">Palafitos</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏔️</span>
+                    <span class="demo-value">Patagonia</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇨🇱</span>
+                    <span class="demo-value">Chiloé Island</span>
+                </div>
+            </div>
+
+            <h3>The Sail In</h3>
+            <p>Some places you remember for the adventures that unfolded. Others, simply for the beauty of arriving. Castro was one of those sail-ins that stays with you - the mist lifting off Chiloé Island, revealing the colorful palafitos perched on stilts along the water's edge.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-01" class="inline-image" data-caption="Approaching Chiloé Island." alt="Sail in">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-02" class="inline-image" data-caption="Patagonian waters." alt="Sail in">
+            </div>
+
+            <p>Not every port leaves a trail of wild stories. Sometimes what you remember is the light, the stillness, the way a place looked before you even set foot on shore.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-03" class="inline-image" data-caption="UNESCO wooden churches dot the island." alt="Churches">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-04" class="inline-image" data-caption="The colors of Castro." alt="Palafitos">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-05" class="story-image" data-caption="Chiloé - where the mainland ends and something else begins." alt="Castro">
+
+            ${generateGallery('castro')}
+        `,
         fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769799840/IMG_6655_rwwdum.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero"
     },
-            {
+    {
         id: 107,
         title: "Buenos Aires, Argentina",
         coords: [-34.60, -58.38],
@@ -7249,14 +7293,61 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="story-section-panel">
-                <p>Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.</p>
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/buenos-aires/buenos-aires-hero" class="story-image" alt="Buenos Aires">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">💃</span>
+                    <span class="demo-value">Tango</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🥩</span>
+                    <span class="demo-value">Steak</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">☕</span>
+                    <span class="demo-value">Café Culture</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">European Architecture</span>
+                </div>
+            </div>
+
+            <h3>Walking</h3>
+            <p>Another city where we would just walk and walk. Sometimes alone, sometimes three or four of us would venture out together, scouring the city for wifi, coffee, and some food. The essentials.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-01" class="inline-image" data-caption="Exploring the city on foot." alt="Walking">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-02" class="inline-image" data-caption="European architecture, South American soul." alt="Architecture">
+            </div>
+
+            <p>Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and more soul.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-03" class="inline-image" data-caption="Hunting for wifi and coffee." alt="Street scene">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-walk-04" class="inline-image" data-caption="The Paris of the South." alt="Boulevard">
+            </div>
+
+            <h3>Downtown</h3>
+            <p>The bustle of downtown. People rushing, traffic flowing, life happening in every direction. We were just passing through, ghosts with cameras, collecting moments before heading back to the ship.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-01" class="inline-image" data-caption="Downtown bustle." alt="Downtown">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-02" class="inline-image" data-caption="City life in motion." alt="City life">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-03" class="inline-image" data-caption="Finding our way." alt="Street">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/buenos-aires/buenos-aires-downtown-04" class="inline-image" data-caption="Another day, another city." alt="Buenos Aires">
             </div>
 
             ${generateGallery('buenosAires')}
         `,
         fullDesc: "Buenos Aires is where Europe came to South America and never quite left. The wide boulevards, the ornate architecture, the cafes where people sit for hours - it all feels like Paris, but with better steak and tango.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769806999/IMG_6420_qzn455.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/buenos-aires/buenos-aires-hero"
     },
         {
         id: 109,
