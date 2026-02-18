@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-17T22:06:30.677Z
+// Shiplife Bundle - Generated 2026-02-18T02:20:47.475Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1197,10 +1197,30 @@ const locationGalleries = {
         { src: "shiplife/odessa/cafe_scene.jpg", caption: "Watching the world go by. This was before the war.", alt: "Odessa café" }
     ],
 
-    // PARGA (2 images)
+    // PARGA (22 images)
     "parga": [
-        { src: "shiplife/parga/colorful_waterfront.jpg", caption: "Parga tumbles to the harbor in pastel houses - pink, yellow, orange.", alt: "Parga colorful waterfront" },
-        { src: "shiplife/parga/fortress_hill.jpg", caption: "The Venetian castle watches from the headland.", alt: "Parga fortress" }
+        { src: "shiplife/parga/parga-fortress-hill", caption: "The Venetian fortress watches over the harbor.", alt: "Parga fortress" },
+        { src: "shiplife/parga/parga-scene-01", caption: "Approaching Parga from the sea.", alt: "Parga view" },
+        { src: "shiplife/parga/parga-scene-03", caption: "The town cascades down to the water.", alt: "Parga town" },
+        { src: "shiplife/parga/parga-scene-06", caption: "Pastel houses climb the hillside.", alt: "Parga houses" },
+        { src: "shiplife/parga/parga-scene-07", caption: "The Ionian coast at its most picturesque.", alt: "Parga coast" },
+        { src: "shiplife/parga/parga-scene-11", caption: "Where the mountains meet the sea.", alt: "Parga landscape" },
+        { src: "shiplife/parga/parga-scene-13", caption: "Hidden coves and turquoise water.", alt: "Parga cove" },
+        { src: "shiplife/parga/parga-scene-14", caption: "Greece's best-kept secret.", alt: "Parga scenery" },
+        { src: "shiplife/parga/parga-fortress-cannon", caption: "Cannons still guard the old fortress.", alt: "Parga fortress cannon" },
+        { src: "shiplife/parga/parga-scene-17", caption: "Views from the fortress walls.", alt: "Parga fortress view" },
+        { src: "shiplife/parga/parga-fortress-entrance", caption: "The overgrown fortress entrance - nature reclaiming history.", alt: "Parga fortress entrance" },
+        { src: "shiplife/parga/parga-scene-21", caption: "Stone walls and Mediterranean pines.", alt: "Parga fortress" },
+        { src: "shiplife/parga/parga-scene-22", caption: "Exploring the ancient ruins.", alt: "Parga ruins" },
+        { src: "shiplife/parga/parga-scene-26", caption: "The bay stretches toward the horizon.", alt: "Parga bay" },
+        { src: "shiplife/parga/parga-scene-27", caption: "Turquoise waters below the cliffs.", alt: "Parga water" },
+        { src: "shiplife/parga/parga-beach-umbrellas", caption: "Beach day on the Ionian coast - colorful umbrellas line the sand.", alt: "Parga beach" },
+        { src: "shiplife/parga/parga-scene-30", caption: "The beaches here rival any Greek island.", alt: "Parga beach view" },
+        { src: "shiplife/parga/parga-scene-31", caption: "Crystal clear Ionian waters.", alt: "Parga water" },
+        { src: "shiplife/parga/parga-scene-34", caption: "Another perfect Greek afternoon.", alt: "Parga afternoon" },
+        { src: "shiplife/parga/parga-phone-03", caption: "The view that makes you forget everything else.", alt: "Parga panorama" },
+        { src: "shiplife/parga/parga-pano-fortress", caption: "Inside the Venetian fortress - 360 degrees of history.", alt: "Parga fortress panorama" },
+        { src: "shiplife/parga/parga-pano-04", caption: "Panorama from the fortress heights.", alt: "Parga panorama" }
     ],
 
     // NEWCALEDONIA (7 images)
@@ -2095,6 +2115,16 @@ const locationGalleries = {
     "barharbor": [
         { src: "shiplife/barharbor/gpau0huzopooqciu5wwf.jpg", caption: "Wire moose sculpture on a rooftop - quintessential New England quirk.", alt: "Bar Harbor main street with moose" },
         { src: "shiplife/barharbor/o5ian16uvryxwzuyplre.jpg", caption: "Town pier and waterfront park - fall colors on Frenchman Bay.", alt: "Bar Harbor waterfront" }
+    ],
+
+    // MUSCAT, OMAN (6 images)
+    "muscat": [
+        { src: "shiplife/muscat/muscat-boulevard-palms", caption: "Palm-lined boulevards with the Hajar Mountains rising behind.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-fort-boulevard", caption: "Portuguese forts still guard the harbor - 500 years of history.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-scene-06", caption: "The capital that time forgot to ruin.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-03", caption: "The souk smells of frankincense and possibility.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-05", caption: "Lost in the labyrinth of shops.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-treasures", caption: "Silver chests, copper trays, khanjars - the artisan tradition lives on.", alt: "Muscat Oman" }
     ]
 };
 
@@ -7957,9 +7987,11 @@ an original composition inspired by this place.
                     🎵 Audio player will appear when song is released
                 </p>
             </div>
-        </div>`,
+        </div>
+
+        ${generateGallery('muscat', 'Photos from Muscat')}`,
         fullDesc: "Muscat is what you hope the Middle East will be.\n\nThe Sultan Qaboos Grand Mosque is breathtaking. The old souks smell of frankincense. The mountains plunge to the sea. Oman has oil wealth but wears it lightly-this is Arabia without the excess.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524848/IMG_3858_nczhzc.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/muscat/muscat-fortress-portrait"
     },
     {
         id: 67,
@@ -8197,14 +8229,159 @@ an original composition inspired by this place.
         shortDesc: "A colorful village on the Ionian coast.",
         useRichContent: true,
         richContent: `
-            <p>Parga tumbles down to its harbor in a cascade of pastel houses - pink, yellow, orange, ochre.</p>
-            <p>The Venetian castle watches over it all from the headland. The beaches nearby are some of Greece's best-kept secrets. Tour groups head to Corfu; those who know come here instead.</p>
-            <p>It feels like the Greek islands, but it's on the mainland - the Ionian coast at its most picturesque.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏰</span>
+                    <span class="demo-value">Venetian Fortress</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏖️</span>
+                    <span class="demo-value">Ionian Coast</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📅</span>
+                    <span class="demo-value">11th Century</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇬🇷</span>
+                    <span class="demo-value">Epirus Region</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Arriving</span>
+                <h3 class="section-title-panel">The Hidden Riviera</h3>
+                <p>Parga tumbles down to its harbor in a cascade of pastel houses - pink, yellow, orange, ochre. Tour groups head to Corfu; those who know come here instead.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-01" alt="Parga from the sea" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Approaching Parga from the sea - the pastel village rises from the harbor.</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Through the Streets</h3>
+                <p>Stepping off the tender, I wandered into the maze of narrow streets. Every corner revealed another postcard view.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-06" alt="Parga street" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Narrow streets draped in bougainvillea - the heart of old Parga.</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Climb</span>
+                <h3 class="section-title-panel">Up to the Fortress</h3>
+                <p>The path to the Kastro winds upward through the town, each turn revealing better views of the harbor below.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-07" alt="Harbor overlook" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Looking back at the harbor - palm trees frame the view as the path climbs higher.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-03" alt="Fortress headland" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>The fortress headland comes into view - Venetian walls perched above the sea.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-11" alt="Fortress from below" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>The Kastro looms above - almost there now.</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Entering the Kastro</span>
+                <h3 class="section-title-panel">At Your Own Risk</h3>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-19" alt="Kastro entrance sign" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>"Visitors may visit the Citadel at their own liability" - fair warning.</figcaption>
+                </figure>
+                <p>The sign says it all. This isn't a manicured tourist attraction - it's a fortress slowly being reclaimed by nature.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-14" alt="Fortress gate" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Through the iron gate - a stone tunnel leads into the fortress.</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Inside the Walls</span>
+                <h3 class="section-title-panel">Exploring the Ruins</h3>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-17" alt="Cobblestone path" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Ancient cobblestones lead deeper into the fortress.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-21" alt="Stone tunnel" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Stone tunnels wind through the old fortifications.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-fortress-entrance" alt="Overgrown entrance" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Nature slowly reclaims the old walls - ferns and vines fill the archways.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-fortress-cannon" alt="Cannon courtyard" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>The fortress courtyard - cannons still point out to sea.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-13" alt="Cannon through opening" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>A cannon peers through a fortress opening - still guarding the harbor after centuries.</figcaption>
+                </figure>
+            </div>
+
+            <div class="more-info-toggle collapsed" onclick="this.classList.toggle('collapsed')">
+                <span class="toggle-icon">▼</span>
+                <span class="toggle-text">The Fortress: A History of Defiance</span>
+            </div>
+            <div class="more-info-content">
+                <p><strong>Norman Origins (11th Century):</strong> The fortress was first built by the Normans around 1100 AD, part of their expansion into Byzantine territories. Its position - a rocky promontory with sheer cliffs on three sides - made it nearly impregnable.</p>
+
+                <p><strong>Venetian Era (1401-1797):</strong> Venice took control in 1401 and transformed the fortress into a major stronghold. For nearly 400 years, Parga was a Venetian outpost on the edge of Ottoman territory - a Christian bastion surrounded by the Sultan's lands. The Venetians expanded the walls, added bastions, and made it one of the most formidable fortresses on the Ionian coast.</p>
+
+                <p><strong>The Great Betrayal (1819):</strong> When Venice fell to Napoleon in 1797, Parga passed through French and then British hands. In 1819, Britain made a decision that would haunt the town forever: they sold Parga to Ali Pasha of Ioannina, the Ottoman ruler of Epirus.</p>
+
+                <p>The people of Parga refused to live under Ottoman rule. In one of the most dramatic moments in Greek history, the entire population - around 4,000 people - chose exodus over submission. Before leaving, they exhumed the bones of their ancestors from the cemeteries, burned them in the main square, and carried the ashes with them to Corfu. They would not leave their dead to be desecrated.</p>
+
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-pano-fortress" alt="Fortress panorama" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Inside the fortress walls - these stones witnessed the exodus of 1819.</figcaption>
+                </figure>
+
+                <p><strong>Return to Greece (1913):</strong> Parga was finally united with Greece after the Balkan Wars. Today, the fortress stands as a monument to the town's fierce independence - overgrown but unbowed, its walls still watching over the harbor below.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Views</span>
+                <h3 class="section-title-panel">From the Heights</h3>
+                <p>The climb is worth it. From the top of the fortress, the entire bay unfolds below.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-34" alt="Panoramic bay" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Where the mountains meet the sea - the Ionian stretches to the horizon.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-31" alt="Town rooftops" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Looking down at the terracotta rooftops of Parga.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-26" alt="View from fortress top" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Looking down from the fortress walls toward the beach.</figcaption>
+                </figure>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-scene-27" alt="View toward beach" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>The same view - fortress ruins framing the bay below.</figcaption>
+                </figure>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">Back Down Below</h3>
+                <p>After the fortress, the beach called. The waters around Parga are some of the clearest in Greece.</p>
+                <figure class="inline-image">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/parga/parga-beach-umbrellas" alt="Beach umbrellas" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+                    <figcaption>Colorful umbrellas line the beach - the perfect end to the day.</figcaption>
+                </figure>
+            </div>
 
             ${generateGallery('parga')}
         `,
         fullDesc: "Parga tumbles down to its harbor in a cascade of pastel houses. The Venetian castle watches from the headland. Tour groups head to Corfu; those who know come here instead.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/parga/colorful_waterfront.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/parga/parga-phone-01"
     },
     {
         id: 75,

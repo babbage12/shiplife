@@ -934,10 +934,30 @@ const locationGalleries = {
         { src: "shiplife/odessa/cafe_scene.jpg", caption: "Watching the world go by. This was before the war.", alt: "Odessa café" }
     ],
 
-    // PARGA (2 images)
+    // PARGA (22 images)
     "parga": [
-        { src: "shiplife/parga/colorful_waterfront.jpg", caption: "Parga tumbles to the harbor in pastel houses - pink, yellow, orange.", alt: "Parga colorful waterfront" },
-        { src: "shiplife/parga/fortress_hill.jpg", caption: "The Venetian castle watches from the headland.", alt: "Parga fortress" }
+        { src: "shiplife/parga/parga-fortress-hill", caption: "The Venetian fortress watches over the harbor.", alt: "Parga fortress" },
+        { src: "shiplife/parga/parga-scene-01", caption: "Approaching Parga from the sea.", alt: "Parga view" },
+        { src: "shiplife/parga/parga-scene-03", caption: "The town cascades down to the water.", alt: "Parga town" },
+        { src: "shiplife/parga/parga-scene-06", caption: "Pastel houses climb the hillside.", alt: "Parga houses" },
+        { src: "shiplife/parga/parga-scene-07", caption: "The Ionian coast at its most picturesque.", alt: "Parga coast" },
+        { src: "shiplife/parga/parga-scene-11", caption: "Where the mountains meet the sea.", alt: "Parga landscape" },
+        { src: "shiplife/parga/parga-scene-13", caption: "Hidden coves and turquoise water.", alt: "Parga cove" },
+        { src: "shiplife/parga/parga-scene-14", caption: "Greece's best-kept secret.", alt: "Parga scenery" },
+        { src: "shiplife/parga/parga-fortress-cannon", caption: "Cannons still guard the old fortress.", alt: "Parga fortress cannon" },
+        { src: "shiplife/parga/parga-scene-17", caption: "Views from the fortress walls.", alt: "Parga fortress view" },
+        { src: "shiplife/parga/parga-fortress-entrance", caption: "The overgrown fortress entrance - nature reclaiming history.", alt: "Parga fortress entrance" },
+        { src: "shiplife/parga/parga-scene-21", caption: "Stone walls and Mediterranean pines.", alt: "Parga fortress" },
+        { src: "shiplife/parga/parga-scene-22", caption: "Exploring the ancient ruins.", alt: "Parga ruins" },
+        { src: "shiplife/parga/parga-scene-26", caption: "The bay stretches toward the horizon.", alt: "Parga bay" },
+        { src: "shiplife/parga/parga-scene-27", caption: "Turquoise waters below the cliffs.", alt: "Parga water" },
+        { src: "shiplife/parga/parga-beach-umbrellas", caption: "Beach day on the Ionian coast - colorful umbrellas line the sand.", alt: "Parga beach" },
+        { src: "shiplife/parga/parga-scene-30", caption: "The beaches here rival any Greek island.", alt: "Parga beach view" },
+        { src: "shiplife/parga/parga-scene-31", caption: "Crystal clear Ionian waters.", alt: "Parga water" },
+        { src: "shiplife/parga/parga-scene-34", caption: "Another perfect Greek afternoon.", alt: "Parga afternoon" },
+        { src: "shiplife/parga/parga-phone-03", caption: "The view that makes you forget everything else.", alt: "Parga panorama" },
+        { src: "shiplife/parga/parga-pano-fortress", caption: "Inside the Venetian fortress - 360 degrees of history.", alt: "Parga fortress panorama" },
+        { src: "shiplife/parga/parga-pano-04", caption: "Panorama from the fortress heights.", alt: "Parga panorama" }
     ],
 
     // NEWCALEDONIA (7 images)
@@ -1832,6 +1852,16 @@ const locationGalleries = {
     "barharbor": [
         { src: "shiplife/barharbor/gpau0huzopooqciu5wwf.jpg", caption: "Wire moose sculpture on a rooftop - quintessential New England quirk.", alt: "Bar Harbor main street with moose" },
         { src: "shiplife/barharbor/o5ian16uvryxwzuyplre.jpg", caption: "Town pier and waterfront park - fall colors on Frenchman Bay.", alt: "Bar Harbor waterfront" }
+    ],
+
+    // MUSCAT, OMAN (6 images)
+    "muscat": [
+        { src: "shiplife/muscat/muscat-boulevard-palms", caption: "Palm-lined boulevards with the Hajar Mountains rising behind.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-fort-boulevard", caption: "Portuguese forts still guard the harbor - 500 years of history.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-scene-06", caption: "The capital that time forgot to ruin.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-03", caption: "The souk smells of frankincense and possibility.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-05", caption: "Lost in the labyrinth of shops.", alt: "Muscat Oman" },
+        { src: "shiplife/muscat/muscat-souk-treasures", caption: "Silver chests, copper trays, khanjars - the artisan tradition lives on.", alt: "Muscat Oman" }
     ]
 };
 
