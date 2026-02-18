@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odessa Image Selector</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 { color: #ffd700; margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 20px; }
+        .instructions {
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .image-card {
+            background: #2a2a4e;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 3px solid transparent;
+        }
+        .image-card:hover {
+            transform: scale(1.02);
+        }
+        .image-card.selected {
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .image-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .image-info {
+            padding: 10px;
+        }
+        .image-name {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .image-index {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .selected-count {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .output {
+            margin-top: 30px;
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .output h3 { color: #ffd700; margin-top: 0; }
+        .output pre {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.85em;
+        }
+        .section-divider {
+            margin: 30px 0;
+            padding: 15px;
+            background: #3a3a5e;
+            border-radius: 8px;
+        }
+        .section-divider h2 {
+            color: #ffd700;
+            margin: 0 0 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Odessa, Ukraine - Image Selector</h1>
+    <p class="subtitle">June 2013 - 16 images from BBCSO drive</p>
+
+    <div class="instructions">
+        <strong>Instructions:</strong> Click images to select them for upload. Selected images will have a gold border.
+        The current panel has 3 images already. These are your additional options.
+    </div>
+
+    <div class="section-divider">
+        <h2>BBCSO Drive Images</h2>
+        <p>Click to select for the panel</p>
+    </div>
+
+    <div class="grid" id="imageGrid"></div>
+
+    <div class="selected-count" id="selectedCount">0 selected</div>
+
+    <div class="output">
+        <h3>Selected Images</h3>
+        <pre id="selectedList">Click images to select them...</pre>
+    </div>
+
+    <script>
+        const images = [
+            { file: "IMG_3300.JPG", index: 1 },
+            { file: "IMG_3301.JPG", index: 2 },
+            { file: "IMG_3302.JPG", index: 3 },
+            { file: "IMG_3304.JPG", index: 4 },
+            { file: "IMG_3305.JPG", index: 5 },
+            { file: "IMG_3306.JPG", index: 6 },
+            { file: "IMG_3307.JPG", index: 7 },
+            { file: "IMG_3319.JPG", index: 8 },
+            { file: "IMG_3320.JPG", index: 9 },
+            { file: "IMG_3321.JPG", index: 10 },
+            { file: "IMG_3322.JPG", index: 11 },
+            { file: "IMG_3323.JPG", index: 12 },
+            { file: "IMG_3324.JPG", index: 13 },
+            { file: "IMG_3325.JPG", index: 14 },
+            { file: "IMG_3327.JPG", index: 15 },
+            { file: "IMG_3327.jpeg", index: 16, note: "(duplicate?)" }
+        ];
+
+        const selected = new Set();
+        const grid = document.getElementById('imageGrid');
+        const countEl = document.getElementById('selectedCount');
+        const listEl = document.getElementById('selectedList');
+
+        images.forEach(img => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            card.innerHTML = `
+                <img src="file:///Volumes/BBCSO/Odessa, Ukraine/${img.file}" alt="${img.file}">
+                <div class="image-info">
+                    <div class="image-name">${img.file} ${img.note || ''}</div>
+                    <div class="image-index">#${img.index}</div>
+                </div>
+            `;
+            card.addEventListener('click', () => {
+                if (selected.has(img.file)) {
+                    selected.delete(img.file);
+                    card.classList.remove('selected');
+                } else {
+                    selected.add(img.file);
+                    card.classList.add('selected');
+                }
+                updateOutput();
+            });
+            grid.appendChild(card);
+        });
+
+        function updateOutput() {
+            countEl.textContent = `${selected.size} selected`;
+            if (selected.size === 0) {
+                listEl.textContent = 'Click images to select them...';
+            } else {
+                const arr = Array.from(selected);
+                listEl.textContent = arr.join('\n');
+            }
+        }
+    </script>
+</body>
+</html>

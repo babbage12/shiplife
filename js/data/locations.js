@@ -6821,31 +6821,158 @@ an original composition inspired by this place.
         id: 87,
         title: "Itea, Greece",
         coords: [38.43, 22.42],
-        tag: "Gateway to Delphi",
+        tag: "Where It All Began",
         icon: "🏛️",
         isDoor: false,
-        shortDesc: "The port for the Oracle's mountain.",
+        shortDesc: "Easter morning, smoke rising - the beginning of everything.",
         useRichContent: true,
         richContent: `
-            <p>We arrived at Itea in the mist - the kind of morning where the mountains seem to float above the water and the town emerges slowly from the haze. It felt appropriately mystical for the gateway to Delphi.</p>
-            <p>The port is small and quiet, a humble counterpoint to the ancient site in the mountains above. Greek churches with terracotta roofs dot the hillsides. The bay is glass-calm, reflecting the peaks of Parnassus.</p>
-            <p>Most passengers head straight up to the Oracle. But those first moments, watching the sun burn through the fog - that was its own kind of prophecy.</p>
+            <div class="demographics-strip">
+                <span>Gulf of Corinth</span>
+                <span>Gateway to Delphi</span>
+                <span>Orthodox Easter</span>
+                <span>May 2013</span>
+            </div>
+
+            <h3>I Thought the Island Was on Fire</h3>
+            <p>It was early - very early. We'd come a long way to get here. Auckland to Thailand, through Dubai, down the Suez Canal, and finally into the Mediterranean. Itea was our first stop in this new world. I'd bought a new camera in Dubai a week or two before, and I was eager to test it.</p>
+            <p>I was the first one on the observation deck that morning, as I was many mornings. Stepping out into the warm, moist air, I saw smoke rising from every hillside. My first thought: the island is on fire.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/itea/itea-deck-smoke-01" class="story-image" data-caption="First one on deck - smoke rising everywhere." alt="Deck view with smoke">
+
+            <h3>Easter Lamb</h3>
+            <p>A passenger quickly set me straight. It was Orthodox Easter, and the entire town was roasting lamb. Every family, every patio, every backyard - smoke drifting up into the morning sky. What I'd mistaken for disaster was celebration.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/itea/itea-town-smoke" class="story-image" data-caption="The whole town roasting lamb - smoke from every rooftop." alt="Town with Easter smoke">
+
+            <h3>Lemon Trees and Lamb</h3>
+            <p>Walking through town, the air was literally scented with lemon trees and roasting meat. Everyone was out on their patios - I never learned the Greek word for them - and several groups called out to me. Invitations to drink and dine and smile at each other, because I did not know their language. Again.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-01" class="inline-image" data-caption="Lamb on the spit - the source of all that smoke." alt="Lamb roasting">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-02" class="inline-image" data-caption="Invitations to drink and celebrate with the locals." alt="Drinking with locals">
+            </div>
+
+            <h3>The Churches</h3>
+            <p>Walking by the beautiful churches awakened me to what the rest of this contract really meant. Exploration of spaces, art, music, craftsmanship - the beauty of man's will to mold nature to his cause.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-03" class="inline-image" data-caption="Greek Orthodox churches on Easter morning." alt="Church">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-scene-01" class="inline-image" data-caption="Centuries of faith built into stone." alt="Church">
+            </div>
+
+            <h3>Taking a Little from Each Place</h3>
+            <p>It occurred to me several times during this first contract in the Med that I was missing so much more than my eyes could see. Maybe I would be better equipped to understand life if I took a little bit away from each location I visited.</p>
+            <p>Most of the time, I tried to take too much in at once. With only a spare sea day to recover from the events of the day before, I ended up exhausting myself by the end of those four months.</p>
+
+            <blockquote class="story-quote">Itea was really the beginning of a historical journey that would change how I see the world and myself in it.</blockquote>
+
+            <h3>The Memorials</h3>
+            <p>Even a small port town like Itea carries the weight of history. Two war memorials stand in the town center - one to the resistance fighters of 1941-1944, another to the Greek mothers who sent their sons to war. "Magnanimous Mother - in pain and in glory."</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-resistance-memorial" class="inline-image" data-caption="Memorial to the National Resistance, 1941-1944." alt="Resistance memorial">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-war-memorial" class="inline-image" data-caption="Magnanimous Mother - in pain and in glory." alt="War memorial">
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Itea</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏛️</span>
+                        <span>Gateway to Delphi</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Oracle:</strong> Itea is the port for Delphi, where the ancient Greeks consulted the Oracle for prophecy. The site is 15km up the mountain.</li>
+                        <li><strong>Mount Parnassus:</strong> The mountain rising above Itea was sacred to Apollo and the Muses - home of poetry and music in Greek mythology.</li>
+                        <li><strong>Orthodox Easter:</strong> Greek Easter often falls on a different date than Western Easter. The lamb roasting tradition (souvla) is central to the celebration.</li>
+                        <li><strong>Gulf of Corinth:</strong> The narrow gulf separates mainland Greece from the Peloponnese. The town has been a port since ancient times.</li>
+                    </ul>
+                </div>
+            </div>
 
             ${generateGallery('itea')}
         `,
-        fullDesc: "We arrived at Itea in the mist - mountains floating above the water, the town emerging slowly from the haze. Appropriately mystical for the gateway to Delphi and the Oracle.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/itea/misty_sunrise.jpg"
+        fullDesc: "Easter morning in Itea - I thought the island was on fire. Smoke rising from every hillside. A passenger explained: the whole town was roasting lamb. This was the beginning of everything.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/itea/itea-easter-morning-hero"
     },
-        {
+    {
         id: 89,
         title: "Semarang, Indonesia",
         coords: [-6.97, 110.42],
-        tag: "Central Java",
-        icon: "⚓",
+        tag: "Gateway to Borobudur",
+        icon: "🛕",
         isDoor: false,
-        shortDesc: "Gateway to Borobudur.",
-        fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world.\n\nWe took an excursion inland to see it. Nothing prepares you for the scale of the place. Thousands of intricate stone carvings, Buddha statues in bell-shaped stupas, all of it emerging from the jungle like something from another time.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg"
+        shortDesc: "The world's largest Buddhist temple rises from the jungle.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <span>Central Java</span>
+                <span>Built 9th Century</span>
+                <span>UNESCO Site</span>
+                <span>September 2011</span>
+            </div>
+
+            <h3>Emerging from the Jungle</h3>
+            <p>Semarang is just a port town. The real destination lies inland - Borobudur, the largest Buddhist temple in the world. Built in the 9th century, buried under volcanic ash for a thousand years, rediscovered in 1814. Nothing prepares you for the scale of it.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-01" class="story-image" data-caption="Ready to explore - conical hat borrowed from a vendor." alt="At the temple base">
+
+            <h3>A Stone Mountain of Stories</h3>
+            <p>The temple is essentially a stone textbook - 2,672 relief panels telling the story of Buddha's life and teachings. You're supposed to walk clockwise, reading the panels as you ascend. Each level represents a stage on the path to enlightenment.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-04" class="story-image" data-caption: "Relief panel detail - a thousand years old, still telling stories." alt="Relief panels">
+
+            <h3>The Corridors</h3>
+            <p>Walking the narrow corridors between the relief walls, you feel the weight of history. Pilgrims have walked these same paths for over a millennium. The carvings show daily life in 9th-century Java - ships, musicians, dancers, farmers. It's a window into a vanished world.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-03" class="story-image" data-caption="Walking the relief-lined corridors." alt="Temple corridors">
+
+            <h3>The Stupas</h3>
+            <p>At the top, the architecture changes. The relief panels give way to 72 bell-shaped stupas, each containing a Buddha statue visible through the diamond-shaped holes. Touch a Buddha through the opening for good luck - everyone does.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-05" class="inline-image" data-caption="Guide explaining the upper terraces." alt="Guide at stupas">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-06" class="inline-image" data-caption="Among the bell-shaped stupas." alt="At the stupas">
+            </div>
+
+            <h3>Looking Out Over Java</h3>
+            <p>From the upper levels, the view stretches across the Javanese plains to distant volcanoes. The temple was built here deliberately - aligned with the surrounding mountains in a sacred geography that the Sailendra dynasty understood twelve centuries ago.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-02" class="story-image" data-caption="Looking out over the Javanese plains." alt="View from temple">
+
+            <h3>Javanese Culture</h3>
+            <p>The excursion included a stop at a cultural center where gamelan musicians played while a dalang (puppeteer) manipulated wayang shadow puppets. The same stories depicted on Borobudur's walls are still performed today - a living thread connecting modern Java to its ancient past.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-07" class="story-image" data-caption="Gamelan orchestra with wayang puppets in the background." alt="Gamelan musicians">
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Borobudur</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🛕</span>
+                        <span>The World's Largest Buddhist Temple</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Construction:</strong> Built around 800 AD during the Sailendra dynasty, using an estimated 2 million stone blocks without mortar.</li>
+                        <li><strong>Lost and Found:</strong> Abandoned in the 14th century, buried by volcanic ash and jungle, rediscovered by Sir Stamford Raffles in 1814.</li>
+                        <li><strong>Relief Panels:</strong> 2,672 individual panels stretching 5 km if laid end-to-end - the largest collection of Buddhist reliefs in the world.</li>
+                        <li><strong>Buddha Statues:</strong> 504 Buddha statues, 72 of them seated inside the perforated stupas on the upper terraces.</li>
+                        <li><strong>Restoration:</strong> Major UNESCO restoration 1975-1982 dismantled and rebuilt the temple, adding drainage to prevent collapse.</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('semarang')}
+        `,
+        fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world. Built in the 9th century, buried under volcanic ash for a thousand years, rediscovered in 1814. Nothing prepares you for the scale.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/semarang/semarang-borobudur-hero"
     },
     {
         id: 92,

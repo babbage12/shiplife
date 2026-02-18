@@ -140,13 +140,43 @@ function animate() {
             }
         }
 
+        // Handle bridge animation (soft bump during location transitions)
+        if (isBridging) {
+            const elapsed = Date.now() - bridgeStartTime;
+            const progress = Math.min(elapsed / bridgeDuration, 1);
+
+            // Sine curve for smooth arc: rises to peak at midpoint, settles at end
+            // sin(0) = 0, sin(π/2) = 1, sin(π) = 0
+            const arcProgress = Math.sin(progress * Math.PI);
+
+            // Calculate camera position: start -> peak -> default
+            const peakZ = bridgeStartZ + bridgeBumpHeight;
+            const targetZ = defaultZoomDistance;
+
+            if (progress < 0.5) {
+                // Rising phase: from start toward peak
+                camera.position.z = bridgeStartZ + (peakZ - bridgeStartZ) * (arcProgress);
+            } else {
+                // Settling phase: from peak toward default
+                const settleProgress = (progress - 0.5) * 2; // 0 to 1 for second half
+                const easeOut = 1 - Math.pow(1 - settleProgress, 2);
+                camera.position.z = peakZ - (peakZ - targetZ) * easeOut;
+            }
+
+            if (progress >= 1) {
+                isBridging = false;
+                camera.position.z = defaultZoomDistance;
+            }
+        }
+
         // Normal interaction after intro
 
         // Only auto-rotate if:
         // - User is not dragging
         // - Panel is not open (user is not reading)
         // - Not transitioning
-        if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
+        // - Not bridging
+        if (!isUserInteracting && !panelIsOpen && !isTransitioning && !isBridging) {
             // Scale rotation speed based on zoom level - slower when zoomed in
             const maxZoom = 4.5;  // zoomed out
             const minZoom = 1.5;  // zoomed in close
@@ -172,7 +202,32 @@ function animate() {
             globe.rotation.y -= normalize;
             targetRotationY -= normalize;
         }
-        
+
+        // Check if rotation has settled after sidebar/icon navigation (no zoom transition)
+        // This handles the sequence: rotate → sky bounce → panel open
+        if (pendingLocation && !isTransitioning) {
+            const yDiff = Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
+            const xDiff = Math.abs(globe.rotation.x - targetRotationX);
+            const rotationSettled = yDiff < 0.01 && xDiff < 0.01;
+
+            if (rotationSettled) {
+                const loc = pendingLocation;
+                pendingLocation = null;
+
+                // Find the marker and trigger sky bounce
+                const targetMarker = markers.find(m => m.userData.id === loc.id);
+                if (targetMarker) {
+                    triggerSkyBounce(targetMarker);
+
+                    // Open panel after sky bounce animation starts (slight delay)
+                    setTimeout(() => openPanel(loc), 300);
+                } else {
+                    // No marker found, just open panel
+                    openPanel(loc);
+                }
+            }
+        }
+
         // Update tooltip position to stay anchored to hovered marker
         if (hoveredMarker && tooltip.classList.contains('visible')) {
             updateTooltipPosition(hoveredMarker);

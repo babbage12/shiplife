@@ -36,13 +36,18 @@ let skyBounceStartTime = null;
 let lastBouncingMarkerVisible = false; // Track visibility state transitions
 let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
 
-// Zoom transition animation
+// Zoom transition animation (for celebration spin only)
 let isTransitioning = false;
 let transitionStartTime = null;
 let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
 let targetCameraZ = 1.8;
 let currentZoomInDistance = baseZoomInDistance;
 let transitionStartZ = null; // Store starting Z for smooth interpolation
+
+// Bridge animation (soft bump during location transitions)
+let isBridging = false;
+let bridgeStartTime = null;
+let bridgeStartZ = null;
 
 // Celebration sequence state
 let celebrationInProgress = false;

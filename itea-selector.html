@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itea, Greece - Image Selector</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #1a1a2e;
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 { color: #ffd700; margin-bottom: 10px; }
+        .subtitle { color: #888; margin-bottom: 20px; }
+        .context {
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #ffd700;
+        }
+        .context h3 { color: #ffd700; margin-top: 0; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .image-card {
+            background: #2a2a4e;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 3px solid transparent;
+        }
+        .image-card:hover { transform: scale(1.02); }
+        .image-card.selected {
+            border-color: #ffd700;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+        }
+        .image-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .image-info { padding: 10px; }
+        .image-name { font-weight: bold; color: #ffd700; }
+        .image-index { color: #888; font-size: 0.9em; }
+        .selected-count {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+        }
+        .output {
+            margin-top: 30px;
+            background: #2a2a4e;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .output h3 { color: #ffd700; margin-top: 0; }
+        .output pre {
+            background: #1a1a2e;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-size: 0.85em;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Itea, Greece - Image Selector</h1>
+    <p class="subtitle">May 5, 2013 (Orthodox Easter) - 47 images</p>
+
+    <div class="context">
+        <h3>The Story So Far</h3>
+        <p>Early morning arrival after long journey from Auckland via Thailand, Dubai, Suez Canal. First stop in the Med. New camera bought in Dubai a week or two before. First one on the observation deck that morning. Thought the island was on fire - smoke rising everywhere. A passenger explained: it's Easter, the whole town is roasting lamb.</p>
+    </div>
+
+    <div class="grid" id="imageGrid"></div>
+
+    <div class="selected-count" id="selectedCount">0 selected</div>
+
+    <div class="output">
+        <h3>Selected Images</h3>
+        <pre id="selectedList">Click images to select them...</pre>
+    </div>
+
+    <script>
+        const basePath = '/Volumes/BBCSO/Itea, Greece /';
+
+        const images = [
+            'IMG_1277.JPG', 'IMG_1278.JPG', 'IMG_1279.JPG', 'IMG_1280.JPG', 'IMG_1281.JPG',
+            'IMG_1283.JPG', 'IMG_1284.JPG', 'IMG_1285.JPG', 'IMG_1286.JPG', 'IMG_1287.JPG',
+            'IMG_1288.JPG', 'IMG_1289.JPG', 'IMG_1290.JPG', 'IMG_1291.JPG', 'IMG_1292.JPG',
+            'IMG_1293.JPG', 'IMG_1295.JPG', 'IMG_1296.JPG', 'IMG_1297.JPG', 'IMG_1298.JPG',
+            'IMG_1299.JPG', 'IMG_1300.JPG', 'IMG_1301.JPG', 'IMG_1302.JPG', 'IMG_1303.JPG',
+            'IMG_1304.JPG', 'IMG_1305.JPG', 'IMG_1306.JPG', 'IMG_1326.JPG', 'IMG_1327.JPG',
+            'IMG_1328.JPG', 'IMG_1329.JPG', 'IMG_1345.JPG', 'IMG_1346.JPG', 'IMG_1355.JPG',
+            'IMG_1356.JPG', 'IMG_1357.JPG', 'IMG_1358.JPG', 'IMG_1361.JPG', 'IMG_1362.JPG',
+            'IMG_1363.JPG', 'IMG_1365.JPG', 'IMG_1368.JPG', 'IMG_1369.JPG',
+            'PANO_20130914_122408.jpg', 'PANO_20130914_125351.jpg'
+        ];
+
+        const selected = new Set();
+        const grid = document.getElementById('imageGrid');
+        const countEl = document.getElementById('selectedCount');
+        const listEl = document.getElementById('selectedList');
+
+        images.forEach((file, i) => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+            card.innerHTML = `
+                <img src="file://${basePath}${file}" alt="${file}">
+                <div class="image-info">
+                    <div class="image-name">${file}</div>
+                    <div class="image-index">#${i + 1}</div>
+                </div>
+            `;
+            card.addEventListener('click', () => {
+                if (selected.has(file)) {
+                    selected.delete(file);
+                    card.classList.remove('selected');
+                } else {
+                    selected.add(file);
+                    card.classList.add('selected');
+                }
+                updateOutput();
+            });
+            grid.appendChild(card);
+        });
+
+        function updateOutput() {
+            countEl.textContent = `${selected.size} selected`;
+            if (selected.size === 0) {
+                listEl.textContent = 'Click images to select them...';
+            } else {
+                listEl.textContent = Array.from(selected).join('\n');
+            }
+        }
+    </script>
+</body>
+</html>

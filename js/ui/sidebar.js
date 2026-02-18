@@ -164,21 +164,19 @@ function focusLocation(loc) {
     // Convert longitude to radians, with offset to match globe texture
     const lonRad = lon * (Math.PI / 180);
 
-    // The globe rotation Y increases as we go west (negative longitude)
-    const targetY = -lonRad - 1.55;
+    // Set rotation targets - globe will smooth lerp to these
+    targetRotationY = -lonRad - 1.55;
+    targetRotationX = lat * (Math.PI / 180);
 
-    // Start zoom-out transition, then rotate, then zoom-in
-    isTransitioning = true;
-    transitionPhase = 'zoom-out';
-    transitionStartTime = Date.now();
+    // Start bridge animation (soft cinematic bump)
+    isBridging = true;
+    bridgeStartTime = Date.now();
+    bridgeStartZ = camera.position.z;
 
-    // Store target rotation for after zoom-out
-    pendingRotationY = targetY;
-    pendingRotationX = lat * (Math.PI / 180);
+    // Store for panel open after rotation settles
     pendingLocation = loc;
-    pendingZoomLocation = loc;
 
-    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2), 'introComplete:', introComplete);
+    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetRotationY.toFixed(2), 'introComplete:', introComplete);
 }
 
 function toggleMobileMenu() {

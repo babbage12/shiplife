@@ -30,10 +30,13 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 // Animation timing
 const introDuration = 3000;
 const bounceDuration = 350;
-const zoomOutDistance = 4.8;      // Further back for smoother rotation
-const baseZoomInDistance = 2.16;
+const defaultZoomDistance = 1.5;   // Default camera distance
+const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
+const zoomOutDistance = 4.8;      // Further back for celebration spin only
+const baseZoomInDistance = 1.7;
 const zoomOutDuration = 450;       // Faster zoom out
 const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
+const bridgeDuration = 800;        // Duration of the bridge bump animation
 
 // Background music settings
 const MUSIC_FADE_DURATION = 1500;

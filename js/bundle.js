@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T16:36:34.324Z
+// Shiplife Bundle - Generated 2026-02-18T20:31:47.341Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -39,10 +39,13 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 // Animation timing
 const introDuration = 3000;
 const bounceDuration = 350;
-const zoomOutDistance = 4.8;      // Further back for smoother rotation
-const baseZoomInDistance = 2.16;
+const defaultZoomDistance = 1.5;   // Default camera distance
+const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
+const zoomOutDistance = 4.8;      // Further back for celebration spin only
+const baseZoomInDistance = 1.7;
 const zoomOutDuration = 450;       // Faster zoom out
 const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
+const bridgeDuration = 800;        // Duration of the bridge bump animation
 
 // Background music settings
 const MUSIC_FADE_DURATION = 1500;
@@ -774,10 +777,27 @@ const locationGalleries = {
     ],
 
     // ITEA (3 images)
+    // ITEA (19 images) - Easter Morning 2013
     "itea": [
-        { src: "shiplife/itea/misty_sunrise.jpg", caption: "Morning mist - appropriately mystical for the gateway to Delphi.", alt: "Misty sunrise at Itea" },
-        { src: "shiplife/itea/bay_view.jpg", caption: "The bay reflects Mount Parnassus in the calm morning.", alt: "Bay view" },
-        { src: "shiplife/itea/greek_church.jpg", caption: "Terracotta roofs and blue sky - quintessential Greece.", alt: "Greek church" }
+        { src: "shiplife/itea/itea-easter-morning-hero", caption: "Easter morning - smoke rising from every hillside. I thought the island was on fire.", alt: "Easter morning smoke" },
+        { src: "shiplife/itea/itea-deck-smoke-01", caption: "First one on deck that morning, new camera from Dubai in hand.", alt: "Deck view" },
+        { src: "shiplife/itea/itea-town-smoke", caption: "The whole town was roasting lamb - every family, every patio.", alt: "Town with smoke" },
+        { src: "shiplife/itea/itea-scene-01", caption: "Walking through Itea on Easter morning.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-02", caption: "The air scented with lemon trees and lamb.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-03", caption: "Locals called out invitations to drink and dine.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-04", caption: "Smiling at each other - I didn't know their language. Again.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-church-01", caption: "The churches awakened me to what this contract really meant.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-church-02", caption: "Exploration of spaces, art, music, craftsmanship.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-church-03", caption: "The beauty of man's will to mold nature to his cause.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-street-01", caption: "Quiet streets on Easter morning.", alt: "Street scene" },
+        { src: "shiplife/itea/itea-street-02", caption: "Everyone was home with family.", alt: "Street scene" },
+        { src: "shiplife/itea/itea-scene-05", caption: "The gateway to Delphi and the Oracle.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-06", caption: "Mount Parnassus rises above the town.", alt: "Mountain view" },
+        { src: "shiplife/itea/itea-scene-07", caption: "A small port town with ancient roots.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-resistance-memorial", caption: "Memorial to the National Resistance fighters, 1941-1944.", alt: "Resistance memorial" },
+        { src: "shiplife/itea/itea-war-memorial", caption: "Magnanimous Mother - in pain and in glory.", alt: "War memorial" },
+        { src: "shiplife/itea/itea-scene-08", caption: "The beginning of a historical journey.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-09", caption: "A journey that would change how I see the world.", alt: "Itea scene" }
     ],
 
     // IBIZA (11 images)
@@ -1684,6 +1704,18 @@ const locationGalleries = {
     "seaDays": [
         { src: "v1768532511/IMG_0240_yg0xap.jpg", caption: "Endless horizon from the deck.", alt: "Sea day view" },
         { src: "v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg", caption: "Nothing but water and sky.", alt: "At sea" }
+    ],
+
+    // SEMARANG / BOROBUDUR (8 images)
+    "semarang": [
+        { src: "shiplife/semarang/semarang-borobudur-hero", caption: "Borobudur emerges from the jungle - the world's largest Buddhist temple.", alt: "Borobudur temple" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-01", caption: "Ready to explore - conical hat on, temple waiting.", alt: "At the temple base" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-02", caption: "Looking out over the Javanese plains from the temple steps.", alt: "View from temple" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-03", caption: "Walking the corridors lined with 2,672 relief panels.", alt: "Temple corridors" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-04", caption: "Relief panel detail - stories of Buddha's life carved in stone.", alt: "Relief panels" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-05", caption: "Tour guide explains the stupas at the upper levels.", alt: "Guide at stupas" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-06", caption: "Among the bell-shaped stupas - each containing a Buddha statue.", alt: "At the stupas" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-07", caption: "Gamelan musicians with wayang shadow puppets - Javanese culture on display.", alt: "Gamelan musicians" }
     ],
 
     // SORRENTO (26 images)
@@ -9007,31 +9039,158 @@ an original composition inspired by this place.
         id: 87,
         title: "Itea, Greece",
         coords: [38.43, 22.42],
-        tag: "Gateway to Delphi",
+        tag: "Where It All Began",
         icon: "🏛️",
         isDoor: false,
-        shortDesc: "The port for the Oracle's mountain.",
+        shortDesc: "Easter morning, smoke rising - the beginning of everything.",
         useRichContent: true,
         richContent: `
-            <p>We arrived at Itea in the mist - the kind of morning where the mountains seem to float above the water and the town emerges slowly from the haze. It felt appropriately mystical for the gateway to Delphi.</p>
-            <p>The port is small and quiet, a humble counterpoint to the ancient site in the mountains above. Greek churches with terracotta roofs dot the hillsides. The bay is glass-calm, reflecting the peaks of Parnassus.</p>
-            <p>Most passengers head straight up to the Oracle. But those first moments, watching the sun burn through the fog - that was its own kind of prophecy.</p>
+            <div class="demographics-strip">
+                <span>Gulf of Corinth</span>
+                <span>Gateway to Delphi</span>
+                <span>Orthodox Easter</span>
+                <span>May 2013</span>
+            </div>
+
+            <h3>I Thought the Island Was on Fire</h3>
+            <p>It was early - very early. We'd come a long way to get here. Auckland to Thailand, through Dubai, down the Suez Canal, and finally into the Mediterranean. Itea was our first stop in this new world. I'd bought a new camera in Dubai a week or two before, and I was eager to test it.</p>
+            <p>I was the first one on the observation deck that morning, as I was many mornings. Stepping out into the warm, moist air, I saw smoke rising from every hillside. My first thought: the island is on fire.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/itea/itea-deck-smoke-01" class="story-image" data-caption="First one on deck - smoke rising everywhere." alt="Deck view with smoke">
+
+            <h3>Easter Lamb</h3>
+            <p>A passenger quickly set me straight. It was Orthodox Easter, and the entire town was roasting lamb. Every family, every patio, every backyard - smoke drifting up into the morning sky. What I'd mistaken for disaster was celebration.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/itea/itea-town-smoke" class="story-image" data-caption="The whole town roasting lamb - smoke from every rooftop." alt="Town with Easter smoke">
+
+            <h3>Lemon Trees and Lamb</h3>
+            <p>Walking through town, the air was literally scented with lemon trees and roasting meat. Everyone was out on their patios - I never learned the Greek word for them - and several groups called out to me. Invitations to drink and dine and smile at each other, because I did not know their language. Again.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-01" class="inline-image" data-caption="Lamb on the spit - the source of all that smoke." alt="Lamb roasting">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-02" class="inline-image" data-caption="Invitations to drink and celebrate with the locals." alt="Drinking with locals">
+            </div>
+
+            <h3>The Churches</h3>
+            <p>Walking by the beautiful churches awakened me to what the rest of this contract really meant. Exploration of spaces, art, music, craftsmanship - the beauty of man's will to mold nature to his cause.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-church-03" class="inline-image" data-caption="Greek Orthodox churches on Easter morning." alt="Church">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-scene-01" class="inline-image" data-caption="Centuries of faith built into stone." alt="Church">
+            </div>
+
+            <h3>Taking a Little from Each Place</h3>
+            <p>It occurred to me several times during this first contract in the Med that I was missing so much more than my eyes could see. Maybe I would be better equipped to understand life if I took a little bit away from each location I visited.</p>
+            <p>Most of the time, I tried to take too much in at once. With only a spare sea day to recover from the events of the day before, I ended up exhausting myself by the end of those four months.</p>
+
+            <blockquote class="story-quote">Itea was really the beginning of a historical journey that would change how I see the world and myself in it.</blockquote>
+
+            <h3>The Memorials</h3>
+            <p>Even a small port town like Itea carries the weight of history. Two war memorials stand in the town center - one to the resistance fighters of 1941-1944, another to the Greek mothers who sent their sons to war. "Magnanimous Mother - in pain and in glory."</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-resistance-memorial" class="inline-image" data-caption="Memorial to the National Resistance, 1941-1944." alt="Resistance memorial">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/itea/itea-war-memorial" class="inline-image" data-caption="Magnanimous Mother - in pain and in glory." alt="War memorial">
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Itea</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏛️</span>
+                        <span>Gateway to Delphi</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Oracle:</strong> Itea is the port for Delphi, where the ancient Greeks consulted the Oracle for prophecy. The site is 15km up the mountain.</li>
+                        <li><strong>Mount Parnassus:</strong> The mountain rising above Itea was sacred to Apollo and the Muses - home of poetry and music in Greek mythology.</li>
+                        <li><strong>Orthodox Easter:</strong> Greek Easter often falls on a different date than Western Easter. The lamb roasting tradition (souvla) is central to the celebration.</li>
+                        <li><strong>Gulf of Corinth:</strong> The narrow gulf separates mainland Greece from the Peloponnese. The town has been a port since ancient times.</li>
+                    </ul>
+                </div>
+            </div>
 
             ${generateGallery('itea')}
         `,
-        fullDesc: "We arrived at Itea in the mist - mountains floating above the water, the town emerging slowly from the haze. Appropriately mystical for the gateway to Delphi and the Oracle.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/itea/misty_sunrise.jpg"
+        fullDesc: "Easter morning in Itea - I thought the island was on fire. Smoke rising from every hillside. A passenger explained: the whole town was roasting lamb. This was the beginning of everything.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/itea/itea-easter-morning-hero"
     },
-        {
+    {
         id: 89,
         title: "Semarang, Indonesia",
         coords: [-6.97, 110.42],
-        tag: "Central Java",
-        icon: "⚓",
+        tag: "Gateway to Borobudur",
+        icon: "🛕",
         isDoor: false,
-        shortDesc: "Gateway to Borobudur.",
-        fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world.\n\nWe took an excursion inland to see it. Nothing prepares you for the scale of the place. Thousands of intricate stone carvings, Buddha statues in bell-shaped stupas, all of it emerging from the jungle like something from another time.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768527359/DSC00357_et8mzd.jpg"
+        shortDesc: "The world's largest Buddhist temple rises from the jungle.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <span>Central Java</span>
+                <span>Built 9th Century</span>
+                <span>UNESCO Site</span>
+                <span>September 2011</span>
+            </div>
+
+            <h3>Emerging from the Jungle</h3>
+            <p>Semarang is just a port town. The real destination lies inland - Borobudur, the largest Buddhist temple in the world. Built in the 9th century, buried under volcanic ash for a thousand years, rediscovered in 1814. Nothing prepares you for the scale of it.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-01" class="story-image" data-caption="Ready to explore - conical hat borrowed from a vendor." alt="At the temple base">
+
+            <h3>A Stone Mountain of Stories</h3>
+            <p>The temple is essentially a stone textbook - 2,672 relief panels telling the story of Buddha's life and teachings. You're supposed to walk clockwise, reading the panels as you ascend. Each level represents a stage on the path to enlightenment.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-04" class="story-image" data-caption: "Relief panel detail - a thousand years old, still telling stories." alt="Relief panels">
+
+            <h3>The Corridors</h3>
+            <p>Walking the narrow corridors between the relief walls, you feel the weight of history. Pilgrims have walked these same paths for over a millennium. The carvings show daily life in 9th-century Java - ships, musicians, dancers, farmers. It's a window into a vanished world.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-03" class="story-image" data-caption="Walking the relief-lined corridors." alt="Temple corridors">
+
+            <h3>The Stupas</h3>
+            <p>At the top, the architecture changes. The relief panels give way to 72 bell-shaped stupas, each containing a Buddha statue visible through the diamond-shaped holes. Touch a Buddha through the opening for good luck - everyone does.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-05" class="inline-image" data-caption="Guide explaining the upper terraces." alt="Guide at stupas">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-06" class="inline-image" data-caption="Among the bell-shaped stupas." alt="At the stupas">
+            </div>
+
+            <h3>Looking Out Over Java</h3>
+            <p>From the upper levels, the view stretches across the Javanese plains to distant volcanoes. The temple was built here deliberately - aligned with the surrounding mountains in a sacred geography that the Sailendra dynasty understood twelve centuries ago.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-02" class="story-image" data-caption="Looking out over the Javanese plains." alt="View from temple">
+
+            <h3>Javanese Culture</h3>
+            <p>The excursion included a stop at a cultural center where gamelan musicians played while a dalang (puppeteer) manipulated wayang shadow puppets. The same stories depicted on Borobudur's walls are still performed today - a living thread connecting modern Java to its ancient past.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_80,f_auto/shiplife/semarang/semarang-borobudur-temple-07" class="story-image" data-caption="Gamelan orchestra with wayang puppets in the background." alt="Gamelan musicians">
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Borobudur</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🛕</span>
+                        <span>The World's Largest Buddhist Temple</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Construction:</strong> Built around 800 AD during the Sailendra dynasty, using an estimated 2 million stone blocks without mortar.</li>
+                        <li><strong>Lost and Found:</strong> Abandoned in the 14th century, buried by volcanic ash and jungle, rediscovered by Sir Stamford Raffles in 1814.</li>
+                        <li><strong>Relief Panels:</strong> 2,672 individual panels stretching 5 km if laid end-to-end - the largest collection of Buddhist reliefs in the world.</li>
+                        <li><strong>Buddha Statues:</strong> 504 Buddha statues, 72 of them seated inside the perforated stupas on the upper terraces.</li>
+                        <li><strong>Restoration:</strong> Major UNESCO restoration 1975-1982 dismantled and rebuilt the temple, adding drainage to prevent collapse.</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('semarang')}
+        `,
+        fullDesc: "Semarang is the gateway to Borobudur - the largest Buddhist temple in the world. Built in the 9th century, buried under volcanic ash for a thousand years, rediscovered in 1814. Nothing prepares you for the scale.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/semarang/semarang-borobudur-hero"
     },
     {
         id: 92,
@@ -10327,13 +10486,18 @@ let skyBounceStartTime = null;
 let lastBouncingMarkerVisible = false; // Track visibility state transitions
 let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
 
-// Zoom transition animation
+// Zoom transition animation (for celebration spin only)
 let isTransitioning = false;
 let transitionStartTime = null;
 let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
 let targetCameraZ = 1.8;
 let currentZoomInDistance = baseZoomInDistance;
 let transitionStartZ = null; // Store starting Z for smooth interpolation
+
+// Bridge animation (soft bump during location transitions)
+let isBridging = false;
+let bridgeStartTime = null;
+let bridgeStartZ = null;
 
 // Celebration sequence state
 let celebrationInProgress = false;
@@ -12980,13 +13144,43 @@ function animate() {
             }
         }
 
+        // Handle bridge animation (soft bump during location transitions)
+        if (isBridging) {
+            const elapsed = Date.now() - bridgeStartTime;
+            const progress = Math.min(elapsed / bridgeDuration, 1);
+
+            // Sine curve for smooth arc: rises to peak at midpoint, settles at end
+            // sin(0) = 0, sin(π/2) = 1, sin(π) = 0
+            const arcProgress = Math.sin(progress * Math.PI);
+
+            // Calculate camera position: start -> peak -> default
+            const peakZ = bridgeStartZ + bridgeBumpHeight;
+            const targetZ = defaultZoomDistance;
+
+            if (progress < 0.5) {
+                // Rising phase: from start toward peak
+                camera.position.z = bridgeStartZ + (peakZ - bridgeStartZ) * (arcProgress);
+            } else {
+                // Settling phase: from peak toward default
+                const settleProgress = (progress - 0.5) * 2; // 0 to 1 for second half
+                const easeOut = 1 - Math.pow(1 - settleProgress, 2);
+                camera.position.z = peakZ - (peakZ - targetZ) * easeOut;
+            }
+
+            if (progress >= 1) {
+                isBridging = false;
+                camera.position.z = defaultZoomDistance;
+            }
+        }
+
         // Normal interaction after intro
 
         // Only auto-rotate if:
         // - User is not dragging
         // - Panel is not open (user is not reading)
         // - Not transitioning
-        if (!isUserInteracting && !panelIsOpen && !isTransitioning) {
+        // - Not bridging
+        if (!isUserInteracting && !panelIsOpen && !isTransitioning && !isBridging) {
             // Scale rotation speed based on zoom level - slower when zoomed in
             const maxZoom = 4.5;  // zoomed out
             const minZoom = 1.5;  // zoomed in close
@@ -13012,7 +13206,32 @@ function animate() {
             globe.rotation.y -= normalize;
             targetRotationY -= normalize;
         }
-        
+
+        // Check if rotation has settled after sidebar/icon navigation (no zoom transition)
+        // This handles the sequence: rotate → sky bounce → panel open
+        if (pendingLocation && !isTransitioning) {
+            const yDiff = Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
+            const xDiff = Math.abs(globe.rotation.x - targetRotationX);
+            const rotationSettled = yDiff < 0.01 && xDiff < 0.01;
+
+            if (rotationSettled) {
+                const loc = pendingLocation;
+                pendingLocation = null;
+
+                // Find the marker and trigger sky bounce
+                const targetMarker = markers.find(m => m.userData.id === loc.id);
+                if (targetMarker) {
+                    triggerSkyBounce(targetMarker);
+
+                    // Open panel after sky bounce animation starts (slight delay)
+                    setTimeout(() => openPanel(loc), 300);
+                } else {
+                    // No marker found, just open panel
+                    openPanel(loc);
+                }
+            }
+        }
+
         // Update tooltip position to stay anchored to hovered marker
         if (hoveredMarker && tooltip.classList.contains('visible')) {
             updateTooltipPosition(hoveredMarker);
@@ -14037,21 +14256,19 @@ function focusLocation(loc) {
     // Convert longitude to radians, with offset to match globe texture
     const lonRad = lon * (Math.PI / 180);
 
-    // The globe rotation Y increases as we go west (negative longitude)
-    const targetY = -lonRad - 1.55;
+    // Set rotation targets - globe will smooth lerp to these
+    targetRotationY = -lonRad - 1.55;
+    targetRotationX = lat * (Math.PI / 180);
 
-    // Start zoom-out transition, then rotate, then zoom-in
-    isTransitioning = true;
-    transitionPhase = 'zoom-out';
-    transitionStartTime = Date.now();
+    // Start bridge animation (soft cinematic bump)
+    isBridging = true;
+    bridgeStartTime = Date.now();
+    bridgeStartZ = camera.position.z;
 
-    // Store target rotation for after zoom-out
-    pendingRotationY = targetY;
-    pendingRotationX = lat * (Math.PI / 180);
+    // Store for panel open after rotation settles
     pendingLocation = loc;
-    pendingZoomLocation = loc;
 
-    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetY.toFixed(2), 'introComplete:', introComplete);
+    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetRotationY.toFixed(2), 'introComplete:', introComplete);
 }
 
 function toggleMobileMenu() {
@@ -14845,20 +15062,28 @@ function onTouchTap(event) {
                     startIrisAnimation(currentLocation.id, 0, null);
                 }
                 
-                // If switching, trigger globe rotation
+                // If switching, trigger bridge animation + globe rotation
+                // Animation loop will handle sky bounce + panel open when rotation settles
                 if (isSwitching) {
                     closePanel();
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
-                    isTransitioning = true;
-                    transitionPhase = 'zoom-out';
-                    transitionStartTime = Date.now();
-                    pendingRotationY = getTargetY(lon);
-                    pendingRotationX = lat * (Math.PI / 180);
-                    pendingLocation = null;
-                    pendingZoomLocation = loc; // Track for dynamic zoom
+                    const lonRad = lon * (Math.PI / 180);
+                    targetRotationY = -lonRad - 1.55;
+                    targetRotationX = lat * (Math.PI / 180);
+
+                    // Start bridge animation (soft cinematic bump)
+                    isBridging = true;
+                    bridgeStartTime = Date.now();
+                    bridgeStartZ = camera.position.z;
+
+                    // Set pending location - animation loop will trigger sky bounce + panel when settled
+                    pendingLocation = loc;
+                    stopBounce();
+                    return; // Let animation loop handle the rest
                 }
-                
+
+                // Not switching - clicked on current/first location
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
@@ -14883,35 +15108,15 @@ function onTouchTap(event) {
 
                     if (currentOpen < 0.5) {
                         // Iris is closed - start animation and open panel midway
-                        const delay = isSwitching ? 600 : 0;
-                        setTimeout(() => {
-                            startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-
-                            // Open panel after 200ms (roughly halfway through iris animation)
-                            setTimeout(() => openPanelForLocation(), 200);
-                        }, delay);
+                        startIrisAnimation(loc.id, 1, null);
+                        setTimeout(() => openPanelForLocation(), 200);
                     } else {
                         // Iris already open
-                        if (isSwitching) {
-                            setTimeout(() => openPanelForLocation(), 800);
-                        } else {
-                            openPanelForLocation();
-                        }
-                    }
-                } else if (loc.isDoor && hasAITexture) {
-                    // Door with AI texture - no iris animation needed, just open panel
-                    if (isSwitching) {
-                        setTimeout(() => openPanelForLocation(), 800);
-                    } else {
                         openPanelForLocation();
                     }
                 } else {
-                    // Regular icons - no iris animation
-                    if (isSwitching) {
-                        setTimeout(() => openPanelForLocation(), 800);
-                    } else {
-                        openPanelForLocation();
-                    }
+                    // Regular icons or doors with AI texture - just open panel
+                    openPanelForLocation();
                 }
             }
         }
@@ -14948,27 +15153,33 @@ function onClick(event) {
             startIrisAnimation(currentLocation.id, 0, null);
         }
         
-        // If switching, trigger globe rotation
+        // If switching, trigger bridge animation + globe rotation
+        // Animation loop will handle sky bounce + panel open when rotation settles
         if (isSwitching) {
             closePanel();
             // Use base coords for rotation
             const lon = loc.coords[1];
             const lat = loc.coords[0];
-            isTransitioning = true;
-            transitionPhase = 'zoom-out';
-            transitionStartTime = Date.now();
-            // Use same simple formula as sidebar.js (not getTargetY which has calibration issues)
             const lonRad = lon * (Math.PI / 180);
-            pendingRotationY = -lonRad - 1.55;
-            pendingRotationX = lat * (Math.PI / 180);
-            pendingLocation = null;
-            pendingZoomLocation = loc; // Track for dynamic zoom
+            targetRotationY = -lonRad - 1.55;
+            targetRotationX = lat * (Math.PI / 180);
+
+            // Start bridge animation (soft cinematic bump)
+            isBridging = true;
+            bridgeStartTime = Date.now();
+            bridgeStartZ = camera.position.z;
+
+            // Set pending location - animation loop will trigger sky bounce + panel when settled
+            pendingLocation = loc;
+            stopBounce();
+            return; // Let animation loop handle the rest
         }
-        
+
+        // Not switching - clicked on current/first location
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
-        // Trigger sky bounce effect on the tapped marker
+        // Trigger sky bounce effect on the clicked marker
         triggerSkyBounce(hoveredMarker);
 
         // Helper function to open panel
@@ -14989,35 +15200,15 @@ function onClick(event) {
 
             if (currentOpen < 0.5) {
                 // Iris is closed - start animation and open panel midway
-                const delay = isSwitching ? 600 : 0;
-                setTimeout(() => {
-                    startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-
-                    // Open panel after 200ms (roughly halfway through iris animation)
-                    setTimeout(() => openPanelForLocation(), 200);
-                }, delay);
+                startIrisAnimation(loc.id, 1, null);
+                setTimeout(() => openPanelForLocation(), 200);
             } else {
                 // Iris already open
-                if (isSwitching) {
-                    setTimeout(() => openPanelForLocation(), 800);
-                } else {
-                    openPanelForLocation();
-                }
-            }
-        } else if (loc.isDoor && hasAITexture) {
-            // Door with AI texture - no iris animation needed, just open panel
-            if (isSwitching) {
-                setTimeout(() => openPanelForLocation(), 800);
-            } else {
                 openPanelForLocation();
             }
         } else {
-            // Regular icons - no iris animation
-            if (isSwitching) {
-                setTimeout(() => openPanelForLocation(), 800);
-            } else {
-                openPanelForLocation();
-            }
+            // Regular icons or doors with AI texture - just open panel
+            openPanelForLocation();
         }
     }
 }

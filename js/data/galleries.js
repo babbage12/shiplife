@@ -511,10 +511,27 @@ const locationGalleries = {
     ],
 
     // ITEA (3 images)
+    // ITEA (19 images) - Easter Morning 2013
     "itea": [
-        { src: "shiplife/itea/misty_sunrise.jpg", caption: "Morning mist - appropriately mystical for the gateway to Delphi.", alt: "Misty sunrise at Itea" },
-        { src: "shiplife/itea/bay_view.jpg", caption: "The bay reflects Mount Parnassus in the calm morning.", alt: "Bay view" },
-        { src: "shiplife/itea/greek_church.jpg", caption: "Terracotta roofs and blue sky - quintessential Greece.", alt: "Greek church" }
+        { src: "shiplife/itea/itea-easter-morning-hero", caption: "Easter morning - smoke rising from every hillside. I thought the island was on fire.", alt: "Easter morning smoke" },
+        { src: "shiplife/itea/itea-deck-smoke-01", caption: "First one on deck that morning, new camera from Dubai in hand.", alt: "Deck view" },
+        { src: "shiplife/itea/itea-town-smoke", caption: "The whole town was roasting lamb - every family, every patio.", alt: "Town with smoke" },
+        { src: "shiplife/itea/itea-scene-01", caption: "Walking through Itea on Easter morning.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-02", caption: "The air scented with lemon trees and lamb.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-03", caption: "Locals called out invitations to drink and dine.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-04", caption: "Smiling at each other - I didn't know their language. Again.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-church-01", caption: "The churches awakened me to what this contract really meant.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-church-02", caption: "Exploration of spaces, art, music, craftsmanship.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-church-03", caption: "The beauty of man's will to mold nature to his cause.", alt: "Greek church" },
+        { src: "shiplife/itea/itea-street-01", caption: "Quiet streets on Easter morning.", alt: "Street scene" },
+        { src: "shiplife/itea/itea-street-02", caption: "Everyone was home with family.", alt: "Street scene" },
+        { src: "shiplife/itea/itea-scene-05", caption: "The gateway to Delphi and the Oracle.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-06", caption: "Mount Parnassus rises above the town.", alt: "Mountain view" },
+        { src: "shiplife/itea/itea-scene-07", caption: "A small port town with ancient roots.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-resistance-memorial", caption: "Memorial to the National Resistance fighters, 1941-1944.", alt: "Resistance memorial" },
+        { src: "shiplife/itea/itea-war-memorial", caption: "Magnanimous Mother - in pain and in glory.", alt: "War memorial" },
+        { src: "shiplife/itea/itea-scene-08", caption: "The beginning of a historical journey.", alt: "Itea scene" },
+        { src: "shiplife/itea/itea-scene-09", caption: "A journey that would change how I see the world.", alt: "Itea scene" }
     ],
 
     // IBIZA (11 images)
@@ -1421,6 +1438,18 @@ const locationGalleries = {
     "seaDays": [
         { src: "v1768532511/IMG_0240_yg0xap.jpg", caption: "Endless horizon from the deck.", alt: "Sea day view" },
         { src: "v1768951510/Screenshot_20260120_142607_Facebook_z1yo15.jpg", caption: "Nothing but water and sky.", alt: "At sea" }
+    ],
+
+    // SEMARANG / BOROBUDUR (8 images)
+    "semarang": [
+        { src: "shiplife/semarang/semarang-borobudur-hero", caption: "Borobudur emerges from the jungle - the world's largest Buddhist temple.", alt: "Borobudur temple" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-01", caption: "Ready to explore - conical hat on, temple waiting.", alt: "At the temple base" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-02", caption: "Looking out over the Javanese plains from the temple steps.", alt: "View from temple" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-03", caption: "Walking the corridors lined with 2,672 relief panels.", alt: "Temple corridors" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-04", caption: "Relief panel detail - stories of Buddha's life carved in stone.", alt: "Relief panels" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-05", caption: "Tour guide explains the stupas at the upper levels.", alt: "Guide at stupas" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-06", caption: "Among the bell-shaped stupas - each containing a Buddha statue.", alt: "At the stupas" },
+        { src: "shiplife/semarang/semarang-borobudur-temple-07", caption: "Gamelan musicians with wayang shadow puppets - Javanese culture on display.", alt: "Gamelan musicians" }
     ],
 
     // SORRENTO (26 images)

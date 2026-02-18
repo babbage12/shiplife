@@ -139,20 +139,28 @@ function onTouchTap(event) {
                     startIrisAnimation(currentLocation.id, 0, null);
                 }
                 
-                // If switching, trigger globe rotation
+                // If switching, trigger bridge animation + globe rotation
+                // Animation loop will handle sky bounce + panel open when rotation settles
                 if (isSwitching) {
                     closePanel();
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
-                    isTransitioning = true;
-                    transitionPhase = 'zoom-out';
-                    transitionStartTime = Date.now();
-                    pendingRotationY = getTargetY(lon);
-                    pendingRotationX = lat * (Math.PI / 180);
-                    pendingLocation = null;
-                    pendingZoomLocation = loc; // Track for dynamic zoom
+                    const lonRad = lon * (Math.PI / 180);
+                    targetRotationY = -lonRad - 1.55;
+                    targetRotationX = lat * (Math.PI / 180);
+
+                    // Start bridge animation (soft cinematic bump)
+                    isBridging = true;
+                    bridgeStartTime = Date.now();
+                    bridgeStartZ = camera.position.z;
+
+                    // Set pending location - animation loop will trigger sky bounce + panel when settled
+                    pendingLocation = loc;
+                    stopBounce();
+                    return; // Let animation loop handle the rest
                 }
-                
+
+                // Not switching - clicked on current/first location
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
@@ -177,35 +185,15 @@ function onTouchTap(event) {
 
                     if (currentOpen < 0.5) {
                         // Iris is closed - start animation and open panel midway
-                        const delay = isSwitching ? 600 : 0;
-                        setTimeout(() => {
-                            startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-
-                            // Open panel after 200ms (roughly halfway through iris animation)
-                            setTimeout(() => openPanelForLocation(), 200);
-                        }, delay);
+                        startIrisAnimation(loc.id, 1, null);
+                        setTimeout(() => openPanelForLocation(), 200);
                     } else {
                         // Iris already open
-                        if (isSwitching) {
-                            setTimeout(() => openPanelForLocation(), 800);
-                        } else {
-                            openPanelForLocation();
-                        }
-                    }
-                } else if (loc.isDoor && hasAITexture) {
-                    // Door with AI texture - no iris animation needed, just open panel
-                    if (isSwitching) {
-                        setTimeout(() => openPanelForLocation(), 800);
-                    } else {
                         openPanelForLocation();
                     }
                 } else {
-                    // Regular icons - no iris animation
-                    if (isSwitching) {
-                        setTimeout(() => openPanelForLocation(), 800);
-                    } else {
-                        openPanelForLocation();
-                    }
+                    // Regular icons or doors with AI texture - just open panel
+                    openPanelForLocation();
                 }
             }
         }
@@ -242,27 +230,33 @@ function onClick(event) {
             startIrisAnimation(currentLocation.id, 0, null);
         }
         
-        // If switching, trigger globe rotation
+        // If switching, trigger bridge animation + globe rotation
+        // Animation loop will handle sky bounce + panel open when rotation settles
         if (isSwitching) {
             closePanel();
             // Use base coords for rotation
             const lon = loc.coords[1];
             const lat = loc.coords[0];
-            isTransitioning = true;
-            transitionPhase = 'zoom-out';
-            transitionStartTime = Date.now();
-            // Use same simple formula as sidebar.js (not getTargetY which has calibration issues)
             const lonRad = lon * (Math.PI / 180);
-            pendingRotationY = -lonRad - 1.55;
-            pendingRotationX = lat * (Math.PI / 180);
-            pendingLocation = null;
-            pendingZoomLocation = loc; // Track for dynamic zoom
+            targetRotationY = -lonRad - 1.55;
+            targetRotationX = lat * (Math.PI / 180);
+
+            // Start bridge animation (soft cinematic bump)
+            isBridging = true;
+            bridgeStartTime = Date.now();
+            bridgeStartZ = camera.position.z;
+
+            // Set pending location - animation loop will trigger sky bounce + panel when settled
+            pendingLocation = loc;
+            stopBounce();
+            return; // Let animation loop handle the rest
         }
-        
+
+        // Not switching - clicked on current/first location
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
-        // Trigger sky bounce effect on the tapped marker
+        // Trigger sky bounce effect on the clicked marker
         triggerSkyBounce(hoveredMarker);
 
         // Helper function to open panel
@@ -283,35 +277,15 @@ function onClick(event) {
 
             if (currentOpen < 0.5) {
                 // Iris is closed - start animation and open panel midway
-                const delay = isSwitching ? 600 : 0;
-                setTimeout(() => {
-                    startIrisAnimation(loc.id, 1, null); // No callback - we'll use timeout
-
-                    // Open panel after 200ms (roughly halfway through iris animation)
-                    setTimeout(() => openPanelForLocation(), 200);
-                }, delay);
+                startIrisAnimation(loc.id, 1, null);
+                setTimeout(() => openPanelForLocation(), 200);
             } else {
                 // Iris already open
-                if (isSwitching) {
-                    setTimeout(() => openPanelForLocation(), 800);
-                } else {
-                    openPanelForLocation();
-                }
-            }
-        } else if (loc.isDoor && hasAITexture) {
-            // Door with AI texture - no iris animation needed, just open panel
-            if (isSwitching) {
-                setTimeout(() => openPanelForLocation(), 800);
-            } else {
                 openPanelForLocation();
             }
         } else {
-            // Regular icons - no iris animation
-            if (isSwitching) {
-                setTimeout(() => openPanelForLocation(), 800);
-            } else {
-                openPanelForLocation();
-            }
+            // Regular icons or doors with AI texture - just open panel
+            openPanelForLocation();
         }
     }
 }
