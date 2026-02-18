@@ -18,10 +18,10 @@
 
 | Status | Count | % |
 |--------|-------|---|
-| DONE | 54 | 45% |
-| PARTIAL | 26 | 22% |
+| DONE | 57 | 48% |
+| PARTIAL | 25 | 21% |
 | SONG PANEL | 20 | 17% |
-| NOT STARTED | 19 | 16% |
+| NOT STARTED | 17 | 14% |
 | **TOTAL** | **119** | |
 
 ---
@@ -84,6 +84,9 @@ These have rich story content with multiple sections and inline images.
 52. Itea, Greece
 53. Parga, Greece
 54. Šibenik, Croatia
+55. Buenos Aires, Argentina
+56. Cairo, Egypt
+57. Castro, Chile
 
 ---
 
@@ -108,16 +111,15 @@ These have rich story content with multiple sections and inline images.
 16. Wellington, New Zealand
 
 ### Need Narrative Expansion (have images, minimal structure):
-19. Alexandria, Egypt
-20. Bora Bora
-21. Buenos Aires, Argentina
-22. Christmas Island, Australia
-23. Hobart, Tasmania
-24. Milford Sound, New Zealand
-25. Odessa, Ukraine - **Updated Feb 18, 2026**
-26. San Remo, Italy
-27. Sea Days
-28. Ushuaia, Argentina
+17. Alexandria, Egypt
+18. Bora Bora
+19. Christmas Island, Australia
+20. Hobart, Tasmania
+21. Milford Sound, New Zealand
+22. Odessa, Ukraine - **Updated Feb 18, 2026**
+23. San Remo, Italy
+24. Sea Days
+25. Ushuaia, Argentina
 
 ---
 
@@ -126,8 +128,7 @@ These have rich story content with multiple sections and inline images.
 These have placeholder content only.
 
 1. Brisbane, Australia
-2. Castro, Chile
-3. Çeşme, Turkey
+2. Çeşme, Turkey
 4. Isle of Pines, New Caledonia
 5. Kuşadası, Turkey
 7. Lima, Peru
@@ -197,6 +198,9 @@ Do not suggest for expansion - these use song/lyric format by design.
 
 | Date | Location | Change |
 |------|----------|--------|
+| Feb 18, 2026 | Cairo, Egypt | New panel with 22 images (3hr journey + pyramids) |
+| Feb 18, 2026 | Castro, Chile | Story panel with 6 images (the sail in) |
+| Feb 18, 2026 | Buenos Aires, Argentina | Full story panel with 9 images (wifi, coffee, food) |
 | Feb 18, 2026 | Šibenik, Croatia | Full story panel with 13 images (music as anchor) |
 | Feb 18, 2026 | Itea, Greece | Full story panel with 19 images (Easter morning) |
 | Feb 18, 2026 | Semarang, Indonesia | Full story panel with 8 images (Borobudur) |

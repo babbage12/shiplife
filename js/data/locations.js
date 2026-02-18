@@ -7316,11 +7316,26 @@ an original composition inspired by this place.
                 </div>
             </div>
 
-            <h3>The Approach</h3>
-            <p>After three hours on the bus from Alexandria, there it was - that first glimpse of the pyramids rising from the desert. The excitement was real.</p>
+            <h3>The Journey</h3>
+            <p>Three hours on the bus from Alexandria. The city gave way to highway, the highway to desert.</p>
 
             <div class="image-row-2">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-hero" class="inline-image" data-caption="First glimpse after the long drive." alt="First glimpse">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-01" class="inline-image" data-caption="Through the streets of Cairo." alt="Cairo streets">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-alahram" class="inline-image" data-caption="Al-Ahram Building - Egypt's most prominent newspaper." alt="Al-Ahram">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-02" class="inline-image" data-caption="Cairo." alt="Cairo">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-03" class="inline-image" data-caption="On the way to the pyramids." alt="Cairo">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/cairo/cairo-desert-01" class="story-image" data-caption="Where the desert begins." alt="Desert">
+
+            <h3>The Approach</h3>
+            <p>And then, there it was - that first glimpse of the pyramids rising from the sand.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-hero" class="inline-image" data-caption="First glimpse." alt="First glimpse">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-approach-01" class="inline-image" data-caption="The closer we came, the further they seemed." alt="Approaching">
             </div>
 

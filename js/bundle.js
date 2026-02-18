@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T23:19:13.825Z
+// Shiplife Bundle - Generated 2026-02-18T23:38:17.072Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -552,7 +552,18 @@ const locationGalleries = {
         { src: "shiplife/cairo/cairo-pyramids-04", caption: "Giza plateau.", alt: "Pyramids" },
         { src: "shiplife/cairo/cairo-pyramids-05", caption: "Standing before the ages.", alt: "Pyramids" },
         { src: "shiplife/cairo/cairo-pyramids-06", caption: "The Great Pyramid.", alt: "Pyramids" },
-        { src: "shiplife/cairo/cairo-final", caption: "Leaving Giza.", alt: "Pyramids" }
+        { src: "shiplife/cairo/cairo-final", caption: "Leaving Giza.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-01", caption: "Pyramids of Giza.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-02", caption: "The Great Pyramid.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-03", caption: "Ancient stones.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-04", caption: "Giza plateau.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-05", caption: "The pyramids.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-extra-06", caption: "Wonder of the ancient world.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-desert-01", caption: "Where the desert begins.", alt: "Desert road" },
+        { src: "shiplife/cairo/cairo-city-01", caption: "Cairo streets.", alt: "Cairo" },
+        { src: "shiplife/cairo/cairo-alahram", caption: "Al-Ahram Building - Egypt's most prominent newspaper.", alt: "Al-Ahram" },
+        { src: "shiplife/cairo/cairo-city-02", caption: "Cairo city scene.", alt: "Cairo" },
+        { src: "shiplife/cairo/cairo-city-03", caption: "Cairo.", alt: "Cairo" }
     ],
 
     // BUZIOS (9 images)
@@ -9575,11 +9586,26 @@ an original composition inspired by this place.
                 </div>
             </div>
 
-            <h3>The Approach</h3>
-            <p>After three hours on the bus from Alexandria, there it was - that first glimpse of the pyramids rising from the desert. The excitement was real.</p>
+            <h3>The Journey</h3>
+            <p>Three hours on the bus from Alexandria. The city gave way to highway, the highway to desert.</p>
 
             <div class="image-row-2">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-hero" class="inline-image" data-caption="First glimpse after the long drive." alt="First glimpse">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-01" class="inline-image" data-caption="Through the streets of Cairo." alt="Cairo streets">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-alahram" class="inline-image" data-caption="Al-Ahram Building - Egypt's most prominent newspaper." alt="Al-Ahram">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-02" class="inline-image" data-caption="Cairo." alt="Cairo">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-03" class="inline-image" data-caption="On the way to the pyramids." alt="Cairo">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/cairo/cairo-desert-01" class="story-image" data-caption="Where the desert begins." alt="Desert">
+
+            <h3>The Approach</h3>
+            <p>And then, there it was - that first glimpse of the pyramids rising from the sand.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-hero" class="inline-image" data-caption="First glimpse." alt="First glimpse">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-approach-01" class="inline-image" data-caption="The closer we came, the further they seemed." alt="Approaching">
             </div>
 
