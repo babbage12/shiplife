@@ -59,20 +59,25 @@ function animate() {
             const elapsed = Date.now() - transitionStartTime;
             
             if (transitionPhase === 'zoom-out') {
+                // Store starting Z on first frame
+                if (transitionStartZ === null) {
+                    transitionStartZ = camera.position.z;
+                }
+
                 const progress = Math.min(elapsed / zoomOutDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 2);
-                
-                // Zoom out
-                const startZ = camera.position.z;
-                camera.position.z = startZ + (zoomOutDistance - startZ) * easeOut * 0.1;
-                
+                const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out for smoother motion
+
+                // Smoothly zoom out from start position to zoomOutDistance
+                camera.position.z = transitionStartZ + (zoomOutDistance - transitionStartZ) * easeOut;
+
                 if (progress >= 1) {
-                    // Switch to rotate phase - apply pending rotation
+                    // Switch to zoom-in phase - apply pending rotation
                     targetRotationY = pendingRotationY;
                     targetRotationX = pendingRotationX;
                     transitionPhase = 'zoom-in';
                     transitionStartTime = Date.now();
-                    
+                    transitionStartZ = null; // Reset for next transition
+
                     // Calculate zoom distance based on target location's density
                     currentZoomInDistance = getZoomDistanceForLocation(pendingZoomLocation || pendingLocation);
                 }
@@ -101,6 +106,12 @@ function animate() {
                     if (pendingLocation) {
                         const loc = pendingLocation;
                         pendingLocation = null;
+
+                        // Find the marker for this location and trigger sky bounce
+                        const targetMarker = markers.find(m => m.userData.id === loc.id);
+                        if (targetMarker) {
+                            triggerSkyBounce(targetMarker);
+                        }
 
                         if (autoOpenPanel) {
                             autoOpenPanel = false;
@@ -166,6 +177,43 @@ function animate() {
         }
     }
     
+    // Sky bounce animation (subtle atmospheric glow around marker)
+    if (skyBounceActive && skyBounceSprite && skyBounceStartTime) {
+        const elapsed = Date.now() - skyBounceStartTime;
+        const duration = 600; // 600ms total animation
+
+        // Update position to follow the marker
+        const targetMarker = skyBounceSprite.userData.targetMarker;
+        if (targetMarker) {
+            const worldPos = new THREE.Vector3();
+            targetMarker.getWorldPosition(worldPos);
+            // Position slightly in front of marker (toward camera)
+            skyBounceSprite.position.copy(worldPos);
+            skyBounceSprite.position.multiplyScalar(1.02);
+        }
+
+        if (elapsed < duration) {
+            const progress = elapsed / duration;
+
+            // Scale: compact expansion from marker
+            const baseSize = 0.025; // Smaller start
+            const maxSize = 0.06;   // Stays compact
+            const scaleEase = Math.sin(progress * Math.PI); // Smooth in-out
+            const scale = baseSize + (maxSize - baseSize) * scaleEase;
+            skyBounceSprite.scale.set(scale, scale, 1);
+
+            // Opacity: bright pulse
+            const opacity = Math.sin(progress * Math.PI) * 0.9; // Max 0.9 opacity - much brighter
+            skyBounceSprite.material.opacity = Math.max(0, opacity);
+        } else {
+            // Animation complete
+            skyBounceActive = false;
+            skyBounceSprite.visible = false;
+            skyBounceSprite.material.opacity = 0;
+            skyBounceSprite.userData.targetMarker = null;
+        }
+    }
+
     // Marker animations
     markers.forEach((marker, i) => {
         const isDoor = marker.userData.isDoor;
@@ -174,7 +222,7 @@ function animate() {
         // AI portholes are square, canvas ones have base
         const baseScaleY = useAI ? marker.userData.baseSize * 2 : (isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
         const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
-        
+
         // Ensure marker is visible (but respect dimming and glowing state)
         marker.visible = true;
         // Don't override opacity for dimmed or glowing markers

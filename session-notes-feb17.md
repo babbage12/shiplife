@@ -163,7 +163,125 @@ After today's work:
 
 ---
 
+## Mykonos, Greece - Panel Enhancement
+
+### Images
+- **Uploaded:** 16 new images to Cloudinary
+- **Gallery:** 26 total images (10 existing + 16 new)
+
+### New Gallery Images
+- img_20130930_130255, 130304: Harbor views from above
+- img_20140620_120347, 120410, 120413, 120433: Whitewashed architecture, ship at anchor
+- img_20140620_123523, 132633: Quiet alleys, harbor promenade
+- img_3128, 3129: Little Venice waterfront
+- img_3130, 3131: Iconic red shutters and blue window details
+- img_3135, 3137: Alleys and whitewashed steps
+- img_3145, 3148: Windmill ridge and harbor panorama
+
+### Story Enhancements
+1. **"The Maze of Chora"** section:
+   - Added image-row-2 with red shutters + blue window (img_3130, img_3131)
+
+2. **New "Little Venice" section:**
+   - Two waterfront images showing houses over water (img_3128, img_3129)
+   - Text about 18th-century captains' houses, sunset cocktails
+
+3. **"The Windmills" section:**
+   - Added golden hour windmill shot (img_3145)
+
+4. **New "The Harbor" section:**
+   - Panorama with windmills (img_3148)
+
+---
+
+## Sky Bounce Effect - New Feature
+
+**Files:** `js/globe/core.js`, `js/globe/animation.js`, `js/input.js`
+
+### Description
+A subtle golden atmospheric glow that pulses once around a marker when it receives focus.
+
+### Implementation
+- Created `skyBounceSprite` - a canvas-based sprite with radial gradient (golden center → blue edge)
+- Triggers on:
+  1. Sidebar click → globe rotates → lands → sky bounce
+  2. Direct marker click → sky bounce
+- Animation: 600ms, scales 0.025 → 0.06, opacity pulses to 0.9
+
+### Key Code
+```javascript
+// Gradient for the glow
+gradient.addColorStop(0.2, 'rgba(255, 225, 100, 0.9)'); // Bright golden
+gradient.addColorStop(0.4, 'rgba(255, 215, 80, 0.8)');  // Strong gold
+gradient.addColorStop(0.6, 'rgba(255, 200, 120, 0.5)'); // Warm glow
+
+// Animation
+const opacity = Math.sin(progress * Math.PI) * 0.9;
+```
+
+---
+
+## UI Change: Sidebar Click → Auto-Open Panel
+
+**File:** `js/ui/sidebar.js`
+
+### Before
+- Click sidebar item → globe rotates → marker bounces → must click marker to open panel
+
+### After
+- Click sidebar item → globe rotates → sky bounce → panel auto-opens (400ms delay)
+
+### Change
+```javascript
+// Old: skipPanelOpen = true;
+// New:
+autoOpenPanel = true;
+```
+
+---
+
+## Zoom Transition Smoothing
+
+**Files:** `js/globe/animation.js`, `js/data/config.js`, `js/globe/core.js`
+
+### Problem
+Stuttering during zoom-out phase - was recalculating start position each frame.
+
+### Fix
+- Store `transitionStartZ` when zoom-out begins
+- Properly interpolate: `startZ + (zoomOutDistance - startZ) * easeOut`
+- Changed from quadratic to cubic easing for smoother motion
+
+### Config Changes
+```javascript
+// Before → After
+zoomOutDistance: 4.05 → 4.8    // Further back for more rotation room
+zoomOutDuration: 600 → 450     // Faster zoom out
+zoomInDuration: 800 → 900      // Slower, smoother landing
+```
+
+---
+
+## Files Modified (This Session)
+
+### Core Files
+- `js/data/locations.js` - Mykonos new sections (Little Venice, The Harbor)
+- `js/data/galleries.js` - Mykonos (+16 images = 26 total)
+- `js/data/config.js` - Zoom transition timing
+- `js/globe/core.js` - Sky bounce sprite, transition state
+- `js/globe/animation.js` - Sky bounce animation, fixed zoom interpolation
+- `js/ui/sidebar.js` - Auto-open panel on click
+- `js/input.js` - Sky bounce trigger on marker click
+
+### Helper Files Created
+- `mykonos-thumbnails.html` - Image selection tool
+- `mykonos-current-gallery.html` - Preview of existing gallery
+- `mykonos-uploaded-preview.html` - Preview of new uploads
+- `upload-mykonos-images.js` - Cloudinary upload script
+
+---
+
 ## Next Steps (for future sessions)
-- Commit Santorini changes
-- Continue with other locations: Haifa (+19), Mykonos (+18), Phuket (+16), Akaroa (+15)
-- Consider performance optimization if sluggishness persists
+- Commit all changes after restart/testing
+- Continue with other locations: Haifa (+19), Phuket (+16), Akaroa (+15)
+- Test zoom transition after Mac restart (may resolve stuttering)

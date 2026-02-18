@@ -156,6 +156,9 @@ function onTouchTap(event) {
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
+                // Trigger sky bounce effect on the clicked marker
+                triggerSkyBounce(marker);
+
                 // Helper function to open panel
                 const openPanelForLocation = () => {
                     // Start background music for doors (if configured)
@@ -259,6 +262,9 @@ function onClick(event) {
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
+        // Trigger sky bounce effect on the tapped marker
+        triggerSkyBounce(hoveredMarker);
+
         // Helper function to open panel
         const openPanelForLocation = () => {
             // Start background music for doors (if configured)
@@ -267,7 +273,7 @@ function onClick(event) {
             }
             openPanel(loc);
         };
-        
+
         // Doors have iris animation, regular icons don't
         // But skip iris animation for AI texture markers (no canvas to animate)
         const hasAITexture = hoveredMarker.userData.useAIPorthole;

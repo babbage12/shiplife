@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-17T19:11:16.648Z
+// Shiplife Bundle - Generated 2026-02-17T22:06:30.677Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -39,10 +39,10 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 // Animation timing
 const introDuration = 3000;
 const bounceDuration = 350;
-const zoomOutDistance = 4.05;
+const zoomOutDistance = 4.8;      // Further back for smoother rotation
 const baseZoomInDistance = 2.16;
-const zoomOutDuration = 600;
-const zoomInDuration = 800;
+const zoomOutDuration = 450;       // Faster zoom out
+const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
 
 // Background music settings
 const MUSIC_FADE_DURATION = 1500;
@@ -1982,8 +1982,9 @@ const locationGalleries = {
 
     // SORRENTO (10 images)
 
-    // MYKONOS (10 images)
+    // MYKONOS (26 images)
     "mykonos": [
+        // Original 10
         { src: "shiplife/mykonos/kx8jgpebx94sjtsx1gv1.jpg", caption: "Paraportiani - five churches fused into one, the most photographed in Greece.", alt: "Paraportiani church Mykonos" },
         { src: "shiplife/mykonos/ovx558ltylc7yriwzfgt.jpg", caption: "The old harbor - blue dome, turquoise water, and the whitewashed town climbing the hill.", alt: "Mykonos harbor with church" },
         { src: "shiplife/mykonos/jl35eyujz2wy4umami8n.jpg", caption: "Mykonos Town from the water - superyachts and fishing boats share the harbor.", alt: "Mykonos harbor panorama" },
@@ -1993,7 +1994,24 @@ const locationGalleries = {
         { src: "shiplife/mykonos/vqfcb2cffwofro0yhdmb.jpg", caption: "Petros knows he's famous - and expects to be treated accordingly.", alt: "Petros pelican close-up" },
         { src: "shiplife/mykonos/lw2ayxd2wwuetcb0jvdq.jpg", caption: "Bougainvillea cascades over a doorway - red against white, the colors of Greece.", alt: "Mykonos bougainvillea" },
         { src: "shiplife/mykonos/foehrmtcpagjgldkjps7.jpg", caption: "The windmills of Kato Mili - grinding grain for 400 years, now grinding out postcards.", alt: "Mykonos windmills" },
-        { src: "shiplife/mykonos/iqhfkemtntijyhepfxae.jpg", caption: "Our home away from home - the ship at anchor while Mykonos beckons.", alt: "Cruise ship Mykonos" }
+        { src: "shiplife/mykonos/iqhfkemtntijyhepfxae.jpg", caption: "Our home away from home - the ship at anchor while Mykonos beckons.", alt: "Cruise ship Mykonos" },
+        // New 16 images
+        { src: "shiplife/mykonos/img_20130930_130255", caption: "Looking down at the harbor - fishing boats bob in crystalline water.", alt: "Mykonos harbor view" },
+        { src: "shiplife/mykonos/img_20130930_130304", caption: "The waterfront from above - where the Aegean meets the whitewashed town.", alt: "Mykonos waterfront aerial" },
+        { src: "shiplife/mykonos/img_20140620_120347", caption: "Whitewashed walls and wooden balconies - classic Cycladic architecture.", alt: "Mykonos architecture" },
+        { src: "shiplife/mykonos/img_20140620_120410", caption: "The postcard view - whitewashed Mykonos with our ship at anchor in the bay.", alt: "Mykonos with cruise ship" },
+        { src: "shiplife/mykonos/img_20140620_120413", caption: "Balconies draped in morning light - every corner a photograph.", alt: "Mykonos balconies" },
+        { src: "shiplife/mykonos/img_20140620_120433", caption: "The white maze stretches toward the sea - Chora in all its glory.", alt: "Mykonos town view" },
+        { src: "shiplife/mykonos/img_20140620_123523", caption: "A quiet corner of the labyrinth - even in peak season, solitude hides around corners.", alt: "Mykonos quiet alley" },
+        { src: "shiplife/mykonos/img_20140620_132633", caption: "The harbor promenade - cafés and fishing boats sharing the waterfront.", alt: "Mykonos harbor promenade" },
+        { src: "shiplife/mykonos/img_3128", caption: "Little Venice from the water - balconies hang over the waves.", alt: "Little Venice Mykonos" },
+        { src: "shiplife/mykonos/img_3129", caption: "The sea laps at the foundations - houses built so close the spray reaches the doors.", alt: "Mykonos waterfront houses" },
+        { src: "shiplife/mykonos/img_3130", caption: "Iconic Cycladic detail - red shutters against brilliant white, blue sky above.", alt: "Red shutters Mykonos" },
+        { src: "shiplife/mykonos/img_3131", caption: "Another perfect window - turquoise this time, framing the endless blue.", alt: "Blue window Mykonos" },
+        { src: "shiplife/mykonos/img_3135", caption: "The labyrinth opens to the sea - a glimpse of harbor between the walls.", alt: "Mykonos alley to harbor" },
+        { src: "shiplife/mykonos/img_3137", caption: "Whitewashed steps leading nowhere and everywhere - the joy of getting lost.", alt: "Mykonos whitewashed steps" },
+        { src: "shiplife/mykonos/img_3145", caption: "The windmill ridge at golden hour - thatch and stone against the sky.", alt: "Mykonos windmill ridge" },
+        { src: "shiplife/mykonos/img_3148", caption: "Harbor panorama with the windmills standing guard - the definitive Mykonos view.", alt: "Mykonos panorama with windmills" }
     ],
 
     // SYMI (2 images)
@@ -8393,6 +8411,10 @@ an original composition inspired by this place.
                 <p>The streets of Mykonos Town - Chora - were designed to confuse. Not tourists, but pirates. The narrow, twisting alleys were meant to bewilder raiders, giving locals time to escape or fight back. Now they bewilder visitors in the best possible way.</p>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/fckjor4pfggvnkwwqgqa.jpg" alt="White alley" data-caption="The maze of Chora - every turn reveals another whitewashed wonder.">
                 <p>Every corner is a composition - bougainvillea spilling over a doorway, geraniums cascading down steps, the contrast of red and pink against endless white. The paint is refreshed every year; the effect is timeless.</p>
+                <div class="image-row-2">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3130" alt="Red shutters" data-caption="Iconic Cycladic detail - red shutters against brilliant white.">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3131" alt="Blue window" data-caption="Turquoise window framing the endless blue.">
+                </div>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/yyv27n0rvlksrcn29dgy.jpg" alt="Flower alley" data-caption="Geraniums spill down whitewashed steps - the Cyclades in a single frame.">
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/lw2ayxd2wwuetcb0jvdq.jpg" alt="Bougainvillea" data-caption="Bougainvillea cascades over a doorway - red against white, the eternal colors of Greece.">
             </div>
@@ -8413,10 +8435,27 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
+                <h3>Little Venice</h3>
+                <p>Where the houses lean so far over the water that the waves splash the foundations - this is Little Venice, Mykonos's most romantic corner. The 18th-century captains who built these homes wanted to watch their ships from their balconies.</p>
+                <div class="image-row-2">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3128" alt="Little Venice" data-caption="Little Venice from the water - balconies hanging over the waves.">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3129" alt="Waterfront houses" data-caption="Houses built so close the spray reaches the doors.">
+                </div>
+                <p>Now the ground floors are bars and cafés where you can sip cocktails as the sun drops into the sea. The tables fill by late afternoon; by sunset, there's not an empty seat in sight.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <h3>The Windmills</h3>
                 <p>The windmills of Kato Mili are the island's most famous landmark - a row of 16th-century mills that once ground grain for the ships that called here. They haven't worked in decades, but they remain the symbol of Mykonos.</p>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/foehrmtcpagjgldkjps7.jpg" alt="Windmills" data-caption="The windmills of Kato Mili - grinding grain for 400 years, now grinding out postcards.">
                 <p>At sunset, the ridge fills with photographers and couples watching the light change. It's touristy and romantic and utterly worth it. Some clichés earn their status.</p>
+                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/img_3145" alt="Windmill ridge" data-caption="The windmill ridge at golden hour - thatch and stone against the sky.">
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Harbor</h3>
+                <p>The old harbor is where fishing boats still unload their catch and superyachts jostle for position. It's a working port masquerading as a postcard - or perhaps the other way around.</p>
+                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/img_3148" alt="Harbor panorama" data-caption="Harbor panorama with the windmills standing guard - the definitive Mykonos view.">
             </div>
 
             ${generateGallery('mykonos', 'More from Mykonos')}
@@ -9992,12 +10031,20 @@ let skipPanelOpen = false;
 let bouncingMarkerId = null;
 let bounceStartTime = null;
 
+// Sky bounce effect - atmospheric glow when marker rotates into view
+let skyBounceSprite = null;
+let skyBounceActive = false;
+let skyBounceStartTime = null;
+let lastBouncingMarkerVisible = false; // Track visibility state transitions
+let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
+
 // Zoom transition animation
 let isTransitioning = false;
 let transitionStartTime = null;
 let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
 let targetCameraZ = 1.8;
 let currentZoomInDistance = baseZoomInDistance;
+let transitionStartZ = null; // Store starting Z for smooth interpolation
 
 // Celebration sequence state
 let celebrationInProgress = false;
@@ -10465,6 +10512,60 @@ function createGlobe() {
     });
     const outerAtmosphere = new THREE.Mesh(outerAtmoGeometry, outerAtmoMaterial);
     globe.add(outerAtmosphere);
+
+    // Create sky bounce sprite (hidden until triggered)
+    createSkyBounceSprite();
+}
+
+// Create the sky bounce glow sprite
+function createSkyBounceSprite() {
+    // Create a canvas for the glow texture - bright, compact ring
+    const canvas = document.createElement('canvas');
+    canvas.width = 128;
+    canvas.height = 128;
+    const ctx = canvas.getContext('2d');
+
+    // Draw a bright, tight ring glow
+    const gradient = ctx.createRadialGradient(64, 64, 15, 64, 64, 50);
+    gradient.addColorStop(0, 'rgba(255, 240, 200, 0)');     // Transparent center
+    gradient.addColorStop(0.2, 'rgba(255, 225, 100, 0.9)'); // Bright golden
+    gradient.addColorStop(0.4, 'rgba(255, 215, 80, 0.8)');  // Strong gold
+    gradient.addColorStop(0.6, 'rgba(255, 200, 120, 0.5)'); // Warm glow
+    gradient.addColorStop(0.85, 'rgba(200, 180, 255, 0.2)');// Hint of blue
+    gradient.addColorStop(1, 'rgba(150, 180, 255, 0)');     // Fade out
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 128, 128);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    const material = new THREE.SpriteMaterial({
+        map: texture,
+        blending: THREE.AdditiveBlending,
+        transparent: true,
+        opacity: 0,
+        depthWrite: false,
+        depthTest: false
+    });
+
+    skyBounceSprite = new THREE.Sprite(material);
+    skyBounceSprite.scale.set(0.06, 0.06, 1); // Much smaller - similar to marker size
+    skyBounceSprite.visible = false;
+    scene.add(skyBounceSprite);
+}
+
+// Trigger sky bounce at a specific marker
+function triggerSkyBounce(marker) {
+    if (!skyBounceSprite || !marker) return;
+
+    // Store reference to marker for position updates
+    skyBounceSprite.userData.targetMarker = marker;
+
+    // Reset and start animation
+    skyBounceSprite.visible = true;
+    skyBounceSprite.material.opacity = 0;
+    skyBounceSprite.scale.set(0.04, 0.04, 1); // Start small
+    skyBounceActive = true;
+    skyBounceStartTime = Date.now();
 }
 
 
@@ -12508,20 +12609,25 @@ function animate() {
             const elapsed = Date.now() - transitionStartTime;
             
             if (transitionPhase === 'zoom-out') {
+                // Store starting Z on first frame
+                if (transitionStartZ === null) {
+                    transitionStartZ = camera.position.z;
+                }
+
                 const progress = Math.min(elapsed / zoomOutDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 2);
-                
-                // Zoom out
-                const startZ = camera.position.z;
-                camera.position.z = startZ + (zoomOutDistance - startZ) * easeOut * 0.1;
-                
+                const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out for smoother motion
+
+                // Smoothly zoom out from start position to zoomOutDistance
+                camera.position.z = transitionStartZ + (zoomOutDistance - transitionStartZ) * easeOut;
+
                 if (progress >= 1) {
-                    // Switch to rotate phase - apply pending rotation
+                    // Switch to zoom-in phase - apply pending rotation
                     targetRotationY = pendingRotationY;
                     targetRotationX = pendingRotationX;
                     transitionPhase = 'zoom-in';
                     transitionStartTime = Date.now();
-                    
+                    transitionStartZ = null; // Reset for next transition
+
                     // Calculate zoom distance based on target location's density
                     currentZoomInDistance = getZoomDistanceForLocation(pendingZoomLocation || pendingLocation);
                 }
@@ -12550,6 +12656,12 @@ function animate() {
                     if (pendingLocation) {
                         const loc = pendingLocation;
                         pendingLocation = null;
+
+                        // Find the marker for this location and trigger sky bounce
+                        const targetMarker = markers.find(m => m.userData.id === loc.id);
+                        if (targetMarker) {
+                            triggerSkyBounce(targetMarker);
+                        }
 
                         if (autoOpenPanel) {
                             autoOpenPanel = false;
@@ -12615,6 +12727,43 @@ function animate() {
         }
     }
     
+    // Sky bounce animation (subtle atmospheric glow around marker)
+    if (skyBounceActive && skyBounceSprite && skyBounceStartTime) {
+        const elapsed = Date.now() - skyBounceStartTime;
+        const duration = 600; // 600ms total animation
+
+        // Update position to follow the marker
+        const targetMarker = skyBounceSprite.userData.targetMarker;
+        if (targetMarker) {
+            const worldPos = new THREE.Vector3();
+            targetMarker.getWorldPosition(worldPos);
+            // Position slightly in front of marker (toward camera)
+            skyBounceSprite.position.copy(worldPos);
+            skyBounceSprite.position.multiplyScalar(1.02);
+        }
+
+        if (elapsed < duration) {
+            const progress = elapsed / duration;
+
+            // Scale: compact expansion from marker
+            const baseSize = 0.025; // Smaller start
+            const maxSize = 0.06;   // Stays compact
+            const scaleEase = Math.sin(progress * Math.PI); // Smooth in-out
+            const scale = baseSize + (maxSize - baseSize) * scaleEase;
+            skyBounceSprite.scale.set(scale, scale, 1);
+
+            // Opacity: bright pulse
+            const opacity = Math.sin(progress * Math.PI) * 0.9; // Max 0.9 opacity - much brighter
+            skyBounceSprite.material.opacity = Math.max(0, opacity);
+        } else {
+            // Animation complete
+            skyBounceActive = false;
+            skyBounceSprite.visible = false;
+            skyBounceSprite.material.opacity = 0;
+            skyBounceSprite.userData.targetMarker = null;
+        }
+    }
+
     // Marker animations
     markers.forEach((marker, i) => {
         const isDoor = marker.userData.isDoor;
@@ -12623,7 +12772,7 @@ function animate() {
         // AI portholes are square, canvas ones have base
         const baseScaleY = useAI ? marker.userData.baseSize * 2 : (isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
         const isBouncing = bouncingMarkerId && marker.userData.id === bouncingMarkerId;
-        
+
         // Ensure marker is visible (but respect dimming and glowing state)
         marker.visible = true;
         // Don't override opacity for dimmed or glowing markers
@@ -12886,6 +13035,9 @@ function triggerBounce(locationId) {
     }
     bouncingMarkerId = locationId;
     bounceStartTime = Date.now();
+    // Reset sky bounce tracking for the new marker
+    lastBouncingMarkerVisible = false;
+    skyBounceTriggeredForCurrentMarker = false;
 }
 
 function stopBounce() {
@@ -13506,7 +13658,7 @@ function buildLocationList() {
         item.appendChild(nameDiv);
 
         item.onclick = () => {
-            skipPanelOpen = true; // User must click icon to open story
+            autoOpenPanel = true; // Open panel after globe rotates to location
             focusLocation(loc);
             closeMobileMenu();
         };
@@ -14418,6 +14570,9 @@ function onTouchTap(event) {
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
+                // Trigger sky bounce effect on the clicked marker
+                triggerSkyBounce(marker);
+
                 // Helper function to open panel
                 const openPanelForLocation = () => {
                     // Start background music for doors (if configured)
@@ -14521,6 +14676,9 @@ function onClick(event) {
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
+        // Trigger sky bounce effect on the tapped marker
+        triggerSkyBounce(hoveredMarker);
+
         // Helper function to open panel
         const openPanelForLocation = () => {
             // Start background music for doors (if configured)
@@ -14529,7 +14687,7 @@ function onClick(event) {
             }
             openPanel(loc);
         };
-        
+
         // Doors have iris animation, regular icons don't
         // But skip iris animation for AI texture markers (no canvas to animate)
         const hasAITexture = hoveredMarker.userData.useAIPorthole;

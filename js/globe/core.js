@@ -29,12 +29,20 @@ let skipPanelOpen = false;
 let bouncingMarkerId = null;
 let bounceStartTime = null;
 
+// Sky bounce effect - atmospheric glow when marker rotates into view
+let skyBounceSprite = null;
+let skyBounceActive = false;
+let skyBounceStartTime = null;
+let lastBouncingMarkerVisible = false; // Track visibility state transitions
+let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
+
 // Zoom transition animation
 let isTransitioning = false;
 let transitionStartTime = null;
 let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
 let targetCameraZ = 1.8;
 let currentZoomInDistance = baseZoomInDistance;
+let transitionStartZ = null; // Store starting Z for smooth interpolation
 
 // Celebration sequence state
 let celebrationInProgress = false;
@@ -502,4 +510,58 @@ function createGlobe() {
     });
     const outerAtmosphere = new THREE.Mesh(outerAtmoGeometry, outerAtmoMaterial);
     globe.add(outerAtmosphere);
+
+    // Create sky bounce sprite (hidden until triggered)
+    createSkyBounceSprite();
+}
+
+// Create the sky bounce glow sprite
+function createSkyBounceSprite() {
+    // Create a canvas for the glow texture - bright, compact ring
+    const canvas = document.createElement('canvas');
+    canvas.width = 128;
+    canvas.height = 128;
+    const ctx = canvas.getContext('2d');
+
+    // Draw a bright, tight ring glow
+    const gradient = ctx.createRadialGradient(64, 64, 15, 64, 64, 50);
+    gradient.addColorStop(0, 'rgba(255, 240, 200, 0)');     // Transparent center
+    gradient.addColorStop(0.2, 'rgba(255, 225, 100, 0.9)'); // Bright golden
+    gradient.addColorStop(0.4, 'rgba(255, 215, 80, 0.8)');  // Strong gold
+    gradient.addColorStop(0.6, 'rgba(255, 200, 120, 0.5)'); // Warm glow
+    gradient.addColorStop(0.85, 'rgba(200, 180, 255, 0.2)');// Hint of blue
+    gradient.addColorStop(1, 'rgba(150, 180, 255, 0)');     // Fade out
+
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 128, 128);
+
+    const texture = new THREE.CanvasTexture(canvas);
+    const material = new THREE.SpriteMaterial({
+        map: texture,
+        blending: THREE.AdditiveBlending,
+        transparent: true,
+        opacity: 0,
+        depthWrite: false,
+        depthTest: false
+    });
+
+    skyBounceSprite = new THREE.Sprite(material);
+    skyBounceSprite.scale.set(0.06, 0.06, 1); // Much smaller - similar to marker size
+    skyBounceSprite.visible = false;
+    scene.add(skyBounceSprite);
+}
+
+// Trigger sky bounce at a specific marker
+function triggerSkyBounce(marker) {
+    if (!skyBounceSprite || !marker) return;
+
+    // Store reference to marker for position updates
+    skyBounceSprite.userData.targetMarker = marker;
+
+    // Reset and start animation
+    skyBounceSprite.visible = true;
+    skyBounceSprite.material.opacity = 0;
+    skyBounceSprite.scale.set(0.04, 0.04, 1); // Start small
+    skyBounceActive = true;
+    skyBounceStartTime = Date.now();
 }

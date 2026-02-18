@@ -11,6 +11,9 @@ function triggerBounce(locationId) {
     }
     bouncingMarkerId = locationId;
     bounceStartTime = Date.now();
+    // Reset sky bounce tracking for the new marker
+    lastBouncingMarkerVisible = false;
+    skyBounceTriggeredForCurrentMarker = false;
 }
 
 function stopBounce() {

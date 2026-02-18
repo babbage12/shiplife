@@ -1719,8 +1719,9 @@ const locationGalleries = {
 
     // SORRENTO (10 images)
 
-    // MYKONOS (10 images)
+    // MYKONOS (26 images)
     "mykonos": [
+        // Original 10
         { src: "shiplife/mykonos/kx8jgpebx94sjtsx1gv1.jpg", caption: "Paraportiani - five churches fused into one, the most photographed in Greece.", alt: "Paraportiani church Mykonos" },
         { src: "shiplife/mykonos/ovx558ltylc7yriwzfgt.jpg", caption: "The old harbor - blue dome, turquoise water, and the whitewashed town climbing the hill.", alt: "Mykonos harbor with church" },
         { src: "shiplife/mykonos/jl35eyujz2wy4umami8n.jpg", caption: "Mykonos Town from the water - superyachts and fishing boats share the harbor.", alt: "Mykonos harbor panorama" },
@@ -1730,7 +1731,24 @@ const locationGalleries = {
         { src: "shiplife/mykonos/vqfcb2cffwofro0yhdmb.jpg", caption: "Petros knows he's famous - and expects to be treated accordingly.", alt: "Petros pelican close-up" },
         { src: "shiplife/mykonos/lw2ayxd2wwuetcb0jvdq.jpg", caption: "Bougainvillea cascades over a doorway - red against white, the colors of Greece.", alt: "Mykonos bougainvillea" },
         { src: "shiplife/mykonos/foehrmtcpagjgldkjps7.jpg", caption: "The windmills of Kato Mili - grinding grain for 400 years, now grinding out postcards.", alt: "Mykonos windmills" },
-        { src: "shiplife/mykonos/iqhfkemtntijyhepfxae.jpg", caption: "Our home away from home - the ship at anchor while Mykonos beckons.", alt: "Cruise ship Mykonos" }
+        { src: "shiplife/mykonos/iqhfkemtntijyhepfxae.jpg", caption: "Our home away from home - the ship at anchor while Mykonos beckons.", alt: "Cruise ship Mykonos" },
+        // New 16 images
+        { src: "shiplife/mykonos/img_20130930_130255", caption: "Looking down at the harbor - fishing boats bob in crystalline water.", alt: "Mykonos harbor view" },
+        { src: "shiplife/mykonos/img_20130930_130304", caption: "The waterfront from above - where the Aegean meets the whitewashed town.", alt: "Mykonos waterfront aerial" },
+        { src: "shiplife/mykonos/img_20140620_120347", caption: "Whitewashed walls and wooden balconies - classic Cycladic architecture.", alt: "Mykonos architecture" },
+        { src: "shiplife/mykonos/img_20140620_120410", caption: "The postcard view - whitewashed Mykonos with our ship at anchor in the bay.", alt: "Mykonos with cruise ship" },
+        { src: "shiplife/mykonos/img_20140620_120413", caption: "Balconies draped in morning light - every corner a photograph.", alt: "Mykonos balconies" },
+        { src: "shiplife/mykonos/img_20140620_120433", caption: "The white maze stretches toward the sea - Chora in all its glory.", alt: "Mykonos town view" },
+        { src: "shiplife/mykonos/img_20140620_123523", caption: "A quiet corner of the labyrinth - even in peak season, solitude hides around corners.", alt: "Mykonos quiet alley" },
+        { src: "shiplife/mykonos/img_20140620_132633", caption: "The harbor promenade - cafés and fishing boats sharing the waterfront.", alt: "Mykonos harbor promenade" },
+        { src: "shiplife/mykonos/img_3128", caption: "Little Venice from the water - balconies hang over the waves.", alt: "Little Venice Mykonos" },
+        { src: "shiplife/mykonos/img_3129", caption: "The sea laps at the foundations - houses built so close the spray reaches the doors.", alt: "Mykonos waterfront houses" },
+        { src: "shiplife/mykonos/img_3130", caption: "Iconic Cycladic detail - red shutters against brilliant white, blue sky above.", alt: "Red shutters Mykonos" },
+        { src: "shiplife/mykonos/img_3131", caption: "Another perfect window - turquoise this time, framing the endless blue.", alt: "Blue window Mykonos" },
+        { src: "shiplife/mykonos/img_3135", caption: "The labyrinth opens to the sea - a glimpse of harbor between the walls.", alt: "Mykonos alley to harbor" },
+        { src: "shiplife/mykonos/img_3137", caption: "Whitewashed steps leading nowhere and everywhere - the joy of getting lost.", alt: "Mykonos whitewashed steps" },
+        { src: "shiplife/mykonos/img_3145", caption: "The windmill ridge at golden hour - thatch and stone against the sky.", alt: "Mykonos windmill ridge" },
+        { src: "shiplife/mykonos/img_3148", caption: "Harbor panorama with the windmills standing guard - the definitive Mykonos view.", alt: "Mykonos panorama with windmills" }
     ],
 
     // SYMI (2 images)

@@ -6272,6 +6272,10 @@ an original composition inspired by this place.
                 <p>The streets of Mykonos Town - Chora - were designed to confuse. Not tourists, but pirates. The narrow, twisting alleys were meant to bewilder raiders, giving locals time to escape or fight back. Now they bewilder visitors in the best possible way.</p>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/fckjor4pfggvnkwwqgqa.jpg" alt="White alley" data-caption="The maze of Chora - every turn reveals another whitewashed wonder.">
                 <p>Every corner is a composition - bougainvillea spilling over a doorway, geraniums cascading down steps, the contrast of red and pink against endless white. The paint is refreshed every year; the effect is timeless.</p>
+                <div class="image-row-2">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3130" alt="Red shutters" data-caption="Iconic Cycladic detail - red shutters against brilliant white.">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3131" alt="Blue window" data-caption="Turquoise window framing the endless blue.">
+                </div>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/yyv27n0rvlksrcn29dgy.jpg" alt="Flower alley" data-caption="Geraniums spill down whitewashed steps - the Cyclades in a single frame.">
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/lw2ayxd2wwuetcb0jvdq.jpg" alt="Bougainvillea" data-caption="Bougainvillea cascades over a doorway - red against white, the eternal colors of Greece.">
             </div>
@@ -6292,10 +6296,27 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
+                <h3>Little Venice</h3>
+                <p>Where the houses lean so far over the water that the waves splash the foundations - this is Little Venice, Mykonos's most romantic corner. The 18th-century captains who built these homes wanted to watch their ships from their balconies.</p>
+                <div class="image-row-2">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3128" alt="Little Venice" data-caption="Little Venice from the water - balconies hanging over the waves.">
+                    <img class="inline-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/mykonos/img_3129" alt="Waterfront houses" data-caption="Houses built so close the spray reaches the doors.">
+                </div>
+                <p>Now the ground floors are bars and cafés where you can sip cocktails as the sun drops into the sea. The tables fill by late afternoon; by sunset, there's not an empty seat in sight.</p>
+            </div>
+
+            <div class="story-section-panel">
                 <h3>The Windmills</h3>
                 <p>The windmills of Kato Mili are the island's most famous landmark - a row of 16th-century mills that once ground grain for the ships that called here. They haven't worked in decades, but they remain the symbol of Mykonos.</p>
                 <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/foehrmtcpagjgldkjps7.jpg" alt="Windmills" data-caption="The windmills of Kato Mili - grinding grain for 400 years, now grinding out postcards.">
                 <p>At sunset, the ridge fills with photographers and couples watching the light change. It's touristy and romantic and utterly worth it. Some clichés earn their status.</p>
+                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/img_3145" alt="Windmill ridge" data-caption="The windmill ridge at golden hour - thatch and stone against the sky.">
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Harbor</h3>
+                <p>The old harbor is where fishing boats still unload their catch and superyachts jostle for position. It's a working port masquerading as a postcard - or perhaps the other way around.</p>
+                <img class="story-image" src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/mykonos/img_3148" alt="Harbor panorama" data-caption="Harbor panorama with the windmills standing guard - the definitive Mykonos view.">
             </div>
 
             ${generateGallery('mykonos', 'More from Mykonos')}

@@ -77,7 +77,7 @@ function buildLocationList() {
         item.appendChild(nameDiv);
 
         item.onclick = () => {
-            skipPanelOpen = true; // User must click icon to open story
+            autoOpenPanel = true; // Open panel after globe rotates to location
             focusLocation(loc);
             closeMobileMenu();
         };
