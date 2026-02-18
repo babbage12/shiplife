@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T22:57:18.561Z
+// Shiplife Bundle - Generated 2026-02-18T23:19:13.825Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -538,6 +538,21 @@ const locationGalleries = {
         { src: "shiplife/castro/castro-sail-03", caption: "UNESCO wooden churches dot the island.", alt: "Churches" },
         { src: "shiplife/castro/castro-sail-04", caption: "The colors of Castro.", alt: "Palafitos" },
         { src: "shiplife/castro/castro-sail-05", caption: "Where the mainland ends.", alt: "Castro" }
+    ],
+
+    // CAIRO / PYRAMIDS OF GIZA (11 images)
+    "cairo": [
+        { src: "shiplife/cairo/cairo-hero", caption: "First glimpse of the pyramids after a three-hour bus ride.", alt: "First glimpse of pyramids" },
+        { src: "shiplife/cairo/cairo-approach-01", caption: "The closer we came, the larger they grew - and the further away they seemed.", alt: "Approaching pyramids" },
+        { src: "shiplife/cairo/cairo-scale-01", caption: "Only up close did the scale reveal itself. People wandered like ants.", alt: "Scale of pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-01", caption: "The Pyramids of Giza.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-02", caption: "4,500 years of history.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-staging", caption: "The staging area.", alt: "Staging area" },
+        { src: "shiplife/cairo/cairo-pyramids-03", caption: "Ancient wonder.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-04", caption: "Giza plateau.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-05", caption: "Standing before the ages.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-06", caption: "The Great Pyramid.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-final", caption: "Leaving Giza.", alt: "Pyramids" }
     ],
 
     // BUZIOS (9 images)
@@ -9525,6 +9540,99 @@ an original composition inspired by this place.
         `,
         fullDesc: "Castro is the capital of Chiloé Island, famous for its palafitos (colorful houses on stilts) and UNESCO-listed wooden churches. The island has its own mythology, cuisine, and way of life distinct from mainland Chile.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero"
+    },
+    {
+        id: 123,
+        title: "Cairo, Egypt",
+        coords: [29.9792, 31.1342],
+        tag: "Pyramids of Giza",
+        icon: "🔺",
+        isDoor: false,
+        shortDesc: "The last remaining wonder of the ancient world.",
+        imagePosition: "center",
+        useRichContent: true,
+        richContent: `
+            <div class="story-header">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/cairo-hero" class="story-image" alt="First glimpse of the Pyramids">
+            </div>
+
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🔺</span>
+                    <span class="demo-value">Pyramids of Giza</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📜</span>
+                    <span class="demo-value">4,500 Years Old</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">Ancient Wonder</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚌</span>
+                    <span class="demo-value">3hr from Port</span>
+                </div>
+            </div>
+
+            <h3>The Approach</h3>
+            <p>After three hours on the bus from Alexandria, there it was - that first glimpse of the pyramids rising from the desert. The excitement was real.</p>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-hero" class="inline-image" data-caption="First glimpse after the long drive." alt="First glimpse">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-approach-01" class="inline-image" data-caption="The closer we came, the further they seemed." alt="Approaching">
+            </div>
+
+            <p>Something strange happened as we got closer. The larger they became, the further away they seemed. Some kind of optical illusion - the desert playing tricks, or maybe the mind struggling to process something that ancient, that massive, that impossible.</p>
+
+            <h3>The Scale</h3>
+            <p>It was only when we finally arrived that the truth revealed itself. The people wandering around looked like ants. We had been fooled by our eyes the entire approach.</p>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/cairo/cairo-scale-01" class="story-image" data-caption="People like ants - the scale finally hits you." alt="Scale of pyramids">
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-01" class="inline-image" data-caption="The Pyramids of Giza." alt="Pyramids">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-02" class="inline-image" data-caption="4,500 years of history." alt="Pyramids">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/cairo/cairo-staging" class="story-image" data-caption="The staging area." alt="Staging area">
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-03" class="inline-image" data-caption="Ancient wonder." alt="Pyramids">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-04" class="inline-image" data-caption="Giza plateau." alt="Pyramids">
+            </div>
+
+            <div class="image-row-2">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-05" class="inline-image" data-caption="Standing before the ages." alt="Pyramids">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-pyramids-06" class="inline-image" data-caption="The Great Pyramid." alt="Pyramids">
+            </div>
+
+            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/cairo/cairo-final" class="story-image" data-caption="Leaving Giza." alt="Leaving">
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about this location</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🔺</span>
+                        <span>The Last Ancient Wonder</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>Sole Survivor:</strong> The Great Pyramid is the only one of the Seven Wonders of the Ancient World still standing.</li>
+                        <li><strong>Construction:</strong> Built around 2560 BC for Pharaoh Khufu. Originally stood 481 feet - the tallest man-made structure for over 3,800 years.</li>
+                        <li><strong>Precision:</strong> The base is level to within 2.1 centimeters across 13 acres. The sides align almost perfectly with the cardinal directions.</li>
+                        <li><strong>Scale:</strong> Contains an estimated 2.3 million stone blocks, each weighing an average of 2.5 tons.</li>
+                        <li><strong>The Sphinx:</strong> Carved from a single limestone ridge, the Sphinx has guarded the Giza plateau for 4,500 years.</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('cairo')}
+        `,
+        fullDesc: "After three hours on the bus from Alexandria, there it was - that first glimpse of the pyramids. The closer we came, the larger they grew, but the further away they seemed. Some kind of optical illusion. It was only up close that the scale revealed itself - people wandering around like ants.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/cairo-hero"
     },
     {
         id: 107,

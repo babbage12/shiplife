@@ -274,6 +274,21 @@ const locationGalleries = {
         { src: "shiplife/castro/castro-sail-05", caption: "Where the mainland ends.", alt: "Castro" }
     ],
 
+    // CAIRO / PYRAMIDS OF GIZA (11 images)
+    "cairo": [
+        { src: "shiplife/cairo/cairo-hero", caption: "First glimpse of the pyramids after a three-hour bus ride.", alt: "First glimpse of pyramids" },
+        { src: "shiplife/cairo/cairo-approach-01", caption: "The closer we came, the larger they grew - and the further away they seemed.", alt: "Approaching pyramids" },
+        { src: "shiplife/cairo/cairo-scale-01", caption: "Only up close did the scale reveal itself. People wandered like ants.", alt: "Scale of pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-01", caption: "The Pyramids of Giza.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-02", caption: "4,500 years of history.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-staging", caption: "The staging area.", alt: "Staging area" },
+        { src: "shiplife/cairo/cairo-pyramids-03", caption: "Ancient wonder.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-04", caption: "Giza plateau.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-05", caption: "Standing before the ages.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-pyramids-06", caption: "The Great Pyramid.", alt: "Pyramids" },
+        { src: "shiplife/cairo/cairo-final", caption: "Leaving Giza.", alt: "Pyramids" }
+    ],
+
     // BUZIOS (9 images)
     "buzios": [
         { src: "v1770829346/shiplife/buzios/wsvhzaiog6hitekvhjdk.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
