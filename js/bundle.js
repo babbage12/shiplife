@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-22T23:36:21.001Z
+// Shiplife Bundle - Generated 2026-02-22T23:49:48.834Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -6673,6 +6673,15 @@ an original composition inspired by this place.
                 <p>Nothing was easy in Rio. Until I reached the beach and had a Corona.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768953816/IMG_6366_h1ih0q.jpg" class="story-image" data-caption="Copacabana Beach - where the chaos finally stops." alt="Copacabana Beach">
                 <p class="photo-caption-inline">Copacabana. Worth every wrong turn.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/rio/copacabana-wave-sidewalk.jpg" class="story-image" data-caption="The famous wave-pattern sidewalk." alt="Copacabana promenade">
+                <p class="photo-caption-inline">The famous wave-pattern sidewalk - designed by Roberto Burle Marx in 1970.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/rio/copacabana-palace-hotel.jpg" class="story-image" data-caption="Copacabana Palace." alt="Copacabana Palace hotel">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/rio/copacabana-beach-helicopter.jpg" class="story-image" data-caption="Beach life." alt="Copacabana beach">
+                </div>
+                <p class="photo-caption-inline">The iconic Copacabana Palace hotel, and the endless stretch of sand.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/rio/copacabana-volleyball-tournament.jpg" class="story-image" data-caption="Brasil vs USA beach volleyball." alt="Beach volleyball tournament">
+                <p class="photo-caption-inline">Stumbled onto a Brasil vs USA beach volleyball tournament - "Melhores do Mundo" (Best in the World).</p>
             </div>
             
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -6696,8 +6705,6 @@ an original composition inspired by this place.
             </div>
 
             ${generateGallery('rio')}
-
-            ${generateGallery('rioLocal')}
         `,
         fullDesc: "Every time the ship docked in Rio, getting lost was inevitable. Something about this city wanted to keep you there. Credit cards that wouldn't work, trams that got held up, metal gates across restaurant doors. Nothing was easy - until finally reaching Copacabana and having a Corona.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769809159/20200209_075921_rvq35a.jpg"
