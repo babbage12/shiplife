@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-22T22:28:45.639Z
+// Shiplife Bundle - Generated 2026-02-22T22:50:08.016Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -5459,26 +5459,25 @@ an original composition inspired by this place.
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Arrival</span>
                 <h3 class="section-title-panel">Anchored in History</h3>
-                <p>We anchored in the harbor off Ortygia, the island heart of ancient Syracuse. The Royal Clipper's masts rose against a Mediterranean sky as we tendered ashore to explore a city older than Rome.</p>
+                <p>We anchored in the harbor off Ortygia, the island heart of ancient Syracuse. The Royal Clipper's bow gleamed against the Mediterranean sky as we tendered ashore to explore a city older than Rome.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800414/shiplife/syracuse/royal-clipper-bow.jpg" class="story-image" data-caption="The Royal Clipper's elegant bow." alt="Royal Clipper bow">
+                <p class="photo-caption-inline">The Royal Clipper at anchor - her golden lettering catching the morning light.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852931/shiplife/syracuse/aswdr3yzebj1jdgtdiyz.jpg" class="story-image" data-caption="The Royal Clipper at anchor." alt="Royal Clipper">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852943/shiplife/syracuse/bfbllcdynp3xntkwwguw.jpg" class="story-image" data-caption="View from the harbor." alt="Syracuse harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800415/shiplife/syracuse/seabourn-from-papyrus-garden.jpg" class="story-image" data-caption="Seabourn ship from papyrus garden." alt="Cruise ship in harbor">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800416/shiplife/syracuse/sailing-boats-harbor.jpg" class="story-image" data-caption="Classic sailing boats." alt="Syracuse harbor">
                 </div>
-                <p class="photo-caption-inline">Arriving by tall ship into one of the Mediterranean's most ancient harbors.</p>
+                <p class="photo-caption-inline">Ships of all sizes fill Syracuse's ancient harbor - from gleaming cruise ships to traditional wooden schooners.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Ancient Glory</span>
                 <h3 class="section-title-panel">Greater Than Athens</h3>
                 <p>Syracuse was once the most powerful city in the Greek world - not Athens, not Sparta, but this Sicilian colony founded by Corinthians in 734 BC. Cicero called it "the greatest Greek city and the most beautiful of them all."</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852926/shiplife/syracuse/booapz96lan4plbusnxg.jpg" class="story-image" data-caption="Ancient columns still standing." alt="Greek columns">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800419/shiplife/syracuse/temple-apollo-columns.jpg" class="story-image" data-caption="Ancient columns still standing." alt="Temple of Apollo columns">
                 <p class="photo-caption-inline">The Temple of Apollo - one of the oldest Doric temples in Sicily, built in the 6th century BC.</p>
                 <p>At its peak, Syracuse had a population of over 500,000. It defeated Athens in the famous Sicilian Expedition of 415 BC - a humiliation from which Athens never fully recovered.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852924/shiplife/syracuse/c5gdfwadjngcejs2lqms.jpg" class="story-image" data-caption="Ruins amid palm trees." alt="Syracuse ruins">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852928/shiplife/syracuse/hzst8cml36y1x5akvwal.jpg" class="story-image" data-caption="2,700 years of history." alt="Ancient ruins">
-                </div>
-                <p class="photo-caption-inline">Greek foundations beneath Sicilian palms - layers of civilization visible everywhere.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800421/shiplife/syracuse/temple-apollo-palm-trees.jpg" class="story-image" data-caption="Temple ruins amid palm trees." alt="Temple of Apollo">
+                <p class="photo-caption-inline">Greek foundations beneath Sicilian palms - 2,700 years of history visible in a single glance.</p>
             </div>
 
             <div class="story-section-panel">
@@ -5486,68 +5485,57 @@ an original composition inspired by this place.
                 <h3 class="section-title-panel">Eureka!</h3>
                 <p>Archimedes was born here in 287 BC. The story goes that King Hieron II asked him to determine if a crown was pure gold without damaging it. Archimedes pondered the problem until one day, stepping into his bath, he noticed the water level rise.</p>
                 <p>He realized he could measure volume by displacement - and leapt from the tub, running naked through the streets shouting "Eureka!" (I have found it!). He went on to invent war machines that held off the Roman siege for two years, calculate pi with remarkable accuracy, and lay foundations for calculus - all from this small island city.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800447/shiplife/syracuse/inda-theater-festival.jpg" class="story-image" data-caption="Greek theater festival poster." alt="INDA Theater Festival">
+                <p class="photo-caption-inline">Syracuse still celebrates its Greek heritage - the ancient theater hosts classical performances to this day.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Ortygia</span>
                 <h3 class="section-title-panel">The Island Heart</h3>
                 <p>Ortygia is where Syracuse began - a small island connected to the mainland by bridges, packed with Baroque palaces built atop Greek foundations. At its center, the Fountain of Diana sprays water over mythological figures in the Sicilian sun.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852919/shiplife/syracuse/ict6cdzzatrkg2kpyt1j.jpg" class="story-image" data-caption="The Fountain of Diana." alt="Fountain of Diana">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800431/shiplife/syracuse/fountain-diana-full.jpg" class="story-image" data-caption="The Fountain of Diana." alt="Fountain of Diana">
                 <p class="photo-caption-inline">The Fountain of Artemis (Diana) - goddess of the hunt presiding over Ortygia's main square.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852947/shiplife/syracuse/iegd1trarrdqtnp5x1no.jpg" class="story-image" data-caption="Ortygia streets." alt="Ortygia street">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852926/shiplife/syracuse/ij0zwipunaz7z8tjqzqm.jpg" class="story-image" data-caption="Baroque balconies." alt="Syracuse architecture">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800435/shiplife/syracuse/fountain-diana-closeup.jpg" class="story-image" data-caption="Diana close-up." alt="Diana statue">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800436/shiplife/syracuse/ortigia-street-scene.jpg" class="story-image" data-caption="Ortygia streets." alt="Ortygia street">
                 </div>
-                <p class="photo-caption-inline">Narrow streets lined with wrought-iron balconies and honey-colored stone.</p>
+                <p class="photo-caption-inline">From the goddess Diana to Sicilian flags in narrow streets - Ortygia blends myth with daily life.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Cathedral</span>
                 <h3 class="section-title-panel">Temple Turned Church</h3>
                 <p>The Cathedral of Syracuse is built directly into a 5th-century BC Greek temple dedicated to Athena. You can still see the original Doric columns embedded in the walls - pagan stone now part of a Christian church. It's one of the most remarkable examples of architectural continuity in the world.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852940/shiplife/syracuse/iscu6tkcmgvikuvbrntl.jpg" class="story-image" data-caption="The Cathedral facade." alt="Syracuse Cathedral">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771800424/shiplife/syracuse/cathedral-facade.jpg" class="story-image" data-caption="The Cathedral facade." alt="Syracuse Cathedral">
                 <p class="photo-caption-inline">The Baroque facade of the Cathedral - built into the Temple of Athena, with Santa Lucia watching over the piazza.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852939/shiplife/syracuse/j3modehmffc9ivo26llj.jpg" class="story-image" data-caption="Cathedral detail." alt="Cathedral architecture">
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800425/shiplife/syracuse/cathedral-st-paul-statue.jpg" class="story-image" data-caption="St. Paul statue." alt="Cathedral statue">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800426/shiplife/syracuse/santa-lucia-alla-badia.jpg" class="story-image" data-caption="Santa Lucia alla Badia." alt="Church facade">
+                </div>
                 <p class="photo-caption-inline">Baroque splendor - every surface carved with saints, angels, and Sicilian flourishes.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Visit</span>
                 <h3 class="section-title-panel">A Day of Wandering</h3>
-                <p>I spent the day walking through the streets, admiring the views and the layers of history visible at every turn. Greek columns peek out from medieval walls. Baroque churches sit atop ancient temples.</p>
-                <div class="story-carousel">
-                    <div class="carousel-slide active">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852936/shiplife/syracuse/jhswrjbt5iefg2tfkrzc.jpg" alt="Syracuse wandering">
-                        <div class="carousel-caption"><span>Wandering the ancient streets</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852935/shiplife/syracuse/kegwivloicdflc7caw3i.jpg" alt="Syracuse views">
-                        <div class="carousel-caption"><span>Views around every corner</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852932/shiplife/syracuse/koh3fkcj5ooua5hus3qz.jpg" alt="Syracuse architecture">
-                        <div class="carousel-caption"><span>Sicilian afternoon light</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852941/shiplife/syracuse/kqtmuuy8vqowhqcyjulq.jpg" alt="Syracuse scene">
-                        <div class="carousel-caption"><span>Details from the old town</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852942/shiplife/syracuse/kxdv59xxhxopalxv2aoj.jpg" alt="Syracuse detail">
-                        <div class="carousel-caption"><span>The narrow lanes of Ortygia</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852921/shiplife/syracuse/lk0f6cjd0lutyehiov2p.jpg" alt="Syracuse streets">
-                        <div class="carousel-caption"><span>Harbor views</span></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
-                <p>The food was exceptional - fresh seafood, Sicilian pastries, espresso in a sunlit piazza. Sometimes the best days are the unplanned ones, camera in hand, no agenda but curiosity.</p>
+                <p>I spent the day walking through the streets, admiring the architecture and the layers of history visible at every turn. Elegant palazzos with ornate iron balconies, locals leaning out to watch the world go by below.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852937/shiplife/syracuse/lsbtfswef1frhckuosvv.jpg" class="story-image" data-caption="Sicilian life." alt="Syracuse">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852931/shiplife/syracuse/myhtg60iiavop2xivlpk.jpg" class="story-image" data-caption="A perfect afternoon." alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800438/shiplife/syracuse/palazzo-ornate-balconies.jpg" class="story-image" data-caption="Ornate Sicilian balconies." alt="Palazzo balconies">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800440/shiplife/syracuse/locals-on-balconies.jpg" class="story-image" data-caption="Daily life in Ortygia." alt="Locals on balconies">
                 </div>
-                <p class="photo-caption-inline">Looking back at the ship from Ortygia's gardens - papyrus growing wild along the waterfront.</p>
+                <p class="photo-caption-inline">The palazzos of Ortygia - curved balconies, weathered stone, and neighbors chatting across the narrow streets.</p>
+                <p>The famous Arethusa Spring sits near the waterfront - a freshwater pool where papyrus grows wild and ducks paddle through the ancient waters. According to myth, the nymph Arethusa fled from the river god Alpheus and was transformed into this spring by Artemis.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800443/shiplife/syracuse/arethusa-spring-ducks.jpg" class="story-image" data-caption="Ducks at Arethusa Spring." alt="Arethusa Spring">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800444/shiplife/syracuse/garden-iron-fence.jpg" class="story-image" data-caption="Papyrus garden." alt="Syracuse garden">
+                </div>
+                <p class="photo-caption-inline">The Fonte Aretusa - where ducks swim among papyrus, one of the only places in Europe where it grows wild.</p>
+                <p>The food was exceptional too. I grabbed a refreshing drink from a kiosk in the shade, watched the harbor life, and enjoyed the Sicilian afternoon. Sometimes the best days are the unplanned ones.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800445/shiplife/syracuse/il-chioschetto-kiosk.jpg" class="story-image" data-caption="Il Chioschetto - refreshments." alt="Street kiosk">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771800418/shiplife/syracuse/harbor-fishing-boats.jpg" class="story-image" data-caption="Harbor life." alt="Fishing boats">
+                </div>
+                <p class="photo-caption-inline">A cold drink, fishing boats in the harbor, and the afternoon sun - perfect Sicilian moments.</p>
             </div>
 
             <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
