@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-22T21:39:29.859Z
+// Shiplife Bundle - Generated 2026-02-22T22:28:45.639Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -3394,17 +3394,34 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <p>The end of the world.</p>
+                <span class="section-tag-panel">The Arrival</span>
+                <h3 class="section-title-panel">Fin del Mundo</h3>
+                <p>The end of the world. Ushuaia sits at 54° South, the southernmost city on Earth - closer to Antarctica than to Buenos Aires. We arrived on Seabourn Quest, the jagged peaks of Tierra del Fuego rising behind the colorful waterfront.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6607" class="story-image" alt="Tierra del Fuego">
+                <p class="photo-caption-inline">The dramatic approach to Ushuaia - snow-capped peaks and the Beagle Channel.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770190757/IMG_6608" class="story-image" alt="Tierra del Fuego">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770190755/IMG_6612" class="story-image" alt="Tierra del Fuego">
                 </div>
+                <p class="photo-caption-inline">Monte Olivia and the Martial Mountains form the backdrop to the world's most remote city.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Gateway to Antarctica</span>
+                <h3 class="section-title-panel">The Last Stop</h3>
+                <p>For expedition ships heading to the white continent, Ushuaia is the last port of call. From here, it's 600 miles across the Drake Passage - one of the roughest ocean crossings in the world. But first, a day to explore.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6615" class="story-image" alt="Tierra del Fuego">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6619" class="story-image" alt="Tierra del Fuego">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6621" class="story-image" alt="Tierra del Fuego">
+                <p class="photo-caption-inline">The landscape feels like the edge of the world - wild, windswept, magnificent.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Walking Ushuaia</h3>
+                <p>The town itself is charming - colorful wooden buildings, tax-free electronics shops, and restaurants serving king crab pulled fresh from the Beagle Channel. The main street, San Martín, runs straight toward the mountains.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6606" class="story-image" alt="Ushuaia">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6601" class="story-image" alt="Ushuaia">
@@ -3414,6 +3431,13 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762692/IMG_6598" class="story-image" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762693/IMG_6597" class="story-image" alt="Ushuaia">
                 </div>
+                <p class="photo-caption-inline">The pedestrian streets of Ushuaia - mountains at every turn.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Crew Day</span>
+                <h3 class="section-title-panel">Exploring Together</h3>
+                <p>Crew days in port were always better shared. We wandered the streets, grabbed lunch, and took in views that reminded us how far from home we'd traveled - and how lucky we were to be there.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/img_6588" class="story-image" alt="Ushuaia">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6586" class="story-image" alt="Ushuaia">
@@ -3424,6 +3448,13 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762705/IMG_6579" class="story-image" alt="Ushuaia">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/ushuaia/20150224_131338" class="story-image" alt="Ushuaia">
+                <p class="photo-caption-inline">The crew exploring Ushuaia before the crossing to Antarctica.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Details</span>
+                <h3 class="section-title-panel">End of the World Vibes</h3>
+                <p>Street art, colorful buildings, and that ever-present backdrop of snow-capped peaks. Ushuaia feels like a frontier town - remote, resilient, and strangely cosmopolitan thanks to all the expedition travelers passing through.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/img_6577" class="story-image" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762697/IMG_6587" class="story-image" alt="Ushuaia">
@@ -3446,7 +3477,7 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770762529/IMG_6692" class="story-image" alt="Ushuaia">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/ushuaia/c7xcneiwndvbqmewhsgh" class="story-image" alt="Ushuaia">
                 </div>
-                <p>Fin del Mundo.</p>
+                <p class="photo-caption-inline">Fin del Mundo - the end of the world, and the beginning of the Antarctic adventure.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -4007,23 +4038,61 @@ an original composition inspired by this place.
         fullDesc: "Rudyard Kipling called it the eighth wonder of the world.\n\nHe wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water. Dolphins played in our wake. It was one of those rare moments where everyone on deck just fell silent.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/fiordland/img_4278",
         richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏔️</span>
+                    <span class="demo-value">Fiordland</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">South Island, NZ</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌧️</span>
+                    <span class="demo-value">200+ Rain Days/Year</span>
+                </div>
+            </div>
+
             <div class="story-section-panel">
-                <p>Rudyard Kipling called it the eighth wonder of the world. He wasn't wrong.</p>
+                <span class="section-tag-panel">The Eighth Wonder</span>
+                <h3 class="section-title-panel">Kipling Was Right</h3>
+                <p>Rudyard Kipling called it the eighth wonder of the world. He wasn't wrong. We sailed slowly through the sound as waterfalls cascaded down sheer cliffs into the dark water below.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4169" class="story-image" alt="Milford Sound">
+                <p class="photo-caption-inline">Entering Milford Sound - sheer cliffs rising straight from the water.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4185" class="story-image" alt="Milford Sound">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4188" class="story-image" alt="Milford Sound">
                 </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Waterfalls</span>
+                <h3 class="section-title-panel">Cascading Wonder</h3>
+                <p>Milford Sound receives over 7 meters of rain annually - one of the wettest places on Earth. All that water pours down the cliffs in hundreds of temporary waterfalls, appearing and disappearing with the weather.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4191" class="story-image" alt="Milford Sound">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4195" class="story-image" alt="Milford Sound">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4206" class="story-image" alt="Milford Sound">
+                <p class="photo-caption-inline">Waterfalls streaming down the ancient rock faces.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Mist</span>
+                <h3 class="section-title-panel">Into the Clouds</h3>
+                <p>The fiord creates its own weather. Mist drifts between the peaks, clouds catch on the summits, and the whole scene shifts constantly - moody, dramatic, otherworldly.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4207" class="story-image" alt="Milford Sound">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4211" class="story-image" alt="Milford Sound">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4217" class="story-image" alt="Milford Sound">
+                <p class="photo-caption-inline">The ever-changing mist and light of Fiordland.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Transit</span>
+                <h3 class="section-title-panel">Sailing Through</h3>
+                <p>It was one of those rare moments where everyone on deck just fell silent. No commentary could add to what we were seeing. The ship moved slowly through the narrow sound, dwarfed by the scale of it all.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4231" class="story-image" alt="Milford Sound">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4237" class="story-image" alt="Milford Sound">
@@ -4033,6 +4102,7 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4244" class="story-image" alt="Milford Sound">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4263" class="story-image" alt="Milford Sound">
+                <p class="photo-caption-inline">The scale is impossible to capture - cliffs rising 1,200 meters straight up from the water.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4282" class="story-image" alt="Milford Sound">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_0802" class="story-image" alt="Fiordland">
@@ -4042,7 +4112,6 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/fiordland/img_4290" class="story-image" alt="Milford Sound">
                 </div>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/fiordland/img_4292" class="story-image" alt="Milford Sound">
-                <p>It was one of those rare moments where everyone on deck just fell silent.</p>
             </div>
 
             ${generateGallery('fiordland')}
@@ -4481,12 +4550,21 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <p>The water here is a color I didn't know existed.</p>
+                <span class="section-tag-panel">Paradise Found</span>
+                <h3 class="section-title-panel">Impossible Blue</h3>
+                <p>The water here is a color I didn't know existed. Shades of turquoise and aquamarine that seem painted rather than natural. Mount Otemanu rises dramatically from the lagoon - an ancient volcanic crater wrapped in mist.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764155/bora_bora_baby.jpg" class="story-image" alt="Mount Otemanu">
+                <p class="photo-caption-inline">Mount Otemanu - the iconic peak that dominates Bora Bora's skyline.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="story-image" alt="Off the main island">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764143/bora_bora_beach_-_Copy.jpg" class="story-image" alt="Bora Bora beach">
                 </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Lagoon</span>
+                <h3 class="section-title-panel">Exploring the Island</h3>
+                <p>We spent the day exploring by jetski and boat, circling the main island through waters so clear you could see straight to the sandy bottom.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764108/098.jpg" class="story-image" alt="Bora Bora">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764111/046.jpg" class="story-image" alt="Bora Bora">
@@ -4496,6 +4574,12 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/063.jpg" class="story-image" alt="Bora Bora">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764117/062.jpg" class="story-image" alt="Bora Bora">
                 </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Crew Day</span>
+                <h3 class="section-title-panel">A Day to Remember</h3>
+                <p>Port days in places like this made everything worth it. The long contracts, the homesickness, the cramped cabin - it all faded when you found yourself floating in a South Pacific lagoon.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764118/065.jpg" class="story-image" alt="Bora Bora">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764119/079.jpg" class="story-image" alt="Bora Bora">
@@ -4510,12 +4594,18 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764150/120.jpg" class="story-image" alt="Bora Bora">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764107/me_and_mark.jpg" class="story-image" alt="Me and Mark">
                 </div>
+                <p class="photo-caption-inline">Living the dream in French Polynesia.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Tahiti</span>
+                <h3 class="section-title-panel">Waterfall Hike</h3>
+                <p>A side trip to Tahiti brought us into the lush interior - hiking to waterfalls through tropical forest, eating fresh fruit straight from the trees. The kind of day you remember forever.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764109/038.jpg" class="story-image" alt="Waterfall hike">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764127/tahiti_waterfall.jpg" class="story-image" alt="Tahiti waterfall">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764145/grapefruit_and_apple.jpg" class="story-image" alt="Fresh fruit">
                 </div>
-                <p>The kind of day you remember forever.</p>
             </div>
 
             ${generateGallery('boraBora')}
@@ -5343,14 +5433,140 @@ an original composition inspired by this place.
         icon: "🏛️",
         isDoor: false,
         shortDesc: "Where Archimedes ran naked through the streets.",
+        imagePosition: "center",
+        imageCaption: "The ancient island of Ortygia.",
         useRichContent: true,
         richContent: `
-            <p>Syracuse was once the most powerful city in the Greek world - bigger than Athens.</p>
-            <p>The ancient theater still hosts performances. The ear of Dionysius still echoes. And somewhere in these streets, Archimedes shouted 'Eureka!' and changed history.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📜</span>
+                    <span class="demo-value">Founded 734 BC</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏛️</span>
+                    <span class="demo-value">UNESCO Site</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🔬</span>
+                    <span class="demo-value">Archimedes' Home</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Sicily, Italy</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Arrival</span>
+                <h3 class="section-title-panel">Anchored in History</h3>
+                <p>We anchored in the harbor off Ortygia, the island heart of ancient Syracuse. The Royal Clipper's masts rose against a Mediterranean sky as we tendered ashore to explore a city older than Rome.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852931/shiplife/syracuse/aswdr3yzebj1jdgtdiyz.jpg" class="story-image" data-caption="The Royal Clipper at anchor." alt="Royal Clipper">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852943/shiplife/syracuse/bfbllcdynp3xntkwwguw.jpg" class="story-image" data-caption="View from the harbor." alt="Syracuse harbor">
+                </div>
+                <p class="photo-caption-inline">Arriving by tall ship into one of the Mediterranean's most ancient harbors.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Ancient Glory</span>
+                <h3 class="section-title-panel">Greater Than Athens</h3>
+                <p>Syracuse was once the most powerful city in the Greek world - not Athens, not Sparta, but this Sicilian colony founded by Corinthians in 734 BC. Cicero called it "the greatest Greek city and the most beautiful of them all."</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852926/shiplife/syracuse/booapz96lan4plbusnxg.jpg" class="story-image" data-caption="Ancient columns still standing." alt="Greek columns">
+                <p class="photo-caption-inline">The Temple of Apollo - one of the oldest Doric temples in Sicily, built in the 6th century BC.</p>
+                <p>At its peak, Syracuse had a population of over 500,000. It defeated Athens in the famous Sicilian Expedition of 415 BC - a humiliation from which Athens never fully recovered.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852924/shiplife/syracuse/c5gdfwadjngcejs2lqms.jpg" class="story-image" data-caption="Ruins amid palm trees." alt="Syracuse ruins">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852928/shiplife/syracuse/hzst8cml36y1x5akvwal.jpg" class="story-image" data-caption="2,700 years of history." alt="Ancient ruins">
+                </div>
+                <p class="photo-caption-inline">Greek foundations beneath Sicilian palms - layers of civilization visible everywhere.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">History</span>
+                <h3 class="section-title-panel">Eureka!</h3>
+                <p>Archimedes was born here in 287 BC. The story goes that King Hieron II asked him to determine if a crown was pure gold without damaging it. Archimedes pondered the problem until one day, stepping into his bath, he noticed the water level rise.</p>
+                <p>He realized he could measure volume by displacement - and leapt from the tub, running naked through the streets shouting "Eureka!" (I have found it!). He went on to invent war machines that held off the Roman siege for two years, calculate pi with remarkable accuracy, and lay foundations for calculus - all from this small island city.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Ortygia</span>
+                <h3 class="section-title-panel">The Island Heart</h3>
+                <p>Ortygia is where Syracuse began - a small island connected to the mainland by bridges, packed with Baroque palaces built atop Greek foundations. At its center, the Fountain of Diana sprays water over mythological figures in the Sicilian sun.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852919/shiplife/syracuse/ict6cdzzatrkg2kpyt1j.jpg" class="story-image" data-caption="The Fountain of Diana." alt="Fountain of Diana">
+                <p class="photo-caption-inline">The Fountain of Artemis (Diana) - goddess of the hunt presiding over Ortygia's main square.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852947/shiplife/syracuse/iegd1trarrdqtnp5x1no.jpg" class="story-image" data-caption="Ortygia streets." alt="Ortygia street">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852926/shiplife/syracuse/ij0zwipunaz7z8tjqzqm.jpg" class="story-image" data-caption="Baroque balconies." alt="Syracuse architecture">
+                </div>
+                <p class="photo-caption-inline">Narrow streets lined with wrought-iron balconies and honey-colored stone.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Cathedral</span>
+                <h3 class="section-title-panel">Temple Turned Church</h3>
+                <p>The Cathedral of Syracuse is built directly into a 5th-century BC Greek temple dedicated to Athena. You can still see the original Doric columns embedded in the walls - pagan stone now part of a Christian church. It's one of the most remarkable examples of architectural continuity in the world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852940/shiplife/syracuse/iscu6tkcmgvikuvbrntl.jpg" class="story-image" data-caption="The Cathedral facade." alt="Syracuse Cathedral">
+                <p class="photo-caption-inline">The Baroque facade of the Cathedral - built into the Temple of Athena, with Santa Lucia watching over the piazza.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1770852939/shiplife/syracuse/j3modehmffc9ivo26llj.jpg" class="story-image" data-caption="Cathedral detail." alt="Cathedral architecture">
+                <p class="photo-caption-inline">Baroque splendor - every surface carved with saints, angels, and Sicilian flourishes.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Visit</span>
+                <h3 class="section-title-panel">A Day of Wandering</h3>
+                <p>I spent the day walking through the streets, admiring the views and the layers of history visible at every turn. Greek columns peek out from medieval walls. Baroque churches sit atop ancient temples.</p>
+                <div class="story-carousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852936/shiplife/syracuse/jhswrjbt5iefg2tfkrzc.jpg" alt="Syracuse wandering">
+                        <div class="carousel-caption"><span>Wandering the ancient streets</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852935/shiplife/syracuse/kegwivloicdflc7caw3i.jpg" alt="Syracuse views">
+                        <div class="carousel-caption"><span>Views around every corner</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852932/shiplife/syracuse/koh3fkcj5ooua5hus3qz.jpg" alt="Syracuse architecture">
+                        <div class="carousel-caption"><span>Sicilian afternoon light</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852941/shiplife/syracuse/kqtmuuy8vqowhqcyjulq.jpg" alt="Syracuse scene">
+                        <div class="carousel-caption"><span>Details from the old town</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852942/shiplife/syracuse/kxdv59xxhxopalxv2aoj.jpg" alt="Syracuse detail">
+                        <div class="carousel-caption"><span>The narrow lanes of Ortygia</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770852921/shiplife/syracuse/lk0f6cjd0lutyehiov2p.jpg" alt="Syracuse streets">
+                        <div class="carousel-caption"><span>Harbor views</span></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <p>The food was exceptional - fresh seafood, Sicilian pastries, espresso in a sunlit piazza. Sometimes the best days are the unplanned ones, camera in hand, no agenda but curiosity.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852937/shiplife/syracuse/lsbtfswef1frhckuosvv.jpg" class="story-image" data-caption="Sicilian life." alt="Syracuse">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1770852931/shiplife/syracuse/myhtg60iiavop2xivlpk.jpg" class="story-image" data-caption="A perfect afternoon." alt="Syracuse">
+                </div>
+                <p class="photo-caption-inline">Looking back at the ship from Ortygia's gardens - papyrus growing wild along the waterfront.</p>
+            </div>
+
+            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
+                <span class="toggle-icon">💡</span>
+                <span>More about Syracuse</span>
+                <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="more-info-content">
+                <ul class="fun-facts-list">
+                    <li><strong>Conquerors:</strong> Greeks, Romans, Byzantines, Arabs, Normans, Spanish - Syracuse has been ruled by them all, each leaving their mark.</li>
+                    <li><strong>Papyrus:</strong> The Ciane River near Syracuse is one of the only places in Europe where papyrus grows wild - brought by Arab settlers.</li>
+                    <li><strong>Temple of Athena:</strong> The Cathedral of Syracuse was built directly into a 5th-century BC Greek temple - you can still see the original Doric columns embedded in the walls.</li>
+                    <li><strong>Plato's Visit:</strong> The philosopher Plato visited Syracuse three times, attempting to create his ideal state. He was nearly sold into slavery for his trouble.</li>
+                </ul>
+            </div>
 
             ${generateGallery('syracuse')}
         `,
-        fullDesc: "Syracuse was once the most powerful city in the Greek world-bigger than Athens.\n\nThe ancient theater still hosts performances. The ear of Dionysius still echoes. And somewhere in these streets, Archimedes shouted 'Eureka!' and changed history.",
+        fullDesc: "Syracuse was once the most powerful city in the Greek world - bigger than Athens. Cicero called it 'the greatest Greek city and the most beautiful of them all.' I spent the day wandering the ancient streets, admiring the views and enjoying the exceptional Sicilian food.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735639/IMG_1240_swdpx7.jpg"
     },
     {
