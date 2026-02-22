@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-18T23:38:17.072Z
+// Shiplife Bundle - Generated 2026-02-22T21:39:29.859Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -75,7 +75,7 @@ const locationPortholeURLs = {
     "Sydney, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950196/marcie_00957__suiqhl.png",
     "Dubrovnik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950299/marcie_00998__uuyksn.png",
     "Ushuaia, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767952701/marcie_01044__d7wlbn.png",
-    "Alexandria, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954446/marcie_01091__g6f37b.png",
+    "Cairo, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954446/marcie_01091__g6f37b.png",
     "Milos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
     "South Georgia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954452/marcie_01084__wkiyxh.png",
     "Bali, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954456/marcie_01078__lmxp7z.png",
@@ -129,6 +129,7 @@ const locationPortholeURLs = {
     "Mykonos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193104/Mykonos_n3an7b.png",
     "Zakynthos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/zakinthos_ymkjrv.png",
     "Nafplio, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Nafplio_fd5rjr.png",
+    "Patmos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Nafplio_fd5rjr.png",
     "Katakolon, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Katakolon_lbryeo.png",
     "Pylos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193103/Pylos_b3icbt.png",
     "Itea, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769193102/Itea_ryq4tt.png",
@@ -143,6 +144,7 @@ const locationPortholeURLs = {
     "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00845__zqjdgd.png",
     "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00846__rstxah.png",
     "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
+    "Lipari, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
     "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00852__p4jual.png",
     "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00857__dazqix.png",
     "Sanary-sur-Mer, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00854__a1cxmz.png",
@@ -223,7 +225,7 @@ const ICON_CONFIG = {
     "Syracuse, Sicily": { style: 'heritage', symbol: 'amphitheater', color: '#c9b896', accent: '#8b7355' },
     "Kotor, Montenegro": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#5a4a3a' },
     "Valletta, Malta": { style: 'heritage', symbol: 'cross', color: '#c9b896', accent: '#8b7355' },
-    "Alexandria, Egypt": { style: 'heritage', symbol: 'lighthouse', color: '#d4a574', accent: '#8b7355' },
+    "Cairo, Egypt": { style: 'heritage', symbol: 'pyramid', color: '#d4a574', accent: '#8b7355' },
     // Paradise - Tropical
     "Reithi Rah, Maldives": { style: 'paradise', symbol: 'shark', color: '#4a90a0', accent: '#2d5a6a' },
     "Bali, Indonesia": { style: 'paradise', symbol: 'mango', color: '#ffa500', accent: '#228b22' },
@@ -361,12 +363,6 @@ const locationGalleries = {
         { src: "v1768952486/IMG_6346_lcg34g.jpg", caption: "Taking a break with a popsicle.", alt: "Popsicle in favela" },
         { src: "v1768952860/IMG_6350_kjpilj.jpg", caption: "Another favela tour moment.", alt: "Favela tour" },
         { src: "v1768953816/IMG_6366_h1ih0q.jpg", caption: "Copacabana Beach - where the chaos finally stops.", alt: "Copacabana Beach" }
-    ],
-
-    // ALEXANDRIA (2 images)
-    "alexandria": [
-        { src: "v1767736004/IMG_0687_znjvkv.jpg", caption: "Alexandria corniche.", alt: "Alexandria corniche" },
-        { src: "v1767736027/IMG_0655_vpe0lu.jpg", caption: "Alexandria waterfront.", alt: "Alexandria waterfront" }
     ],
 
     // AMALFI (1 images)
@@ -5510,74 +5506,6 @@ an original composition inspired by this place.
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735952/IMG_0854_wmukmp.jpg"
     },
     {
-        id: 31,
-        title: "Alexandria, Egypt",
-        coords: [31.20, 29.92],
-        tag: "Cleopatra's City",
-        icon: "🐫",
-        isDoor: false,
-        shortDesc: "Where the ancient library once stood.",
-        imagePosition: "center",
-        imageCaption: "The Mediterranean corniche in Alexandria.",
-        useRichContent: true,
-        richContent: `
-            <div class="demographics-strip">
-                <div class="demo-item">
-                    <span class="demo-icon">👥</span>
-                    <span class="demo-value">~5 Million</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">📜</span>
-                    <span class="demo-value">Founded 331 BC</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🏛️</span>
-                    <span class="demo-value">Ancient Library</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">📍</span>
-                    <span class="demo-value">Mediterranean</span>
-                </div>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">Ancient History</span>
-                <h3 class="section-title-panel">Cleopatra's City</h3>
-                <p>Alexandria was founded by Alexander the Great and ruled by Cleopatra. The famous lighthouse is gone. The library burned. But the city endures - chaotic, loud, and utterly captivating.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg" class="story-image" alt="Alexandria corniche">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736027/IMG_0655_vpe0lu.jpg" class="story-image" alt="Alexandria waterfront">
-                </div>
-                <p class="photo-caption-inline">The corniche and waterfront - where the ancient lighthouse once guided ships into harbor.</p>
-                <p>Standing on the corniche, you feel the weight of all that history pushing up through the pavement.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">📜</span>
-                        <span>City of Knowledge</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Alexander's City:</strong> Founded in 331 BC by Alexander the Great, who never saw it completed - he died in Babylon at 32.</li>
-                        <li><strong>The Great Library:</strong> Once held up to 400,000 scrolls - the largest collection of knowledge in the ancient world. Its destruction is history's greatest intellectual loss.</li>
-                        <li><strong>Lighthouse Wonder:</strong> The Pharos Lighthouse was one of the Seven Wonders of the Ancient World, standing over 100 meters tall for 1,500 years.</li>
-                        <li><strong>Cleopatra's Capital:</strong> The last active ruler of the Ptolemaic Kingdom, Cleopatra VII, made Alexandria her seat of power until 30 BC.</li>
-                        <li><strong>Modern Library:</strong> The Bibliotheca Alexandrina opened in 2002 - a revival of the ancient library, holding millions of books.</li>
-                    </ul>
-                </div>
-            </div>
-
-            ${generateGallery('alexandria')}
-        `,
-        fullDesc: "Alexandria was founded by Alexander the Great and ruled by Cleopatra.\n\nThe famous lighthouse is gone. The library burned. But the city endures-chaotic, loud, and utterly captivating. Standing on the corniche, you feel the weight of all that history pushing up through the pavement.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767736004/IMG_0687_znjvkv.jpg"
-    },
-    {
         id: 32,
         title: "Mumbai, India",
         coords: [19.08, 72.88],
@@ -9587,7 +9515,7 @@ an original composition inspired by this place.
             </div>
 
             <h3>The Journey</h3>
-            <p>Three hours on the bus from Alexandria. The city gave way to highway, the highway to desert.</p>
+            <p>Three hours on the bus from Port Said. The city gave way to highway, the highway to desert.</p>
 
             <div class="image-row-2">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/cairo/cairo-city-01" class="inline-image" data-caption="Through the streets of Cairo." alt="Cairo streets">
@@ -9657,7 +9585,7 @@ an original composition inspired by this place.
 
             ${generateGallery('cairo')}
         `,
-        fullDesc: "After three hours on the bus from Alexandria, there it was - that first glimpse of the pyramids. The closer we came, the larger they grew, but the further away they seemed. Some kind of optical illusion. It was only up close that the scale revealed itself - people wandering around like ants.",
+        fullDesc: "After three hours on the bus from Port Said, there it was - that first glimpse of the pyramids. The closer we came, the larger they grew, but the further away they seemed. Some kind of optical illusion. It was only up close that the scale revealed itself - people wandering around like ants.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/cairo-hero"
     },
     {
@@ -13107,7 +13035,7 @@ function createMarkers() {
         "Queen Victoria (Cunard)": 1.10,
         "Barcelona, Spain": 1.10,
         "Ibiza, Spain": 1.10,
-        "Alexandria, Egypt": 1.10,
+        "Cairo, Egypt": 1.10,
         "Tel Aviv, Israel": 1.10,
         // Northern Italy/Adriatic cluster - all shrunk uniformly
         "Venice, Italy": 0.65,

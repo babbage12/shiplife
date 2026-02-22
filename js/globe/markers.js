@@ -1751,7 +1751,7 @@ function createMarkers() {
         "Queen Victoria (Cunard)": 1.10,
         "Barcelona, Spain": 1.10,
         "Ibiza, Spain": 1.10,
-        "Alexandria, Egypt": 1.10,
+        "Cairo, Egypt": 1.10,
         "Tel Aviv, Israel": 1.10,
         // Northern Italy/Adriatic cluster - all shrunk uniformly
         "Venice, Italy": 0.65,

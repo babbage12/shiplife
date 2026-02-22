@@ -97,12 +97,6 @@ const locationGalleries = {
         { src: "v1768953816/IMG_6366_h1ih0q.jpg", caption: "Copacabana Beach - where the chaos finally stops.", alt: "Copacabana Beach" }
     ],
 
-    // ALEXANDRIA (2 images)
-    "alexandria": [
-        { src: "v1767736004/IMG_0687_znjvkv.jpg", caption: "Alexandria corniche.", alt: "Alexandria corniche" },
-        { src: "v1767736027/IMG_0655_vpe0lu.jpg", caption: "Alexandria waterfront.", alt: "Alexandria waterfront" }
-    ],
-
     // AMALFI (1 images)
     "amalfi": [
         { src: "shiplife/amalfi/img_7000", caption: "The Cathedral of Saint Andrew - 62 steps rise from the piazza.", alt: "Amalfi Cathedral" },
