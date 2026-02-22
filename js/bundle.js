@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-22T22:50:08.016Z
+// Shiplife Bundle - Generated 2026-02-22T23:05:04.407Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -6994,42 +6994,112 @@ an original composition inspired by this place.
                     <span class="demo-value">Italian Riviera</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🌸</span>
-                    <span class="demo-value">Flower Capital</span>
+                    <span class="demo-icon">🚴</span>
+                    <span class="demo-value">24km Bike Path</span>
                 </div>
                 <div class="demo-item">
-                    <span class="demo-icon">🚴</span>
-                    <span class="demo-value">Bike Path</span>
+                    <span class="demo-icon">🎰</span>
+                    <span class="demo-value">Historic Casino</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌸</span>
+                    <span class="demo-value">Flower Capital</span>
                 </div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Riviera</span>
-                <h3 class="section-title-panel">Where Italy Vacations</h3>
-                <p>San Remo is where Italy comes to vacation.</p>
-                <p>The Casino is legendary. The flower market supplies much of Europe. Every February, the Sanremo Music Festival launches Italian pop careers. The old town climbs the hillside in a tangle of medieval streets.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951541/Screenshot_20260120_141120_Facebook_dfrf7x.jpg" class="story-image" data-caption="Bike riding along the San Remo coast." alt="Bike riding San Remo">
-                <p class="photo-caption-inline">The coastal bike path - one of the best ways to see the Riviera.</p>
+                <span class="section-tag-panel">The Ritual</span>
+                <h3 class="section-title-panel">Eight Hours on Two Wheels</h3>
+                <p>Every time the ship called at San Remo, I knew exactly what I was going to do: rent a bike and disappear for eight hours. It became a ritual - one of those perfect port days where the ship's schedule gave me just enough time to push my legs to their limit and see where the coast would take me.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801365/shiplife/sanremo/coastal-path-cliffs.jpg" class="story-image" data-caption="The coastal bike path." alt="Coastal bike path">
+                <p class="photo-caption-inline">The Pista Ciclabile hugs the cliff edge, the Mediterranean stretching endlessly below.</p>
             </div>
 
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about San Remo</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🌸</span>
-                        <span>City of Flowers</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Flower Capital:</strong> San Remo's flower market is one of the largest in Europe, exporting millions of carnations, roses, and other blooms annually.</li>
-                        <li><strong>Sanremo Music Festival:</strong> Italy's most important music competition has launched careers since 1951 - including Andrea Bocelli and Eros Ramazzotti.</li>
-                        <li><strong>Casino:</strong> The Sanremo Casino opened in 1905 and remains one of only four legal casinos in Italy.</li>
-                        <li><strong>Russian Connection:</strong> The Russian Orthodox church here was built for the many Russian nobles who wintered on the Riviera in the 19th century.</li>
-                        <li><strong>Bike Path:</strong> The Pista Ciclabile runs 24km along the coast on a former railway line - one of Europe's most scenic cycling routes.</li>
-                    </ul>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Path</span>
+                <h3 class="section-title-panel">Pista Ciclabile</h3>
+                <p>The Pista Ciclabile runs 24 kilometers along the Ligurian coast, built on the bed of an old railway line. It's flat, it's paved, and it's one of the most beautiful cycling routes in Europe. The train tracks are gone but the views remain - dramatic cliffs dropping into impossibly blue water, hidden coves where locals sunbathe on the rocks.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801367/shiplife/sanremo/coastal-cliffs-blue-sea.jpg" class="story-image" data-caption="Cliffs and blue sea." alt="Mediterranean coastline">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801366/shiplife/sanremo/bike-path-railings.jpg" class="story-image" data-caption="The path along the water." alt="Bike path">
                 </div>
+                <p class="photo-caption-inline">Where the railway once carried passengers, cyclists now glide past cliffs and coves.</p>
+                <p>I'd ride out as far as the path would take me, then turn around. Sometimes I'd stop at a rocky beach. Sometimes I'd just keep pedaling, watching the coastline unfold.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801371/shiplife/sanremo/rocky-cove-beach.jpg" class="story-image" data-caption="A hidden cove along the route." alt="Rocky cove beach">
+                <p class="photo-caption-inline">Hidden coves where you can stop, catch your breath, and swim in the crystal-clear water.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Towns</span>
+                <h3 class="section-title-panel">Riviera Villages</h3>
+                <p>The path connects a string of small Riviera towns, each with its own harbor, its own church, its own particular shade of ochre and terracotta. I'd cycle through them all - stopping to photograph colorful fishing boats reflected in calm water, baroque churches with their distinctive Ligurian stripes.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801369/shiplife/sanremo/colorful-harbor-reflection.jpg" class="story-image" data-caption="A Riviera harbor." alt="Colorful harbor">
+                <p class="photo-caption-inline">Pastel buildings reflected in harbor water - every town along the route looked like a postcard.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801374/shiplife/sanremo/striped-church-facade.jpg" class="story-image" data-caption="Ligurian church." alt="Striped church facade">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801370/shiplife/sanremo/coastal-hillside-villas.jpg" class="story-image" data-caption="Hillside villas." alt="Coastal villas">
+                </div>
+                <p class="photo-caption-inline">Striped churches and hillside villas - the classic architecture of the Italian Riviera.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">San Remo</span>
+                <h3 class="section-title-panel">The City of Flowers</h3>
+                <p>San Remo itself is the jewel of this coast. The Casino dominates the waterfront - an art nouveau palace that's been separating gamblers from their money since 1905. Palm trees line the main boulevard, bougainvillea cascades from every balcony.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801372/shiplife/sanremo/casino-sanremo.jpg" class="story-image" data-caption="The Casino Sanremo." alt="Casino Sanremo">
+                <p class="photo-caption-inline">Casino Sanremo - where Belle Époque glamour still lives on the Italian Riviera.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801373/shiplife/sanremo/teatro-ariston.jpg" class="story-image" data-caption="Teatro Ariston." alt="Teatro Ariston">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801373/shiplife/sanremo/casino-boulevard.jpg" class="story-image" data-caption="The main boulevard." alt="San Remo boulevard">
+                </div>
+                <p class="photo-caption-inline">Teatro Ariston hosts the famous Sanremo Music Festival - Italy's most important pop music competition since 1951.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Old Town</span>
+                <h3 class="section-title-panel">La Pigna</h3>
+                <p>After hours of cycling, I'd lock up the bike and climb into La Pigna - San Remo's medieval heart. The streets are too narrow for cars, too steep for anything but walking. Stone archways, iron gates hiding overgrown gardens, baroque churches tucked into tiny squares.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801378/shiplife/sanremo/ornate-stone-archway.jpg" class="story-image" data-caption="Medieval gateway." alt="Stone archway">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801377/shiplife/sanremo/medieval-piazza.jpg" class="story-image" data-caption="Hidden piazza." alt="Medieval piazza">
+                </div>
+                <p class="photo-caption-inline">La Pigna - the "pinecone" - San Remo's medieval quarter climbs the hillside in a tangle of ancient streets.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801375/shiplife/sanremo/green-baroque-church.jpg" class="story-image" data-caption="Baroque church." alt="Green baroque church">
+                <p class="photo-caption-inline">Baroque churches with their distinctive green and white facades - Ligurian elegance in every detail.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Refueling</span>
+                <h3 class="section-title-panel">Market Stops</h3>
+                <p>Eight hours of cycling requires fuel. I'd stop at the covered market for fresh fruit - the tomatoes here are legendary, the white asparagus even better. A quick espresso at a bar, maybe some focaccia, and I was ready for the ride back.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801379/shiplife/sanremo/produce-market.jpg" class="story-image" data-caption="Fresh market produce." alt="Produce market">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/v1771801380/shiplife/sanremo/violin-sculpture.jpg" class="story-image" data-caption="Public art." alt="Violin sculpture">
+                </div>
+                <p class="photo-caption-inline">The covered market's bounty - Ligurian tomatoes, white asparagus, and fresh herbs. Plus the occasional giant violin sculpture.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Return</span>
+                <h3 class="section-title-panel">Back to the Ship</h3>
+                <p>By the time I returned the bike, my legs would be burning, my face sun-kissed, my camera full. I'd shower, change, and make it to the gangway just in time. Eight hours of freedom, and I'd do it all again the next time we called at San Remo. Some ports are for exploring. This one was for escaping.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/v1771801368/shiplife/sanremo/garden-path.jpg" class="story-image" data-caption="Mediterranean gardens." alt="Garden path">
+                <p class="photo-caption-inline">The final stretch - through Mediterranean gardens, past lush palms and bougainvillea, back to where the ship was waiting.</p>
+            </div>
+
+            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
+                <span class="toggle-icon">💡</span>
+                <span>More about San Remo</span>
+                <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="more-info-content">
+                <ul class="fun-facts-list">
+                    <li><strong>Pista Ciclabile:</strong> The 24km coastal bike path follows a former railway line from San Lorenzo al Mare to Ospedaletti - one of Europe's most scenic cycling routes.</li>
+                    <li><strong>Flower Capital:</strong> San Remo's flower market is one of the largest in Europe, exporting millions of carnations, roses, and other blooms annually.</li>
+                    <li><strong>Sanremo Music Festival:</strong> Italy's most important music competition has launched careers since 1951 - including Andrea Bocelli and Eros Ramazzotti.</li>
+                    <li><strong>Casino:</strong> The Sanremo Casino opened in 1905 and remains one of only four legal casinos in Italy.</li>
+                    <li><strong>Russian Connection:</strong> The Russian Orthodox church here was built for the many Russian nobles who wintered on the Riviera in the 19th century.</li>
+                </ul>
             </div>
 
             ${generateGallery('sanRemo')}
