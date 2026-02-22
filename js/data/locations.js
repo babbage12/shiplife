@@ -6861,28 +6861,120 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Legend</span>
-                <h3 class="section-title-panel">Where Homer Set His Story</h3>
-                <p>Pylos sits on Navarino Bay, where Homer placed King Nestor's palace in the Odyssey. The bay is still as dramatic as any epic - rocky islands rise from impossibly blue water, natural sea arches frame the horizon.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/pylos/img_2816" class="story-image" data-caption="Navarino Bay - where Homer set King Nestor's palace." alt="Navarino Bay">
-                <p class="photo-caption-inline">Navarino Bay - legendary waters where ancient kings once ruled.</p>
+                <span class="section-tag-panel">The Early Tender</span>
+                <h3 class="section-title-panel">First Ashore</h3>
+                <p>We arrived early in the morning. Sometimes, if the Staff Captain was in a good mood, he would let a few of the musicians go on the first tender over with the welcoming crew. This was one of those times.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/early-morning-arrival.jpg" class="story-image" data-caption="Early morning in Navarino Bay." alt="Early morning arrival">
+                <p class="photo-caption-inline">Early morning in Navarino Bay - the Seabourn Odyssey anchored where Homer set the original.</p>
+                <p>There's something special about being among the first to step ashore. The town is still waking up. The tourists haven't arrived yet. You have hours of freedom stretching ahead.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/town-waterfront.jpg" class="story-image" data-caption="Pylos waterfront from the tender." alt="Pylos waterfront">
+                <p class="photo-caption-inline">The Pylos waterfront approaching by tender - colorful cafes and tavernas lining the harbor.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Wandering</span>
+                <h3 class="section-title-panel">Finding the Fort</h3>
+                <p>I spent most of the day wandering. No map, no plan - just following paths uphill until I found what I was looking for. The Ottoman fortress of Neokastro appeared through the trees, its massive walls rising from the rocky hillside.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/wandering-01.jpg" class="story-image" data-caption="The path to the fortress." alt="Wandering">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/wandering-02.jpg" class="story-image" data-caption="Climbing toward history." alt="Path to fortress">
+                </div>
+                <p class="photo-caption-inline">Following paths uphill through olive groves and Mediterranean scrub.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/found-fort-01.jpg" class="story-image" data-caption="The fortress appears." alt="Finding the fort">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/found-fort-02.jpg" class="story-image" data-caption="Ottoman walls." alt="Fort walls">
+                </div>
+                <p class="photo-caption-inline">Then the fortress walls appeared - massive, silent, commanding the heights above the bay.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Fortress</span>
-                <h3 class="section-title-panel">Ottoman Walls, Greek Views</h3>
-                <p>The Ottomans built a fortress here that still commands the heights. Walking its walls, you can see why everyone from the Venetians to the Greeks fought over this strategic bay.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/pylos/img_2822" class="story-image" data-caption="The fortress walls of Pylos." alt="Pylos fortress">
-                <p class="photo-caption-inline">The fortress walls - silent witnesses to centuries of history.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/pylos/img_2828" class="story-image" data-caption="Views from the fortress." alt="Fortress views">
+                <h3 class="section-title-panel">Neokastro</h3>
+                <p>The Ottomans built Neokastro in 1573 to control Navarino Bay. Its walls are massive - designed to withstand cannon fire from ships below. Inside, pine trees have reclaimed the courtyards, and agave plants grow wild against the ancient stone.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-agave.jpg" class="story-image" data-caption="Agave and fortress walls." alt="Fortress agave">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-walls-vegetation.jpg" class="story-image" data-caption="Walls and bougainvillea." alt="Fortress walls">
+                </div>
+                <p class="photo-caption-inline">Nature reclaiming the fortress - agave, bougainvillea, and pines against Ottoman stone.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-courtyard.jpg" class="story-image" data-caption="The fortress courtyard." alt="Fortress courtyard">
+                <p class="photo-caption-inline">The main courtyard - cobblestone paths leading to the old barracks and storerooms.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-colonnade.jpg" class="story-image" data-caption="The arched colonnade." alt="Fortress colonnade">
+                <p class="photo-caption-inline">The colonnade - once barracks or storerooms, now housing museum panels about the fortress history.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-iron-door.jpg" class="story-image" data-caption="Iron door." alt="Fortress door">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-tunnel.jpg" class="story-image" data-caption="Stone passage." alt="Fortress tunnel">
+                </div>
+                <p class="photo-caption-inline">Iron doors and stone tunnels - exploring the fortress felt like stepping back centuries.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-stone-doorway.jpg" class="story-image" data-caption="Doorway with cypress." alt="Stone doorway">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/fortress-gateway.jpg" class="story-image" data-caption="The main gateway." alt="Stone archway">
+                </div>
+                <p class="photo-caption-inline">Stone doorways framing cypress trees - graffiti carved into the walls by visitors over the centuries.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-mountain-view.jpg" class="story-image" data-caption="View from the fortress." alt="Mountain view">
+                <p class="photo-caption-inline">The view from the walls - mountains, coastline, and the blue Ionian stretching to the horizon.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The History</span>
-                <h3 class="section-title-panel">Battle of Navarino</h3>
-                <p>In 1827, the Battle of Navarino in these waters helped secure Greek independence. The combined British, French, and Russian fleet destroyed the Ottoman-Egyptian navy here. Walking these shores, you're walking through history.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/pylos/img_2840" class="story-image" data-caption="The bay where history was made." alt="Pylos bay">
-                <p class="photo-caption-inline">Some places make you feel the weight of history. Pylos is one of them.</p>
+                <span class="section-tag-panel">The Battle</span>
+                <h3 class="section-title-panel">Navarino, 1827</h3>
+                <p>Walking the ramparts, I could see the entire bay spread below - the same waters where, in October 1827, the last great naval battle fought entirely under sail changed history. A combined British, French, and Russian fleet faced the Ottoman-Egyptian navy right here.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-ramparts.jpg" class="story-image" data-caption="The ramparts overlooking the bay." alt="Fortress ramparts">
+                <p class="photo-caption-inline">From these ramparts, Ottoman soldiers watched the battle unfold below.</p>
+                <p>The allied fleet destroyed 60 Ottoman ships in a few hours. It wasn't meant to be a battle - the admirals had orders to negotiate - but a shot was fired, and the rest was inevitable. Greek independence followed soon after. The fortress that once controlled this bay became a relic of a vanished empire.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-battlements.jpg" class="story-image" data-caption="Battlements framing the bay." alt="Battlements">
+                <p class="photo-caption-inline">Through these battlements, you can still imagine the smoke and thunder of that October day.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The View</span>
+                <h3 class="section-title-panel">Rocky Islands and Sea Arches</h3>
+                <p>The bay is as dramatic as any landscape in Greece. Rocky islands rise from impossibly blue water. Natural sea arches frame the horizon. It's easy to see why Homer placed King Nestor here - this is a landscape fit for epics.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/sea-arch-islands.jpg" class="story-image" data-caption="Sea arches and rocky islands." alt="Sea arch">
+                <p class="photo-caption-inline">Rocky islands with natural sea arches - a landscape unchanged since the Odyssey.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/fortress-bay-view.jpg" class="story-image" data-caption="The bay from the heights." alt="Bay view">
+                <p class="photo-caption-inline">Looking out toward the islands from the fortress path.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Color and Light</h3>
+                <p>Coming down from the fortress, the town was alive with color. Oleander and bougainvillea cascading from every wall. White houses with terracotta roofs climbing the hillside. The colors of Greece at their most vivid.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/town-from-fortress.jpg" class="story-image" data-caption="Town view from the fortress." alt="Town view">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/town-oleander.jpg" class="story-image" data-caption="Streets lined with oleander." alt="Town street">
+                </div>
+                <p class="photo-caption-inline">Pylos town - white houses and terracotta roofs against the green hillside.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/flowers-01.jpg" class="story-image" data-caption="Bougainvillea." alt="Flowers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/flowers-02.jpg" class="story-image" data-caption="Mediterranean color." alt="Bougainvillea">
+                </div>
+                <p class="photo-caption-inline">The magenta explosion of bougainvillea - the signature color of the Greek summer.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Return</span>
+                <h3 class="section-title-panel">End of a Long Day</h3>
+                <p>After a full day of wandering, I found a taverna and had a proper Greek lunch - a gyro with all the fixings, fries on the side. Simple food, perfectly executed. Then back to the waterfront to catch the last tender of the day.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/gyro-lunch.jpg" class="story-image" data-caption="Greek lunch." alt="Gyro lunch">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/pylos/image-20.jpg" class="story-image" data-caption="The waterfront." alt="Pylos harbor">
+                </div>
+                <p class="photo-caption-inline">A proper Greek gyro, then back to the waterfront to wait for the tender.</p>
+                <p>Some ports are for checking boxes. Pylos was for getting lost. I stepped off that first tender with no plan, and came back with a full camera and a full stomach. Those were always the best port days.</p>
+            </div>
+
+            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
+                <span class="toggle-icon">💡</span>
+                <span>More about Pylos</span>
+                <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="more-info-content">
+                <ul class="fun-facts-list">
+                    <li><strong>Homer's Pylos:</strong> In the Odyssey, Telemachus visits King Nestor here seeking news of his father Odysseus. Archaeologists found a Bronze Age palace nearby in 1939.</li>
+                    <li><strong>Battle of Navarino:</strong> On October 20, 1827, the last major naval battle fought under sail destroyed the Ottoman-Egyptian fleet and helped secure Greek independence.</li>
+                    <li><strong>The Fortress:</strong> Neokastro was built by the Ottomans in 1573. The older Paleokastro (Old Castle) dates to the 13th century Frankish period.</li>
+                    <li><strong>Voidokilia Beach:</strong> Just north of Pylos lies one of Greece's most perfect beaches - an almost circular bay shaped like the Greek letter omega.</li>
+                </ul>
             </div>
 
             ${generateGallery('pylos')}
