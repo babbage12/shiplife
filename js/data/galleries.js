@@ -1954,6 +1954,22 @@ const locationGalleries = {
         { src: "shiplife/penang/penang-107-gallery", caption: "Temple details.", alt: "Penang Malaysia" },
         { src: "shiplife/penang/penang-109-gallery", caption: "Penang scenery.", alt: "Penang Malaysia" },
         { src: "shiplife/penang/penang-110-gallery", caption: "A day in Penang.", alt: "Penang Malaysia" }
+    ],
+
+    // BÚZIOS (12 images)
+    "buzios": [
+        { src: "shiplife/buzios/harbor-fishing-boats", caption: "The harbor at Búzios - fishing boats and beach.", alt: "Búzios harbor" },
+        { src: "shiplife/buzios/ship-through-shops", caption: "Seabourn Quest framed through the waterfront shops.", alt: "Ship through shops" },
+        { src: "shiplife/buzios/beach-colorful-boats", caption: "Wide beach with colorful fishing boats.", alt: "Búzios beach" },
+        { src: "shiplife/buzios/fishing-boats-waterfront", caption: "Colorful boats along the waterfront.", alt: "Fishing boats" },
+        { src: "shiplife/buzios/yellow-church-locals", caption: "The vibrant yellow church where locals gathered.", alt: "Yellow church" },
+        { src: "shiplife/buzios/water-taxis-pier", caption: "Water taxis at the pier.", alt: "Water taxis" },
+        { src: "shiplife/buzios/fishermen-statues", caption: "Bronze fishermen with Seabourn Quest in the background.", alt: "Fishermen statues" },
+        { src: "shiplife/buzios/beach-boutique-hotels", caption: "Beach with boutique hotels on the hillside.", alt: "Beach hotels" },
+        { src: "shiplife/buzios/boats-schooner", caption: "Boats in the harbor with a schooner.", alt: "Boats and schooner" },
+        { src: "shiplife/buzios/panoramic-hillside", caption: "Panoramic view of Búzios with hillside villas.", alt: "Búzios panorama" },
+        { src: "shiplife/buzios/tropical-vegetation", caption: "Tropical vegetation among the homes.", alt: "Tropical homes" },
+        { src: "shiplife/buzios/seagull-beach", caption: "A seagull on the beach.", alt: "Seagull on beach" }
     ]
 };
 

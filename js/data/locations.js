@@ -4444,7 +4444,7 @@ an original composition inspired by this place.
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769809159/20200209_075921_rvq35a.jpg"
     },
     {
-        id: 130,
+        id: 141,
         title: "Armação dos Búzios, Brazil",
         coords: [-21.5, -40.5],
         tag: "Brazilian Riviera",
@@ -4454,14 +4454,72 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Peninsula</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏖️</span>
+                    <span class="demo-value">23 Beaches</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛵</span>
+                    <span class="demo-value">Fishing Village</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇫🇷</span>
+                    <span class="demo-value">Since '64</span>
+                </div>
+            </div>
+
             <div class="story-section-panel">
-                <p>Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera—cobblestone streets, boutique hotels, and over 20 beaches to choose from.</p>
-                <p>The peninsula juts into the Atlantic, catching breezes from both sides. Each beach has its own personality: some wild and windswept, others calm and perfect for swimming.</p>
+                <span class="section-tag-panel">A Quick Afternoon</span>
+                <h3 class="section-title-panel">Looking for Food</h3>
+                <p>A quick afternoon ashore. The mission was simple: find food. Stepping off the tender into Búzios, the first thing that hits you is the color. Fishing boats painted in every shade imaginable, bobbing in a harbor that feels more Mediterranean than Brazilian.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/harbor-fishing-boats" class="story-image" data-caption="The harbor at Búzios - fishing boats and beach." alt="Búzios harbor">
+                <p class="photo-caption-inline">The harbor at Búzios - fishing boats line the shore.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/ship-through-shops" class="story-image" data-caption="Seabourn framed through waterfront shops." alt="Ship through shops">
+                <p class="photo-caption-inline">Seabourn Quest framed through the waterfront shops.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Discovery</span>
+                <h3 class="section-title-panel">A Vibrant Community</h3>
+                <p>What I found wasn't just food - it was a vibrant community. Locals gathered around a bright yellow church, water taxis with names like "Lucas" and "Maria Alice" bobbed at the pier, and bronze statues of fishermen seemed to watch over it all with Seabourn Quest anchored in the background.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/yellow-church-locals" class="story-image" data-caption="The vibrant yellow church where locals gathered." alt="Yellow church">
+                <p class="photo-caption-inline">The vibrant yellow church where locals gathered.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/water-taxis-pier" class="story-image" data-caption="Water taxis at the pier." alt="Water taxis">
+                <p class="photo-caption-inline">Water taxis at the pier - Lucas, Maria Alice.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/fishermen-statues" class="story-image" data-caption="Bronze fishermen with Seabourn Quest in the background." alt="Fishermen statues">
+                <p class="photo-caption-inline">Bronze fishermen with Seabourn Quest anchored behind them.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Scene</span>
+                <h3 class="section-title-panel">Beaches & Boats</h3>
+                <p>The peninsula juts into the Atlantic, catching breezes from both sides. Each beach has its own personality. Boutique hotels cling to the hillside, tropical vegetation spills between the homes, and everywhere you look - boats. Schooners, fishing boats, sailboats, all bobbing together.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,h_300,c_fill,q_auto,f_auto/shiplife/buzios/beach-boutique-hotels" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/buzios/beach-boutique-hotels" alt="Beach hotels">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,h_300,c_fill,q_auto,f_auto/shiplife/buzios/boats-schooner" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/buzios/boats-schooner" alt="Boats and schooner">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,h_300,c_fill,q_auto,f_auto/shiplife/buzios/tropical-vegetation" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/buzios/tropical-vegetation" alt="Tropical homes">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,h_300,c_fill,q_auto,f_auto/shiplife/buzios/beach-colorful-boats" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/buzios/beach-colorful-boats" alt="Colorful boats">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Bardot's Legacy</span>
+                <h3 class="section-title-panel">The View</h3>
+                <p>Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera - cobblestone streets, boutique hotels, and over 20 beaches to choose from. Even a resident seagull seemed unbothered by the transformation.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/seagull-beach" class="story-image" data-caption="A seagull on the beach." alt="Seagull on beach">
+                <p class="photo-caption-inline">The local wildlife seemed unimpressed by visitors.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/buzios/panoramic-hillside" class="story-image" data-caption="Panoramic view of Búzios." alt="Búzios panorama">
+                <p class="photo-caption-inline">Panoramic view of Búzios - boats, hillside villas, and endless blue.</p>
             </div>
 
             ${generateGallery('buzios')}
         `,
-        fullDesc: "Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera—cobblestone streets, boutique hotels, and over 20 beaches to choose from.",
+        fullDesc: "A quick afternoon ashore looking for food - and finding a vibrant community instead. Búzios was a sleepy fishing village until Brigitte Bardot put it on the map in 1964. Now it's Brazil's answer to the French Riviera.",
         image: "./images/hero/buzios/IMG_6213.jpg"
     },
     {
@@ -7885,7 +7943,7 @@ an original composition inspired by this place.
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/ponza/IMG_5175"
     },
     {
-        id: 130,
+        id: 142,
         title: "Lipari, Italy",
         coords: [38.4674, 14.954],
         tag: "Aeolian Islands",
