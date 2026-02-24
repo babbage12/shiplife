@@ -887,8 +887,8 @@
             color: var(--gold-light);
             cursor: pointer;
             font-size: 0.9rem;
-            padding: 0.75rem 0;
-            margin: 1.5rem 0 0.5rem 0;
+            padding: 0.5rem 0;
+            margin: 0.75rem 0 0.25rem 0;
             border-top: 1px solid rgba(212, 165, 116, 0.2);
             transition: color 0.2s ease;
         }

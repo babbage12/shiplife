@@ -612,16 +612,14 @@ const locationGalleries = {
         { src: "v1770837326/shiplife/ibiza/cobmuqw8ytk8lwv9qmjh.jpg", caption: "Ibiza, Spain", alt: "Ibiza" }
     ],
 
-    // ISLEOFPINES (8 images)
+    // ISLEOFPINES (6 images)
     "isleOfPines": [
-        { src: "v1770826440/shiplife/isle-of-pines/tpdgnpy4lkvxtivahmf7.jpg", caption: "Crew day at the beach", alt: "Crew day" },
         { src: "v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826439/shiplife/isle-of-pines/uk5agubylcawarrc2cee.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826436/shiplife/isle-of-pines/nijbrcf7ieidnsdezmni.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
-        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
-        { src: "v1770826441/shiplife/isle-of-pines/xsihmnhudihg22sdon9o.jpg", caption: "Isle of Pines", alt: "Isle of Pines" }
+        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" }
     ],
 
     // ISTANBUL (12 images)
@@ -686,11 +684,17 @@ const locationGalleries = {
         { src: "v1767735569/IMG_1696_o1sjn5.jpg", caption: "Kotor old town from above.", alt: "Kotor old town" }
     ],
 
-    // KUSADASI (3 images)
+    // KUSADASI (12 images)
     "kusadasi": [
-        { src: "shiplife/kusadasi/hand_sculpture.jpg", caption: "The Hand of Peace sculpture releases doves over the harbor.", alt: "Hand sculpture with cruise ship" },
-        { src: "shiplife/kusadasi/turkish_breakfast.jpg", caption: "Turkish breakfast - an event, not a meal.", alt: "Turkish breakfast" },
-        { src: "shiplife/kusadasi/cruise_ships.jpg", caption: "Multiple ships crowd the popular Aegean port.", alt: "Cruise ships at Kusadasi" }
+        { src: "shiplife/kusadasi/img_3160", caption: "The Hand of Peace with cruise ship behind.", alt: "Hand sculpture" },
+        { src: "shiplife/kusadasi/img_3150", caption: "Two ships at the pier.", alt: "Ships at dock" },
+        { src: "shiplife/kusadasi/img_3154", caption: "Ege Ports entrance.", alt: "Port entrance" },
+        { src: "shiplife/kusadasi/img_3157", caption: "World's Cheapest Market and Ottoman sweets.", alt: "Street shops" },
+        { src: "shiplife/kusadasi/img_3158", caption: "Street scene with palms and ship.", alt: "Street scene" },
+        { src: "shiplife/kusadasi/img_3171", caption: "Shopping plaza with colorful shops.", alt: "Shopping area" },
+        { src: "shiplife/kusadasi/hand_sculpture.jpg", caption: "Hand of Peace releasing doves.", alt: "Hand sculpture" },
+        { src: "shiplife/kusadasi/turkish_breakfast.jpg", caption: "Turkish breakfast spread.", alt: "Turkish breakfast" },
+        { src: "shiplife/kusadasi/cruise_ships.jpg", caption: "Multiple ships at port.", alt: "Cruise ships" }
     ],
 
     // LAVANDOU (7 images)
