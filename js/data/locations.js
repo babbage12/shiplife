@@ -1695,6 +1695,10 @@ an original composition inspired by this place.
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030580/060_dczkem.jpg" class="story-image" data-caption="Opera House at night as we sailed away." alt="Opera House at night">
                 <p class="photo-caption-inline">Through the porthole. Then past us. Then gone.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769455266/056-4_zckas4.jpg" class="story-image" data-caption="Fireworks for the Jewel's inaugural voyage." alt="Inaugural fireworks">
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/sydney/pp2011-473" class="inline-image" alt="Sydney Harbour fireworks" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/sydney/pp2011-474" class="inline-image" alt="Sydney Harbour fireworks" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
                 <p class="photo-caption-inline">Fireworks lit up the harbour. The inaugural voyage had begun.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769030579/045_ngolea.jpg" class="story-image" data-caption="Sydney Showboat escorting us out." alt="Sydney Showboat">
                 <p class="photo-caption-inline">Sydney Showboat escorting us into the night.</p>
@@ -3272,18 +3276,13 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">A cold drink, fishing boats in the harbor, and the afternoon sun - perfect Sicilian moments.</p>
             </div>
 
-            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
-                <span class="toggle-icon">💡</span>
-                <span>More about Syracuse</span>
-                <span class="toggle-arrow">▼</span>
-            </div>
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Syracuse' : '+ More about Syracuse'">+ More about Syracuse</p>
             <div class="more-info-content">
-                <ul class="fun-facts-list">
-                    <li><strong>Conquerors:</strong> Greeks, Romans, Byzantines, Arabs, Normans, Spanish - Syracuse has been ruled by them all, each leaving their mark.</li>
-                    <li><strong>Papyrus:</strong> The Ciane River near Syracuse is one of the only places in Europe where papyrus grows wild - brought by Arab settlers.</li>
-                    <li><strong>Temple of Athena:</strong> The Cathedral of Syracuse was built directly into a 5th-century BC Greek temple - you can still see the original Doric columns embedded in the walls.</li>
-                    <li><strong>Plato's Visit:</strong> The philosopher Plato visited Syracuse three times, attempting to create his ideal state. He was nearly sold into slavery for his trouble.</li>
-                </ul>
+                <p><strong>Greatest Greek City:</strong> Syracuse was once more powerful than Athens. At its peak, the population exceeded 500,000, making it the largest city in the ancient world. Cicero called it "the greatest Greek city and the most beautiful of them all."</p>
+                <p><strong>Conquerors:</strong> Greeks, Romans, Byzantines, Arabs, Normans, Spanish - Syracuse has been ruled by them all, each leaving their mark on the city's architecture and culture.</p>
+                <p><strong>Archimedes' Home:</strong> The legendary mathematician and inventor was born here in 287 BC. He defended Syracuse against Roman siege with ingenious war machines, including mirrors that allegedly set enemy ships on fire.</p>
+                <p><strong>Wild Papyrus:</strong> The Ciane River near Syracuse is one of the only places in Europe where papyrus grows wild - a legacy of Arab settlers who brought it from Egypt.</p>
+                <p><strong>Plato's Misadventure:</strong> The philosopher Plato visited Syracuse three times, attempting to create his ideal state under the tyrant Dionysius. He was nearly sold into slavery for his trouble.</p>
             </div>
 
             ${generateGallery('syracuse')}
@@ -3891,57 +3890,114 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The City</span>
-                <h3 class="section-title-panel">Gaudí's Playground</h3>
-                <p>Barcelona is Gaudí's city. The Sagrada Família defies description - a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night.</p>
-                <p>This city knows how to live.</p>
+                <span class="section-tag-panel">The Feeling</span>
+                <h3 class="section-title-panel">Something Like Home</h3>
+                <p>On long contracts at sea, homesickness was a constant companion. But Barcelona was different. There was something in the air here—maybe the scent of the plane trees lining the boulevards, or the way the afternoon light fell on the stone buildings—that made the loneliness lift, just a little.</p>
+                <p>I couldn't quite put my finger on it. But every time we docked here, I felt a strange sense of relief, like I'd arrived somewhere familiar even though I was thousands of miles from home.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/barcelona/20150616_100153" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150616_100153" data-caption="The familiar streets" alt="Barcelona" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/barcelona/img_20140811_104456" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_104456" data-caption="Barcelona light" alt="Barcelona" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/barcelona/20150616_124254" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150616_124254" data-caption="A sense of home" alt="Barcelona" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/barcelona/20150810_130349" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150810_130349" data-caption="The city sprawls toward the sea" alt="Barcelona view" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                </div>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Tour</span>
-                <h3 class="section-title-panel">Olympic Village & Museum</h3>
-                <p>I took a tour to the Olympic Village and museum from the 1992 Summer Games. The whole complex is still impressive - built to host the world, now a vibrant neighborhood.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg" class="story-image" alt="Barcelona Olympic Village">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg" class="story-image" alt="Barcelona Olympic site">
+                <span class="section-tag-panel">The Walk</span>
+                <h3 class="section-title-panel">A City That Lives</h3>
+                <p>Every time I set out into the city, I knew I'd be exhausted by evening. By the time I returned to the ship in the early dusk, my feet would be aching—five miles or more through the winding streets, from La Rambla to the Gothic Quarter to wherever my curiosity led.</p>
+                <p>But it was the good kind of tired. The kind that comes from really seeing a place. Barcelona pulses with life. La Rambla stretches from Plaça de Catalunya down to the sea, lined with flower stalls and newspaper kiosks, street performers and café tables spilling onto the pavement. You could walk it a hundred times and notice something new each time.</p>
+                <div class="story-carousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/img_20140811_092621" alt="Columbus Monument" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Columbus Monument at the start of La Rambla')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Columbus Monument at the start of La Rambla</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/img_20140811_100621" alt="Barcelona streets" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Walking the streets')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Walking the streets</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150810_130349" alt="Barcelona view" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'The city unfolds')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>The city unfolds</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/img_20140811_122645" alt="Barcelona scenes" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Barcelona scenes')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Barcelona scenes</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150616_101104" alt="Barcelona" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Another visit')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Another visit</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150616_101142" alt="Barcelona" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Street scenes')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Street scenes</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150616_101635" alt="Barcelona" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Barcelona life')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Barcelona life</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150616_122411" alt="Barcelona" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), 'Exploring')" style="cursor:pointer">
+                        <div class="carousel-caption"><span>Exploring</span></div>
+                    </div>
+                    <button class="carousel-btn prev">&larr;</button>
+                    <button class="carousel-btn next">&rarr;</button>
+                    <div class="carousel-dots"></div>
                 </div>
-                <p class="photo-caption-inline">The Olympic Village - built for 1992, still going strong.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg" class="story-image" alt="Olympic Museum">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141853_Facebook_njurfr.jpg" class="story-image" alt="Barcelona views">
-                </div>
-                <p class="photo-caption-inline">The Olympic Museum and views of the city.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg" class="story-image" alt="Barcelona cityscape">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg" class="story-image" alt="Barcelona architecture">
-                </div>
-                <p class="photo-caption-inline">Barcelona from above - Mediterranean magic.</p>
             </div>
 
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🎭</span>
-                        <span>Catalan Capital</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Unfinished Masterpiece:</strong> La Sagrada Família has been under construction since 1882 - expected completion is 2026, 100 years after Gaudí's death.</li>
-                        <li><strong>Olympic Legacy:</strong> The 1992 Olympics transformed Barcelona, opening it to the sea and creating the beach culture that defines it today.</li>
-                        <li><strong>Gothic Quarter:</strong> The Barri Gòtic contains Roman ruins beneath medieval streets - 2,000 years of history layered on top of itself.</li>
-                        <li><strong>Gaudí's City:</strong> Seven of Gaudí's works are UNESCO World Heritage Sites - more than any other architect in the world.</li>
-                        <li><strong>Catalonia:</strong> Barcelona is the capital of Catalonia, a region with its own language, culture, and ongoing independence movement.</li>
-                    </ul>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Streets</span>
+                <h3 class="section-title-panel">Gothic Quarter</h3>
+                <p>The Gothic Quarter is where Barcelona keeps its secrets. Narrow lanes twist between medieval buildings, opening suddenly into sun-drenched plazas. Roman walls hide behind corner shops. Every turn reveals another layer of the city's 2,000-year history.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_094212" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_094212" data-caption="Gothic Quarter" alt="Gothic Quarter" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_094619" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_094619" data-caption="Escuela de Artes Aplicadas" alt="Arts school" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_094750" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_094750" data-caption="Historic architecture" alt="Barcelona architecture" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
                 </div>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_094911" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_094911" data-caption="Stone and shadow" alt="Barcelona" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_095030" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_095030" data-caption="The old city" alt="Gothic Quarter" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/img_20140811_095425" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/img_20140811_095425" data-caption="Centuries of history" alt="Barcelona street" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Views</span>
+                <h3 class="section-title-panel">Catalonia Unfolds</h3>
+                <p>From the hills above, Barcelona sprawls toward the Mediterranean in a grid of wide avenues and cramped medieval lanes, church spires rising above it all. On clear days you can see forever.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/20150616_123534" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150616_123534" data-caption="City panorama" alt="Barcelona panorama" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/20150616_123839" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150616_123839" data-caption="The city below" alt="Barcelona view" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/barcelona/20150810_124812" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/barcelona/20150810_124812" data-caption="Mediterranean light" alt="Barcelona" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150810_130349" class="story-image" data-caption="Barcelona stretches to the sea" alt="Barcelona panorama" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Writer</span>
+                <h3 class="section-title-panel">Orwell's Barcelona</h3>
+                <p>George Orwell came to Barcelona in 1936 to fight fascism in the Spanish Civil War. He joined the POUM militia and spent months on the front lines before being shot through the throat by a sniper. He survived, barely.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/barcelona/img_20140811_094147" class="story-image" data-caption="1984 - Orwell's legacy on Barcelona's streets" alt="George Orwell 1984 graffiti" onclick="openLightbox(this.src.replace('w_800', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>His account, <em>Homage to Catalonia</em>, captures a city transformed by revolution—workers running the hotels, trams painted red and black, the old class distinctions temporarily abolished. "It was the first time I had ever been in a town where the working class was in the saddle," he wrote.</p>
+                <p>That Barcelona is gone now, but you can still feel echoes of it in the fierce Catalan pride, the independence flags hanging from balconies, the sense that this city answers to no one but itself.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Barcelona' : '+ More about Barcelona'">+ More about Barcelona</p>
+            <div class="more-info-content">
+                <p><strong>Unfinished Masterpiece:</strong> La Sagrada Família has been under construction since 1882—expected completion is 2026, 100 years after Gaudí's death.</p>
+                <p><strong>Olympic Legacy:</strong> The 1992 Olympics transformed Barcelona, opening it to the sea and creating the beach culture that defines it today.</p>
+                <p><strong>Gothic Quarter:</strong> The Barri Gòtic contains Roman ruins beneath medieval streets—2,000 years of history layered on top of itself.</p>
+                <p><strong>Gaudí's City:</strong> Seven of Gaudí's works are UNESCO World Heritage Sites—more than any other architect in the world.</p>
+                <p><strong>Catalonia:</strong> Barcelona is the capital of Catalonia, a region with its own language, culture, and ongoing independence movement.</p>
             </div>
 
             ${generateGallery('barcelona')}
         `,
-        fullDesc: "Barcelona is Gaudí's city.\n\nThe Sagrada Família defies description-a cathedral that's been under construction for 140 years and still isn't finished. Park Güell is a fever dream in tile. La Rambla pulses with energy day and night. This city knows how to live.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769805706/20150713_123849_xbyscp.jpg"
+        fullDesc: "On long contracts at sea, homesickness was a constant companion. But Barcelona was different. There was something in the air here that made the loneliness lift. Every time we docked here, I felt a strange sense of relief, like I'd arrived somewhere familiar.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/barcelona/20150616_123845"
     },
     {
         id: 38,
@@ -4075,43 +4131,37 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Passage</span>
-                <h3 class="section-title-panel">Chilean Fjords</h3>
-                <p>En route to Antarctica, we sailed through some of the most spectacular scenery I've ever witnessed. The channels of Patagonia.</p>
+                <span class="section-tag-panel">Darwin's Waters</span>
+                <h3 class="section-title-panel">Where Evolution Began</h3>
+                <p>In 1833, a 24-year-old Charles Darwin sailed these waters aboard HMS Beagle. The ship's captain, Robert FitzRoy, was charting the coastline; Darwin was collecting specimens and observations that would change human understanding forever.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/beagle-channel/img_6608" class="story-image" data-caption="The Beagle Channel - Darwin's waters" alt="Beagle Channel" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>The channel now bears the ship's name. Darwin would spend five years on the voyage, but it was here—at the bottom of the world—that he began questioning everything he'd been taught about the origin of species.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">Gallery</span>
-                <h3 class="section-title-panel">The Journey South</h3>
-                <details class="collapsible-gallery" open>
-                    <summary>Photos from the Chilean Fjords</summary>
-                    <div class="story-gallery-grid">
-                        <!-- Photos to be added after Cloudinary upload -->
-                    </div>
-                </details>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">⛰️</span>
-                        <span>The Beagle Channel</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>Named for Darwin:</strong> The channel was charted by the HMS Beagle in 1833, the same ship that carried Charles Darwin on his famous voyage that would inspire the theory of evolution.</li>
-                        <li><strong>Border Dispute:</strong> The channel marks the border between Chile and Argentina. The two nations nearly went to war over islands here in 1978 before the Pope mediated a settlement.</li>
-                        <li><strong>Glacier Alley:</strong> The nearby Avenue of the Glaciers features five tidewater glaciers descending from the Darwin Ice Field - named Italia, Holanda, Alemania, Francia, and España.</li>
-                        <li><strong>Indigenous History:</strong> The Yaghan people navigated these waters for over 10,000 years, surviving the harsh climate as the world's southernmost human inhabitants.</li>
-                        <li><strong>Wildlife:</strong> Magellanic penguins, sea lions, and Andean condors are common sights along the channel's dramatic coastline.</li>
-                    </ul>
+                <span class="section-tag-panel">The Passage</span>
+                <h3 class="section-title-panel">Sailing South</h3>
+                <p>En route to Antarctica, we traced Darwin's path through some of the most spectacular scenery on Earth. Snow-capped peaks rose from waters so still they mirrored the sky.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/beagle-channel/img_6611" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/beagle-channel/img_6611" data-caption="Mountains of Tierra del Fuego" alt="Tierra del Fuego" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/beagle-channel/img_6620" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/beagle-channel/img_6620" data-caption="The channel winds through the mountains" alt="Beagle Channel" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/beagle-channel/img_6624" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/beagle-channel/img_6624" data-caption="Dramatic Patagonian landscape" alt="Patagonia" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/beagle-channel/img_6626" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/beagle-channel/img_6626" data-caption="Where the Andes meet the sea" alt="Beagle Channel" onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:pointer">
                 </div>
             </div>
 
-            ${generateGallery('chileanFjords', 'Photos')}
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Darwin & the Beagle' : '+ More about Darwin & the Beagle'">+ More about Darwin & the Beagle</p>
+            <div class="more-info-content">
+                <p><strong>The Voyage:</strong> Darwin's five-year journey (1831-1836) took him around the world, but Patagonia and Tierra del Fuego provided crucial observations about geology, fossils, and the diversity of life.</p>
+                <p><strong>The Fuegians:</strong> Darwin encountered the Yaghan people here—they had survived 10,000 years in this harsh climate. Their existence challenged European assumptions about human civilization.</p>
+                <p><strong>Glacier Alley:</strong> The nearby Avenue of the Glaciers features five tidewater glaciers descending from the Darwin Ice Field—named Italia, Holanda, Alemania, Francia, and España.</p>
+                <p><strong>On the Origin of Species:</strong> Darwin wouldn't publish his revolutionary theory until 1859—23 years after returning from the Beagle voyage. He spent those years gathering evidence, knowing how controversial his ideas would be.</p>
+                <p><strong>The Border:</strong> The channel marks the border between Chile and Argentina. The two nations nearly went to war over islands here in 1978 before Pope John Paul II mediated a settlement.</p>
+            </div>
+
+            ${generateGallery('beagleChannel')}
         `
     },
     {
@@ -4650,12 +4700,65 @@ an original composition inspired by this place.
         isDoor: false,
         useRichContent: true,
         shortDesc: "Australia's southern outpost, gateway to Antarctica.",
-        fullDesc: "Hobart sits in the shadow of Mount Wellington, looking out toward the pole.\n\nThis is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521843/023_nckajd.jpg",
+        fullDesc: "I was very excited when we reached Hobart. It seemed full of adventure and wild country, and the explorer in me wanted to take in as much as I could.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/hobart/015",
         richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏔️</span>
+                    <span class="demo-value">Mount Wellington</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇦🇺</span>
+                    <span class="demo-value">Tasmania</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐾</span>
+                    <span class="demo-value">Devils</span>
+                </div>
+            </div>
+
             <div class="story-section-panel">
-                <p>Hobart sits in the shadow of Mount Wellington, looking out toward the pole.</p>
-                <p>This is where Antarctic expeditions provision and where the cleanest air on Earth blows in from the Southern Ocean. The Saturday Salamanca Market is legendary. MONA, the underground art museum, is unlike anything else on the planet.</p>
+                <h3 class="section-title-panel">The Edge of the World</h3>
+                <p>I was very excited when we reached Hobart. It seemed full of adventure and wild country, and the explorer in me wanted to take in as much as I could. And of course, see a Tasmanian devil.</p>
+                <p>I kept feeling deep in the pit of my stomach that I just couldn't believe I was there. This was during that initial period of non-stop movement where parts of these experiences just overwhelmed my sensory functions. The novelty of traveling on a ship was still fresh and exciting. Every port felt like a gift.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/017" class="inline-image" alt="Hobart city" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,a_90,q_auto,f_auto/shiplife/hobart/019" class="inline-image" alt="Hobart architecture" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">Historic Hobart - Australia's second-oldest city, founded in 1804.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Wild Tasmania</h3>
+                <p>My hopes of Hobart being wild and adventurous turned out to be true, just not in the way I expected.</p>
+                <p>The crew partied every night on the ship. But whenever there was an overnight stay, things went to another level. Hobart was one of those nights.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/010" class="inline-image" alt="Crew in Hobart" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/006" class="inline-image" alt="Hobart waterfront" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p>We were drinking a lot back then. Looking at these photos reminds me of the beginning days, when just the experience of traveling on a ship was still novel and unique.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/heading-to-bar" class="inline-image" alt="Heading to the bar" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/bar-crew" class="inline-image" alt="At the bar" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">Thomas, Fabio, and me heading out. Then at the bar with Jesse, Alec, and Carly.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Devils</h3>
+                <p>I did see a Tasmanian devil. But I also learned about the disease that was devastating them: Devil Facial Tumour Disease, a transmissible cancer spread through biting. Over 80% of the wild population had been lost since the mid-1990s. Conservation programs were racing to save the species.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/hobart/022" class="story-image" alt="Hobart" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Hobart' : '+ More about Hobart'">+ More about Hobart</p>
+            <div class="more-info-content">
+                <p><strong>Errol Flynn:</strong> The swashbuckling Hollywood actor was born in Hobart in 1909. Before becoming Captain Blood, he was a Tasmanian boy.</p>
+                <p><strong>Gateway to Antarctica:</strong> Hobart has provisioned Antarctic expeditions since the heroic age. Mawson, Shackleton, and Scott all departed from here. Today it hosts research vessels heading south.</p>
+                <p><strong>Mount Wellington:</strong> The 1,271-meter peak (now officially kunanyi/Mount Wellington) looms over the city. On clear days you can see the entire Derwent estuary from the summit.</p>
+                <p><strong>Salamanca Market:</strong> Every Saturday, the historic sandstone warehouses host one of Australia's best outdoor markets, with 300+ stalls stretching along the waterfront.</p>
+                <p><strong>MONA:</strong> The Museum of Old and New Art is built into a sandstone cliff. A private collection of provocative and ancient works, it's deliberately disorienting, and unlike any museum you've visited.</p>
+                <p><strong>Sydney to Hobart:</strong> The annual yacht race finishes at Constitution Dock every New Year. The 628-nautical-mile race across the Tasman Sea is one of the most grueling in the world.</p>
             </div>
 
             ${generateGallery('hobart')}
@@ -4886,19 +4989,13 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">The final stretch - through Mediterranean gardens, past lush palms and bougainvillea, back to where the ship was waiting.</p>
             </div>
 
-            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
-                <span class="toggle-icon">💡</span>
-                <span>More about San Remo</span>
-                <span class="toggle-arrow">▼</span>
-            </div>
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about San Remo' : '+ More about San Remo'">+ More about San Remo</p>
             <div class="more-info-content">
-                <ul class="fun-facts-list">
-                    <li><strong>Pista Ciclabile:</strong> The 24km coastal bike path follows a former railway line from San Lorenzo al Mare to Ospedaletti - one of Europe's most scenic cycling routes.</li>
-                    <li><strong>Flower Capital:</strong> San Remo's flower market is one of the largest in Europe, exporting millions of carnations, roses, and other blooms annually.</li>
-                    <li><strong>Sanremo Music Festival:</strong> Italy's most important music competition has launched careers since 1951 - including Andrea Bocelli and Eros Ramazzotti.</li>
-                    <li><strong>Casino:</strong> The Sanremo Casino opened in 1905 and remains one of only four legal casinos in Italy.</li>
-                    <li><strong>Russian Connection:</strong> The Russian Orthodox church here was built for the many Russian nobles who wintered on the Riviera in the 19th century.</li>
-                </ul>
+                <p><strong>Pista Ciclabile:</strong> The 24km coastal bike path follows a former railway line from San Lorenzo al Mare to Ospedaletti - one of Europe's most scenic cycling routes, hugging the Mediterranean coastline the entire way.</p>
+                <p><strong>Flower Capital:</strong> San Remo's flower market is one of the largest in Europe, exporting millions of carnations, roses, and other blooms annually. The mild climate allows year-round cultivation.</p>
+                <p><strong>Sanremo Music Festival:</strong> Italy's most important music competition has launched careers since 1951 - including Andrea Bocelli, Eros Ramazzotti, and Laura Pausini. Winners often go on to represent Italy at Eurovision.</p>
+                <p><strong>The Casino:</strong> The Sanremo Casino opened in 1905 in a stunning Art Nouveau building and remains one of only four legal casinos in Italy. It's been the backdrop for countless films and has hosted royalty and celebrities for over a century.</p>
+                <p><strong>Russian Nobility:</strong> The Russian Orthodox church here was built for the many Russian nobles who wintered on the Riviera in the 19th century. Tsar Nicholas II's mother was among the regular visitors.</p>
             </div>
 
             ${generateGallery('sanRemo')}
@@ -5446,43 +5543,66 @@ an original composition inspired by this place.
         isDoor: false,
         useRichContent: true,
         shortDesc: "The Bali tourists don't see.",
-        fullDesc: "On Bali's quiet north coast, life moves at a different pace. No crowds, no clubs—just fishing villages, black sand beaches, and terraced rice paddies climbing the volcanic slopes.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769522980/IMG_4038_uylyls.jpg",
+        fullDesc: "This was one of those places where I really should have taken one of the tours offered. Instead I just wandered around the port area and missed out on most of the fun.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/celukan-bawang/img_4020",
         richContent: `
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The North</span>
-                <h3 class="section-title-panel">Real Bali</h3>
-                <p>The tourists go to Kuta, Seminyak, Ubud. The cruise ships anchor off Celukan Bawang, on the north coast, where the old Bali still exists.</p>
-                <p>Here the beaches are black volcanic sand, the roads wind through rice terraces, and temples outnumber hotels a hundred to one.</p>
-                <p>It's what the whole island looked like before the world discovered it. Which is both beautiful and bittersweet.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Pace</span>
-                <h3 class="section-title-panel">Slower</h3>
-                <p>South Bali runs on tourism time—24/7 hustle, traffic jams, Instagram opportunities. The north runs on Bali time.</p>
-                <p>Fishing boats launch at dawn. Offerings appear at shrines each morning. Rice paddies change color with the seasons.</p>
-                <p>It's not untouched—nothing in Bali is untouched anymore—but it remembers what it used to be.</p>
-            </div>
-
-            <div class="more-info-container" onclick="this.classList.toggle('active')">
-                <button class="more-info-btn">
-                    <span class="info-icon">💡</span>
-                    <span>More about this location</span>
-                </button>
-                <div class="more-info-popup">
-                    <div class="popup-title">
-                        <span class="title-icon">🌺</span>
-                        <span>North Bali</span>
-                    </div>
-                    <ul class="fun-facts-list">
-                        <li><strong>The Temples:</strong> North Bali has some of the island's oldest temples, including Pura Beji with its ornate carvings.</li>
-                        <li><strong>Hot Springs:</strong> Volcanic hot springs dot the hillsides—natural spas with mountain views.</li>
-                        <li><strong>Dolphins:</strong> Lovina Beach is famous for dawn dolphin-watching trips.</li>
-                        <li><strong>The Divide:</strong> Mountains separate north from south—different weather, different vibe, different Bali.</li>
-                    </ul>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏝️</span>
+                    <span class="demo-value">North Bali</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Seabourn Odyssey</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🤷</span>
+                    <span class="demo-value">Should've Toured</span>
                 </div>
             </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Missed Opportunities</h3>
+                <p>This was one of those places where I really should have taken one of the tours offered. The ship had excursions to temples, rice terraces, traditional villages—all the things that make Bali famous. Instead, I decided to just wander around the port area on my own.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/celukan-bawang/img_4021" class="story-image" alt="Radio tower" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The radio tower was kind of exciting, I guess.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Port Wandering</h3>
+                <p>Celukan Bawang is on Bali's quiet north coast—far from the tourist beaches of Kuta and the art galleries of Ubud. Out here, there's not much around the port itself. Just local life, some shops, and whatever happens to wander by.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/celukan-bawang/img_4038" class="story-image" alt="Bali landscape" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The landscape, at least, was beautiful.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/celukan-bawang/img_4040" class="story-image" alt="Cows" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">Very suspicious cows.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Fine Dining</h3>
+                <p>At least I found the local commerce scene—souvenirs and fine outdoor dining, all in one convenient location.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/celukan-bawang/img_4042" class="story-image" alt="Souvenirs and dining" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Back to the Ship</h3>
+                <p>Eventually I tendered back to the Odyssey, slightly regretting my independent spirit. Sometimes the ship knows best.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/celukan-bawang/img_4057" class="inline-image" alt="Port scene" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/celukan-bawang/img_4055" class="inline-image" alt="Tendering back" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">Tendering back to the Seabourn Odyssey. Lesson learned.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Celukan Bawang' : '+ More about Celukan Bawang'">+ More about Celukan Bawang</p>
+            <div class="more-info-content">
+                <p><strong>The Temples:</strong> North Bali has some of the island's oldest temples, including Pura Beji with its ornate carvings and Pura Meduwe Karang with its famous bicycle relief.</p>
+                <p><strong>Hot Springs:</strong> Volcanic hot springs dot the hillsides near Banjar—natural spas with mountain views that I completely missed.</p>
+                <p><strong>Dolphins:</strong> Lovina Beach, not far away, is famous for dawn dolphin-watching trips. Also missed.</p>
+                <p><strong>The Divide:</strong> Mountains separate north from south Bali—different weather, different vibe, different experience. The north is the quiet, traditional side.</p>
+                <p><strong>Rice Terraces:</strong> The famous Jatiluwih rice terraces are UNESCO-listed and absolutely stunning. The tour would have taken me there.</p>
+            </div>
+
+            ${generateGallery('celukanBawang')}
         `
     },
     {
@@ -6543,6 +6663,15 @@ an original composition inspired by this place.
                 </figure>
             </div>
 
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Parga' : '+ More about Parga'">+ More about Parga</p>
+            <div class="more-info-content">
+                <p><strong>Venetian Stronghold:</strong> Venice controlled Parga for nearly 400 years (1401-1797), transforming it into one of the most formidable fortresses on the Ionian coast - a Christian outpost surrounded by Ottoman territory.</p>
+                <p><strong>The Great Betrayal:</strong> In 1819, Britain sold Parga to Ali Pasha of Ioannina, the Ottoman ruler of Epirus. The entire population - around 4,000 people - chose exile over Ottoman rule.</p>
+                <p><strong>The Exodus:</strong> Before leaving, the people of Parga exhumed the bones of their ancestors from the cemeteries, burned them in the main square, and carried the ashes to Corfu. They refused to leave their dead to be desecrated - one of the most dramatic moments in Greek history.</p>
+                <p><strong>Return to Greece:</strong> Parga was finally united with Greece after the Balkan Wars in 1913. The fortress stands as a monument to the town's fierce independence.</p>
+                <p><strong>Hidden Gem:</strong> While tour groups flock to nearby Corfu, Parga remains relatively undiscovered - a pastel village with crystal-clear waters and genuine Greek character.</p>
+            </div>
+
             ${generateGallery('parga')}
         `,
         fullDesc: "Parga tumbles down to its harbor in a cascade of pastel houses. The Venetian castle watches from the headland. Tour groups head to Corfu; those who know come here instead.",
@@ -6643,13 +6772,76 @@ an original composition inspired by this place.
         shortDesc: "Wind, waves, and Turkish hospitality.",
         useRichContent: true,
         richContent: `
-            <p>Çeşme sits on a peninsula where the Aegean winds blow constant and the pace is unhurried. It's a resort town favored by Turks, not yet overrun by international tourism.</p>
-            <p>The town square is lined with palm trees and cafés. Local shops sell everything from carpets to kebabs. It's the kind of place where you wander without a plan and end up having the best afternoon.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏰</span>
+                    <span class="demo-value">Ottoman Castle</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌴</span>
+                    <span class="demo-value">Palm-Lined Square</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🦁</span>
+                    <span class="demo-value">Admiral's Lion</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <p>Çeşme sits on a peninsula where the Aegean winds blow constant and the pace is unhurried. It's a resort town favored by Turks, not yet overrun by international tourism - the kind of place where you wander without a plan and end up having the best afternoon.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/cesme/img_20131008_121115" class="story-image" alt="Çeşme town with castle" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The Ottoman castle watches over Çeşme from its hilltop perch, minarets rising against the Aegean sky.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Town Square</h3>
+                <p>The heart of Çeşme is its palm-lined square - paved in warm stone, dotted with cafés, surrounded by the unhurried rhythm of Turkish coastal life. No tour buses here, just locals going about their day.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/cesme/img_3412" class="inline-image" alt="Çeşme town square" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/cesme/img_20131008_121057" class="inline-image" alt="Çeşme street" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">Palm trees and bougainvillea line the streets - the Mediterranean at its most relaxed.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Admiral and His Lion</h3>
+                <p>At the castle entrance stands a statue that stopped me in my tracks: Cezayirli Gazi Hasan Pasha, one of the Ottoman Empire's greatest admirals, accompanied by a lion. Not a symbolic lion - an actual pet lion he brought back from Africa and walked through the streets of Istanbul.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/cesme/img_20131008_133512" class="inline-image" alt="Statue of Gazi Hasan Pasha with lion" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/cesme/img_20131008_133521" class="inline-image" alt="Gazi Hasan Pasha statue and castle walls" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">The admiral and his African lion - European artists painted them together, and now they stand guard at Çeşme Castle.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/cesme/img_20131008_133606" class="story-image" alt="Information plaque" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The plaque tells the story: Gazi Hasan Pasha (1714-1790) dominated the Mediterranean and showed heroism during the Ottoman-Russian naval battle of 1770.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Castle</h3>
+                <p>Çeşme Castle was built in 1508 by Ottoman Emperor Beyazit II to defend against pirates and Portuguese raiders. Its massive walls still dominate the town, now housing a small museum and offering views across the Aegean to the Greek islands.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/cesme/img_3413" class="story-image" alt="Çeşme Castle walls" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The castle walls - five centuries of watching over the Aegean.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Local Life</h3>
+                <p>Away from the castle, Çeşme is simply a Turkish town living its life. Pizza shops next to tekel stores, satellite dishes on Ottoman-era buildings, the timeless meeting of old and new.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/cesme/img_3414" class="story-image" alt="Çeşme street shops" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">Pizza, Efes beer, and wooden shutters - modern Turkey framed by centuries-old architecture.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Çeşme' : '+ More about Çeşme'">+ More about Çeşme</p>
+            <div class="more-info-content">
+                <p><strong>The Name:</strong> Çeşme means "fountain" in Turkish - the town was named for the Ottoman fountains that once provided fresh water to ships.</p>
+                <p><strong>Windsurfing Capital:</strong> The constant Aegean winds make Çeşme one of Turkey's premier windsurfing destinations. Alaçatı, just inland, hosts international competitions.</p>
+                <p><strong>The Battle of Çeşme (1770):</strong> One of the most significant naval battles in Ottoman history took place here when the Russian fleet destroyed the Ottoman navy. Gazi Hasan Pasha was one of the few Ottoman commanders to distinguish himself in the defeat.</p>
+                <p><strong>Thermal Springs:</strong> The peninsula is known for its thermal springs - the ancient Greeks built baths here, and modern spas continue the tradition.</p>
+                <p><strong>Greek Heritage:</strong> Until 1923, Çeşme had a large Greek population. The population exchange between Greece and Turkey changed the demographics entirely, but Greek architecture remains.</p>
+            </div>
 
             ${generateGallery('cesme')}
         `,
-        fullDesc: "Çeşme sits on a peninsula where the Aegean winds blow constant and the pace is unhurried. It's a resort town favored by Turks - palm-lined squares, local cafés, and that unhurried Mediterranean rhythm.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cesme/town_square.jpg"
+        fullDesc: "Çeşme sits on a peninsula where the Aegean winds blow constant and the pace is unhurried. The Ottoman castle dates to 1508, and at its entrance stands a statue of Admiral Gazi Hasan Pasha - who famously walked the streets with a pet lion from Africa.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/cesme/img_20131008_121115"
     },
     {
         id: 78,
@@ -7028,18 +7220,12 @@ an original composition inspired by this place.
                 <p>Some ports are for checking boxes. Pylos was for getting lost. I stepped off that first tender with no plan, and came back with a full camera and a full stomach. Those were always the best port days.</p>
             </div>
 
-            <div class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded')">
-                <span class="toggle-icon">💡</span>
-                <span>More about Pylos</span>
-                <span class="toggle-arrow">▼</span>
-            </div>
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Pylos' : '+ More about Pylos'">+ More about Pylos</p>
             <div class="more-info-content">
-                <ul class="fun-facts-list">
-                    <li><strong>Homer's Pylos:</strong> In the Odyssey, Telemachus visits King Nestor here seeking news of his father Odysseus. Archaeologists found a Bronze Age palace nearby in 1939.</li>
-                    <li><strong>Battle of Navarino:</strong> On October 20, 1827, the last major naval battle fought under sail destroyed the Ottoman-Egyptian fleet and helped secure Greek independence.</li>
-                    <li><strong>The Fortress:</strong> Neokastro was built by the Ottomans in 1573. The older Paleokastro (Old Castle) dates to the 13th century Frankish period.</li>
-                    <li><strong>Voidokilia Beach:</strong> Just north of Pylos lies one of Greece's most perfect beaches - an almost circular bay shaped like the Greek letter omega.</li>
-                </ul>
+                <p><strong>Homer's Pylos:</strong> In the Odyssey, Telemachus visits King Nestor here seeking news of his father Odysseus. In 1939, archaeologists discovered a Bronze Age palace nearby - complete with Linear B tablets that helped crack the ancient Mycenaean script.</p>
+                <p><strong>Battle of Navarino:</strong> On October 20, 1827, the last major naval battle fought entirely under sail took place in this bay. A combined British, French, and Russian fleet destroyed the Ottoman-Egyptian navy, effectively securing Greek independence.</p>
+                <p><strong>Two Fortresses:</strong> Neokastro (New Castle) was built by the Ottomans in 1573 and still dominates the heights. The older Paleokastro (Old Castle) on the north side of the bay dates to the 13th century Frankish period.</p>
+                <p><strong>Voidokilia Beach:</strong> Just north of Pylos lies one of Greece's most perfect beaches - an almost circular bay shaped like the Greek letter omega (Ω), consistently ranked among Europe's finest.</p>
             </div>
 
             ${generateGallery('pylos')}
@@ -8709,12 +8895,55 @@ an original composition inspired by this place.
         isDoor: false,
         useRichContent: true,
         shortDesc: "Home of the famous red crab migration.",
-        fullDesc: "Christmas Island is an Australian territory in the Indian Ocean, famous for its annual red crab migration—when millions of crabs march from the forest to the sea.\n\nThe island is mostly national park, with dramatic cliffs and pristine rainforest.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg",
+        fullDesc: "Christmas Island is an Australian territory in the Indian Ocean, famous for its annual red crab migration. We went ashore in search of food—and for a moment, I thought green bananas might be all I'd find.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/christmas-island/IMG_0187.jpg",
         richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🦀</span>
+                    <span class="demo-value">Red Crabs</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇦🇺</span>
+                    <span class="demo-value">Australian Territory</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐟</span>
+                    <span class="demo-value">Fresh Fish</span>
+                </div>
+            </div>
+
             <div class="story-section-panel">
-                <p>Christmas Island is an Australian territory in the Indian Ocean, famous for its annual red crab migration—when millions of crabs march from the forest to the sea.</p>
-                <p>The island is mostly national park, with dramatic cliffs and pristine rainforest.</p>
+                <h3 class="section-title-panel">In Search of Food</h3>
+                <p>This was my first trip north of Australia and the South Pacific—we were on our way to Bali and some pretty exotic lands in Indonesia, and I was excited to see new places. On board, I was having a blast playing with my solo show and the show band. We'd worked up a few sets and they would come down to the Smugglers Lounge and sit in with me a few times a week—the passengers were really loving it.</p>
+                <p>But that day, my mission was definitely food. Christmas Island sits alone in the Indian Ocean, an Australian territory closer to Jakarta than to any Australian city. We anchored offshore and I went ashore with one goal: find something good to eat.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/christmas-island/IMG_0187.jpg" class="story-image" alt="Christmas Island Post Office" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The Christmas Island Post Office - a small settlement at the edge of the world.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/christmas-island/IMG_0188.jpg" class="story-image" alt="Christmas Island Courthouse" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">The courthouse nearby.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Green Bananas</h3>
+                <p>The island is remote. Really remote. As I wandered the small settlement, the options looked slim. At one point I found myself staring at a pile of green bananas, genuinely worried this might be lunch.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/christmas-island/IMG_0185.jpg" class="story-image" alt="Green bananas" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">Green bananas weren't looking promising.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">The Payoff</h3>
+                <p>But then—surf and turf. Amazing, fresh, perfectly prepared. The kind of meal that makes a remote island stop feel like a discovery rather than a detour.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg" class="story-image" alt="Surf and turf" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
+                <p class="photo-caption-inline">Worth the search. Surf and turf in the middle of the Indian Ocean.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Christmas Island' : '+ More about Christmas Island'">+ More about Christmas Island</p>
+            <div class="more-info-content">
+                <p><strong>Red Crab Migration:</strong> Every year, around 50 million red crabs march from the forest to the coast to breed. Roads close, bridges are built—the island belongs to the crabs.</p>
+                <p><strong>Location:</strong> Christmas Island is 1,550 km from Australia's northwest coast but only 350 km from Jakarta. It's closer to Indonesia than to any Australian city.</p>
+                <p><strong>Discovery:</strong> Captain William Mynors named the island on Christmas Day, 1643, though he didn't land. The first recorded landing was in 1688.</p>
+                <p><strong>Phosphate:</strong> The island was mined for phosphate for over a century. Today, 63% of the island is national park.</p>
+                <p><strong>Coconut Crabs:</strong> The island is also home to the world's largest land invertebrate—the coconut crab, which can grow to 4 kg and crack open coconuts with its claws.</p>
             </div>
 
             ${generateGallery('christmasIsland')}

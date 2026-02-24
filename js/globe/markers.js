@@ -1772,10 +1772,12 @@ function createMarkers() {
         "Kuşadası, Turkey": 0.72,
         "Izmir, Turkey": 0.60,
         "Çeşme, Turkey": 0.55,
-        // Aegean - Cyclades
+        // Aegean - Cyclades & Dodecanese
         "Mykonos, Greece": 0.80,
         "Santorini, Greece": 0.80,
         "Milos, Greece": 0.60,
+        "Patmos, Greece": 0.55,
+        "Symi, Greece": 0.55,
         // Peloponnese cluster
         "Itea, Greece": 0.75,
         "Nafplio, Greece": 0.55,

@@ -902,12 +902,18 @@
             overflow: hidden;
             opacity: 0;
             transition: max-height 0.4s ease, opacity 0.3s ease;
+            margin-bottom: 0;
         }
 
         .more-info-content.expanded {
             max-height: 1000px;
             opacity: 1;
             margin-bottom: 1.5rem;
+        }
+
+        /* Reduce gap when more-info is collapsed */
+        .more-info-content:not(.expanded) + .photo-gallery-section {
+            margin-top: 0.5rem;
         }
 
         .more-info-content p {

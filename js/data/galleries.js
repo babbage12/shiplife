@@ -175,41 +175,43 @@ const locationGalleries = {
         { src: "shiplife/bali/img_0286", caption: "Bali beach.", alt: "Beach" },
         { src: "shiplife/bali/img_0288", caption: "Beach boardwalk.", alt: "Boardwalk" },
         { src: "shiplife/nw-australia-indonesia/img_0177", caption: "Street food scene.", alt: "Street food" },
-        { src: "shiplife/nw-australia-indonesia/img_0191", caption: "Beach pier view.", alt: "Beach pier" }
+        { src: "shiplife/nw-australia-indonesia/img_0191", caption: "Beach pier view.", alt: "Beach pier" },
+        { src: "shiplife/christmas-island/lombock.jpg", caption: "Lombok stopover.", alt: "Lombok" },
+        { src: "shiplife/christmas-island/wrong_side.jpg", caption: "Indonesian islands.", alt: "Indonesia" }
     ],
 
-    // BARCELONA (30 images)
+    // BARCELONA (21 curated images)
     "barcelona": [
-        { src: "v1767738440/IMG_20140811_122138_cqwjid.jpg", caption: "Barcelona cityscape.", alt: "Barcelona" },
-        { src: "v1768951524/Screenshot_20260120_141928_Facebook_ia3j8c.jpg", caption: "Olympic Village.", alt: "Olympic Village" },
-        { src: "v1768951524/Screenshot_20260120_141912_Facebook_ljocf4.jpg", caption: "Olympic site.", alt: "Olympic site" },
-        { src: "v1768951524/Screenshot_20260120_141901_Facebook_rjjmhl.jpg", caption: "Olympic Museum.", alt: "Museum" },
-        { src: "v1768951532/Screenshot_20260120_141831_Facebook_aov5ol.jpg", caption: "Barcelona from above.", alt: "City view" },
-        { src: "v1768951532/Screenshot_20260120_141840_Facebook_rldpf4.jpg", caption: "Barcelona architecture.", alt: "Architecture" },
-        { src: "v1770827192/shiplife/barcelona/egtnbgzv8hmcmjlh498z.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827193/shiplife/barcelona/bphaumomyerkrem4qpgv.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827195/shiplife/barcelona/rrzlbgowqnprha1jt6ao.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827196/shiplife/barcelona/u54bvuk5wo3pb2b89coo.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827197/shiplife/barcelona/szzvjpktdwvwu9obehqb.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827198/shiplife/barcelona/ge3dx5s6vkggkyv7ktds.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827199/shiplife/barcelona/dgx6f6rojrbpl3q0seno.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827200/shiplife/barcelona/w67knyweyh4scizw02ir.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827201/shiplife/barcelona/nplkku1zoldmv81qwmvx.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827202/shiplife/barcelona/s7rwbacr9t5vtlvp94xu.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827203/shiplife/barcelona/yll9x0wopchnbg38ddtm.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827203/shiplife/barcelona/upleffrsjby7pzqralpq.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827204/shiplife/barcelona/b5ugz3pohf9gastxahub.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827205/shiplife/barcelona/f9n0bhmdhqytj5o7o5zo.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827206/shiplife/barcelona/zov5psf0rw6flla14il5.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827207/shiplife/barcelona/fb5mvaox8g0wg0m3rdht.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827207/shiplife/barcelona/wujcu7d9vxwjvcdwykmk.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827208/shiplife/barcelona/uvrmojc4b5ylmrvzgel2.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827210/shiplife/barcelona/nddlhirnfawquu3bxelc.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827211/shiplife/barcelona/oq9qnpdk5lq9o5b2fojl.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827212/shiplife/barcelona/aympfft45dactel1pv0m.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827213/shiplife/barcelona/zuuttlhxvpndc1h9bbfn.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827213/shiplife/barcelona/ze5iahr25bvhw4w7o5q1.jpg", caption: "Barcelona, Spain", alt: "Barcelona" },
-        { src: "v1770827214/shiplife/barcelona/jolybutenmxzbqzohtoa.jpg", caption: "Barcelona, Spain", alt: "Barcelona" }
+        { src: "shiplife/barcelona/img_20140811_092621", caption: "Into the city.", alt: "Barcelona street" },
+        { src: "shiplife/barcelona/img_20140811_093127", caption: "Street scenes.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/img_20140811_094147", caption: "Wandering the lanes.", alt: "Barcelona street" },
+        { src: "shiplife/barcelona/img_20140811_094212", caption: "Gothic Quarter.", alt: "Gothic Quarter" },
+        { src: "shiplife/barcelona/img_20140811_094619", caption: "Escuela de Artes Aplicadas.", alt: "Arts school" },
+        { src: "shiplife/barcelona/img_20140811_094750", caption: "Historic architecture.", alt: "Barcelona architecture" },
+        { src: "shiplife/barcelona/img_20140811_094911", caption: "Stone and shadow.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/img_20140811_095030", caption: "The old city.", alt: "Gothic Quarter" },
+        { src: "shiplife/barcelona/img_20140811_095425", caption: "Centuries of history.", alt: "Barcelona street" },
+        { src: "shiplife/barcelona/img_20140811_100621", caption: "City life.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/img_20140811_122138", caption: "Barcelona from above.", alt: "Barcelona cityscape" },
+        { src: "shiplife/barcelona/img_20140811_122645", caption: "Barcelona scenes.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150616_101104", caption: "Another visit.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150616_101142", caption: "Street scenes.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150616_101635", caption: "Barcelona life.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150616_122411", caption: "Exploring.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150616_123534", caption: "City panorama.", alt: "Barcelona panorama" },
+        { src: "shiplife/barcelona/20150616_123839", caption: "The city below.", alt: "Barcelona view" },
+        { src: "shiplife/barcelona/20150810_124812", caption: "Mediterranean light.", alt: "Barcelona" },
+        { src: "shiplife/barcelona/20150810_130349", caption: "Barcelona stretches to the sea.", alt: "Barcelona panorama" },
+        { src: "shiplife/barcelona/20150810_150330", caption: "The city sprawls.", alt: "Barcelona view" }
+    ],
+
+    // BEAGLE CHANNEL (5 images)
+    "beagleChannel": [
+        { src: "shiplife/beagle-channel/img_6608", caption: "Darwin's waters.", alt: "Beagle Channel" },
+        { src: "shiplife/beagle-channel/img_6611", caption: "Mountains of Tierra del Fuego.", alt: "Tierra del Fuego" },
+        { src: "shiplife/beagle-channel/img_6620", caption: "The channel winds through.", alt: "Beagle Channel" },
+        { src: "shiplife/beagle-channel/img_6624", caption: "Patagonian landscape.", alt: "Patagonia" },
+        { src: "shiplife/beagle-channel/img_6626", caption: "Where the Andes meet the sea.", alt: "Beagle Channel" }
     ],
 
     // BORABORA (19 images)
@@ -268,6 +270,17 @@ const locationGalleries = {
         { src: "shiplife/castro/castro-sail-05", caption: "Where the mainland ends.", alt: "Castro" }
     ],
 
+    // CELUKAN BAWANG (7 images)
+    "celukanBawang": [
+        { src: "shiplife/celukan-bawang/img_4020", caption: "Celukan Bawang port.", alt: "Celukan Bawang" },
+        { src: "shiplife/celukan-bawang/img_4021", caption: "The radio tower.", alt: "Radio tower" },
+        { src: "shiplife/celukan-bawang/img_4038", caption: "Bali landscape.", alt: "Landscape" },
+        { src: "shiplife/celukan-bawang/img_4040", caption: "Very suspicious cows.", alt: "Cows" },
+        { src: "shiplife/celukan-bawang/img_4042", caption: "Souvenirs and fine outdoor dining.", alt: "Local shops" },
+        { src: "shiplife/celukan-bawang/img_4055", caption: "Tendering back to the Odyssey.", alt: "Tender" },
+        { src: "shiplife/celukan-bawang/img_4057", caption: "Port scene.", alt: "Port" }
+    ],
+
     // CAIRO / PYRAMIDS OF GIZA (11 images)
     "cairo": [
         { src: "shiplife/cairo/cairo-hero", caption: "First glimpse of the pyramids after a three-hour bus ride.", alt: "First glimpse of pyramids" },
@@ -307,10 +320,17 @@ const locationGalleries = {
         { src: "v1770829355/shiplife/buzios/zebudkszfnih7ztms5sl.jpg", caption: "Búzios, Brazil", alt: "Búzios" }
     ],
 
-    // CESME (2 images)
+    // CESME (9 images)
     "cesme": [
-        { src: "shiplife/cesme/town_square.jpg", caption: "Palm-lined town square - the unhurried heart of Çeşme.", alt: "Cesme town square" },
-        { src: "shiplife/cesme/street_scene.jpg", caption: "Local shops and cafés - where the real Turkey lives.", alt: "Cesme street scene" }
+        { src: "shiplife/cesme/img_20131008_121115", caption: "The castle watches over Çeşme, minarets against the Aegean sky.", alt: "Çeşme town with castle" },
+        { src: "shiplife/cesme/img_20131008_121057", caption: "Palm trees and bougainvillea line the streets.", alt: "Çeşme street scene" },
+        { src: "shiplife/cesme/img_3412", caption: "The palm-lined town square - heart of Çeşme.", alt: "Çeşme town square" },
+        { src: "shiplife/cesme/img_3413", caption: "Castle walls - five centuries of guarding the Aegean.", alt: "Çeşme Castle walls" },
+        { src: "shiplife/cesme/img_3414", caption: "Local life - pizza shops and wooden shutters.", alt: "Çeşme street shops" },
+        { src: "shiplife/cesme/img_20131008_133512", caption: "Admiral Gazi Hasan Pasha and his African lion.", alt: "Statue of Gazi Hasan Pasha" },
+        { src: "shiplife/cesme/img_20131008_133521", caption: "The admiral's statue against the castle walls.", alt: "Gazi Hasan Pasha statue" },
+        { src: "shiplife/cesme/img_20131008_133545", caption: "The story of the lion-walking admiral.", alt: "Information plaque" },
+        { src: "shiplife/cesme/img_20131008_133606", caption: "Heroism at the Battle of Çeşme, 1770.", alt: "Historical plaque" }
     ],
 
     // CHILEANFJORDS (1 images) - Title: "Photos"
@@ -320,15 +340,10 @@ const locationGalleries = {
 
     // CHRISTMASISLAND (9 images) - Title: "Photos from Christmas Island"
     "christmasIsland": [
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0179.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0185.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0187.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0188.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0189.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0190.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/IMG_0191.jpg", caption: "Christmas Island", alt: "Christmas Island" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/lombock.jpg", caption: "Lombok stopover", alt: "Lombok" },
-        { src: "w_400,q_auto,f_auto/shiplife/christmas-island/wrong_side.jpg", caption: "Christmas Island", alt: "Christmas Island" }
+        { src: "shiplife/christmas-island/IMG_0187.jpg", caption: "Christmas Island Post Office.", alt: "Post office" },
+        { src: "shiplife/christmas-island/IMG_0188.jpg", caption: "The courthouse - a small settlement.", alt: "Courthouse" },
+        { src: "shiplife/christmas-island/IMG_0185.jpg", caption: "Green bananas - not what I had in mind.", alt: "Green bananas" },
+        { src: "shiplife/christmas-island/IMG_0179.jpg", caption: "Surf and turf - worth the search.", alt: "Surf and turf" }
     ],
 
     // CORFU (2 images)
@@ -526,11 +541,18 @@ const locationGalleries = {
         { src: "v1770763499/IMG_5464.jpg", caption: "Florence, Italy", alt: "Florence" }
     ],
 
-    // HOBART (3 images) - Title: "Photos from Hobart"
+    //// HOBART (10 images) - Title: "Photos from Hobart"
     "hobart": [
-        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0379.jpg", caption: "Hobart, Tasmania", alt: "Hobart" },
-        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0380.jpg", caption: "Hobart harbor", alt: "Hobart" },
-        { src: "w_400,q_auto,f_auto/shiplife/hobart/IMG_0385.jpg", caption: "Mount Wellington", alt: "Mount Wellington" }
+        { src: "shiplife/hobart/015", caption: "Mount Wellington looms over the harbor.", alt: "Mount Wellington and harbor" },
+        { src: "shiplife/hobart/006", caption: "Hobart waterfront.", alt: "Hobart waterfront" },
+        { src: "shiplife/hobart/010", caption: "The crew in Hobart.", alt: "Crew in Hobart" },
+        { src: "shiplife/hobart/017", caption: "Hobart scenes.", alt: "Hobart" },
+        { src: "shiplife/hobart/019", caption: "Hobart views.", alt: "Hobart views" },
+        { src: "shiplife/hobart/022", caption: "Historic Hobart.", alt: "Historic Hobart" },
+        { src: "shiplife/hobart/bar-crew", caption: "At the bar with Jesse, Alec, and Carly.", alt: "Crew at the bar" },
+        { src: "shiplife/hobart/heading-to-bar", caption: "Thomas, Fabio, and me heading to the bar.", alt: "Heading to the bar" },
+        { src: "shiplife/hobart/pp2011-379", caption: "Hobart harbor.", alt: "Hobart harbor" },
+        { src: "shiplife/hobart/pp2011-385", caption: "Hobart.", alt: "Hobart" }
     ],
 
     // HVAR (2 images)
@@ -1134,7 +1156,9 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0457.jpg", caption: "Marlborough", alt: "Marlborough" },
         { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0458.jpg", caption: "Marlborough", alt: "Marlborough" },
         { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0461.jpg", caption: "Marlborough", alt: "Marlborough" },
-        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0464.jpg", caption: "Marlborough", alt: "Marlborough" }
+        { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0464.jpg", caption: "Marlborough", alt: "Marlborough" },
+        { src: "shiplife/marlborough/img_0447", caption: "Marlborough wine country", alt: "Marlborough" },
+        { src: "shiplife/marlborough/img_0465", caption: "Marlborough vineyards", alt: "Marlborough" }
     ],
 
     // PIRAN (2 images)
@@ -1617,7 +1641,9 @@ const locationGalleries = {
         { src: "v1770838392/shiplife/sydney/xmfnnyu9k2hqvm4y1n03.jpg", caption: "Maritime Museum", alt: "Maritime Museum" },
         { src: "v1770838403/shiplife/sydney/y4bpcupvswfjbhtbzqeu.jpg", caption: "Nice Boat", alt: "Nice Boat" },
         { src: "v1770838394/shiplife/sydney/ywiheemyxie9cpd8swhm.jpg", caption: "Dance Theatre", alt: "Dance Theatre" },
-        { src: "v1770838398/shiplife/sydney/yxbevtovdanazidszvu0.jpg", caption: "Sydney Harbour Bridge", alt: "Sydney Harbour Bridge" }
+        { src: "v1770838398/shiplife/sydney/yxbevtovdanazidszvu0.jpg", caption: "Sydney Harbour Bridge", alt: "Sydney Harbour Bridge" },
+        { src: "shiplife/sydney/pp2011-473", caption: "Sydney", alt: "Sydney" },
+        { src: "shiplife/sydney/pp2011-474", caption: "Sydney", alt: "Sydney" }
     ],
 
     // SYMI (16 images)
