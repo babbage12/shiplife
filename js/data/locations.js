@@ -4191,14 +4191,77 @@ an original composition inspired by this place.
         shortDesc: "Where the land runs out and the wind takes over.",
         useRichContent: true,
         richContent: `
-            <p>The name means 'Land of Fire' but it feels more like the edge of everything.</p>
-            <p>Magellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.</p>
-            <p>Sailing through, you understand why early explorers thought they'd reached the end of the world. The mountains rise jagged and defiant from the water. The sky shifts from blue to grey in minutes. Everything feels raw and unfinished - like the earth is still deciding what it wants to be.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🔥</span>
+                    <span class="demo-value">Land of Fire</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🧭</span>
+                    <span class="demo-value">54°S Latitude</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Gateway to Antarctica</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Name</span>
+                <h3 class="section-title-panel">Land of Fire</h3>
+                <p>In 1520, Magellan sailed these waters and saw fires burning along the shore - the Selk'nam people, keeping warm in one of the harshest climates on Earth. He called it Tierra del Fuego. The people are gone now, but the name remains.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838414/shiplife/tierra-del-fuego/odt8wzc8m45rcucvu32i.jpg" class="story-image" data-caption="The dramatic horn peak rises from the channel." alt="Dramatic peak">
+                <p class="photo-caption-inline">The jagged peaks that greeted Magellan still stand watch over the channel.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sailor's Tale</span>
+                <h3 class="section-title-panel">The Williwaw Winds</h3>
+                <p>Old sailors feared the williwaws - violent gusts that pour down from the mountains without warning, turning calm water into chaos in seconds. I've felt them hit the ship like a punch, the deck tilting as everyone grabs for handholds.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838413/shiplife/tierra-del-fuego/eyl82br9yo8f3zt2wkbr.jpg" class="story-image" data-caption="View from Seabourn Quest sailing through the channel." alt="View from ship deck">
+                <p class="photo-caption-inline">Sailing through on a calm day - but the weather can change in minutes.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Ushuaia - End of the World</h3>
+                <p>Ushuaia bills itself as the southernmost city on Earth. It started as a penal colony - Argentina's Siberia - and the old prison is now a museum. Today it's a frontier town with surprising energy, the last stop before Antarctica, where expedition ships stock up and adventurers gather.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838418/shiplife/tierra-del-fuego/caadlhdxp2xsmdspgg6v.jpg" class="story-image" data-caption="Ushuaia nestled beneath the Martial Mountains." alt="Ushuaia town">
+                <p class="photo-caption-inline">Ushuaia huddled beneath the Martial Mountains - civilization at the edge of wilderness.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Channel</span>
+                <h3 class="section-title-panel">Darwin's Passage</h3>
+                <p>The Beagle Channel is named after Darwin's ship, which surveyed these waters in the 1830s. The young naturalist was so seasick he spent most of his time ashore, collecting specimens and developing the ideas that would become the theory of evolution. The mountains haven't changed since he saw them.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838417/shiplife/tierra-del-fuego/azocrgih4bpozyoyvsiu.jpg" class="story-image" data-caption="The jagged peaks of Tierra del Fuego." alt="Jagged peaks">
+                <p class="photo-caption-inline">The same peaks Darwin sketched in his notebooks, still raw and unfinished.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Tierra del Fuego</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌊</span>
+                        Facts from the Edge
+                    </div>
+                    <ul class="info-list">
+                        <li><strong>The Lost People:</strong> The Selk'nam, Yaghan, and Kawésqar peoples lived here for 10,000 years before Europeans arrived. Disease and genocide nearly wiped them out - fewer than 100 descendants remain.</li>
+                        <li><strong>Prison Island:</strong> Argentina used Tierra del Fuego as a penal colony from 1896-1947. Prisoners built the town of Ushuaia, including the railway that tourists ride today.</li>
+                        <li><strong>Cape Horn:</strong> Just south of here lies the most feared cape in sailing history. Before the Panama Canal, every ship going between oceans had to round it - many didn't make it.</li>
+                        <li><strong>The Split:</strong> Tierra del Fuego is divided between Chile and Argentina. The border runs roughly down the middle of the main island.</li>
+                        <li><strong>Wildlife:</strong> Magellanic penguins, sea lions, and Andean condors call these islands home. In the channels, you might spot orcas and humpback whales.</li>
+                    </ul>
+                </div>
+            </div>
 
             ${generateGallery('tierraDelFuego')}
         `,
         fullDesc: "The name means 'Land of Fire' but it feels more like the edge of everything.\n\nMagellan named it for the fires of the indigenous people he saw burning along the shore. Today it's a windswept wilderness at the bottom of South America, where the Andes finally surrender to the sea.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838417/shiplife/tierra-del-fuego/azocrgih4bpozyoyvsiu.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770838417/shiplife/tierra-del-fuego/azocrgih4bpozyoyvsiu.jpg"
     },
     {
         id: 120,
