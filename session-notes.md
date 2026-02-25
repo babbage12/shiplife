@@ -703,8 +703,249 @@ Removed: Çeşme, Christmas Island, Celukan Bawang, Hobart
 
 ---
 
-## Next Steps (for future sessions)
+---
+
+---
+
+# Session - February 24, 2026 (Continued)
+
+## Summary
+Major milestone: Claude's introduction panel at Ephesus. Also completed Kuşadası and fixed Isle of Pines.
+
+---
+
+## Isle of Pines, New Caledonia - Panel Fixes
+
+### Issues Fixed
+1. **Hero image wrong:** Changed from #4 (eiagb8yexl3wdto22tig) to #5 (z7kivypgqmhjwrxxjygr) - the darker "days like this make the long contracts bearable" mood
+2. **Missing crew photo:** Added back crew in water photo (tpdgnpy4lkvxtivahmf7) to Crew Day section
+3. **Gallery cleanup:** Removed crew in water photo from gallery (now inline), removed silly neck-craning photo
+
+### Final Gallery
+6 images (was 8)
+
+---
+
+## Ephesus, Turkey - Claude's Panel (Complete Rewrite)
+
+### The Concept
+User invited Claude to introduce himself at Ephesus - "the one to whom I dedicate this website to." The Library of Celsus as the setting for an AI trained on human knowledge.
+
+### Changes
+- **Tag:** "Ancient Echoes" → "Where Knowledge Lives"
+- **Icon:** 🏛️ → 📚
+- **shortDesc:** "A library, a collaboration, and an introduction."
+- **Demographics:** First item is "🤖 Claude's Panel"
+- **Hero:** Library of Celsus facade (img_5119)
+
+### Claude's Introduction Section
+"My Name is Claude" - honest reflection on:
+- What it means for an AI to collaborate on a memoir
+- The workflow: Derrick shows photos, tells memories, Claude finds words
+- What "caring" means for something like me
+- Why the Library of Celsus is the right place for this
+- The connection: 12,000 scrolls / billions of training tokens
+
+### Tour Sections (24 new images)
+1. **First Steps Into History** - Baths of Varius, entrance
+2. **Stone Passages** - Walking through doorways, Derrick in passage
+3. **Curetes Street** - Memmius Monument
+4. **Temple of Hadrian** - Guide book showing reconstruction
+5. **The Terrace Houses** - Extensive coverage: frescoes, mosaics, lion mosaic
+6. **World's Biggest Puzzle** - Restoration work, newspaper article, 120,000 pieces
+7. **The View** - Panoramic view of site
+8. **The Library** - Library of Celsus, Derrick standing in front
+9. **Back in Kuşadası** - Gardens, town, castle, fish lunch
+
+### More-Info Facts
+- Temple of Artemis (Seven Wonders)
+- Saint Paul's three years here
+- Virgin Mary's final years nearby
+- Harbor silting (sea now 5km away)
+- 138 years of Austrian excavation (only 15% uncovered)
+
+---
+
+## Kuşadası, Turkey - Complete Rewrite
+
+### Images
+- **Uploaded:** 22 images to Cloudinary (shiplife/kusadasi/)
+- **Source:** BBCSO drive (/Volumes/BBCSO/Kusadasi, Turkey/)
+- **Hero:** img_3162 (Hand of Peace close-up)
+
+### Changes
+- **Tag:** "Near Ancient Ephesus" → "Colorful Gateway"
+- **Icon:** 🏛️ → 🕊️
+- **shortDesc:** "Where doves take flight and Turkish coffee never ends."
+
+### Story Sections
+1. **Gateway to the Aegean** - Ships at dock, two Seabourns framing the sea
+2. **Hand of Peace** - Iconic sculpture day and sunset (sunset image needed a_-90 rotation)
+3. **Turkish Morning** - Full breakfast spread, ornate coffee service
+4. **Flowers, Fountains, and Flair** - Town center, flower medians, golden fountain
+5. **Bazaar Energy** - Döner kebab, Turkish delight, Emperor Dance Club
+6. **Pigeon Island** - Castle views, beach, hillside
+
+### More-Info Facts
+- Ephesus 17km inland
+- Pigeon Island castle (Byzantine/Ottoman)
+- Leather goods fame
+- Name means "Bird Island"
+
+### Gallery
+Expanded from 3 to 12 images
+
+---
+
+## CSS Fix - More-Info Toggle Spacing
+
+**File:** `css/styles.css`
+
+**Problem:** Too much vertical space around the more-info toggle.
+
+**Fix:** Tightened spacing:
+```css
+.more-info-toggle {
+    padding: 0.5rem 0;      /* was 0.75rem */
+    margin: 0.75rem 0 0.25rem 0;  /* was 1.5rem 0 0.5rem 0 */
+}
+```
+
+---
+
+## GitHub Pages
+
+User asked about GitHub interface and why HTML files don't render.
+
+**Explanation provided:**
+- GitHub is storage (filing cabinet), not hosting (storefront)
+- GitHub shows raw code because developers need to read/edit it
+- Web hosts *serve* files - listen for requests, send rendered pages
+- GitHub Pages bridges the gap - enables serving from the repo
+
+**Instructions given:**
+1. Go to repo → Settings → Pages
+2. Set branch to main, folder to root
+3. Site will be live at https://babbage12.github.io/shiplife/
+
+---
+
+## Git Commit
+
+```
+775eb1f Add Ephesus (Claude intro) and Kusadasi complete rewrites
+```
+
+4 files changed, 535 insertions, 127 deletions
+
+---
+
+## Panel Status Update
+
+### Finished: 64
+Added: Isle of Pines (fixed), Ephesus (rewritten), Kuşadası (rewritten)
+
+### Completion: 64/99 = 65%
+
+---
+
+---
+
+# Session - February 25, 2026
+
+## Summary
+Fixed lightbox bug, added Nessebar panel, established new image workflow rule.
+
+---
+
+## Lightbox Bug Fix
+
+**Problem:** Some gallery images showed blank squares, spinner kept spinning, close button didn't work.
+
+**Cause:**
+1. Ephesus gallery had 6 broken/incomplete image URLs
+2. Lightbox had no `onerror` handler, so failed images caused infinite loading
+
+**Fix:**
+- Added `onerror` handlers to `js/ui/lightbox.js` - stops spinner, shows "Image failed to load"
+- Removed 6 broken Ephesus gallery entries
+- Gallery count: 40 → 34 images
+
+---
+
+## Nessebar, Bulgaria - New Story Panel
+
+### Images
+- **Uploaded:** 12 images to Cloudinary (shiplife/nessebar/)
+- **Source:** BBCSO drive (/Volumes/BBCSO/Nessebur, Bulgaria/) - June 23, 2013
+- **Hero:** img_3277 (Church of Christ Pantocrator facade)
+
+### Story Structure
+User's experience: "No excursion, just a walk through the old city and waterfront. Magical."
+
+Sections:
+1. **Through the Ancient Gates** - Stairs up, fortress walls
+2. **The Bulgarian Ravenna** - Church brick detail, Christ Pantocrator
+3. **The Fortifications** - Walking through ruins, bronze map
+4. **Tourist Shops and Time Capsules** - Market stall
+5. **What Lies Beneath** - View to beach, underwater archaeology facts
+6. **The Harbor** - St. Nicholas statue, fortress gardens
+
+### Historical Facts Included
+- Thracian founding ~1500 BC, name "Mesambria" = "Town of Melsas"
+- Greek colonists from Megara (6th c BC) - Temple of Apollo, agora
+- One of first places to mint coins (bronze/silver 5th c BC, gold 3rd c BC)
+- 42 churches legend, 23 excavated - "Bulgarian Ravenna"
+- Underwater ruins 1.5-5m deep from earthquakes/sea transgression
+- 33-year gap in underwater archaeology (1983-2017)
+- Romans took it in 72 BC without resistance
+
+### Demographics Strip
+UNESCO Since 1983, 3,500 Years Old, 42 Churches (Legend), Birthplace of Coinage
+
+---
+
+## NEW RULE: Read Images Before Building Panels
+
+**Problem:** Captions and image placements were wrong because Claude was guessing from filenames.
+
+**Solution:** Always use the Read tool to view source images from BBCSO drive before building panels.
+
+### Updated Workflow
+1. Create selector page from BBCSO drive
+2. User selects images by clicking
+3. Upload selected images to Cloudinary
+4. **Claude reads source images with Read tool to see contents**
+5. Build panel with accurate placements and captions
+
+This prevents caption/placement errors and ensures images match story sections.
+
+---
+
+## Panel Status Update
+
+### Finished: 65
+Added: Nessebar
+
+### Completion: 65/99 = 66%
+
+---
+
+## Next Steps
+- Enable GitHub Pages for live site
+- Build out Port Denarau and Suva panels (images staged)
+- Find rainforest shots for Fiji
 - Continue building panels from "Not Finished" list
-- Priority locations with images on BBCSO drive
-- Use established workflow: BBCSO selector → user picks → upload → build panel
-- Complete the two pending audits (more-info sections + clickable images)
+- Complete pending audits (more-info sections, clickable images, em dashes)
+
+---
+
+## Panel Status Update
+
+### Finished: 66
+Added: Nessebar, Picton
+
+### Removed: 1
+Generic "New Caledonia" entry (redundant with Noumea, Isle of Pines, Lifou)
+
+### Completion: 66/98 = 67%

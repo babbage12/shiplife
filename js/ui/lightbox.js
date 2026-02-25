@@ -40,6 +40,13 @@ function openLightbox(imgSrc, caption, galleryImages, index) {
         lightboxImage.style.opacity = '1';
     };
 
+    // Handle failed image loads - stop spinner, show error state
+    lightboxImage.onerror = function() {
+        lightbox.classList.remove('loading');
+        lightboxImage.style.opacity = '1';
+        document.getElementById('lightboxCaption').textContent = 'Image failed to load';
+    };
+
     lightboxImage.src = fullSizeSrc;
     document.getElementById('lightboxCaption').textContent = caption || '';
     lightbox.classList.add('active');
@@ -70,6 +77,13 @@ function showLightboxImage(index) {
     lightboxImage.onload = function() {
         lightbox.classList.remove('loading');
         lightboxImage.style.opacity = '1';
+    };
+
+    // Handle failed image loads
+    lightboxImage.onerror = function() {
+        lightbox.classList.remove('loading');
+        lightboxImage.style.opacity = '1';
+        document.getElementById('lightboxCaption').textContent = 'Image failed to load';
     };
 
     lightboxImage.src = fullSizeSrc;

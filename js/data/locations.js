@@ -2101,22 +2101,72 @@ an original composition inspired by this place.
         id: 15,
         title: "Picton, New Zealand",
         coords: [-41.2930, 174.0079],
-        tag: "Rolling Green Hills",
-        icon: "🍇",
+        tag: "Where Ships Come to Rest",
+        icon: "⚓",
         isDoor: false,
-        shortDesc: "Gateway to wine country.",
-        imagePosition: "center",
+        shortDesc: "A peaceful harbor town where maritime history runs deep.",
+        demographics: ["🚢 Seabourn Odyssey", "📅 January 2014", "🍷 Gateway to Marlborough", "⚓ Inter-Island Ferry Hub"],
         useRichContent: true,
         richContent: `
             <div class="story-section-panel">
-                <p>To get here, we sailed through the stunning Queen Charlotte Sound.</p>
-                <p>Picton itself is small, but it's the gateway to Marlborough—New Zealand's premier wine region. Sauvignon Blanc country, with rolling hills that glow golden in the afternoon light.</p>
+                <p>Peaceful. Disconnected from the rest of the world. Self-sustaining. That's Picton.</p>
+                <p>To get here, we sailed through Queen Charlotte Sound on the Seabourn Odyssey, the green hills rising on both sides like arms welcoming us in. A lazy port day, no agenda, just a walk through town.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>Through the Sound</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/sound_panorama.jpg" class="story-image" data-caption="Queen Charlotte Sound - the stunning approach to Picton" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>Queen Charlotte Sound is one of the most beautiful approaches in New Zealand cruising. The water is impossibly blue-green, the hills impossibly green. Seabirds wheel overhead. Time slows down.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/tugboat_closeup.jpg" class="story-image" data-caption="The red tugboat guiding us in" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>A bright red tugboat came out to meet us, escorting the Odyssey through the final stretch into port. Behind it, the town of Picton came into view, tucked beneath forested hills.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Town</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/town_from_water.jpg" class="story-image" data-caption="Picton nestled beneath the green hills" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>Picton itself is small. Population around 4,000. But it punches above its weight as the gateway to Marlborough wine country and the South Island terminus for the inter-island ferries. The town center has a certain quiet pride to it.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/war_memorial.jpg" class="story-image" data-caption="Picton's war memorial and gardens" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/picton/harbor_marina.jpg" class="inline-image" data-caption="The marina at Picton" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/picton/hillside_marina.jpg" class="inline-image" data-caption="Houses climb the hillside above the harbor" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>Ships That Never Leave</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/edwin_fox_sign.jpg" class="story-image" data-caption="The Edwin Fox - 9th oldest ship in the world" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>The Edwin Fox sits in a museum near the waterfront. Built in 1853, she's the 9th oldest ship in the world. She carried troops to the Crimean War, convicts to Australia, immigrants to New Zealand. Now she rests here, her journeys over.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Mikhail Lermontov</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/lermontov_lifeboat.jpg" class="story-image" data-caption="Lifeboat No. 10 from the Mikhail Lermontov" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>A lifeboat sits near the Edwin Fox. Lifeboat No. 10 from the Mikhail Lermontov, a Soviet cruise liner that sank in these waters on February 16, 1986.</p>
+                <p>The story is almost unbelievable. The harbor pilot, working 80-hour weeks and owed 15 weeks of leave, navigated the 155-meter ship too close to Cape Jackson. At 5:37 PM, traveling at 15 knots, she struck rocks 5.5 meters below the waterline. Her hull sliced open in three places.</p>
+                <p>743 people were aboard. 372 passengers, mostly elderly Australians. 348 crew. They had less than five hours. Local vessels rushed to help. By 10:45 PM, the Mikhail Lermontov was gone, resting on her starboard side in 38 meters of water.</p>
+                <p>Only one person died. Engineer Pavel Zagladimov went down with the ship. Everyone else made it. Today, she's one of the largest accessible wreck dives in the world.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Crossing</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/straitsman_ferry.jpg" class="story-image" data-caption="The Straitsman ferry - connecting the islands" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>Picton is where the ferries cross Cook Strait, connecting the North and South Islands. Bluebridge, Interislander. Trucks, cars, passengers. The lifeblood of New Zealand commerce passes through here.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/bay_through_trees.jpg" class="story-image" data-caption="A peaceful view through the trees" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>But for me, it was just a lazy afternoon. Walking the waterfront. Reading plaques. Watching the ferries come and go. Sometimes the best port days are the ones with no plan at all.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Picton' : '+ More about Picton'">+ More about Picton</p>
+            <div class="more-info-content">
+                <p><strong>Queen Charlotte Sound:</strong> One of the Marlborough Sounds, a network of sea-drowned valleys at the northern tip of the South Island. Captain Cook visited five times and called it "one of the finest harbors in the world."</p>
+                <p><strong>The Edwin Fox:</strong> Built in Calcutta in 1853. Carried troops to the Crimean War, tea from China, convicts to Western Australia, and immigrants to New Zealand. Now preserved in a purpose-built museum in Picton.</p>
+                <p><strong>Mikhail Lermontov:</strong> Soviet cruise liner that sank February 16, 1986 after striking rocks near Cape Jackson. 743 aboard, only 1 fatality. The wreck lies at 38 meters depth and is a popular dive site.</p>
+                <p><strong>Marlborough:</strong> New Zealand's largest wine region, famous for Sauvignon Blanc. Picton is the gateway, just 30 minutes from the vineyards.</p>
             </div>
 
             ${generateGallery('picton')}
         `,
-        fullDesc: "To get here, we sailed through the stunning Queen Charlotte Sound.\n\nPicton itself is small, but it's the gateway to Marlborough-New Zealand's premier wine region. Sauvignon Blanc country, with rolling hills that glow golden in the afternoon light.",
-        image: "./images/hero/picton/IMG_20140106_093426.jpg"
+        fullDesc: "Peaceful. Disconnected from the rest of the world. Self-sustaining. That's Picton. Home to the Edwin Fox (9th oldest ship in the world) and a lifeboat from the Mikhail Lermontov, the Soviet cruise liner that sank here in 1986.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/picton/war_memorial.jpg"
     },
     {
         id: 16,
@@ -2535,27 +2585,6 @@ an original composition inspired by this place.
         `,
         fullDesc: "Port Vila was supposed to be Isle of Pines. But when you're sandwiched between two cyclones on the maiden voyage of the Pacific Pearl - a voyage already marked by a falling chandelier - you take whatever safe harbor you can get. The captain docked with enough force to crack my cabin wall. The staff captain said I was lucky. I think I know what he meant.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768966739/IMG_0357_uylflq.jpg"
-    },
-    {
-        id: 111,
-        title: "New Caledonia",
-        coords: [-22.2711, 166.4416],
-        tag: "French Pacific",
-        icon: "🇫🇷",
-        isDoor: false,
-        shortDesc: "France in the South Pacific.",
-        imagePosition: "center",
-        useRichContent: true,
-        richContent: `
-            <div class="story-section-panel">
-                <p>New Caledonia is a surreal mashup of French culture and Pacific island life.</p>
-                <p>Baguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.</p>
-            </div>
-
-            ${generateGallery('newCaledonia')}
-        `,
-        fullDesc: "New Caledonia is a surreal mashup of French culture and Pacific island life.\n\nBaguettes and lagoons. Cafés au lait and coral reefs. The Isle of Pines nearby is one of the most beautiful places I've ever seen.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769817595/resort_pool_noumea_m9dbcy.jpg"
     },
     {
         id: 117,
@@ -6357,18 +6386,76 @@ an original composition inspired by this place.
         tag: "The Black Sea Pearl",
         icon: "🏛️",
         isDoor: false,
-        shortDesc: "Ancient city on a tiny peninsula.",
+        shortDesc: "Where coins were invented and churches outnumber streets.",
+        demographics: ["🏛️ UNESCO Since 1983", "📜 3,500 Years Old", "⛪ 42 Churches (Legend)", "🪙 Birthplace of Coinage"],
         useRichContent: true,
         richContent: `
             <div class="story-section-panel">
-                <p>Nessebar packs 3,000 years of history onto a peninsula barely larger than a football field.</p>
-                <p>Greek ruins, Byzantine churches, Ottoman houses - all crammed together on streets barely wide enough to walk. The Black Sea surrounds it on three sides. UNESCO calls it one of Europe's richest towns for historic buildings per square meter.</p>
-                <p>We walked the narrow cobblestone streets, ducking into ancient churches with fading frescoes, watching fishermen mend nets by the old harbor. Tourist shops have taken over some of the old houses, but step off the main drag and you find quiet corners where the centuries pile up around you.</p>
+                <p>No excursion today. Just a walk through one of Europe's oldest continuously inhabited cities, a peninsula barely larger than a football field holding 3,500 years of history.</p>
             </div>
+
+            <div class="story-section-panel">
+                <h3>Through the Ancient Gates</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3263.jpg" class="story-image" data-caption="Climbing the stairs into the old town" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>The stairs lead up through the old fortifications, tourists streaming past a wooden ship decoration and into a world where 3,500 years have piled up on top of each other. The Thracians founded this place around 1500 BC. They called it <em>Mesambria</em>, combining the name of its legendary founder Melsas with "bria," the Thracian word for town.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3291.jpg" class="story-image" data-caption="The ancient fortress walls at the entrance" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Bulgarian Ravenna</h3>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/nessebar/img_3273.jpg" class="inline-image" data-caption="Byzantine church wall with decorative brick arches" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/nessebar/img_3280.jpg" class="inline-image" data-caption="Church of Christ Pantocrator" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                </div>
+                <p>Legend says Nessebar once had 42 churches. Archaeologists have found 23 so far. For a peninsula you can walk across in ten minutes, that's extraordinary. Scholars call it the "Bulgarian Ravenna" for the density of Byzantine architecture.</p>
+                <p>The Church of Christ Pantocrator stands near the entrance, its 14th-century facade a geometric puzzle of red brick and pale stone. High concave arches alternate with decorative ceramic saucers and floral patterns. The intricate brickwork on these walls has survived seven centuries of Black Sea weather.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Fortifications</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3284.jpg" class="story-image" data-caption="Walking through the ancient fortification ruins" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>In the 6th century BC, Greek colonists from Megara arrived. They built an acropolis, a Temple of Apollo, and an agora. But their most lasting contribution? They started minting coins here. Bronze and silver by the 5th century BC, gold by the 3rd. Some historians argue this was one of the first places in the world where money as we know it was invented.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/nessebar/img_3285.jpg" class="inline-image" data-caption="Fortress ruins with international flags" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/nessebar/img_3286.jpg" class="inline-image" data-caption="Bronze relief map of the ancient peninsula" onclick="openLightbox(this.src.replace('w_600', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                </div>
+                <p>A bronze relief map near the entrance shows the shape of the peninsula as it was. Romans took this place in 72 BC without a fight. Byzantines built the churches. Ottomans added the houses. Each layer visible, nothing erased.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>Tourist Shops and Time Capsules</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3278.jpg" class="story-image" data-caption="Market stall with traditional crafts" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>Tourist shops have taken over some of the old houses now, selling knitted goods and souvenirs from doorways that have seen merchants for millennia. But step off the main drag and you find quiet corners where the centuries pile up around you.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>What Lies Beneath</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3267.jpg" class="story-image" data-caption="View from the old walls to the beach and Black Sea" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>The Black Sea keeps secrets here. Due to earthquakes, rising waters, and landslides, a significant portion of the ancient city now lies 1.5 to 5 meters underwater. Divers have found fortification walls, towers, staircases, and gates from the Hellenistic and Byzantine periods just offshore.</p>
+                <p>Underwater archaeology began here in 1960, ran until 1983, then stopped for 33 years. When researchers returned in 2017, they discovered a massive stone jetty, the first structure connected to the ancient harbors ever found.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3>The Harbor</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3290.jpg" class="story-image" data-caption="St. Nicholas statue watching over the harbor" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>A statue of St. Nicholas, patron saint of sailors, watches over the harbor. Behind it, the modern resort city of Sunny Beach stretches along the coast. Two worlds in one glance: 3,500 years of history on this peninsula, package tourism across the water.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/nessebar/img_3289.jpg" class="story-image" data-caption="Fortress tower and gardens near the harbor" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'), this.dataset.caption)" style="cursor:pointer">
+                <p>UNESCO calls Nessebar one of Europe's richest towns for historic buildings per square meter. I walked every street. Ducked into churches with fading frescoes. Watched the light change over the water. No guide, no schedule. Just an afternoon to get lost in it.</p>
+            </div>
+
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Nessebar' : '+ More about Nessebar'">+ More about Nessebar</p>
+            <div class="more-info-content">
+                <p><strong>The Name:</strong> "Mesambria" combines Melsas (legendary Thracian founder) with "bria" (Thracian for "town"). Greeks later called it Mesembria, which evolved into today's Nessebar.</p>
+                <p><strong>Monetary History:</strong> One of the first places in the world to mint coins. Bronze and silver coins appeared in the 5th century BC; gold coins followed in the 3rd century BC. The city continued minting its own currency even under Roman rule.</p>
+                <p><strong>The 42 Churches:</strong> Local legend claims 42 churches once stood here. Only 23 have been excavated. For a peninsula this small, it's an astonishing concentration of sacred architecture.</p>
+                <p><strong>Underwater City:</strong> Earthquakes, sea transgression, and landslides have submerged significant portions of the ancient city. Ruins lie 1.5 to 5 meters below the surface, including a hexagonal tower from the pre-Roman era.</p>
+                <p><strong>Bloodless Conquest:</strong> When Roman legions arrived in 72 BC, Nessebar surrendered without resistance. The city was allowed to keep minting its own coins, a rare privilege in the Roman Empire.</p>
+            </div>
+
             ${generateGallery('nessebar')}
         `,
-        fullDesc: "Nessebar packs 3,000 years of history onto a peninsula barely larger than a football field.\n\nGreek ruins, Byzantine churches, Ottoman houses-all crammed together on streets barely wide enough to walk. The Black Sea surrounds it on three sides. UNESCO calls it one of Europe's richest towns for historic buildings.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769524929/IMG_3277_jn2dkg.jpg"
+        fullDesc: "Nessebar packs 3,500 years of history onto a peninsula barely larger than a football field. One of the first places in the world to mint coins, home to 42 churches (legend says), with significant portions of the ancient city now underwater.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/nessebar/img_3277.jpg"
     },
     {
         id: 68,

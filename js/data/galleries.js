@@ -416,7 +416,7 @@ const locationGalleries = {
         { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" }
     ],
 
-    // EPHESUS (40 images) - Title: "Photos from Ephesus (40)"
+    // EPHESUS (34 images) - Title: "Photos from Ephesus (34)"
     "ephesus": [
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/krgchk5isyezwenrvuqi.jpg", caption: "Ephesus, Turkey", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/dvqpfsvkx1xwfpgfwaqk.jpg", caption: "Ephesus ruins", alt: "Ephesus" },
@@ -433,22 +433,16 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/qczuk46gfuqdqwrqmj61.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/wviejqtv5klohzdpr975.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/ysmd2pdwc2ggllegytm1.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v2pqed9kfbasyz2ovm.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/sisimyq9okitckxhwrjb.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/lfqpbrnvstkqaszqm8a0.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/stfs1kh5fialhbecfwma.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v9kupaayu.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v4mokncec8drxnwwqui.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/viawrbk3k4m5gtrwph1p.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v5yti9.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/elqsiil3shivg47hxqd2.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v7msl.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/vepogna9c9wpjlopjb2v.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/yiasxtpue1eqdiuiglxr.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/wkcw2z3omgirsq5t5kzt.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/addbjqhkzwfygx0c4nx4.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/to9zcso5h0y5os5jwrek.jpg", caption: "Ephesus", alt: "Ephesus" },
-        { src: "v1odv62kmmo.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/nddjqlabxrqku6k8z7ap.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/soxagsejl0gjikonyfn0.jpg", caption: "Ephesus", alt: "Ephesus" },
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/ymckt0ghrtpfpt9nt3vr.jpg", caption: "Ephesus", alt: "Ephesus" },
@@ -460,7 +454,7 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/ephesus/h259g3lahgtuyujocrfd.jpg", caption: "Ephesus", alt: "Ephesus" }
     ],
 
-    // FIJI (9 images)
+    // FIJI (12 images)
     "fiji": [
         { src: "v1770836867/shiplife/figi/oh7lcv26vmsxcftvu9rl.jpg", caption: "Yacht Nirvana at Port Denarau", alt: "Yacht Nirvana" },
         { src: "v1770836861/shiplife/figi/jaranvxvpwauxkca9o0b.jpg", caption: "Port Denarau", alt: "Port Denarau" },
@@ -470,7 +464,10 @@ const locationGalleries = {
         { src: "v1770836870/shiplife/figi/v7ix2chhup4osjkoywvx.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836871/shiplife/figi/qdaurdhcpenfyjhwpb8d.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836873/shiplife/figi/xedg78fdmu2pmlagygsv.jpg", caption: "Port Denarau", alt: "Port Denarau" },
-        { src: "v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg", caption: "Yacht Nirvana", alt: "Yacht Nirvana" }
+        { src: "v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg", caption: "Yacht Nirvana", alt: "Yacht Nirvana" },
+        { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0736.jpg", caption: "Resort pool at Fiji Beach Resort", alt: "Fiji resort pool" },
+        { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0745.jpg", caption: "Traditional Fijian architecture", alt: "Fijian interior" },
+        { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0747.jpg", caption: "Fiji Beach Resort & Spa entrance", alt: "Resort entrance" }
     ],
 
     // FLORENCE (10 images) - Title: "Photos from Florence"
@@ -614,6 +611,7 @@ const locationGalleries = {
 
     // ISLEOFPINES (6 images)
     "isleOfPines": [
+        { src: "w_400,q_auto,f_auto/shiplife/isle-of-pines/lagoon_pines.jpg", caption: "Turquoise lagoon with the iconic columnar pines", alt: "Isle of Pines lagoon" },
         { src: "v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826439/shiplife/isle-of-pines/uk5agubylcawarrc2cee.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
@@ -1127,8 +1125,24 @@ const locationGalleries = {
         { src: "shiplife/south-shetlands/img_6717", caption: "Antarctica memories.", alt: "Memories" }
     ],
 
-    // PICTON (32 images)
+    // PICTON (48 images)
     "picton": [
+        { src: "w_400,q_auto,f_auto/shiplife/picton/sound_panorama.jpg", caption: "Queen Charlotte Sound - the stunning approach", alt: "Queen Charlotte Sound" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/sound_headland.jpg", caption: "Green headlands and islands dot the Sound", alt: "Sound headland" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/tugboat_arriving.jpg", caption: "Tugboat guiding us into port", alt: "Tugboat" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/tugboat_closeup.jpg", caption: "The red tugboat up close", alt: "Tugboat closeup" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/deck_bluebridge.jpg", caption: "View from deck with Bluebridge ferry", alt: "Deck view" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/sound_from_deck.jpg", caption: "Queen Charlotte Sound from the ship", alt: "Sound view" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/town_from_water.jpg", caption: "Picton nestled beneath the green hills", alt: "Town view" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/war_memorial.jpg", caption: "Picton's war memorial and gardens", alt: "War memorial" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/hillside_marina.jpg", caption: "Houses climb the hillside above the harbor", alt: "Hillside marina" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/edwin_fox_sign.jpg", caption: "The Edwin Fox - 9th oldest ship in the world", alt: "Edwin Fox" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/lermontov_lifeboat.jpg", caption: "Lifeboat from the Mikhail Lermontov (sank 1986)", alt: "Lermontov lifeboat" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/harbor_marina.jpg", caption: "The marina at Picton", alt: "Marina" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/marina_right.jpg", caption: "Te Kakarangi and boats in the marina", alt: "Marina boats" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/bay_through_trees.jpg", caption: "Peaceful view through the trees", alt: "Bay view" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/straitsman_ferry.jpg", caption: "The Straitsman ferry", alt: "Ferry" },
+        { src: "w_400,q_auto,f_auto/shiplife/picton/deck_passengers.jpg", caption: "Passengers enjoying the approach", alt: "Passengers on deck" },
         { src: "v1770837609/shiplife/picton/a75jk5tqntflpk9wwcwk.jpg", caption: "Picton, New Zealand", alt: "Picton" },
         { src: "v1770837623/shiplife/picton/e93jzdzsfali3nrbmrkq.jpg", caption: "Picton, New Zealand", alt: "Picton" },
         { src: "v1770837620/shiplife/picton/egwtokumppj5wangnich.jpg", caption: "Picton, New Zealand", alt: "Picton" },
@@ -1945,9 +1959,21 @@ const locationGalleries = {
         { src: "shiplife/sibenik/s7mut4x79lbuib4s1gdn.jpg", caption: "St. James Cathedral - a UNESCO masterpiece built entirely of stone, no brick or wood.", alt: "Sibenik Cathedral" }
     ],
 
-    // NESSEBAR (1 image)
+    // NESSEBAR (13 images)
     "nessebar": [
-        { src: "shiplife/nessebar/zckdqow7dvu9ibcq1t3d.jpg", caption: "Byzantine church ruins in old Nessebar - 3,000 years of history on a tiny peninsula.", alt: "Nessebar old church" }
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3263.jpg", caption: "Climbing the stairs into the old town.", alt: "Nessebar entrance stairs" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3267.jpg", caption: "View from the old walls to the beach and Black Sea.", alt: "Beach view from walls" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3273.jpg", caption: "Byzantine church wall with decorative brick arches.", alt: "Byzantine church detail" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3277.jpg", caption: "Church of Christ Pantocrator, 14th-century facade.", alt: "Christ Pantocrator church" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3278.jpg", caption: "Market stall with traditional knitted crafts.", alt: "Market stall" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3280.jpg", caption: "Church of Christ Pantocrator, full view.", alt: "Christ Pantocrator full view" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3284.jpg", caption: "Walking through the ancient fortification ruins.", alt: "Fortification ruins" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3285.jpg", caption: "Fortress ruins with international flags.", alt: "Fortress excavation" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3286.jpg", caption: "Bronze relief map of the ancient peninsula.", alt: "Bronze map" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3289.jpg", caption: "Fortress tower and gardens near the harbor.", alt: "Fortress and gardens" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3290.jpg", caption: "St. Nicholas statue watching over the harbor.", alt: "Harbor statue" },
+        { src: "w_400,q_auto,f_auto/shiplife/nessebar/img_3291.jpg", caption: "Ancient fortress walls at the entrance.", alt: "Fortress walls" },
+        { src: "shiplife/nessebar/zckdqow7dvu9ibcq1t3d.jpg", caption: "Byzantine church ruins in the old town.", alt: "Nessebar old church" }
     ],
 
     // YALTA (2 images)
