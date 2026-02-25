@@ -4419,15 +4419,52 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🌊</span>
+                    <span class="demo-value">Two Rivers Meet</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐟</span>
+                    <span class="demo-value">Piranha Country</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">Amazon Gateway</span>
+                </div>
+            </div>
+
             <div class="story-section-panel">
-                <p>Santarém sits at the confluence of the Tapajós and Amazon rivers—a meeting of the waters where the dark blue Tapajós flows alongside the muddy brown Amazon before slowly mixing.</p>
-                <p>This is deep Amazon territory. The city was founded in 1661 and served as a gateway to the interior. Today it's a glimpse of river life far from the tourist trail.</p>
+                <span class="section-tag-panel">The Amazon</span>
+                <h3 class="section-title-panel">Where Two Rivers Become One</h3>
+                <p>Santarem sits at one of the Amazon's most dramatic confluences - where the clear blue waters of the Tapajós meet the muddy Amazon. The rivers run side by side for miles before finally mixing, a visible line between two worlds.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838072/shiplife/santarem/bzanlghxizkmuowugqcv.jpg" class="story-image" data-caption="Blue church in Santarem." alt="Blue church in Santarem">
+                <p class="photo-caption-inline">A blue church rises above the city - faith along the river.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">River Life</span>
+                <h3 class="section-title-panel">The Market</h3>
+                <p>The riverside market is pure Amazon - fish pulled from the river that morning, including the famous piranha. Small, fierce, and surprisingly bony, they're a local staple rather than a monster of legend.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770838071/shiplife/santarem/is7l4twnkannboxi28q8.jpg" class="story-image" data-caption="Piranha for sale at the Santarem market." alt="Piranha fish in market">
+                <p class="photo-caption-inline">Piranha at the market - smaller than the movies suggest, but those teeth are real.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Port</span>
+                <h3 class="section-title-panel">Ships on the Amazon</h3>
+                <p>We docked alongside a local riverboat where passengers slept in hammocks strung across the deck - the traditional way to travel the Amazon. No cabins, no air conditioning, just the river breeze and the rhythm of the water.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838070/shiplife/santarem/kgl5xmcw23uk75eg80j7.jpg" class="story-image" data-caption="Local riverboat with hammocks at Santarem." alt="Riverboat with sleeping passengers">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770838076/shiplife/santarem/zhx72pnexjidruci7gh0.jpg" class="story-image" data-caption="Passengers waving from the riverboat." alt="Passengers waving">
+                </div>
+                <p class="photo-caption-inline">Sleeping in cots on one side, waving hello on the other - river life on the Amazon.</p>
             </div>
 
             ${generateGallery('santarem')}
         `,
-        fullDesc: "Santarém sits at the confluence of the Tapajós and Amazon rivers—a meeting of the waters where the dark blue Tapajós flows alongside the muddy brown Amazon before slowly mixing.",
-        image: "./images/hero/santarem/IMG_6160.jpg"
+        fullDesc: "Santarem sits at one of the Amazon's most dramatic confluences - where the clear blue waters of the Tapajós meet the muddy Amazon.\n\nThe riverside market is pure Amazon - fish pulled from the river that morning, including the famous piranha. We docked alongside a local riverboat where passengers slept in hammocks strung across the deck.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770838072/shiplife/santarem/bzanlghxizkmuowugqcv.jpg"
     },
     {
         id: 44,
@@ -4873,8 +4910,81 @@ an original composition inspired by this place.
         icon: "🌲",
         isDoor: false,
         shortDesc: "Where whales come to the river.",
-        fullDesc: "The Saguenay Fjord cuts deep into the Canadian Shield.\n\nBeluga whales gather where the cold fjord waters meet the St. Lawrence. The cliffs rise hundreds of feet on either side. In autumn, the forests explode in red and gold.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769521934/IMG_5899_nzg1xd.jpg"
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🍂</span>
+                    <span class="demo-value">Peak Fall Colors</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🐋</span>
+                    <span class="demo-value">Beluga Territory</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">⛰️</span>
+                    <span class="demo-value">Canadian Shield</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Voyage</span>
+                <h3 class="section-title-panel">Quebec to Antarctica</h3>
+                <p>This was the beginning of a six-month contract - sailing from Quebec down the Atlantic coast, all the way to Antarctica. The timing couldn't have been better. October in the Saguenay Fjord means peak fall colors, and the forests did not disappoint.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/saguenay/img_5881.jpg" class="story-image" data-caption="Golden hour on the Saguenay Fjord." alt="Saguenay Fjord with fall colors">
+                <p class="photo-caption-inline">Golden hour on the fjord - the forests glowing as we sailed south.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Fjord</span>
+                <h3 class="section-title-panel">Walls of Color</h3>
+                <p>The Saguenay Fjord cuts 100 kilometers into the Canadian Shield. Cliffs rise hundreds of feet on either side, and in autumn they're painted in red, orange, and gold. Small villages cling to the shoreline, dwarfed by the landscape.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/saguenay/img_5886.jpg" class="story-image" data-caption="Village with rainbow." alt="Village along the Saguenay with rainbow">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/saguenay/img_5889.jpg" class="story-image" data-caption="Fall colors along the shore." alt="Village with fall colors">
+                </div>
+                <p class="photo-caption-inline">Villages tucked into the fjord - a rainbow blessing the sailaway.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The View</span>
+                <h3 class="section-title-panel">From the Hot Tub</h3>
+                <p>There's a particular magic to watching a sunset from the ship's deck while cruising through a fjord. The cliffs frame the sky, the water reflects the colors, and for a moment the whole world turns gold.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/saguenay/img_5894.jpg" class="story-image" data-caption="Sunset from the ship's deck." alt="Ship deck with hot tub and sunset">
+                <p class="photo-caption-inline">The hot tub deck at golden hour - not a bad office view.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sailaway</span>
+                <h3 class="section-title-panel">Into the Sunset</h3>
+                <p>As we left the fjord behind, the sky put on its final show. This was just the first day of a six-month journey south. Antarctica was waiting.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/saguenay/img_5899.jpg" class="story-image" data-caption="Sunset leaving the Saguenay." alt="Dramatic sunset over the fjord">
+                <p class="photo-caption-inline">The sky on fire as we headed south - Antarctica bound.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Saguenay</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🌊</span>
+                        Fjord Facts
+                    </div>
+                    <ul class="info-list">
+                        <li><strong>Beluga Whales:</strong> The Saguenay is one of the best places to see belugas - they gather where the cold fjord waters meet the St. Lawrence.</li>
+                        <li><strong>The Depth:</strong> The fjord reaches depths of 275 meters - deeper than most of the St. Lawrence.</li>
+                        <li><strong>Ancient Waters:</strong> The fjord was carved by glaciers during the last ice age, about 10,000 years ago.</li>
+                        <li><strong>The Name:</strong> "Saguenay" comes from an Innu word meaning "where water flows out."</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('saguenay')}
+        `,
+        fullDesc: "The Saguenay Fjord cuts deep into the Canadian Shield.\n\nBeluga whales gather where the cold fjord waters meet the St. Lawrence. The cliffs rise hundreds of feet on either side. In autumn, the forests explode in red and gold. This was the beginning of a six-month voyage from Quebec to Antarctica.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/saguenay/img_5890.jpg"
     },
         {
         id: 50,
@@ -8316,17 +8426,51 @@ an original composition inspired by this place.
         id: 109,
         title: "Recife, Brazil",
         coords: [-8.05, -34.88],
-        tag: "Venice of Brazil",
+        tag: "🎵 Original Song",
         icon: "⚓",
         isDoor: false,
         shortDesc: "Bridges, beaches, and colonial history.",
         useRichContent: true,
         richContent: `
-            <p>Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.</p>
-            <p>The old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.</p>
+        <div class="song-panel">
+            <div class="song-status">
+                <span class="status-label">Original Song</span>
+                <span class="status-text">Coming Soon</span>
+            </div>
 
-            ${generateGallery('recife')}
-        `,
+            <div class="story-section-panel">
+                <h3>Reserved for Music</h3>
+                <p>This location has been set aside for an original song. The music is being written as a tribute to this place and the memories it holds.</p>
+                <p><strong>Mood:</strong> Tropical / Urban</p>
+                <p><strong>Theme:</strong> Venice of Brazil, Brennand sculptures, bridges over rivers</p>
+            </div>
+
+            <div class="lyrics-section" onclick="this.classList.toggle('expanded')">
+                <div class="lyrics-header">
+                    <span class="lyrics-title">
+                        <span class="lyrics-icon">📝</span>
+                        <span>Lyrics</span>
+                    </span>
+                    <span class="lyrics-toggle">▼</span>
+                </div>
+                <div class="lyrics-content">
+                    <div class="lyrics-text">
+<span class="verse-label">Coming Soon</span>
+
+Lyrics will appear here when the song is complete.
+
+This space is reserved for "Recife" -
+an original composition inspired by this place.
+                    </div>
+                </div>
+            </div>
+
+            <div class="audio-player-container">
+                <p style="text-align: center; font-size: 0.85rem; color: rgba(245,240,232,0.6); margin: 0;">
+                    🎵 Audio player will appear when song is released
+                </p>
+            </div>
+        </div>`,
         fullDesc: "Recife is called the Venice of Brazil for its many bridges crossing the rivers that crisscross the city.\n\nThe old port area at Marco Zero features the famous Parque das Esculturas, showcasing the surreal ceramic works of local artist Francisco Brennand.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769825894/recife_mlr7ts.jpg"
     },

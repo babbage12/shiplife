@@ -1441,17 +1441,29 @@ const locationGalleries = {
         { src: "v1770838066/shiplife/san-remo/ytpb2o0fyxjv7pwcsljj.jpg", caption: "San Remo, Italy", alt: "San Remo" }
     ],
 
+    // SAGUENAY (8 images)
+    "saguenay": [
+        { src: "shiplife/saguenay/img_5881.jpg", caption: "Golden hour on the Saguenay Fjord - fall colors ablaze.", alt: "Fjord with fall colors" },
+        { src: "shiplife/saguenay/img_5886.jpg", caption: "Village along the shore with a rainbow blessing the sailaway.", alt: "Village with rainbow" },
+        { src: "shiplife/saguenay/img_5888.jpg", caption: "Wide view of the fjord at golden hour.", alt: "Fjord panorama" },
+        { src: "shiplife/saguenay/img_5889.jpg", caption: "Vibrant fall colors along the shoreline.", alt: "Fall colors village" },
+        { src: "shiplife/saguenay/img_5890.jpg", caption: "Village nestled in autumn splendor.", alt: "Village with fall foliage" },
+        { src: "shiplife/saguenay/img_5893.jpg", caption: "Panorama of fall hillsides and village.", alt: "Wide fall panorama" },
+        { src: "shiplife/saguenay/img_5894.jpg", caption: "Sunset from the ship's hot tub deck.", alt: "Ship deck sunset" },
+        { src: "shiplife/saguenay/img_5899.jpg", caption: "Dramatic sunset leaving the fjord - Antarctica bound.", alt: "Sunset over fjord" }
+    ],
+
     // SANTAREM (9 images)
     "santarem": [
-        { src: "v1770838072/shiplife/santarem/bzanlghxizkmuowugqcv.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838074/shiplife/santarem/dud701scrzqhg4yh5bgw.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838071/shiplife/santarem/is7l4twnkannboxi28q8.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838070/shiplife/santarem/kgl5xmcw23uk75eg80j7.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838075/shiplife/santarem/n46sfbmcjrlpn44evbkd.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838073/shiplife/santarem/q3trk95sdoy2fzodb8wq.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838074/shiplife/santarem/r3cpf0yw45zxiyw4mhmj.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838076/shiplife/santarem/vqzrspn7p4v0s356hvah.jpg", caption: "Santarém, Brazil", alt: "Santarém" },
-        { src: "v1770838076/shiplife/santarem/zhx72pnexjidruci7gh0.jpg", caption: "Santarém, Brazil", alt: "Santarém" }
+        { src: "v1770838072/shiplife/santarem/bzanlghxizkmuowugqcv.jpg", caption: "Blue church rising above Santarem.", alt: "Blue church in Santarem" },
+        { src: "v1770838074/shiplife/santarem/dud701scrzqhg4yh5bgw.jpg", caption: "Busy shopping area in Santarem.", alt: "Shopping area" },
+        { src: "v1770838071/shiplife/santarem/is7l4twnkannboxi28q8.jpg", caption: "Piranha for sale at the riverside market.", alt: "Piranha fish in market" },
+        { src: "v1770838070/shiplife/santarem/kgl5xmcw23uk75eg80j7.jpg", caption: "Local riverboat - passengers sleeping in cots on deck.", alt: "Riverboat with sleeping passengers" },
+        { src: "v1770838075/shiplife/santarem/n46sfbmcjrlpn44evbkd.jpg", caption: "Porto de Santarem - gateway to the Amazon.", alt: "Port gate" },
+        { src: "v1770838073/shiplife/santarem/q3trk95sdoy2fzodb8wq.jpg", caption: "The bustling streets of Santarem.", alt: "City street" },
+        { src: "v1770838074/shiplife/santarem/r3cpf0yw45zxiyw4mhmj.jpg", caption: "City scene in Santarem.", alt: "City view" },
+        { src: "v1770838076/shiplife/santarem/vqzrspn7p4v0s356hvah.jpg", caption: "Street scene in Santarem.", alt: "Street" },
+        { src: "v1770838076/shiplife/santarem/zhx72pnexjidruci7gh0.jpg", caption: "Passengers on the riverboat cruising the Amazon.", alt: "Passengers on riverboat" }
     ],
 
     // SANTORINI (46 images)
