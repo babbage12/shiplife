@@ -1305,13 +1305,13 @@ const locationGalleries = {
 
     // PROPRIANO (7 images)
     "propriano": [
-        { src: "v1770837631/shiplife/propriano/atzvpo25p31hm9tmsgap.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837630/shiplife/propriano/k8bhpejouslrjdjxjhix.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837629/shiplife/propriano/pv25rnook7kzrbhgyvtj.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837625/shiplife/propriano/x9qehbc8ph5bila1wxke.jpg", caption: "Propriano, Corsica", alt: "Propriano" }
+        { src: "v1770837631/shiplife/propriano/atzvpo25p31hm9tmsgap.jpg", caption: "Vine-covered building - the Mediterranean way.", alt: "Vine-covered building" },
+        { src: "v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg", caption: "Street art on a construction fence - Gandhi, Leonardo, and friends.", alt: "Street art murals" },
+        { src: "v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg", caption: "Church spire rising above the Corsican landscape.", alt: "Propriano landscape" },
+        { src: "v1770837630/shiplife/propriano/k8bhpejouslrjdjxjhix.jpg", caption: "Vine-covered villa in Propriano.", alt: "Vine-covered villa" },
+        { src: "v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg", caption: "A ceramic map of the Mediterranean on stone.", alt: "Mediterranean map mural" },
+        { src: "v1770837629/shiplife/propriano/pv25rnook7kzrbhgyvtj.jpg", caption: "More street art portraits - culture in unexpected places.", alt: "Street art portraits" },
+        { src: "v1770837625/shiplife/propriano/x9qehbc8ph5bila1wxke.jpg", caption: "Corsican landscape.", alt: "Landscape view" }
     ],
 
     // PYLOS (6 images)

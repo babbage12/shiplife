@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-25T22:26:20.006Z
+// Shiplife Bundle - Generated 2026-02-25T23:01:15.649Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1573,13 +1573,13 @@ const locationGalleries = {
 
     // PROPRIANO (7 images)
     "propriano": [
-        { src: "v1770837631/shiplife/propriano/atzvpo25p31hm9tmsgap.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837630/shiplife/propriano/k8bhpejouslrjdjxjhix.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837629/shiplife/propriano/pv25rnook7kzrbhgyvtj.jpg", caption: "Propriano, Corsica", alt: "Propriano" },
-        { src: "v1770837625/shiplife/propriano/x9qehbc8ph5bila1wxke.jpg", caption: "Propriano, Corsica", alt: "Propriano" }
+        { src: "v1770837631/shiplife/propriano/atzvpo25p31hm9tmsgap.jpg", caption: "Vine-covered building - the Mediterranean way.", alt: "Vine-covered building" },
+        { src: "v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg", caption: "Street art on a construction fence - Gandhi, Leonardo, and friends.", alt: "Street art murals" },
+        { src: "v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg", caption: "Church spire rising above the Corsican landscape.", alt: "Propriano landscape" },
+        { src: "v1770837630/shiplife/propriano/k8bhpejouslrjdjxjhix.jpg", caption: "Vine-covered villa in Propriano.", alt: "Vine-covered villa" },
+        { src: "v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg", caption: "A ceramic map of the Mediterranean on stone.", alt: "Mediterranean map mural" },
+        { src: "v1770837629/shiplife/propriano/pv25rnook7kzrbhgyvtj.jpg", caption: "More street art portraits - culture in unexpected places.", alt: "Street art portraits" },
+        { src: "v1770837625/shiplife/propriano/x9qehbc8ph5bila1wxke.jpg", caption: "Corsican landscape.", alt: "Landscape view" }
     ],
 
     // PYLOS (6 images)
@@ -7524,8 +7524,63 @@ an original composition inspired by this place.
         shortDesc: "Wild beauty on the Isle of Beauty.",
         useRichContent: true,
         richContent: `
-            <p>Corsica is France, but barely.</p>
-            <p>The island has its own language, its own cuisine, its own fierce sense of identity. Propriano sits in the Gulf of Valinco, backed by mountains that drop straight to the sea. Napoleon was born just up the coast. The maquis - the fragrant scrubland - perfumes the air.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏔️</span>
+                    <span class="demo-value">Gulf of Valinco</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">👑</span>
+                    <span class="demo-value">Napoleon's Birthplace Nearby</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌿</span>
+                    <span class="demo-value">Famous Maquis</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Wild Island</span>
+                <h3 class="section-title-panel">France, But Barely</h3>
+                <p>Corsica has its own language, its own cuisine, its own fierce sense of identity. Napoleon was born in Ajaccio, just 70 kilometers up the coast - three months after France purchased the island from Genoa. Had timing been different, he'd have been Italian.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770837624/shiplife/propriano/mjbl4cx4xrjho22ofuea.jpg" class="story-image" data-caption="A ceramic map of the Mediterranean - Corsica at the crossroads." alt="Mediterranean map on stone wall">
+                <p class="photo-caption-inline">A ceramic map of the Mediterranean - Corsica sits at the crossroads of empires.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Discovery</span>
+                <h3 class="section-title-panel">Art in Unexpected Places</h3>
+                <p>Walking through town, I stumbled upon something remarkable: a row of portrait murals on a construction fence. Gandhi. Leonardo da Vinci. Other faces I couldn't quite place.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770837629/shiplife/propriano/ekwfyssb8q2frhlj50hc.jpg" class="story-image" data-caption="Street art portraits on a Propriano construction fence." alt="Street art murals">
+                <p class="photo-caption-inline">Gandhi, Leonardo, and friends - culture blooming on a construction barrier.</p>
+                <p>This is what I love about port days without excursions. No guided tour would bring you here.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The View</span>
+                <h3 class="section-title-panel">Propriano at a Glance</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770837627/shiplife/propriano/jq4qono8ktjipgnqo3ma.jpg" class="story-image" data-caption="Church spire rising above the Corsican landscape." alt="Propriano landscape with church">
+                <p class="photo-caption-inline">A church spire rises above the rooftops - the quiet rhythm of a Corsican afternoon.</p>
+            </div>
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Corsica</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">🏝️</span>
+                        Corsican Facts
+                    </div>
+                    <ul class="info-list">
+                        <li><strong>The Maquis Fighters:</strong> During WWII, French Resistance fighters were called "maquisards" - named after Corsica's dense scrubland where guerrillas could hide.</li>
+                        <li><strong>Language:</strong> Corsican (Corsu) is closer to Tuscan Italian than to French. It was the island's primary language until the 20th century.</li>
+                        <li><strong>Vendetta Culture:</strong> Corsica was famous for blood feuds that could last generations. The tradition finally faded in the early 1900s.</li>
+                        <li><strong>The Scent:</strong> The maquis - fragrant scrubland of rosemary, lavender, and immortelle - perfumes the air so distinctly that Napoleon claimed he could smell his homeland from miles out at sea.</li>
+                    </ul>
+                </div>
+            </div>
 
             ${generateGallery('propriano')}
         `,
