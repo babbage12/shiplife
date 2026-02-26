@@ -1552,6 +1552,24 @@ const locationGalleries = {
         { src: "shiplife/sibenik/sibenik-food-02", caption: "Croatian cuisine to restore the spirit.", alt: "Croatian food" }
     ],
 
+    // PORTOFERRAIO / ELBA (14 images)
+    "portoferraio": [
+        { src: "shiplife/portoferraio/forte_stella_lighthouse_hero", caption: "Forte Stella and lighthouse - Napoleon's island fortress.", alt: "Forte Stella lighthouse" },
+        { src: "shiplife/portoferraio/town_panorama_pilot_boat", caption: "Portoferraio from the harbor - pastel buildings beneath the fortress.", alt: "Town panorama" },
+        { src: "shiplife/portoferraio/ship_deck_approach", caption: "Approaching Napoleon's exile island.", alt: "Ship approach" },
+        { src: "shiplife/portoferraio/forte_stella_golden", caption: "Forte Stella in golden hour light.", alt: "Forte Stella golden" },
+        { src: "shiplife/portoferraio/forte_stella", caption: "The fortress where Napoleon plotted his return.", alt: "Forte Stella" },
+        { src: "shiplife/portoferraio/town_panorama_sunset", caption: "The town at sunset - too beautiful for exile.", alt: "Town sunset" },
+        { src: "shiplife/portoferraio/harbor_bastion", caption: "The old sea bastion guards the harbor.", alt: "Harbor bastion" },
+        { src: "shiplife/portoferraio/archway_street", caption: "Through the arch - Italian street life.", alt: "Archway street" },
+        { src: "shiplife/portoferraio/pink_church", caption: "Chiesa della Misericordia - pink facade, rose window.", alt: "Pink church" },
+        { src: "shiplife/portoferraio/trattoria_stairs", caption: "L'Approdo Trattoria - lunch on the steps.", alt: "Trattoria stairs" },
+        { src: "shiplife/portoferraio/street_fortress_view", caption: "Narrow streets lead up to the fortress.", alt: "Street view" },
+        { src: "shiplife/portoferraio/turquoise_beach", caption: "The beaches that made exile bearable.", alt: "Turquoise beach" },
+        { src: "shiplife/portoferraio/panorama_cacti", caption: "View from the heights - cacti and coastline.", alt: "Panorama cacti" },
+        { src: "shiplife/portoferraio/harbor_view", caption: "Harbor panorama from the fortress.", alt: "Harbor view" }
+    ],
+
     // SORRENTO (26 images)
     "sorrento": [
         { src: "shiplife/sorrento/img_1094", caption: "Sorrento's dramatic cliffs and tower - the view that defines the coast.", alt: "Sorrento cliffs" },

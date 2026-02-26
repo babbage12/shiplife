@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-25T23:50:33.891Z
+// Shiplife Bundle - Generated 2026-02-26T00:40:33.180Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1820,6 +1820,24 @@ const locationGalleries = {
         { src: "shiplife/sibenik/sibenik-food-02", caption: "Croatian cuisine to restore the spirit.", alt: "Croatian food" }
     ],
 
+    // PORTOFERRAIO / ELBA (14 images)
+    "portoferraio": [
+        { src: "shiplife/portoferraio/forte_stella_lighthouse_hero", caption: "Forte Stella and lighthouse - Napoleon's island fortress.", alt: "Forte Stella lighthouse" },
+        { src: "shiplife/portoferraio/town_panorama_pilot_boat", caption: "Portoferraio from the harbor - pastel buildings beneath the fortress.", alt: "Town panorama" },
+        { src: "shiplife/portoferraio/ship_deck_approach", caption: "Approaching Napoleon's exile island.", alt: "Ship approach" },
+        { src: "shiplife/portoferraio/forte_stella_golden", caption: "Forte Stella in golden hour light.", alt: "Forte Stella golden" },
+        { src: "shiplife/portoferraio/forte_stella", caption: "The fortress where Napoleon plotted his return.", alt: "Forte Stella" },
+        { src: "shiplife/portoferraio/town_panorama_sunset", caption: "The town at sunset - too beautiful for exile.", alt: "Town sunset" },
+        { src: "shiplife/portoferraio/harbor_bastion", caption: "The old sea bastion guards the harbor.", alt: "Harbor bastion" },
+        { src: "shiplife/portoferraio/archway_street", caption: "Through the arch - Italian street life.", alt: "Archway street" },
+        { src: "shiplife/portoferraio/pink_church", caption: "Chiesa della Misericordia - pink facade, rose window.", alt: "Pink church" },
+        { src: "shiplife/portoferraio/trattoria_stairs", caption: "L'Approdo Trattoria - lunch on the steps.", alt: "Trattoria stairs" },
+        { src: "shiplife/portoferraio/street_fortress_view", caption: "Narrow streets lead up to the fortress.", alt: "Street view" },
+        { src: "shiplife/portoferraio/turquoise_beach", caption: "The beaches that made exile bearable.", alt: "Turquoise beach" },
+        { src: "shiplife/portoferraio/panorama_cacti", caption: "View from the heights - cacti and coastline.", alt: "Panorama cacti" },
+        { src: "shiplife/portoferraio/harbor_view", caption: "Harbor panorama from the fortress.", alt: "Harbor view" }
+    ],
+
     // SORRENTO (26 images)
     "sorrento": [
         { src: "shiplife/sorrento/img_1094", caption: "Sorrento's dramatic cliffs and tower - the view that defines the coast.", alt: "Sorrento cliffs" },
@@ -2476,13 +2494,55 @@ const locations = [
         shortDesc: "First shore leave. The door stayed open.",
         useRichContent: true,
         richContent: `
-            <p>Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days. The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.</p>
-            <p>Mentally prepared for a call from the cruise director's office saying "Thanks, but no thanks" along with a plane ticket home.</p>
-            <p>It was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.</p>
-            <p>But eventually the crew was let off the ship. Myself included.</p>
-            <p>First shore leave.</p>
-            <p>Turns out, this was the first of many shore leaves over the next 12 years.</p>
-            <p>The door stayed open.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">2.5M</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Queensland</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌡️</span>
+                    <span class="demo-value">Subtropical</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🚢</span>
+                    <span class="demo-value">2007</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Test</span>
+                <h3 class="section-title-panel">Two Days</h3>
+                <p>Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days.</p>
+                <p>The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770827962/shiplife/brisbane/yvkbyzev0b4wz8f1dkcf.jpg" class="story-image" alt="Brisbane">
+                <p class="photo-caption-inline">Brisbane, Queensland.</p>
+                <p>Mentally prepared for a call from the cruise director's office saying "Thanks, but no thanks" along with a plane ticket home.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Morning</span>
+                <h3 class="section-title-panel">Anxious Breakfast</h3>
+                <p>It was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770827965/shiplife/brisbane/xbwwlhrrdjvpvxw1csfs.jpg" class="story-image" alt="Brisbane shore leave">
+                <p class="photo-caption-inline">First time off the ship.</p>
+                <p>The phone job. Fourteen years of cubicles and ringing phones, and the safety net was still dangling there, waiting to catch me if this all fell apart.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Moment</span>
+                <h3 class="section-title-panel">Shore Leave</h3>
+                <p>But eventually the crew was let off the ship. Myself included.</p>
+                <blockquote class="story-quote">First shore leave.</blockquote>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770827967/shiplife/brisbane/vkrugky6hmspuwkhz1w3.jpg" class="story-image" alt="Brisbane exploration">
+                <p class="photo-caption-inline">Exploring Brisbane.</p>
+                <p>Turns out, this was the first of many shore leaves over the next 12 years.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1769816317/brisbane_iajcgd.jpg" class="story-image" alt="Brisbane, Australia">
+                <p class="photo-caption-inline">The door stayed open.</p>
+            </div>
 
             ${generateGallery('brisbane')}
         `,
@@ -11377,50 +11437,110 @@ an original composition inspired by this place.
         tag: "Napoleon's Exile",
         icon: "👑",
         isDoor: false,
-        tag: "🎵 Original Song",
+        shortDesc: "The island too beautiful to hold an emperor.",
         useRichContent: true,
         richContent: `
-        <div class="song-panel">
-            <div class="song-status">
-                <span class="status-label">Original Song</span>
-                <span class="status-text">Coming Soon</span>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">32,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Tuscan Archipelago</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">👑</span>
+                    <span class="demo-value">1814-1815</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🏝️</span>
+                    <span class="demo-value">224 km²</span>
+                </div>
             </div>
 
             <div class="story-section-panel">
-                <h3>Reserved for Music</h3>
-                <p>This location has been set aside for an original song. The music is being written as a tribute to this place and the memories it holds.</p>
-                <p><strong>Mood:</strong> Exile / Beautiful Prison</p>
-                <p><strong>Theme:</strong> Napoleon's island, too beautiful to hold, escape</p>
+                <span class="section-tag-panel">The Emperor's Prison</span>
+                <h3 class="section-title-panel">Exile in Paradise</h3>
+                <p>After his abdication in 1814, the allied powers had to decide what to do with Napoleon Bonaparte. They chose Elba - a small island off the Tuscan coast, close enough to watch, far enough to forget.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portoferraio/town_panorama_pilot_boat" class="story-image" alt="Portoferraio harbor">
+                <p class="photo-caption-inline">Portoferraio - pastel buildings beneath Medici fortresses.</p>
+                <p>They gave him sovereignty over the island, a small court, and 600 guards. Napoleon threw himself into governing - building roads, modernizing agriculture, reorganizing the iron mines. But you can see it in the fortresses: this wasn't retirement. It was a waiting room.</p>
             </div>
 
-            <div class="lyrics-section" onclick="this.classList.toggle('expanded')">
-                <div class="lyrics-header">
-                    <span class="lyrics-title">
-                        <span class="lyrics-icon">📝</span>
-                        <span>Lyrics</span>
-                    </span>
-                    <span class="lyrics-toggle">▼</span>
-                </div>
-                <div class="lyrics-content">
-                    <div class="lyrics-text">
-<span class="verse-label">Coming Soon</span>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Forte Stella</span>
+                <h3 class="section-title-panel">The Lighthouse and the Fortress</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portoferraio/forte_stella_golden" class="story-image" alt="Forte Stella in golden light">
+                <p class="photo-caption-inline">Forte Stella - Napoleon's residence on Elba.</p>
+                <p>Forte Stella sits on the headland, its lighthouse still guiding ships into harbor. Napoleon lived here, pacing the ramparts, watching the horizon. The views are stunning - turquoise waters, distant Corsica on clear days, the Italian mainland just ten miles away.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portoferraio/forte_stella" class="story-image" alt="Forte Stella">
+                <p class="photo-caption-inline">Ten months. That's how long the island held him.</p>
+            </div>
 
-Lyrics will appear here when the song is complete.
-
-This space is reserved for "Elba, Italy" -
-an original composition inspired by this place.
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Portoferraio</h3>
+                <p>The town itself is a maze of narrow streets climbing toward the fortress. Pink churches with rose windows. Trattorias tucked into stairwells. Laundry strung between ochre buildings.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portoferraio/archway_street" class="story-image" alt="Archway framing street">
+                <p class="photo-caption-inline">Through the arch - Italian street life unchanged for centuries.</p>
+                <div class="image-row-2">
+                    <div class="row-image">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,h_400,c_fill,g_north,q_auto,f_auto/shiplife/portoferraio/pink_church" alt="Pink church">
+                        <p class="photo-caption-inline">Chiesa della Misericordia.</p>
+                    </div>
+                    <div class="row-image">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,h_400,c_fill,q_auto,f_auto/shiplife/portoferraio/trattoria_stairs" alt="Trattoria">
+                        <p class="photo-caption-inline">L'Approdo Trattoria.</p>
                     </div>
                 </div>
+                <p>This is Tuscany at its most Mediterranean - the lemon trees, the terracotta roofs, the impossibly blue water. You understand why exile here hardly seemed like punishment.</p>
             </div>
 
-            <div class="audio-player-container">
-                <p style="text-align: center; font-size: 0.85rem; color: rgba(245,240,232,0.6); margin: 0;">
-                    🎵 Audio player will appear when song is released
-                </p>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Island</span>
+                <h3 class="section-title-panel">Too Beautiful to Hold</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portoferraio/turquoise_beach" class="story-image" alt="Turquoise beach">
+                <p class="photo-caption-inline">The beaches that made exile bearable.</p>
+                <p>Beyond the fortresses, Elba is an island of hidden coves and turquoise waters. Napoleon explored every corner during his ten months here. He improved, he governed, he waited.</p>
+                <div class="image-row-2">
+                    <div class="row-image">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/portoferraio/panorama_cacti" alt="Panorama with cacti">
+                        <p class="photo-caption-inline">Views from the heights.</p>
+                    </div>
+                    <div class="row-image">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/portoferraio/harbor_view" alt="Harbor view">
+                        <p class="photo-caption-inline">Harbor from above.</p>
+                    </div>
+                </div>
+                <p>Then in February 1815, while his British guards were distracted, Napoleon slipped away with a thousand men. He landed in France and marched to Paris, gathering an army as he went. The Hundred Days had begun.</p>
+                <blockquote class="story-quote">The island couldn't hold him. Some prisons are too beautiful to be prisons at all.</blockquote>
             </div>
-        </div>`,
+
+            <div class="more-info-container" onclick="this.classList.toggle('active')">
+                <button class="more-info-btn">
+                    <span class="info-icon">💡</span>
+                    <span>More about Elba</span>
+                </button>
+                <div class="more-info-popup">
+                    <div class="popup-title">
+                        <span class="title-icon">👑</span>
+                        <span>Napoleon's Island</span>
+                    </div>
+                    <ul class="fun-facts-list">
+                        <li><strong>The Escape:</strong> Napoleon left on February 26, 1815, landing in France three days later. He retook Paris without firing a shot.</li>
+                        <li><strong>Hundred Days:</strong> His return lasted 111 days, ending at Waterloo. This time they sent him to St. Helena - 1,200 miles from anywhere.</li>
+                        <li><strong>Iron Island:</strong> Elba has been mined for iron since Etruscan times. Napoleon reorganized the mines during his exile.</li>
+                        <li><strong>Villa dei Mulini:</strong> Napoleon's town residence is now a museum. His bees still decorate the ceiling.</li>
+                        <li><strong>Able Was I Ere I Saw Elba:</strong> The famous palindrome - though Napoleon never said it (he spoke French).</li>
+                    </ul>
+                </div>
+            </div>
+
+            ${generateGallery('portoferraio')}
+        `,
         fullDesc: "Elba is where they sent Napoleon after his first fall.\n\nHe lasted ten months. The Medici fortresses of Portoferraio still crown the hills above the harbor, and pastel buildings tumble down to the waterfront. The island is beautiful enough that exile here hardly seems like punishment. Napoleon apparently agreed - he escaped and marched back to Paris for the Hundred Days.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769804712/IMG_7039_fbjze4.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/portoferraio/forte_stella_lighthouse_hero"
     },
     {
         id: 126,
