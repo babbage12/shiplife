@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T05:30:36.350Z
+// Shiplife Bundle - Generated 2026-02-26T05:35:01.263Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -10786,18 +10786,7 @@ an original composition inspired by this place.
         fullDesc: "Phuket taught me a lesson I'll never forget. A night off, a bar with jungle animals painted on the walls, friendly strangers. One beer. One shot. Then nothing. I woke up in a strange room. My friend Martin is the reason I'm still here to tell this story.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768865557/PANO_20131118_134025_qd3r7o.jpg"
     },
-        {
-        id: 94,
-        title: "Suva, Fiji",
-        coords: [-18.14, 178.44],
-        tag: "South Pacific Hub",
-        icon: "🏝️",
-        isDoor: false,
-        shortDesc: "Fiji's vibrant capital.",
-        fullDesc: "Placeholder description for Suva.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769814482/fiji_xrsums.jpg"
-    },
-            {
+    {
         id: 99,
         title: "Lima, Peru",
         coords: [-12.05, -77.04],
@@ -11991,19 +11980,53 @@ an original composition inspired by this place.
         title: "Port Denarau, Fiji",
         isComplete: true,
         coords: [-17.7765, 177.3800],
-        tag: "Marina Paradise",
-        icon: "⛵",
+        tag: "Bula Spirit",
+        icon: "🌺",
         isDoor: false,
-        shortDesc: "Fiji's resort marina, where superyachts meet palm trees.",
+        shortDesc: "Where superyachts meet palm trees in the heart of the South Pacific.",
         useRichContent: true,
         richContent: `
-            <p>Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and the kind of yachts that make you wonder what you did wrong in life.</p>
-            <p>The sailing yacht Nirvana was docked here when we visited - a $35 million beauty owned by the founder of Mango. The Fiji flag flew from her mast alongside the Spanish ensign.</p>
-            <p>There used to be a Hard Rock Cafe right on the marina. It closed in 2020, but back then it was still going strong, serving up burgers while the tropical sun set over the palm trees.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🏝️</span>
+                    <span class="demo-value">333 Islands</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">900,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌊</span>
+                    <span class="demo-value">South Pacific</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Marina</span>
+                <h3 class="section-title-panel">Port Denarau</h3>
+                <p>Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and the kind of yachts that make you wonder what you did wrong in life.</p>
+                <p>The sailing yacht Nirvana was docked here when we visited - a $35 million beauty owned by the founder of Mango. The Fiji flag flew from her mast alongside the Spanish ensign.</p>
+                <p>There used to be a Hard Rock Cafe right on the marina. It closed in 2020, but back then it was still going strong, serving up burgers while the tropical sun set over the palm trees.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Spirit</span>
+                <h3 class="section-title-panel">Bula</h3>
+                <p>"Bula!" - you'll hear it everywhere in Fiji. It means hello, welcome, love, happiness, everything good. The Fijian people say it with their whole being, and you feel it.</p>
+                <p>Fiji is more than beaches. Suva, the capital on the other side of the main island, is the bustling heart of the South Pacific - a crossroads where Melanesian, Polynesian, and Indian cultures blend into something uniquely Fijian.</p>
+                <p>But out here at the resorts and marinas, time moves differently. The only urgency is deciding between the pool and the beach.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Resort</span>
+                <h3 class="section-title-panel">Island Time</h3>
+                <p>We spent a day at the Fiji Beach Resort & Spa - one of those places where you can lose yourself completely. Traditional Fijian architecture with modern luxury. Infinity pools overlooking the Mamanuca Islands.</p>
+                <p>The staff remembered your name. The drinks kept appearing. And somewhere between the spa and the sunset, you forgot what day it was. That's the Fiji effect.</p>
+            </div>
 
             ${generateGallery('fiji')}
         `,
-        fullDesc: "Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and superyachts.\n\nThe sailing yacht Nirvana was docked here when we visited - a $35 million beauty. There used to be a Hard Rock Cafe right on the marina.",
+        fullDesc: "Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and superyachts. The sailing yacht Nirvana was docked here when we visited. 'Bula!' - you'll hear it everywhere. The Fijian people say it with their whole being.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770836867/shiplife/figi/oh7lcv26vmsxcftvu9rl.jpg"
     },
     {
