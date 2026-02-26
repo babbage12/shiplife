@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T04:55:10.503Z
+// Shiplife Bundle - Generated 2026-02-26T05:24:06.574Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -1937,8 +1937,20 @@ const locationGalleries = {
         { src: "shiplife/stromboli/watching_volcano.jpg", caption: "Watching the volcano from the deck - trusting it to behave.", alt: "Watching Stromboli" }
     ],
 
-    // SOUTHGEORGIA (14 images) - Title: "Photo Gallery"
+    // SOUTHGEORGIA (24 images) - Title: "Photo Gallery"
     "southGeorgia": [
+        // Fjord approach images
+        { src: "shiplife/south-georgia-fjords/img_6725", caption: "Sailing into the South Georgia fjords at dawn.", alt: "Fjords at dawn" },
+        { src: "shiplife/south-georgia-fjords/img_6728", caption: "Port side - glaciers tumbling down to the sea.", alt: "Port side glaciers" },
+        { src: "shiplife/south-georgia-fjords/img_6731", caption: "Starboard side - sheer mountain faces.", alt: "Starboard mountains" },
+        { src: "shiplife/south-georgia-fjords/img_6738", caption: "The impossible scale - a human would be a speck.", alt: "Glacier scale" },
+        { src: "shiplife/south-georgia-fjords/img_6744", caption: "Leaving the fjords.", alt: "Leaving fjords" },
+        { src: "shiplife/south-georgia-fjords/img_6746", caption: "Ice and rock.", alt: "Ice and rock" },
+        { src: "shiplife/south-georgia-fjords/img_6750", caption: "The passage widens.", alt: "Passage widens" },
+        { src: "shiplife/south-georgia-fjords/img_6753", caption: "Last glimpses of the fjords.", alt: "Last glimpses" },
+        { src: "shiplife/south-georgia-fjords/img_6760", caption: "Heading toward Grytviken.", alt: "Toward Grytviken" },
+        { src: "shiplife/south-georgia-fjords/img_6762", caption: "Open water ahead.", alt: "Open water" },
+        // Grytviken images
         { src: "v1768798857/IMG_6834_fx0gdi.jpg", caption: "The whale catcher Petrel with elephant seals on the beach.", alt: "Petrel and seals" },
         { src: "v1768799519/IMG_6763_sxyz76.jpg", caption: "Seabourn Quest anchored at South Georgia.", alt: "Seabourn Quest" },
         { src: "v1768799478/IMG_6773_qijzm5.jpg", caption: "Our excursion group exploring the island.", alt: "Excursion group" },
@@ -6092,7 +6104,32 @@ an original composition inspired by this place.
                     <span class="demo-value">Seabourn Quest</span>
                 </div>
             </div>
-            
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Sailing In</span>
+                <h3 class="section-title-panel">Through the Fjords</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/south-georgia-fjords/img_6725" class="story-image" data-caption="Sailing into the South Georgia fjords at dawn." alt="South Georgia fjords">
+                <p class="photo-caption-inline">The morning light hitting the mountains as we sailed into the fjords.</p>
+                <p>We entered the fjords early in the morning, the ship threading its way between walls of rock and ice. I stood on deck with my camera, turning from port to starboard and back again, trying to capture both sides at once.</p>
+                <div class="image-row">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6728" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6728" data-caption="Port side - glaciers tumbling down" alt="Port side">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6731" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6731" data-caption="Starboard side - sheer mountain faces" alt="Starboard side">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/south-georgia-fjords/img_6738" class="story-image" data-caption="The scale is impossible to comprehend." alt="Glacier scale">
+                <p>The eye was constantly fooled. Those glaciers looked close enough to touch, maybe a short boat ride away. But a human being would be nothing but a speck against them. The scale was impossible to process - your brain simply couldn't accept what you were seeing.</p>
+                <p>As we sailed deeper, then eventually turned to leave, the landscape kept revealing itself in new ways. Every angle offered another impossible view.</p>
+                <div class="image-row">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6744" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6744" data-caption="Leaving the fjords" alt="Leaving">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6746" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6746" data-caption="Ice and rock" alt="Ice and rock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6750" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6750" data-caption="The passage widens" alt="Passage">
+                </div>
+                <div class="image-row">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6753" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6753" data-caption="Last glimpses" alt="Last glimpses">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6760" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6760" data-caption="Heading toward Grytviken" alt="Toward Grytviken">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/south-georgia-fjords/img_6762" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/south-georgia-fjords/img_6762" data-caption="The open water ahead" alt="Open water">
+                </div>
+            </div>
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Approach</span>
                 <h3 class="section-title-panel">To the Edge of the World</h3>
@@ -6101,7 +6138,7 @@ an original composition inspired by this place.
                 <p>South Georgia is one of those places that exists more as legend than destination. A remote British territory in the South Atlantic, closer to Antarctica than anywhere else. No airport. No permanent population beyond a handful of scientists and museum staff.</p>
                 <p>To get here, you cross the Drake Passage - the roughest stretch of ocean on Earth. But when you finally see those jagged peaks rising from the sea, you understand why explorers risked everything to reach this place.</p>
             </div>
-            
+
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Lecture</span>
                 <h3 class="section-title-panel">The Penguin Expert</h3>

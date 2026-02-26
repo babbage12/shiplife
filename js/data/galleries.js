@@ -1668,8 +1668,20 @@ const locationGalleries = {
         { src: "shiplife/stromboli/watching_volcano.jpg", caption: "Watching the volcano from the deck - trusting it to behave.", alt: "Watching Stromboli" }
     ],
 
-    // SOUTHGEORGIA (14 images) - Title: "Photo Gallery"
+    // SOUTHGEORGIA (24 images) - Title: "Photo Gallery"
     "southGeorgia": [
+        // Fjord approach images
+        { src: "shiplife/south-georgia-fjords/img_6725", caption: "Sailing into the South Georgia fjords at dawn.", alt: "Fjords at dawn" },
+        { src: "shiplife/south-georgia-fjords/img_6728", caption: "Port side - glaciers tumbling down to the sea.", alt: "Port side glaciers" },
+        { src: "shiplife/south-georgia-fjords/img_6731", caption: "Starboard side - sheer mountain faces.", alt: "Starboard mountains" },
+        { src: "shiplife/south-georgia-fjords/img_6738", caption: "The impossible scale - a human would be a speck.", alt: "Glacier scale" },
+        { src: "shiplife/south-georgia-fjords/img_6744", caption: "Leaving the fjords.", alt: "Leaving fjords" },
+        { src: "shiplife/south-georgia-fjords/img_6746", caption: "Ice and rock.", alt: "Ice and rock" },
+        { src: "shiplife/south-georgia-fjords/img_6750", caption: "The passage widens.", alt: "Passage widens" },
+        { src: "shiplife/south-georgia-fjords/img_6753", caption: "Last glimpses of the fjords.", alt: "Last glimpses" },
+        { src: "shiplife/south-georgia-fjords/img_6760", caption: "Heading toward Grytviken.", alt: "Toward Grytviken" },
+        { src: "shiplife/south-georgia-fjords/img_6762", caption: "Open water ahead.", alt: "Open water" },
+        // Grytviken images
         { src: "v1768798857/IMG_6834_fx0gdi.jpg", caption: "The whale catcher Petrel with elephant seals on the beach.", alt: "Petrel and seals" },
         { src: "v1768799519/IMG_6763_sxyz76.jpg", caption: "Seabourn Quest anchored at South Georgia.", alt: "Seabourn Quest" },
         { src: "v1768799478/IMG_6773_qijzm5.jpg", caption: "Our excursion group exploring the island.", alt: "Excursion group" },
