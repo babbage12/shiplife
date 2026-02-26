@@ -968,6 +968,98 @@
             color: var(--gold-light);
         }
 
+        /* Easter Egg Container (hidden story reveal) */
+        .easter-egg-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .easter-egg-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background: rgba(100, 100, 120, 0.2);
+            border: 1px dashed rgba(150, 150, 170, 0.3);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0.5;
+        }
+
+        .easter-egg-btn:hover {
+            opacity: 1;
+            background: rgba(100, 100, 120, 0.4);
+            border-color: rgba(150, 150, 170, 0.6);
+            transform: scale(1.1);
+        }
+
+        .easter-egg-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .easter-egg-container.active .easter-egg-btn {
+            opacity: 1;
+            background: rgba(100, 100, 120, 0.4);
+        }
+
+        .easter-egg-container.active .easter-egg-icon {
+            animation: spin 1s ease-out;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .easter-egg-content {
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, rgba(30, 30, 45, 0.98) 0%, rgba(20, 25, 35, 0.98) 100%);
+            border: 1px solid rgba(150, 150, 170, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+            max-height: 60vh;
+            overflow-y: auto;
+            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .easter-egg-container.active .easter-egg-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .easter-egg-content p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: rgba(245, 240, 232, 0.85);
+            margin-bottom: 1rem;
+        }
+
+        .easter-egg-content .story-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .easter-egg-content .photo-caption-inline {
+            font-size: 0.8rem;
+            color: rgba(245, 240, 232, 0.6);
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
         /* Director's Commentary Easter Egg */
         .directors-commentary {
             display: inline-flex;

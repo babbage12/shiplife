@@ -1240,7 +1240,12 @@ const locationGalleries = {
 
     // PORTVILA (1 images)
     "portVila": [
-        { src: "v1768966739/IMG_0357_uylflq.jpg", caption: "Hull damage on Pacific Pearl - the morning after Port Vila.", alt: "Hull damage on Pacific Pearl" }
+        { src: "shiplife/port-vila/iririki_island", caption: "Iririki Island Resort - a short boat ride from the harbor.", alt: "Iririki Island" },
+        { src: "shiplife/port-vila/sailing_boat_harbor", caption: "Traditional sailing boat with cruise ship in background.", alt: "Sailing boat in harbor" },
+        { src: "shiplife/port-vila/catamaran_harbor", caption: "Catamaran at anchor on a misty morning.", alt: "Catamaran in harbor" },
+        { src: "shiplife/port-vila/thatched_beach_bar", caption: "Beach bar - thatched roof and cold drinks.", alt: "Beach bar" },
+        { src: "shiplife/port-vila/coral_beach_loungers", caption: "Coral beach with mountain views.", alt: "Coral beach" },
+        { src: "shiplife/port-vila/beach_bar_atvs", caption: "Shore excursion staging - ATVs ready to roll.", alt: "Beach with ATVs" }
     ],
 
     // PORTOFINO (5 images)

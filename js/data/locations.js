@@ -2520,114 +2520,143 @@ an original composition inspired by this place.
         id: 20,
         title: "Port Vila",
         coords: [-17.7333, 168.3273],
-        tag: "The Cursed Maiden Voyage",
-        icon: "🌀",
+        tag: "Pacific Gateway",
+        icon: "🌴",
         isDoor: false,
-        shortDesc: "Sandwiched between two cyclones. The night everything went wrong.",
-        imagePosition: "center",
-        imageCaption: "The morning after. That horizontal scratch runs right past where my cabin was.",
+        isComplete: true,
+        shortDesc: "Vanuatu's capital - island paradise with a story to tell.",
         useRichContent: true,
         richContent: `
             <div class="demographics-strip">
                 <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">44,000</span>
+                </div>
+                <div class="demo-item">
                     <span class="demo-icon">📍</span>
+                    <span class="demo-value">Efate Island</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🌡️</span>
+                    <span class="demo-value">Tropical</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇻🇺</span>
                     <span class="demo-value">Vanuatu</span>
                 </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🚢</span>
-                    <span class="demo-value">Pacific Pearl</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">📅</span>
-                    <span class="demo-value">December 2010</span>
-                </div>
             </div>
-            
+
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Setup</span>
-                <h3 class="section-title-panel">Fresh Out of Dry Dock</h3>
-                <p>The Pacific Pearl had just come out of a month-long refit in Singapore. All crew were onboard as we sailed her out of dry dock - a sweltering month of work with little to no air conditioning and plenty of alcohol for the musicians.</p>
-                <p>I was about two years into my contracted life at sea by then. The ship was being transformed from Ocean Village into P&O Australia's newest vessel. New restaurants, new bars, new everything.</p>
-                <p>Including a massive chandelier in the atrium.</p>
+                <span class="section-tag-panel">The Place</span>
+                <h3 class="section-title-panel">Island Capital</h3>
+                <p>Port Vila is Vanuatu's capital and gateway to the South Pacific. The harbor sits in a natural bay on Efate Island, sheltered by green hills and dotted with small resort islands.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/iririki_island.jpg" class="story-image" alt="Iririki Island">
+                <p class="photo-caption-inline">Iririki Island Resort - a short boat ride from the main harbor.</p>
+                <p>Traditional sailing boats share the water with cruise tenders. It's the kind of place where time moves slower, and nobody minds.</p>
             </div>
-            
+
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Chandelier</span>
-                <h3 class="section-title-panel">We Watched Them Hang It</h3>
-                <p>Me and another crew member watched them install that chandelier. A huge iron and steel structure, several hundred pounds, suspended three stories above the atrium floor.</p>
-                <p>They didn't do any load testing. Nothing. They were rushing to get the old girl ready for launch.</p>
-                <p>We joked that it wasn't going to last an entire cruise.</p>
-                <p>On the maiden voyage out of Sydney, just hours after a massive party in the atrium - all the musicians jamming, passengers running around everywhere, champagne flowing - it fell.</p>
-                <p>Three stories. Middle of the night. Crashed into the café area below.</p>
-                <p>An hour earlier, we'd all been standing right under it.</p>
-                <p>P&O's official statement said "the reassuring thing was that there were no passengers or crew anywhere near the area when it happened." Yeah - because it was 3 AM.</p>
+                <span class="section-tag-panel">The Harbor</span>
+                <h3 class="section-title-panel">Where Ships Meet Sailboats</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/sailing_boat_harbor.jpg" class="story-image" alt="Traditional sailing boat">
+                <p class="photo-caption-inline">Traditional ketch with cruise ship in the background.</p>
+                <p>Cruise ships anchor offshore and tender passengers into town. From there, it's beach bars, island tours, or just wandering the waterfront.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/catamaran_harbor.jpg" class="story-image" alt="Catamaran at anchor">
+                <p class="photo-caption-inline">Morning calm on the bay.</p>
             </div>
-            
+
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Storm</span>
-                <h3 class="section-title-panel">Sandwiched Between Two Cyclones</h3>
-                <p>That was just the beginning.</p>
-                <p>A bad storm hit on our first night out of Sydney. Then the captain made an announcement that would have been funny if it wasn't terrifying:</p>
-                <p>We had somehow ended up sandwiched between two cyclones.</p>
-                <p>The original itinerary - Isle of Pines, maybe Mystery Island - was scrapped. We were making an emergency overnight stop at Port Vila instead.</p>
-                <p>The 2010-2011 South Pacific cyclone season was brutal. Cyclone Vania. Cyclone Yasi. Cyclone Atu. We were caught in the middle of all of it.</p>
+                <span class="section-tag-panel">Shore Leave</span>
+                <h3 class="section-title-panel">Island Time</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/thatched_beach_bar.jpg" class="story-image" alt="Beach bar">
+                <p class="photo-caption-inline">Thatched roof, cold drinks, white sand - the essentials.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/beach_bar_atvs.jpg" class="story-image" alt="Beach with ATVs">
+                <p class="photo-caption-inline">Shore excursion staging area.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/port-vila/coral_beach_loungers.jpg" class="story-image" alt="Coral beach">
+                <p class="photo-caption-inline">Coral beach with mountain views.</p>
+                <p>ATVs, snorkeling, kava ceremonies, waterfall tours - or just find a lounger and watch the clouds drift over the hills.</p>
             </div>
-            
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Impact</span>
-                <h3 class="section-title-panel">"You Were Lucky"</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768966739/IMG_0357_uylflq.jpg" class="story-image" data-caption="Engineering crew hosing off the hull the morning after. My cabin was just below the last porthole on deck 5, right where the scratch begins." alt="Hull damage on Pacific Pearl">
-                <p class="photo-caption-inline">The morning after. That horizontal scratch runs right past deck 5 - right past my cabin.</p>
-                <p>The captain put the boat into the dock at Port Vila with enough force that it knocked me off my bed. I was changing my guitar strings at the time.</p>
-                <p>When I stood up and got my bearings, I noticed two things:</p>
-                <p>First, my floor had buckled upward.</p>
-                <p>Second, there was a crack running all the way up my cabin wall. Through that crack, I could see what looked like the hull of the ship.</p>
-                <p>For a few days after that, I was famous. The staff captain, head engineer - and it felt like all 700 crew onboard - wanted to peek inside my cabin. After a while I just left my door open for a few days.</p>
-                <p>Then I was moved temporarily to a passenger cabin while they made "repairs."</p>
-                <p>I never did go back to that cabin. But my good friend Daryl Stevenette did a contract a year later on the Pearl - and the floor was still buckled. The bathroom door didn't quite shut right.</p>
-                <p>The staff captain looked at me and said: "You were lucky."</p>
-                <p>I could have been crushed by a cruise ship.</p>
-            </div>
-            
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Aftermath</span>
-                <h3 class="section-title-panel">The Unluckiest Maiden Voyage</h3>
-                <p>The Pacific Pearl's maiden voyage became legendary for all the wrong reasons:</p>
-                <p>• Chandelier falls 3 stories (hours after party underneath)<br>
-                • Caught between two cyclones<br>
-                • Emergency diversion to Port Vila<br>
-                • Hull damage during docking<br>
-                • Medical evacuation near Great Barrier Island<br>
-                • Non-flushing toilets<br>
-                • No drinking water during the storm</p>
-                <p>As crew, we were forbidden to talk about most of it. The chandelier incident especially.</p>
-                <p>But the ship no longer exists. P&O Australia no longer exists. And this is my story to tell.</p>
-            </div>
-            
+
             <div class="more-info-container" onclick="this.classList.toggle('active')">
                 <button class="more-info-btn">
                     <span class="info-icon">💡</span>
-                    <span>More about this incident</span>
+                    <span>More about Vanuatu</span>
                 </button>
                 <div class="more-info-popup">
                     <div class="popup-title">
-                        <span class="title-icon">🌀</span>
-                        <span>The Cursed Maiden Voyage</span>
+                        <span class="title-icon">🇻🇺</span>
+                        <span>Vanuatu Facts</span>
                     </div>
                     <ul class="fun-facts-list">
-                        <li><strong>The Ship:</strong> Pacific Pearl was formerly Ocean Village, refitted in Singapore in late 2010 at Sembawang Shipyard.</li>
-                        <li><strong>Maiden Voyage:</strong> December 22, 2010, from Auckland.</li>
-                        <li><strong>The Cyclones:</strong> The 2010-11 South Pacific cyclone season included Vania (Jan 12-13), Yasi (Jan 30), and Atu (Feb 21).</li>
-                        <li><strong>Confirmed:</strong> The chandelier incident was reported by Cruise Compare: "a large 3 metre wide chandelier fell through the ships open atrium three storeys down."</li>
-                        <li><strong>Ship's Fate:</strong> Pacific Pearl was sold in 2017, renamed Columbus, and later scrapped after CMV went into administration in 2020.</li>
+                        <li><strong>Islands:</strong> Vanuatu is an archipelago of 83 islands stretching 1,300 km through the South Pacific.</li>
+                        <li><strong>Languages:</strong> Over 100 indigenous languages - the highest language density per capita in the world.</li>
+                        <li><strong>Bislama:</strong> The national creole language blends English, French, and local words.</li>
+                        <li><strong>Kava:</strong> The traditional drink made from pepper plant roots is central to Ni-Vanuatu culture.</li>
+                        <li><strong>Volcanoes:</strong> Several active volcanoes including Mt. Yasur on Tanna - one of the most accessible active volcanoes on Earth.</li>
                     </ul>
                 </div>
             </div>
 
             ${generateGallery('portVila')}
+
+            <div class="easter-egg-container" onclick="this.classList.toggle('active')">
+                <button class="easter-egg-btn">
+                    <span class="easter-egg-icon">🌀</span>
+                </button>
+                <div class="easter-egg-content">
+                    <div class="popup-title">
+                        <span class="title-icon">🌀</span>
+                        <span>The Cursed Maiden Voyage</span>
+                    </div>
+
+                    <p><strong>Fresh Out of Dry Dock</strong></p>
+                    <p>The Pacific Pearl had just come out of a month-long refit in Singapore. All crew were onboard as we sailed her out of dry dock - a sweltering month of work with little to no air conditioning and plenty of alcohol for the musicians.</p>
+                    <p>I was about two years into my contracted life at sea by then. The ship was being transformed from Ocean Village into P&O Australia's newest vessel. New restaurants, new bars, new everything.</p>
+                    <p>Including a massive chandelier in the atrium.</p>
+
+                    <p><strong>The Joke That Wasn't</strong></p>
+                    <p>I remember watching them hang the new chandelier. Massive thing - iron, steel, and glass - suspended three stories above the atrium floor.</p>
+                    <p>"That's not going to last," I said to the guy next to me. We laughed.</p>
+                    <p>A few days later the Pacific Pearl crossed the Tasman Sea to pick up our first passengers in Sydney. The inaugural voyage ball was held in the atrium beneath that chandelier. Live music, dancing, ice sculptures, champagne towers, officers in dress whites, passengers in evening gowns. The whole spectacle went on until midnight.</p>
+                    <p>Around 3 AM, a few of us musicians were hanging out in the piano bar just off the atrium when we heard a sound none of us will forget.</p>
+                    <p>The entire chandelier had fallen three stories and landed smack in the middle of the atrium floor. Right where everyone had been dancing hours before.</p>
+                    <p>Nobody joked about it after that.</p>
+
+                    <p><strong>Sandwiched Between Two Cyclones</strong></p>
+                    <p>That was just the beginning.</p>
+                    <p>A bad storm hit on our first night out of Sydney. Then the captain made an announcement that would have been funny if it wasn't terrifying:</p>
+                    <p>We had somehow ended up sandwiched between two cyclones.</p>
+                    <p>The original itinerary - Isle of Pines, maybe Mystery Island - was scrapped. We were making an emergency overnight stop at Port Vila instead.</p>
+
+                    <p><strong>"You Were Lucky"</strong></p>
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768966739/IMG_0357_uylflq.jpg" class="story-image" alt="Hull damage">
+                    <p class="photo-caption-inline">The morning after. That horizontal scratch runs right past deck 5 - right past my cabin.</p>
+                    <p>The captain put the boat into the dock at Port Vila with enough force that it knocked me off my bed. I was changing my guitar strings at the time.</p>
+                    <p>When I stood up and got my bearings, I noticed two things:</p>
+                    <p>First, my floor had buckled upward.</p>
+                    <p>Second, there was a crack running all the way up my cabin wall. Through that crack, I could see what looked like the hull of the ship.</p>
+                    <p>For a few days after that, I was famous. The staff captain, head engineer - and it felt like all 700 crew onboard - wanted to peek inside my cabin. After a while I just left my door open.</p>
+                    <p>Then I was moved temporarily to a passenger cabin while they made "repairs."</p>
+                    <p>I never did go back to that cabin. But my good friend Daryl Stevenette did a contract a year later on the Pearl - and the floor was still buckled. The bathroom door didn't quite shut right.</p>
+                    <p>The staff captain looked at me and said: "You were lucky."</p>
+                    <p>I could have been crushed by a cruise ship.</p>
+
+                    <p><strong>The Unluckiest Maiden Voyage</strong></p>
+                    <p>The Pacific Pearl's maiden voyage became legendary for all the wrong reasons:</p>
+                    <p>• Chandelier falls 3 stories (hours after party underneath)<br>
+                    • Caught between two cyclones<br>
+                    • Emergency diversion to Port Vila<br>
+                    • Hull damage during docking<br>
+                    • Medical evacuation near Great Barrier Island<br>
+                    • Non-flushing toilets<br>
+                    • No drinking water during the storm</p>
+                    <p>As crew, we were forbidden to talk about most of it. The chandelier incident especially.</p>
+                    <p>But the ship no longer exists. P&O Australia no longer exists. And this is my story to tell.</p>
+                </div>
+            </div>
         `,
-        fullDesc: "Port Vila was supposed to be Isle of Pines. But when you're sandwiched between two cyclones on the maiden voyage of the Pacific Pearl - a voyage already marked by a falling chandelier - you take whatever safe harbor you can get. The captain docked with enough force to crack my cabin wall. The staff captain said I was lucky. I think I know what he meant.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768966739/IMG_0357_uylflq.jpg"
+        fullDesc: "Port Vila is Vanuatu's capital and gateway to the South Pacific. The harbor sits in a natural bay on Efate Island, sheltered by green hills and dotted with resort islands. Traditional sailing boats share the water with cruise tenders. It's the kind of place where time moves slower.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/port-vila/catamaran_harbor.jpg"
     },
     {
         id: 117,
