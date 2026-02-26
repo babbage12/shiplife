@@ -136,7 +136,7 @@ const locationGalleries = {
         { src: "shiplife/antibes/20150820_214933", caption: "Night panorama - sailing away from the Riviera.", alt: "Night panorama" }
     ],
 
-    // AUCKLAND (10 images)
+    // AUCKLAND (15 images)
     "auckland": [
         { src: "v1767729026/IMG_0220_r8svvx.jpg", caption: "The Seabourn Odyssey in Cairns - the ship I'd later call home.", alt: "Seabourn Odyssey" },
         { src: "v1767729047/IMG_0830_pv7td9.jpg", caption: "Akaroa Harbor - where I got the call.", alt: "Akaroa Harbor" },
@@ -147,7 +147,12 @@ const locationGalleries = {
         { src: "v1767733813/IMG_0218_azftb2.jpg", caption: "The Club - my new stage.", alt: "The Club" },
         { src: "v1767728099/IMG_0201_jrd2av.jpg", caption: "My name in print on Seabourn.", alt: "Seabourn schedule" },
         { src: "v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png", caption: "At the piano on Seabourn.", alt: "At the piano" },
-        { src: "v1768532493/IMG_0227_psvuop.jpg", caption: "Performing on Seabourn.", alt: "Performing" }
+        { src: "v1768532493/IMG_0227_psvuop.jpg", caption: "Performing on Seabourn.", alt: "Performing" },
+        { src: "shiplife/auckland/sky_tower_panorama", caption: "Sky Tower from Mt. Eden - the city sprawls below.", alt: "Sky Tower panorama" },
+        { src: "shiplife/auckland/city_view_2", caption: "Auckland from the volcanic crater.", alt: "City view" },
+        { src: "shiplife/auckland/crater_rim_wall", caption: "Mt. Eden crater rim - ancient volcanic stone.", alt: "Crater rim" },
+        { src: "shiplife/auckland/city_view_3", caption: "The view from Mt. Eden.", alt: "City view" },
+        { src: "shiplife/auckland/sheep_harbor_view", caption: "Sheep grazing with the harbor beyond - classic New Zealand.", alt: "Sheep and harbor" }
     ],
 
     // BALI (24 images) - Title: "Photos from Bali"
@@ -408,12 +413,20 @@ const locationGalleries = {
         { src: "shiplife/dubai/mercedes_mall.jpg", caption: "Classic Gullwing at Chopard - only in Dubai.", alt: "Mercedes in Dubai mall" }
     ],
 
-    // DUNEDIN (4 images)
+    // DUNEDIN (12 images)
     "dunedin": [
         { src: "v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg", caption: "Port Chalmers from above", alt: "Port Chalmers" },
         { src: "v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg", caption: "The port and church", alt: "Port area" },
         { src: "v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg", caption: "Misty Otago hills", alt: "Otago hills" },
-        { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" }
+        { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" },
+        { src: "shiplife/dunedin/town_view_hero", caption: "Port Chalmers town from the ship - Victorian buildings and church spire.", alt: "Port Chalmers town view" },
+        { src: "shiplife/dunedin/hillside_church_port", caption: "The church on the hillside above the container port.", alt: "Hillside church" },
+        { src: "shiplife/dunedin/dock_tugboats_passengers", caption: "Tugboats at the dock, passengers queuing for shore excursions.", alt: "Dock with tugboats" },
+        { src: "shiplife/dunedin/diamond_princess", caption: "The Diamond Princess in port - we had company that day.", alt: "Diamond Princess cruise ship" },
+        { src: "shiplife/dunedin/iona_church", caption: "Iona Church - Gothic stone architecture from the Scottish settlers.", alt: "Iona Church" },
+        { src: "shiplife/dunedin/main_street_harbor", caption: "Main street with Victorian shopfronts, harbor beyond.", alt: "Main street view" },
+        { src: "shiplife/dunedin/container_port_panorama", caption: "The working port - Maersk containers and green hills.", alt: "Container port" },
+        { src: "shiplife/dunedin/misty_harbor_sailboats", caption: "Misty morning in the harbor, sailboats at anchor.", alt: "Misty harbor" }
     ],
 
     // EPHESUS (34 images) - Title: "Photos from Ephesus (34)"
@@ -609,7 +622,7 @@ const locationGalleries = {
         { src: "v1770837326/shiplife/ibiza/cobmuqw8ytk8lwv9qmjh.jpg", caption: "Ibiza, Spain", alt: "Ibiza" }
     ],
 
-    // ISLEOFPINES (6 images)
+    // ISLEOFPINES (18 images)
     "isleOfPines": [
         { src: "w_400,q_auto,f_auto/shiplife/isle-of-pines/lagoon_pines.jpg", caption: "Turquoise lagoon with the iconic columnar pines", alt: "Isle of Pines lagoon" },
         { src: "v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
@@ -617,7 +630,18 @@ const locationGalleries = {
         { src: "v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826436/shiplife/isle-of-pines/nijbrcf7ieidnsdezmni.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
-        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" }
+        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "shiplife/isle-of-pines/columnar_pines_island", caption: "The iconic columnar pines rising from the bay.", alt: "Columnar pines island" },
+        { src: "shiplife/isle-of-pines/beach_scene_1", caption: "Beach scene on Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/reef_through_pines", caption: "Looking at the reef through the pine branches.", alt: "Reef through pines" },
+        { src: "shiplife/isle-of-pines/beach_scene_2", caption: "Crystal clear water.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_3", caption: "The beaches of Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/tropical_garden", caption: "Tropical garden with bougainvillea.", alt: "Garden" },
+        { src: "shiplife/isle-of-pines/beach_scene_4", caption: "Paradise found.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_5", caption: "Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/hilltop_panorama", caption: "Panoramic view from the hilltop - pine forests to the sea.", alt: "Hilltop view" },
+        { src: "shiplife/isle-of-pines/beach_scene_6", caption: "Shore leave on the island.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_7", caption: "The kind of water that doesn't look real.", alt: "Beach" }
     ],
 
     // ISTANBUL (12 images)
@@ -740,10 +764,20 @@ const locationGalleries = {
         { src: "shiplife/lemaire/img_6716", caption: "The unforgettable Lemaire Channel.", alt: "Final view" }
     ],
 
-    // LIFOU (2 images)
+    // LIFOU (12 images)
     "lifou": [
         { src: "v1768963793/New_Caldonia_church_t4pfw4.jpg", caption: "The church on Lifou - I visited every time we called here.", alt: "Lifou church" },
-        { src: "v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png", caption: "The guardian spider of Lifou.", alt: "Spider on Lifou" }
+        { src: "v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png", caption: "The guardian spider of Lifou.", alt: "Spider on Lifou" },
+        { src: "shiplife/lifou/beach_landing", caption: "Tender landing - passengers stepping onto paradise.", alt: "Beach landing" },
+        { src: "shiplife/lifou/beach_palms", caption: "Palm-lined beach at Lifou.", alt: "Beach with palms" },
+        { src: "shiplife/lifou/beach_water", caption: "Crystal clear water.", alt: "Beach water" },
+        { src: "shiplife/lifou/thatched_hut_banyan", caption: "Thatched shelter under the banyan tree.", alt: "Thatched hut" },
+        { src: "shiplife/lifou/beach_scene_1", caption: "The beaches of Lifou.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_2", caption: "Island paradise.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_3", caption: "Shore leave on Lifou.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_4", caption: "Time moved differently here.", alt: "Beach scene" },
+        { src: "shiplife/lifou/turquoise_bay_hut", caption: "The swimming spot - turquoise bay with beach hut.", alt: "Turquoise bay" },
+        { src: "shiplife/lifou/tender_approach", caption: "Approaching Lifou by tender.", alt: "Tender approach" }
     ],
 
     // LIPARI (5 images)
@@ -1049,7 +1083,7 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "New Caledonia", alt: "New Caledonia" }
     ],
 
-    // NOUMEA (10 images)
+    // NOUMEA (15 images)
     "noumea": [
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG", caption: "Local children, Noumea", alt: "Local children" },
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG", caption: "Noumea", alt: "Noumea" },
@@ -1060,7 +1094,12 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0091.jpg", caption: "Noumea", alt: "Noumea" },
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0092.jpg", caption: "Noumea", alt: "Noumea" },
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0094.jpg", caption: "Noumea", alt: "Noumea" },
-        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "Noumea", alt: "Noumea" }
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "shiplife/noumea/coastline_view", caption: "Noumea coastline with Norfolk pines.", alt: "Coastline" },
+        { src: "shiplife/noumea/number_one_beer", caption: "Number One - the local beer with a view.", alt: "Number One beer" },
+        { src: "shiplife/noumea/pier_bw", caption: "The pier at Anse Vata in black and white.", alt: "Pier B&W" },
+        { src: "shiplife/noumea/pier_turquoise", caption: "Wooden pier with turquoise water.", alt: "Pier" },
+        { src: "shiplife/noumea/aquarium_entrance", caption: "Aquarium des Lagons - the local aquarium.", alt: "Aquarium" }
     ],
 
     // PERTH (3 images) - Title: "Photos from Perth"

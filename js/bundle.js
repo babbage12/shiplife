@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T02:49:48.644Z
+// Shiplife Bundle - Generated 2026-02-26T03:15:11.561Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -404,7 +404,7 @@ const locationGalleries = {
         { src: "shiplife/antibes/20150820_214933", caption: "Night panorama - sailing away from the Riviera.", alt: "Night panorama" }
     ],
 
-    // AUCKLAND (10 images)
+    // AUCKLAND (15 images)
     "auckland": [
         { src: "v1767729026/IMG_0220_r8svvx.jpg", caption: "The Seabourn Odyssey in Cairns - the ship I'd later call home.", alt: "Seabourn Odyssey" },
         { src: "v1767729047/IMG_0830_pv7td9.jpg", caption: "Akaroa Harbor - where I got the call.", alt: "Akaroa Harbor" },
@@ -415,7 +415,12 @@ const locationGalleries = {
         { src: "v1767733813/IMG_0218_azftb2.jpg", caption: "The Club - my new stage.", alt: "The Club" },
         { src: "v1767728099/IMG_0201_jrd2av.jpg", caption: "My name in print on Seabourn.", alt: "Seabourn schedule" },
         { src: "v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png", caption: "At the piano on Seabourn.", alt: "At the piano" },
-        { src: "v1768532493/IMG_0227_psvuop.jpg", caption: "Performing on Seabourn.", alt: "Performing" }
+        { src: "v1768532493/IMG_0227_psvuop.jpg", caption: "Performing on Seabourn.", alt: "Performing" },
+        { src: "shiplife/auckland/sky_tower_panorama", caption: "Sky Tower from Mt. Eden - the city sprawls below.", alt: "Sky Tower panorama" },
+        { src: "shiplife/auckland/city_view_2", caption: "Auckland from the volcanic crater.", alt: "City view" },
+        { src: "shiplife/auckland/crater_rim_wall", caption: "Mt. Eden crater rim - ancient volcanic stone.", alt: "Crater rim" },
+        { src: "shiplife/auckland/city_view_3", caption: "The view from Mt. Eden.", alt: "City view" },
+        { src: "shiplife/auckland/sheep_harbor_view", caption: "Sheep grazing with the harbor beyond - classic New Zealand.", alt: "Sheep and harbor" }
     ],
 
     // BALI (24 images) - Title: "Photos from Bali"
@@ -676,12 +681,20 @@ const locationGalleries = {
         { src: "shiplife/dubai/mercedes_mall.jpg", caption: "Classic Gullwing at Chopard - only in Dubai.", alt: "Mercedes in Dubai mall" }
     ],
 
-    // DUNEDIN (4 images)
+    // DUNEDIN (12 images)
     "dunedin": [
         { src: "v1770836788/shiplife/dunedin/m2vmx2aafazfowoddqfa.jpg", caption: "Port Chalmers from above", alt: "Port Chalmers" },
         { src: "v1770836759/shiplife/dunedin/w3zkvqmtaqcidypaiqye.jpg", caption: "The port and church", alt: "Port area" },
         { src: "v1770836784/shiplife/dunedin/hvtxzcy4wjhusm2qottp.jpg", caption: "Misty Otago hills", alt: "Otago hills" },
-        { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" }
+        { src: "v1770836786/shiplife/dunedin/aavrof0fketth4cqwmbo.jpg", caption: "Sailing past the peninsula cliffs", alt: "Peninsula cliffs" },
+        { src: "shiplife/dunedin/town_view_hero", caption: "Port Chalmers town from the ship - Victorian buildings and church spire.", alt: "Port Chalmers town view" },
+        { src: "shiplife/dunedin/hillside_church_port", caption: "The church on the hillside above the container port.", alt: "Hillside church" },
+        { src: "shiplife/dunedin/dock_tugboats_passengers", caption: "Tugboats at the dock, passengers queuing for shore excursions.", alt: "Dock with tugboats" },
+        { src: "shiplife/dunedin/diamond_princess", caption: "The Diamond Princess in port - we had company that day.", alt: "Diamond Princess cruise ship" },
+        { src: "shiplife/dunedin/iona_church", caption: "Iona Church - Gothic stone architecture from the Scottish settlers.", alt: "Iona Church" },
+        { src: "shiplife/dunedin/main_street_harbor", caption: "Main street with Victorian shopfronts, harbor beyond.", alt: "Main street view" },
+        { src: "shiplife/dunedin/container_port_panorama", caption: "The working port - Maersk containers and green hills.", alt: "Container port" },
+        { src: "shiplife/dunedin/misty_harbor_sailboats", caption: "Misty morning in the harbor, sailboats at anchor.", alt: "Misty harbor" }
     ],
 
     // EPHESUS (34 images) - Title: "Photos from Ephesus (34)"
@@ -877,7 +890,7 @@ const locationGalleries = {
         { src: "v1770837326/shiplife/ibiza/cobmuqw8ytk8lwv9qmjh.jpg", caption: "Ibiza, Spain", alt: "Ibiza" }
     ],
 
-    // ISLEOFPINES (6 images)
+    // ISLEOFPINES (18 images)
     "isleOfPines": [
         { src: "w_400,q_auto,f_auto/shiplife/isle-of-pines/lagoon_pines.jpg", caption: "Turquoise lagoon with the iconic columnar pines", alt: "Isle of Pines lagoon" },
         { src: "v1770826438/shiplife/isle-of-pines/kkvourdsi6remvdizbvg.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
@@ -885,7 +898,18 @@ const locationGalleries = {
         { src: "v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
         { src: "v1770826436/shiplife/isle-of-pines/nijbrcf7ieidnsdezmni.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
-        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" }
+        { src: "v1770826437/shiplife/isle-of-pines/mssvdiz36xzshptxnfpr.jpg", caption: "Isle of Pines", alt: "Isle of Pines" },
+        { src: "shiplife/isle-of-pines/columnar_pines_island", caption: "The iconic columnar pines rising from the bay.", alt: "Columnar pines island" },
+        { src: "shiplife/isle-of-pines/beach_scene_1", caption: "Beach scene on Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/reef_through_pines", caption: "Looking at the reef through the pine branches.", alt: "Reef through pines" },
+        { src: "shiplife/isle-of-pines/beach_scene_2", caption: "Crystal clear water.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_3", caption: "The beaches of Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/tropical_garden", caption: "Tropical garden with bougainvillea.", alt: "Garden" },
+        { src: "shiplife/isle-of-pines/beach_scene_4", caption: "Paradise found.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_5", caption: "Isle of Pines.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/hilltop_panorama", caption: "Panoramic view from the hilltop - pine forests to the sea.", alt: "Hilltop view" },
+        { src: "shiplife/isle-of-pines/beach_scene_6", caption: "Shore leave on the island.", alt: "Beach" },
+        { src: "shiplife/isle-of-pines/beach_scene_7", caption: "The kind of water that doesn't look real.", alt: "Beach" }
     ],
 
     // ISTANBUL (12 images)
@@ -1008,10 +1032,20 @@ const locationGalleries = {
         { src: "shiplife/lemaire/img_6716", caption: "The unforgettable Lemaire Channel.", alt: "Final view" }
     ],
 
-    // LIFOU (2 images)
+    // LIFOU (12 images)
     "lifou": [
         { src: "v1768963793/New_Caldonia_church_t4pfw4.jpg", caption: "The church on Lifou - I visited every time we called here.", alt: "Lifou church" },
-        { src: "v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png", caption: "The guardian spider of Lifou.", alt: "Spider on Lifou" }
+        { src: "v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png", caption: "The guardian spider of Lifou.", alt: "Spider on Lifou" },
+        { src: "shiplife/lifou/beach_landing", caption: "Tender landing - passengers stepping onto paradise.", alt: "Beach landing" },
+        { src: "shiplife/lifou/beach_palms", caption: "Palm-lined beach at Lifou.", alt: "Beach with palms" },
+        { src: "shiplife/lifou/beach_water", caption: "Crystal clear water.", alt: "Beach water" },
+        { src: "shiplife/lifou/thatched_hut_banyan", caption: "Thatched shelter under the banyan tree.", alt: "Thatched hut" },
+        { src: "shiplife/lifou/beach_scene_1", caption: "The beaches of Lifou.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_2", caption: "Island paradise.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_3", caption: "Shore leave on Lifou.", alt: "Beach scene" },
+        { src: "shiplife/lifou/beach_scene_4", caption: "Time moved differently here.", alt: "Beach scene" },
+        { src: "shiplife/lifou/turquoise_bay_hut", caption: "The swimming spot - turquoise bay with beach hut.", alt: "Turquoise bay" },
+        { src: "shiplife/lifou/tender_approach", caption: "Approaching Lifou by tender.", alt: "Tender approach" }
     ],
 
     // LIPARI (5 images)
@@ -1317,7 +1351,7 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "New Caledonia", alt: "New Caledonia" }
     ],
 
-    // NOUMEA (10 images)
+    // NOUMEA (15 images)
     "noumea": [
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG", caption: "Local children, Noumea", alt: "Local children" },
         { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/002 2.JPG", caption: "Noumea", alt: "Noumea" },
@@ -1328,7 +1362,12 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0091.jpg", caption: "Noumea", alt: "Noumea" },
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0092.jpg", caption: "Noumea", alt: "Noumea" },
         { src: "w_400,q_auto,f_auto/shiplife/noumea/IMG_0094.jpg", caption: "Noumea", alt: "Noumea" },
-        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "Noumea", alt: "Noumea" }
+        { src: "w_400,q_auto,f_auto/shiplife/new-Caldonia/015.JPG", caption: "Noumea", alt: "Noumea" },
+        { src: "shiplife/noumea/coastline_view", caption: "Noumea coastline with Norfolk pines.", alt: "Coastline" },
+        { src: "shiplife/noumea/number_one_beer", caption: "Number One - the local beer with a view.", alt: "Number One beer" },
+        { src: "shiplife/noumea/pier_bw", caption: "The pier at Anse Vata in black and white.", alt: "Pier B&W" },
+        { src: "shiplife/noumea/pier_turquoise", caption: "Wooden pier with turquoise water.", alt: "Pier" },
+        { src: "shiplife/noumea/aquarium_entrance", caption: "Aquarium des Lagons - the local aquarium.", alt: "Aquarium" }
     ],
 
     // PERTH (3 images) - Title: "Photos from Perth"
@@ -4831,6 +4870,8 @@ an original composition inspired by this place.
                 <p>The water here is a color I didn't know existed. Shades of turquoise and aquamarine that seem painted rather than natural. Mount Otemanu rises dramatically from the lagoon - an ancient volcanic crater wrapped in mist.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764155/bora_bora_baby.jpg" class="story-image" alt="Mount Otemanu">
                 <p class="photo-caption-inline">Mount Otemanu - the iconic peak that dominates Bora Bora's skyline.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/bora-bora/mt_otemanu_beach.jpg" class="story-image" alt="Mt Otemanu from private island">
+                <p class="photo-caption-inline">The view from the private island. Palms, sandbar, and that mountain.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="story-image" alt="Off the main island">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764143/bora_bora_beach_-_Copy.jpg" class="story-image" alt="Bora Bora beach">
@@ -4841,6 +4882,8 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The Lagoon</span>
                 <h3 class="section-title-panel">Exploring the Island</h3>
                 <p>We spent the day exploring by jetski and boat, circling the main island through waters so clear you could see straight to the sandy bottom.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/bora-bora/jetski_beach.jpg" class="story-image" alt="Jetski beach">
+                <p class="photo-caption-inline">Jetskis on the private island beach. This was shore leave at its finest.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764108/098.jpg" class="story-image" alt="Bora Bora">
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764111/046.jpg" class="story-image" alt="Bora Bora">
@@ -5062,9 +5105,27 @@ an original composition inspired by this place.
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Island</span>
                 <h3 class="section-title-panel">Picture Perfect</h3>
-                <p>Lifou was one of those places that felt like a secret. A tender port on the regular P&O rotation through the South Pacific - Nouméa, Isle of Pines, Port Vila, and here.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lifou/tender_approach.jpg" class="story-image" alt="Approaching Lifou by tender">
+                <p class="photo-caption-inline">Approaching Lifou by tender. That water was real.</p>
+                <p>Lifou was one of those places that felt like a secret. A tender port on the regular P&O rotation through the South Pacific.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lifou/turquoise_bay_hut.jpg" class="story-image" alt="Turquoise bay">
+                <p class="photo-caption-inline">The bay where we swam. A thatched hut, turquoise water, green hills.</p>
                 <p>On the far side of the island was a swimming and snorkeling spot with water so clear it barely looked real. The kind of place you'd see in a travel brochure and assume was photoshopped.</p>
                 <p>But it was the church on the hill that kept drawing me back.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">Island Time</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lifou/thatched_hut_banyan.jpg" class="story-image" alt="Thatched hut under banyan">
+                <p class="photo-caption-inline">A local under his thatched shelter, banyan roots behind him.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/lifou/beach_scene_1.jpg" class="story-image" alt="Beach scene">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/lifou/beach_scene_2.jpg" class="story-image" alt="Beach scene">
+                </div>
+                <p class="photo-caption-inline">The beaches of Lifou. No resorts, no crowds. Just sand and water.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lifou/beach_scene_4.jpg" class="story-image" alt="Beach scene">
+                <p class="photo-caption-inline">Time moved differently here.</p>
             </div>
             
             <div class="story-section-panel">
@@ -11880,10 +11941,12 @@ an original composition inspired by this place.
 
             <div class="story-section-panel">
                 <h3 class="section-title-panel">Paradise Found</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/isle-of-pines/columnar_pines_island.jpg" class="story-image" alt="Columnar pines island">
+                <p class="photo-caption-inline">The iconic columnar pines rising from the water. This is why they call it Isle of Pines.</p>
                 <p>The Isle of Pines is one of those places that makes the travel brochures seem like they undersold it.</p>
                 <p>The water is so clear you can see straight to the bottom from the deck. The Melanesians call it Kunié, but the tall columnar pines that gave it its European name are impossible to miss. They rise from the white sand like something from another world.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/v1770826435/shiplife/isle-of-pines/eiagb8yexl3wdto22tig.jpg" class="story-image" alt="Isle of Pines" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
-                <p class="photo-caption-inline">The kind of water that doesn't look real until you're standing in it.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/isle-of-pines/reef_through_pines.jpg" class="story-image" alt="Reef through pines">
+                <p class="photo-caption-inline">Looking through the pine branches at the reef below. The water was impossibly clear.</p>
             </div>
 
             <div class="story-section-panel">
@@ -11892,6 +11955,14 @@ an original composition inspired by this place.
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_auto,f_auto/v1770826440/shiplife/isle-of-pines/tpdgnpy4lkvxtivahmf7.jpg" class="story-image" alt="Crew in the water" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
                 <p class="photo-caption-inline">The crew in the water. This is what we worked for.</p>
                 <p>We came here on the P&O South Pacific run, part of the regular rotation through New Caledonia. Nouméa, Lifou, and here. Each island different, but Isle of Pines was always the highlight.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <h3 class="section-title-panel">Exploring the Island</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/isle-of-pines/tropical_garden.jpg" class="story-image" alt="Tropical garden">
+                <p class="photo-caption-inline">Tropical gardens with bougainvillea. Color everywhere.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/isle-of-pines/hilltop_panorama.jpg" class="story-image" alt="Hilltop panorama">
+                <p class="photo-caption-inline">The view from the hilltop. Pine forests stretching to the sea in every direction.</p>
             </div>
 
             <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Isle of Pines' : '+ More about Isle of Pines'">+ More about Isle of Pines</p>
@@ -11917,13 +11988,50 @@ an original composition inspired by this place.
         shortDesc: "A slice of France beneath the Southern Cross.",
         useRichContent: true,
         richContent: `
-            <p>Noumea is what happens when France plants itself in the middle of the South Pacific.</p>
-            <p>The baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture, markets selling tropical fruit, and children with smiles that light up the beach.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">94,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Grande Terre</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇫🇷</span>
+                    <span class="demo-value">French Territory</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">First Impressions</span>
+                <h3 class="section-title-panel">France in the Pacific</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/coastline_view.jpg" class="story-image" alt="Noumea coastline">
+                <p class="photo-caption-inline">The coastline of Noumea. Norfolk pines and French colonial architecture.</p>
+                <p>Noumea is what happens when France plants itself in the middle of the South Pacific.</p>
+                <p>The baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture, markets selling tropical fruit, and children with smiles that light up the beach.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Shore Leave</span>
+                <h3 class="section-title-panel">Number One</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/number_one_beer.jpg" class="story-image" alt="Number One beer">
+                <p class="photo-caption-inline">Number One. The local beer. The turquoise water. This is what shore leave looks like.</p>
+                <p>Every port has its local beer. In New Caledonia, it's Number One. Cold, crisp, and best enjoyed with that view behind it.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">Anse Vata</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg" class="story-image" alt="Wooden pier">
+                <p class="photo-caption-inline">The wooden pier at Anse Vata. Turquoise water, swaying palms, green hills beyond.</p>
+                <p>Anse Vata is Noumea's main beach strip. Cafés, resorts, and that impossible water. The kind of blue that doesn't look real until you're standing in it.</p>
+            </div>
 
             ${generateGallery('noumea')}
         `,
         fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/new-Caldonia/004.JPG"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg"
     },
     {
         id: 137,
