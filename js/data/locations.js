@@ -9585,11 +9585,6 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The Marina</span>
                 <h3 class="section-title-panel">Port Denarau</h3>
                 <p>Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and the kind of yachts that make you wonder what you did wrong in life.</p>
-                <div class="image-row">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_138" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_138" data-caption="Port Denarau marina" alt="Marina">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_149" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_149" data-caption="Port Denarau" alt="Port Denarau">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_158" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_158" data-caption="Port Denarau waterfront" alt="Waterfront">
-                </div>
                 <p>The sailing yacht Nirvana was docked here when we visited - a $35 million beauty owned by the founder of Mango. The Fiji flag flew from her mast alongside the Spanish ensign.</p>
                 <p>There used to be a Hard Rock Cafe right on the marina. It closed in 2020, but back then it was still going strong, serving up burgers while the tropical sun set over the palm trees.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/fiji/fiji_hardrock" class="story-image" data-caption="The staff at Hard Rock Cafe Port Denarau performing for the crowd." alt="Hard Rock Cafe performance">
@@ -9600,6 +9595,10 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The Spirit</span>
                 <h3 class="section-title-panel">Bula</h3>
                 <p>"Bula!" - you'll hear it everywhere in Fiji. It means hello, welcome, love, happiness, everything good. The Fijian people say it with their whole being, and you feel it.</p>
+                <div class="image-row">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_138" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_138" data-caption="Fresh catch at the market" alt="Fish market">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_149" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_149" data-caption="Port Denarau marketplace" alt="Marketplace">
+                </div>
                 <p>Fiji is more than beaches. Suva, the capital on the other side of the main island, is the bustling heart of the South Pacific - a crossroads where Melanesian, Polynesian, and Indian cultures blend into something uniquely Fijian.</p>
                 <p>But out here at the resorts and marinas, time moves differently. The only urgency is deciding between the pool and the beach.</p>
             </div>
@@ -9607,6 +9606,8 @@ an original composition inspired by this place.
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Resort</span>
                 <h3 class="section-title-panel">Island Time</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/fiji/fiji_158" class="story-image" data-caption="Fiji Beach Resort & Spa - infinity pool overlooking the islands." alt="Resort pool">
+                <p class="photo-caption-inline">Fiji Beach Resort & Spa - where time stops completely.</p>
                 <p>We spent a day at the Fiji Beach Resort & Spa - one of those places where you can lose yourself completely. Traditional Fijian architecture with modern luxury. Infinity pools overlooking the Mamanuca Islands.</p>
                 <p>The staff remembered your name. The drinks kept appearing. And somewhere between the spa and the sunset, you forgot what day it was. That's the Fiji effect.</p>
             </div>
