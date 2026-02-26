@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T04:22:44.127Z
+// Shiplife Bundle - Generated 2026-02-26T04:39:46.191Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -75,9 +75,9 @@ const locationPortholeURLs = {
     "Sydney, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950196/marcie_00957__suiqhl.png",
     "Dubrovnik, Croatia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767950299/marcie_00998__uuyksn.png",
     "Ushuaia, Argentina": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767952701/marcie_01044__d7wlbn.png",
-    "Cairo, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954446/marcie_01091__g6f37b.png",
+    "Cairo, Egypt": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/cairo_icon.png",
     "Milos, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
-    "South Georgia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954452/marcie_01084__wkiyxh.png",
+    "South Georgia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/south_georgia_icon.png",
     "Bali, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954456/marcie_01078__lmxp7z.png",
     "Valletta, Malta": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954460/marcie_01076__naw5pw.png",
     "Ibiza, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00974__skii8k.png",
@@ -87,7 +87,7 @@ const locationPortholeURLs = {
     "Amazon River": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419439/ComfyUI_00694__gxxmvo.png",
     "Quebec City, Canada": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00700__i4ru8q.png",
     "Rio de Janeiro, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419439/ComfyUI_00664__adibta.png",
-    "Barcelona, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00737__zthmxj.png",
+    "Barcelona, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/barcelona_icon.png",
     "Portovenere, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00748__zuks5j.png",
     "Hobart, Tasmania": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00693__bw21n8.png",
     "Saguenay, Canada": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419438/ComfyUI_00709__desjzm.png",
@@ -97,7 +97,7 @@ const locationPortholeURLs = {
     "San Remo, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419428/ComfyUI_00757__cl8bge.png",
     "Roses, Spain": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419413/ComfyUI_00985__lilp6z.png",
     "Propriano, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00956__dx6t6k.png",
-    "Marseille, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00864__u1i1nf.png",
+    "Marseille, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/marseille_icon.png",
     "Le Lavandou, France": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00869__hehrgj.png",
     "Monte Carlo, Monaco": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419427/ComfyUI_00947__th5kfz.png",
     "Syracuse, Sicily": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01146__x2yqx0.png",
@@ -143,7 +143,7 @@ const locationPortholeURLs = {
     "Ravenna, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769195362/Ravenna_rmadgp.png",
     "Ponza, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00845__zqjdgd.png",
     "Amalfi, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00846__rstxah.png",
-    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
+    "Elba, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/elba_icon.png",
     "Lipari, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00850__auntjc.png",
     "Bonifacio, Corsica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896536/ComfyUI_00852__p4jual.png",
     "Barbados": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896540/ComfyUI_00857__dazqix.png",
@@ -183,7 +183,7 @@ const locationPortholeURLs = {
     "Fortaleza, Brazil": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206090/Foreleza_zwmguc.png",
     "Cartagena, Colombia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206089/Cartegena_j8icg7.png",
     "Lima, Peru": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206087/lima_tzjpsb.png",
-    "Reithi Rah, Maldives": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206085/maldives_jxswye.png",
+    "Reithi Rah, Maldives": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/maldives_icon.png",
     "Queen Victoria (Cunard)": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206085/Queen_Vic_w9m3tz.png",
     "Amsterdam, Netherlands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206677/amstrdam_zk9uyu.png",
     "San Juan, Puerto Rico": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769206678/san_juan_hw0fsw.png",
@@ -193,8 +193,8 @@ const locationPortholeURLs = {
     "Symi, Greece": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767954451/marcie_01087__tjhnoz.png",
     "Sorrento, Italy": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1767937420/marcie_00878__wknyxo.png",
     "Port Denarau, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
-    "Isle of Pines, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/ComfyUI_00862__nxc2he.png",
-    "Noumea, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/ComfyUI_00800__xlrtaq.png",
+    "Isle of Pines, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/isle_of_pines_icon.png",
+    "Noumea, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/noumea_icon.png",
 };
 
 // Icon configuration for each location
