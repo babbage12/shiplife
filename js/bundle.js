@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T04:51:38.800Z
+// Shiplife Bundle - Generated 2026-02-26T04:55:10.503Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -15372,6 +15372,9 @@ function checkHover(event) {
 let panelHistoryPushed = false;
 let closingFromCode = false; // Prevent popstate from re-calling closePanel
 
+// Track when panel opened to prevent ghost click on hero image (mobile)
+let panelOpenedAt = 0;
+
 // Handle browser back button - close panel instead of leaving page
 window.addEventListener('popstate', function(e) {
     if (closingFromCode) {
@@ -15413,6 +15416,9 @@ function openPanel(loc) {
             history.pushState({ panelOpen: true }, '');
             panelHistoryPushed = true;
         }
+
+        // Track open time to prevent ghost clicks on hero image (mobile)
+        panelOpenedAt = Date.now();
 
         // Close intro modal if it's open (first-time visitor clicking Toledo)
         closeIntroModalIfOpen();
@@ -15696,6 +15702,9 @@ function attachImageClickHandlers() {
     if (panelImage && panelImage.src) {
         panelImage.style.cursor = 'pointer';
         panelImage.onclick = function() {
+            // Ignore ghost clicks from touch event that opened the panel (mobile)
+            if (Date.now() - panelOpenedAt < 400) return;
+
             const caption = document.getElementById('panelImageCaption')?.textContent ||
                            document.getElementById('panelTitle')?.textContent || '';
             openLightbox(panelImage.src, caption);
