@@ -34,6 +34,7 @@ const defaultZoomDistance = 1.5;   // Default camera distance
 const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
 const zoomOutDistance = 4.8;      // Further back for celebration spin only
 const baseZoomInDistance = 1.7;
+const mobileZoomMultiplier = 0.82;  // Mobile zooms ~18% closer to icons
 const zoomOutDuration = 450;       // Faster zoom out
 const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
 const bridgeDuration = 800;        // Duration of the bridge bump animation

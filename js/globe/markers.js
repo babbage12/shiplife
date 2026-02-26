@@ -1643,11 +1643,11 @@ function calculateDensityFactors() {
 // Calculate zoom distance for a location - smaller icons zoom closer to match door appearance
 function getZoomDistanceForLocation(loc) {
     if (!globalDensityFactors || !loc) return baseZoomInDistance;
-    
+
     // Door size is the reference
     const doorSize = 0.040;
     const doorZoom = baseZoomInDistance; // Doors zoom to this distance
-    
+
     // Calculate this location's actual icon size
     let iconSize;
     if (loc.isDoor) {
@@ -1657,16 +1657,22 @@ function getZoomDistanceForLocation(loc) {
         const manualOverride = 1.0; // Could look up from sizeOverrides if needed
         iconSize = 0.0232 * densityFactor * manualOverride;
     }
-    
+
     // Calculate full proportional zoom
     const fullProportionalZoom = doorZoom * (iconSize / doorSize);
-    
+
     // Blend 50% between base zoom and full proportional (middle ground)
     const blendFactor = 0.5;
-    const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
-    
+    let zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
+
+    // Apply mobile zoom multiplier (zoom closer on smaller screens)
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        zoomDistance *= mobileZoomMultiplier;
+    }
+
     // Clamp to reasonable range
-    const minZoom = 1.20;
+    const minZoom = isMobile ? 1.0 : 1.20;
     return Math.max(zoomDistance, minZoom);
 }
 
