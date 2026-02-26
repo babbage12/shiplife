@@ -740,6 +740,61 @@ an original composition inspired by this place.
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769520695/DSCN0153_xibhy6.jpg"
     },
     {
+        id: 136,
+        title: "Noumea, New Caledonia",
+        coords: [-22.2758, 166.4580],
+        tag: "France in the Pacific",
+        icon: "🇫🇷",
+        isDoor: false,
+        shortDesc: "A slice of France beneath the Southern Cross.",
+        useRichContent: true,
+        richContent: `
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">👥</span>
+                    <span class="demo-value">94,000</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">📍</span>
+                    <span class="demo-value">Grande Terre</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🇫🇷</span>
+                    <span class="demo-value">French Territory</span>
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">First Impressions</span>
+                <h3 class="section-title-panel">France in the Pacific</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/coastline_view.jpg" class="story-image" alt="Noumea coastline">
+                <p class="photo-caption-inline">The coastline of Noumea. Norfolk pines and French colonial architecture.</p>
+                <p>Noumea is what happens when France plants itself in the middle of the South Pacific.</p>
+                <p>The baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture, markets selling tropical fruit, and children with smiles that light up the beach.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Shore Leave</span>
+                <h3 class="section-title-panel">Number One</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/number_one_beer.jpg" class="story-image" alt="Number One beer">
+                <p class="photo-caption-inline">Number One. The local beer. The turquoise water. This is what shore leave looks like.</p>
+                <p>Every port has its local beer. In New Caledonia, it's Number One. Cold, crisp, and best enjoyed with that view behind it.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Beach</span>
+                <h3 class="section-title-panel">Anse Vata</h3>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg" class="story-image" alt="Wooden pier">
+                <p class="photo-caption-inline">The wooden pier at Anse Vata. Turquoise water, swaying palms, green hills beyond.</p>
+                <p>Anse Vata is Noumea's main beach strip. Cafés, resorts, and that impossible water. The kind of blue that doesn't look real until you're standing in it.</p>
+            </div>
+
+            ${generateGallery('noumea')}
+        `,
+        fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg"
+    },
+    {
         id: 5,
         title: "Dubrovnik, Croatia",
         coords: [42.6507, 18.0944],
@@ -9590,61 +9645,6 @@ an original composition inspired by this place.
         `,
         fullDesc: "The Isle of Pines is one of those places that makes the travel brochures seem like they undersold it. The water is so clear you can see straight to the bottom from the deck.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770826437/shiplife/isle-of-pines/z7kivypgqmhjwrxxjygr.jpg"
-    },
-    {
-        id: 136,
-        title: "Noumea, New Caledonia",
-        coords: [-22.2758, 166.4580],
-        tag: "France in the Pacific",
-        icon: "🇫🇷",
-        isDoor: false,
-        shortDesc: "A slice of France beneath the Southern Cross.",
-        useRichContent: true,
-        richContent: `
-            <div class="demographics-strip">
-                <div class="demo-item">
-                    <span class="demo-icon">👥</span>
-                    <span class="demo-value">94,000</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">📍</span>
-                    <span class="demo-value">Grande Terre</span>
-                </div>
-                <div class="demo-item">
-                    <span class="demo-icon">🇫🇷</span>
-                    <span class="demo-value">French Territory</span>
-                </div>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">First Impressions</span>
-                <h3 class="section-title-panel">France in the Pacific</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/coastline_view.jpg" class="story-image" alt="Noumea coastline">
-                <p class="photo-caption-inline">The coastline of Noumea. Norfolk pines and French colonial architecture.</p>
-                <p>Noumea is what happens when France plants itself in the middle of the South Pacific.</p>
-                <p>The baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture, markets selling tropical fruit, and children with smiles that light up the beach.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">Shore Leave</span>
-                <h3 class="section-title-panel">Number One</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/number_one_beer.jpg" class="story-image" alt="Number One beer">
-                <p class="photo-caption-inline">Number One. The local beer. The turquoise water. This is what shore leave looks like.</p>
-                <p>Every port has its local beer. In New Caledonia, it's Number One. Cold, crisp, and best enjoyed with that view behind it.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Beach</span>
-                <h3 class="section-title-panel">Anse Vata</h3>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg" class="story-image" alt="Wooden pier">
-                <p class="photo-caption-inline">The wooden pier at Anse Vata. Turquoise water, swaying palms, green hills beyond.</p>
-                <p>Anse Vata is Noumea's main beach strip. Cafés, resorts, and that impossible water. The kind of blue that doesn't look real until you're standing in it.</p>
-            </div>
-
-            ${generateGallery('noumea')}
-        `,
-        fullDesc: "Noumea is what happens when France plants itself in the middle of the South Pacific.\n\nThe baguettes are real. The cafés have that unmistakable French feel. But step outside and you're surrounded by Melanesian culture.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/noumea/pier_turquoise.jpg"
     },
     {
         id: 137,
