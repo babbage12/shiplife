@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T00:40:33.180Z
+// Shiplife Bundle - Generated 2026-02-26T01:02:34.391Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -4462,6 +4462,7 @@ an original composition inspired by this place.
     {
         id: 14,
         title: "Wellington, New Zealand",
+        isComplete: true,
         coords: [-41.2865, 174.7762],
         tag: "Coolest Little Capital",
         icon: "🎉",
@@ -4999,6 +5000,7 @@ an original composition inspired by this place.
     {
         id: 117,
         title: "Lifou",
+        isComplete: true,
         coords: [-20.9167, 167.2833],
         tag: "The Guardian Spider",
         icon: "🕷️",
@@ -7762,6 +7764,7 @@ an original composition inspired by this place.
     {
         id: 54,
         title: "Propriano, Corsica",
+        isComplete: true,
         coords: [42.3, 8.4],
         tag: "Napoleon's Island",
         icon: "⛵",
@@ -10620,6 +10623,7 @@ an original composition inspired by this place.
     {
         id: 100,
         title: "Valparaíso, Chile",
+        isComplete: true,
         coords: [-33.05, -71.62],
         tag: "Bohemian Port",
         icon: "🎨",
@@ -11797,6 +11801,7 @@ an original composition inspired by this place.
     {
         id: 134,
         title: "Port Denarau, Fiji",
+        isComplete: true,
         coords: [-17.7765, 177.3800],
         tag: "Marina Paradise",
         icon: "⛵",
@@ -11816,6 +11821,7 @@ an original composition inspired by this place.
     {
         id: 135,
         title: "Isle of Pines, New Caledonia",
+        isComplete: true,
         coords: [-22.6167, 167.4833],
         tag: "The Closest to Paradise",
         icon: "🌴",
@@ -15770,8 +15776,10 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Check if a location has a complete story panel (1+ sections, 4+ images)
+    // Check if a location has a complete story panel (1+ sections, 4+ images, or manually marked)
     function isCompletePanel(loc) {
+        // Manual override - location marked as complete
+        if (loc.isComplete) return true;
         if (!loc.richContent) return false;
         // Count <h3 sections (matches both <h3> and <h3 class="...">)
         const h3Sections = (loc.richContent.match(/<h3[\s>]/g) || []).length;

@@ -2094,6 +2094,7 @@ an original composition inspired by this place.
     {
         id: 14,
         title: "Wellington, New Zealand",
+        isComplete: true,
         coords: [-41.2865, 174.7762],
         tag: "Coolest Little Capital",
         icon: "🎉",
@@ -2631,6 +2632,7 @@ an original composition inspired by this place.
     {
         id: 117,
         title: "Lifou",
+        isComplete: true,
         coords: [-20.9167, 167.2833],
         tag: "The Guardian Spider",
         icon: "🕷️",
@@ -5394,6 +5396,7 @@ an original composition inspired by this place.
     {
         id: 54,
         title: "Propriano, Corsica",
+        isComplete: true,
         coords: [42.3, 8.4],
         tag: "Napoleon's Island",
         icon: "⛵",
@@ -8252,6 +8255,7 @@ an original composition inspired by this place.
     {
         id: 100,
         title: "Valparaíso, Chile",
+        isComplete: true,
         coords: [-33.05, -71.62],
         tag: "Bohemian Port",
         icon: "🎨",
@@ -9429,6 +9433,7 @@ an original composition inspired by this place.
     {
         id: 134,
         title: "Port Denarau, Fiji",
+        isComplete: true,
         coords: [-17.7765, 177.3800],
         tag: "Marina Paradise",
         icon: "⛵",
@@ -9448,6 +9453,7 @@ an original composition inspired by this place.
     {
         id: 135,
         title: "Isle of Pines, New Caledonia",
+        isComplete: true,
         coords: [-22.6167, 167.4833],
         tag: "The Closest to Paradise",
         icon: "🌴",

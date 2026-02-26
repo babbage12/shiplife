@@ -7,8 +7,10 @@ function buildLocationList() {
     const list = document.getElementById('locationList');
     const doorsComplete = isGuidedComplete();
 
-    // Check if a location has a complete story panel (1+ sections, 4+ images)
+    // Check if a location has a complete story panel (1+ sections, 4+ images, or manually marked)
     function isCompletePanel(loc) {
+        // Manual override - location marked as complete
+        if (loc.isComplete) return true;
         if (!loc.richContent) return false;
         // Count <h3 sections (matches both <h3> and <h3 class="...">)
         const h3Sections = (loc.richContent.match(/<h3[\s>]/g) || []).length;
