@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T03:15:11.561Z
+// Shiplife Bundle - Generated 2026-02-26T04:22:44.127Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -113,7 +113,7 @@ const locationPortholeURLs = {
     "Yalta, Ukraine": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511153/ComfyUI_01111__ydffje.png",
     "Muscat, Oman": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419412/ComfyUI_01055__nn4tuv.png",
     "Nessebar, Bulgaria": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768419411/ComfyUI_01146__x2yqx0.png",
-    "Christmas Island": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01202__yd7eff.png",
+    "Christmas Island, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01202__yd7eff.png",
     "Rarotonga, Cook Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01206__duz5ib.png",
     "Suva, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
     "Apia, Samoa": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511021/ComfyUI_01218__asqixa.png",
@@ -164,10 +164,10 @@ const locationPortholeURLs = {
     "Komodo Island, Indonesia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769896535/ComfyUI_00840__fycycg.png",
     "Dili, East Timor": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197678/Dili_qfmvy8.png",
     "Tauranga, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/tauranga_2_kz6fnc.png",
-    "Perth, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/perth_dpqn2h.png",
+    "Perth / Fremantle, Australia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197674/perth_dpqn2h.png",
     "Lemaire Channel, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/Lemaire_channel_bp4n2s.png",
     "Port Lockroy, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/port_lockroy_ysnts1.png",
-    "Petermann Island, Antarctica": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/port_lockroy_ysnts1.png",
+    "Antarctica - Petermann Island": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769197673/port_lockroy_ysnts1.png",
     "Falkland Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199444/falkland_islands_anuweu.png",
     "Beagle Channel, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/beagle_channel_p92ljy.png",
     "Puerto Montt, Chile": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1769199440/Puerto_Montt_3_eavalr.png",
@@ -14649,7 +14649,11 @@ function createMarkers() {
         // Israel
         "Haifa, Israel": 0.85,
         // Indonesia
-        "Celukan Bawang, Indonesia": 0.80
+        "Celukan Bawang, Indonesia": 0.80,
+        // Door size adjustments - all three chapter doors
+        "Toledo, Ohio": 0.56,
+        "Darwin, Australia": 0.56,
+        "Auckland, New Zealand": 0.56
     };
 
     locations.forEach((loc, index) => {

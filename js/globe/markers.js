@@ -1804,7 +1804,11 @@ function createMarkers() {
         // Israel
         "Haifa, Israel": 0.85,
         // Indonesia
-        "Celukan Bawang, Indonesia": 0.80
+        "Celukan Bawang, Indonesia": 0.80,
+        // Door size adjustments - all three chapter doors
+        "Toledo, Ohio": 0.56,
+        "Darwin, Australia": 0.56,
+        "Auckland, New Zealand": 0.56
     };
 
     locations.forEach((loc, index) => {
