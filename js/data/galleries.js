@@ -478,6 +478,10 @@ const locationGalleries = {
         { src: "v1770836871/shiplife/figi/qdaurdhcpenfyjhwpb8d.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836873/shiplife/figi/xedg78fdmu2pmlagygsv.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg", caption: "Yacht Nirvana", alt: "Yacht Nirvana" },
+        { src: "shiplife/fiji/fiji_138", caption: "Port Denarau marina.", alt: "Port Denarau marina" },
+        { src: "shiplife/fiji/fiji_149", caption: "Port Denarau.", alt: "Port Denarau" },
+        { src: "shiplife/fiji/fiji_hardrock", caption: "Hard Rock Cafe staff performing.", alt: "Hard Rock performance" },
+        { src: "shiplife/fiji/fiji_158", caption: "Port Denarau waterfront.", alt: "Waterfront" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0736.jpg", caption: "Resort pool at Fiji Beach Resort", alt: "Fiji resort pool" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0745.jpg", caption: "Traditional Fijian architecture", alt: "Fijian interior" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0747.jpg", caption: "Fiji Beach Resort & Spa entrance", alt: "Resort entrance" }
@@ -561,6 +565,8 @@ const locationGalleries = {
         { src: "shiplife/hobart/022", caption: "Historic Hobart.", alt: "Historic Hobart" },
         { src: "shiplife/hobart/bar-crew", caption: "At the bar with Jesse, Alec, and Carly.", alt: "Crew at the bar" },
         { src: "shiplife/hobart/heading-to-bar", caption: "Thomas, Fabio, and me heading to the bar.", alt: "Heading to the bar" },
+        { src: "shiplife/hobart/hobart_039", caption: "Night out in Hobart.", alt: "Night out" },
+        { src: "shiplife/hobart/irish_murphys", caption: "Irish Murphy's pub in Hobart.", alt: "Irish Murphy's" },
         { src: "shiplife/hobart/pp2011-379", caption: "Hobart harbor.", alt: "Hobart harbor" },
         { src: "shiplife/hobart/pp2011-385", caption: "Hobart.", alt: "Hobart" }
     ],

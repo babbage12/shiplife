@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-02-26T05:35:01.263Z
+// Shiplife Bundle - Generated 2026-02-26T05:40:33.272Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -747,6 +747,10 @@ const locationGalleries = {
         { src: "v1770836871/shiplife/figi/qdaurdhcpenfyjhwpb8d.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836873/shiplife/figi/xedg78fdmu2pmlagygsv.jpg", caption: "Port Denarau", alt: "Port Denarau" },
         { src: "v1770836874/shiplife/figi/kvqmagvdz6llvpr2hwcw.jpg", caption: "Yacht Nirvana", alt: "Yacht Nirvana" },
+        { src: "shiplife/fiji/fiji_138", caption: "Port Denarau marina.", alt: "Port Denarau marina" },
+        { src: "shiplife/fiji/fiji_149", caption: "Port Denarau.", alt: "Port Denarau" },
+        { src: "shiplife/fiji/fiji_hardrock", caption: "Hard Rock Cafe staff performing.", alt: "Hard Rock performance" },
+        { src: "shiplife/fiji/fiji_158", caption: "Port Denarau waterfront.", alt: "Waterfront" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0736.jpg", caption: "Resort pool at Fiji Beach Resort", alt: "Fiji resort pool" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0745.jpg", caption: "Traditional Fijian architecture", alt: "Fijian interior" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0747.jpg", caption: "Fiji Beach Resort & Spa entrance", alt: "Resort entrance" }
@@ -830,6 +834,8 @@ const locationGalleries = {
         { src: "shiplife/hobart/022", caption: "Historic Hobart.", alt: "Historic Hobart" },
         { src: "shiplife/hobart/bar-crew", caption: "At the bar with Jesse, Alec, and Carly.", alt: "Crew at the bar" },
         { src: "shiplife/hobart/heading-to-bar", caption: "Thomas, Fabio, and me heading to the bar.", alt: "Heading to the bar" },
+        { src: "shiplife/hobart/hobart_039", caption: "Night out in Hobart.", alt: "Night out" },
+        { src: "shiplife/hobart/irish_murphys", caption: "Irish Murphy's pub in Hobart.", alt: "Irish Murphy's" },
         { src: "shiplife/hobart/pp2011-379", caption: "Hobart harbor.", alt: "Hobart harbor" },
         { src: "shiplife/hobart/pp2011-385", caption: "Hobart.", alt: "Hobart" }
     ],
@@ -7544,6 +7550,11 @@ an original composition inspired by this place.
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/bar-crew" class="inline-image" alt="At the bar" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
                 </div>
                 <p class="photo-caption-inline">Thomas, Fabio, and me heading out. Then at the bar with Jesse, Alec, and Carly.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/hobart_039" class="inline-image" alt="Night out in Hobart" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/hobart/irish_murphys" class="inline-image" alt="Irish Murphy's pub" onclick="openLightbox(this.src.replace('w_600', 'w_1600'))" style="cursor:pointer">
+                </div>
+                <p class="photo-caption-inline">The night continued at Irish Murphy's - a proper pub crawl through Hobart.</p>
             </div>
 
             <div class="story-section-panel">
@@ -12005,8 +12016,15 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The Marina</span>
                 <h3 class="section-title-panel">Port Denarau</h3>
                 <p>Port Denarau is Fiji's playground - a marina lined with resorts, restaurants, and the kind of yachts that make you wonder what you did wrong in life.</p>
+                <div class="image-row">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_138" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_138" data-caption="Port Denarau marina" alt="Marina">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_149" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_149" data-caption="Port Denarau" alt="Port Denarau">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/fiji/fiji_158" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/fiji/fiji_158" data-caption="Port Denarau waterfront" alt="Waterfront">
+                </div>
                 <p>The sailing yacht Nirvana was docked here when we visited - a $35 million beauty owned by the founder of Mango. The Fiji flag flew from her mast alongside the Spanish ensign.</p>
                 <p>There used to be a Hard Rock Cafe right on the marina. It closed in 2020, but back then it was still going strong, serving up burgers while the tropical sun set over the palm trees.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/fiji/fiji_hardrock" class="story-image" data-caption="The staff at Hard Rock Cafe Port Denarau performing for the crowd." alt="Hard Rock Cafe performance">
+                <p class="photo-caption-inline">The Hard Rock staff performing for the crowd. This was the Fiji of 2010.</p>
             </div>
 
             <div class="story-section-panel">
