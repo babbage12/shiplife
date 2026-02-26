@@ -3,6 +3,22 @@
 // Side panel open/close/expand functionality
 // ============================================
 
+// Track if we pushed a history state for the panel (for mobile back button)
+let panelHistoryPushed = false;
+let closingFromCode = false; // Prevent popstate from re-calling closePanel
+
+// Handle browser back button - close panel instead of leaving page
+window.addEventListener('popstate', function(e) {
+    if (closingFromCode) {
+        closingFromCode = false;
+        return;
+    }
+    if (sidePanel.classList.contains('open')) {
+        // Back button pressed while panel is open
+        panelHistoryPushed = false; // Already popped by back button
+        closePanel();
+    }
+});
 
 function triggerBounce(locationId) {
     // Don't restart bounce if already bouncing this marker
@@ -26,6 +42,12 @@ function stopBounce() {
 function openPanel(loc) {
     try {
         currentLocation = loc;
+
+        // Push history state so mobile back button closes panel instead of leaving
+        if (!panelHistoryPushed) {
+            history.pushState({ panelOpen: true }, '');
+            panelHistoryPushed = true;
+        }
 
         // Close intro modal if it's open (first-time visitor clicking Toledo)
         closeIntroModalIfOpen();
@@ -396,6 +418,13 @@ function attachImageClickHandlers() {
 }
 
 function closePanel() {
+    // Pop history state if we pushed one (keeps history clean)
+    if (panelHistoryPushed) {
+        panelHistoryPushed = false;
+        closingFromCode = true;
+        history.back();
+    }
+
     // Stop background music with fade out
     stopBackgroundMusic();
 
