@@ -2291,16 +2291,16 @@
                 left: 0;
                 top: 15%;
                 bottom: 15%;
-                width: 65%;
-                max-width: 280px;
-                background: rgba(10, 22, 40, 0.75);
-                backdrop-filter: blur(8px);
-                -webkit-backdrop-filter: blur(8px);
+                width: 60%;
+                max-width: 250px;
+                background: rgba(0, 0, 0, 0.35);
+                backdrop-filter: blur(3px);
+                -webkit-backdrop-filter: blur(3px);
                 transform: translateX(-100%);
                 transition: transform 0.3s ease;
-                padding: 15px 10px;
+                padding: 12px 8px;
                 z-index: 200;
-                border-radius: 0 15px 15px 0;
+                border-radius: 0 12px 12px 0;
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
@@ -2312,14 +2312,14 @@
             /* Mobile location items - minimal text list */
             .location-list .location-item {
                 display: block;
-                padding: 8px 12px;
+                padding: 6px 10px;
                 border: none;
-                border-radius: 6px;
+                border-radius: 4px;
                 transition: background 0.2s ease;
             }
 
             .location-list .location-item:active {
-                background: rgba(212, 165, 116, 0.2);
+                background: rgba(212, 165, 116, 0.15);
             }
 
             /* Hide icon completely on mobile */
@@ -2328,9 +2328,9 @@
             }
 
             .location-list .location-item .name {
-                font-size: 0.8rem;
-                color: rgba(245, 240, 232, 0.9);
-                text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+                font-size: 0.75rem;
+                color: rgba(245, 240, 232, 0.95);
+                text-shadow: 0 1px 4px rgba(0,0,0,0.8);
             }
 
             .location-list .location-item.door .name {
@@ -2342,29 +2342,29 @@
             }
 
             .location-list .location-item.door .chapter-label {
-                font-size: 0.6rem;
-                color: rgba(212, 165, 116, 0.7);
+                font-size: 0.55rem;
+                color: rgba(212, 165, 116, 0.8);
                 text-transform: uppercase;
                 letter-spacing: 0.08em;
                 font-weight: 400;
             }
 
             .location-list .location-item.door .location-name {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
                 color: #d4a574;
                 font-weight: 500;
             }
 
             .location-list .location-item.door {
-                background: rgba(212, 165, 116, 0.1);
-                border-radius: 6px;
-                margin-bottom: 4px;
+                background: rgba(212, 165, 116, 0.08);
+                border-radius: 4px;
+                margin-bottom: 2px;
             }
 
-            /* Fallback: If backdrop-filter causes issues, use more solid background */
+            /* Fallback: If backdrop-filter causes issues, use slightly more solid background */
             @supports not (backdrop-filter: blur(1px)) {
                 .location-list {
-                    background: rgba(10, 22, 40, 0.92);
+                    background: rgba(0, 0, 0, 0.5);
                 }
             }
 
@@ -2569,14 +2569,14 @@
             }
         }
 
-        /* Mobile overlay - subtle darkening */
+        /* Mobile overlay - very subtle darkening */
         .mobile-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.15);
             z-index: 180;
             opacity: 0;
             pointer-events: none;
