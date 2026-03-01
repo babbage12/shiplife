@@ -148,20 +148,15 @@ const locations = [
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Test</span>
                 <h3 class="section-title-panel">Two Days</h3>
-                <p>Brisbane was the first real port of call after leaving Auckland. The previous two nights had been spent performing in the same club where the previous soloist lasted exactly two days.</p>
-                <p>The warning before boarding was clear: this is just how it was - don't be shocked if things don't work out.</p>
+                <p>Brisbane was the first real port of call after I joined my first ship. I was performing in the same club where the previous guitarist/vocalist had lasted exactly two days.</p>
+                <p>But I was encouraged by the crowds I was getting in the nightclub at night. Granted, there was beer in there, and this was a cruise ship so the bar would have probably been full even if I was playing a trombone. But it was the enthusiasm of the crowd that was keeping me positive.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1772321183/shiplife/brisbane/smugglers-crowd-dancing.png" class="story-image" alt="Smugglers Lounge with dancing crowd">
+                <p class="photo-caption-inline">Smugglers Lounge. The crowd was keeping me positive.</p>
+                <p>Yet even in the midst of my modest success, I was in no mood to clap myself on the back. The assistant cruise director's words had been ringing in my head since he spoke them that first morning - this is just how it was, don't be shocked if things don't work out.</p>
+                <p>So it was a bit of an anxious morning as our ship pulled into Brisbane. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out. Fourteen years of cubicles and ringing phones, and the safety net was still dangling there, waiting to catch me if this all fell apart.</p>
+                <p>The plan was to sit around in my cabin until the staff captain gave the crew shore leave announcement. At 9am the speaker in my room crackled and the announcement was made. I was free to explore Brisbane and the Australian Gold Coast.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770827962/shiplife/brisbane/yvkbyzev0b4wz8f1dkcf.jpg" class="story-image" alt="Brisbane">
                 <p class="photo-caption-inline">Brisbane, Queensland.</p>
-                <p>Mentally prepared for a call from the cruise director's office saying "Thanks, but no thanks" along with a plane ticket home.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Morning</span>
-                <h3 class="section-title-panel">Anxious Breakfast</h3>
-                <p>It was an anxious morning. Breakfast with a few random crewmates, thinking about my boss back home who said the phone job would still be there if things didn't work out.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770827965/shiplife/brisbane/xbwwlhrrdjvpvxw1csfs.jpg" class="story-image" alt="Brisbane shore leave">
-                <p class="photo-caption-inline">First time off the ship.</p>
-                <p>The phone job. Fourteen years of cubicles and ringing phones, and the safety net was still dangling there, waiting to catch me if this all fell apart.</p>
             </div>
 
             <div class="story-section-panel">
@@ -588,52 +583,154 @@ const locations = [
         title: "Reithi Rah, Maldives",
         coords: [4.2925, 73.3670],
         tag: "Shark-Infested Paradise",
-        icon: "🦈",
+        customIcon: "maldives",
         isDoor: false,
-        tag: "🎵 Original Song",
         useRichContent: true,
         richContent: `
-        <div class="song-panel">
-            <div class="song-status">
-                <span class="status-label">Original Song</span>
-                <span class="status-text">Coming Soon</span>
+            <div class="demographics-strip">
+                <span class="demo-item"><strong>One Atoll</strong> Resort</span>
+                <span class="demo-item"><strong>Dec 2012</strong> - Jan 2013</span>
+                <span class="demo-item"><strong>1 Month</strong> Stay</span>
             </div>
 
             <div class="story-section-panel">
-                <h3>Reserved for Music</h3>
-                <p>This location has been set aside for an original song. The music is being written as a tribute to this place and the memories it holds.</p>
-                <p><strong>Mood:</strong> Peaceful / Dreamy</p>
-                <p><strong>Theme:</strong> Paradise found, simplicity, floating on water</p>
+                <span class="section-tag-panel">The Call</span>
+                <h3 class="section-title-panel">Around the World Twice</h3>
+                <p>My friend Hayden called my cabin one day: "I just joined the ship for a week. We have to talk." He needed a third person for a party band he was putting together in the Maldives. The timing was tight. I finished my contract in Australia, flew home to Toledo for two days, then turned around and flew right back across the globe to Male.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/maldives/hammock-cropped" class="story-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/hammock-cropped" data-caption="Island life">
             </div>
 
-            <div class="lyrics-section" onclick="this.classList.toggle('expanded')">
-                <div class="lyrics-header">
-                    <span class="lyrics-title">
-                        <span class="lyrics-icon">📝</span>
-                        <span>Lyrics</span>
-                    </span>
-                    <span class="lyrics-toggle">▼</span>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Arrival</span>
+                <h3 class="section-title-panel">The Boat</h3>
+                <p>I spent the night in Doha and in the morning flew into <span class="male-density-link">Malé</span>, one of the most densely populated areas on the planet. They had sent a speedboat to pick me up.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0070" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0070" data-caption="The speedboat" alt="Speedboat">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0071" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0071" data-caption="One & Only" alt="The boat">
                 </div>
-                <div class="lyrics-content">
-                    <div class="lyrics-text">
-<span class="verse-label">Coming Soon</span>
+                <p>After about an hour's ride, we pulled into a dock deep in a forested lagoon.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0079-2" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0079-2" data-caption="The dock" alt="Dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0080-2" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0080-2" data-caption="Arrival" alt="Arrival">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0081" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0081" data-caption="Into the jungle" alt="Jungle dock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0083-2" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0083-2" data-caption="Welcome to Reithi Rah" alt="Welcome">
+                </div>
+                <p>They dropped me off, I found my room, and I don't remember anything after that. I slept for a day, a night, and half of another day. When I finally opened my eyes, I was in a cozy bed looking out at a jungle. Hayden was knocking on my door with coffee and breakfast.</p>
+            </div>
 
-Lyrics will appear here when the song is complete.
-
-This space is reserved for "Reithi Rah, Maldives" -
-an original composition inspired by this place.
-                    </div>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Paradise</span>
+                <h3 class="section-title-panel">My Jungle Home</h3>
+                <p>They had given me a jungle house, 50 steps from the ocean. Every morning, cold water was delivered to my door. The air was thick with humidity and birdsong.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/maldives/img_0076" class="story-image" data-caption="My jungle house">
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0149" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0149" data-caption="View from bed" alt="Jungle home">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0156" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0156" data-caption="The deck" alt="Deck">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0010" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0010" data-caption="Jungle home" alt="Jungle home">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0154" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0154" data-caption="Jungle home" alt="Jungle home">
                 </div>
             </div>
 
-            <div class="audio-player-container">
-                <p style="text-align: center; font-size: 0.85rem; color: rgba(245,240,232,0.6); margin: 0;">
-                    🎵 Audio player will appear when song is released
-                </p>
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Exploring</span>
+                <h3 class="section-title-panel">The Island</h3>
+                <p>I had a whole month to explore this place. Narrow sandy pathways wound through the jungle, connecting different parts of the resort.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/maldives/img_0042" class="story-image" data-caption="Guitar on the beach">
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0029" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0029" data-caption="Sunset" alt="Sunset">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0030" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0030" data-caption="Hammock life" alt="Hammock">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0031" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0031" data-caption="The beach" alt="Beach">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/maldives/img_0034" class="story-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0034" data-caption="The lagoon">
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0128" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0128" data-caption="Giant chess" alt="Chess">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0129" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0129" data-caption="Island life" alt="Island life">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0062" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0062" data-caption="Island pathways" alt="Garden pathway">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0064" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0064" data-caption="Island pathways" alt="Garden pathway">
+                </div>
             </div>
-        </div>`,
-        fullDesc: "Ah...the Maldives. A shark-infested paradise.\n\nDaily walks through dense tropical forest. One day, the largest man I'd seen in my life came running towards me on the narrow path-one of the oligarchs' bodyguards. They were here for Christmas, and the island was flooded with them.\n\nReef sharks by the restaurant door. Millions bet on beach card games. At some point I had to stop myself from saying wow all the time.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729034/IMG_0038_cbv7ss.jpg"
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Gig</span>
+                <h3 class="section-title-panel">Playing Paradise</h3>
+                <p>We played every night in the main club. Afternoon performances by the water, evening sets under the stars. It was the kind of gig musicians dream about.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0146" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0146" data-caption="The stage at night" alt="Stage">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0147" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0147" data-caption="Our setup" alt="Setup">
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/maldives/img_0100" class="story-image" data-caption="Performing by the water">
+                <p>The reef sharks were everywhere. Swimming by the restaurant, circling near the beach.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0092" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0092" data-caption="Please Do Not Feed The Fish" alt="Sign">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0861" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0861" data-caption="Reef shark" alt="Shark">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Celebration</span>
+                <h3 class="section-title-panel">New Year's Eve</h3>
+                <p>Then came New Year's. Fireworks through the palm trees, going off all over the island. Rumor had it that a certain Spice Girl was on the island with her famous footballer husband. In all honesty, everyone on the island looked like a Beckham. At $30,000 a week, they could afford to.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0052" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0052" data-caption="New Year's Eve" alt="NYE">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0054" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0054" data-caption="Fireworks through palms" alt="Fireworks">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0056" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0056" data-caption="Midnight" alt="Midnight">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Resort Life</span>
+                <h3 class="section-title-panel">The Oligarchs</h3>
+                <p>One day Hayden and I were playing pool when we heard there was a poker game going on down at the beach. Russian oligarchs were betting million-dollar hands. We decided not to ask if we could join.</p>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0066" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0066" data-caption="The pool table" alt="Pool table">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0069-2" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0069-2" data-caption="Evening game" alt="Playing pool">
+                </div>
+                <p>It was Russian New Year and the island was full of bodyguards. I saw the largest man I had ever seen in my life walking swiftly towards me on one of the narrow sandy pathways. He had the disposition of a James Bond villain. Turns out he was just out for a morning stroll.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Dining</span>
+                <h3 class="section-title-panel">The Food</h3>
+                <p>The food was extraordinary. Incredible buffets with personal chefs every night. There was <span class="tapasake-link">Tapasake</span>, the Japanese restaurant suspended over the water. At some point I had to stop myself from saying "wow" all the time.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0093" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0093" data-caption="Breakfast" alt="Breakfast">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0094" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0094" data-caption="Japanese appetizers" alt="Japanese">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0104" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0104" data-caption="Asahi and friends" alt="Beer">
+                </div>
+                <div class="image-row image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0865" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0865" data-caption="Sushi spread" alt="Sushi">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0143" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0143" data-caption="The bar" alt="Bar">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Adventures</span>
+                <h3 class="section-title-panel">Day Trips</h3>
+                <p>Sometimes we took day trips to different atolls. Each one felt like discovering a new world.</p>
+                <div class="image-row image-row-3">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0187" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0187" data-caption="The atolls from above" alt="Atoll">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0190" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0190" data-caption="Overwater bungalows" alt="Bungalows">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/maldives/img_0880" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0880" data-caption="The marina" alt="Marina">
+                </div>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Reflection</span>
+                <h3 class="section-title-panel">The Quiet After</h3>
+                <p>Eventually the holiday celebrations wound down and the island fell quiet. Hayden caught an early flight out, and I was left alone with my guitar and my luggage, sitting on a dock in the middle of the Indian Ocean.</p>
+                <p>This was the job. Flying around the world twice in five days to play music in paradise. Sometimes you have to stop and let that sink in.</p>
+            </div>
+
+            ${typeof generateGallery === 'function' ? generateGallery('maldives') : ''}
+        `,
+        fullDesc: "A last-minute call from a friend. Around the world twice in five days. A month in a jungle house on a shark-infested atoll, playing music for oligarchs and celebrities. Russian bodyguards. Million-dollar poker games. New Year's fireworks through the palm trees.",
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/maldives/img_0039"
     },
     {
         id: 3,
@@ -835,56 +932,86 @@ an original composition inspired by this place.
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084065/IMG_2074.jpg" class="story-image" data-caption="Down the hill toward the walled city." alt="Down the hill toward the walled city">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083976/IMG_2073.jpg" class="story-image" data-caption="Coffee and a guide to the city." alt="Coffee and a guide to the city">
                 <p>I stopped for a cup of coffee and bought a guide to the city. And spent the next day and night immersed in the ancient sights and sounds of Dubrovnik.</p>
-
-                <div class="story-carousel">
-                    <div class="carousel-slide active">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770084166/IMG_2090.jpg" alt="Inside the walled city">
-                        <div class="carousel-caption"><span>Inside the walled city</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080877/IMG_2738.jpg" alt="Walking through the old city">
-                        <div class="carousel-caption"><span>Walking through the old city</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080876/IMG_2739.jpg" alt="Dubrovnik streets">
-                        <div class="carousel-caption"><span>The ancient streets</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2744.jpg" alt="Dubrovnik architecture">
-                        <div class="carousel-caption"><span>Centuries of architecture</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080865/IMG_2757.jpg" alt="Dubrovnik scenery">
-                        <div class="carousel-caption"><span>Around every corner</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080863/IMG_2762.jpg" alt="Views from the old city">
-                        <div class="carousel-caption"><span>Views from the old city</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2123.jpg" alt="The old harbor">
-                        <div class="carousel-caption"><span>The old harbor</span></div>
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148994/IMG_2137.jpg" alt="The bastions">
-                        <div class="carousel-caption"><span>The bastions along the city walls</span></div>
-                    </div>
-                    <div class="carousel-dots"></div>
-                </div>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Old City</span>
                 <h3 class="section-title-panel">Through the Gates</h3>
-                <p>We had already seen a lot of ruins and ancient cities on our trip up the Adriatic. However, nothing prepared me for walking through those gates and being transported back into the Middle Ages.</p>
-                <blockquote class="story-quote">It wasn't just the architecture - it was the feeling. As if centuries collapsed the moment you stepped through that stone archway.</blockquote>
+                <p>Walking toward the walled city for the first time, I was immediately reminded of a story from long ago. Hans Christian Andersen's <em>The Steadfast Tin Soldier</em> - I'd read it so many times as a kid that the illustrations had stuck with me. A tiny soldier swept through gutters in a paper boat, drifting toward a walled city he'd never reach.</p>
+                <p>I remember being fascinated by the story but sad that the soldier never made it. I always wanted him to reach those castle walls.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770080875/IMG_2749.jpg" class="story-image" data-caption="Dubrovnik old town." alt="Dubrovnik old town">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149005/IMG_2120.jpg" class="story-image" data-caption="Cannons still guarding the walls." alt="Cannons on the city walls">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149008/IMG_2113.jpg" class="story-image" data-caption="Walking toward the gates." alt="Walking toward the gates of Dubrovnik">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2116.jpg" class="story-image" data-caption="At the gates." alt="At the gates of Dubrovnik">
                 </div>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148991/IMG_2142.jpg" class="story-image" data-caption="Boats in the old harbor." alt="Boats in Dubrovnik harbor">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770148990/IMG_2148.jpg" class="story-image" data-caption="Dubrovnik harbor boats." alt="Harbor boats">
+                <p class="photo-caption-inline">I hadn't thought about that story in years. But walking up to those gates, it came back to me - and I smiled, because this time the soldier made it through.</p>
+                <p>We had already seen a lot of ruins and ancient cities on our trip up the Adriatic. But nothing prepared me for walking through those gates and being transported back into the Middle Ages.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/gates_harbor_view" class="story-image" data-caption="Through the ancient iron bars, the harbor sparkles below." alt="View through the gates">
+                <p class="photo-caption-inline">Through the ancient iron bars of the fortress wall, the harbor sparkles below - boats bobbing where medieval galleys once anchored.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/harbor_monastery" class="story-image" data-caption="The Dominican Monastery bell tower rises above the harbor." alt="Harbor and monastery">
+                <p class="photo-caption-inline">The Dominican Monastery bell tower rises above the old harbor, unchanged since the 14th century.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Streets</span>
+                <h3 class="section-title-panel">Lost in the Labyrinth</h3>
+                <p>The streets of Dubrovnik are a maze of limestone alleys, green-shuttered windows, and church spires piercing the sky. Every corner reveals another postcard. Laundry hangs between medieval buildings. Cats doze on warm stones. The smell of fresh bread drifts from a bakery that's been here for generations.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_04" class="story-image" data-caption="The Stradun opens into the main square." alt="Dubrovnik main square">
+                <p class="photo-caption-inline">The Stradun opens into the main square - St. Blaise Church on the right, the Cathedral dome rising behind.</p>
+                <div class="story-carousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_bell_tower" alt="Bell tower and green shutters">
+                        <div class="carousel-caption"><span>Stone facades and green shutters beneath the bell tower</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_alley" alt="Narrow alley with shops">
+                        <div class="carousel-caption"><span>Narrow alleys lined with shops and cafes</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_02" alt="Medieval streets">
+                        <div class="carousel-caption"><span>Medieval streets worn smooth by centuries of footsteps</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_03" alt="Dubrovnik architecture">
+                        <div class="carousel-caption"><span>Baroque architecture rebuilt after the great earthquake of 1667</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/streets_steps" alt="Stone steps">
+                        <div class="carousel-caption"><span>Countless stone steps connecting the upper and lower town</span></div>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/parrots" class="story-image" data-caption="Colorful parrots on the Stradun." alt="Parrots on the street">
+                <p class="photo-caption-inline">A blue-and-gold macaw, a sulphur-crested cockatoo, and an eclectus parrot - unexpected residents of the Stradun, posing for tourist photos.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/church_interior" class="story-image" data-caption="Inside the Jesuit Church of St. Ignatius." alt="Church interior">
+                <p class="photo-caption-inline">The Jesuit Church of St. Ignatius - Baroque frescoes and gilded altars, a reminder that Dubrovnik was once a center of Catholic wealth and power.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Walls</span>
+                <h3 class="section-title-panel">Walking the Fortress</h3>
+                <p>The city walls stretch nearly two kilometers around the old town, rising up to 25 meters high. Walking them is the quintessential Dubrovnik experience - a circuit that takes you above the terracotta rooftops with the Adriatic glittering below.</p>
+                <div class="story-carousel">
+                    <div class="carousel-slide active">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/walls_rooftops" alt="Terracotta rooftops from the walls">
+                        <div class="carousel-caption"><span>A sea of terracotta rooftops from the fortress walls</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/walls_lovrijenac" alt="Fort Lovrijenac">
+                        <div class="carousel-caption"><span>Fort Lovrijenac - the Gibraltar of Dubrovnik</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/walls_view_01" alt="View from the walls">
+                        <div class="carousel-caption"><span>The Adriatic stretches to the horizon</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/walls_view_04" alt="Fortress panorama">
+                        <div class="carousel-caption"><span>Centuries of history visible in every direction</span></div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/rooftops_flowers" alt="Rooftops with flowers">
+                        <div class="carousel-caption"><span>Wildflowers bloom on ancient walls above the rooftops</span></div>
+                    </div>
+                    <div class="carousel-dots"></div>
                 </div>
             </div>
 
@@ -892,22 +1019,20 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">The Adventures</span>
                 <h3 class="section-title-panel">A Thousand Ways to Travel</h3>
                 <p>There were many ways to travel far in one day around the Med, and the crew knew all of the secrets. Bus stops, train routes, scooter rentals, ocean kayaking - cheat sheets were always being passed around. Short of skydiving, I think I tried the rest.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/kayaks_bokar" class="story-image" data-caption="Kayaks lined up beneath Bokar Fortress." alt="Kayaks at Bokar Fortress">
+                <p class="photo-caption-inline">Kayaks lined up beneath the massive walls of Bokar Fortress - the crystal-clear Adriatic beckoning from the rocks below.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770083064/Screen_Shot_2026-02-02_at_8.40.38_PM.jpg" class="story-image" data-caption="Ocean kayaking around the city walls." alt="Ocean kayaking in Dubrovnik">
-                <p class="photo-caption-inline">Ocean kayaking around the city walls.</p>
+                <p class="photo-caption-inline">Ocean kayaking around the city walls - paddling past fortresses that once repelled Ottoman fleets.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/crew_party" class="story-image" data-caption="Crew night out in Dubrovnik." alt="Crew party">
+                <p class="photo-caption-inline">The best nights were spent ashore with the crew - finding that perfect bar inside the walls, glasses raised to another unforgettable port.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Dream</span>
-                <h3 class="section-title-panel">The Steadfast Tin Soldier</h3>
-                <p>At some point it occurred to me. As a kid I'd read Hans Christian Andersen's <em>The Steadfast Tin Soldier</em> so many times that the illustrations had seared themselves into my subconscious - a tiny soldier, swept through the gutters in a paper boat, drifting toward a walled city. The story gave me fever dreams for years. Sometimes I was the soldier in the boat. Sometimes I watched from somewhere above. Once the boat fell into a gutter and vanished, just like in the story.</p>
-                <p>I was fascinated by the story but so saddened that the soldier kept dying. I always wanted him to make it to the castle walls and finish the journey.</p>
-                <p>I'd forgotten all about the story and how real it seemed to me as a child, but when I passed through the outer gate into the walled city, I didn't fail to see the irony.</p>
-                <blockquote class="story-quote">The tin soldier had finally made it beyond the gates. Alive to see all the mystery and magic of the walled city of Dubrovnik.</blockquote>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149008/IMG_2113.jpg" class="story-image" data-caption="Walking toward the gates - like stepping into an Andersen book." alt="Walking toward the gates of Dubrovnik">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1770149006/IMG_2116.jpg" class="story-image" data-caption="The tin soldier made it to the gates." alt="At the gates of Dubrovnik">
-                </div>
-                <p class="photo-caption-inline">The tin soldier made it to the gates.</p>
+                <span class="section-tag-panel">The Farewell</span>
+                <h3 class="section-title-panel">Until Next Time</h3>
+                <p>There's something bittersweet about sailaway from Dubrovnik. The sun dips behind the mountains, painting the sky in shades of amber and gold. The walled city grows smaller on the horizon, but somehow stays with you.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/dubrovnik/sunset_sailaway" class="story-image" data-caption="Sunset sailaway from Dubrovnik." alt="Sunset sailaway">
+                <p class="photo-caption-inline">The sun slipping behind the Croatian mountains as we sailed away - the Adriatic glowing like liquid gold.</p>
             </div>
 
             <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -1138,11 +1263,8 @@ an original composition inspired by this place.
                 <h3 class="section-title-panel">Prehistoric Predators</h3>
                 <p>Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle. They've been here for millions of years, unchanged.</p>
                 <p>We walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. One chomp and you're done for.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg" class="story-image" alt="Komodo dragon">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532348/DSC00313_iv0cyd.jpg" class="story-image" alt="Komodo dragon close-up">
-                </div>
-                <p class="photo-caption-inline">Face to face with dragons. The rangers carried forked sticks - not that they'd help much.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg" class="story-image" alt="At Komodo National Park">
+                <p class="photo-caption-inline">Komodo National Park - UNESCO World Heritage Site and home to the world's largest lizards.</p>
             </div>
 
             <div class="story-section-panel">
@@ -1195,7 +1317,7 @@ an original composition inspired by this place.
             ${generateGallery('komodo')}
         `,
         fullDesc: "Komodo dragons are the largest living lizards on Earth - up to 10 feet long and 150 pounds of prehistoric muscle.\n\nWe walked through the park with rangers, keeping our distance. These things can run faster than you'd think, and their bite is loaded with bacteria. The whole island has this prehistoric energy.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532337/DSC002971st_prbc0u.jpg"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532348/DSC00313_iv0cyd.jpg"
     },
     {
         id: 7,
@@ -2511,63 +2633,69 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">Paradise Found</span>
                 <h3 class="section-title-panel">Impossible Blue</h3>
                 <p>The water here is a color I didn't know existed. Shades of turquoise and aquamarine that seem painted rather than natural. Mount Otemanu rises dramatically from the lagoon - an ancient volcanic crater wrapped in mist.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764155/bora_bora_baby.jpg" class="story-image" alt="Mount Otemanu">
-                <p class="photo-caption-inline">Mount Otemanu - the iconic peak that dominates Bora Bora's skyline.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/bora-bora/mt_otemanu_beach.jpg" class="story-image" alt="Mt Otemanu from private island">
-                <p class="photo-caption-inline">The view from the private island. Palms, sandbar, and that mountain.</p>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="story-image" alt="Off the main island">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764143/bora_bora_beach_-_Copy.jpg" class="story-image" alt="Bora Bora beach">
-                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764142/off_the_main_island_bora_bora_-_Copy.jpg" class="story-image" alt="Mount Otemanu from lagoon">
+                <p class="photo-caption-inline">Mount Otemanu from the lagoon - the iconic peak that dominates the skyline.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">The Lagoon</span>
-                <h3 class="section-title-panel">Exploring the Island</h3>
+                <h3 class="section-title-panel">Jetski Paradise</h3>
                 <p>We spent the day exploring by jetski and boat, circling the main island through waters so clear you could see straight to the sandy bottom.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/bora-bora/jetski_beach.jpg" class="story-image" alt="Jetski beach">
-                <p class="photo-caption-inline">Jetskis on the private island beach. This was shore leave at its finest.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764108/098.jpg" class="story-image" alt="Bora Bora">
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764108/098.jpg" class="story-image" alt="Jetskis on private island">
+                <p class="photo-caption-inline">Jetskis on the private island beach. Shore leave at its finest.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764118/065.jpg" class="story-image" alt="Small boat on calm lagoon">
+                <p class="photo-caption-inline">A small boat on the impossibly calm lagoon waters.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Ship</span>
+                <h3 class="section-title-panel">Pacific Pearl</h3>
+                <p>The Pacific Pearl anchored in the lagoon while we explored. Coming back to the ship at sunset, tired and sunburned, was one of those perfect cruise moments.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764111/046.jpg" class="story-image" alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/054.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/054.jpg" class="story-image" alt="Tugboat with cruise ship">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764133/097.jpg" class="story-image" alt="Cruise ship from local boat">
                 </div>
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764114/063.jpg" class="story-image" alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764117/062.jpg" class="story-image" alt="Bora Bora">
-                </div>
+                <p class="photo-caption-inline">The Pacific Pearl from the local boats - home for the next few months.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Crew Day</span>
                 <h3 class="section-title-panel">A Day to Remember</h3>
-                <p>Port days in places like this made everything worth it. The long contracts, the homesickness, the cramped cabin - it all faded when you found yourself floating in a South Pacific lagoon.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764118/065.jpg" class="story-image" alt="Bora Bora">
+                <p>Port days in places like this made everything worth it. The long contracts, the homesickness, the cramped cabin - it all faded when you found yourself in a South Pacific paradise.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764107/me_and_mark.jpg" class="story-image" alt="With Mark on the beach">
+                <p class="photo-caption-inline">Ran into our production guy Mark coming back from jetskiing.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764119/079.jpg" class="story-image" alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764122/083.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764119/079.jpg" class="story-image" alt="Black sand beach">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764123/080.jpg" class="story-image" alt="Black sand beach with jungle">
                 </div>
+                <p class="photo-caption-inline">Black sand beaches on the far side of the island.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Around Tahiti</span>
+                <h3 class="section-title-panel">Exploring the Islands</h3>
+                <p>The region offered more than just beaches. Venus Point lighthouse, dramatic mountain roads, and resort pools where crew could pretend to be passengers for an afternoon.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764114/063.jpg" class="story-image" alt="Venus Point lighthouse">
+                <p class="photo-caption-inline">Venus Point lighthouse - where Captain Cook observed the transit of Venus in 1769.</p>
                 <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764123/080.jpg" class="story-image" alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764128/100.jpg" class="story-image" alt="Bora Bora">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764128/100.jpg" class="story-image" alt="Mountain road">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764117/062.jpg" class="story-image" alt="Tahiti town">
                 </div>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764133/097.jpg" class="story-image" alt="Bora Bora">
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764150/120.jpg" class="story-image" alt="Bora Bora">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764107/me_and_mark.jpg" class="story-image" alt="Me and Mark">
-                </div>
-                <p class="photo-caption-inline">Living the dream in French Polynesia.</p>
+                <p class="photo-caption-inline">Dramatic mountain roads and the town below.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764111/046.jpg" class="story-image" alt="Resort pool">
+                <p class="photo-caption-inline">The resort pool - crew playing passenger for a day.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Tahiti</span>
                 <h3 class="section-title-panel">Waterfall Hike</h3>
-                <p>A side trip to Tahiti brought us into the lush interior - hiking to waterfalls through tropical forest, eating fresh fruit straight from the trees. The kind of day you remember forever.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764109/038.jpg" class="story-image" alt="Waterfall hike">
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764127/tahiti_waterfall.jpg" class="story-image" alt="Tahiti waterfall">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770764145/grapefruit_and_apple.jpg" class="story-image" alt="Fresh fruit">
-                </div>
+                <p>A side trip to Tahiti brought us into the lush interior - hiking to waterfalls through tropical forest, eating fresh fruit straight from the trees.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764127/tahiti_waterfall.jpg" class="story-image" alt="Tahiti waterfall">
+                <p class="photo-caption-inline">The waterfall at the end of the hike - worth every step.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764109/038.jpg" class="story-image" alt="Swimming hole">
+                <p class="photo-caption-inline">The swimming hole - cool water after a hot jungle trek.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/v1770764145/grapefruit_and_apple.jpg" class="story-image" alt="Fresh fruit">
+                <p class="photo-caption-inline">Fresh fruit on woven palm leaves - the taste of the islands.</p>
             </div>
 
             ${generateGallery('boraBora')}
@@ -4285,10 +4413,72 @@ an original composition inspired by this place.
         shortDesc: "Where the beautiful people play.",
         useRichContent: true,
         richContent: `
-            <p>St. Tropez was a fishing village until Brigitte Bardot showed up.</p>
-            <p>Now it's superyachts and champagne, designer boutiques and paparazzi. But wander away from the port and you find quiet squares, excellent rosé, and that golden Provençal light that painters have chased for centuries.</p>
+            <div class="demographics-strip">
+                <div class="demo-item">
+                    <span class="demo-icon">🎬</span>
+                    <span class="demo-value">Bardot, 1956</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🍷</span>
+                    <span class="demo-value">Rosé Capital</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🛥️</span>
+                    <span class="demo-value">Superyachts</span>
+                </div>
+                <div class="demo-item">
+                    <span class="demo-icon">🎨</span>
+                    <span class="demo-value">Artists' Haven</span>
+                </div>
+            </div>
 
-            ${generateGallery('stTropez')}
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Harbor</span>
+                <h3 class="section-title-panel">Arriving by Tender</h3>
+                <p>St. Tropez was a fishing village until Brigitte Bardot showed up in 1956 to film <em>And God Created Woman</em>. Within a decade, it became the playground of the international jet set.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770826932/shiplife/st-tropez/sve0efvhgcxtzw24gzb8.jpg" class="story-image" data-caption="Approaching by tender - Port de Saint-Tropez." alt="Port de Saint-Tropez from tender">
+                <p class="photo-caption-inline">Approaching by tender - the famous port comes into view.</p>
+                <p>The harbor is the main event. Superyachts worth more than small countries dock stern-to along the quay. Ferraris and Lamborghinis park casually by the marina. It's a strange ecosystem of wealth on display.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770826933/shiplife/st-tropez/s0tmcuwwchbiedawytdl.jpg" class="story-image" data-caption="A cream Ferrari California parked at the harbor." alt="Ferrari at St. Tropez harbor">
+                <p class="photo-caption-inline">A cream Ferrari California parked casually by the marina. Just another day in St. Tropez.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_4767" class="story-image" data-caption="Black Legend - the kind of yacht you see in these waters." alt="Black Legend superyacht">
+                <p class="photo-caption-inline">Black Legend - the kind of yacht you see in these waters.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Old Town</span>
+                <h3 class="section-title-panel">Artists and Alleyways</h3>
+                <p>But wander away from the port and you find the real St. Tropez. The Musée de l'Annonciade sits in a former chapel, its pink walls draped with purple bougainvillea. Inside: Signac, Matisse, Bonnard - the painters who came for that golden Provençal light.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770826935/shiplife/st-tropez/dcqrued9fv0yivzmugge.jpg" class="story-image" data-caption="Musée de l'Annonciade." alt="Musée de l'Annonciade">
+                <p class="photo-caption-inline">Musée de l'Annonciade - a former chapel now housing impressionist masterpieces.</p>
+                <p>The narrow lanes behind the waterfront are filled with art galleries and studios. The church bell tower rises above terracotta rooftops. Shuttered houses in faded ochre and pink line cobblestone paths.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770826936/shiplife/st-tropez/uigff9kxp871azrxsvct.jpg" class="story-image" data-caption="Old town alley with church tower." alt="St. Tropez old town alley">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/v1770826937/shiplife/st-tropez/xjz2ubcnhuzwe48tvrqv.jpg" class="story-image" data-caption="Narrow lane with ochre buildings." alt="St. Tropez lane">
+                </div>
+                <p class="photo-caption-inline">Art galleries in the alleyways, the church tower watching over it all.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Citadelle</span>
+                <h3 class="section-title-panel">The Fortress Above</h3>
+                <p>Above the town sits La Citadelle de Saint-Tropez, a 17th-century fortress that now houses the maritime museum. The walk up takes you through Mediterranean pines and eucalyptus, away from the glamour below.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770826938/shiplife/st-tropez/lekkbtf9cwl0uewqewer.jpg" class="story-image" data-caption="The Citadelle museum sign." alt="La Citadelle de Saint-Tropez">
+                <p class="photo-caption-inline">La Citadelle de Saint-Tropez - 400 years watching over the village.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1770826939/shiplife/st-tropez/a20iloxqar6vpiqtpykw.jpg" class="story-image" data-caption="The tree-lined path to the fortress." alt="Path to La Citadelle">
+                <p class="photo-caption-inline">The shaded path up to the fortress - a welcome escape from the summer heat.</p>
+            </div>
+
+            <details class="collapsible-gallery">
+                <summary>Scandals of St. Tropez</summary>
+                <div class="gallery-story-section">
+                    <p>St. Tropez has always attracted scandal. When Brigitte Bardot bought her estate "La Madrague" in 1958, she scandalized locals by sunbathing topless - a practice that would eventually make the Riviera famous.</p>
+                    <p>In the 1970s, the club "Les Caves du Roy" became legendary for its debauchery. Rock stars, royalty, and the merely rich mixed until dawn. The stories that emerged were the stuff of tabloid dreams - and nightmares for the families involved.</p>
+                    <p>The parade of celebrity scandal continues. Superyacht parties that end with someone in the harbor. Affairs conducted in plain sight at Le Club 55. Billion-dollar divorce proceedings triggered by photos taken on Pampelonne Beach.</p>
+                    <p>There's even a local saying: <em>"What happens in St. Tropez stays in St. Tropez - unless the paparazzi are faster than your lawyers."</em></p>
+                    <p>But perhaps the greatest scandal is the prices. A beach lounger at the famous clubs can run 200 euros. A bottle of rosé that costs 15 euros at the vineyard somehow becomes 300 euros at the table. The real con artists aren't the celebrities - they're the restaurateurs.</p>
+                </div>
+            </details>
         `,
         fullDesc: "St. Tropez was a fishing village until Brigitte Bardot showed up.\n\nNow it's superyachts and champagne, designer boutiques and paparazzi. But wander away from the port and you find quiet squares, excellent rosé, and that golden Provençal light that painters have chased for centuries.",
         image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767738529/IMG_5536_ipjhwy.jpg"
@@ -4583,24 +4773,25 @@ an original composition inspired by this place.
                 <span class="section-tag-panel">First Visit</span>
                 <h3 class="section-title-panel">Into the Tributary</h3>
                 <p>I visited Manaus twice, two years apart. The first time, a few of us took a tributary excursion deep into the jungle - the kind of day you don't forget.</p>
-                
-                <div class="story-gallery-grid">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951523/Screenshot_20260120_142110_Facebook_sfqgia.jpg" class="story-image" data-caption="Holding a sloth - 2012 tributary excursion." alt="Derrick holding sloth">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951523/Screenshot_20260120_142041_Facebook_qa7xiz.jpg" class="story-image" data-caption="The sloth wasn't in any hurry to leave." alt="Sloth closeup">
-                </div>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951523/Screenshot_20260120_142110_Facebook_sfqgia.jpg" class="story-image" data-caption="Holding a sloth - 2012 tributary excursion." alt="Derrick holding sloth">
+                <p class="photo-caption-inline">Making a new friend on the tributary excursion.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951523/Screenshot_20260120_142041_Facebook_qa7xiz.jpg" class="story-image" data-caption="The sloth wasn't in any hurry to leave." alt="Sloth closeup">
                 <p class="photo-caption-inline">These guys move at their own pace. I respect that.</p>
-                
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">Wildlife</span>
+                <h3 class="section-title-panel">Jungle Encounters</h3>
+                <p>The tributary was alive with wildlife. Baby alligators, monkeys, birds - the locals knew where to find them all.</p>
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951523/Screenshot_20260120_142055_Facebook_sdm2xc.jpg" class="story-image" data-caption="Baby alligator - tributary wildlife." alt="Baby gator">
-                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951604/Screenshot_20260120_134644_Facebook_vooudq.jpg" class="story-image" data-caption="Another young crocodilian friend." alt="Baby croc">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,h_300,c_fill,g_north,q_auto,f_auto/v1768951604/Screenshot_20260120_134644_Facebook_vooudq.jpg" class="story-image" data-caption="Another young crocodilian friend." alt="Baby croc">
                 </div>
                 <p class="photo-caption-inline">The little ones are cute. The big ones... less so.</p>
-                
                 <div class="story-gallery-grid">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951518/Screenshot_20260120_142140_Facebook_fladgt.jpg" class="story-image" data-caption="A curious monkey in the Amazon." alt="Monkey">
                     <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1768951516/Screenshot_20260120_142200_Facebook_m2ofot.jpg" class="story-image" data-caption="Bird's nest in the canopy." alt="Tree with nest">
                 </div>
-                
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768951604/Screenshot_20260120_134703_Facebook_imcpbv.jpg" class="story-image" data-caption="A floating market along the tributary." alt="Jungle market">
                 <p class="photo-caption-inline">Commerce finds a way, even in the middle of the Amazon.</p>
             </div>
@@ -6145,25 +6336,17 @@ an original composition inspired by this place.
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Arriving</span>
-                <h3 class="section-title-panel">Mariner of the Seas</h3>
-                <p>We spotted the Mariner of the Seas as we were pulling in to dock. Twelve hours to explore Penang and absolutely no idea what to do with them.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-03-mariner-of-seas" class="story-image" data-caption="The Mariner of the Seas in port as we arrived." alt="Mariner of the Seas">
-                <p class="photo-caption-inline">The Mariner of the Seas in port as we arrived.</p>
-            </div>
-
-            <div class="story-section-panel">
-                <span class="section-tag-panel">The Solution</span>
-                <h3 class="section-title-panel">Hire a Driver</h3>
-                <p>So I did what all crew members do when they're in this situation: hired a driver to take me as far away from port as he could. This guy had a hundred different places he could show me, and we drove all over visiting shrines and temples.</p>
+                <h3 class="section-title-panel">Twelve Hours</h3>
+                <p>Twelve hours to explore Penang and absolutely no idea what to do with them. So I did what all crew members do in this situation: hired a driver to take me as far away from port as he could.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-47-colorful" class="story-image" data-caption="Kek Lok Si Temple - one of the largest Buddhist temples in Southeast Asia." alt="Kek Lok Si Temple">
                 <p class="photo-caption-inline">Kek Lok Si Temple - one of the largest Buddhist temples in Southeast Asia.</p>
-                <p>First stop: <em>Kek Lok Si</em>, the "Temple of Supreme Bliss." Founded in 1890 by Hokkien immigrants, it sprawls across a hillside in Air Itam. The seven-story Pagoda of Ten Thousand Buddhas rises above everything, fusing Chinese, Thai, and Burmese architectural styles. But it's the 30-meter bronze statue of Kuan Yin—the Goddess of Mercy—that dominates the skyline, completed in 2002 after twelve years of construction. You can see her serene face from miles away, watching over Penang with that tilted, knowing expression.</p>
+                <p>This guy had a hundred different places he could show me, and we drove all over visiting shrines and temples. First stop: <em>Kek Lok Si</em>, the "Temple of Supreme Bliss." Founded in 1890 by Hokkien immigrants, it sprawls across a hillside in Air Itam. The seven-story Pagoda of Ten Thousand Buddhas rises above everything, fusing Chinese, Thai, and Burmese architectural styles. But it's the 30-meter bronze statue of Kuan Yin—the Goddess of Mercy—that dominates the skyline, completed in 2002 after twelve years of construction. You can see her serene face from miles away, watching over Penang with that tilted, knowing expression.</p>
             </div>
 
             <div class="story-section-panel">
                 <span class="section-tag-panel">Cultural Immersion</span>
-                <h3 class="section-title-panel">Colors Like Never Before</h3>
-                <p>Colors like I had never seen before. So culturally different was this city that I was left stunned and amazed at what I had seen. The shrines and temples seemed endless, each more vibrant than the last.</p>
+                <h3 class="section-title-panel">A Different World</h3>
+                <p>So culturally different was this city that I was left stunned and amazed at what I had seen. The shrines and temples seemed endless, each more vibrant than the last.</p>
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-15-colorful" class="story-image" data-caption="Every surface alive with color." alt="Colorful temple">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-18-temple" class="story-image" data-caption="Intricate temple details." alt="Temple details">
                 <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-24-temple" class="story-image" data-caption="Stunned and amazed." alt="Temple">
@@ -6225,6 +6408,15 @@ an original composition inspired by this place.
                 <p class="photo-caption-inline">Views from the summit of Penang Hill.</p>
             </div>
 
+            <details class="collapsible-gallery">
+                <summary>The Mariner of the Seas</summary>
+                <div class="gallery-story-section">
+                    <p>We spotted the Mariner of the Seas as we were pulling in to dock. At the time, she was one of the largest cruise ships in the world—a floating city that made our ship look like a yacht.</p>
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-03-mariner-of-seas" class="gallery-story-image" data-caption="The Mariner of the Seas in port as we arrived." alt="Mariner of the Seas">
+                    <p>There's something humbling about seeing a ship that size. You realize just how small your own vessel is in the grand scheme of cruise shipping.</p>
+                </div>
+            </details>
+
             ${typeof generateGallery === 'function' ? generateGallery('penang') : ''}
         `,
         fullDesc: "Twelve hours to explore Penang and no idea what to do. So I hired a driver.\n\nHe took me to temples I didn't know existed, colors I'd never seen, food I couldn't identify. Then up Penang Hill for views that put it all in perspective. One of the most overwhelming sensory days of my life.",
@@ -6260,27 +6452,78 @@ an original composition inspired by this place.
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Skyline</span>
-                <h3 class="section-title-panel">Science Fiction Made Real</h3>
-                <p>Dubai shouldn't exist, and yet it does. A forest of impossible towers rising from the desert. Indoor ski slopes and artificial islands. The tallest building on Earth watching over it all.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/img_20131030_095457" class="story-image" data-caption="Dubai's skyline - science fiction made real." alt="Dubai skyline">
-                <p class="photo-caption-inline">From the taxi window, the skyline looks like a science fiction movie set.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/img_20131030_095925" class="story-image" data-caption="Towers reaching for impossible heights." alt="Dubai towers">
+                <span class="section-tag-panel">The Tower</span>
+                <h3 class="section-title-panel">At the Foot of the Giant</h3>
+                <p>You can't take it all in. The Burj Khalifa soars so high that you crane your neck until it hurts, and still the top disappears into the sky. At 828 meters, it's not just the world's tallest building - it's a monument to the audacity of human engineering.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto,a_90/shiplife/dubai/burj_khalifa_selfie" class="story-image" data-caption="Standing at the base of the world's tallest building." alt="At the Burj Khalifa">
+                <p class="photo-caption-inline">The obligatory selfie at the Burj. Even from this distance, you can't fit the whole thing in frame.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/downtown_skyline" class="story-image" data-caption="Downtown Dubai's forest of towers." alt="Downtown Dubai skyline">
+                <p class="photo-caption-inline">The towers of Downtown Dubai reflected in the Burj Lake. What was empty desert in 2000 is now this.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/address_hotel" class="story-image" data-caption="The Address Downtown with Dubai Mall." alt="The Address Downtown hotel">
+                <p class="photo-caption-inline">The Address Downtown curves elegantly beside the Dubai Mall, its distinctive silhouette one of Dubai's most photographed.</p>
             </div>
 
             <div class="story-section-panel">
-                <span class="section-tag-panel">The Excess</span>
-                <h3 class="section-title-panel">Monuments to Consumption</h3>
-                <p>The malls are monuments to consumption - where else would you find a classic Mercedes Gullwing displayed next to Chopard? It's a monument to what happens when money and ambition have no restraints.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/img_20131030_100337" class="story-image" data-caption="The Dubai Mall - retail as spectacle." alt="Dubai mall">
-                <p class="photo-caption-inline">Even the malls feel like theme parks designed by billionaires.</p>
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/img_20131030_102159" class="story-image" data-caption="Luxury on display in Dubai." alt="Dubai luxury">
+                <span class="section-tag-panel">The Mall</span>
+                <h3 class="section-title-panel">Where the Impossible Meets the Unnecessary</h3>
+                <p>The Dubai Mall isn't just a shopping center. It's a small city with an Olympic-sized ice rink, a full aquarium, and supercars parked where other malls put planters. Over 1,200 stores, but honestly you come here just to gawk.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/ice_rink" class="story-image" data-caption="Olympic-sized ice rink inside the mall." alt="Dubai Mall ice rink">
+                <p class="photo-caption-inline">An Olympic-sized ice rink. In a mall. In the desert. Because why not?</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/car_show_overview" class="story-image" data-caption="Car show floor inside Dubai Mall." alt="Dubai Mall car show">
+                <p class="photo-caption-inline">A car showroom right in the middle of the mall's main atrium. This is completely normal here.</p>
+                <div class="story-gallery-grid">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/mercedes_gullwing" class="story-image" data-caption="1955 Mercedes-Benz 300SL Gullwing - one of the most valuable cars ever made." alt="Mercedes Gullwing">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto,a_180/shiplife/dubai/lamborghini" class="story-image" data-caption="Lamborghini Aventador on display." alt="Lamborghini Aventador">
+                </div>
+                <p class="photo-caption-inline">A 1955 Mercedes-Benz 300SL Gullwing - worth over a million dollars and just casually displayed between Chopard and Graff. Beside it, a Lamborghini Aventador, because this is Dubai.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Aquarium</span>
+                <h3 class="section-title-panel">Under the Sea, Under the Mall</h3>
+                <p>The Dubai Aquarium holds 10 million liters of water and one of the world's largest collections of sand tiger sharks. The viewing panel is three stories tall - the largest acrylic panel ever built. Naturally, it's inside a shopping mall.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/aquarium_wall" class="story-image" data-caption="The massive aquarium wall towers over shoppers." alt="Dubai Mall aquarium">
+                <p class="photo-caption-inline">The aquarium wall looms over shoppers, sharks gliding past the Aldo store like it's perfectly normal.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/aquarium_crowd" class="story-image" data-caption="Visitors mesmerized by the three-story viewing panel." alt="Aquarium viewing area">
+                <p class="photo-caption-inline">People line up just to stare. The viewing panel is the size of a basketball court.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/aquarium_portrait" class="story-image" data-caption="Posing in front of the 10-million-liter tank." alt="Portrait at the aquarium">
+                <p class="photo-caption-inline">The best background in any mall in the world. Sand tiger sharks, rays, and hundreds of other species swimming behind you.</p>
+            </div>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Food</span>
+                <h3 class="section-title-panel">Waffles Before Shopping</h3>
+                <p>You need fuel to explore this place. Brunetti, an Italian cafe with Dubai flair, sits right near the aquarium - perfect for people-watching and carb-loading.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/brunetti_cafe" class="story-image" data-caption="Brunetti cafe with the aquarium glowing in the background." alt="Brunetti cafe">
+                <p class="photo-caption-inline">The cafe sits in the shadow of the aquarium, its blue glow adding ambiance you can't buy.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/waffles" class="story-image" data-caption="Belgian waffles at Brunetti - Dubai style." alt="Brunetti waffles">
+                <p class="photo-caption-inline">Belgian waffles with berry compote and fresh cream. When in Dubai, eat like the locals - expensively.</p>
+            </div>
+
+            <details class="collapsible-gallery">
+                <summary class="more-info-toggle">More about Dubai</summary>
+                <div class="more-info-content">
+                    <p><strong>A city from nothing:</strong> In 1990, Dubai's skyline had almost nothing over 10 stories. The Burj Khalifa wasn't completed until 2010. The entire city center was essentially built in two decades.</p>
+                    <p><strong>The name:</strong> "Dubai" likely derives from a word meaning "to creep" - possibly referring to the slow flow of the Dubai Creek that defined the original settlement.</p>
+                    <p><strong>The population:</strong> Only about 15% of Dubai's residents are actually Emirati citizens. The rest are expatriates from over 200 countries - making it one of the most cosmopolitan cities on Earth.</p>
+                    <p><strong>The weather:</strong> Summer temperatures regularly exceed 45°C (113°F). The indoor ski slope maintains a constant -1°C, making it the coolest spot in a very hot city.</p>
+                </div>
+            </details>
+
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Exit</span>
+                <h3 class="section-title-panel">Art in the Air</h3>
+                <p>Even leaving Dubai is an experience. The Human Waterfall in the Dubai Mall - silver figures diving through cascading water, frozen in eternal freefall. It's art that could only exist in a place like this.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/waterfall_fountain" class="story-image" data-caption="The Human Waterfall - silver divers frozen in eternal freefall." alt="Dubai Mall waterfall fountain">
+                <p class="photo-caption-inline">The Human Waterfall - one last moment of impossibility before heading back to the ship.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/taxi_goodbye" class="story-image" data-caption="Saying goodbye to the Dubai skyline." alt="Dubai skyline from taxi">
+                <p class="photo-caption-inline">Through the taxi window, the towers shrink behind us. Until next time, Dubai.</p>
             </div>
 
             ${generateGallery('dubai')}
         `,
         fullDesc: "Dubai shouldn't exist, and yet it does. A forest of impossible towers rising from the desert. Indoor ski slopes, artificial islands, the tallest building on Earth. A monument to limitless ambition.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/img_20131030_095457"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/dubai/downtown_skyline"
     },
     {
         id: 113,
@@ -8436,10 +8679,6 @@ an original composition inspired by this place.
         shortDesc: "Colorful stilted houses and wooden churches.",
         useRichContent: true,
         richContent: `
-            <div class="story-header">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/castro/castro-hero" class="story-image" alt="Castro, Chiloé Island">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item">
                     <span class="demo-icon">⛪</span>
@@ -8459,22 +8698,37 @@ an original composition inspired by this place.
                 </div>
             </div>
 
-            <h3>The Sail In</h3>
-            <p>Some places you remember for the adventures that unfolded. Others, simply for the beauty of arriving. Castro was one of those sail-ins that stays with you - the mist lifting off Chiloé Island, revealing the colorful palafitos perched on stilts along the water's edge.</p>
-
-            <div class="image-row-2">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-01" class="inline-image" data-caption="Approaching Chiloé Island." alt="Sail in">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-02" class="inline-image" data-caption="Patagonian waters." alt="Sail in">
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Sail In</span>
+                <h3 class="section-title-panel">Approaching Chiloé</h3>
+                <p>Some places you remember for the adventures that unfolded. Others, simply for the beauty of arriving. Castro was one of those sail-ins that stays with you - the mist lifting off Chiloé Island as we glided past mussel farms and green Patagonian hills.</p>
+                <div class="image-row-2">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-01" class="inline-image" data-caption="Mussel farms dot the waters of Chiloé." alt="Mussel farms">
+                    <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-02" class="inline-image" data-caption="Green Patagonian hillsides." alt="Patagonian landscape">
+                </div>
+                <p class="photo-caption-inline">The approach - mussel farms and rolling green hills.</p>
             </div>
 
-            <p>Not every port leaves a trail of wild stories. Sometimes what you remember is the light, the stillness, the way a place looked before you even set foot on shore.</p>
-
-            <div class="image-row-2">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-03" class="inline-image" data-caption="UNESCO wooden churches dot the island." alt="Churches">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_80,f_auto/shiplife/castro/castro-sail-04" class="inline-image" data-caption="The colors of Castro." alt="Palafitos">
+            <div class="story-section-panel">
+                <span class="section-tag-panel">The Town</span>
+                <h3 class="section-title-panel">Colors of Castro</h3>
+                <p>Not every port leaves a trail of wild stories. Sometimes what you remember is the light, the stillness, the way a place looked before you even set foot on shore.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-03" class="story-image" data-caption="Castro from the water." alt="Castro town">
+                <p class="photo-caption-inline">Castro emerging from the mist - the yellow church marking the heart of town.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-04" class="story-image" data-caption="The UNESCO wooden church of Castro." alt="Wooden church">
+                <p class="photo-caption-inline">The Iglesia San Francisco - a UNESCO World Heritage wooden church built without a single nail.</p>
+                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-05" class="story-image" data-caption="Colorful streets leading to the waterfront." alt="Castro streets">
+                <p class="photo-caption-inline">Chiloé - where the mainland ends and something else begins.</p>
             </div>
 
-            <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/castro/castro-sail-05" class="story-image" data-caption="Chiloé - where the mainland ends and something else begins." alt="Castro">
+            <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Chiloé' : '+ More about Chiloé'">+ More about Chiloé</p>
+            <div class="more-info-content">
+                <p><strong>The Caleuche:</strong> Chiloé's most famous legend is the ghost ship Caleuche, a phantom vessel that sails the waters at night, brightly lit and filled with the sounds of a party. It appears and disappears at will, crewed by the souls of drowned sailors. Locals say it carries them to an eternal celebration below the waves.</p>
+                <p><strong>The Trauco:</strong> A small, ugly forest goblin who seduces women with his irresistible gaze. For generations, unexplained pregnancies on the island were attributed to the Trauco. He carries a stone axe and can fell a tree with three blows.</p>
+                <p><strong>The Brujos:</strong> Chiloé has a rich tradition of witchcraft. The Recta Provincia was a secret society of warlocks said to have operated for centuries. Initiates allegedly had to wash away their baptism in a waterfall and wear the skin of a recently deceased Christian.</p>
+                <p><strong>The Churches:</strong> 16 wooden churches across Chiloé are UNESCO World Heritage sites, built by Jesuit missionaries in the 17th and 18th centuries using only wooden pegs, no nails. The Iglesia San Francisco in Castro is the most photographed.</p>
+                <p><strong>Curanto:</strong> The traditional dish of Chiloé is cooked in a pit in the ground, layering shellfish, meat, potatoes, and bread dumplings over hot stones, then covered with nalca leaves. A feast that's been made the same way for thousands of years.</p>
+            </div>
 
             ${generateGallery('castro')}
         `,
@@ -8492,10 +8746,6 @@ an original composition inspired by this place.
         imagePosition: "center",
         useRichContent: true,
         richContent: `
-            <div class="story-header">
-                <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/cairo-hero" class="story-image" alt="First glimpse of the Pyramids">
-            </div>
-
             <div class="demographics-strip">
                 <div class="demo-item">
                     <span class="demo-icon">🔺</span>
@@ -8587,7 +8837,7 @@ an original composition inspired by this place.
             ${generateGallery('cairo')}
         `,
         fullDesc: "After three hours on the bus from Port Said, there it was - that first glimpse of the pyramids. The closer we came, the larger they grew, but the further away they seemed. Some kind of optical illusion. It was only up close that the scale revealed itself - people wandering around like ants.",
-        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/cairo-hero"
+        image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/cairo/pyramids-hero"
     },
     {
         id: 107,
