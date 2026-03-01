@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:25:13.031Z
+// Shiplife Bundle - Generated 2026-03-01T22:30:00.200Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -15633,7 +15633,7 @@ function spinToMediterranean() {
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
-    const baseTargetY = -lonRad - 1.55;
+    const baseTargetY = -lonRad - 1.50;
 
     // Add extra spin for drama (1 full rotation + target)
     const targetY = baseTargetY + Math.PI * 2;
@@ -16573,7 +16573,11 @@ function focusLocation(loc) {
     const lonRad = lon * (Math.PI / 180);
 
     // Set rotation targets - globe will smooth lerp to these
-    targetRotationY = -lonRad - 1.55;
+    let targetY = -lonRad - 1.50;
+    // Normalize to shortest path (avoid wild multi-rotation spinning)
+    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+    targetRotationY = targetY;
     targetRotationX = lat * (Math.PI / 180);
 
     // Start bridge animation (soft cinematic bump)
@@ -17407,7 +17411,11 @@ function onTouchTap(event) {
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
                     const lonRad = lon * (Math.PI / 180);
-                    targetRotationY = -lonRad - 1.55;
+                    let targetY = -lonRad - 1.50;
+                    // Normalize to shortest path (avoid wild multi-rotation spinning)
+                    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+                    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+                    targetRotationY = targetY;
                     targetRotationX = lat * (Math.PI / 180);
 
                     // Start bridge animation (soft cinematic bump)
@@ -17429,7 +17437,11 @@ function onTouchTap(event) {
                 const lon = loc.coords[1];
                 const lat = loc.coords[0];
                 const lonRad = lon * (Math.PI / 180);
-                targetRotationY = -lonRad - 1.55;
+                let targetY = -lonRad - 1.50;
+                // Normalize to shortest path (avoid wild multi-rotation spinning)
+                while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+                while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+                targetRotationY = targetY;
                 targetRotationX = lat * (Math.PI / 180);
 
                 // Zoom in closer to the location for emphasis
@@ -17533,7 +17545,11 @@ function onClick(event) {
             const lon = loc.coords[1];
             const lat = loc.coords[0];
             const lonRad = lon * (Math.PI / 180);
-            targetRotationY = -lonRad - 1.55;
+            let targetY = -lonRad - 1.50;
+            // Normalize to shortest path (avoid wild multi-rotation spinning)
+            while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+            while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+            targetRotationY = targetY;
             targetRotationX = lat * (Math.PI / 180);
 
             // Start bridge animation (soft cinematic bump)
@@ -17555,7 +17571,11 @@ function onClick(event) {
         const lon = loc.coords[1];
         const lat = loc.coords[0];
         const lonRad = lon * (Math.PI / 180);
-        targetRotationY = -lonRad - 1.55;
+        let targetY = -lonRad - 1.50;
+        // Normalize to shortest path (avoid wild multi-rotation spinning)
+        while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+        while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+        targetRotationY = targetY;
         targetRotationX = lat * (Math.PI / 180);
 
         // Zoom in closer to the location for emphasis

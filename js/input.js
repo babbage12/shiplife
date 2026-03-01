@@ -154,7 +154,11 @@ function onTouchTap(event) {
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
                     const lonRad = lon * (Math.PI / 180);
-                    targetRotationY = -lonRad - 1.55;
+                    let targetY = -lonRad - 1.50;
+                    // Normalize to shortest path (avoid wild multi-rotation spinning)
+                    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+                    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+                    targetRotationY = targetY;
                     targetRotationX = lat * (Math.PI / 180);
 
                     // Start bridge animation (soft cinematic bump)
@@ -176,7 +180,11 @@ function onTouchTap(event) {
                 const lon = loc.coords[1];
                 const lat = loc.coords[0];
                 const lonRad = lon * (Math.PI / 180);
-                targetRotationY = -lonRad - 1.55;
+                let targetY = -lonRad - 1.50;
+                // Normalize to shortest path (avoid wild multi-rotation spinning)
+                while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+                while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+                targetRotationY = targetY;
                 targetRotationX = lat * (Math.PI / 180);
 
                 // Zoom in closer to the location for emphasis
@@ -280,7 +288,11 @@ function onClick(event) {
             const lon = loc.coords[1];
             const lat = loc.coords[0];
             const lonRad = lon * (Math.PI / 180);
-            targetRotationY = -lonRad - 1.55;
+            let targetY = -lonRad - 1.50;
+            // Normalize to shortest path (avoid wild multi-rotation spinning)
+            while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+            while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+            targetRotationY = targetY;
             targetRotationX = lat * (Math.PI / 180);
 
             // Start bridge animation (soft cinematic bump)
@@ -302,7 +314,11 @@ function onClick(event) {
         const lon = loc.coords[1];
         const lat = loc.coords[0];
         const lonRad = lon * (Math.PI / 180);
-        targetRotationY = -lonRad - 1.55;
+        let targetY = -lonRad - 1.50;
+        // Normalize to shortest path (avoid wild multi-rotation spinning)
+        while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+        while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+        targetRotationY = targetY;
         targetRotationX = lat * (Math.PI / 180);
 
         // Zoom in closer to the location for emphasis

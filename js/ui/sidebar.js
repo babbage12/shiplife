@@ -182,7 +182,11 @@ function focusLocation(loc) {
     const lonRad = lon * (Math.PI / 180);
 
     // Set rotation targets - globe will smooth lerp to these
-    targetRotationY = -lonRad - 1.55;
+    let targetY = -lonRad - 1.50;
+    // Normalize to shortest path (avoid wild multi-rotation spinning)
+    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
+    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
+    targetRotationY = targetY;
     targetRotationX = lat * (Math.PI / 180);
 
     // Start bridge animation (soft cinematic bump)
