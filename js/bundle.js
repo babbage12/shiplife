@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:48:40.867Z
+// Shiplife Bundle - Generated 2026-03-01T22:50:23.633Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -19,7 +19,7 @@ const STORAGE_KEY = 'shiplife_progress';
 const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
 
 // Mediterranean coordinates for celebration spin (centered on Italy)
-const MED_COORDS = { lat: 41.0, lon: 17.0 };
+const MED_COORDS = { lat: 41.0, lon: 19.0 };
 
 // Cloudinary base URL
 const CLOUDINARY_BASE = "https://res.cloudinary.com/de5jbyhxx/image/upload";
