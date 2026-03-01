@@ -2292,14 +2292,15 @@
                 right: 0;
                 bottom: 0;
                 width: 100%;
-                height: 35vh;
-                max-height: 260px;
+                height: auto;
+                max-height: 210px;
                 background: rgba(0, 0, 0, 0.4);
                 backdrop-filter: blur(4px);
                 -webkit-backdrop-filter: blur(4px);
                 transform: translateY(100%);
                 transition: transform 0.3s ease;
-                padding: 12px 15px 30px;
+                padding: 8px 15px 16px;
+                padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px));
                 z-index: 200;
                 border-radius: 15px 15px 0 0;
                 overflow-y: auto;
