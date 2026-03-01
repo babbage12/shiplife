@@ -131,10 +131,13 @@ function animate() {
                         // Small delay to let users appreciate the result
                         setTimeout(() => {
                             celebrationInProgress = false;
-                            // Show menu toggle button again (mobile)
-                            const menuToggle = document.getElementById('menuToggle');
-                            if (menuToggle) {
-                                menuToggle.style.display = '';
+                            // Auto-open location menu on mobile
+                            const isMobile = window.innerWidth <= 768;
+                            if (isMobile) {
+                                const menu = document.getElementById('locationList');
+                                const overlay = document.getElementById('mobileOverlay');
+                                if (menu) menu.classList.add('open');
+                                if (overlay) overlay.classList.add('open');
                             }
                         }, 1000);
                     }

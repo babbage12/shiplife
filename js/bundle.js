@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T23:10:40.150Z
+// Shiplife Bundle - Generated 2026-03-01T23:19:15.899Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -15367,10 +15367,13 @@ function animate() {
                         // Small delay to let users appreciate the result
                         setTimeout(() => {
                             celebrationInProgress = false;
-                            // Show menu toggle button again (mobile)
-                            const menuToggle = document.getElementById('menuToggle');
-                            if (menuToggle) {
-                                menuToggle.style.display = '';
+                            // Auto-open location menu on mobile
+                            const isMobile = window.innerWidth <= 768;
+                            if (isMobile) {
+                                const menu = document.getElementById('locationList');
+                                const overlay = document.getElementById('mobileOverlay');
+                                if (menu) menu.classList.add('open');
+                                if (overlay) overlay.classList.add('open');
                             }
                         }, 1000);
                     }
@@ -16597,7 +16600,6 @@ let menuReopenTimer = null;
 
 function toggleMobileMenu() {
     const menu = document.getElementById('locationList');
-    const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
 
     // Clear any pending reopen timer
@@ -16613,14 +16615,12 @@ function toggleMobileMenu() {
     }
 
     menu.classList.toggle('open');
-    toggle.classList.toggle('open');
     overlay.classList.toggle('open');
 }
 
 // Close mobile menu when location selected
 function closeMobileMenu() {
     const menu = document.getElementById('locationList');
-    const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
 
     // Clear any pending reopen timer
@@ -16630,21 +16630,18 @@ function closeMobileMenu() {
     }
 
     menu.classList.remove('open');
-    toggle.classList.remove('open');
     overlay.classList.remove('open');
 }
 
 // Close menu temporarily when touching globe, reopen after delay
 function dismissMenuTemporarily() {
     const menu = document.getElementById('locationList');
-    const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
 
     // Only if menu is currently open
     if (!menu.classList.contains('open')) return;
 
     menu.classList.remove('open');
-    toggle.classList.remove('open');
     overlay.classList.remove('open');
 
     // Reopen after 4 seconds
@@ -16652,7 +16649,6 @@ function dismissMenuTemporarily() {
         // Only reopen if no panel is open
         if (!panelIsOpen) {
             menu.classList.add('open');
-            toggle.classList.add('open');
             overlay.classList.add('open');
         }
         menuReopenTimer = null;

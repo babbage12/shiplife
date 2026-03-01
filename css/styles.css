@@ -2574,29 +2574,9 @@
         }
         
         @media (max-width: 768px) {
+            /* Hide hamburger button on mobile - menu auto-appears */
             .menu-toggle {
-                display: flex !important;
-                left: 50% !important;
-                right: auto !important;
-                top: auto !important;
-                bottom: 1rem !important;
-                transform: translateX(-50%) !important;
-                background: rgba(212, 165, 116, 0.9) !important;
-                border: 2px solid var(--gold) !important;
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
-                z-index: 350 !important;
-                width: 44px !important;
-                height: 44px !important;
-            }
-
-            /* When menu is open, move toggle above menu */
-            .menu-toggle.open {
-                bottom: calc(35vh + 0.5rem) !important;
-                background: rgba(212, 165, 116, 0.8) !important;
-            }
-
-            .menu-toggle span {
-                background: var(--navy) !important;
+                display: none !important;
             }
         }
 
