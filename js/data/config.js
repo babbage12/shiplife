@@ -10,7 +10,7 @@ const STORAGE_KEY = 'shiplife_progress';
 const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
 
 // Mediterranean coordinates for celebration spin (centered on Italy)
-const MED_COORDS = { lat: 40.0, lon: 12.5 };
+const MED_COORDS = { lat: 43.0, lon: 11.0 };
 
 // Cloudinary base URL
 const CLOUDINARY_BASE = "https://res.cloudinary.com/de5jbyhxx/image/upload";
@@ -31,7 +31,7 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 const introDuration = 3000;
 const bounceDuration = 350;
 const defaultZoomDistance = 1.5;   // Default camera distance
-const atmosphereZoomDistance = 1.15; // Comfortable browsing distance (closer)
+const atmosphereZoomDistance = 1.25; // Comfortable browsing distance
 const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
 const zoomOutDistance = 4.8;      // Further back for celebration spin only
 const baseZoomInDistance = 1.7;
