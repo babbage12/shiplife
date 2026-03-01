@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:50:23.633Z
+// Shiplife Bundle - Generated 2026-03-01T23:10:40.150Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -16592,10 +16592,19 @@ function focusLocation(loc) {
     console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetRotationY.toFixed(2), 'introComplete:', introComplete);
 }
 
+// Timer for auto-reopening menu after globe touch
+let menuReopenTimer = null;
+
 function toggleMobileMenu() {
     const menu = document.getElementById('locationList');
     const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
+
+    // Clear any pending reopen timer
+    if (menuReopenTimer) {
+        clearTimeout(menuReopenTimer);
+        menuReopenTimer = null;
+    }
 
     // If opening the menu, close the story panel first
     const isOpening = !menu.classList.contains('open');
@@ -16614,9 +16623,40 @@ function closeMobileMenu() {
     const toggle = document.getElementById('menuToggle');
     const overlay = document.getElementById('mobileOverlay');
 
+    // Clear any pending reopen timer
+    if (menuReopenTimer) {
+        clearTimeout(menuReopenTimer);
+        menuReopenTimer = null;
+    }
+
     menu.classList.remove('open');
     toggle.classList.remove('open');
     overlay.classList.remove('open');
+}
+
+// Close menu temporarily when touching globe, reopen after delay
+function dismissMenuTemporarily() {
+    const menu = document.getElementById('locationList');
+    const toggle = document.getElementById('menuToggle');
+    const overlay = document.getElementById('mobileOverlay');
+
+    // Only if menu is currently open
+    if (!menu.classList.contains('open')) return;
+
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    overlay.classList.remove('open');
+
+    // Reopen after 4 seconds
+    menuReopenTimer = setTimeout(() => {
+        // Only reopen if no panel is open
+        if (!panelIsOpen) {
+            menu.classList.add('open');
+            toggle.classList.add('open');
+            overlay.classList.add('open');
+        }
+        menuReopenTimer = null;
+    }, 4000);
 }
 
 // Undim sidebar items when all doors are visited
