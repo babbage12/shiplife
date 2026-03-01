@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T02:37:53.884Z
+// Shiplife Bundle - Generated 2026-03-01T22:06:12.050Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17389,9 +17389,21 @@ function onTouchTap(event) {
                     return; // Let animation loop handle the rest
                 }
 
-                // Not switching - clicked on current/first location
+                // Not switching - first click on a location
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
+
+                // Zoom in closer to the location for emphasis
+                const targetZoom = 1.5; // Zoom in close
+                if (camera.position.z > targetZoom + 0.3) {
+                    // Animate zoom-in
+                    isTransitioning = true;
+                    transitionPhase = 'zoom-in';
+                    transitionStartTime = Date.now();
+                    transitionStartZ = camera.position.z;
+                    currentZoomInDistance = targetZoom;
+                    zoomOutDistance = camera.position.z; // Start from current position
+                }
 
                 // Trigger sky bounce effect on the clicked marker
                 triggerSkyBounce(marker);
@@ -17405,6 +17417,10 @@ function onTouchTap(event) {
                     openPanel(loc);
                 };
 
+                // Delay before opening panel - longer on mobile so user can see location
+                const isMobile = window.innerWidth <= 768;
+                const panelDelay = isMobile ? 2500 : 800;
+
                 // Doors have iris animation, regular icons don't
                 // But skip iris animation for AI texture markers (no canvas to animate)
                 const hasAITexture = marker.userData.useAIPorthole;
@@ -17413,16 +17429,16 @@ function onTouchTap(event) {
                     const currentOpen = getMarkerOpenAmount(loc.id);
 
                     if (currentOpen < 0.5) {
-                        // Iris is closed - start animation and open panel midway
+                        // Iris is closed - start animation and open panel after delay
                         startIrisAnimation(loc.id, 1, null);
-                        setTimeout(() => openPanelForLocation(), 200);
+                        setTimeout(() => openPanelForLocation(), panelDelay);
                     } else {
-                        // Iris already open
-                        openPanelForLocation();
+                        // Iris already open - still delay for sky bounce
+                        setTimeout(() => openPanelForLocation(), panelDelay);
                     }
                 } else {
-                    // Regular icons or doors with AI texture - just open panel
-                    openPanelForLocation();
+                    // Regular icons or doors with AI texture - delay for sky bounce
+                    setTimeout(() => openPanelForLocation(), panelDelay);
                 }
             }
         }
@@ -17481,9 +17497,21 @@ function onClick(event) {
             return; // Let animation loop handle the rest
         }
 
-        // Not switching - clicked on current/first location
+        // Not switching - first click on a location
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
+
+        // Zoom in closer to the location for emphasis
+        const targetZoom = 1.5; // Zoom in close
+        if (camera.position.z > targetZoom + 0.3) {
+            // Animate zoom-in
+            isTransitioning = true;
+            transitionPhase = 'zoom-in';
+            transitionStartTime = Date.now();
+            transitionStartZ = camera.position.z;
+            currentZoomInDistance = targetZoom;
+            zoomOutDistance = camera.position.z; // Start from current position
+        }
 
         // Trigger sky bounce effect on the clicked marker
         triggerSkyBounce(hoveredMarker);
@@ -17497,6 +17525,10 @@ function onClick(event) {
             openPanel(loc);
         };
 
+        // Delay before opening panel - longer on mobile so user can see location
+        const isMobile = window.innerWidth <= 768;
+        const panelDelay = isMobile ? 2500 : 800;
+
         // Doors have iris animation, regular icons don't
         // But skip iris animation for AI texture markers (no canvas to animate)
         const hasAITexture = hoveredMarker.userData.useAIPorthole;
@@ -17505,16 +17537,16 @@ function onClick(event) {
             const currentOpen = getMarkerOpenAmount(loc.id);
 
             if (currentOpen < 0.5) {
-                // Iris is closed - start animation and open panel midway
+                // Iris is closed - start animation and open panel after delay
                 startIrisAnimation(loc.id, 1, null);
-                setTimeout(() => openPanelForLocation(), 200);
+                setTimeout(() => openPanelForLocation(), panelDelay);
             } else {
-                // Iris already open
-                openPanelForLocation();
+                // Iris already open - still delay for sky bounce
+                setTimeout(() => openPanelForLocation(), panelDelay);
             }
         } else {
-            // Regular icons or doors with AI texture - just open panel
-            openPanelForLocation();
+            // Regular icons or doors with AI texture - delay for sky bounce
+            setTimeout(() => openPanelForLocation(), panelDelay);
         }
     }
 }
