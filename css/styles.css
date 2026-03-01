@@ -2285,38 +2285,41 @@
             }
 
 
-            /* Left menu - bottom sheet style */
+            /* Left menu - transparent overlay on left side */
             .location-list {
                 position: fixed;
                 left: 0;
-                right: 0;
-                bottom: 0;
-                top: auto;
-                width: 100%;
-                height: auto;
-                max-height: 38vh;
-                background: linear-gradient(180deg,
-                    rgb(10, 22, 40) 0%,
-                    rgb(21, 34, 56) 100%);
-                transform: translateY(100%);
+                top: 15%;
+                bottom: 15%;
+                width: 65%;
+                max-width: 280px;
+                background: rgba(10, 22, 40, 0.75);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                transform: translateX(-100%);
                 transition: transform 0.3s ease;
-                padding: 20px 15px 30px;
+                padding: 15px 10px;
                 z-index: 200;
-                border-top: 1px solid rgba(212, 165, 116, 0.3);
-                border-radius: 20px 20px 0 0;
+                border-radius: 0 15px 15px 0;
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
-            
+
             .location-list.open {
-                transform: translateY(0);
+                transform: translateX(0);
             }
-            
-            /* Mobile location items - ultra simple text-only list */
+
+            /* Mobile location items - minimal text list */
             .location-list .location-item {
                 display: block;
-                padding: 12px 16px;
-                border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+                padding: 8px 12px;
+                border: none;
+                border-radius: 6px;
+                transition: background 0.2s ease;
+            }
+
+            .location-list .location-item:active {
+                background: rgba(212, 165, 116, 0.2);
             }
 
             /* Hide icon completely on mobile */
@@ -2325,8 +2328,9 @@
             }
 
             .location-list .location-item .name {
-                font-size: 0.95rem;
-                color: #f5f0e8;
+                font-size: 0.8rem;
+                color: rgba(245, 240, 232, 0.9);
+                text-shadow: 0 1px 3px rgba(0,0,0,0.5);
             }
 
             .location-list .location-item.door .name {
@@ -2334,11 +2338,11 @@
                 font-weight: 500;
                 display: flex;
                 flex-direction: column;
-                line-height: 1.3;
+                line-height: 1.2;
             }
 
             .location-list .location-item.door .chapter-label {
-                font-size: 0.7rem;
+                font-size: 0.6rem;
                 color: rgba(212, 165, 116, 0.7);
                 text-transform: uppercase;
                 letter-spacing: 0.08em;
@@ -2346,32 +2350,34 @@
             }
 
             .location-list .location-item.door .location-name {
-                font-size: 1rem;
+                font-size: 0.85rem;
                 color: #d4a574;
                 font-weight: 500;
             }
 
             .location-list .location-item.door {
                 background: rgba(212, 165, 116, 0.1);
+                border-radius: 6px;
+                margin-bottom: 4px;
             }
-            
-            /* Fallback: If backdrop-filter causes issues, use solid background */
+
+            /* Fallback: If backdrop-filter causes issues, use more solid background */
             @supports not (backdrop-filter: blur(1px)) {
                 .location-list {
-                    background: linear-gradient(180deg, 
-                        rgb(10, 22, 40) 0%,
-                        rgb(21, 34, 56) 100%);
+                    background: rgba(10, 22, 40, 0.92);
                 }
             }
-            
+
             .location-list::before {
-                content: '';
-                display: block;
-                width: 40px;
-                height: 4px;
-                background: rgba(212, 165, 116, 0.5);
-                border-radius: 2px;
-                margin: 0 auto 15px;
+                display: none;
+            }
+
+            /* Section dividers in mobile menu */
+            .location-list .sidebar-divider {
+                padding: 6px 12px;
+                margin: 8px 0 4px;
+                font-size: 0.65rem;
+                opacity: 0.7;
             }
             
             /* Right panel - bottom sheet style, opens to show globe peek */
@@ -2553,28 +2559,24 @@
                 z-index: 350 !important;
             }
 
-            /* When menu is open, move toggle inside the menu (top right) */
+            /* When menu is open, keep toggle in same spot */
             .menu-toggle.open {
-                bottom: auto !important;
-                top: calc(100vh - 38vh + 0.75rem) !important;
-                right: 1rem !important;
-                width: 40px !important;
-                height: 40px !important;
+                background: rgba(212, 165, 116, 0.8) !important;
             }
 
             .menu-toggle span {
                 background: var(--navy) !important;
             }
         }
-        
-        /* Mobile overlay */
+
+        /* Mobile overlay - subtle darkening */
         .mobile-overlay {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.3);
             z-index: 180;
             opacity: 0;
             pointer-events: none;
@@ -3280,4 +3282,89 @@
             }
         }
 
+/* ============================================
+   TAPASAKE EASTER EGG
+   ============================================ */
+.tapasake-link {
+    color: var(--gold);
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px dotted var(--gold);
+}
+
+.tapasake-link:hover {
+    color: #fff;
+}
+
+.tapasake-link::after {
+    content: '寿司 TAPASAKE 寿司\A━━━━━━━━━━━━━━━━━━━━\A\ASashimi & Sushi\A  Otoro (Bluefin Tuna Belly)\A  Uni (Sea Urchin)\A  Tai (Sea Bream)\A\ATeppanyaki\A  Wagyu Beef\A  Grilled Silver Cod\A  King Crab in Shiso\A\ASpecialties\A  Lobster Gyoza\A  Tempura Platter\A  Tokyo-Style Ramen\A\ADessert\A  Molten Chocolate Cake\A\A━━━━━━━━━━━━━━━━━━━━\A"Suspended over the Indian Ocean"';
+    white-space: pre;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--cream);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 1000;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    pointer-events: none;
+    min-width: 220px;
+}
+
+.tapasake-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+}
+
+/* Male population density easter egg */
+.male-density-link {
+    color: var(--gold);
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px dotted var(--gold);
+}
+
+.male-density-link:hover {
+    color: #fff;
+}
+
+.male-density-link::after {
+    content: '🏝️ MALÉ, MALDIVES 🏝️\A━━━━━━━━━━━━━━━━━━━━━━━━━\A\APopulation Density\A  97,000 people per km²\A  (Manhattan: 25,000/km²)\A\AThe Numbers\A  190,000 people\A  1.95 km² island\A  36% of country lives here\A\AFun Fact\A  In 1987: 20,000 residents\A  Today: 190,000 residents\A  Nearly 10x growth in 35 years\A\A━━━━━━━━━━━━━━━━━━━━━━━━━\A"The world\'s most crowded island"';
+    white-space: pre;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--cream);
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 1000;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    pointer-events: none;
+    min-width: 240px;
+}
+
+.male-density-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-5px);
+}
 
