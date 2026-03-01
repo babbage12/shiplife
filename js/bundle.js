@@ -15456,7 +15456,7 @@ function spinToMediterranean() {
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
-    const baseTargetY = -lonRad - 1.50;
+    const baseTargetY = -lonRad - 1.55;
 
     // Add extra spin for drama (1 full rotation + target)
     const targetY = baseTargetY + Math.PI * 2;
@@ -16319,7 +16319,7 @@ function focusLocation(loc) {
     const lonRad = lon * (Math.PI / 180);
 
     // Set rotation targets - globe will smooth lerp to these
-    let targetY = -lonRad - 1.50;
+    let targetY = -lonRad - 1.55;
     // Normalize to shortest path (avoid wild multi-rotation spinning)
     while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
     while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -17169,7 +17169,7 @@ function onTouchTap(event) {
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
                     const lonRad = lon * (Math.PI / 180);
-                    let targetY = -lonRad - 1.50;
+                    let targetY = -lonRad - 1.55;
                     // Normalize to shortest path (avoid wild multi-rotation spinning)
                     while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
                     while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -17195,7 +17195,7 @@ function onTouchTap(event) {
                 const lon = loc.coords[1];
                 const lat = loc.coords[0];
                 const lonRad = lon * (Math.PI / 180);
-                let targetY = -lonRad - 1.50;
+                let targetY = -lonRad - 1.55;
                 // Normalize to shortest path (avoid wild multi-rotation spinning)
                 while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
                 while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -17303,7 +17303,7 @@ function onClick(event) {
             const lon = loc.coords[1];
             const lat = loc.coords[0];
             const lonRad = lon * (Math.PI / 180);
-            let targetY = -lonRad - 1.50;
+            let targetY = -lonRad - 1.55;
             // Normalize to shortest path (avoid wild multi-rotation spinning)
             while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
             while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -17329,7 +17329,7 @@ function onClick(event) {
         const lon = loc.coords[1];
         const lat = loc.coords[0];
         const lonRad = lon * (Math.PI / 180);
-        let targetY = -lonRad - 1.50;
+        let targetY = -lonRad - 1.55;
         // Normalize to shortest path (avoid wild multi-rotation spinning)
         while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
         while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
