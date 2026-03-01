@@ -401,7 +401,7 @@ function spinToMediterranean() {
     // Convert Mediterranean coords to globe rotation
     const targetRotationX = MED_COORDS.lat * Math.PI / 180;
     const lonRad = MED_COORDS.lon * (Math.PI / 180);
-    const baseTargetY = -lonRad - 1.55;
+    const baseTargetY = -lonRad - 1.70;
 
     // Add extra spin for drama (1 full rotation + target)
     const targetY = baseTargetY + Math.PI * 2;

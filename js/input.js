@@ -159,7 +159,7 @@ function onTouchTap(event) {
                     const lon = loc.coords[1];
                     const lat = loc.coords[0];
                     const lonRad = lon * (Math.PI / 180);
-                    let targetY = -lonRad - 1.55;
+                    let targetY = -lonRad - 1.70;
                     // Normalize to shortest path (avoid wild multi-rotation spinning)
                     while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
                     while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -185,7 +185,7 @@ function onTouchTap(event) {
                 const lon = loc.coords[1];
                 const lat = loc.coords[0];
                 const lonRad = lon * (Math.PI / 180);
-                let targetY = -lonRad - 1.55;
+                let targetY = -lonRad - 1.70;
                 // Normalize to shortest path (avoid wild multi-rotation spinning)
                 while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
                 while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -293,7 +293,7 @@ function onClick(event) {
             const lon = loc.coords[1];
             const lat = loc.coords[0];
             const lonRad = lon * (Math.PI / 180);
-            let targetY = -lonRad - 1.55;
+            let targetY = -lonRad - 1.70;
             // Normalize to shortest path (avoid wild multi-rotation spinning)
             while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
             while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
@@ -319,7 +319,7 @@ function onClick(event) {
         const lon = loc.coords[1];
         const lat = loc.coords[0];
         const lonRad = lon * (Math.PI / 180);
-        let targetY = -lonRad - 1.55;
+        let targetY = -lonRad - 1.70;
         // Normalize to shortest path (avoid wild multi-rotation spinning)
         while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
         while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
