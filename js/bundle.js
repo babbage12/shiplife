@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T02:18:14.750Z
+// Shiplife Bundle - Generated 2026-03-01T02:37:53.884Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -15352,8 +15352,9 @@ function animate() {
 
                         if (autoOpenPanel) {
                             autoOpenPanel = false;
-                            // Auto-open panel after brief pause to see the icon
-                            setTimeout(() => openPanel(loc), 400);
+                            // Auto-open panel after pause - longer on mobile so user can see where they landed
+                            const isMobile = window.innerWidth <= 768;
+                            setTimeout(() => openPanel(loc), isMobile ? 2500 : 400);
                         } else {
                             triggerBounce(loc.id);
                         }
@@ -15454,8 +15455,9 @@ function animate() {
                 if (targetMarker) {
                     triggerSkyBounce(targetMarker);
 
-                    // Open panel after sky bounce animation starts (slight delay)
-                    setTimeout(() => openPanel(loc), 300);
+                    // Open panel after sky bounce - longer on mobile so user can see where they landed
+                    const isMobile = window.innerWidth <= 768;
+                    setTimeout(() => openPanel(loc), isMobile ? 2500 : 300);
                 } else {
                     // No marker found, just open panel
                     openPanel(loc);
