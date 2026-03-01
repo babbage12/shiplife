@@ -2285,41 +2285,60 @@
             }
 
 
-            /* Left menu - transparent overlay on left side */
+            /* Bottom menu - transparent overlay */
             .location-list {
                 position: fixed;
                 left: 0;
-                top: 15%;
-                bottom: 15%;
-                width: 60%;
-                max-width: 250px;
-                background: rgba(0, 0, 0, 0.35);
-                backdrop-filter: blur(3px);
-                -webkit-backdrop-filter: blur(3px);
-                transform: translateX(-100%);
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 35vh;
+                max-height: 280px;
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                transform: translateY(100%);
                 transition: transform 0.3s ease;
-                padding: 12px 8px;
+                padding: 12px 15px 20px;
                 z-index: 200;
-                border-radius: 0 12px 12px 0;
+                border-radius: 15px 15px 0 0;
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
             }
 
             .location-list.open {
-                transform: translateX(0);
+                transform: translateY(0);
             }
 
-            /* Mobile location items - minimal text list */
+            /* Scroll hint at bottom of menu */
+            .location-list::after {
+                content: 'scroll for more locations ↓';
+                position: sticky;
+                bottom: 0;
+                display: block;
+                text-align: center;
+                padding: 8px 0 4px;
+                font-size: 0.65rem;
+                color: #d4a574;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                background: linear-gradient(transparent, rgba(0,0,0,0.5));
+                margin: 0 -15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            /* Mobile location items - compact list */
             .location-list .location-item {
                 display: block;
-                padding: 6px 10px;
+                padding: 8px 12px;
                 border: none;
-                border-radius: 4px;
+                border-radius: 6px;
                 transition: background 0.2s ease;
             }
 
             .location-list .location-item:active {
-                background: rgba(212, 165, 116, 0.15);
+                background: rgba(212, 165, 116, 0.2);
             }
 
             /* Hide icon completely on mobile */
@@ -2328,7 +2347,7 @@
             }
 
             .location-list .location-item .name {
-                font-size: 0.75rem;
+                font-size: 0.85rem;
                 color: rgba(245, 240, 232, 0.95);
                 text-shadow: 0 1px 4px rgba(0,0,0,0.8);
             }
@@ -2337,34 +2356,36 @@
                 color: #d4a574;
                 font-weight: 500;
                 display: flex;
-                flex-direction: column;
-                line-height: 1.2;
+                flex-direction: row;
+                align-items: center;
+                gap: 8px;
             }
 
             .location-list .location-item.door .chapter-label {
-                font-size: 0.55rem;
-                color: rgba(212, 165, 116, 0.8);
+                font-size: 0.6rem;
+                color: rgba(212, 165, 116, 0.7);
                 text-transform: uppercase;
-                letter-spacing: 0.08em;
+                letter-spacing: 0.05em;
                 font-weight: 400;
+                white-space: nowrap;
             }
 
             .location-list .location-item.door .location-name {
-                font-size: 0.8rem;
+                font-size: 0.9rem;
                 color: #d4a574;
                 font-weight: 500;
             }
 
             .location-list .location-item.door {
-                background: rgba(212, 165, 116, 0.08);
-                border-radius: 4px;
-                margin-bottom: 2px;
+                background: rgba(212, 165, 116, 0.1);
+                border-radius: 6px;
+                margin-bottom: 4px;
             }
 
             /* Fallback: If backdrop-filter causes issues, use slightly more solid background */
             @supports not (backdrop-filter: blur(1px)) {
                 .location-list {
-                    background: rgba(0, 0, 0, 0.5);
+                    background: rgba(0, 0, 0, 0.6);
                 }
             }
 
@@ -2375,9 +2396,14 @@
             /* Section dividers in mobile menu */
             .location-list .sidebar-divider {
                 padding: 6px 12px;
-                margin: 8px 0 4px;
-                font-size: 0.65rem;
-                opacity: 0.7;
+                margin: 6px 0 4px;
+                font-size: 0.6rem;
+                opacity: 0.6;
+            }
+
+            .location-list .sidebar-divider::before,
+            .location-list .sidebar-divider::after {
+                display: none;
             }
             
             /* Right panel - bottom sheet style, opens to show globe peek */
@@ -2454,17 +2480,19 @@
             }
             
             .instructions {
-                bottom: 1.5rem;
+                top: 4.5rem;
+                bottom: auto;
                 left: 1rem;
                 right: 1rem;
                 transform: none;
-                background: rgba(10, 22, 40, 0.8);
-                padding: 0.5rem 1rem;
-                border-radius: 20px;
+                background: transparent;
+                padding: 0;
+                border-radius: 0;
             }
-            
+
             .instructions p {
-                font-size: 0.65rem;
+                font-size: 0.6rem;
+                color: rgba(245, 240, 232, 0.4);
             }
             
             /* Prevent page zoom on double-tap */
@@ -2548,19 +2576,22 @@
         @media (max-width: 768px) {
             .menu-toggle {
                 display: flex !important;
-                left: auto !important;
-                right: 1rem !important;
+                left: 50% !important;
+                right: auto !important;
                 top: auto !important;
-                bottom: 5rem !important;
-                transform: none !important;
-                background: rgba(212, 165, 116, 0.95) !important;
+                bottom: 1rem !important;
+                transform: translateX(-50%) !important;
+                background: rgba(212, 165, 116, 0.9) !important;
                 border: 2px solid var(--gold) !important;
                 box-shadow: 0 4px 20px rgba(0,0,0,0.4) !important;
                 z-index: 350 !important;
+                width: 44px !important;
+                height: 44px !important;
             }
 
-            /* When menu is open, keep toggle in same spot */
+            /* When menu is open, move toggle above menu */
             .menu-toggle.open {
+                bottom: calc(35vh + 0.5rem) !important;
                 background: rgba(212, 165, 116, 0.8) !important;
             }
 
