@@ -10,7 +10,7 @@ const STORAGE_KEY = 'shiplife_progress';
 const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
 
 // Mediterranean coordinates for celebration spin (centered on Italy)
-const MED_COORDS = { lat: 41.0, lon: 15.0 };
+const MED_COORDS = { lat: 41.0, lon: 17.0 };
 
 // Cloudinary base URL
 const CLOUDINARY_BASE = "https://res.cloudinary.com/de5jbyhxx/image/upload";
