@@ -78,8 +78,9 @@ function animate() {
                     transitionStartTime = Date.now();
                     transitionStartZ = null; // Reset for next transition
 
-                    // Calculate zoom distance based on target location's density
-                    currentZoomInDistance = getZoomDistanceForLocation(pendingZoomLocation || pendingLocation);
+                    // Calculate zoom distance - use atmosphere level for celebration, location-specific otherwise
+                    const targetLoc = pendingZoomLocation || pendingLocation;
+                    currentZoomInDistance = targetLoc ? getZoomDistanceForLocation(targetLoc) : atmosphereZoomDistance;
                 }
             } else if (transitionPhase === 'zoom-in') {
                 const progress = Math.min(elapsed / zoomInDuration, 1);
