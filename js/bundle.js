@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:09:57.705Z
+// Shiplife Bundle - Generated 2026-03-01T22:14:17.673Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17418,15 +17418,26 @@ function onTouchTap(event) {
                 stopBounce();
 
                 // Zoom in closer to the location for emphasis
-                const targetZoom = 1.5; // Zoom in close
-                if (camera.position.z > targetZoom + 0.3) {
-                    // Animate zoom-in
-                    isTransitioning = true;
-                    transitionPhase = 'zoom-in';
-                    transitionStartTime = Date.now();
-                    transitionStartZ = camera.position.z;
-                    currentZoomInDistance = targetZoom;
-                    zoomOutDistance = camera.position.z; // Start from current position
+                // Simple standalone animation that always works
+                const zoomStart = camera.position.z;
+                const zoomTarget = 1.2; // Very close for emphasis
+                const zoomDuration = 600;
+                const zoomStartTime = Date.now();
+
+                function animateZoomIn() {
+                    const elapsed = Date.now() - zoomStartTime;
+                    const progress = Math.min(elapsed / zoomDuration, 1);
+                    const easeOut = 1 - Math.pow(1 - progress, 3);
+                    camera.position.z = zoomStart + (zoomTarget - zoomStart) * easeOut;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animateZoomIn);
+                    }
+                }
+
+                // Only zoom if we're not already very close
+                if (zoomStart > zoomTarget + 0.1) {
+                    animateZoomIn();
                 }
 
                 // Trigger sky bounce effect on the clicked marker
@@ -17526,15 +17537,26 @@ function onClick(event) {
         stopBounce();
 
         // Zoom in closer to the location for emphasis
-        const targetZoom = 1.5; // Zoom in close
-        if (camera.position.z > targetZoom + 0.3) {
-            // Animate zoom-in
-            isTransitioning = true;
-            transitionPhase = 'zoom-in';
-            transitionStartTime = Date.now();
-            transitionStartZ = camera.position.z;
-            currentZoomInDistance = targetZoom;
-            zoomOutDistance = camera.position.z; // Start from current position
+        // Simple standalone animation that always works
+        const zoomStart = camera.position.z;
+        const zoomTarget = 1.2; // Very close for emphasis
+        const zoomDuration = 600;
+        const zoomStartTime = Date.now();
+
+        function animateZoomIn() {
+            const elapsed = Date.now() - zoomStartTime;
+            const progress = Math.min(elapsed / zoomDuration, 1);
+            const easeOut = 1 - Math.pow(1 - progress, 3);
+            camera.position.z = zoomStart + (zoomTarget - zoomStart) * easeOut;
+
+            if (progress < 1) {
+                requestAnimationFrame(animateZoomIn);
+            }
+        }
+
+        // Only zoom if we're not already very close
+        if (zoomStart > zoomTarget + 0.1) {
+            animateZoomIn();
         }
 
         // Trigger sky bounce effect on the clicked marker
