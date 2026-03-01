@@ -485,6 +485,24 @@ function closePanel() {
     sidePanel.classList.remove('expanded');
     panelIsOpen = false; // Resume auto-rotation
     currentLocation = null;
+
+    // Hide scroll hint immediately when panel closes
+    const scrollHint = document.getElementById('scrollHintBottom');
+    if (scrollHint) scrollHint.classList.remove('visible');
+
+    // Reopen mobile location menu after panel closes
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        setTimeout(() => {
+            // Only reopen if panel is still closed
+            if (!panelIsOpen) {
+                const menu = document.getElementById('locationList');
+                const overlay = document.getElementById('mobileOverlay');
+                if (menu) menu.classList.add('open');
+                if (overlay) overlay.classList.add('open');
+            }
+        }, 500);
+    }
 }
 
 function expandPanel() {

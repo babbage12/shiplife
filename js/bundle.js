@@ -1,12 +1,3 @@
-// Shiplife Bundle - Generated 2026-03-01T23:19:15.899Z
-// This file combines all JS modules for faster loading.
-// Do not edit directly - modify source files and rebuild.
-
-
-// ============================================
-// SOURCE: js/data/config.js
-// ============================================
-
 // ============================================
 // CONFIGURATION
 // Constants, URLs, and global settings
@@ -262,12 +253,6 @@ const ICON_CONFIG = {
     "Isle of Pines, New Caledonia": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
     "Noumea, New Caledonia": { style: 'culture', symbol: 'fleur', color: '#0055a4', accent: '#ffffff' }
 };
-
-
-// ============================================
-// SOURCE: js/data/galleries.js
-// ============================================
-
 const locationGalleries = {
     // AMAZON RIVER / MANAUS (20 images)
     "amazon": [
@@ -2496,12 +2481,6 @@ function generateGallery(locationId, customTitle = "More Photos") {
 
     return galleryHTML;
 }
-
-
-// ============================================
-// SOURCE: js/data/locations.js
-// ============================================
-
 const locations = [
     {
         id: 1,
@@ -12520,154 +12499,6 @@ an original composition inspired by this place.
         `
     }
 ];
-
-
-// ============================================
-// SOURCE: js/utils.js
-// ============================================
-
-// ============================================
-// UTILITY FUNCTIONS
-// Helper functions used across the application
-// ============================================
-
-// Convert latitude/longitude to 3D vector position on globe
-function latLonToVector3(lat, lon, radius) {
-    const phi = (90 - lat) * (Math.PI / 180);
-    const theta = (lon + 180) * (Math.PI / 180);
-    
-    return new THREE.Vector3(
-        -radius * Math.sin(phi) * Math.cos(theta),
-        radius * Math.cos(phi),
-        radius * Math.sin(phi) * Math.sin(theta)
-    );
-}
-
-// Shortest angle difference calculation (for smooth rotation)
-function shortestAngleDiff(current, target) {
-    const diff = target - current;
-    const fullRotation = Math.PI * 2;
-    return ((diff + fullRotation / 2) % fullRotation) - fullRotation / 2;
-}
-
-// Convert longitude to target Y rotation for globe
-function getTargetY(lon) {
-    // Interpolation points mapping longitude to globe Y rotation
-    if (lon <= -83.54) {
-        return -0.10;
-    } else if (lon <= -41.89) {
-        const t = (lon - (-83.54)) / (-41.89 - (-83.54));
-        return -0.10 + t * (-0.87 - (-0.10));
-    } else if (lon <= 5.37) {
-        const t = (lon - (-41.89)) / (5.37 - (-41.89));
-        return -0.87 + t * (-1.65 - (-0.87));
-    } else if (lon <= 9.21) {
-        const t = (lon - 5.37) / (9.21 - 5.37);
-        return -1.65 + t * (4.60 - (-1.65));
-    } else if (lon <= 12.50) {
-        const t = (lon - 9.21) / (12.50 - 9.21);
-        return 4.60 + t * (4.50 - 4.60);
-    } else if (lon <= 14.51) {
-        const t = (lon - 12.50) / (14.51 - 12.50);
-        return 4.50 + t * (4.42 - 4.50);
-    } else if (lon <= 130.85) {
-        const t = (lon - 14.51) / (130.85 - 14.51);
-        return 4.42 + t * (2.44 - 4.42);
-    } else if (lon <= 151.21) {
-        const t = (lon - 130.85) / (151.21 - 130.85);
-        return 2.44 + t * (2.10 - 2.44);
-    } else if (lon <= 153.03) {
-        const t = (lon - 151.21) / (153.03 - 151.21);
-        return 2.10 + t * (8.30 - 2.10);
-    } else if (lon <= 167.90) {
-        const t = (lon - 153.03) / (167.90 - 153.03);
-        return 8.30 + t * (8.10 - 8.30);
-    } else if (lon <= 174.78) {
-        const t = (lon - 167.90) / (174.78 - 167.90);
-        return 8.10 + t * (8.01 - 8.10);
-    } else if (lon <= 176.17) {
-        const t = (lon - 174.78) / (176.17 - 174.78);
-        return 8.01 + t * (7.93 - 8.01);
-    } else {
-        const t = (lon - 176.17) / (176.91 - 176.17);
-        return 7.93 + t * (7.90 - 7.93);
-    }
-}
-
-// Calculate density factor for each location based on nearby neighbors
-function calculateDensityFactors() {
-    const densityFactors = new Map();
-    const proximityThreshold = 15;
-    const minScale = 0.5;
-    const maxNeighbors = 6;
-    
-    locations.forEach(loc => {
-        if (loc.isDoor) {
-            densityFactors.set(loc.id, 1.0);
-            return;
-        }
-        
-        let neighborCount = 0;
-        locations.forEach(other => {
-            if (other.id === loc.id) return;
-            
-            const lat1 = loc.coords[0], lon1 = loc.coords[1];
-            const lat2 = other.coords[0], lon2 = other.coords[1];
-            const dLat = Math.abs(lat2 - lat1);
-            const dLon = Math.abs(lon2 - lon1);
-            const distance = Math.sqrt(dLat * dLat + dLon * dLon);
-            
-            if (distance < proximityThreshold) {
-                neighborCount++;
-            }
-        });
-        
-        const densityRatio = Math.min(neighborCount / maxNeighbors, 1.0);
-        const scaleFactor = 1.0 - (densityRatio * (1.0 - minScale));
-        
-        densityFactors.set(loc.id, scaleFactor);
-    });
-    
-    globalDensityFactors = densityFactors;
-    return densityFactors;
-}
-
-// Calculate zoom distance for a location
-function getZoomDistanceForLocation(loc) {
-    if (!globalDensityFactors || !loc) return baseZoomInDistance;
-    
-    const doorSize = 0.040;
-    const doorZoom = baseZoomInDistance;
-    
-    let iconSize;
-    if (loc.isDoor) {
-        iconSize = doorSize;
-    } else {
-        const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
-        const manualOverride = 1.0;
-        iconSize = 0.029 * densityFactor * manualOverride;
-    }
-    
-    const fullProportionalZoom = doorZoom * (iconSize / doorSize);
-    const blendFactor = 0.5;
-    const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
-    const minZoom = 1.20;
-    
-    return Math.max(zoomDistance, minZoom);
-}
-
-// Get pinch distance for touch events
-function getPinchDistance(touches) {
-    const dx = touches[0].clientX - touches[1].clientX;
-    const dy = touches[0].clientY - touches[1].clientY;
-    return Math.sqrt(dx * dx + dy * dy);
-}
-
-
-// ============================================
-// SOURCE: js/globe/core.js
-// ============================================
-
 // ============================================
 // GLOBE CORE MODULE
 // Three.js scene, camera, globe, and textures
@@ -13240,12 +13071,6 @@ function triggerSkyBounce(marker) {
     skyBounceActive = true;
     skyBounceStartTime = Date.now();
 }
-
-
-// ============================================
-// SOURCE: js/globe/markers.js
-// ============================================
-
 const markerAnimations = new Map();
 
 // Dimming state for guided experience
@@ -15228,12 +15053,6 @@ function animateMarkerFlare(marker) {
     requestAnimationFrame(animate);
 }
 
-
-
-// ============================================
-// SOURCE: js/globe/animation.js
-// ============================================
-
 function animate() {
     requestAnimationFrame(animate);
     
@@ -15681,95 +15500,6 @@ function showTapHint() {
     document.addEventListener('click', hideHint, { once: true });
     setTimeout(hideHint, 5000);
 }
-
-
-
-// ============================================
-// SOURCE: js/ui/tooltip.js
-// ============================================
-
-// ============================================
-// TOOLTIP MODULE
-// Hover tooltips for location markers
-// ============================================
-
-function showTooltip(loc, marker) {
-    // Don't show tooltip while intro modal is open
-    const introModal = document.getElementById('introModal');
-    if (introModal && introModal.classList.contains('active')) {
-        return;
-    }
-
-    // Don't show tooltip while a location panel is open
-    if (currentLocation) {
-        return;
-    }
-
-    document.getElementById('tooltipTag').textContent = loc.tag;
-    document.getElementById('tooltipTitle').textContent = loc.title;
-    document.getElementById('tooltipDesc').textContent = loc.shortDesc;
-
-    updateTooltipPosition(marker);
-    tooltip.classList.add('visible');
-}
-
-function updateTooltipPosition(marker) {
-    const markerWorldPos = new THREE.Vector3();
-    marker.getWorldPosition(markerWorldPos);
-    
-    const screenPos = markerWorldPos.clone().project(camera);
-    
-    const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
-    const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
-    
-    const offsetY = marker.userData.isDoor ? 85 : 70;
-    
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = (y + offsetY) + 'px';
-}
-
-function hideTooltip() {
-    tooltip.classList.remove('visible');
-}
-
-function checkHover(event) {
-    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    
-    raycaster.setFromCamera(mouse, camera);
-    const intersects = raycaster.intersectObjects(markers);
-    
-    if (intersects.length > 0) {
-        const marker = intersects[0].object;
-        
-        if (marker.userData.title) {
-            hoveredMarker = marker;
-            showTooltip(marker.userData, marker);
-            document.body.style.cursor = 'pointer';
-            
-            // Highlight marker
-            const baseScale = marker.userData.baseSize * 2;
-            const useAI = marker.userData.useAIPorthole;
-            const baseScaleY = useAI ? marker.userData.baseSize * 2 : (marker.userData.isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
-            marker.scale.set(baseScale * 1.3, baseScaleY * 1.3, 1);
-        }
-    } else {
-        if (hoveredMarker) {
-            const baseScale = hoveredMarker.userData.baseSize * 2;
-            const useAI = hoveredMarker.userData.useAIPorthole;
-            const baseScaleY = useAI ? hoveredMarker.userData.baseSize * 2 : (hoveredMarker.userData.isDoor ? hoveredMarker.userData.baseSize * 2 : hoveredMarker.userData.baseSize * 2.2);
-            hoveredMarker.scale.set(baseScale, baseScaleY, 1);
-        }
-        hoveredMarker = null;
-        hideTooltip();
-        document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
-    }
-}
-
-
-// ============================================
-// SOURCE: js/ui/panel.js
-// ============================================
 
 // ============================================
 // PANEL MODULE
@@ -16258,6 +15988,24 @@ function closePanel() {
     sidePanel.classList.remove('expanded');
     panelIsOpen = false; // Resume auto-rotation
     currentLocation = null;
+
+    // Hide scroll hint immediately when panel closes
+    const scrollHint = document.getElementById('scrollHintBottom');
+    if (scrollHint) scrollHint.classList.remove('visible');
+
+    // Reopen mobile location menu after panel closes
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        setTimeout(() => {
+            // Only reopen if panel is still closed
+            if (!panelIsOpen) {
+                const menu = document.getElementById('locationList');
+                const overlay = document.getElementById('mobileOverlay');
+                if (menu) menu.classList.add('open');
+                if (overlay) overlay.classList.add('open');
+            }
+        }, 500);
+    }
 }
 
 function expandPanel() {
@@ -16387,12 +16135,6 @@ document.addEventListener('click', function(e) {
         document.querySelectorAll('.more-info-container.active').forEach(c => c.classList.remove('active'));
     }
 });
-
-
-// ============================================
-// SOURCE: js/ui/sidebar.js
-// ============================================
-
 // ============================================
 // SIDEBAR MODULE
 // Location list and mobile menu
@@ -16701,12 +16443,83 @@ function updateSkipHintVisibility() {
         skipLink.classList.toggle('hidden', isGuidedComplete());
     }
 }
-
-
 // ============================================
-// SOURCE: js/ui/lightbox.js
+// TOOLTIP MODULE
+// Hover tooltips for location markers
 // ============================================
 
+function showTooltip(loc, marker) {
+    // Don't show tooltip while intro modal is open
+    const introModal = document.getElementById('introModal');
+    if (introModal && introModal.classList.contains('active')) {
+        return;
+    }
+
+    // Don't show tooltip while a location panel is open
+    if (currentLocation) {
+        return;
+    }
+
+    document.getElementById('tooltipTag').textContent = loc.tag;
+    document.getElementById('tooltipTitle').textContent = loc.title;
+    document.getElementById('tooltipDesc').textContent = loc.shortDesc;
+
+    updateTooltipPosition(marker);
+    tooltip.classList.add('visible');
+}
+
+function updateTooltipPosition(marker) {
+    const markerWorldPos = new THREE.Vector3();
+    marker.getWorldPosition(markerWorldPos);
+    
+    const screenPos = markerWorldPos.clone().project(camera);
+    
+    const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
+    const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
+    
+    const offsetY = marker.userData.isDoor ? 85 : 70;
+    
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = (y + offsetY) + 'px';
+}
+
+function hideTooltip() {
+    tooltip.classList.remove('visible');
+}
+
+function checkHover(event) {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(markers);
+    
+    if (intersects.length > 0) {
+        const marker = intersects[0].object;
+        
+        if (marker.userData.title) {
+            hoveredMarker = marker;
+            showTooltip(marker.userData, marker);
+            document.body.style.cursor = 'pointer';
+            
+            // Highlight marker
+            const baseScale = marker.userData.baseSize * 2;
+            const useAI = marker.userData.useAIPorthole;
+            const baseScaleY = useAI ? marker.userData.baseSize * 2 : (marker.userData.isDoor ? marker.userData.baseSize * 2 : marker.userData.baseSize * 2.2);
+            marker.scale.set(baseScale * 1.3, baseScaleY * 1.3, 1);
+        }
+    } else {
+        if (hoveredMarker) {
+            const baseScale = hoveredMarker.userData.baseSize * 2;
+            const useAI = hoveredMarker.userData.useAIPorthole;
+            const baseScaleY = useAI ? hoveredMarker.userData.baseSize * 2 : (hoveredMarker.userData.isDoor ? hoveredMarker.userData.baseSize * 2 : hoveredMarker.userData.baseSize * 2.2);
+            hoveredMarker.scale.set(baseScale, baseScaleY, 1);
+        }
+        hoveredMarker = null;
+        hideTooltip();
+        document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
+    }
+}
 // ============================================
 // LIGHTBOX MODULE
 // Image viewer for story photos with navigation
@@ -16859,12 +16672,6 @@ document.addEventListener('keydown', function(e) {
         lightboxNext(e);
     }
 });
-
-
-// ============================================
-// SOURCE: js/ui/carousel.js
-// ============================================
-
 // ============================================
 // CAROUSEL MODULE
 // World tour slideshow functionality
@@ -17133,12 +16940,6 @@ const sidePanelEl = document.getElementById('sidePanel');
 if (sidePanelEl) {
     carouselObserver.observe(sidePanelEl, { attributes: true, attributeFilter: ['class'] });
 }
-
-
-// ============================================
-// SOURCE: js/ui/modal.js
-// ============================================
-
 // ============================================
 // MODAL MODULE
 // Intro modal and Director's Commentary modal
@@ -17207,91 +17008,6 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
-
-
-// ============================================
-// SOURCE: js/audio.js
-// ============================================
-
-// ============================================
-// AUDIO MODULE
-// Background music control with fade in/out
-// ============================================
-
-let musicFadeInterval = null;
-
-function playBackgroundMusic(doorId) {
-    const trackUrl = doorAudioTracks[doorId];
-    const backgroundMusic = document.getElementById('backgroundMusic');
-    
-    if (!trackUrl || !backgroundMusic) {
-        return;
-    }
-    
-    // Stop any existing fade
-    if (musicFadeInterval) {
-        clearInterval(musicFadeInterval);
-        musicFadeInterval = null;
-    }
-    
-    // Set the source
-    backgroundMusic.src = trackUrl;
-    
-    // Start at zero volume
-    backgroundMusic.currentTime = 0;
-    backgroundMusic.volume = 0;
-    
-    // Play and fade in
-    backgroundMusic.play().then(() => {
-        const startTime = Date.now();
-        musicFadeInterval = setInterval(() => {
-            const elapsed = Date.now() - startTime;
-            const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
-            backgroundMusic.volume = progress * MUSIC_MAX_VOLUME;
-            
-            if (progress >= 1) {
-                clearInterval(musicFadeInterval);
-                musicFadeInterval = null;
-            }
-        }, 50);
-    }).catch(err => {
-        console.error('Audio playback failed:', err.name, err.message);
-    });
-}
-
-function stopBackgroundMusic() {
-    const backgroundMusic = document.getElementById('backgroundMusic');
-    if (!backgroundMusic || backgroundMusic.paused) return;
-    
-    // Stop any existing fade
-    if (musicFadeInterval) {
-        clearInterval(musicFadeInterval);
-        musicFadeInterval = null;
-    }
-    
-    // Fade out
-    const startVolume = backgroundMusic.volume;
-    const startTime = Date.now();
-    
-    musicFadeInterval = setInterval(() => {
-        const elapsed = Date.now() - startTime;
-        const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
-        backgroundMusic.volume = startVolume * (1 - progress);
-        
-        if (progress >= 1) {
-            clearInterval(musicFadeInterval);
-            musicFadeInterval = null;
-            backgroundMusic.pause();
-            backgroundMusic.currentTime = 0;
-        }
-    }, 50);
-}
-
-
-// ============================================
-// SOURCE: js/input.js
-// ============================================
-
 // ============================================
 // INPUT MODULE
 // Mouse and touch event handlers
@@ -17409,6 +17125,11 @@ function onTouchTap(event) {
 
         raycaster.setFromCamera(mouse, camera);
         const intersects = raycaster.intersectObjects(markers);
+
+        // Dismiss mobile menu when tapping on globe area
+        if (typeof dismissMenuTemporarily === 'function') {
+            dismissMenuTemporarily();
+        }
 
         if (intersects.length > 0) {
             const marker = intersects[0].object;
@@ -17720,12 +17441,215 @@ function showDimmedMarkerMessage() {
         setTimeout(() => toast.remove(), 300);
     }, 2500);
 }
-
-
 // ============================================
-// SOURCE: js/main.js
+// AUDIO MODULE
+// Background music control with fade in/out
 // ============================================
 
+let musicFadeInterval = null;
+
+function playBackgroundMusic(doorId) {
+    const trackUrl = doorAudioTracks[doorId];
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    
+    if (!trackUrl || !backgroundMusic) {
+        return;
+    }
+    
+    // Stop any existing fade
+    if (musicFadeInterval) {
+        clearInterval(musicFadeInterval);
+        musicFadeInterval = null;
+    }
+    
+    // Set the source
+    backgroundMusic.src = trackUrl;
+    
+    // Start at zero volume
+    backgroundMusic.currentTime = 0;
+    backgroundMusic.volume = 0;
+    
+    // Play and fade in
+    backgroundMusic.play().then(() => {
+        const startTime = Date.now();
+        musicFadeInterval = setInterval(() => {
+            const elapsed = Date.now() - startTime;
+            const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
+            backgroundMusic.volume = progress * MUSIC_MAX_VOLUME;
+            
+            if (progress >= 1) {
+                clearInterval(musicFadeInterval);
+                musicFadeInterval = null;
+            }
+        }, 50);
+    }).catch(err => {
+        console.error('Audio playback failed:', err.name, err.message);
+    });
+}
+
+function stopBackgroundMusic() {
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    if (!backgroundMusic || backgroundMusic.paused) return;
+    
+    // Stop any existing fade
+    if (musicFadeInterval) {
+        clearInterval(musicFadeInterval);
+        musicFadeInterval = null;
+    }
+    
+    // Fade out
+    const startVolume = backgroundMusic.volume;
+    const startTime = Date.now();
+    
+    musicFadeInterval = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / MUSIC_FADE_DURATION, 1);
+        backgroundMusic.volume = startVolume * (1 - progress);
+        
+        if (progress >= 1) {
+            clearInterval(musicFadeInterval);
+            musicFadeInterval = null;
+            backgroundMusic.pause();
+            backgroundMusic.currentTime = 0;
+        }
+    }, 50);
+}
+// ============================================
+// UTILITY FUNCTIONS
+// Helper functions used across the application
+// ============================================
+
+// Convert latitude/longitude to 3D vector position on globe
+function latLonToVector3(lat, lon, radius) {
+    const phi = (90 - lat) * (Math.PI / 180);
+    const theta = (lon + 180) * (Math.PI / 180);
+    
+    return new THREE.Vector3(
+        -radius * Math.sin(phi) * Math.cos(theta),
+        radius * Math.cos(phi),
+        radius * Math.sin(phi) * Math.sin(theta)
+    );
+}
+
+// Shortest angle difference calculation (for smooth rotation)
+function shortestAngleDiff(current, target) {
+    const diff = target - current;
+    const fullRotation = Math.PI * 2;
+    return ((diff + fullRotation / 2) % fullRotation) - fullRotation / 2;
+}
+
+// Convert longitude to target Y rotation for globe
+function getTargetY(lon) {
+    // Interpolation points mapping longitude to globe Y rotation
+    if (lon <= -83.54) {
+        return -0.10;
+    } else if (lon <= -41.89) {
+        const t = (lon - (-83.54)) / (-41.89 - (-83.54));
+        return -0.10 + t * (-0.87 - (-0.10));
+    } else if (lon <= 5.37) {
+        const t = (lon - (-41.89)) / (5.37 - (-41.89));
+        return -0.87 + t * (-1.65 - (-0.87));
+    } else if (lon <= 9.21) {
+        const t = (lon - 5.37) / (9.21 - 5.37);
+        return -1.65 + t * (4.60 - (-1.65));
+    } else if (lon <= 12.50) {
+        const t = (lon - 9.21) / (12.50 - 9.21);
+        return 4.60 + t * (4.50 - 4.60);
+    } else if (lon <= 14.51) {
+        const t = (lon - 12.50) / (14.51 - 12.50);
+        return 4.50 + t * (4.42 - 4.50);
+    } else if (lon <= 130.85) {
+        const t = (lon - 14.51) / (130.85 - 14.51);
+        return 4.42 + t * (2.44 - 4.42);
+    } else if (lon <= 151.21) {
+        const t = (lon - 130.85) / (151.21 - 130.85);
+        return 2.44 + t * (2.10 - 2.44);
+    } else if (lon <= 153.03) {
+        const t = (lon - 151.21) / (153.03 - 151.21);
+        return 2.10 + t * (8.30 - 2.10);
+    } else if (lon <= 167.90) {
+        const t = (lon - 153.03) / (167.90 - 153.03);
+        return 8.30 + t * (8.10 - 8.30);
+    } else if (lon <= 174.78) {
+        const t = (lon - 167.90) / (174.78 - 167.90);
+        return 8.10 + t * (8.01 - 8.10);
+    } else if (lon <= 176.17) {
+        const t = (lon - 174.78) / (176.17 - 174.78);
+        return 8.01 + t * (7.93 - 8.01);
+    } else {
+        const t = (lon - 176.17) / (176.91 - 176.17);
+        return 7.93 + t * (7.90 - 7.93);
+    }
+}
+
+// Calculate density factor for each location based on nearby neighbors
+function calculateDensityFactors() {
+    const densityFactors = new Map();
+    const proximityThreshold = 15;
+    const minScale = 0.5;
+    const maxNeighbors = 6;
+    
+    locations.forEach(loc => {
+        if (loc.isDoor) {
+            densityFactors.set(loc.id, 1.0);
+            return;
+        }
+        
+        let neighborCount = 0;
+        locations.forEach(other => {
+            if (other.id === loc.id) return;
+            
+            const lat1 = loc.coords[0], lon1 = loc.coords[1];
+            const lat2 = other.coords[0], lon2 = other.coords[1];
+            const dLat = Math.abs(lat2 - lat1);
+            const dLon = Math.abs(lon2 - lon1);
+            const distance = Math.sqrt(dLat * dLat + dLon * dLon);
+            
+            if (distance < proximityThreshold) {
+                neighborCount++;
+            }
+        });
+        
+        const densityRatio = Math.min(neighborCount / maxNeighbors, 1.0);
+        const scaleFactor = 1.0 - (densityRatio * (1.0 - minScale));
+        
+        densityFactors.set(loc.id, scaleFactor);
+    });
+    
+    globalDensityFactors = densityFactors;
+    return densityFactors;
+}
+
+// Calculate zoom distance for a location
+function getZoomDistanceForLocation(loc) {
+    if (!globalDensityFactors || !loc) return baseZoomInDistance;
+    
+    const doorSize = 0.040;
+    const doorZoom = baseZoomInDistance;
+    
+    let iconSize;
+    if (loc.isDoor) {
+        iconSize = doorSize;
+    } else {
+        const densityFactor = globalDensityFactors.get(loc.id) || 1.0;
+        const manualOverride = 1.0;
+        iconSize = 0.029 * densityFactor * manualOverride;
+    }
+    
+    const fullProportionalZoom = doorZoom * (iconSize / doorSize);
+    const blendFactor = 0.5;
+    const zoomDistance = doorZoom - (doorZoom - fullProportionalZoom) * blendFactor;
+    const minZoom = 1.20;
+    
+    return Math.max(zoomDistance, minZoom);
+}
+
+// Get pinch distance for touch events
+function getPinchDistance(touches) {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
 // ============================================
 // MAIN MODULE
 // Application initialization and stars background
@@ -17770,4 +17694,3 @@ function initStars() {
 
 // Initialize when DOM is ready
 init();
-
