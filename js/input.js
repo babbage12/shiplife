@@ -116,6 +116,11 @@ function onTouchTap(event) {
         raycaster.setFromCamera(mouse, camera);
         const intersects = raycaster.intersectObjects(markers);
 
+        // Dismiss mobile menu when tapping on globe area
+        if (typeof dismissMenuTemporarily === 'function') {
+            dismissMenuTemporarily();
+        }
+
         if (intersects.length > 0) {
             const marker = intersects[0].object;
             if (marker.userData.title) {
