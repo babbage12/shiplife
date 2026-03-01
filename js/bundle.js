@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:14:17.673Z
+// Shiplife Bundle - Generated 2026-03-01T22:20:08.739Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17273,11 +17273,15 @@ function onMouseDown(event) {
 
 function onMouseMove(event) {
     if (isUserInteracting) {
-        targetRotationY = targetRotationYOnMouseDown + (event.clientX - mouseXOnMouseDown) * 0.002;
-        targetRotationX = targetRotationXOnMouseDown + (event.clientY - mouseYOnMouseDown) * 0.002;
+        // Scale sensitivity based on zoom - less sensitive when zoomed in close
+        const zoomFactor = Math.max(0.3, (camera.position.z - 1.0) / 3.0);
+        const sensitivity = 0.002 * zoomFactor;
+
+        targetRotationY = targetRotationYOnMouseDown + (event.clientX - mouseXOnMouseDown) * sensitivity;
+        targetRotationX = targetRotationXOnMouseDown + (event.clientY - mouseYOnMouseDown) * sensitivity;
         targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
     }
-    
+
     checkHover(event);
 }
 
@@ -17316,11 +17320,15 @@ function onTouchStart(event) {
 
 function onTouchMove(event) {
     event.preventDefault();
-    
+
     if (event.touches.length === 1 && isUserInteracting && !initialPinchDistance) {
+        // Scale sensitivity based on zoom - less sensitive when zoomed in close
+        const zoomFactor = Math.max(0.3, (camera.position.z - 1.0) / 3.0);
+        const sensitivity = 0.002 * zoomFactor;
+
         // Single finger drag to rotate
-        targetRotationY = targetRotationYOnMouseDown + (event.touches[0].clientX - touchStartX) * 0.002;
-        targetRotationX = targetRotationXOnMouseDown + (event.touches[0].clientY - touchStartY) * 0.002;
+        targetRotationY = targetRotationYOnMouseDown + (event.touches[0].clientX - touchStartX) * sensitivity;
+        targetRotationX = targetRotationXOnMouseDown + (event.touches[0].clientY - touchStartY) * sensitivity;
         targetRotationX = Math.max(-Math.PI / 2, Math.min(Math.PI / 2, targetRotationX));
     } else if (event.touches.length === 2 && initialPinchDistance) {
         // Pinch to zoom
