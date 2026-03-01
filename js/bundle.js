@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:20:08.739Z
+// Shiplife Bundle - Generated 2026-03-01T22:25:13.031Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -15355,7 +15355,7 @@ function animate() {
                             autoOpenPanel = false;
                             // Auto-open panel after pause - longer on mobile so user can see where they landed
                             const isMobile = window.innerWidth <= 768;
-                            setTimeout(() => openPanel(loc), isMobile ? 2500 : 400);
+                            setTimeout(() => openPanel(loc), isMobile ? 1500 : 400);
                         } else {
                             triggerBounce(loc.id);
                         }
@@ -15458,7 +15458,7 @@ function animate() {
 
                     // Open panel after sky bounce - longer on mobile so user can see where they landed
                     const isMobile = window.innerWidth <= 768;
-                    setTimeout(() => openPanel(loc), isMobile ? 2500 : 300);
+                    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
                 } else {
                     // No marker found, just open panel
                     openPanel(loc);
@@ -17425,6 +17425,13 @@ function onTouchTap(event) {
                 // Stop bouncing immediately on click (visual feedback)
                 stopBounce();
 
+                // Rotate globe to center on the tapped location
+                const lon = loc.coords[1];
+                const lat = loc.coords[0];
+                const lonRad = lon * (Math.PI / 180);
+                targetRotationY = -lonRad - 1.55;
+                targetRotationX = lat * (Math.PI / 180);
+
                 // Zoom in closer to the location for emphasis
                 // Simple standalone animation that always works
                 const zoomStart = camera.position.z;
@@ -17462,7 +17469,7 @@ function onTouchTap(event) {
 
                 // Delay before opening panel - longer on mobile so user can see location
                 const isMobile = window.innerWidth <= 768;
-                const panelDelay = isMobile ? 2500 : 800;
+                const panelDelay = isMobile ? 1500 : 800;
 
                 // Doors have iris animation, regular icons don't
                 // But skip iris animation for AI texture markers (no canvas to animate)
@@ -17544,6 +17551,13 @@ function onClick(event) {
         // Stop bouncing immediately on click (visual feedback)
         stopBounce();
 
+        // Rotate globe to center on the clicked location
+        const lon = loc.coords[1];
+        const lat = loc.coords[0];
+        const lonRad = lon * (Math.PI / 180);
+        targetRotationY = -lonRad - 1.55;
+        targetRotationX = lat * (Math.PI / 180);
+
         // Zoom in closer to the location for emphasis
         // Simple standalone animation that always works
         const zoomStart = camera.position.z;
@@ -17581,7 +17595,7 @@ function onClick(event) {
 
         // Delay before opening panel - longer on mobile so user can see location
         const isMobile = window.innerWidth <= 768;
-        const panelDelay = isMobile ? 2500 : 800;
+        const panelDelay = isMobile ? 1500 : 800;
 
         // Doors have iris animation, regular icons don't
         // But skip iris animation for AI texture markers (no canvas to animate)

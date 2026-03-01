@@ -119,7 +119,7 @@ function animate() {
                             autoOpenPanel = false;
                             // Auto-open panel after pause - longer on mobile so user can see where they landed
                             const isMobile = window.innerWidth <= 768;
-                            setTimeout(() => openPanel(loc), isMobile ? 2500 : 400);
+                            setTimeout(() => openPanel(loc), isMobile ? 1500 : 400);
                         } else {
                             triggerBounce(loc.id);
                         }
@@ -222,7 +222,7 @@ function animate() {
 
                     // Open panel after sky bounce - longer on mobile so user can see where they landed
                     const isMobile = window.innerWidth <= 768;
-                    setTimeout(() => openPanel(loc), isMobile ? 2500 : 300);
+                    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
                 } else {
                     // No marker found, just open panel
                     openPanel(loc);
