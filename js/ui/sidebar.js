@@ -182,7 +182,7 @@ function focusLocation(loc) {
     const lonRad = lon * (Math.PI / 180);
 
     // Set rotation targets - globe will smooth lerp to these
-    let targetY = -lonRad - 1.70;
+    let targetY = -lonRad - 1.62;
     // Normalize to shortest path (avoid wild multi-rotation spinning)
     while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
     while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
