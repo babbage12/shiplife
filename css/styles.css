@@ -2287,17 +2287,18 @@
 
             /* Bottom menu - transparent overlay, hidden by default */
             .location-list {
-                position: fixed;
-                left: 0;
-                right: 0;
-                bottom: 0;
+                position: fixed !important;
+                top: auto !important;
+                left: 0 !important;
+                right: 0 !important;
+                bottom: 0 !important;
                 width: 100%;
                 height: auto;
                 max-height: 175px;
                 background: rgba(0, 0, 0, 0.35);
                 backdrop-filter: blur(4px);
                 -webkit-backdrop-filter: blur(4px);
-                transform: translateY(100%);
+                transform: translateY(100%) !important;
                 transition: transform 0.3s ease;
                 padding: 6px 15px 8px;
                 z-index: 200;
@@ -2308,7 +2309,7 @@
             }
 
             .location-list.open {
-                transform: translateY(0);
+                transform: translateY(0) !important;
                 visibility: visible;
             }
 
