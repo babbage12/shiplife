@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-01T22:06:12.050Z
+// Shiplife Bundle - Generated 2026-03-01T22:09:57.705Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -40,6 +40,7 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 const introDuration = 3000;
 const bounceDuration = 350;
 const defaultZoomDistance = 1.5;   // Default camera distance
+const atmosphereZoomDistance = 1.35; // Comfortable browsing distance (closer)
 const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
 const zoomOutDistance = 4.8;      // Further back for celebration spin only
 const baseZoomInDistance = 1.7;
@@ -15921,6 +15922,29 @@ function openPanel(loc) {
         sidePanel.classList.add('expanded');
         sidePanel.classList.add('open');
         panelIsOpen = true; // Stop auto-rotation while reading
+
+        // Zoom back to comfortable "atmosphere" level for browsing
+        // Smooth animation over 800ms
+        const startZ = camera.position.z;
+        const targetZ = atmosphereZoomDistance;
+        const zoomBackDuration = 800;
+        const zoomBackStart = Date.now();
+
+        function animateZoomBack() {
+            const elapsed = Date.now() - zoomBackStart;
+            const progress = Math.min(elapsed / zoomBackDuration, 1);
+            const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out
+            camera.position.z = startZ + (targetZ - startZ) * easeOut;
+
+            if (progress < 1) {
+                requestAnimationFrame(animateZoomBack);
+            }
+        }
+
+        // Only zoom back if we're closer than the atmosphere level
+        if (startZ < atmosphereZoomDistance - 0.1) {
+            animateZoomBack();
+        }
 
         // Reset scroll position to top (do it immediately and after layout)
         sidePanel.scrollTop = 0;

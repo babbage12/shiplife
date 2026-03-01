@@ -31,6 +31,7 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 const introDuration = 3000;
 const bounceDuration = 350;
 const defaultZoomDistance = 1.5;   // Default camera distance
+const atmosphereZoomDistance = 1.35; // Comfortable browsing distance (closer)
 const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
 const zoomOutDistance = 4.8;      // Further back for celebration spin only
 const baseZoomInDistance = 1.7;

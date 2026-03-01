@@ -154,6 +154,29 @@ function openPanel(loc) {
         sidePanel.classList.add('open');
         panelIsOpen = true; // Stop auto-rotation while reading
 
+        // Zoom back to comfortable "atmosphere" level for browsing
+        // Smooth animation over 800ms
+        const startZ = camera.position.z;
+        const targetZ = atmosphereZoomDistance;
+        const zoomBackDuration = 800;
+        const zoomBackStart = Date.now();
+
+        function animateZoomBack() {
+            const elapsed = Date.now() - zoomBackStart;
+            const progress = Math.min(elapsed / zoomBackDuration, 1);
+            const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out
+            camera.position.z = startZ + (targetZ - startZ) * easeOut;
+
+            if (progress < 1) {
+                requestAnimationFrame(animateZoomBack);
+            }
+        }
+
+        // Only zoom back if we're closer than the atmosphere level
+        if (startZ < atmosphereZoomDistance - 0.1) {
+            animateZoomBack();
+        }
+
         // Reset scroll position to top (do it immediately and after layout)
         sidePanel.scrollTop = 0;
         requestAnimationFrame(() => {
@@ -346,30 +369,34 @@ function attachImageClickHandlers() {
         };
     }
 
-    // Single story images (no navigation)
-    const storyImages = document.querySelectorAll('.panel-text .story-image');
-    storyImages.forEach(img => {
-        img.style.cursor = 'pointer';
-        img.onclick = function() {
-            openLightbox(img.src, getCaption(img));
-        };
-    });
-
-    // Inline images in image rows - make them clickable with navigation within their row
-    document.querySelectorAll('.image-row').forEach(row => {
-        const inlineImages = row.querySelectorAll('.inline-image');
-        const rowImages = Array.from(inlineImages).map(img => ({
+    // Collect all images in each story section for navigation
+    document.querySelectorAll('.story-section-panel').forEach(section => {
+        // Get all images in this section (story-image and inline-image)
+        const allSectionImages = section.querySelectorAll('.story-image, .inline-image');
+        const sectionImages = Array.from(allSectionImages).map(img => ({
             src: img.dataset.full || img.src,
             caption: img.dataset.caption || img.alt || ''
         }));
 
-        inlineImages.forEach((img, index) => {
+        allSectionImages.forEach((img, index) => {
             img.style.cursor = 'pointer';
             img.onclick = function() {
                 const fullSrc = img.dataset.full || img.src;
-                openLightbox(fullSrc, img.dataset.caption || img.alt || '', rowImages, index);
+                openLightbox(fullSrc, img.dataset.caption || img.alt || '', sectionImages, index);
             };
         });
+    });
+
+    // Handle story-image and inline-image outside of story-section-panel containers
+    document.querySelectorAll('.panel-text .story-image, .panel-text .inline-image').forEach(img => {
+        if (!img.onclick) {
+            // Not inside a story-section-panel, handle individually
+            img.style.cursor = 'pointer';
+            img.onclick = function() {
+                const fullSrc = img.dataset.full || img.src;
+                openLightbox(fullSrc, img.dataset.caption || img.alt || '');
+            };
+        }
     });
 
     // Gallery thumbnails - collect all images in each gallery for navigation
