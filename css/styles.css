@@ -2292,8 +2292,8 @@
                 right: 0;
                 bottom: 0;
                 width: 100%;
-                height: 45vh;
-                max-height: 340px;
+                height: 35vh;
+                max-height: 260px;
                 background: rgba(0, 0, 0, 0.4);
                 backdrop-filter: blur(4px);
                 -webkit-backdrop-filter: blur(4px);
@@ -2310,6 +2310,17 @@
             .location-list.open {
                 transform: translateY(0);
                 visibility: visible;
+            }
+
+            /* Tap to dismiss hint at top of menu */
+            .location-list::before {
+                content: '— tap globe to hide —';
+                display: block;
+                text-align: center;
+                padding: 4px 0 10px;
+                font-size: 0.6rem;
+                color: rgba(212, 165, 116, 0.5);
+                letter-spacing: 0.05em;
             }
 
             /* Scroll hint at bottom of menu */
@@ -2588,16 +2599,16 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.15);
+            background: transparent;
             z-index: 180;
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s ease;
         }
-        
+
         .mobile-overlay.open {
             opacity: 1;
-            pointer-events: auto;
+            pointer-events: none; /* Let touches pass through to canvas for globe rotation */
         }
         
         /* Instructions switching */
