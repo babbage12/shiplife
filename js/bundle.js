@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-02T19:24:39.261Z
+// Shiplife Bundle - Generated 2026-03-02T20:34:21.179Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17616,7 +17616,7 @@ function undimSidebarItems() {
     });
 }
 
-// Start guided journey - close modal and let user click Toledo
+// Start guided journey - close modal and open Toledo panel
 function startGuidedJourney() {
     const introModal = document.getElementById('introModal');
     if (introModal) {
@@ -17625,6 +17625,13 @@ function startGuidedJourney() {
         const progress = getProgress();
         progress.introSeen = true;
         saveProgress(progress);
+    }
+
+    // Find Toledo and open its panel
+    const toledo = locations.find(loc => loc.title === 'Toledo, Ohio');
+    if (toledo) {
+        autoOpenPanel = true;
+        focusLocation(toledo);
     }
 }
 

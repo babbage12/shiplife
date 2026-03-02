@@ -267,7 +267,7 @@ function undimSidebarItems() {
     });
 }
 
-// Start guided journey - close modal and let user click Toledo
+// Start guided journey - close modal and open Toledo panel
 function startGuidedJourney() {
     const introModal = document.getElementById('introModal');
     if (introModal) {
@@ -276,6 +276,13 @@ function startGuidedJourney() {
         const progress = getProgress();
         progress.introSeen = true;
         saveProgress(progress);
+    }
+
+    // Find Toledo and open its panel
+    const toledo = locations.find(loc => loc.title === 'Toledo, Ohio');
+    if (toledo) {
+        autoOpenPanel = true;
+        focusLocation(toledo);
     }
 }
 
