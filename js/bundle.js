@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-02T23:30:46.340Z
+// Shiplife Bundle - Generated 2026-03-02T23:32:23.263Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -2680,7 +2680,7 @@ const locations = [
  <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
  <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
  <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future."</blockquote>
- <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit, and Toledo - everything I had ever known - literally faded from view. Less than a month later, I was boarding a plane on my way to eventually Australia, where the next chapter was waiting to be written.</p>
+ <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit. Less than a month later, I was boarding a plane on my way to eventually Australia, where the next chapter was waiting to be written.</p>
  </div>
  
  <div class="more-info-container" onclick="this.classList.toggle('active')">
