@@ -1207,6 +1207,7 @@
         }
 
         .commentary-modal {
+            position: relative;
             background: linear-gradient(135deg, rgba(38, 42, 36, 0.98), rgba(28, 32, 26, 0.98));
             border: 1px solid rgba(212, 165, 116, 0.4);
             border-radius: 16px;

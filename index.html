@@ -181,6 +181,7 @@
     <!-- Director's Commentary Modal -->
     <div class="commentary-modal-overlay" id="commentaryModal" onclick="closeCommentaryModal(event)">
         <div class="commentary-modal" onclick="event.stopPropagation()">
+            <button class="commentary-modal-close" onclick="document.getElementById('commentaryModal').classList.remove('active'); document.body.style.overflow = '';">×</button>
             <div class="commentary-header">
                 <span class="commentary-icon">🎬</span>
                 <span class="commentary-label">Director's Commentary</span>
