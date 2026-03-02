@@ -17060,7 +17060,12 @@ let initialCameraZ = null;
 function onTouchStart(event) {
     // Hide tooltip when user starts interacting
     hideTooltip();
-    
+
+    // Dismiss mobile menu when touching globe
+    if (typeof dismissMenuTemporarily === 'function') {
+        dismissMenuTemporarily();
+    }
+
     if (event.touches.length === 1) {
         isUserInteracting = true;
         touchStartX = event.touches[0].clientX;
