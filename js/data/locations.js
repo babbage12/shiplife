@@ -86,7 +86,7 @@ const locations = [
  <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
  <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
  <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future."</blockquote>
- <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit. A few weeks later, I was boarding a plane on my way to catch a ship in Auckland, NZ. Destination: Australia.</p>
+ <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit. A few weeks later, I was boarding a plane on my way to catch a ship in Auckland, NZ. Destination: Australia, where the next door was waiting to be opened.</p>
  </div>
  
  <div class="more-info-container" onclick="this.classList.toggle('active')">
