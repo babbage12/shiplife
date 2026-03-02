@@ -68,16 +68,17 @@
         }
 
         .logo span {
-            color: var(--gold);
+            color: var(--cream);
         }
 
         .logo .num {
             font-size: 1.3em;
+            color: var(--cream);
         }
 
         .logo .word {
             font-size: 0.9em;
-            color: var(--cream);
+            color: var(--gold);
         }
 
         .tagline {
@@ -2745,15 +2746,16 @@
 
         .intro-modal h2 .num {
             font-size: 1.3em;
-            color: var(--gold);
+            color: var(--cream);
         }
 
         .intro-modal h2 .word {
             font-size: 0.9em;
+            color: var(--gold);
         }
 
         .intro-modal h2 .gold {
-            color: var(--gold);
+            color: var(--cream);
         }
 
         .intro-modal .intro-text {
