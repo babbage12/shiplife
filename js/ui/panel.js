@@ -416,8 +416,12 @@ function attachImageClickHandlers() {
     });
 
     // Any other images in panel-text that might not have a specific class
+    // Exclude images inside .commentary-trigger (easter egg icons)
     const allPanelImages = document.querySelectorAll('.panel-text img:not(.story-image):not(.inline-image):not(.gallery-thumb)');
     allPanelImages.forEach(img => {
+        // Skip images inside commentary triggers - they have their own click behavior
+        if (img.closest('.commentary-trigger')) return;
+
         if (!img.onclick) {
             img.style.cursor = 'pointer';
             img.onclick = function() {

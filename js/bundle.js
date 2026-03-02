@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-02T21:28:42.180Z
+// Shiplife Bundle - Generated 2026-03-02T21:48:55.077Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17124,8 +17124,12 @@ function attachImageClickHandlers() {
     });
 
     // Any other images in panel-text that might not have a specific class
+    // Exclude images inside .commentary-trigger (easter egg icons)
     const allPanelImages = document.querySelectorAll('.panel-text img:not(.story-image):not(.inline-image):not(.gallery-thumb)');
     allPanelImages.forEach(img => {
+        // Skip images inside commentary triggers - they have their own click behavior
+        if (img.closest('.commentary-trigger')) return;
+
         if (!img.onclick) {
             img.style.cursor = 'pointer';
             img.onclick = function() {
