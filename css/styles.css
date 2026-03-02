@@ -75,6 +75,11 @@
             font-size: 1.3em;
         }
 
+        .logo .word {
+            font-size: 0.9em;
+            color: var(--cream);
+        }
+
         .tagline {
             font-size: 0.7rem;
             letter-spacing: 0.25em;
