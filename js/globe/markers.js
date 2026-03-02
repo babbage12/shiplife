@@ -1314,6 +1314,620 @@ function renderIconSymbol(ctx, cx, cy, symbol, color, accent) {
             ctx.stroke();
             break;
 
+        case 'lemon':
+            // Lemon - Amalfi/Sorrento
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.ellipse(cx, cy, 14, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Highlight
+            ctx.fillStyle = 'rgba(255,255,255,0.3)';
+            ctx.beginPath();
+            ctx.ellipse(cx - 4, cy - 3, 6, 4, -0.3, 0, Math.PI * 2);
+            ctx.fill();
+            // Leaf
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx + 12, cy - 6, 6, 3, 0.5, 0, Math.PI * 2);
+            ctx.fill();
+            // Stem
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx + 10, cy - 8);
+            ctx.lineTo(cx + 6, cy - 10);
+            ctx.stroke();
+            break;
+
+        case 'dome':
+            // Florence Duomo
+            ctx.fillStyle = color;
+            // Main dome
+            ctx.beginPath();
+            ctx.arc(cx, cy + 4, 14, Math.PI, 0);
+            ctx.lineTo(cx + 14, cy + 10);
+            ctx.lineTo(cx - 14, cy + 10);
+            ctx.closePath();
+            ctx.fill();
+            // Lantern on top
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 3, cy - 14, 6, 8);
+            // Cross
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 18);
+            ctx.lineTo(cx, cy - 12);
+            ctx.moveTo(cx - 3, cy - 16);
+            ctx.lineTo(cx + 3, cy - 16);
+            ctx.stroke();
+            break;
+
+        case 'gondola':
+            // Venice gondola
+            ctx.fillStyle = color;
+            // Hull
+            ctx.beginPath();
+            ctx.moveTo(cx - 18, cy + 2);
+            ctx.quadraticCurveTo(cx - 10, cy + 8, cx + 10, cy + 6);
+            ctx.quadraticCurveTo(cx + 18, cy + 4, cx + 20, cy);
+            ctx.quadraticCurveTo(cx + 10, cy - 2, cx - 10, cy);
+            ctx.quadraticCurveTo(cx - 16, cy, cx - 18, cy + 2);
+            ctx.fill();
+            // Ferro (front ornament)
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 18, cy);
+            ctx.lineTo(cx - 22, cy - 8);
+            ctx.lineTo(cx - 20, cy - 6);
+            ctx.lineTo(cx - 22, cy - 4);
+            ctx.lineTo(cx - 20, cy - 2);
+            ctx.lineTo(cx - 16, cy);
+            ctx.fill();
+            break;
+
+        case 'lavender':
+            // Lavender sprig
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 14);
+            ctx.lineTo(cx, cy - 8);
+            ctx.stroke();
+            // Flowers
+            ctx.fillStyle = color;
+            for (let i = 0; i < 5; i++) {
+                ctx.beginPath();
+                ctx.ellipse(cx - 3 + (i % 2) * 6, cy - 8 + i * 4, 4, 3, 0, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            break;
+
+        case 'windmill':
+            // Mykonos windmill
+            ctx.fillStyle = color;
+            // Body
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy + 12);
+            ctx.lineTo(cx - 6, cy - 6);
+            ctx.lineTo(cx + 6, cy - 6);
+            ctx.lineTo(cx + 8, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Roof
+            ctx.beginPath();
+            ctx.moveTo(cx - 8, cy - 6);
+            ctx.lineTo(cx, cy - 12);
+            ctx.lineTo(cx + 8, cy - 6);
+            ctx.closePath();
+            ctx.fill();
+            // Blades
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 2);
+            ctx.lineTo(cx - 14, cy - 10);
+            ctx.moveTo(cx, cy - 2);
+            ctx.lineTo(cx + 14, cy + 6);
+            ctx.moveTo(cx, cy - 2);
+            ctx.lineTo(cx + 10, cy - 14);
+            ctx.moveTo(cx, cy - 2);
+            ctx.lineTo(cx - 10, cy + 10);
+            ctx.stroke();
+            break;
+
+        case 'olympicflame':
+            // Olympic flame
+            ctx.fillStyle = accent;
+            // Torch base
+            ctx.fillRect(cx - 4, cy + 4, 8, 10);
+            // Bowl
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy + 4);
+            ctx.lineTo(cx - 6, cy - 2);
+            ctx.lineTo(cx + 6, cy - 2);
+            ctx.lineTo(cx + 10, cy + 4);
+            ctx.closePath();
+            ctx.fill();
+            // Flame
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 16);
+            ctx.quadraticCurveTo(cx + 8, cy - 8, cx + 4, cy - 2);
+            ctx.lineTo(cx - 4, cy - 2);
+            ctx.quadraticCurveTo(cx - 8, cy - 8, cx, cy - 16);
+            ctx.fill();
+            break;
+
+        case 'turtle':
+            // Sea turtle
+            ctx.fillStyle = color;
+            // Shell
+            ctx.beginPath();
+            ctx.ellipse(cx, cy, 12, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Head
+            ctx.beginPath();
+            ctx.ellipse(cx + 14, cy, 5, 4, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Flippers
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx - 6, cy - 10, 6, 3, -0.5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx - 6, cy + 10, 6, 3, 0.5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 6, cy - 8, 5, 3, -0.3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 6, cy + 8, 5, 3, 0.3, 0, Math.PI * 2);
+            ctx.fill();
+            // Eye
+            ctx.fillStyle = '#000';
+            ctx.beginPath();
+            ctx.arc(cx + 16, cy - 1, 1.5, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'sponge':
+            // Natural sponge
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 14, 0, Math.PI * 2);
+            ctx.fill();
+            // Holes
+            ctx.fillStyle = accent;
+            const holes = [[cx-5, cy-4], [cx+3, cy-6], [cx+6, cy+2], [cx-2, cy+5], [cx-7, cy+1], [cx+1, cy-1]];
+            holes.forEach(([hx, hy]) => {
+                ctx.beginPath();
+                ctx.arc(hx, hy, 2.5, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            break;
+
+        case 'mosque':
+            // Mosque dome and minaret
+            ctx.fillStyle = color;
+            // Main dome
+            ctx.beginPath();
+            ctx.arc(cx - 4, cy + 2, 10, Math.PI, 0);
+            ctx.lineTo(cx + 6, cy + 12);
+            ctx.lineTo(cx - 14, cy + 12);
+            ctx.closePath();
+            ctx.fill();
+            // Minaret
+            ctx.fillRect(cx + 8, cy - 10, 6, 22);
+            // Minaret top
+            ctx.beginPath();
+            ctx.moveTo(cx + 8, cy - 10);
+            ctx.lineTo(cx + 11, cy - 16);
+            ctx.lineTo(cx + 14, cy - 10);
+            ctx.fill();
+            // Crescent
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 4, cy - 10, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(cx - 2, cy - 10, 3, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'palace':
+            // Palace/chateau
+            ctx.fillStyle = color;
+            // Main building
+            ctx.fillRect(cx - 14, cy - 4, 28, 16);
+            // Central tower
+            ctx.fillRect(cx - 5, cy - 12, 10, 8);
+            // Side towers
+            ctx.fillRect(cx - 16, cy - 8, 6, 20);
+            ctx.fillRect(cx + 10, cy - 8, 6, 20);
+            // Windows
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 8, cy, 4, 6);
+            ctx.fillRect(cx + 4, cy, 4, 6);
+            ctx.fillRect(cx - 2, cy - 8, 4, 4);
+            break;
+
+        case 'skyscraper':
+            // Modern skyscraper
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 8, cy - 14, 16, 28);
+            // Spire
+            ctx.beginPath();
+            ctx.moveTo(cx - 2, cy - 14);
+            ctx.lineTo(cx, cy - 20);
+            ctx.lineTo(cx + 2, cy - 14);
+            ctx.fill();
+            // Windows
+            ctx.fillStyle = accent;
+            for (let row = 0; row < 5; row++) {
+                for (let col = 0; col < 3; col++) {
+                    ctx.fillRect(cx - 6 + col * 5, cy - 10 + row * 5, 3, 3);
+                }
+            }
+            break;
+
+        case 'dhow':
+            // Arabian dhow boat
+            ctx.fillStyle = color;
+            // Hull
+            ctx.beginPath();
+            ctx.moveTo(cx - 14, cy + 6);
+            ctx.quadraticCurveTo(cx, cy + 12, cx + 14, cy + 6);
+            ctx.lineTo(cx + 10, cy + 2);
+            ctx.lineTo(cx - 10, cy + 2);
+            ctx.closePath();
+            ctx.fill();
+            // Sail
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 2, cy + 2);
+            ctx.lineTo(cx - 2, cy - 14);
+            ctx.lineTo(cx + 12, cy);
+            ctx.closePath();
+            ctx.fill();
+            break;
+
+        case 'temple':
+            // Asian temple/pagoda
+            ctx.fillStyle = color;
+            // Base level
+            ctx.fillRect(cx - 12, cy + 4, 24, 8);
+            // Middle level
+            ctx.fillRect(cx - 8, cy - 4, 16, 8);
+            // Top level
+            ctx.fillRect(cx - 4, cy - 10, 8, 6);
+            // Roofs
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 4);
+            ctx.lineTo(cx, cy - 2);
+            ctx.lineTo(cx + 16, cy + 4);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.moveTo(cx - 10, cy - 4);
+            ctx.lineTo(cx, cy - 10);
+            ctx.lineTo(cx + 10, cy - 4);
+            ctx.fill();
+            // Spire
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 10);
+            ctx.lineTo(cx, cy - 18);
+            ctx.lineTo(cx + 2, cy - 10);
+            ctx.fill();
+            break;
+
+        case 'camel':
+            // Camel silhouette
+            ctx.fillStyle = color;
+            // Body
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 14, 8, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Hump
+            ctx.beginPath();
+            ctx.arc(cx - 2, cy - 6, 7, 0, Math.PI, true);
+            ctx.fill();
+            // Neck and head
+            ctx.beginPath();
+            ctx.moveTo(cx + 8, cy);
+            ctx.quadraticCurveTo(cx + 16, cy - 10, cx + 18, cy - 14);
+            ctx.lineTo(cx + 14, cy - 14);
+            ctx.quadraticCurveTo(cx + 12, cy - 8, cx + 6, cy);
+            ctx.fill();
+            // Legs
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 8, cy + 8, 4, 8);
+            ctx.fillRect(cx + 4, cy + 8, 4, 8);
+            break;
+
+        case 'tango':
+            // Tango dancers silhouette
+            ctx.fillStyle = color;
+            // Male figure
+            ctx.beginPath();
+            ctx.arc(cx - 6, cy - 10, 4, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillRect(cx - 8, cy - 6, 4, 12);
+            // Female figure
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx + 4, cy - 8, 4, 0, Math.PI * 2);
+            ctx.fill();
+            // Dress
+            ctx.beginPath();
+            ctx.moveTo(cx + 2, cy - 4);
+            ctx.lineTo(cx - 2, cy + 10);
+            ctx.lineTo(cx + 10, cy + 10);
+            ctx.lineTo(cx + 6, cy - 4);
+            ctx.fill();
+            break;
+
+        case 'church':
+            // Wooden church (Castro)
+            ctx.fillStyle = color;
+            // Main building
+            ctx.fillRect(cx - 10, cy - 2, 20, 14);
+            // Steeple
+            ctx.beginPath();
+            ctx.moveTo(cx - 6, cy - 2);
+            ctx.lineTo(cx, cy - 16);
+            ctx.lineTo(cx + 6, cy - 2);
+            ctx.fill();
+            // Door
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 3, cy + 4, 6, 8);
+            // Cross
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 16);
+            ctx.lineTo(cx, cy - 20);
+            ctx.moveTo(cx - 2, cy - 18);
+            ctx.lineTo(cx + 2, cy - 18);
+            ctx.stroke();
+            break;
+
+        case 'bridge':
+            // Arched bridge
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 4;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 8, 16, Math.PI, 0);
+            ctx.stroke();
+            // Pillars
+            ctx.fillStyle = color;
+            ctx.fillRect(cx - 18, cy - 2, 4, 14);
+            ctx.fillRect(cx + 14, cy - 2, 4, 14);
+            // Railing
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(cx, cy + 2, 18, Math.PI, 0);
+            ctx.stroke();
+            break;
+
+        case 'christ':
+            // Christ the Redeemer
+            ctx.fillStyle = color;
+            // Base/mountain
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 14);
+            ctx.lineTo(cx, cy);
+            ctx.lineTo(cx + 16, cy + 14);
+            ctx.fill();
+            // Figure
+            ctx.fillStyle = accent;
+            // Body
+            ctx.fillRect(cx - 2, cy - 8, 4, 12);
+            // Arms
+            ctx.fillRect(cx - 14, cy - 6, 28, 3);
+            // Head
+            ctx.beginPath();
+            ctx.arc(cx, cy - 12, 4, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'funicular':
+            // Funicular railway car
+            ctx.fillStyle = color;
+            // Track line
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(cx - 16, cy + 12);
+            ctx.lineTo(cx + 16, cy - 12);
+            ctx.stroke();
+            // Car body
+            ctx.fillStyle = color;
+            ctx.save();
+            ctx.translate(cx, cy);
+            ctx.rotate(-0.6);
+            ctx.fillRect(-8, -6, 16, 12);
+            // Windows
+            ctx.fillStyle = accent;
+            ctx.fillRect(-5, -4, 4, 6);
+            ctx.fillRect(1, -4, 4, 6);
+            ctx.restore();
+            break;
+
+        case 'tulip':
+            // Dutch tulip
+            ctx.fillStyle = color;
+            // Petals
+            ctx.beginPath();
+            ctx.ellipse(cx - 4, cy - 6, 5, 10, -0.2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 4, cy - 6, 5, 10, 0.2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx, cy - 8, 4, 9, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Stem
+            ctx.strokeStyle = accent;
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy + 2);
+            ctx.lineTo(cx, cy + 14);
+            ctx.stroke();
+            // Leaves
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.ellipse(cx - 6, cy + 10, 4, 2, -0.5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.ellipse(cx + 6, cy + 10, 4, 2, 0.5, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'crab':
+            // Red crab (Christmas Island)
+            ctx.fillStyle = color;
+            // Body
+            ctx.beginPath();
+            ctx.ellipse(cx, cy, 12, 10, 0, 0, Math.PI * 2);
+            ctx.fill();
+            // Claws
+            ctx.beginPath();
+            ctx.arc(cx - 16, cy - 4, 6, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 16, cy - 4, 6, 0, Math.PI * 2);
+            ctx.fill();
+            // Legs
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 3; i++) {
+                ctx.beginPath();
+                ctx.moveTo(cx - 8, cy + 4 + i * 3);
+                ctx.lineTo(cx - 14, cy + 8 + i * 4);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(cx + 8, cy + 4 + i * 3);
+                ctx.lineTo(cx + 14, cy + 8 + i * 4);
+                ctx.stroke();
+            }
+            // Eyes
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 4, cy - 6, 3, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 4, cy - 6, 3, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'fleur':
+            // Fleur-de-lis (French symbol)
+            ctx.fillStyle = color;
+            // Center petal
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 14);
+            ctx.quadraticCurveTo(cx + 6, cy - 6, cx + 3, cy + 4);
+            ctx.lineTo(cx - 3, cy + 4);
+            ctx.quadraticCurveTo(cx - 6, cy - 6, cx, cy - 14);
+            ctx.fill();
+            // Left petal
+            ctx.beginPath();
+            ctx.moveTo(cx - 4, cy);
+            ctx.quadraticCurveTo(cx - 14, cy - 8, cx - 10, cy - 14);
+            ctx.quadraticCurveTo(cx - 6, cy - 10, cx - 4, cy);
+            ctx.fill();
+            // Right petal
+            ctx.beginPath();
+            ctx.moveTo(cx + 4, cy);
+            ctx.quadraticCurveTo(cx + 14, cy - 8, cx + 10, cy - 14);
+            ctx.quadraticCurveTo(cx + 6, cy - 10, cx + 4, cy);
+            ctx.fill();
+            // Base
+            ctx.fillStyle = accent;
+            ctx.fillRect(cx - 6, cy + 4, 12, 4);
+            ctx.fillRect(cx - 2, cy + 8, 4, 6);
+            break;
+
+        case 'pyramid':
+            // Egyptian pyramid
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 14);
+            ctx.lineTo(cx + 18, cy + 10);
+            ctx.lineTo(cx - 18, cy + 10);
+            ctx.closePath();
+            ctx.fill();
+            // Shading
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy - 14);
+            ctx.lineTo(cx + 18, cy + 10);
+            ctx.lineTo(cx, cy + 10);
+            ctx.closePath();
+            ctx.fill();
+            break;
+
+        case 'spider':
+            // Spider (Lifou)
+            ctx.fillStyle = color;
+            // Body
+            ctx.beginPath();
+            ctx.ellipse(cx, cy + 4, 6, 8, 0, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx, cy - 6, 5, 0, Math.PI * 2);
+            ctx.fill();
+            // Legs
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            for (let i = 0; i < 4; i++) {
+                const angle = (i - 1.5) * 0.4;
+                ctx.beginPath();
+                ctx.moveTo(cx - 4, cy + i * 3 - 2);
+                ctx.quadraticCurveTo(cx - 14, cy + i * 2, cx - 16, cy + 10);
+                ctx.stroke();
+                ctx.beginPath();
+                ctx.moveTo(cx + 4, cy + i * 3 - 2);
+                ctx.quadraticCurveTo(cx + 14, cy + i * 2, cx + 16, cy + 10);
+                ctx.stroke();
+            }
+            // Eyes
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx - 2, cy - 8, 2, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(cx + 2, cy - 8, 2, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
+        case 'cyclone':
+            // Cyclone/hurricane
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 3;
+            // Spiral arms
+            ctx.beginPath();
+            for (let i = 0; i < 3; i++) {
+                const startAngle = i * (Math.PI * 2 / 3);
+                ctx.moveTo(cx, cy);
+                for (let t = 0; t < 2; t += 0.1) {
+                    const r = t * 8;
+                    const x = cx + Math.cos(startAngle + t * 2) * r;
+                    const y = cy + Math.sin(startAngle + t * 2) * r;
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+            // Eye
+            ctx.fillStyle = accent;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 4, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+
         default:
             // Fallback - simple circle with pin
             ctx.fillStyle = color;

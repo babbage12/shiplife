@@ -188,6 +188,8 @@ const locationPortholeURLs = {
     "Port Denarau, Fiji": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1768511020/ComfyUI_01208__pxkkdh.png",
     "Isle of Pines, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/isle_of_pines_icon.png",
     "Noumea, New Caledonia": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/shiplife/icons/noumea_icon.png",
+    "Dunedin, New Zealand": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1772478981/ComfyUI_01251_.png",
+    "South Shetland Islands": "https://res.cloudinary.com/de5jbyhxx/image/upload/w_256,q_80,f_auto/v1772479397/ComfyUI_00630_.png",
 };
 
 // Icon configuration for each location
@@ -251,5 +253,93 @@ const ICON_CONFIG = {
     // Pacific Islands - New
     "Port Denarau, Fiji": { style: 'paradise', symbol: 'yacht', color: '#4a90a0', accent: '#40e0d0' },
     "Isle of Pines, New Caledonia": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
-    "Noumea, New Caledonia": { style: 'culture', symbol: 'fleur', color: '#0055a4', accent: '#ffffff' }
+    "Noumea, New Caledonia": { style: 'culture', symbol: 'fleur', color: '#0055a4', accent: '#ffffff' },
+    // Italy - Coastal & Historic
+    "Amalfi, Italy": { style: 'culture', symbol: 'lemon', color: '#ffd700', accent: '#228b22' },
+    "Antibes, France": { style: 'culture', symbol: 'yacht', color: '#1e90ff', accent: '#d4a574' },
+    "Florence, Italy": { style: 'heritage', symbol: 'dome', color: '#8b4513', accent: '#d4a574' },
+    "Lipari, Italy": { style: 'adventure', symbol: 'volcano', color: '#ff4500', accent: '#2d3748' },
+    "Ponza, Italy": { style: 'maritime', symbol: 'boat', color: '#4a90a0', accent: '#ffffff' },
+    "Portovenere, Italy": { style: 'maritime', symbol: 'lighthouse', color: '#ffd700', accent: '#1e90ff' },
+    "Ravenna, Italy": { style: 'heritage', symbol: 'mosaic', color: '#ffd700', accent: '#4a0e4e' },
+    "San Remo, Italy": { style: 'paradise', symbol: 'palm', color: '#228b22', accent: '#ff69b4' },
+    "Sorrento, Italy": { style: 'culture', symbol: 'lemon', color: '#ffd700', accent: '#228b22' },
+    "Stromboli, Italy": { style: 'adventure', symbol: 'volcano', color: '#ff4500', accent: '#ffd700' },
+    "Venice, Italy": { style: 'culture', symbol: 'gondola', color: '#2d3748', accent: '#d4a574' },
+    "Elba, Italy": { style: 'heritage', symbol: 'compass', color: '#d4a574', accent: '#2d3748' },
+    // France - Riviera & Corsica
+    "Le Lavandou, France": { style: 'paradise', symbol: 'lavender', color: '#9370db', accent: '#228b22' },
+    "Marseille, France": { style: 'maritime', symbol: 'boat', color: '#1e90ff', accent: '#ffffff' },
+    "Propriano, Corsica": { style: 'maritime', symbol: 'boat', color: '#4a90a0', accent: '#228b22' },
+    "Bonifacio, Corsica": { style: 'heritage', symbol: 'fortress', color: '#f5f0e8', accent: '#8b7355' },
+    "Sanary-sur-Mer, France": { style: 'maritime', symbol: 'boat', color: '#ff6347', accent: '#1e90ff' },
+    // Greece - Islands & Mainland
+    "Corfu, Greece": { style: 'heritage', symbol: 'column', color: '#4a90a0', accent: '#ffffff' },
+    "Hvar, Croatia": { style: 'culture', symbol: 'lavender', color: '#9370db', accent: '#4a90a0' },
+    "Itea, Greece": { style: 'heritage', symbol: 'column', color: '#c9b896', accent: '#ffd700' },
+    "Katakolon, Greece": { style: 'heritage', symbol: 'olympicflame', color: '#ffd700', accent: '#ff4500' },
+    "Mykonos, Greece": { style: 'culture', symbol: 'windmill', color: '#ffffff', accent: '#1e90ff' },
+    "Nafplio, Greece": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#4a90a0' },
+    "Parga, Greece": { style: 'heritage', symbol: 'fortress', color: '#228b22', accent: '#4a90a0' },
+    "Patmos, Greece": { style: 'heritage', symbol: 'cross', color: '#8b4513', accent: '#ffd700' },
+    "Pylos, Greece": { style: 'heritage', symbol: 'fortress', color: '#c9b896', accent: '#4a90a0' },
+    "Symi, Greece": { style: 'maritime', symbol: 'sponge', color: '#d4a574', accent: '#8b4513' },
+    "Zakynthos, Greece": { style: 'paradise', symbol: 'turtle', color: '#228b22', accent: '#4a90a0' },
+    // Turkey
+    "Çeşme, Turkey": { style: 'heritage', symbol: 'fortress', color: '#d4a574', accent: '#8b7355' },
+    "Istanbul, Turkey": { style: 'heritage', symbol: 'mosque', color: '#1e90ff', accent: '#ffd700' },
+    "Izmir, Turkey": { style: 'heritage', symbol: 'column', color: '#c9b896', accent: '#ff6347' },
+    "Kuşadası, Turkey": { style: 'maritime', symbol: 'boat', color: '#4a90a0', accent: '#d4a574' },
+    // Croatia & Adriatic
+    "Šibenik, Croatia": { style: 'heritage', symbol: 'fortress', color: '#8b7355', accent: '#ffd700' },
+    // Eastern Europe & Black Sea
+    "Constanța, Romania": { style: 'heritage', symbol: 'column', color: '#c9b896', accent: '#4a90a0' },
+    "Nessebar, Bulgaria": { style: 'heritage', symbol: 'fortress', color: '#8b4513', accent: '#c9b896' },
+    "Odessa, Ukraine": { style: 'culture', symbol: 'opera', color: '#f5e6d3', accent: '#ffd700' },
+    "Yalta, Ukraine": { style: 'heritage', symbol: 'palace', color: '#ffffff', accent: '#228b22' },
+    // Middle East
+    "Dubai, UAE": { style: 'modern', symbol: 'skyscraper', color: '#c0c0c0', accent: '#ffd700' },
+    "Doha, Qatar": { style: 'modern', symbol: 'skyscraper', color: '#d4a574', accent: '#ffffff' },
+    "Haifa, Israel": { style: 'heritage', symbol: 'star', color: '#1e90ff', accent: '#ffffff' },
+    "Muscat, Oman": { style: 'heritage', symbol: 'dhow', color: '#d4a574', accent: '#1e90ff' },
+    "Sharm El Sheikh, Egypt": { style: 'paradise', symbol: 'shark', color: '#4a90a0', accent: '#ff4500' },
+    // Asia
+    "Penang, Malaysia": { style: 'culture', symbol: 'temple', color: '#ff4500', accent: '#ffd700' },
+    "Phuket, Thailand": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+    "Semarang, Indonesia": { style: 'heritage', symbol: 'temple', color: '#8b4513', accent: '#ffd700' },
+    "Celukan Bawang, Indonesia": { style: 'paradise', symbol: 'palm', color: '#228b22', accent: '#4a90a0' },
+    // Australia & NZ
+    "Broome, Australia": { style: 'adventure', symbol: 'camel', color: '#d4a574', accent: '#ff4500' },
+    "Hobart, Tasmania": { style: 'adventure', symbol: 'mountain', color: '#607080', accent: '#228b22' },
+    "Melbourne, Australia": { style: 'culture', symbol: 'coffee', color: '#4a3728', accent: '#d4a574' },
+    "Perth / Fremantle, Australia": { style: 'paradise', symbol: 'sun-hot', color: '#ffa500', accent: '#1e90ff' },
+    "Dunedin, New Zealand": { style: 'culture', symbol: 'penguin', color: '#2d3748', accent: '#ffd700' },
+    // Antarctica
+    "Antarctica - Petermann Island": { style: 'adventure', symbol: 'penguin', color: '#2d3748', accent: '#ffa500' },
+    "South Shetland Islands": { style: 'adventure', symbol: 'penguin', color: '#a0c0d0', accent: '#2d3748' },
+    // South America
+    "Armação dos Búzios, Brazil": { style: 'paradise', symbol: 'palm', color: '#40e0d0', accent: '#228b22' },
+    "Buenos Aires, Argentina": { style: 'culture', symbol: 'tango', color: '#2d3748', accent: '#ff4500' },
+    "Castro, Chile": { style: 'culture', symbol: 'church', color: '#ff4500', accent: '#ffd700' },
+    "Lima, Peru": { style: 'heritage', symbol: 'column', color: '#d4a574', accent: '#8b4513' },
+    "Recife, Brazil": { style: 'culture', symbol: 'bridge', color: '#4a90a0', accent: '#ffd700' },
+    "Rio de Janeiro, Brazil": { style: 'heritage', symbol: 'christ', color: '#228b22', accent: '#ffffff' },
+    "Santarém, Brazil": { style: 'paradise', symbol: 'palm', color: '#228b22', accent: '#4a90a0' },
+    "Valparaíso, Chile": { style: 'culture', symbol: 'funicular', color: '#ff6347', accent: '#ffd700' },
+    // Caribbean & Central America
+    "Barbados": { style: 'paradise', symbol: 'palm', color: '#ffd700', accent: '#1e90ff' },
+    "Panama Canal": { style: 'maritime', symbol: 'boat', color: '#4a90a0', accent: '#228b22' },
+    "San Juan, Puerto Rico": { style: 'heritage', symbol: 'fortress', color: '#d4a574', accent: '#1e90ff' },
+    // North America
+    "Quebec City, Canada": { style: 'heritage', symbol: 'fortress', color: '#1e90ff', accent: '#ffffff' },
+    "Saguenay, Canada": { style: 'adventure', symbol: 'fjord', color: '#607080', accent: '#228b22' },
+    // Misc European
+    "Amsterdam, Netherlands": { style: 'culture', symbol: 'tulip', color: '#ff4500', accent: '#228b22' },
+    "Monte Carlo, Monaco": { style: 'culture', symbol: 'champagne', color: '#ffd700', accent: '#ff4500' },
+    // Transit & Sea Days
+    "Red Sea Transit": { style: 'maritime', symbol: 'compass', color: '#d4a574', accent: '#ff4500' },
+    "Suez Canal, Egypt": { style: 'maritime', symbol: 'compass', color: '#d4a574', accent: '#1e90ff' },
+    "Sea Days": { style: 'maritime', symbol: 'compass', color: '#4a90a0', accent: '#ffffff' },
+    // Christmas Island
+    "Christmas Island, Australia": { style: 'adventure', symbol: 'crab', color: '#ff4500', accent: '#2d3748' }
 };
