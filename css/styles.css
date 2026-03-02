@@ -71,6 +71,11 @@
             color: var(--gold);
         }
 
+        .logo .num {
+            font-size: 1.15em;
+            color: inherit;
+        }
+
         .tagline {
             font-size: 0.7rem;
             letter-spacing: 0.25em;
