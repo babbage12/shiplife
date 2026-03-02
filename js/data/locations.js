@@ -51,7 +51,6 @@ const locations = [
  </div>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="story-image" data-caption="Brothers of Badness. So we weren't exactly living up to our name... or were we?" alt="Brothers of Badness 1983" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Brothers of Badness. So we weren't exactly living up to our name... or were we?</p>
- <p>A year or two later came an over-elaborate garage band project called Brothers of Badness. I remember us being pretty bad musically - but somehow we landed a high school prom gig in Cuyahoga Falls anyway.</p>
  <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
  <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
  </div>
