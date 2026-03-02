@@ -2743,6 +2743,19 @@
             margin-bottom: 0.75rem;
         }
 
+        .intro-modal h2 .num {
+            font-size: 1.3em;
+            color: var(--gold);
+        }
+
+        .intro-modal h2 .word {
+            font-size: 0.9em;
+        }
+
+        .intro-modal h2 .gold {
+            color: var(--gold);
+        }
+
         .intro-modal .intro-text {
             font-size: 1rem;
             color: rgba(245, 240, 232, 0.8);
