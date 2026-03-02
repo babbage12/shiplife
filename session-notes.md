@@ -588,6 +588,9 @@ onclick="openLightbox(this.dataset.full, this.dataset.caption)" style="cursor:po
 
 **Action:** Add more-info sections to the 63 panels missing them.
 
+**Panels confirmed missing More About section (Feb 28):**
+- Castro, Chile
+
 ### 2. Clickable Images Audit
 **Goal:** All inline images throughout all panels should have onclick handlers for lightbox expansion.
 
@@ -949,3 +952,258 @@ Added: Nessebar, Picton
 Generic "New Caledonia" entry (redundant with Noumea, Isle of Pines, Lifou)
 
 ### Completion: 66/98 = 67%
+
+---
+
+---
+
+# Session - February 26, 2026
+
+## Summary
+Fixed inline image click handlers, converted Maldives from song panel to full story panel with 56 images and an incredible story.
+
+---
+
+## Inline Image Click Fix
+
+**File:** `js/ui/panel.js`
+
+**Problem:** Inline images in story panels weren't expanding when clicked.
+
+**Cause:** The catchall handler explicitly excluded `.inline-image` elements, and some inline images weren't inside `.image-row` containers.
+
+**Fix:** Added fallback handler for any `.inline-image` elements that don't already have click handlers:
+
+```javascript
+// Fallback: any inline images not already handled
+document.querySelectorAll('.panel-text .inline-image').forEach(img => {
+    if (!img.onclick) {
+        img.style.cursor = 'pointer';
+        img.onclick = function() {
+            const fullSrc = img.dataset.full || img.src;
+            openLightbox(fullSrc, img.dataset.caption || img.alt || '');
+        };
+    }
+});
+```
+
+---
+
+## Maldives - Full Story Panel (Major Update)
+
+### The Story
+User's friend Hayden Smith called last-minute needing a drummer for a trio gig. User flew around the world twice in five days - from Australia to Toledo (to grab gear) then immediately to Male, Maldives.
+
+**Key story elements:**
+- Doha layover: Hotel so new he was the first guest, 50th floor, passed out from jet lag
+- Arrived Male at 5am, security suspicious, speedboat to Reithi Rah
+- Jungle house 50 steps from ocean, cold water delivered every morning
+- A month to explore the atoll
+- New Year's Eve: Fireworks through palm trees, Spice Girl and soccer player husband on island
+- Beach club: Pool with Hayden when they heard about Russian oligarchs betting millions on poker
+- The largest man user ever saw - James Bond villain disposition, turned out to be bodyguard (Russian New Year)
+- Reef sharks everywhere, "Don't Feed The Fish" sign
+- Incredible food - Japanese restaurant, personal chefs at buffets
+- Day trips to different atolls
+- Performed every night in main club
+
+### Images
+- **Uploaded:** 56 images to Cloudinary (shiplife/maldives/)
+- **Source:** /Volumes/BBCSO/Maldives 2013/
+- **Hero:** img_0039
+
+### Panel Structure
+12 sections:
+1. **The Call** - Around the world twice in five days, Doha layover
+2. **Arrival** - 5am in Male, speedboat, friendly crew
+3. **My Jungle Home** - Villa 50 steps from ocean
+4. **Walking the Atoll** - Daily exploration (9 images)
+5. **The Gardens** - Tropical flora
+6. **Structures in the Sand** - Island architecture (7 images)
+7. **The Beach Club** - Oligarchs, poker, giant bodyguard story
+8. **New Year's Eve** - Fireworks, Spice Girl sighting
+9. **Shark-Infested Paradise** - Reef sharks, warning sign
+10. **The Food** - Japanese restaurant, incredible cuisine (6 images)
+11. **Expensive Taste** - Living like royalty
+12. **Playing Paradise** - Performing in main club
+13. **Day Trips** - Exploring other atolls (5 images)
+
+### Changes from Song Panel
+- Removed song panel structure entirely
+- Changed tag from "Original Song" to "Shark-Infested Paradise"
+- Added demographics strip: One Atoll Resort, Dec 2012 - Jan 2013, 1 Month Stay
+- Added full gallery with 56 images
+
+### Note
+User requested complete removal of any reference to "the mystery" / wedding ring saga. Our secret.
+
+---
+
+## Known Issue - Maldives Sidebar
+
+**Problem:** Maldives not appearing in sidebar despite having 12+ h3 sections and 50+ images.
+
+**Status:** Needs investigation tomorrow. The panel meets all criteria for `isCompletePanel()` check.
+
+**Possible causes:**
+- Cache issue
+- JavaScript error preventing sidebar build
+- Bundle not loading properly
+
+---
+
+## Files Modified
+
+### Core Files
+- `js/ui/panel.js` - Inline image click fallback handler
+- `js/data/locations.js` - Maldives complete rewrite (song → story panel)
+- `js/data/galleries.js` - Added maldives gallery (56 images)
+- `js/bundle.js` - Rebuilt multiple times
+
+### Helper Files Created
+- `maldives-selector.html` - Image selection tool (183 images organized by date)
+- `upload-maldives-images.js` - Cloudinary upload script
+- `maldives-preview.html` - Panel preview
+
+---
+
+## Next Steps
+- Fix Maldives sidebar visibility issue
+- Review panel in context and adjust as needed
+- Continue building panels
+
+---
+
+---
+
+# Session - March 1, 2026
+
+## Summary
+Major mobile UX overhaul. Redesigned the location menu, fixed globe interaction, and polished the mobile experience.
+
+---
+
+## Mobile Location Menu Redesign
+
+### Before
+- Hamburger button to open full-height sidebar
+- Menu blocked globe interaction
+- No auto-appear/dismiss behavior
+
+### After
+- **Position:** Fixed at bottom of screen, compact overlay
+- **Height:** max-height 175px (shows ~5 items: 3 chapters + 2 stories)
+- **Appearance:** Semi-transparent with blur effect (rgba(0,0,0,0.35) + backdrop-filter)
+- **Auto-appear:** Menu slides up after celebration sequence
+- **Auto-dismiss:** Hides on any touch (touchstart event)
+- **Auto-reappear:** Returns after 4 seconds of no interaction, or when panel closes
+
+### CSS Changes
+```css
+.location-list {
+    position: fixed !important;
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    max-height: 175px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    transform: translateY(100%) !important;
+    visibility: hidden;
+}
+
+.location-list.open {
+    transform: translateY(0) !important;
+    visibility: visible;
+}
+```
+
+### JavaScript Changes
+**File:** `js/input.js`
+- Added `dismissMenuTemporarily()` call in `onTouchStart` so menu hides on any touch
+
+**File:** `js/ui/panel.js`
+- Added menu reopen logic in `closePanel()` - menu reappears 500ms after panel closes
+
+**File:** `js/ui/sidebar.js`
+- `dismissMenuTemporarily()` - closes menu, reopens after 4 seconds if no panel open
+
+---
+
+## Globe Interaction Fixes
+
+### Globe Was Stuck
+**Problem:** When mobile menu was open, globe couldn't rotate - touches were blocked.
+
+**Cause:** `.mobile-overlay.open` had `pointer-events: auto`, intercepting all touches.
+
+**Fix:** Changed to `pointer-events: none` so touches pass through to canvas.
+
+### Icon Centering
+**Problem:** When tapping an icon, it would slide too far left or right instead of centering.
+
+**Solution:** Adjusted the longitude offset value through iteration:
+- -1.50 → too far right
+- -1.70 → too far left
+- -1.62 → too far left
+- -1.58 → slightly off
+- **-1.56 → correct!**
+
+All files updated: `input.js`, `sidebar.js`, `animation.js`
+
+---
+
+## Scroll Hints
+
+### "SCROLL TO READ" Panel Hint
+**Problem:** Showing when no panel was open.
+
+**Fix:** Added explicit removal in `closePanel()`:
+```javascript
+const scrollHint = document.getElementById('scrollHintBottom');
+if (scrollHint) scrollHint.classList.remove('visible');
+```
+
+### "scroll for more ↓" Menu Hint
+**Enhancement:** Made more visible:
+- Font size: 0.65rem → 0.75rem
+- Color: rgba(212,165,116,0.7) → solid #d4a574
+- Added font-weight: 500
+
+---
+
+## Files Modified
+
+### Core Files
+- `css/styles.css` - Mobile menu positioning, scroll hint styling
+- `js/input.js` - Touch dismiss, centering offset
+- `js/ui/panel.js` - Scroll hint fix, menu reopen on panel close
+- `js/ui/sidebar.js` - Centering offset
+- `js/globe/animation.js` - Centering offset
+- `js/bundle.js` - Rebuilt multiple times
+
+---
+
+## Git Commits (March 1)
+
+1. `a9a0ec6` - Fix mobile menu dismissal when tapping globe
+2. `1e02561` - Fix mobile menu: smaller height, allow globe rotation
+3. `fb1968d` - Make mobile menu smaller and anchored to bottom
+4. `67ee0ff` - Make mobile menu more compact and unobtrusive
+5. `5ce265d` - Fix mobile menu position - override desktop top 50%
+6. `07bc485` - Fix scroll hint and menu reappear after panel close
+7. `73bdfa9` - Adjust centering offset to -1.55
+8. `fdb7b19` - Increase centering offset to -1.70
+9. `a6b26ba` - Adjust centering offset to -1.62
+10. `05ae58f` - Adjust centering offset to -1.58
+11. `2305d4d` - Adjust centering offset to -1.56 (final)
+12. `5fb6393` - Make scroll hint more visible
+13. `f27a919` - Dismiss menu on any touch, not just tap
+
+---
+
+## Next Session
+- Getting music up in the panels! 🎵
+
+---
