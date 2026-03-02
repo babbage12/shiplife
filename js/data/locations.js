@@ -304,6 +304,8 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Shipmates</span>
  <h3 class="section-title-panel">Witnesses to the Strange</h3>
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+ <p class="photo-caption-inline">Goofing off in crew bar with shipmates.</p>
  <p>They weren't just colleagues. They were professionals, equally dedicated to their craft. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
  <p>There was humor and irony in every story told at sea. It just happened that way - so many people from such different places, bumping into each other's unfamiliar ways.</p>
  <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
@@ -311,8 +313,6 @@ const locations = [
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530243/Screen_Shot_2026-01-15_at_9.24.29_PM_tlievd.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528418/crew_bar_urzrll.jpg" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Goofing off in crew bar with shipmates.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528859/Screen_Shot_2026-01-15_at_9.01.50_PM_buvpyi.png" class="story-image" data-caption="Playing with my friend Hayden Smith in Smugglers Lounge." alt="Playing with Hayden Smith" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Playing with my friend Hayden Smith in Smugglers Lounge.</p>
  <div class="story-gallery-grid">
