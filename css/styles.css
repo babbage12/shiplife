@@ -65,15 +65,16 @@
             font-weight: 600;
             letter-spacing: 0.1em;
             text-shadow: 0 0 8px rgba(0, 0, 0, 1), 0 0 16px rgba(0, 0, 0, 0.9), 0 0 32px rgba(10, 22, 40, 0.8);
+            color: var(--gold);
         }
 
         .logo span {
-            color: var(--cream);
+            color: var(--gold);
         }
 
         .logo .num {
             font-size: 1.3em;
-            color: var(--cream);
+            color: var(--gold);
         }
 
         .logo .word {
@@ -2746,7 +2747,7 @@
 
         .intro-modal h2 .num {
             font-size: 1.3em;
-            color: var(--cream);
+            color: var(--gold);
         }
 
         .intro-modal h2 .word {
@@ -2755,7 +2756,7 @@
         }
 
         .intro-modal h2 .gold {
-            color: var(--cream);
+            color: var(--gold);
         }
 
         .intro-modal .intro-text {
