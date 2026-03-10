@@ -2288,11 +2288,22 @@
             }
 
             .center-name {
-                top: 4.5rem;
+                top: 1rem;
+                left: auto;
+                right: 1rem;
+                transform: none;
             }
 
             .center-name a {
-                font-size: 1.25rem;
+                font-size: 1.1rem;
+            }
+
+            .tagline {
+                color: rgba(245, 240, 232, 0.7);
+            }
+
+            .instructions p {
+                color: rgba(245, 240, 232, 0.7);
             }
             
             .left-copyright {
