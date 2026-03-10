@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-10T15:58:32.784Z
+// Shiplife Bundle - Generated 2026-03-10T17:30:08.209Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17666,13 +17666,6 @@ let currentImageIndex = 0;
 let currentScale = 1;
 let currentTranslateX = 0;
 let currentTranslateY = 0;
-let initialPinchDistance = 0;
-let initialScale = 1;
-let lastTouchX = 0;
-let lastTouchY = 0;
-let isPanning = false;
-let isZooming = false;
-let lastTapTime = 0;
 
 function resetZoom() {
     currentScale = 1;
@@ -17690,7 +17683,7 @@ function applyTransform() {
         if (currentScale === 1) {
             lightboxImage.style.transform = '';
         } else {
-            lightboxImage.style.transform = `scale(${currentScale}) translate(${currentTranslateX / currentScale}px, ${currentTranslateY / currentScale}px)`;
+            lightboxImage.style.transform = `scale(${currentScale}) translate(${currentTranslateX}px, ${currentTranslateY}px)`;
         }
     }
 }
@@ -17848,108 +17841,92 @@ document.addEventListener('keydown', function(e) {
 });
 
 // ============================================
-// MOBILE ZOOM FUNCTIONALITY
-// Pinch-to-zoom, double-tap, and pan
+// MOBILE ZOOM - Initialize after DOM ready
 // ============================================
 
-// Check if device supports touch
-const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+function initMobileZoom() {
+    const lightboxImage = document.getElementById('lightboxImage');
+    if (!lightboxImage) return;
 
-if (isTouchDevice) {
+    let initialDistance = 0;
+    let initialScale = 1;
+    let lastTap = 0;
+    let startX = 0;
+    let startY = 0;
+    let startTranslateX = 0;
+    let startTranslateY = 0;
+
     // Double-tap to zoom
-    document.addEventListener('touchend', function(e) {
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImage = document.getElementById('lightboxImage');
-        if (!lightbox || !lightbox.classList.contains('active')) return;
-
-        // Only handle single finger taps on the image
-        if (e.changedTouches.length !== 1) return;
-
-        const touch = e.changedTouches[0];
-        const target = document.elementFromPoint(touch.clientX, touch.clientY);
-        if (target !== lightboxImage) return;
-
+    lightboxImage.addEventListener('click', function(e) {
         const now = Date.now();
-        if (now - lastTapTime < 300) {
-            // Double tap detected
+        if (now - lastTap < 300) {
             e.preventDefault();
+            e.stopPropagation();
             if (currentScale > 1) {
                 resetZoom();
             } else {
                 currentScale = 2.5;
                 applyTransform();
             }
-            lastTapTime = 0; // Reset to prevent triple-tap
+            lastTap = 0;
         } else {
-            lastTapTime = now;
+            lastTap = now;
         }
     });
 
-    // Touch handlers for pinch-to-zoom and pan
-    document.addEventListener('touchstart', function(e) {
-        const lightbox = document.getElementById('lightbox');
-        if (!lightbox || !lightbox.classList.contains('active')) return;
-
+    // Pinch zoom
+    lightboxImage.addEventListener('touchstart', function(e) {
         if (e.touches.length === 2) {
-            // Pinch start
-            isZooming = true;
-            isPanning = false;
+            e.preventDefault();
             const dx = e.touches[0].clientX - e.touches[1].clientX;
             const dy = e.touches[0].clientY - e.touches[1].clientY;
-            initialPinchDistance = Math.sqrt(dx * dx + dy * dy);
+            initialDistance = Math.sqrt(dx * dx + dy * dy);
             initialScale = currentScale;
         } else if (e.touches.length === 1 && currentScale > 1) {
-            // Pan start (only when zoomed in)
-            isPanning = true;
-            lastTouchX = e.touches[0].clientX;
-            lastTouchY = e.touches[0].clientY;
+            // Start panning
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            startTranslateX = currentTranslateX;
+            startTranslateY = currentTranslateY;
         }
-    }, { passive: true });
+    }, { passive: false });
 
-    document.addEventListener('touchmove', function(e) {
-        const lightbox = document.getElementById('lightbox');
-        if (!lightbox || !lightbox.classList.contains('active')) return;
-
-        if (e.touches.length === 2 && isZooming) {
-            // Pinch zoom
+    lightboxImage.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 2) {
             e.preventDefault();
             const dx = e.touches[0].clientX - e.touches[1].clientX;
             const dy = e.touches[0].clientY - e.touches[1].clientY;
             const distance = Math.sqrt(dx * dx + dy * dy);
 
-            const scale = (distance / initialPinchDistance) * initialScale;
-            currentScale = Math.min(Math.max(1, scale), 5);
-
-            if (currentScale === 1) {
-                currentTranslateX = 0;
-                currentTranslateY = 0;
+            if (initialDistance > 0) {
+                currentScale = Math.min(Math.max(1, (distance / initialDistance) * initialScale), 5);
+                if (currentScale === 1) {
+                    currentTranslateX = 0;
+                    currentTranslateY = 0;
+                }
+                applyTransform();
             }
-
-            applyTransform();
-        } else if (e.touches.length === 1 && isPanning && currentScale > 1) {
-            // Pan when zoomed
+        } else if (e.touches.length === 1 && currentScale > 1) {
             e.preventDefault();
-            const touchX = e.touches[0].clientX;
-            const touchY = e.touches[0].clientY;
-
-            currentTranslateX += touchX - lastTouchX;
-            currentTranslateY += touchY - lastTouchY;
-
-            lastTouchX = touchX;
-            lastTouchY = touchY;
-
+            // Pan
+            const dx = e.touches[0].clientX - startX;
+            const dy = e.touches[0].clientY - startY;
+            currentTranslateX = startTranslateX + dx / currentScale;
+            currentTranslateY = startTranslateY + dy / currentScale;
             applyTransform();
         }
     }, { passive: false });
 
-    document.addEventListener('touchend', function(e) {
-        if (e.touches.length < 2) {
-            isZooming = false;
-        }
-        if (e.touches.length === 0) {
-            isPanning = false;
-        }
+    lightboxImage.addEventListener('touchend', function(e) {
+        initialDistance = 0;
     }, { passive: true });
+}
+
+// Initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileZoom);
+} else {
+    initMobileZoom();
 }
 
 
