@@ -2960,7 +2960,7 @@ an original composition inspired by this place.
  <h3 class="section-title-panel">My Little Landmark Friend</h3>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/v1768963050/Screen_Shot_2026-01-20_at_9.35.22_PM_x1xnpi.png" class="story-image" data-caption="The guardian spider of Lifou." alt="Spider on Lifou" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The guardian of the path to the church.</p>
- <p>One day, walking up to the church, I noticed him. A spider - and not a small one - nestled in a wooden fence that separated someone's property from the road.</p>
+ <p>One day, walking up to the church, I noticed him. A spider with a body as large as a silver dollar and legs that spread wider than my hand, nestled in a wooden fence that separated someone's property from the road.</p>
  <p>He seemed almost like a pet. Just sitting there in his web, unbothered by the world passing by.</p>
  <p>After that, every time we visited Lifou, I'd look for him as I climbed up to the church. He became my little landmark. A familiar face - all eight eyes of it - on an island far from home.</p>
  <p>And then one visit, he was gone.</p>
