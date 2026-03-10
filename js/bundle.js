@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-10T17:42:11.312Z
+// Shiplife Bundle - Generated 2026-03-10T17:49:33.606Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -11903,8 +11903,6 @@ an original composition inspired by this place.
  <span class="section-tag-panel">The Approach</span>
  <h3 class="section-title-panel">First Glimpse</h3>
  <p>The citadel appears first - a cathedral and bell tower rising from volcanic cliffs, fortified since the Bronze Age. This has been a landmark for Mediterranean sailors for five thousand years.</p>
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/20150518_114416" class="story-image" data-caption="Panoramic view of Lipari's harbor and town." alt="Lipari harbor panorama" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The harbor curves around the bay - boats, hotels, and green volcanic hills stretching to the horizon.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/img_5151" class="story-image" data-caption="The citadel rising above Lipari's rooftops." alt="Citadel view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The citadel rises above the town's terracotta rooftops, ancient walls on volcanic rock.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/lipari/img_5152" class="story-image" data-caption="Lipari's dramatic skyline." alt="Lipari skyline" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
