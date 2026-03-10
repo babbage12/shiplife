@@ -2272,8 +2272,8 @@
 
         @media (max-width: 768px) {
             .header {
-                padding: 1rem 1.5rem;
-                gap: 0.5rem;
+                padding: 0.75rem 1rem 0.25rem;
+                gap: 0.25rem;
             }
 
             .logo {
@@ -2284,26 +2284,23 @@
             .tagline {
                 font-size: 0.5rem;
                 line-height: 1.3;
-                margin-top: 0.25rem;
+                margin-top: 0.1rem;
+                color: rgba(245, 240, 232, 0.85);
             }
 
             .center-name {
-                top: 1rem;
-                left: auto;
-                right: 1rem;
-                transform: none;
+                top: 3.5rem;
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
             }
 
             .center-name a {
                 font-size: 1.1rem;
             }
 
-            .tagline {
-                color: rgba(245, 240, 232, 0.7);
-            }
-
-            .instructions p {
-                color: rgba(245, 240, 232, 0.7);
+            .instructions {
+                display: none;
             }
             
             .left-copyright {
