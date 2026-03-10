@@ -2287,6 +2287,10 @@
                 margin-top: 0.25rem;
             }
 
+            .center-name {
+                top: 4.5rem;
+            }
+
             .center-name a {
                 font-size: 1.25rem;
             }
