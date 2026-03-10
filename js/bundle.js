@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-10T17:33:54.675Z
+// Shiplife Bundle - Generated 2026-03-10T17:39:06.167Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -3205,7 +3205,7 @@ const locations = [
  <h3 class="section-title-panel">The Boat</h3>
  <p>I spent the night in Doha and in the morning flew into <span class="male-density-link">Malé</span>, one of the most densely populated areas on the planet. They had sent a speedboat to pick me up.</p>
  <div class="image-row image-row-2">
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0070" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0070" data-caption="The speedboat" alt="Speedboat" onclick="openLightbox('https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0070')" style="cursor:pointer">
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0073" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0073" data-caption="I felt like a millionaire" alt="On the speedboat" onclick="openLightbox('https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0073')" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_600,q_auto,f_auto/shiplife/maldives/img_0071" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0071" data-caption="One & Only" alt="The boat" onclick="openLightbox('https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/maldives/img_0071')" style="cursor:pointer">
  </div>
  <p>After about an hour's ride, we pulled into a dock deep in a forested lagoon.</p>
