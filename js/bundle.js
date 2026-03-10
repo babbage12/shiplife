@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-10T15:50:30.815Z
+// Shiplife Bundle - Generated 2026-03-10T15:54:00.244Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17828,7 +17828,7 @@ function closeLightbox(event) {
 // Keyboard navigation
 document.addEventListener('keydown', function(e) {
     const lightbox = document.getElementById('lightbox');
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
 
     if (e.key === 'Escape') {
         lightbox.classList.remove('active');
@@ -17849,7 +17849,7 @@ document.addEventListener('keydown', function(e) {
 // Mouse wheel zoom (desktop)
 document.addEventListener('wheel', function(e) {
     const lightbox = document.getElementById('lightbox');
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
 
     e.preventDefault();
 
@@ -17872,7 +17872,7 @@ let lastTapTime = 0;
 document.addEventListener('click', function(e) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
     if (e.target !== lightboxImage) return;
 
     const now = Date.now();
@@ -17892,7 +17892,7 @@ document.addEventListener('click', function(e) {
 document.addEventListener('touchstart', function(e) {
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
 
     if (e.touches.length === 2) {
         // Pinch start
@@ -17913,7 +17913,7 @@ document.addEventListener('touchstart', function(e) {
 
 document.addEventListener('touchmove', function(e) {
     const lightbox = document.getElementById('lightbox');
-    if (!lightbox.classList.contains('active')) return;
+    if (!lightbox || !lightbox.classList.contains('active')) return;
 
     if (e.touches.length === 2 && isZooming) {
         // Pinch zoom
