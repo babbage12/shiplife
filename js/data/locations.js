@@ -8029,7 +8029,7 @@ an original composition inspired by this place.
  ${generateGallery('kusadasi', 'Photos from Kuşadası')}
  `,
  fullDesc: "Most passengers rush straight to Ephesus. They miss the best part. Kuşadası is colorful, chaotic, and completely charming. Turkish breakfast, the Hand of Peace, and bazaar energy.",
- image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_auto,f_auto/shiplife/kusadasi/img_3162"
+ image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,g_north,q_auto,f_auto/shiplife/kusadasi/img_3162"
  },
  {
  id: 81,
