@@ -1764,7 +1764,6 @@ an original composition inspired by this place.
  <p class="photo-caption-inline">Rome rewards those who explore.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838005/shiplife/rome/xn0otmdalw0ppnagpzxu.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome" onclick="openLightbox(this.src.replace('w_400', 'w_1600'))" style="cursor:pointer">
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838004/shiplife/rome/e9pz8a6daycsfx5pgcwr.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome" onclick="openLightbox(this.src.replace('w_400', 'w_1600'))" style="cursor:pointer">
  </div>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/v1770838006/shiplife/rome/prbj3sgvcfsnb1nlcqc9.jpg" class="story-image" data-caption="Rome, Italy" alt="Rome" onclick="openLightbox(this.src.replace('w_400', 'w_1600'))" style="cursor:pointer">
