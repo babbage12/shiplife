@@ -423,26 +423,8 @@ function spinToMediterranean() {
 // ============================================
 
 // Show tap/click hint after intro (works on both mobile and desktop)
-// Only shows for returning visitors - first-time visitors see the intro modal instead
+// DISABLED - no longer showing this hint
 function showTapHint() {
-    const hint = document.getElementById('mobileTapHint');
-    if (!hint) return;
-
-    // Don't show this hint during guided mode - intro modal handles it
-    if (!isGuidedComplete()) return;
-
-    // Show immediately
-    hint.classList.add('visible');
-
-    // Hide hint when user interacts or after 5 seconds
-    const hideHint = () => {
-        hint.classList.remove('visible');
-        document.removeEventListener('touchstart', hideHint);
-        document.removeEventListener('click', hideHint);
-    };
-
-    document.addEventListener('touchstart', hideHint, { once: true });
-    document.addEventListener('click', hideHint, { once: true });
-    setTimeout(hideHint, 5000);
+    return;
 }
 
