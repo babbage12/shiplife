@@ -822,6 +822,112 @@
             font-weight: 500;
         }
 
+        /* Music Player */
+        .music-player {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(212, 165, 116, 0.3);
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .music-player-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.75rem;
+        }
+
+        .music-player-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex: 1;
+        }
+
+        .music-player-icon {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .music-player-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--cream);
+            letter-spacing: 0.05em;
+        }
+
+        .music-player-play-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--gold);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .music-player-play-btn:hover {
+            background: var(--gold-light);
+            transform: scale(1.05);
+        }
+
+        .music-player-play-btn svg {
+            width: 14px;
+            height: 14px;
+            fill: var(--navy);
+            margin-left: 2px;
+        }
+
+        .music-player-play-btn.playing svg {
+            margin-left: 0;
+        }
+
+        .music-player-credits {
+            font-size: 0.75rem;
+            color: rgba(245, 240, 232, 0.6);
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        .music-player-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .music-player-progress {
+            flex: 1;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 2px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .music-player-progress-bar {
+            height: 100%;
+            background: var(--gold);
+            border-radius: 2px;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        .music-player-time {
+            font-size: 0.7rem;
+            color: rgba(245, 240, 232, 0.5);
+            font-variant-numeric: tabular-nums;
+            min-width: 85px;
+            text-align: right;
+        }
+
         /* More Info Button & Popup */
         .more-info-container {
             position: relative;

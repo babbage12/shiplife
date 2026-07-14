@@ -2666,6 +2666,26 @@ an original composition inspired by this place.
  </div>
  </div>
 
+ <div class="music-player">
+ <div class="music-player-header">
+ <div class="music-player-title">
+ <span class="music-player-icon">🎵</span>
+ <span class="music-player-name">Bora Bora</span>
+ </div>
+ <button class="music-player-play-btn" onclick="toggleMusic(this, 'https://res.cloudinary.com/de5jbyhxx/video/upload/v1773680504/shiplife/music/bora-bora.m4a')">
+ <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+ </button>
+ </div>
+ <div class="music-player-credits">Music by Derrick Hudson</div>
+ <div class="music-player-controls">
+ <div class="music-player-progress" onclick="seekMusic(event, this)">
+ <div class="music-player-progress-bar"></div>
+ </div>
+ <div class="music-player-time">0:00 / 1:55</div>
+ </div>
+ <audio style="display:none;"></audio>
+ </div>
+
  <div class="story-section-panel">
  <span class="section-tag-panel">Paradise Found</span>
  <h3 class="section-title-panel">Impossible Blue</h3>
