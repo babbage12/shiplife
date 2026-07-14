@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-03-16T17:08:10.532Z
+// Shiplife Bundle - Generated 2026-07-14T19:35:02.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -13415,9 +13415,10 @@ function createGlobe() {
     const textureLoader = new THREE.TextureLoader();
 
     const earthTexture = textureLoader.load(
-        'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+        'textures/earth-8k.jpg'
     );
     earthTexture.colorSpace = THREE.SRGBColorSpace;
+    earthTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
     console.log('Earth texture initialized');
 
