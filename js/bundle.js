@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-07-14T19:35:02.000Z
+// Shiplife Bundle - Generated 2026-08-05T23:22:48.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -2636,7 +2636,7 @@ const locations = [
  <div class="story-break">· · ·</div>
  <p>My brother showed me the guitar for the first time. It lived under my parents' bed in a burgundy leather case - Mom's '61 Gibson SG. I wasn't supposed to touch it, but once I saw that red glow, I had to see it again. I'd sneak into their room, open those latches with great gravity, and just stare. I dreamed of holding it.</p>
  <p>A few years of begging and I was playing my dad's slightly more beat up Jazzmaster (still worth a fortune if you happen to own one today). By thirteen, I'd convinced Mom to let me have the Gibson too. So there I was, a teenager with two vintage guitars now worth more than most cars. And like everyone did back then, I sold them both.</p>
- <p>By thirteen, I had joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
+ <p>That same year, I joined my first band. We called ourselves 5th Avenue, and we played anywhere that would have us - including the Stony Ridge Fair, right in the small town where we grew up.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006615_kjgr2e.jpg" class="story-image" data-caption="Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair." alt="5th Avenue at Stony Ridge Fair" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Age 13. My first band, 5th Avenue, playing the Stony Ridge Fair.</p>
  <div class="image-row-2">
@@ -2645,7 +2645,7 @@ const locations = [
  </div>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="story-image" data-caption="Brothers of Badness. So we weren't exactly living up to our name... or were we?" alt="Brothers of Badness 1983" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Brothers of Badness. So we weren't exactly living up to our name... or were we?</p>
- <p>When music wasn't calling, the woods were. Hours spent walking the train tracks behind our house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
+ <p>When music wasn't calling, the woods were. I'd spend hours walking the train tracks behind our little yellow house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
  <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
  </div>
  
@@ -2733,7 +2733,7 @@ const locations = [
  </div>
  <div class="demo-item">
  <span class="demo-icon">🚢</span>
- <span class="demo-value">2007</span>
+ <span class="demo-value">2009</span>
  </div>
  </div>
 
@@ -2815,7 +2815,7 @@ const locations = [
  "Ship life will fulfill you, drain you, or wreck you emotionally. You can tell a lot about a person based on how they conduct themselves aboard a ship."
  <cite>- Staff Captain, Pacific Sun</cite>
  </blockquote>
- <p>Sitting there, the question hung in the air: am I ready for this? Ready to become the best version of myself? Because that's what this was going to take.</p>
+ <p>I sat there asking myself: am I ready for this? Because I could already tell what this life was going to take.</p>
  <p>Those first weeks were a blur. Learning the sets, the venues, the politics of ship entertainment. Learning the rhythm of a life in motion. You wake up in one country. Perform in another. Sleep somewhere in between.</p>
  <div style="text-align: center; margin: 1.25rem 0;">
  <span class="directors-commentary darwin-captain" style="margin-left: 0;">
@@ -2839,14 +2839,14 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">The Proving Ground</span>
  <h3 class="section-title-panel">The 14-Day Cruise</h3>
- <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if the new soloist would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
- <p>Making it past that window meant the home office would turn their attention to more pressing matters. You were left alone to succeed, fail, or burn out at your own pace.</p>
+ <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if I would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
+ <p>If I made it past that window, the home office would turn their attention to more pressing matters. I'd be left alone to succeed, fail, or burn out at my own pace.</p>
  <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
- <p>Staying on and making it to Darwin without being handed a free meal and a plane ticket home meant at least a full 4-month contract. I was already getting into the rhythm of this very different life, and I was enjoying it. I didn't want to leave any time soon.</p>
+ <p>If I could get to Darwin without being handed a free meal and a plane ticket home, it meant a full 4-month contract. And I was already falling into the rhythm of this very different life. I didn't want it to end.</p>
  <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
- <p>Darwin marked the end of my probation. Five weeks into a four-month contract, we pulled into port and I realized something had shifted. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
+ <p>Five weeks in, we finally pulled into Darwin, and I realized something had shifted. Whatever the official trial period had been, this felt like the true end of my probation. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
  <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist - Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
@@ -2899,7 +2899,7 @@ const locations = [
  <h3 class="section-title-panel">Witnesses to the Strange</h3>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768528676/Screen_Shot_2026-01-15_at_8.58.48_PM_gtsbkw.png" class="story-image" data-caption="Goofing off in crew bar with shipmates." alt="Goofing off in crew bar" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Goofing off in crew bar with shipmates.</p>
- <p>They weren't just colleagues. They were professionals, equally dedicated to their craft. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
+ <p>These weren't just colleagues. They were professionals, as dedicated to their craft as I was to mine. But more than that, we were all witnesses to this strange experience we'd signed on to.</p>
  <p>There was humor and irony in every story told at sea. It just happened that way - so many people from such different places, bumping into each other's unfamiliar ways.</p>
  <p>Some of the best nights were when the stage was shared. My good friend Hayden Smith would jump in at Smugglers Lounge and the Atlantis Lounge. Lars too. Those were the gigs that reminded everyone why we were here.</p>
  <div class="story-gallery-grid">
@@ -2925,7 +2925,7 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Ship Celebrity</span>
  <h3 class="section-title-panel">Cruise Director's Corner</h3>
- <p>One day the cruise director extended an invitation to his daily TV show - broadcast to every cabin on the ship. Sat down, feeling pretty good about myself.</p>
+ <p>One day the cruise director invited me onto his daily TV show - broadcast to every cabin on the ship. I sat down feeling pretty good about myself.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530105/Screen_Shot_2026-01-15_at_9.20.01_PM_yujfq8.png" class="story-image" data-caption="Cruise Director's Corner. Cool, calm, collected." alt="TV show relaxed" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Cool. Calm. Collected.</p>
  <p>Then the realization hit: 2,000 passengers were watching live. And suddenly, how humans sit became a complete mystery.</p>
@@ -2936,7 +2936,7 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Chapter 2</span>
  <h3 class="section-title-panel">The Chapter That Opened Everything</h3>
- <p>Darwin was the chapter that opened onto my future as a cruise ship musician. The following Chapter 3 opened to a world I honestly couldn't have imagined, no matter how big a daydreamer I had been as a kid.</p>
+ <p>Darwin opened the door onto my future as a cruise ship musician. What came next opened onto a world I couldn't have imagined - no matter how big a daydreamer I'd been as a kid.</p>
  </div>
 
  <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -2979,16 +2979,15 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">A Brief Digression</span>
  <h3 class="section-title-panel">Before We Continue...</h3>
- <p>Before we go any further into the story, a brief digression.</p>
- <p>We need to go back to 2009 - the first ship contract.</p>
+ <p>Before we go any further, we need to go back to 2009. The first contract. A day off in Cairns.</p>
  </div>
  
  <div class="story-section-panel">
  <span class="section-tag-panel">Seeing My Future</span>
  <h3 class="section-title-panel">Cairns, 2009</h3>
- <p>Riding bikes with shipmates. A white ship in the harbor.</p>
+ <p>I was out riding bikes with shipmates when a white ship in the harbor caught my eye.</p>
  <p>Someone said, "That's Seabourn. Top cruise line in the world."</p>
- <p>Watched it for a while. Got a little closer and snapped a photo.</p>
+ <p>I watched it for a while. Then I got a little closer and snapped a photo. I didn't know why. You don't always know why you take a picture.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. Working on the Pacific Sun, already dreaming about this strange, elegant ship.</p>
  </div>
@@ -2996,36 +2995,29 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel section-tag-glow">Three Fun-Filled, Island-Hopping Years Later...</span>
  <h3 class="section-title-panel">Akaroa, New Zealand. November 2012.</h3>
- <p>A note slipped under my door.</p>
+ <p>A note was slipped under my door.</p>
  <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
- <p>The call was made standing on the dock. C. Blackburn - the same agent who landed me that first ship - delivered the news.</p>
- <p>Seabourn wanted a soloist. The number one rated small cruise ship in the world. The same ship seen in Cairns three years earlier!</p>
+ <p>I knew instantly this could be the call - the one telling me my audition for the Seabourn soloist position had gone through.</p>
+ <p>I made the call standing on the dock. C. Blackburn - the same agent who landed me that first ship - delivered the news.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
- <p>An hour later I was eating oysters with my shipmates. Gagging. Laughing. Trying not to throw up.</p>
+ <p>An hour later I was eating lunch with friends and seriously trying not to throw up.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729046/IMG_0831_ei47kw.jpg" class="story-image" alt="Oysters in Akaroa" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
  <p class="photo-caption-inline">Oysters with shipmates. Not my finest moment.</p>
- <p>The door had just slid open.</p>
  </div>
- 
- <div class="story-section-panel">
- <span class="section-tag-panel">The Rest of It</span>
- <h3 class="section-title-panel">A Different Universe</h3>
- <p>The first two doors I had to push open myself.</p>
- <p>This one just... opened.</p>
- <p>P&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. The whole world, it seemed.</p>
- <blockquote class="story-quote">Seabourn gave me the rest of it.</blockquote>
- <p>Three vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.</p>
- </div>
- 
+
  <div class="story-section-panel">
  <span class="section-tag-panel">Embarkation</span>
  <h3 class="section-title-panel">Auckland, January 2013</h3>
- <p>Same port where I boarded my first P&O ship in 2009.</p>
- <p>Same gangway. Different universe.</p>
+ <p>That was nothing compared to the nervousness washing over me a few months later, when I found myself back in Auckland - the same port where I'd boarded my first P&O ship, the Pacific Sun, in 2009. Same Sky Tower watching from above.</p>
+ <p>Everything about my life as a cruise ship musician was about to ramp up by a factor of ten.</p>
+ <p>Now <em>that</em> really made me want to throw up.</p>
+ <p>I stood at the bottom of the gangway a moment longer than I needed to. Four years earlier I'd walked up one just like it carrying a guitar, a suitcase, and no idea whether I'd last two weeks. Now I was carrying the same guitar and an itinerary I had to read twice: Dubrovnik. The French Riviera. Antarctica.</p>
+ <p>Somewhere in my phone was a photo of this ship, taken from a rented bike in Cairns by a guy who had no business believing he'd ever board it.</p>
+ <p>I walked up.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727288/IMG_0145_v2vqtm.jpg" class="story-image" alt="Sky Tower Auckland" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The Sky Tower - Auckland's needle. Watching over the harbor as I sailed in on a new ship.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767732747/IMG_0159_nx39vl.jpg" class="story-image" alt="Auckland Harbor from Seabourn" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
@@ -3051,22 +3043,25 @@ const locations = [
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1769823772/seabourn_naynld.jpg" class="story-image" alt="Seabourn ship" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
  <p class="photo-caption-inline">Seabourn ships go places bigger ships can only dream of. Marseille. Amalfi. Malta. Tucked into harbors and anchored off coastlines that mass-market cruise lines will never see.</p>
- <p>Seabourn ships are more like huge luxury yachts than cruise ships. The guests were amazing. Doctors. Lawyers. Dignitaries. CEOs. Experts in horticulture, ancient history, penguins - you name it.</p>
- <p>And the crew knew how to party.</p>
- <p>Everyone was friendly. Everyone was professional.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">The Club</span>
+ <h3 class="section-title-panel">On, Every Day</h3>
+ <p>The guests were a different breed, with a more - shall we say - refined sense of what they perceived as music. I realized quickly that I needed to be on, every day, from the moment I stepped out of my cabin.</p>
+ <p>My stage was The Club, at the back of the ship. My sets usually started around 6 or 7 in the evening, and from my spot on stage I could see straight out to the back deck - and the ever-changing view that would be my home for the next three years.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767733813/IMG_0218_azftb2.jpg" class="story-image" alt="The Club" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" alt="Derrick at the piano" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
- <p class="photo-caption-inline">The Club on Deck 5 - my stage. And yes, they always put me by the food.</p>
+ <p class="photo-caption-inline">The Club - my stage at the back of the ship. The piano shot? That's the Observation Lounge during tea time, where I'd sit in on piano from time to time.</p>
  </div>
- 
+
  <div class="story-section-panel">
  <span class="section-tag-panel">Chapter 3</span>
  <h3 class="section-title-panel">The Entire Globe</h3>
- <p>Chapter 3 opened to the entire world.</p>
- <p>Back in that little yellow house in Toledo, a dream had been conjured into reality through sheer force of will.</p>
+ <p>Three ships. Odyssey. Sojourn. Quest. The rest, I'll let the photos tell.</p>
  </div>
  
  <div class="story-section-panel">
@@ -3175,7 +3170,7 @@ const locations = [
 
  ${generateGallery('auckland')}
  `,
- fullDesc: "The first two doors had to be pushed open. This one just... opened.\n\nP&O gave me the Pacific. Four years of Australia, New Zealand, Fiji, Tahiti, Papua New Guinea. The whole world, it seemed.\n\nSeabourn gave me the rest of it.\n\nThree vessels. Four years. Odyssey. Sojourn. Quest. 60+ countries.",
+ fullDesc: "A few months after the call in Akaroa, I was back in Auckland - the same port where I'd boarded my first P&O ship in 2009. Same Sky Tower watching from above.\n\nEverything about my life as a cruise ship musician was about to ramp up by a factor of ten.\n\nThree ships. Odyssey. Sojourn. Quest. The rest, I'll let the photos tell.",
  image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768586585/IMG_6563_ggigfv.jpg"
  },
  {
