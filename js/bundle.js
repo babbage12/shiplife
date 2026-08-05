@@ -13415,10 +13415,9 @@ function createGlobe() {
     const textureLoader = new THREE.TextureLoader();
 
     const earthTexture = textureLoader.load(
-        'textures/earth-8k.jpg'
+        'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
     );
     earthTexture.colorSpace = THREE.SRGBColorSpace;
-    earthTexture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
     console.log('Earth texture initialized');
 
