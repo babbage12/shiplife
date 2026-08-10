@@ -42,9 +42,7 @@ function closeIntroModalIfOpen() {
 // ============================================
 
 function openCommentaryModal() {
-    // Close the side panel first so easter egg appears against the globe
-    closePanel();
-
+    // Keep the side panel open so the reader can pick up where they left off
     document.getElementById('commentaryModal').classList.add('active');
     document.body.style.overflow = 'hidden';
 }

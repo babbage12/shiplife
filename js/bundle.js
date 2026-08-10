@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-10T22:07:07.000Z
+// Shiplife Bundle - Generated 2026-08-10T22:26:59.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -18248,9 +18248,7 @@ function closeIntroModalIfOpen() {
 // ============================================
 
 function openCommentaryModal() {
-    // Close the side panel first so easter egg appears against the globe
-    closePanel();
-
+    // Keep the side panel open so the reader can pick up where they left off
     document.getElementById('commentaryModal').classList.add('active');
     document.body.style.overflow = 'hidden';
 }
