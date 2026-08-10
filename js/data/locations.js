@@ -350,7 +350,9 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Chapter 2</span>
  <h3 class="section-title-panel">The Chapter That Opened Everything</h3>
- <p>Darwin opened the door onto my future as a cruise ship musician. What came next opened onto a world I couldn't have imagined - no matter how big a daydreamer I'd been as a kid.</p>
+ <p>Darwin opened the door onto my future as a cruise ship musician. I spent the next three years cruising the South Pacific and Indonesia - braving the Tasman Sea, the winds of New South Wales, and the gracious, kind people of Australasia.</p>
+ <p>Many of those stories live in their own respective panels around this globe. Others moved me enough to write music about them - and in time, those songs will begin to appear here too.</p>
+ <p>What came next opened onto a world I couldn't have imagined - no matter how big a daydreamer I'd been as a kid.</p>
  </div>
 
  <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -470,6 +472,13 @@ const locations = [
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532493/IMG_0227_psvuop.jpg" class="story-image" alt="Performing on Seabourn" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
  <p class="photo-caption-inline">The Club - my stage at the back of the ship. The piano shot? That's the Observation Lounge during tea time, where I'd sit in on piano from time to time.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">After Hours</span>
+ <h3 class="section-title-panel">The Dead of the Night</h3>
+ <p>And when the last set ended, the night didn't. Playing with Kiki and Daryl and Joanna in the dead of the night, spontaneous jam sessions with like-minded friends - I felt a connection to other musicians, and to people in general, that I had never felt before.</p>
+ <p>There is a lot of love and kindness out there in the world, and people willing to show you the way - without whom, I'm not sure I would have made it this far.</p>
  </div>
 
  <div class="story-section-panel">

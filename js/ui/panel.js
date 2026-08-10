@@ -286,7 +286,19 @@ function updateThreeDoorsNav(loc) {
 }
 
 function viewAllLocations() {
+    // Capture location before closePanel clears it
+    const loc = currentLocation;
+    const doors = locations.filter(l => l.isDoor);
+    const isLastDoor = loc && loc.isDoor && doors.length && doors[doors.length - 1].id === loc.id;
+
     closePanel();
+
+    // From the end of the final chapter, always celebrate with the spin to the
+    // Mediterranean (closePanel schedules it itself the first time guided mode completes)
+    if (isLastDoor && !celebrationInProgress) {
+        celebrationInProgress = true;
+        setTimeout(() => triggerDoorsCompleteSequence(), 500);
+    }
     // On mobile, open the locations menu; on desktop, list is already visible
     if (window.innerWidth <= 768) {
         // If celebration is in progress, wait until it's actually done
