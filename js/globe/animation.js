@@ -29,15 +29,10 @@ function animate() {
         // Gradually tilt to correct angle
         globe.rotation.x = 0.15 + (TOLEDO_X - 0.15) * easeOutQuart;
 
-        // Show modal early when globe visually appears stopped (easing ~99%)
+        // Show welcome modal every visit, once the globe visually appears stopped (easing ~99%)
         if (easeOutQuart >= 0.99 && !introModalShown) {
             introModalShown = true;
-            const userProgress = getProgress();
-            if (!userProgress.guidedComplete && !userProgress.introSeen) {
-                showIntroModal();
-            } else {
-                showTapHint();
-            }
+            showIntroModal();
         }
 
         if (progress >= 1) {
@@ -417,14 +412,3 @@ function spinToMediterranean() {
     pendingLocation = null;
     pendingZoomLocation = null;
 }
-
-// ============================================
-// TAP HINT
-// ============================================
-
-// Show tap/click hint after intro (works on both mobile and desktop)
-// DISABLED - no longer showing this hint
-function showTapHint() {
-    return;
-}
-

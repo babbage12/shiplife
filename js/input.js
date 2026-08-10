@@ -131,10 +131,8 @@ function onTouchTap(event) {
             if (marker.userData.title) {
                 const loc = marker.userData;
 
-                // Block clicks until intro modal has appeared (for first-time visitors)
-                const introModal = document.getElementById('introModal');
-                const progress = getProgress();
-                if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+                // Block clicks until the welcome modal has appeared
+                if (!introModalShown) {
                     return; // Wait for intro modal to appear
                 }
 
@@ -264,10 +262,8 @@ function onClick(event) {
     if (hoveredMarker) {
         const loc = hoveredMarker.userData;
 
-        // Block clicks until intro modal has appeared (for first-time visitors)
-        const introModal = document.getElementById('introModal');
-        const progress = getProgress();
-        if (!progress.guidedComplete && !progress.introSeen && (!introModal || !introModal.classList.contains('active'))) {
+        // Block clicks until the welcome modal has appeared
+        if (!introModalShown) {
             return; // Wait for intro modal to appear
         }
 

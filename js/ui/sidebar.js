@@ -272,10 +272,6 @@ function startGuidedJourney() {
     const introModal = document.getElementById('introModal');
     if (introModal) {
         introModal.classList.remove('active');
-        // Mark intro as seen
-        const progress = getProgress();
-        progress.introSeen = true;
-        saveProgress(progress);
     }
 
     // Find Toledo and open its panel
@@ -293,10 +289,6 @@ function skipGuidedTour() {
     const introModal = document.getElementById('introModal');
     if (introModal && introModal.classList.contains('active')) {
         introModal.classList.remove('active');
-        // Mark intro as seen
-        const progress = getProgress();
-        progress.introSeen = true;
-        saveProgress(progress);
     }
 
     // Trigger the celebration sequence (this also marks guided as complete)

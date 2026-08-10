@@ -74,7 +74,7 @@ const sidePanel = document.getElementById('sidePanel');
 
 function getProgress() {
     const stored = localStorage.getItem(STORAGE_KEY);
-    return stored ? JSON.parse(stored) : { doorsVisited: [], introSeen: false, guidedComplete: false };
+    return stored ? JSON.parse(stored) : { doorsVisited: [], guidedComplete: false };
 }
 
 function saveProgress(progress) {

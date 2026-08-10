@@ -27,9 +27,6 @@ function showIntroModal() {
 
 function closeIntroModal() {
     document.getElementById('introModal').classList.remove('active');
-    const progress = getProgress();
-    progress.introSeen = true;
-    saveProgress(progress);
 }
 
 // Close intro modal when first door is opened (called from panel.js)

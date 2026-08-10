@@ -57,22 +57,26 @@ const locations = [
  
  <div class="story-section-panel">
  <h3 class="section-title-panel">Touched</h3>
- <p>1989 brought a band called Touched. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, plus a few very questionable bars where certain death felt narrowly escaped more than once. The east coast was our circuit - Maine to Florida.</p>
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/touched_band" class="story-image" data-caption="Touched in one of its many forms, from left to right: Phil Berg, myself, Kevin Korecki, Robin Florey, Dave Gierke, and Kim Buhler." alt="The band Touched" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Touched in one of its many forms, from left to right: Phil Berg, myself, Kevin Korecki, Robin Florey, Dave Gierke, and Kim Buhler.</p>
+ <p>1989 brought a band called Touched, and I remember my audition to this day. Before that I'd been playing piano bars and had a few failed attempts at putting a band together, so joining a real working band would be a big deal for me. When I arrived on a cold Saturday afternoon, my acute admiration was mixed with a determination that this was what I wanted to do.</p>
+ <p>Dave stepped up first, looming over me with an extended hand, and asked - somewhat sarcastically - if I could play. That was a brash trait of Dave's back then. Shock therapy, I think he called it. Endearing, I know. Actually, it was - once we became friends. Dave was the best possible influence I could have asked for at that time in my life.</p>
+ <p>I must have played well enough, because I was in. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, as well as our share of questionable establishments where anything could and often did happen.</p>
+ <p>Touched was my first traveling band. The kid who wanted to see how far he could get before nightfall finally had his answer: somewhere between New York and Florida, depending on the week. The east coast was our circuit, always on the road, and the antics piled up. I began each road trip with a little dread (3 AM in West Virginia, dark country roads, seven people in a van hitched to a trailer full of equipment, barreling down a dirt road because we got lost) and no idea what was waiting at the other end. But mostly excitement - because for the first time I was outside my hometown, my city, doing what I'd been doing since I could remember. Only in front of people instead of apples.</p>
+ <p>Touched was Dave, Phil, Kevin, Kim, Sam, CJ, and a few others who were there before me - Dan and Kelly among them. We brought a lot of music to the east coast from the late '80s through the '90s, and created memories I cherish to this day. I'd take the opportunity to go back and do it all again if I could!</p>
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/touched_band" class="story-image" data-caption="Touched in one of its many forms, from left to right: Phil, myself, Kevin, Robin, Dave, and Kim." alt="The band Touched" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+ <p class="photo-caption-inline">Touched in one of its many forms, from left to right: Phil, myself, Kevin, Robin, Dave, and Kim.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Touched at the 5 Seasons Hotel, Greensboro, NC. 1991.</p>
  </div>
  
  <div class="story-section-panel">
- <span class="section-tag-panel">The Double Life</span>
- <h3 class="section-title-panel">Fourteen Years</h3>
+ <span class="section-tag-panel">Fourteen Years</span>
+ <h3 class="section-title-panel">The Double Life</h3>
  <p>A few years in, the bills started piling up. A steady paycheck meant a day job. Customer service. Nothing glamorous, but it paid the rent.</p>
  <p>The thing is - the music never stopped. Touched was still gigging on nights and weekends, still playing around Toledo well into the 2000s. Music just... became the side hustle.</p>
  <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Life shrunk to the size of a cubicle - phone ringing constantly, inbox stacked two feet high and growing. Three bosses on one floor. Plus the guy in the cubicle out front who wasn't a boss but hadn't gotten the memo.</p>
  <p>After almost fourteen years of this, a hard realization hit:</p>
- <blockquote class="story-quote">This was a waste of time.</blockquote>
- <p>The day job wasn't supporting the music career. It was slowly replacing it. Time to get out.</p>
+ <blockquote class="story-quote">The day job was the waste of time.</blockquote>
+ <p>Not the music. Never the music - the nights and weekends with Touched were the best part of those years. The cubicle was the waste. It wasn't supporting the music career, it was slowly replacing it. Time to get out.</p>
  </div>
  
  <div class="story-section-panel">
@@ -82,10 +86,14 @@ const locations = [
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767710239/vlcsnap-2026-01-06-08h32m21s251_aqec7t.png" class="story-image" data-caption="2005. The first solo gig in years. The spark." alt="First solo gig" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">2005. The first solo gig in years. The spark.</p>
  <p>The most important step was visualizing where music could lead again. A scrapbook of exotic places took shape - images of grand hotels, cruise ships, distant stages.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <h3 class="section-title-panel">How soon can you leave for Australia?</h3>
  <p>Then one late night, in a search for solo guitar gigs I landed on a British talent website with an ad that read something like:</p>
  <blockquote class="story-quote">Vocalist/Guitarist wanted for employment opportunity on cruise ship.</blockquote>
  <p>The application was filled out that same night. A few days later, sitting at my desk at work, an email appeared:</p>
- <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future."</blockquote>
+ <blockquote class="story-quote">"I watched your video and we might have an opportunity for you in the very near future. How soon do you think you could be ready to leave for Australia?"</blockquote>
  <p>I left work early that day and was packing before the next day was over. Everything I had went into a storage unit. A few weeks later, I was boarding a plane on my way to catch a ship in Auckland, NZ. Destination: Australia, where the next door was waiting to be opened.</p>
  </div>
  
@@ -111,7 +119,7 @@ const locations = [
  
  ${generateGallery('toledo')}
  `,
- fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: this was a waste of time.\n\nThis was Chapter 1. The escape. This chapter opened the possibility of everything that came after.",
+ fullDesc: "My mom would tell you the singing came before the talking. Finding me as a kid was easy - just listen.\n\nThe music never stopped. But after fourteen years of day jobs slowly replacing the dream, the realization hit: the day job was the waste of time.\n\nThis was Chapter 1. The escape. This chapter opened the possibility of everything that came after.",
  image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/9_yr_jazzmaster_square_r8uajm"
  },
  {
