@@ -255,13 +255,14 @@ const locations = [
  <h3 class="section-title-panel">The 14-Day Cruise</h3>
  <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if I would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
  <p>If I made it past that window, the home office would turn their attention to more pressing matters. I'd be left alone to succeed, fail, or burn out at my own pace.</p>
- <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But Darwin represented something else entirely.</p>
- <p>If I could get to Darwin without being handed a free meal and a plane ticket home, it meant a full 4-month contract. And I was already falling into the rhythm of this very different life. I didn't want it to end.</p>
+ <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But to me, in my present situation, Darwin represented something filled with far more potential than a night in the Northern Territory.</p>
+ <p>It meant I was staying for a full 4 months - and I might be asked back. No more cubicle. I was already falling into the rhythm of this very different life, and I didn't want it to end. Had I done it?</p>
  <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/002_zzrowo.jpg" class="story-image" data-caption="Smugglers Lounge on the Pacific Sun - the proving ground." alt="Smugglers Lounge" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Smugglers Lounge on the Pacific Sun - the proving ground.</p>
  <p>Five weeks in, we finally pulled into Darwin, and I realized something had shifted. Whatever the official trial period had been, this felt like the true end of my probation. The constant vigilance from management had eased. My name appeared in the daily entertainment schedule without revision.</p>
  <blockquote class="story-quote">Pre Show Entertainment with the acoustic sounds of our Solo Guitarist - Derrick Hudson. Show Times: 7:30PM & 9:30PM.</blockquote>
+ <p>I did it. Deep breath and go onstage.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645530/atlantis_brochure_kmknn5.jpg" class="story-image" data-caption="The Atlantis entertainment brochure - my name in print." alt="Atlantis entertainment brochure" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767645531/577727_2891241418592_422943946_n_ffy5nv.jpg" class="story-image" data-caption="Soundcheck at the Atlantis Lounge before the doors opened." alt="Soundcheck at the Atlantis Lounge" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
