@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-10T22:59:27.000Z
+// Shiplife Bundle - Generated 2026-08-11T17:42:21.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -2645,7 +2645,7 @@ const locations = [
  </div>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="story-image" data-caption="Brothers of Badness. So we weren't exactly living up to our name... or were we?" alt="Brothers of Badness 1983" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Brothers of Badness. So we weren't exactly living up to our name... or were we?</p>
- <p>When music wasn't calling, the woods were. I'd spend hours walking the train tracks behind our little yellow house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
+ <p>When music wasn't calling, the woods were. I'd spend hours walking the train tracks behind our two-story brick house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
  <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
  </div>
  
@@ -12036,8 +12036,39 @@ an original composition inspired by this place.
  </div>
 
  <div class="story-section-panel">
- <span class="section-tag-panel">The Waterfront</span>
- <h3 class="section-title-panel">Where Sailors Still Gather</h3>
+ <span class="section-tag-panel">First Call, 2013</span>
+ <h3 class="section-title-panel">So Close, and Yet So Far</h3>
+ <p>The first time I visited Amalfi, I never touched land. An extended crew drill was called the morning we arrived - a shock to all of us. Drills were normally planned well in advance and everyone was notified. No one knew why this one happened, though we suspected one of us had done something dumb.</p>
+ <p>Crew life ran on THE SCHEDULE - the most important document on the ship. The bandmaster oversaw the musicians, usually twelve to nineteen of us, but drills were run by the officers: stations to report to, instructions to follow, and quite a few things to remember, actually. Add the cast and production crew, the dance captains and their dancers, the special guest entertainers - the entertainment department had to run as tightly as Food & Beverage for each cruise to succeed.</p>
+ <p>So while one of the most beautiful coastlines on Earth sat a few hundred meters away, I spent the day in a life jacket.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">The Numbers Game</span>
+ <h3 class="section-title-panel">Don't Be Too Good</h3>
+ <p>Each cruise's success was an analytical venture, and as a soloist my club numbers were analyzed as if I were a whole department. Normally my numbers were good. But at the highest tier of the cruise line industry, an interesting feature emerges from the all-inclusive bar package.</p>
+ <p>A few months into that ship, someone explained it to me - a bartender, maybe. Two opposing forces work as a dynamic in the nightclub environment. Do they want passengers in the lounge enjoying the entertainment? Absolutely. Do they want so many passengers hanging out there that they drink all of the booze? Absolutely not.</p>
+ <p>So in practice, the entertainment was provided - through tiny speakers in the ceiling, kept to a low volume. The compromise seemed to be: hire good musicians, but not ones so exceptional they draw too large a crowd. I was walking a fine line. They didn't want me to be <em>too good</em>.</p>
+ <p>Each cruise I'd pick up a few groups of "followers" who preferred to sit in the club. But unlike my previous ships, where I performed in a packed bar right next to the restaurant, here the passengers were being gently steered away from my venue. Of course, there was always tea time.</p>
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727964/Screen_Shot_2026-01-06_at_2.33.27_PM_v6kw7e.png" class="story-image" data-caption="Tea time in the Observation Lounge. Why did they always put me next to the food?" alt="Tea time at the piano" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+ <p class="photo-caption-inline">Tea time in the Observation Lounge. Why did they always put me next to the food?</p>
+ <p>Were my numbers in the sweet spot where they were supposed to be? Or off to one side or the other? I started obsessing over the question, and there was no clear solution other than to do the best job I could - and not take the lack of an audience personally.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">Top Deck</span>
+ <h3 class="section-title-panel">Do You Know Any John Denver?</h3>
+ <p>One night I was playing out on the top deck of the Sojourn when a man came up to me and asked, "Do you know any John Denver?"</p>
+ <!-- TODO: insert photo of Derrick playing on the top deck of the Sojourn (Derrick is looking for it) -->
+ <p>So I played him a few John Denver songs, and he invited me over to his table of seven or eight guests. He told me he was the retired CEO of Owens Corning - based out of Toledo, Ohio.</p>
+ <p>I had the perfect story for him. I'd worked for Owens Corning myself - for a very confusing two months one summer, before I was finally let go. I was never good at math. Why was I ever in finance?</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">June 2015</span>
+ <h3 class="section-title-panel">An Hour Ashore</h3>
+ <p>By the time these photos were taken, I'd called at this coast a half dozen times. But this visit, I finally took an hour to wander and capture some images. It is one of the most strikingly beautiful places I have ever seen.</p>
+ <p>I think, most definitely, I was feeling creatively bankrupt. I was expected to be on from the moment I left my cabin in the morning until I crashed at night. Was I getting weary of life at sea?</p>
  <p>Amalfi's beach stretches along the shore, beach clubs and restaurants lining the waterfront. A tall ship anchors in the bay - a reminder that this coast has drawn sailors for a thousand years.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7019" class="story-image" data-caption="Amalfi waterfront with tall ship in the bay." alt="Amalfi waterfront" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Beach clubs and umbrellas, a tall ship on the horizon - the Amalfi Coast at its finest.</p>
