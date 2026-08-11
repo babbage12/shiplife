@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-10T22:52:27.000Z
+// Shiplife Bundle - Generated 2026-08-10T22:59:27.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -43,7 +43,7 @@ const defaultZoomDistance = 1.5;   // Default camera distance
 const atmosphereZoomDistance = 1.30; // Comfortable browsing distance
 const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
 const zoomOutDistance = 4.8;      // Further back for celebration spin only
-const baseZoomInDistance = 1.7;
+const baseZoomInDistance = 2.1;
 const mobileZoomMultiplier = 0.82;  // Mobile zooms ~18% closer to icons
 const zoomOutDuration = 450;       // Faster zoom out
 const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
