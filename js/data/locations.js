@@ -2226,7 +2226,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-14_aibkvr.jpg" class="story-image" alt="Akaroa views" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/akaroa-15_siokxm.jpg" class="story-image" alt="Akaroa coastline" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  </div>
- <p class="photo-caption-inline">Every angle revealed something new.</p>
+ <p class="photo-caption-inline">I kept turning around to look again.</p>
  </div>
 
  <div class="story-section-panel">
@@ -5304,7 +5304,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145445" class="story-image" data-caption="Medieval columns framing the sea." alt="Columns and sea" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Romanesque columns silhouetted against endless blue - sky melting into sea.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145933" class="story-image" data-caption="View through fortress opening." alt="Fortress view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every window tells a story of defense, beauty, and the eternal Mediterranean.</p>
+ <p class="photo-caption-inline">Windows built for archers, now framing the sea.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5595" class="story-image" data-caption="Looking out from the fortress." alt="Fortress overlook" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Lord Byron swam 5km across this bay to visit Shelley - you can see why.</p>
  </div>
@@ -5334,7 +5334,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/20150626_145636" class="story-image" data-caption="Town architecture." alt="Town buildings" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Stone and stucco, shutters and flowers - the timeless Italian coastal village.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5553" class="story-image" data-caption="Village scene." alt="Village view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every corner reveals another postcard view.</p>
+ <p class="photo-caption-inline">Another corner, another reason to be late back to the ship.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5568" class="story-image" data-caption="Coastal architecture." alt="Coastal view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The town hugs the rocky shore, buildings stacked up the hillside.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/portovenere/img_5574" class="story-image" data-caption="Fortress walls and pathways." alt="Fortress path" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
@@ -5848,7 +5848,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5263" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5263" data-caption="Temptations everywhere" alt="Market stall" onclick="openLightbox('https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5263')" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_400,q_auto,f_auto/shiplife/roses/img_5266" class="inline-image" data-full="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5266" data-caption="Market memories" alt="Market scene" onclick="openLightbox('https://res.cloudinary.com/de5jbyhxx/image/upload/w_1600,q_auto,f_auto/shiplife/roses/img_5266')" style="cursor:pointer">
  </div>
- <p class="photo-caption-inline">A feast for the senses in Dalí country.</p>
+ <p class="photo-caption-inline">Dalí country - even the market looks a little surreal.</p>
  </div>
 
  <p class="more-info-toggle" onclick="this.nextElementSibling.classList.toggle('expanded'); this.textContent = this.nextElementSibling.classList.contains('expanded') ? '− Less about Roses' : '+ More about Roses'">+ More about Roses</p>
@@ -6124,7 +6124,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_20140702_114207" class="story-image" data-caption="Monaco's harbor from above - superyachts and cruise ships fill the bay." alt="Monaco harbor panorama" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The harbor from above - where cruise ships anchor alongside private megayachts.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/monte-carlo/img_7116" class="story-image" data-caption="Tourists gather at the palace viewpoint to take in the spectacle." alt="Palace viewpoint" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every visitor makes the pilgrimage to this view. It never disappoints.</p>
+ <p class="photo-caption-inline">The view every visitor climbs for. Monaco knows exactly what it's doing.</p>
  </div>
 
  <div class="story-section-panel">
@@ -6501,7 +6501,7 @@ an original composition inspired by this place.
  <p>My guide didn't speak English very well, but it was better than my Hokkien. The locals call this place <em>Pī-néng</em> in the Hokkien dialect, the language of the Chinese immigrants who helped build George Town into a trading powerhouse. We communicated through gestures and pointing as he led me through temple after temple, each one more ornate than the last.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-26-colorful" class="story-image" data-caption="Another kaleidoscopic scene." alt="Temple scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-29-colorful" class="story-image" data-caption="Wandering in a daze of color." alt="Temple scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-33-colorful" class="story-image" data-caption="Every angle revealed something new." alt="Temple scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-33-colorful" class="story-image" data-caption="I kept turning around to look again." alt="Temple scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/penang/penang-37-colorful" class="story-image" data-caption="Lost in the visual overload." alt="Temple scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Wandering in a daze of color.</p>
  </div>
@@ -8247,7 +8247,7 @@ an original composition inspired by this place.
  <h3 class="section-title-panel">First Ashore</h3>
  <p>We arrived early in the morning. Sometimes, if the Staff Captain was in a good mood, he would let a few of the musicians go on the first tender over with the welcoming crew. This was one of those times.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/early-morning-arrival.jpg" class="story-image" data-caption="Early morning in Navarino Bay." alt="Early morning arrival" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Early morning in Navarino Bay - the Seabourn Odyssey anchored where Homer set the original.</p>
+ <p class="photo-caption-inline">Early morning in Navarino Bay - the Seabourn Odyssey anchored where Homer put Nestor's kingdom.</p>
  <p>There's something special about being among the first to step ashore. The town is still waking up. The tourists haven't arrived yet. You have hours of freedom stretching ahead.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1000,q_80,f_auto/shiplife/pylos/town-waterfront.jpg" class="story-image" data-caption="Pylos waterfront from the tender." alt="Pylos waterfront" onclick="openLightbox(this.src.replace('w_1000', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The Pylos waterfront approaching by tender - colorful cafes and tavernas lining the harbor.</p>
@@ -9250,7 +9250,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/ponza/IMG_5170" class="story-image" data-caption="Ponza's colorful harbor with fishing boats." alt="Ponza harbor" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Fishing boats and pastel buildings - this is the real Italy.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/ponza/IMG_5180" class="story-image" data-caption="The harbor framed by bougainvillea." alt="Harbor with flowers" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Bougainvillea frames the view - every angle is a postcard.</p>
+ <p class="photo-caption-inline">Bougainvillea frames the harbor - the island does its own decorating.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/ponza/IMG_5176" class="story-image" data-caption="Harbor panorama with boats and colorful buildings." alt="Harbor panorama" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The whole harbor curves around you - fishing boats, coast guard, and ferries to the mainland.</p>
  </div>
@@ -9497,7 +9497,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6997" class="story-image" data-caption="Piazza with cathedral bell tower." alt="Piazza scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The piazza buzzes with life - cafes, ceramics, and the cathedral bell tower watching over all.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_6999" class="story-image" data-caption="Street scene." alt="Street view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Narrow lanes wind through the old town, every corner a postcard.</p>
+ <p class="photo-caption-inline">Narrow lanes wind through the old town - I let them decide where I was going.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7005" class="story-image" data-caption="Town detail." alt="Architecture detail" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">A thousand years of history in every weathered wall.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7007" class="story-image" data-caption="Amalfi scene." alt="Town scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
@@ -9507,7 +9507,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7017" class="story-image" data-caption="Amalfi detail." alt="Town detail" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Lemon groves terrace the hillsides - this is where limoncello was born.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7018" class="story-image" data-caption="Coastal view." alt="Coast" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The coast that launched a thousand postcards.</p>
+ <p class="photo-caption-inline">An hour ashore was never going to be enough.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/amalfi/img_7020" class="story-image" data-caption="Amalfi scene." alt="Town view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Where the mountain meets the sea, Amalfi found a way to exist.</p>
  </div>
@@ -9616,7 +9616,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0881" class="story-image" data-caption="Town architecture." alt="Architecture" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Ochre walls, green shutters, the timeless Mediterranean.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0883" class="story-image" data-caption="Street scene." alt="Street scene" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every corner a postcard, every alley a discovery.</p>
+ <p class="photo-caption-inline">I got lost on purpose.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0886" class="story-image" data-caption="Local life." alt="Local life" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Step off the tourist track and find the real Sorrento.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_0899" class="story-image" data-caption="Town detail." alt="Detail" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
@@ -9652,9 +9652,9 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1032" class="story-image" data-caption="Coastal scenery." alt="Coast" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Cliffs and sea, the eternal Mediterranean.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1038" class="story-image" data-caption="Views." alt="Views" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every viewpoint more stunning than the last.</p>
+ <p class="photo-caption-inline">I stopped trying to pick a favorite view.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1048" class="story-image" data-caption="Lemon groves." alt="Lemons" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Lemon groves terrace the hillsides - this is where limoncello was born.</p>
+ <p class="photo-caption-inline">More lemon groves - Sorrento and Amalfi both claim limoncello. I stayed neutral and sampled both.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1072" class="story-image" data-caption="Scenery." alt="Scenery" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The Tyrrhenian Sea impossibly blue below.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1073" class="story-image" data-caption="Coastal path." alt="Path" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
@@ -9670,7 +9670,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1100" class="story-image" data-caption="Clifftop view." alt="Clifftop" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Perched impossibly on the clifftops.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_1106" class="story-image" data-caption="Final coast view." alt="Final view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The Sorrentine Peninsula - Italy at its most beautiful.</p>
+ <p class="photo-caption-inline">The Sorrentine Peninsula, showing off.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_4996" class="story-image" data-caption="2014 return." alt="2014" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">I came back in 2014 - some places demand a return.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/sorrento/img_4998" class="story-image" data-caption="Second visit." alt="Second visit" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
@@ -10022,7 +10022,7 @@ an original composition inspired by this place.
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095310" class="story-image" data-caption="French cheese selection." alt="Cheese display" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">The cheese counter - a geography lesson in French dairy.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_094836" class="story-image" data-caption="Market scene." alt="Market" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every stall a work of art, every vendor an expert.</p>
+ <p class="photo-caption-inline">The vendors could tell you the story behind every olive.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095513" class="story-image" data-caption="Provençal display." alt="Provençal goods" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Provence in a single frame - lavender, ceramics, and that famous light.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/antibes/20150820_095643" class="story-image" data-caption="Market treats." alt="Market treats" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
