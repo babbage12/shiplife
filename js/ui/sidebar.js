@@ -260,6 +260,34 @@ function dismissMenuTemporarily() {
     }, 4000);
 }
 
+// Highlight the sidebar item for the currently selected location with a glow
+function setActiveSidebarItem(locId) {
+    document.querySelectorAll('.location-item.active').forEach(item => {
+        item.classList.remove('active');
+    });
+    if (locId == null) return;
+    const active = document.querySelector(`.location-item[data-location-id="${locId}"]`);
+    if (!active) return;
+    active.classList.add('active');
+
+    // Scroll the sidebar list so the glowing item is visible (centered).
+    // Scroll the list container directly rather than scrollIntoView so we
+    // never nudge the whole page.
+    const list = document.getElementById('locationList');
+    if (list) {
+        const target = active.offsetTop - (list.clientHeight / 2) + (active.clientHeight / 2);
+        list.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+
+        // Wake the sidebar to full opacity so the glow is visible even
+        // though the mouse is out on the globe, then let it dim back.
+        list.classList.add('awake');
+        clearTimeout(setActiveSidebarItem._wakeTimer);
+        setActiveSidebarItem._wakeTimer = setTimeout(() => {
+            list.classList.remove('awake');
+        }, 3500);
+    }
+}
+
 // Undim sidebar items when all doors are visited
 function undimSidebarItems() {
     document.querySelectorAll('.location-item.dimmed').forEach(item => {

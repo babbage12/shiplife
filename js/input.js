@@ -142,6 +142,9 @@ function onTouchTap(event) {
                     return;
                 }
 
+                // Glow the matching sidebar icon for the selected location
+                setActiveSidebarItem(loc.id);
+
                 // LAZY LOAD: Trigger texture loading for this marker
                 if (USE_AI_PORTHOLES && !marker.userData.textureLoaded) {
                     lazyLoadTexture(loc.title, marker);
@@ -272,6 +275,9 @@ function onClick(event) {
             showDimmedMarkerMessage();
             return;
         }
+
+        // Glow the matching sidebar icon for the selected location
+        setActiveSidebarItem(loc.id);
 
         // LAZY LOAD: Trigger texture loading for this marker
         if (USE_AI_PORTHOLES && !hoveredMarker.userData.textureLoaded) {

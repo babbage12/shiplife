@@ -2166,6 +2166,21 @@
             overflow-y: auto;
         }
 
+        /* Desktop only: sidebar rests dimmed, brightens on hover, then
+           holds bright a few seconds before fading back down. */
+        @media (hover: hover) and (pointer: fine) {
+            .location-list {
+                opacity: 0.6;
+                transition: opacity 1.5s ease 2.5s;
+            }
+
+            .location-list:hover,
+            .location-list.awake {
+                opacity: 1;
+                transition: opacity 0.4s ease 0s;
+            }
+        }
+
         .left-copyright {
             position: fixed;
             left: 2rem;
@@ -2223,6 +2238,41 @@
             font-size: 1.1rem;
             border: 2px solid rgba(212, 165, 116, 0.5);
             box-shadow: 0 0 15px rgba(212, 165, 116, 0.3);
+        }
+
+        /* Selected location: glow on the matching sidebar icon.
+           Extra specificity (.location-list ...) so it beats the
+           per-style .location-item[data-style] .icon border rules. */
+        .location-list .location-item.active .icon {
+            border-color: rgba(255, 214, 160, 1) !important;
+            box-shadow: 0 0 8px rgba(255, 205, 150, 1),
+                        0 0 16px rgba(212, 165, 116, 0.8),
+                        0 0 24px rgba(212, 165, 116, 0.45);
+            transition: box-shadow 0.4s ease, border-color 0.4s ease;
+            animation: sidebarIconPulse 2.2s ease-in-out infinite;
+        }
+
+        /* Selected label: uppercase + gold glow */
+        .location-list .location-item.active .name {
+            color: rgba(255, 224, 180, 1);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            text-shadow: 0 0 8px rgba(212, 165, 116, 0.9),
+                         0 0 16px rgba(212, 165, 116, 0.5);
+        }
+
+        @keyframes sidebarIconPulse {
+            0%, 100% {
+                box-shadow: 0 0 8px rgba(255, 205, 150, 1),
+                            0 0 16px rgba(212, 165, 116, 0.8),
+                            0 0 24px rgba(212, 165, 116, 0.45);
+            }
+            50% {
+                box-shadow: 0 0 11px rgba(255, 224, 180, 1),
+                            0 0 22px rgba(212, 165, 116, 0.95),
+                            0 0 32px rgba(212, 165, 116, 0.6);
+            }
         }
 
         .location-item .name {
