@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-21T17:59:57.000Z
+// Shiplife Bundle - Generated 2026-08-21T18:53:59.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -2645,13 +2645,13 @@ const locations = [
  </div>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520945/1000006610_rzhkon.jpg" class="story-image" data-caption="Brothers of Badness. So we weren't exactly living up to our name... or were we?" alt="Brothers of Badness 1983" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Brothers of Badness. So we weren't exactly living up to our name... or were we?</p>
- <p>When music wasn't calling, the woods were. I'd spend hours walking the train tracks behind our two-story brick house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. Just wanted to see how far I could get before nightfall.</p>
+ <p>When music wasn't calling, the woods were. I'd spend hours walking the train tracks behind our two-story brick house, so lost in thought that darkness would fall before the walk home. "Where have you been?" my exasperated mother would ask. (Just wanted to see how far I could get before nightfall.)</p>
  <p>Getting much further than the outskirts of that little town would have to wait a few years.</p>
  </div>
  
  <div class="story-section-panel">
  <h3 class="section-title-panel">Touched</h3>
- <p>1989 brought a band called Touched, and I remember my audition to this day. Before that I'd been playing piano bars and had a few failed attempts at putting a band together, so joining a real working band would be a big deal for me. When I arrived on a cold Saturday afternoon, my acute admiration was mixed with a determination that this was what I wanted to do.</p>
+ <p>1989 brought a band called Touched, and I remember my audition to this day. Before that I'd been playing piano bars and had a few failed attempts at putting a band together, so joining a real working band would be a big deal for me. When I arrived on a cold Saturday afternoon, the nervous energy of being around actual gigging musicians was mixed with a determination that this was what I wanted to do.</p>
  <p>Dave stepped up first, looming over me with an extended hand, and asked - somewhat sarcastically - if I could play. That was a brash trait of Dave's back then. Shock therapy, I think he called it. Endearing, I know. Actually, it was - once we became friends. Dave was the best possible influence I could have asked for at that time in my life.</p>
  <p>I must have played well enough, because I was in. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, as well as our share of questionable establishments where anything could and often did happen.</p>
  <p>Touched was my first traveling band. The kid who wanted to see how far he could get before nightfall finally had his answer: somewhere between New York and Florida, depending on the week. The east coast was our circuit, always on the road, and the antics piled up. I began each road trip with a little dread (3 AM in West Virginia, dark country roads, seven people in a van hitched to a trailer full of equipment, barreling down a dirt road because we got lost) and no idea what was waiting at the other end. But mostly excitement - because for the first time I was outside my hometown, my city, doing what I'd been doing since I could remember. Only in front of people instead of apples.</p>
@@ -2667,7 +2667,7 @@ const locations = [
  <h3 class="section-title-panel">The Double Life</h3>
  <p>A few years in, the bills started piling up. A steady paycheck meant a day job. Customer service. Nothing glamorous, but it paid the rent.</p>
  <p>The thing is - the music never stopped. Touched was still gigging on nights and weekends, still playing around Toledo well into the 2000s. Music just... became the side hustle.</p>
- <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Life shrunk to the size of a cubicle - phone ringing constantly, inbox stacked two feet high and growing. Three bosses on one floor. Plus the guy in the cubicle out front who wasn't a boss but hadn't gotten the memo.</p>
+ <p>At first, the day job felt like a reasonable compromise. Stay home, pay the bills, play music when possible. But one year became five. Five became ten. Life shrunk to the size of a cubicle - phone ringing constantly, inbox stacked two feet high and growing. Three bosses on one floor. Plus the guy in the cubicle next to me who wasn't a boss but hadn't got the memo.</p>
  <p>After almost fourteen years of this, a hard realization hit:</p>
  <blockquote class="story-quote">The day job was the waste of time.</blockquote>
  <p>Not the music. Never the music - the nights and weekends with Touched were the best part of those years. The cubicle was the waste. It wasn't supporting the music career, it was slowly replacing it. Time to get out.</p>
