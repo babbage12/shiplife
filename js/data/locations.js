@@ -253,8 +253,8 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">The Proving Ground</span>
  <h3 class="section-title-panel">The 14-Day Cruise</h3>
- <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if I would sink or swim. Past that 2-week window was a 14-day cruise to Darwin.</p>
- <p>If I made it past that window, the home office would turn their attention to more pressing matters. I'd be left alone to succeed, fail, or burn out at my own pace.</p>
+ <p>Two weeks. Two 7-day cruises. That was the industry standard - the unspoken trial period where the office watched to see if I would sink or swim. Past those two short cruises on my calendar was a 14-day trip to the Northern Territory. City: Darwin.</p>
+ <p>So if I woke up one morning and found myself in Darwin, that could only mean one thing: the two-week probationary period had come and gone. The home office would turn their attention to more pressing matters, and I'd be left alone to succeed, fail, or burn out at my own pace.</p>
  <p>Crew members whispered about the 14-day cruise to Darwin like it was a mystical place. Everyone was excited about an overnight stay. But to me, in my present situation, Darwin represented something filled with far more potential than a night in the Northern Territory.</p>
  <p>It meant I was staying for a full 4 months - and I might be asked back. No more cubicle. I was already falling into the rhythm of this very different life, and I didn't want it to end. Had I done it?</p>
  <blockquote class="story-quote">Making it to Darwin meant making it anywhere.</blockquote>
