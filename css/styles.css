@@ -2217,6 +2217,16 @@
             box-shadow: 0 0 7px rgba(212, 165, 116, 0.65);
         }
 
+        /* Celebration spin: snap items crisply as the wheel whips through,
+           and give the whole rail a soft gold aura while it's alive. */
+        .location-list.wheel-spinning {
+            filter: drop-shadow(0 0 12px rgba(212, 165, 116, 0.45));
+        }
+
+        .location-list.wheel-spinning .location-item {
+            transition: transform 0.08s ease, background 0.08s ease;
+        }
+
         .location-item .name {
             font-size: 0.85rem;
             color: var(--cream);
@@ -3166,6 +3176,28 @@
             opacity: 0.9;
         }
 
+        /* "unexplored" — antique-map lettering with a slow gold shimmer */
+        .celebration-message .unexplored-word {
+            font-family: 'IM Fell English SC', 'Cormorant Garamond', serif;
+            font-size: 2.4rem;
+            margin-top: 0.35rem;
+            letter-spacing: 0.14em;
+            background: linear-gradient(90deg,
+                rgba(212, 165, 116, 0.55),
+                #f5f0e8,
+                rgba(212, 165, 116, 0.55));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            animation: unexploredShimmer 3.5s linear infinite;
+        }
+
+        @keyframes unexploredShimmer {
+            to { background-position: 200% center; }
+        }
+
         @media (max-width: 768px) {
             .celebration-message h2 {
                 font-size: 2rem;
@@ -3173,6 +3205,10 @@
 
             .celebration-message p {
                 font-size: 1rem;
+            }
+
+            .celebration-message .unexplored-word {
+                font-size: 1.7rem;
             }
 
             .next-door-prompt {

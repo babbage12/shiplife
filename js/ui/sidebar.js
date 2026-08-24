@@ -335,6 +335,53 @@ function clearSidebarCue() {
     });
 }
 
+// Celebration flourish: spin the "wheel" rapidly through the location names
+// and let it decelerate to a stop, so the sidebar visibly comes alive along
+// with the globe. Called from the doors-complete / explore-freely sequence.
+function spinSidebarWheel() {
+    const list = document.getElementById('locationList');
+    if (!list) return;
+    const items = Array.from(list.querySelectorAll('.location-item'));
+    if (items.length === 0) return;
+
+    clearSidebarCue();
+    list.classList.add('awake', 'wheel-spinning');
+
+    const total = items.length;
+    const STEPS = 22;           // ticks before it settles
+    let i = Math.floor(Math.random() * total); // random starting position
+    let step = 0;
+
+    function tick() {
+        items.forEach(it => it.classList.remove('cued'));
+        const item = items[i % total];
+        item.classList.add('cued');
+        const target = item.offsetTop - (list.clientHeight / 2) + (item.clientHeight / 2);
+        list.scrollTo({ top: Math.max(0, target), behavior: 'auto' }); // instant: snaps through fast
+
+        i++;
+        step++;
+
+        if (step >= STEPS) {
+            // Landed. Hold the winner briefly, then clear back to rest.
+            list.classList.remove('wheel-spinning');
+            setTimeout(() => {
+                items.forEach(it => it.classList.remove('cued'));
+                _cuedLocId = null;
+                list.classList.remove('awake');
+            }, 1300);
+            return;
+        }
+
+        // Ease-out: intervals grow as it slows (~45ms → ~285ms).
+        const progress = step / STEPS;
+        const delay = 45 + progress * progress * 240;
+        setTimeout(tick, delay);
+    }
+
+    tick();
+}
+
 // Undim sidebar items when all doors are visited
 function undimSidebarItems() {
     document.querySelectorAll('.location-item.dimmed').forEach(item => {

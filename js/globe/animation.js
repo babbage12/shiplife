@@ -357,6 +357,11 @@ function triggerDoorsCompleteSequence() {
         undimSidebarItems();
     }, 800);
 
+    // T+900ms: Spin the sidebar "wheel" so it comes alive with the globe
+    setTimeout(() => {
+        spinSidebarWheel();
+    }, 900);
+
     // T+5000ms: Fade message
     setTimeout(() => {
         hideCelebrationMessage();
@@ -371,8 +376,8 @@ function showCelebrationMessage() {
     msg.id = 'celebration-message';
     msg.className = 'celebration-message';
     msg.innerHTML = `
-        <h2>The world is yours.</h2>
-        <p>120+ ports of call await.</p>
+        <h2>120+ ports</h2>
+        <div class="unexplored-word">unexplored</div>
     `;
     document.body.appendChild(msg);
     requestAnimationFrame(() => {
