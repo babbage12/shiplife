@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-24T17:49:33.000Z
+// Shiplife Bundle - Generated 2026-08-24T18:16:14.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -3009,10 +3009,10 @@ const locations = [
  <p>A note was slipped under my door.</p>
  <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
  <p>I knew instantly this could be the call - the one telling me my audition for the Seabourn soloist position had gone through.</p>
- <p>I made the call standing on the dock. C. Blackburn - the same agent who landed me that first ship - delivered the news.</p>
+ <p>I made the call standing on the dock. My agent - the same one who'd landed me that first ship - delivered the good news.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729047/IMG_0830_pv7td9.jpg" class="story-image" alt="Akaroa Harbor" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Akaroa Harbor. The moment everything changed.</p>
- <p>An hour later I was eating lunch with friends and seriously trying not to throw up.</p>
+ <p>An hour later I was at a celebratory dinner with Daryl, Shawn, and a bunch of shipmates. I couldn't tell if it was nerves or the menu, but I was doing everything I could not to throw up.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729046/IMG_0831_ei47kw.jpg" class="story-image" alt="Oysters in Akaroa" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768532532/IMG_0833_dul2vl.jpg" class="story-image" alt="Eating oysters" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
@@ -3023,7 +3023,7 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Embarkation</span>
  <h3 class="section-title-panel">Auckland, January 2013</h3>
- <p>That was nothing compared to the nervousness washing over me a few months later, when I found myself back in Auckland - the same port where I'd boarded my first P&O ship, the Pacific Sun, in 2009. Same Sky Tower watching from above.</p>
+ <p>That was nothing compared to the nervousness washing over me a few months later, when I found myself back in Auckland - the same port where I'd boarded my first P&O ship, the Pacific Sun, in 2009. Same Sky Tower watching from above. This time I was waiting to board the Seabourn Odyssey - the same ship I'd snapped a photo of back in Cairns in 2009.</p>
  <p>Everything about my life as a cruise ship musician was about to ramp up by a factor of ten.</p>
  <p>Now <em>that</em> really made me want to throw up.</p>
  <p>I stood at the bottom of the gangway a moment longer than I needed to. Four years earlier I'd walked up one just like it carrying a guitar, a suitcase, and no idea whether I'd last two weeks. Now I was carrying the same guitar and an itinerary I had to read twice: Dubrovnik. The French Riviera. Antarctica.</p>
