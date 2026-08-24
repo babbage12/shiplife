@@ -433,6 +433,8 @@ const locations = [
  <p>Everything about my life as a cruise ship musician was about to ramp up by a factor of ten.</p>
  <p>Now <em>that</em> really made me want to throw up.</p>
  <p>I stood at the bottom of the gangway a moment longer than I needed to. Four years earlier I'd walked up one just like it carrying a guitar, a suitcase, and no idea whether I'd last two weeks. Now I was carrying the same guitar and an itinerary I had to read twice: Dubrovnik. The French Riviera. Antarctica.</p>
+ <p>For three full years, my world had a shape I could trace with a finger: Queensland out to the islands through the winter, then further - Tahiti, up toward Indonesia - when summer came. That was all of it. Familiar water.</p>
+ <p>This itinerary tore that map up. I knew it would be different. I had no idea what the next three years would come to mean to me.</p>
  <p>Somewhere in my phone was a photo of this ship, taken from a rented bike in Cairns by a guy who had no business believing he'd ever board it.</p>
  <p>I walked up.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767727288/IMG_0145_v2vqtm.jpg" class="story-image" alt="Sky Tower Auckland" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
@@ -3795,47 +3797,57 @@ an original composition inspired by this place.
  </div>
 
  <div class="story-section-panel">
- <span class="section-tag-panel">The Fortress</span>
- <h3 class="section-title-panel">Knights and History</h3>
- <p>Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.</p>
- <p>Valletta is built on a grid - unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.</p>
+ <span class="section-tag-panel">The Next Three Years</span>
+ <h3 class="section-title-panel">Beautiful and Terrifying</h3>
+ <p>The next three years were an education I never signed up for. Almost every port was a World Heritage Site, and the history in those places was as beautiful as it was terrifying.</p>
+ <p>Something had shifted in me during the Pacific years - a sadness I hadn't known before I went to sea. About the state of us. About the species. Now, standing in places where centuries of faith and war and toil had been pressed into stone, that feeling finally had somewhere to land. I felt myself getting smarter and smaller at the same time: the more I learned about a place, the more I understood how little I understood. It hardened something in me I'm still trying to name.</p>
+ <p>And I couldn't stop doing the math on myself. Ships, planes, trains, buses - everything travel is made of. My footprint was growing at a rate almost no one I knew could match, except the people I worked beside. I was seeing the world by helping to wear it out.</p>
+ </div>
+
+ <div class="story-section-panel">
+ <span class="section-tag-panel">Valletta</span>
+ <h3 class="section-title-panel">My Own Drumbeat</h3>
+ <p>Malta gathered all of it into one place.</p>
+ <p>Valletta is built on order - a grid laid down by the Knights, a whole city raised as a fortress and a statement. Step inside its churches and everything our species reached for in its infancy - faith, ritual, the need for something larger than ourselves - has been carved into permanence. Set into stone so it can't move, can't be argued with.</p>
+ <p>I marched through the city to my own drumbeat, and the secular humanist in me kept pushing back. All that order, all that certainty about a designed life - and I felt disordered. In opposition. The whole time.</p>
+ <p>I'd gone to sea to get quiet enough to become a good musician. Instead I was buffeted every single day by something new I wasn't ready for. Malta was one of the days I felt the most at once.</p>
  <div class="story-gallery-grid">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg" class="story-image" alt="Malta Grand Harbour" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768951523/Screenshot_20260120_141946_Facebook_hakkap.jpg" class="story-image" alt="Malta view" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  </div>
- <p class="photo-caption-inline">The Grand Harbour and the fortress walls of Valletta.</p>
+ <p class="photo-caption-inline">Grand Harbour and the fortress walls of Valletta - a city built to be a statement, and it still is.</p>
  </div>
 
  <div class="story-section-panel">
- <span class="section-tag-panel">Day Trip</span>
- <h3 class="section-title-panel">Gozo - Malta's Sister Island</h3>
- <p>A ferry ride from Malta brings you to Gozo - smaller, quieter, more rural. The Citadel rises above Victoria, and the churches here are some of the most ornate in the Mediterranean.</p>
+ <span class="section-tag-panel">A Day Off</span>
+ <h3 class="section-title-panel">The Ferry to Gozo</h3>
+ <p>On a day off I took the ferry to Gozo - Malta's smaller, quieter sister. Less fortress, more farmland. For a few hours the noise in my head got quieter too.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_103703" class="story-image" data-caption="The Citadel of Victoria, Gozo." alt="Gozo Citadel" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The Citadel panorama - fortified hilltop town watching over the island.</p>
+ <p class="photo-caption-inline">The Citadel above Victoria. Even the quiet places here were built to survive a siege.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_103607" class="story-image" data-caption="Gozo architecture." alt="Gozo town" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Honey-colored limestone - the signature of Maltese architecture.</p>
+ <p class="photo-caption-inline">Honey-colored limestone - the whole archipelago cut from the same warm stone.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_104947" class="story-image" data-caption="Village street." alt="Village" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Village streets where time moves slower than on the mainland.</p>
+ <p class="photo-caption-inline">Streets where the day had nowhere it needed to be. I could have used more of that.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_105651" class="story-image" data-caption="Gozo scene." alt="Gozo" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The quieter pace of island life.</p>
+ <p class="photo-caption-inline">The kind of quiet I'd gone to sea hoping to find.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_110704" class="story-image" data-caption="Gozo view." alt="Gozo view" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Views across the Maltese archipelago.</p>
+ <p class="photo-caption-inline">Looking out across the archipelago - out of my depth, and grateful for it.</p>
  </div>
 
  <div class="story-section-panel">
  <span class="section-tag-panel">The Churches</span>
- <h3 class="section-title-panel">Baroque Splendor</h3>
- <p>Gozo's churches are astonishing - baroque interiors dripping with gold, painted domes, marble floors. The Maltese take their faith seriously, and it shows.</p>
+ <h3 class="section-title-panel">Faith, Made Solid</h3>
+ <p>Gozo's churches undo you. Gold on every surface, painted domes, marble underfoot. This is what I meant about permanence - faith made so solid it stops feeling like a question.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_1148390" class="story-image" data-caption="Church interior." alt="Church" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Stepping inside is like entering another world.</p>
+ <p class="photo-caption-inline">Stepping inside, the outside world just... stops.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115312" class="story-image" data-caption="Baroque altar and baldachin." alt="Altar" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The baldachin rises toward the painted dome - gold and marble and centuries of devotion.</p>
+ <p class="photo-caption-inline">The baldachin climbing toward the dome. Centuries of devotion, and not one inch left undecided.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115325" class="story-image" data-caption="Church nave." alt="Church interior" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Every surface decorated, every detail considered.</p>
+ <p class="photo-caption-inline">Every surface spoken for. Nothing left to chance - which was exactly what unsettled me.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150606_115822" class="story-image" data-caption="Ornate interior." alt="Church detail" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The checkered floor, the golden altar - baroque at its finest.</p>
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150607_133045" class="story-image" data-caption="Final church view." alt="Church" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">Faith made visible in stone and gold.</p>
+ <p class="photo-caption-inline">The checkered floor, the golden altar. Beautiful, and heavy with certainty.</p>
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_800,q_auto,f_auto/shiplife/gozo/20150607_133045" class="story-image" data-caption="A luzzu in the harbor, Malta." alt="Maltese luzzu fishing boat in the harbor" onclick="openLightbox(this.src.replace('w_800', 'w_1600'))" style="cursor:pointer">
+ <p class="photo-caption-inline">And then back out to the harbor - a luzzu, the everyday Maltese fishing boat, eye painted on the bow to watch the water.</p>
  </div>
 
  <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -3860,7 +3872,7 @@ an original composition inspired by this place.
 
  ${generateGallery('malta')}
  `,
- fullDesc: "Malta sits at the crossroads of the Mediterranean. Everyone wanted it. The Knights of St. John held it.\n\nValletta is built on a grid-unusual for a medieval city. The Grand Harbour is one of the most impressive approaches in the world. History seeps from every stone.",
+ fullDesc: "The next three years were an education I never signed up for - almost every port a World Heritage Site, the history as beautiful as it was terrifying.\n\nMalta gathered all of it into one place. I marched through Valletta to my own drumbeat, in opposition to all that order and certainty the whole time - trying, and mostly failing, to get quiet enough to just be a good musician.",
  image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg"
  },
  {
