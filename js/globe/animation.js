@@ -229,12 +229,8 @@ function animate() {
             }
         }
 
-        // Update tooltip position to stay anchored to hovered marker
-        if (hoveredMarker && tooltip.classList.contains('visible')) {
-            updateTooltipPosition(hoveredMarker);
-        }
     }
-    
+
     // Sky bounce animation (subtle atmospheric glow around marker)
     if (skyBounceActive && skyBounceSprite && skyBounceStartTime) {
         const elapsed = Date.now() - skyBounceStartTime;

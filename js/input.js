@@ -6,10 +6,7 @@
 function onMouseDown(event) {
     event.preventDefault();
     isUserInteracting = true;
-    
-    // Hide tooltip when user starts interacting
-    hideTooltip();
-    
+
     mouseXOnMouseDown = event.clientX;
     mouseYOnMouseDown = event.clientY;
     
@@ -48,9 +45,6 @@ let initialPinchDistance = null;
 let initialCameraZ = null;
 
 function onTouchStart(event) {
-    // Hide tooltip when user starts interacting
-    hideTooltip();
-
     // Dismiss mobile menu when touching globe
     if (typeof dismissMenuTemporarily === 'function') {
         dismissMenuTemporarily();

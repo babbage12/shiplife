@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-21T19:14:21.000Z
+// Shiplife Bundle - Generated 2026-08-24T16:38:46.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -13116,7 +13116,6 @@ let pendingLocation = null;
 let pendingZoomLocation = null;
 
 // DOM elements
-const tooltip = document.getElementById('tooltip');
 const sidePanel = document.getElementById('sidePanel');
 
 // ============================================
@@ -16460,12 +16459,8 @@ function animate() {
             }
         }
 
-        // Update tooltip position to stay anchored to hovered marker
-        if (hoveredMarker && tooltip.classList.contains('visible')) {
-            updateTooltipPosition(hoveredMarker);
-        }
     }
-    
+
     // Sky bounce animation (subtle atmospheric glow around marker)
     if (skyBounceActive && skyBounceSprite && skyBounceStartTime) {
         const elapsed = Date.now() - skyBounceStartTime;
@@ -16650,64 +16645,27 @@ function spinToMediterranean() {
 // ============================================
 
 // ============================================
-// TOOLTIP MODULE
-// Hover tooltips for location markers
+// HOVER MODULE
+// Globe marker hover: highlights the marker and turns the sidebar "wheel"
+// to the hovered location. (The old floating tooltip card was retired in
+// favor of the sidebar wheel — see cueSidebarForHover in sidebar.js.)
 // ============================================
-
-function showTooltip(loc, marker) {
-    // Don't show tooltip while intro modal is open
-    const introModal = document.getElementById('introModal');
-    if (introModal && introModal.classList.contains('active')) {
-        return;
-    }
-
-    // Don't show tooltip while a location panel is open
-    if (currentLocation) {
-        return;
-    }
-
-    document.getElementById('tooltipTag').textContent = loc.tag;
-    document.getElementById('tooltipTitle').textContent = loc.title;
-    document.getElementById('tooltipDesc').textContent = loc.shortDesc;
-
-    updateTooltipPosition(marker);
-    tooltip.classList.add('visible');
-}
-
-function updateTooltipPosition(marker) {
-    const markerWorldPos = new THREE.Vector3();
-    marker.getWorldPosition(markerWorldPos);
-    
-    const screenPos = markerWorldPos.clone().project(camera);
-    
-    const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
-    const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
-    
-    const offsetY = marker.userData.isDoor ? 85 : 70;
-    
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = (y + offsetY) + 'px';
-}
-
-function hideTooltip() {
-    tooltip.classList.remove('visible');
-}
 
 function checkHover(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    
+
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(markers);
-    
+
     if (intersects.length > 0) {
         const marker = intersects[0].object;
-        
+
         if (marker.userData.title) {
             hoveredMarker = marker;
-            showTooltip(marker.userData, marker);
+            cueSidebarForHover(marker.userData.id); // turn the sidebar "wheel"
             document.body.style.cursor = 'pointer';
-            
+
             // Highlight marker
             const baseScale = marker.userData.baseSize * 2;
             const useAI = marker.userData.useAIPorthole;
@@ -16722,7 +16680,7 @@ function checkHover(event) {
             hoveredMarker.scale.set(baseScale, baseScaleY, 1);
         }
         hoveredMarker = null;
-        hideTooltip();
+        clearSidebarCue(); // wheel returns to rest when leaving the globe's markers
         document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
     }
 }
@@ -16795,9 +16753,6 @@ function openPanel(loc) {
         // Stop any bouncing animation when panel opens
         bouncingMarkerId = null;
         bounceStartTime = null;
-
-        // Hide tooltip when opening panel
-        hideTooltip();
 
         // Preload hero image before showing panel content
         const panelImage = document.getElementById('panelImage');
@@ -17678,6 +17633,53 @@ function setActiveSidebarItem(locId) {
     }
 }
 
+// ============================================
+// Hover cue — the "wheel": globe hover turns the sidebar to a location's
+// name and bolds it, so the user can read it and decide whether to visit.
+// Reuses the same centering motion as setActiveSidebarItem, but a lighter
+// "cued" state (no glow/pulse) reserved for previewing, not selecting.
+// ============================================
+let _cuedLocId = null;
+
+function cueSidebarForHover(locId) {
+    // Keep spinning even while a panel is open, so the user can preview and
+    // hop to another location without closing what they're reading.
+    // Only act when the hovered marker actually changes — checkHover runs on
+    // every mousemove, so without this guard we'd fire a scroll every frame.
+    if (locId == null || locId === _cuedLocId) return;
+    _cuedLocId = locId;
+
+    document.querySelectorAll('.location-item.cued').forEach(item => {
+        item.classList.remove('cued');
+    });
+
+    const item = document.querySelector(`.location-item[data-location-id="${locId}"]`);
+    if (!item) return;
+    item.classList.add('cued');
+
+    // Turn the wheel: scroll the list so the cued item sits centered.
+    const list = document.getElementById('locationList');
+    if (list) {
+        const target = item.offsetTop - (list.clientHeight / 2) + (item.clientHeight / 2);
+        list.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+
+        // Wake the sidebar to full opacity while cueing, then let it dim back.
+        list.classList.add('awake');
+        clearTimeout(cueSidebarForHover._wakeTimer);
+        cueSidebarForHover._wakeTimer = setTimeout(() => {
+            list.classList.remove('awake');
+        }, 3500);
+    }
+}
+
+function clearSidebarCue() {
+    if (_cuedLocId == null) return;
+    _cuedLocId = null;
+    document.querySelectorAll('.location-item.cued').forEach(item => {
+        item.classList.remove('cued');
+    });
+}
+
 // Undim sidebar items when all doors are visited
 function undimSidebarItems() {
     document.querySelectorAll('.location-item.dimmed').forEach(item => {
@@ -18517,10 +18519,7 @@ function seekMusic(event, progressContainer) {
 function onMouseDown(event) {
     event.preventDefault();
     isUserInteracting = true;
-    
-    // Hide tooltip when user starts interacting
-    hideTooltip();
-    
+
     mouseXOnMouseDown = event.clientX;
     mouseYOnMouseDown = event.clientY;
     
@@ -18559,9 +18558,6 @@ let initialPinchDistance = null;
 let initialCameraZ = null;
 
 function onTouchStart(event) {
-    // Hide tooltip when user starts interacting
-    hideTooltip();
-
     // Dismiss mobile menu when touching globe
     if (typeof dismissMenuTemporarily === 'function') {
         dismissMenuTemporarily();

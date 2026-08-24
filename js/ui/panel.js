@@ -62,9 +62,6 @@ function openPanel(loc) {
         bouncingMarkerId = null;
         bounceStartTime = null;
 
-        // Hide tooltip when opening panel
-        hideTooltip();
-
         // Preload hero image before showing panel content
         const panelImage = document.getElementById('panelImage');
 

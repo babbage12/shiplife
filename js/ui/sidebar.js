@@ -288,6 +288,53 @@ function setActiveSidebarItem(locId) {
     }
 }
 
+// ============================================
+// Hover cue — the "wheel": globe hover turns the sidebar to a location's
+// name and bolds it, so the user can read it and decide whether to visit.
+// Reuses the same centering motion as setActiveSidebarItem, but a lighter
+// "cued" state (no glow/pulse) reserved for previewing, not selecting.
+// ============================================
+let _cuedLocId = null;
+
+function cueSidebarForHover(locId) {
+    // Keep spinning even while a panel is open, so the user can preview and
+    // hop to another location without closing what they're reading.
+    // Only act when the hovered marker actually changes — checkHover runs on
+    // every mousemove, so without this guard we'd fire a scroll every frame.
+    if (locId == null || locId === _cuedLocId) return;
+    _cuedLocId = locId;
+
+    document.querySelectorAll('.location-item.cued').forEach(item => {
+        item.classList.remove('cued');
+    });
+
+    const item = document.querySelector(`.location-item[data-location-id="${locId}"]`);
+    if (!item) return;
+    item.classList.add('cued');
+
+    // Turn the wheel: scroll the list so the cued item sits centered.
+    const list = document.getElementById('locationList');
+    if (list) {
+        const target = item.offsetTop - (list.clientHeight / 2) + (item.clientHeight / 2);
+        list.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+
+        // Wake the sidebar to full opacity while cueing, then let it dim back.
+        list.classList.add('awake');
+        clearTimeout(cueSidebarForHover._wakeTimer);
+        cueSidebarForHover._wakeTimer = setTimeout(() => {
+            list.classList.remove('awake');
+        }, 3500);
+    }
+}
+
+function clearSidebarCue() {
+    if (_cuedLocId == null) return;
+    _cuedLocId = null;
+    document.querySelectorAll('.location-item.cued').forEach(item => {
+        item.classList.remove('cued');
+    });
+}
+
 // Undim sidebar items when all doors are visited
 function undimSidebarItems() {
     document.querySelectorAll('.location-item.dimmed').forEach(item => {

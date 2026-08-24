@@ -65,7 +65,6 @@ let pendingLocation = null;
 let pendingZoomLocation = null;
 
 // DOM elements
-const tooltip = document.getElementById('tooltip');
 const sidePanel = document.getElementById('sidePanel');
 
 // ============================================

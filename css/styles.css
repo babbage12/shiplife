@@ -136,84 +136,6 @@
             letter-spacing: 0.1em;
         }
 
-        /* Location tooltip - anchored below icon */
-        .tooltip {
-            position: fixed;
-            z-index: 200;
-            background: linear-gradient(135deg, 
-                rgba(30, 80, 140, 0.92), 
-                rgba(20, 60, 120, 0.88));
-            backdrop-filter: blur(20px);
-            border: 1px solid rgba(100, 160, 220, 0.4);
-            border-radius: 12px;
-            padding: 0.875rem 1.25rem;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.2s ease, transform 0.2s ease;
-            max-width: 260px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-            transform: translateX(-50%) translateY(8px);
-        }
-        
-        /* Pointer arrow pointing up to the icon */
-        .tooltip::before {
-            content: '';
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-bottom: 12px solid rgba(30, 80, 140, 0.92);
-        }
-        
-        /* Subtle glow effect */
-        .tooltip::after {
-            content: '';
-            position: absolute;
-            top: -1px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 40px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(100, 160, 220, 0.6), transparent);
-            border-radius: 2px;
-        }
-
-        .tooltip.visible {
-            opacity: 1;
-            transform: translateX(-50%) translateY(0);
-        }
-        
-        /* Hide tooltip on touch devices */
-        @media (hover: none) and (pointer: coarse) {
-            .tooltip {
-                display: none !important;
-            }
-        }
-
-        .tooltip-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.2rem;
-            color: var(--cream);
-            margin-bottom: 0.15rem;
-            line-height: 1.2;
-        }
-
-        .tooltip-tag {
-            font-size: 0.6rem;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 0.4rem;
-        }
-
-        .tooltip-desc {
-            font-size: 0.75rem;
-            color: rgba(245, 240, 232, 0.8);
-            line-height: 1.4;
-        }
-
         /* Side panel for clicked location */
         .side-panel {
             position: fixed;
@@ -2273,6 +2195,26 @@
                             0 0 22px rgba(212, 165, 116, 0.95),
                             0 0 32px rgba(212, 165, 116, 0.6);
             }
+        }
+
+        /* Hover-cued: the "wheel" landing on a name as the mouse sweeps the
+           globe. Lighter than .active (no pulse, not uppercase) — a preview
+           that invites a click, not a committed selection. */
+        .location-list .location-item.cued {
+            background: rgba(212, 165, 116, 0.14);
+            transform: scale(1.04);
+        }
+
+        .location-list .location-item.cued .name {
+            color: rgba(255, 224, 180, 1);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            text-shadow: 0 0 6px rgba(212, 165, 116, 0.55);
+        }
+
+        .location-list .location-item.cued .icon {
+            border-color: rgba(255, 214, 160, 0.85) !important;
+            box-shadow: 0 0 7px rgba(212, 165, 116, 0.65);
         }
 
         .location-item .name {

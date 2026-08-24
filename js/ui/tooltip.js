@@ -1,62 +1,25 @@
 // ============================================
-// TOOLTIP MODULE
-// Hover tooltips for location markers
+// HOVER MODULE
+// Globe marker hover: highlights the marker and turns the sidebar "wheel"
+// to the hovered location. (The old floating tooltip card was retired in
+// favor of the sidebar wheel — see cueSidebarForHover in sidebar.js.)
 // ============================================
-
-function showTooltip(loc, marker) {
-    // Don't show tooltip while intro modal is open
-    const introModal = document.getElementById('introModal');
-    if (introModal && introModal.classList.contains('active')) {
-        return;
-    }
-
-    // Don't show tooltip while a location panel is open
-    if (currentLocation) {
-        return;
-    }
-
-    document.getElementById('tooltipTag').textContent = loc.tag;
-    document.getElementById('tooltipTitle').textContent = loc.title;
-    document.getElementById('tooltipDesc').textContent = loc.shortDesc;
-
-    updateTooltipPosition(marker);
-    tooltip.classList.add('visible');
-}
-
-function updateTooltipPosition(marker) {
-    const markerWorldPos = new THREE.Vector3();
-    marker.getWorldPosition(markerWorldPos);
-    
-    const screenPos = markerWorldPos.clone().project(camera);
-    
-    const x = (screenPos.x * 0.5 + 0.5) * window.innerWidth;
-    const y = (-screenPos.y * 0.5 + 0.5) * window.innerHeight;
-    
-    const offsetY = marker.userData.isDoor ? 85 : 70;
-    
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = (y + offsetY) + 'px';
-}
-
-function hideTooltip() {
-    tooltip.classList.remove('visible');
-}
 
 function checkHover(event) {
     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    
+
     raycaster.setFromCamera(mouse, camera);
     const intersects = raycaster.intersectObjects(markers);
-    
+
     if (intersects.length > 0) {
         const marker = intersects[0].object;
-        
+
         if (marker.userData.title) {
             hoveredMarker = marker;
-            showTooltip(marker.userData, marker);
+            cueSidebarForHover(marker.userData.id); // turn the sidebar "wheel"
             document.body.style.cursor = 'pointer';
-            
+
             // Highlight marker
             const baseScale = marker.userData.baseSize * 2;
             const useAI = marker.userData.useAIPorthole;
@@ -71,7 +34,7 @@ function checkHover(event) {
             hoveredMarker.scale.set(baseScale, baseScaleY, 1);
         }
         hoveredMarker = null;
-        hideTooltip();
+        clearSidebarCue(); // wheel returns to rest when leaving the globe's markers
         document.body.style.cursor = isUserInteracting ? 'grabbing' : 'grab';
     }
 }
