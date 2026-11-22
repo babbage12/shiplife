@@ -36,18 +36,7 @@ let skyBounceStartTime = null;
 let lastBouncingMarkerVisible = false; // Track visibility state transitions
 let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
 
-// Zoom transition animation (for celebration spin only)
-let isTransitioning = false;
-let transitionStartTime = null;
-let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
-let targetCameraZ = 1.8;
-let currentZoomInDistance = baseZoomInDistance;
-let transitionStartZ = null; // Store starting Z for smooth interpolation
-
-// Bridge animation (soft bump during location transitions)
-let isBridging = false;
-let bridgeStartTime = null;
-let bridgeStartZ = null;
+// Location-to-location flights live in animation.js (startFlight)
 
 // Celebration sequence state
 let celebrationInProgress = false;
@@ -57,12 +46,6 @@ let autoOpenPanel = false;
 
 // Store density factors globally for zoom calculations
 let globalDensityFactors = null;
-
-// Pending rotation/zoom targets
-let pendingRotationY = 0;
-let pendingRotationX = 0;
-let pendingLocation = null;
-let pendingZoomLocation = null;
 
 // DOM elements
 const sidePanel = document.getElementById('sidePanel');

@@ -49,134 +49,14 @@ function animate() {
             targetRotationX = globe.rotation.x;
         }
     } else {
-        // Handle zoom transition animation
-        if (isTransitioning) {
-            const elapsed = Date.now() - transitionStartTime;
-            
-            if (transitionPhase === 'zoom-out') {
-                // Store starting Z on first frame
-                if (transitionStartZ === null) {
-                    transitionStartZ = camera.position.z;
-                }
-
-                const progress = Math.min(elapsed / zoomOutDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out for smoother motion
-
-                // Smoothly zoom out from start position to zoomOutDistance
-                camera.position.z = transitionStartZ + (zoomOutDistance - transitionStartZ) * easeOut;
-
-                if (progress >= 1) {
-                    // Switch to zoom-in phase - apply pending rotation
-                    targetRotationY = pendingRotationY;
-                    targetRotationX = pendingRotationX;
-                    transitionPhase = 'zoom-in';
-                    transitionStartTime = Date.now();
-                    transitionStartZ = null; // Reset for next transition
-
-                    // Calculate zoom distance - use atmosphere level for celebration, location-specific otherwise
-                    const targetLoc = pendingZoomLocation || pendingLocation;
-                    currentZoomInDistance = targetLoc ? getZoomDistanceForLocation(targetLoc) : atmosphereZoomDistance;
-                }
-            } else if (transitionPhase === 'zoom-in') {
-                const progress = Math.min(elapsed / zoomInDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3);
-                
-                // Zoom in (closer for dense areas)
-                camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
-                
-                // Check if globe rotation has settled (close enough to target)
-                // Tighter threshold (0.01 rad = ~0.5 degrees) to ensure globe is truly still
-                const yDiff = celebrationInProgress
-                    ? Math.abs(targetRotationY - globe.rotation.y)
-                    : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
-                const rotationSettled =
-                    yDiff < 0.01 &&
-                    Math.abs(globe.rotation.x - targetRotationX) < 0.01;
-
-                if (progress >= 1 && rotationSettled) {
-                    isTransitioning = false;
-                    transitionPhase = 'none';
-                    camera.position.z = currentZoomInDistance;
-                    pendingZoomLocation = null;
-
-                    // Trigger bounce animation for the target location
-                    if (pendingLocation) {
-                        const loc = pendingLocation;
-                        pendingLocation = null;
-
-                        // Find the marker for this location and trigger sky bounce
-                        // Small delay to ensure globe is fully settled before bloom appears
-                        const targetMarker = markers.find(m => m.userData.id === loc.id);
-                        if (targetMarker) {
-                            setTimeout(() => triggerSkyBounce(targetMarker), 50);
-                        }
-
-                        if (autoOpenPanel) {
-                            autoOpenPanel = false;
-                            // Auto-open panel after pause - longer on mobile so user can see where they landed
-                            const isMobile = window.innerWidth <= 768;
-                            setTimeout(() => openPanel(loc), isMobile ? 1500 : 400);
-                        } else {
-                            triggerBounce(loc.id);
-                        }
-                    }
-
-                    // End celebration when spin completes
-                    if (celebrationInProgress) {
-                        // Small delay to let users appreciate the result
-                        setTimeout(() => {
-                            celebrationInProgress = false;
-                            // Auto-open location menu on mobile
-                            const isMobile = window.innerWidth <= 768;
-                            if (isMobile) {
-                                const menu = document.getElementById('locationList');
-                                const overlay = document.getElementById('mobileOverlay');
-                                if (menu) menu.classList.add('open');
-                                if (overlay) overlay.classList.add('open');
-                            }
-                        }, 1000);
-                    }
-                }
-            }
-        }
-
-        // Handle bridge animation (soft bump during location transitions)
-        if (isBridging) {
-            const elapsed = Date.now() - bridgeStartTime;
-            const progress = Math.min(elapsed / bridgeDuration, 1);
-
-            // Sine curve for smooth arc: rises to peak at midpoint, settles at end
-            // sin(0) = 0, sin(π/2) = 1, sin(π) = 0
-            const arcProgress = Math.sin(progress * Math.PI);
-
-            // Calculate camera position: start -> peak -> default
-            const peakZ = bridgeStartZ + bridgeBumpHeight;
-            const targetZ = defaultZoomDistance;
-
-            if (progress < 0.5) {
-                // Rising phase: from start toward peak
-                camera.position.z = bridgeStartZ + (peakZ - bridgeStartZ) * (arcProgress);
-            } else {
-                // Settling phase: from peak toward default
-                const settleProgress = (progress - 0.5) * 2; // 0 to 1 for second half
-                const easeOut = 1 - Math.pow(1 - settleProgress, 2);
-                camera.position.z = peakZ - (peakZ - targetZ) * easeOut;
-            }
-
-            if (progress >= 1) {
-                isBridging = false;
-                camera.position.z = defaultZoomDistance;
-            }
-        }
+        // Flights between locations drive the camera directly
+        updateFlight();
 
         // Normal interaction after intro
 
-        // Only auto-rotate if:
-        // - User is not dragging
-        // - Panel is not open (user is not reading)
-        // - Not transitioning
-        // - Not bridging
-        if (!isUserInteracting && !panelIsOpen && !isTransitioning && !isBridging) {
+        // Only auto-rotate if the reader is not dragging, not reading a panel,
+        // and not mid-flight
+        if (!isUserInteracting && !panelIsOpen && !flight) {
             // Scale rotation speed based on zoom level - slower when zoomed in
             const maxZoom = 4.5;  // zoomed out
             const minZoom = 1.5;  // zoomed in close
@@ -197,36 +77,10 @@ function animate() {
         
         // Periodically normalize rotation values to prevent unbounded accumulation
         // This keeps values in a reasonable range without affecting visual appearance
-        if (Math.abs(globe.rotation.y) > Math.PI * 4) {
+        if (!flight && Math.abs(globe.rotation.y) > Math.PI * 4) {
             const normalize = Math.round(globe.rotation.y / (2 * Math.PI)) * 2 * Math.PI;
             globe.rotation.y -= normalize;
             targetRotationY -= normalize;
-        }
-
-        // Check if rotation has settled after sidebar/icon navigation (no zoom transition)
-        // This handles the sequence: rotate → sky bounce → panel open
-        if (pendingLocation && !isTransitioning) {
-            const yDiff = Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
-            const xDiff = Math.abs(globe.rotation.x - targetRotationX);
-            const rotationSettled = yDiff < 0.01 && xDiff < 0.01;
-
-            if (rotationSettled) {
-                const loc = pendingLocation;
-                pendingLocation = null;
-
-                // Find the marker and trigger sky bounce
-                const targetMarker = markers.find(m => m.userData.id === loc.id);
-                if (targetMarker) {
-                    triggerSkyBounce(targetMarker);
-
-                    // Open panel after sky bounce - longer on mobile so user can see where they landed
-                    const isMobile = window.innerWidth <= 768;
-                    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
-                } else {
-                    // No marker found, just open panel
-                    openPanel(loc);
-                }
-            }
         }
 
     }
@@ -367,8 +221,8 @@ function triggerDoorsCompleteSequence() {
         hideCelebrationMessage();
     }, 5000);
 
-    // Note: celebrationInProgress is set to false in animation loop
-    // when spin completes (isTransitioning becomes false)
+    // Note: celebrationInProgress is set to false by endCelebrationSpin()
+    // when the flight to the Mediterranean lands
 }
 
 function showCelebrationMessage() {
@@ -394,22 +248,163 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
-    // Convert Mediterranean coords to globe rotation
-    const targetRotationX = MED_COORDS.lat * Math.PI / 180;
-    const lonRad = MED_COORDS.lon * (Math.PI / 180);
-    const baseTargetY = -lonRad - 1.56;
+    // Celebration: a high, slow flight to the Med with one extra lap of the
+    // globe for drama. Uses the same flight system as location-to-location.
+    startFlight({
+        lat: MED_COORDS.lat,
+        lon: MED_COORDS.lon,
+        extraSpin: Math.PI * 2,
+        endZ: atmosphereZoomDistance,
+        minDuration: 4200,
+        minPeakZ: 4.8,
+        onLand: endCelebrationSpin
+    });
+}
 
-    // Add extra spin for drama (1 full rotation + target)
-    const targetY = baseTargetY + Math.PI * 2;
+function endCelebrationSpin() {
+    if (!celebrationInProgress) return;
+    // Small delay to let users appreciate the result
+    setTimeout(() => {
+        celebrationInProgress = false;
+        // Auto-open location menu on mobile
+        if (window.innerWidth <= 768) {
+            const menu = document.getElementById('locationList');
+            const overlay = document.getElementById('mobileOverlay');
+            if (menu) menu.classList.add('open');
+            if (overlay) overlay.classList.add('open');
+        }
+    }, 1000);
+}
 
-    // Start zoom-out transition, then rotate, then zoom-in
-    isTransitioning = true;
-    transitionPhase = 'zoom-out';
-    transitionStartTime = Date.now();
+// ============================================
+// FLIGHT
+// Liftoff -> cruise -> descent between two points on the globe.
+// Time-based (not per-frame) so it runs the same speed on 60Hz and 120Hz
+// screens. Altitude and duration scale with the distance travelled, so a
+// short hop stays low and quick while crossing the world climbs high enough
+// to see whole continents go by.
+// ============================================
 
-    // Store target rotation for after zoom-out
-    pendingRotationY = targetY;
-    pendingRotationX = targetRotationX;
-    pendingLocation = null;
-    pendingZoomLocation = null;
+// --- Tuning knobs ---
+const FLIGHT_MIN_DURATION = 1200;   // ms for the shortest hop
+const FLIGHT_EXTRA_DURATION = 2400; // ms added for a flight to the far side of the world
+const FLIGHT_MIN_LIFT = 0.3;        // camera rise for the shortest hop
+const FLIGHT_EXTRA_LIFT = 3.0;      // extra rise for a flight to the far side
+const FLIGHT_MOBILE_LIFT = 1.35;    // phones climb higher (narrow screen shows less globe)
+const FLIGHT_MAX_Z = 6.5;           // never fly higher than this
+const GLOBE_LON_OFFSET = 1.56;      // matches the texture/centering offset used everywhere
+
+let flight = null;
+
+function smoothstep(edge0, edge1, x) {
+    const t = Math.min(1, Math.max(0, (x - edge0) / (edge1 - edge0)));
+    return t * t * (3 - 2 * t);
+}
+
+// Slow start, fast middle, slow finish: most of the turning happens at altitude
+function easeInOutQuart(t) {
+    return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+}
+
+// Great-circle angle between two lat/lon points (radians in, radians out)
+function angularDistance(lat1, lon1, lat2, lon2) {
+    const dLat = lat2 - lat1;
+    const dLon = lon2 - lon1;
+    const a = Math.sin(dLat / 2) ** 2 +
+              Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+    return 2 * Math.asin(Math.min(1, Math.sqrt(a)));
+}
+
+// opts: { lat, lon (degrees), endZ, extraSpin, minDuration, minPeakZ, onLand }
+function startFlight(opts) {
+    const isMobile = window.innerWidth <= 768;
+
+    const toX = opts.lat * Math.PI / 180;
+    const lonRad = opts.lon * Math.PI / 180;
+    let toY = -lonRad - GLOBE_LON_OFFSET;
+    // Shortest way around
+    while (toY - globe.rotation.y > Math.PI) toY -= 2 * Math.PI;
+    while (toY - globe.rotation.y < -Math.PI) toY += 2 * Math.PI;
+    toY += opts.extraSpin || 0;
+
+    // How far are we going? (0 = same spot, 1 = opposite side of the world)
+    const fromLat = globe.rotation.x;
+    const fromLon = -(globe.rotation.y + GLOBE_LON_OFFSET);
+    const k = angularDistance(fromLat, fromLon, toX, lonRad) / Math.PI;
+
+    const startZ = camera.position.z;
+    const endZ = opts.endZ;
+    const lift = (FLIGHT_MIN_LIFT + FLIGHT_EXTRA_LIFT * Math.pow(k, 0.7)) *
+                 (isMobile ? FLIGHT_MOBILE_LIFT : 1);
+    const peakZ = Math.min(FLIGHT_MAX_Z,
+        Math.max(opts.minPeakZ || 0, Math.max(startZ, endZ) + lift));
+    const duration = Math.max(opts.minDuration || 0,
+        FLIGHT_MIN_DURATION + FLIGHT_EXTRA_DURATION * Math.pow(k, 0.6));
+
+    flight = {
+        startTime: Date.now(),
+        duration,
+        fromY: globe.rotation.y, toY,
+        fromX: globe.rotation.x, toX,
+        startZ, endZ, peakZ,
+        onLand: opts.onLand
+    };
+}
+
+// Fly to a location, then glow its marker and open its story panel
+function flyToLocation(loc) {
+    startFlight({
+        lat: loc.coords[0],
+        lon: loc.coords[1],
+        endZ: getZoomDistanceForLocation(loc),
+        onLand: () => landAtLocation(loc)
+    });
+}
+
+function landAtLocation(loc) {
+    autoOpenPanel = false;
+    const marker = markers.find(m => m.userData.id === loc.id);
+    if (!marker) {
+        openPanel(loc);
+        return;
+    }
+    triggerSkyBounce(marker);
+    // Pause so the reader sees where they landed before the panel slides in
+    const isMobile = window.innerWidth <= 768;
+    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
+}
+
+// Called every frame. Returns true while a flight is driving the camera.
+function updateFlight() {
+    if (!flight) return false;
+
+    // Reader grabbed the globe mid-flight: hand control straight back
+    if (isUserInteracting) {
+        flight = null;
+        autoOpenPanel = false;
+        return false;
+    }
+
+    const t = Math.min(1, (Date.now() - flight.startTime) / flight.duration);
+    const turn = easeInOutQuart(t);
+
+    globe.rotation.y = flight.fromY + (flight.toY - flight.fromY) * turn;
+    globe.rotation.x = flight.fromX + (flight.toX - flight.fromX) * turn;
+
+    // Ground level drifts from start height to landing height...
+    const ground = flight.startZ + (flight.endZ - flight.startZ) * smoothstep(0, 1, t);
+    // ...while the climb rises over the first 40%, cruises, then descends over the last 40%
+    const climb = smoothstep(0, 0.4, t) * (1 - smoothstep(0.6, 1, t));
+    camera.position.z = ground + (flight.peakZ - ground) * climb;
+
+    // Keep the drag/lerp targets glued to the flight so nothing fights it
+    targetRotationY = globe.rotation.y;
+    targetRotationX = globe.rotation.x;
+
+    if (t >= 1) {
+        const onLand = flight.onLand;
+        flight = null;
+        if (onLand) onLand();
+    }
+    return true;
 }

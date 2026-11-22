@@ -175,29 +175,8 @@ function focusLocation(loc) {
     // Close panel immediately when navigating to new location
     closePanel();
 
-    const lon = loc.coords[1]; // longitude (negative = west)
-    const lat = loc.coords[0]; // latitude (positive = north)
-
-    // Convert longitude to radians, with offset to match globe texture
-    const lonRad = lon * (Math.PI / 180);
-
-    // Set rotation targets - globe will smooth lerp to these
-    let targetY = -lonRad - 1.56;
-    // Normalize to shortest path (avoid wild multi-rotation spinning)
-    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-    targetRotationY = targetY;
-    targetRotationX = lat * (Math.PI / 180);
-
-    // Start bridge animation (soft cinematic bump)
-    isBridging = true;
-    bridgeStartTime = Date.now();
-    bridgeStartZ = camera.position.z;
-
-    // Store for panel open after rotation settles
-    pendingLocation = loc;
-
-    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetRotationY.toFixed(2), 'introComplete:', introComplete);
+    // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+    flyToLocation(loc);
 }
 
 // Timer for auto-reopening menu after globe touch

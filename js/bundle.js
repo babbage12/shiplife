@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-08-24T18:16:14.000Z
+// Shiplife Bundle - Generated 2026-11-22T19:58:02.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -39,15 +39,9 @@ const TOLEDO_X = (41.6528 * Math.PI / 180);
 // Animation timing
 const introDuration = 3000;
 const bounceDuration = 350;
-const defaultZoomDistance = 1.5;   // Default camera distance
 const atmosphereZoomDistance = 1.30; // Comfortable browsing distance
-const bridgeBumpHeight = 0.4;     // Subtle lift during location transitions
-const zoomOutDistance = 4.8;      // Further back for celebration spin only
 const baseZoomInDistance = 2.1;
 const mobileZoomMultiplier = 0.82;  // Mobile zooms ~18% closer to icons
-const zoomOutDuration = 450;       // Faster zoom out
-const zoomInDuration = 900;        // Slightly slower zoom in for smooth landing
-const bridgeDuration = 800;        // Duration of the bridge bump animation
 
 // Background music settings
 const MUSIC_FADE_DURATION = 1500;
@@ -2652,10 +2646,10 @@ const locations = [
  <div class="story-section-panel">
  <h3 class="section-title-panel">Touched</h3>
  <p>1989 brought a band called Touched, and I remember my audition to this day. Before that I'd been playing piano bars and had a few failed attempts at putting a band together, so joining a real working band would be a big deal for me. When I arrived on a cold Saturday afternoon, the nervous energy of being around actual gigging musicians was mixed with a determination that this was what I wanted to do.</p>
- <p>Dave stepped up first, looming over me with an extended hand, and asked - somewhat sarcastically - if I could play. That was a brash trait of Dave's back then. Shock therapy, I think he called it. Endearing, I know. Actually, it was - once we became friends. Dave was the best possible influence I could have asked for at that time in my life.</p>
+ <p>Dave Gierke, the band's leader, stepped up first, looming over me with an extended hand, and asked - somewhat sarcastically - if I could play. That was a brash trait of Dave's back then. Shock therapy, I think he called it. Endearing, I know. Actually, it was - once we became friends. Dave was the best possible influence I could have asked for at that time in my life.</p>
  <p>I must have played well enough, because I was in. We were hungry, and we were good. Through the early '90s we played high-end nightclubs and hotels, as well as our share of questionable establishments where anything could and often did happen.</p>
  <p>Touched was my first traveling band. The kid who wanted to see how far he could get before nightfall finally had his answer: somewhere between New York and Florida, depending on the week. The east coast was our circuit, always on the road, and the antics piled up. I began each road trip with a little dread (3 AM in West Virginia, dark country roads, seven people in a van hitched to a trailer full of equipment, barreling down a dirt road because we got lost) and no idea what was waiting at the other end. But mostly excitement - because for the first time I was outside my hometown, my city, doing what I'd been doing since I could remember. Only in front of people instead of apples.</p>
- <p>Touched was Dave, Phil, Kevin, Kim, Sam, CJ, and a few others who were there before me - Dan and Kelly among them. We brought a lot of music to the east coast from the late '80s through the '90s, and created memories I cherish to this day. I'd take the opportunity to go back and do it all again if I could!</p>
+ <p>Touched was Dave Gierke, Phil Berg, Kevin and Susan (aka Sam) Korecki, Kim Buehler, CJ Holley, and a few others who were there before me - Dan Fahnle and Kelly Broadway among them. We brought a lot of music to the east coast from the late '80s through the '90s, and created memories I cherish to this day. I'd take the opportunity to go back and do it all again if I could!</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/shiplife/toledo/touched_band" class="story-image" data-caption="Touched in one of its many forms, from left to right: Phil, myself, Kevin, Robin, Dave, and Kim." alt="The band Touched" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Touched in one of its many forms, from left to right: Phil, myself, Kevin, Robin, Dave, and Kim.</p>
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768520944/1000006613_as1tu6.jpg" class="story-image" data-caption="Touched at the 5 Seasons Hotel, Greensboro, NC. 1991." alt="Touched performing in Greensboro NC, 1991" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
@@ -13099,18 +13093,7 @@ let skyBounceStartTime = null;
 let lastBouncingMarkerVisible = false; // Track visibility state transitions
 let skyBounceTriggeredForCurrentMarker = false; // Only trigger once per bounce session
 
-// Zoom transition animation (for celebration spin only)
-let isTransitioning = false;
-let transitionStartTime = null;
-let transitionPhase = 'none'; // 'zoom-out', 'zoom-in', 'none'
-let targetCameraZ = 1.8;
-let currentZoomInDistance = baseZoomInDistance;
-let transitionStartZ = null; // Store starting Z for smooth interpolation
-
-// Bridge animation (soft bump during location transitions)
-let isBridging = false;
-let bridgeStartTime = null;
-let bridgeStartZ = null;
+// Location-to-location flights live in animation.js (startFlight)
 
 // Celebration sequence state
 let celebrationInProgress = false;
@@ -13120,12 +13103,6 @@ let autoOpenPanel = false;
 
 // Store density factors globally for zoom calculations
 let globalDensityFactors = null;
-
-// Pending rotation/zoom targets
-let pendingRotationY = 0;
-let pendingRotationX = 0;
-let pendingLocation = null;
-let pendingZoomLocation = null;
 
 // DOM elements
 const sidePanel = document.getElementById('sidePanel');
@@ -13173,8 +13150,12 @@ const textureLoadingPromises = {};
 
 // Lazy load a texture for a specific location when needed
 async function lazyLoadTexture(locationTitle, marker) {
-    // Already loaded?
+    // Already loaded? Still apply it - the texture may have finished
+    // downloading after this marker was built with the fallback icon.
     if (locationTextures[locationTitle]) {
+        if (marker && !marker.userData.textureLoaded) {
+            updateMarkerWithTexture(marker, locationTextures[locationTitle], locationTitle);
+        }
         return locationTextures[locationTitle];
     }
 
@@ -13222,6 +13203,13 @@ async function lazyLoadTexture(locationTitle, marker) {
 function updateMarkerWithTexture(marker, texture, locationTitle) {
     if (!marker || !texture) return;
 
+    // Don't swap mid-flare: the flare restores its snapshotted scale when it
+    // ends, which would undo the square AI-porthole scale set below.
+    if (marker.userData.isGlowing) {
+        setTimeout(() => updateMarkerWithTexture(marker, texture, locationTitle), 1000);
+        return;
+    }
+
     if (marker.material) {
         marker.material.map = texture;
         marker.material.needsUpdate = true;
@@ -13238,13 +13226,24 @@ function updateMarkerWithTexture(marker, texture, locationTitle) {
     console.log(`Applied texture to marker: ${locationTitle}`);
 }
 
+// Attach a loaded texture to its marker if the marker was already built
+// with the fallback icon (texture arrived after marker creation).
+function applyTextureToMarkerByTitle(locationTitle) {
+    const texture = locationTextures[locationTitle];
+    if (!texture) return;
+    const marker = markers.find(m => m.userData.title === locationTitle);
+    if (marker && !marker.userData.textureLoaded) {
+        updateMarkerWithTexture(marker, texture, locationTitle);
+    }
+}
+
 // Load image and make black pixels transparent (outside circular porthole)
 function loadTextureWithTransparentBlack(url, threshold = 60) {
     return new Promise((resolve) => {
         const timeout = setTimeout(() => {
             console.warn('Image load timeout:', url);
             resolve(null);
-        }, 10000);
+        }, 30000);
         
         const img = new Image();
         img.crossOrigin = 'anonymous';
@@ -13338,23 +13337,34 @@ async function init() {
 
         console.log(`Loading ${remainingLocations.length} remaining textures...`);
 
-        const remainingPromises = remainingLocations.map(async (name) => {
-            try {
-                const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
-                if (texture) {
-                    locationTextures[name] = texture;
+        // Limited concurrency: firing all ~130 requests at once makes them
+        // share bandwidth, so on a cold cache every image crawls and trips
+        // its own load timeout. Small batches keep each image fast.
+        const queue = [...remainingLocations];
+        const worker = async () => {
+            while (queue.length > 0) {
+                const name = queue.shift();
+                try {
+                    const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
+                    if (texture) {
+                        locationTextures[name] = texture;
+                        // Markers may already exist by the time this resolves
+                        applyTextureToMarkerByTitle(name);
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${name}:`, e.message);
                 }
-            } catch (e) {
-                console.warn(`Failed to load ${name}:`, e.message);
             }
-        });
+        };
+        const poolDone = Promise.all(Array.from({ length: 8 }, worker));
 
-        // Wait for all with 20s timeout
+        // Don't hold up the globe past 20s - late textures still attach
+        // via applyTextureToMarkerByTitle as they finish.
         await Promise.race([
-            Promise.all(remainingPromises),
+            poolDone,
             new Promise(resolve => setTimeout(resolve, 20000))
         ]);
-        console.log('All textures loaded (or timed out)');
+        console.log('All textures loaded (or still streaming in)');
 
     }
     
@@ -16291,134 +16301,14 @@ function animate() {
             targetRotationX = globe.rotation.x;
         }
     } else {
-        // Handle zoom transition animation
-        if (isTransitioning) {
-            const elapsed = Date.now() - transitionStartTime;
-            
-            if (transitionPhase === 'zoom-out') {
-                // Store starting Z on first frame
-                if (transitionStartZ === null) {
-                    transitionStartZ = camera.position.z;
-                }
-
-                const progress = Math.min(elapsed / zoomOutDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3); // Cubic ease-out for smoother motion
-
-                // Smoothly zoom out from start position to zoomOutDistance
-                camera.position.z = transitionStartZ + (zoomOutDistance - transitionStartZ) * easeOut;
-
-                if (progress >= 1) {
-                    // Switch to zoom-in phase - apply pending rotation
-                    targetRotationY = pendingRotationY;
-                    targetRotationX = pendingRotationX;
-                    transitionPhase = 'zoom-in';
-                    transitionStartTime = Date.now();
-                    transitionStartZ = null; // Reset for next transition
-
-                    // Calculate zoom distance - use atmosphere level for celebration, location-specific otherwise
-                    const targetLoc = pendingZoomLocation || pendingLocation;
-                    currentZoomInDistance = targetLoc ? getZoomDistanceForLocation(targetLoc) : atmosphereZoomDistance;
-                }
-            } else if (transitionPhase === 'zoom-in') {
-                const progress = Math.min(elapsed / zoomInDuration, 1);
-                const easeOut = 1 - Math.pow(1 - progress, 3);
-                
-                // Zoom in (closer for dense areas)
-                camera.position.z = zoomOutDistance - (zoomOutDistance - currentZoomInDistance) * easeOut;
-                
-                // Check if globe rotation has settled (close enough to target)
-                // Tighter threshold (0.01 rad = ~0.5 degrees) to ensure globe is truly still
-                const yDiff = celebrationInProgress
-                    ? Math.abs(targetRotationY - globe.rotation.y)
-                    : Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
-                const rotationSettled =
-                    yDiff < 0.01 &&
-                    Math.abs(globe.rotation.x - targetRotationX) < 0.01;
-
-                if (progress >= 1 && rotationSettled) {
-                    isTransitioning = false;
-                    transitionPhase = 'none';
-                    camera.position.z = currentZoomInDistance;
-                    pendingZoomLocation = null;
-
-                    // Trigger bounce animation for the target location
-                    if (pendingLocation) {
-                        const loc = pendingLocation;
-                        pendingLocation = null;
-
-                        // Find the marker for this location and trigger sky bounce
-                        // Small delay to ensure globe is fully settled before bloom appears
-                        const targetMarker = markers.find(m => m.userData.id === loc.id);
-                        if (targetMarker) {
-                            setTimeout(() => triggerSkyBounce(targetMarker), 50);
-                        }
-
-                        if (autoOpenPanel) {
-                            autoOpenPanel = false;
-                            // Auto-open panel after pause - longer on mobile so user can see where they landed
-                            const isMobile = window.innerWidth <= 768;
-                            setTimeout(() => openPanel(loc), isMobile ? 1500 : 400);
-                        } else {
-                            triggerBounce(loc.id);
-                        }
-                    }
-
-                    // End celebration when spin completes
-                    if (celebrationInProgress) {
-                        // Small delay to let users appreciate the result
-                        setTimeout(() => {
-                            celebrationInProgress = false;
-                            // Auto-open location menu on mobile
-                            const isMobile = window.innerWidth <= 768;
-                            if (isMobile) {
-                                const menu = document.getElementById('locationList');
-                                const overlay = document.getElementById('mobileOverlay');
-                                if (menu) menu.classList.add('open');
-                                if (overlay) overlay.classList.add('open');
-                            }
-                        }, 1000);
-                    }
-                }
-            }
-        }
-
-        // Handle bridge animation (soft bump during location transitions)
-        if (isBridging) {
-            const elapsed = Date.now() - bridgeStartTime;
-            const progress = Math.min(elapsed / bridgeDuration, 1);
-
-            // Sine curve for smooth arc: rises to peak at midpoint, settles at end
-            // sin(0) = 0, sin(π/2) = 1, sin(π) = 0
-            const arcProgress = Math.sin(progress * Math.PI);
-
-            // Calculate camera position: start -> peak -> default
-            const peakZ = bridgeStartZ + bridgeBumpHeight;
-            const targetZ = defaultZoomDistance;
-
-            if (progress < 0.5) {
-                // Rising phase: from start toward peak
-                camera.position.z = bridgeStartZ + (peakZ - bridgeStartZ) * (arcProgress);
-            } else {
-                // Settling phase: from peak toward default
-                const settleProgress = (progress - 0.5) * 2; // 0 to 1 for second half
-                const easeOut = 1 - Math.pow(1 - settleProgress, 2);
-                camera.position.z = peakZ - (peakZ - targetZ) * easeOut;
-            }
-
-            if (progress >= 1) {
-                isBridging = false;
-                camera.position.z = defaultZoomDistance;
-            }
-        }
+        // Flights between locations drive the camera directly
+        updateFlight();
 
         // Normal interaction after intro
 
-        // Only auto-rotate if:
-        // - User is not dragging
-        // - Panel is not open (user is not reading)
-        // - Not transitioning
-        // - Not bridging
-        if (!isUserInteracting && !panelIsOpen && !isTransitioning && !isBridging) {
+        // Only auto-rotate if the reader is not dragging, not reading a panel,
+        // and not mid-flight
+        if (!isUserInteracting && !panelIsOpen && !flight) {
             // Scale rotation speed based on zoom level - slower when zoomed in
             const maxZoom = 4.5;  // zoomed out
             const minZoom = 1.5;  // zoomed in close
@@ -16439,36 +16329,10 @@ function animate() {
         
         // Periodically normalize rotation values to prevent unbounded accumulation
         // This keeps values in a reasonable range without affecting visual appearance
-        if (Math.abs(globe.rotation.y) > Math.PI * 4) {
+        if (!flight && Math.abs(globe.rotation.y) > Math.PI * 4) {
             const normalize = Math.round(globe.rotation.y / (2 * Math.PI)) * 2 * Math.PI;
             globe.rotation.y -= normalize;
             targetRotationY -= normalize;
-        }
-
-        // Check if rotation has settled after sidebar/icon navigation (no zoom transition)
-        // This handles the sequence: rotate → sky bounce → panel open
-        if (pendingLocation && !isTransitioning) {
-            const yDiff = Math.abs(shortestAngleDiff(globe.rotation.y, targetRotationY));
-            const xDiff = Math.abs(globe.rotation.x - targetRotationX);
-            const rotationSettled = yDiff < 0.01 && xDiff < 0.01;
-
-            if (rotationSettled) {
-                const loc = pendingLocation;
-                pendingLocation = null;
-
-                // Find the marker and trigger sky bounce
-                const targetMarker = markers.find(m => m.userData.id === loc.id);
-                if (targetMarker) {
-                    triggerSkyBounce(targetMarker);
-
-                    // Open panel after sky bounce - longer on mobile so user can see where they landed
-                    const isMobile = window.innerWidth <= 768;
-                    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
-                } else {
-                    // No marker found, just open panel
-                    openPanel(loc);
-                }
-            }
         }
 
     }
@@ -16609,8 +16473,8 @@ function triggerDoorsCompleteSequence() {
         hideCelebrationMessage();
     }, 5000);
 
-    // Note: celebrationInProgress is set to false in animation loop
-    // when spin completes (isTransitioning becomes false)
+    // Note: celebrationInProgress is set to false by endCelebrationSpin()
+    // when the flight to the Mediterranean lands
 }
 
 function showCelebrationMessage() {
@@ -16636,24 +16500,165 @@ function hideCelebrationMessage() {
 }
 
 function spinToMediterranean() {
-    // Convert Mediterranean coords to globe rotation
-    const targetRotationX = MED_COORDS.lat * Math.PI / 180;
-    const lonRad = MED_COORDS.lon * (Math.PI / 180);
-    const baseTargetY = -lonRad - 1.56;
+    // Celebration: a high, slow flight to the Med with one extra lap of the
+    // globe for drama. Uses the same flight system as location-to-location.
+    startFlight({
+        lat: MED_COORDS.lat,
+        lon: MED_COORDS.lon,
+        extraSpin: Math.PI * 2,
+        endZ: atmosphereZoomDistance,
+        minDuration: 4200,
+        minPeakZ: 4.8,
+        onLand: endCelebrationSpin
+    });
+}
 
-    // Add extra spin for drama (1 full rotation + target)
-    const targetY = baseTargetY + Math.PI * 2;
+function endCelebrationSpin() {
+    if (!celebrationInProgress) return;
+    // Small delay to let users appreciate the result
+    setTimeout(() => {
+        celebrationInProgress = false;
+        // Auto-open location menu on mobile
+        if (window.innerWidth <= 768) {
+            const menu = document.getElementById('locationList');
+            const overlay = document.getElementById('mobileOverlay');
+            if (menu) menu.classList.add('open');
+            if (overlay) overlay.classList.add('open');
+        }
+    }, 1000);
+}
 
-    // Start zoom-out transition, then rotate, then zoom-in
-    isTransitioning = true;
-    transitionPhase = 'zoom-out';
-    transitionStartTime = Date.now();
+// ============================================
+// FLIGHT
+// Liftoff -> cruise -> descent between two points on the globe.
+// Time-based (not per-frame) so it runs the same speed on 60Hz and 120Hz
+// screens. Altitude and duration scale with the distance travelled, so a
+// short hop stays low and quick while crossing the world climbs high enough
+// to see whole continents go by.
+// ============================================
 
-    // Store target rotation for after zoom-out
-    pendingRotationY = targetY;
-    pendingRotationX = targetRotationX;
-    pendingLocation = null;
-    pendingZoomLocation = null;
+// --- Tuning knobs ---
+const FLIGHT_MIN_DURATION = 1200;   // ms for the shortest hop
+const FLIGHT_EXTRA_DURATION = 2400; // ms added for a flight to the far side of the world
+const FLIGHT_MIN_LIFT = 0.3;        // camera rise for the shortest hop
+const FLIGHT_EXTRA_LIFT = 3.0;      // extra rise for a flight to the far side
+const FLIGHT_MOBILE_LIFT = 1.35;    // phones climb higher (narrow screen shows less globe)
+const FLIGHT_MAX_Z = 6.5;           // never fly higher than this
+const GLOBE_LON_OFFSET = 1.56;      // matches the texture/centering offset used everywhere
+
+let flight = null;
+
+function smoothstep(edge0, edge1, x) {
+    const t = Math.min(1, Math.max(0, (x - edge0) / (edge1 - edge0)));
+    return t * t * (3 - 2 * t);
+}
+
+// Slow start, fast middle, slow finish: most of the turning happens at altitude
+function easeInOutQuart(t) {
+    return t < 0.5 ? 8 * t * t * t * t : 1 - Math.pow(-2 * t + 2, 4) / 2;
+}
+
+// Great-circle angle between two lat/lon points (radians in, radians out)
+function angularDistance(lat1, lon1, lat2, lon2) {
+    const dLat = lat2 - lat1;
+    const dLon = lon2 - lon1;
+    const a = Math.sin(dLat / 2) ** 2 +
+              Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+    return 2 * Math.asin(Math.min(1, Math.sqrt(a)));
+}
+
+// opts: { lat, lon (degrees), endZ, extraSpin, minDuration, minPeakZ, onLand }
+function startFlight(opts) {
+    const isMobile = window.innerWidth <= 768;
+
+    const toX = opts.lat * Math.PI / 180;
+    const lonRad = opts.lon * Math.PI / 180;
+    let toY = -lonRad - GLOBE_LON_OFFSET;
+    // Shortest way around
+    while (toY - globe.rotation.y > Math.PI) toY -= 2 * Math.PI;
+    while (toY - globe.rotation.y < -Math.PI) toY += 2 * Math.PI;
+    toY += opts.extraSpin || 0;
+
+    // How far are we going? (0 = same spot, 1 = opposite side of the world)
+    const fromLat = globe.rotation.x;
+    const fromLon = -(globe.rotation.y + GLOBE_LON_OFFSET);
+    const k = angularDistance(fromLat, fromLon, toX, lonRad) / Math.PI;
+
+    const startZ = camera.position.z;
+    const endZ = opts.endZ;
+    const lift = (FLIGHT_MIN_LIFT + FLIGHT_EXTRA_LIFT * Math.pow(k, 0.7)) *
+                 (isMobile ? FLIGHT_MOBILE_LIFT : 1);
+    const peakZ = Math.min(FLIGHT_MAX_Z,
+        Math.max(opts.minPeakZ || 0, Math.max(startZ, endZ) + lift));
+    const duration = Math.max(opts.minDuration || 0,
+        FLIGHT_MIN_DURATION + FLIGHT_EXTRA_DURATION * Math.pow(k, 0.6));
+
+    flight = {
+        startTime: Date.now(),
+        duration,
+        fromY: globe.rotation.y, toY,
+        fromX: globe.rotation.x, toX,
+        startZ, endZ, peakZ,
+        onLand: opts.onLand
+    };
+}
+
+// Fly to a location, then glow its marker and open its story panel
+function flyToLocation(loc) {
+    startFlight({
+        lat: loc.coords[0],
+        lon: loc.coords[1],
+        endZ: getZoomDistanceForLocation(loc),
+        onLand: () => landAtLocation(loc)
+    });
+}
+
+function landAtLocation(loc) {
+    autoOpenPanel = false;
+    const marker = markers.find(m => m.userData.id === loc.id);
+    if (!marker) {
+        openPanel(loc);
+        return;
+    }
+    triggerSkyBounce(marker);
+    // Pause so the reader sees where they landed before the panel slides in
+    const isMobile = window.innerWidth <= 768;
+    setTimeout(() => openPanel(loc), isMobile ? 1500 : 300);
+}
+
+// Called every frame. Returns true while a flight is driving the camera.
+function updateFlight() {
+    if (!flight) return false;
+
+    // Reader grabbed the globe mid-flight: hand control straight back
+    if (isUserInteracting) {
+        flight = null;
+        autoOpenPanel = false;
+        return false;
+    }
+
+    const t = Math.min(1, (Date.now() - flight.startTime) / flight.duration);
+    const turn = easeInOutQuart(t);
+
+    globe.rotation.y = flight.fromY + (flight.toY - flight.fromY) * turn;
+    globe.rotation.x = flight.fromX + (flight.toX - flight.fromX) * turn;
+
+    // Ground level drifts from start height to landing height...
+    const ground = flight.startZ + (flight.endZ - flight.startZ) * smoothstep(0, 1, t);
+    // ...while the climb rises over the first 40%, cruises, then descends over the last 40%
+    const climb = smoothstep(0, 0.4, t) * (1 - smoothstep(0.6, 1, t));
+    camera.position.z = ground + (flight.peakZ - ground) * climb;
+
+    // Keep the drag/lerp targets glued to the flight so nothing fights it
+    targetRotationY = globe.rotation.y;
+    targetRotationX = globe.rotation.x;
+
+    if (t >= 1) {
+        const onLand = flight.onLand;
+        flight = null;
+        if (onLand) onLand();
+    }
+    return true;
 }
 
 
@@ -16723,6 +16728,13 @@ let panelOpenedAt = 0;
 window.addEventListener('popstate', function(e) {
     if (closingFromCode) {
         closingFromCode = false;
+        return;
+    }
+    // Back button while Director's Commentary is open: close just the pop-up,
+    // leave the story panel open underneath
+    if (typeof isCommentaryOpen === 'function' && isCommentaryOpen()) {
+        commentaryHistoryPushed = false;
+        hideCommentaryModal();
         return;
     }
     if (sidePanel.classList.contains('open')) {
@@ -17537,29 +17549,8 @@ function focusLocation(loc) {
     // Close panel immediately when navigating to new location
     closePanel();
 
-    const lon = loc.coords[1]; // longitude (negative = west)
-    const lat = loc.coords[0]; // latitude (positive = north)
-
-    // Convert longitude to radians, with offset to match globe texture
-    const lonRad = lon * (Math.PI / 180);
-
-    // Set rotation targets - globe will smooth lerp to these
-    let targetY = -lonRad - 1.56;
-    // Normalize to shortest path (avoid wild multi-rotation spinning)
-    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-    targetRotationY = targetY;
-    targetRotationX = lat * (Math.PI / 180);
-
-    // Start bridge animation (soft cinematic bump)
-    isBridging = true;
-    bridgeStartTime = Date.now();
-    bridgeStartZ = camera.position.z;
-
-    // Store for panel open after rotation settles
-    pendingLocation = loc;
-
-    console.log(loc.title, '- lon:', lon, 'lat:', lat, 'targetY:', targetRotationY.toFixed(2), 'introComplete:', introComplete);
+    // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+    flyToLocation(loc);
 }
 
 // Timer for auto-reopening menu after globe touch
@@ -18394,27 +18385,59 @@ function closeIntroModalIfOpen() {
 // DIRECTOR'S COMMENTARY
 // ============================================
 
+// True while a history entry exists for the open commentary, so the
+// phone's back button closes the pop-up instead of leaving the site.
+let commentaryHistoryPushed = false;
+
+function isCommentaryOpen() {
+    const modal = document.getElementById('commentaryModal');
+    return !!(modal && modal.classList.contains('active'));
+}
+
 function openCommentaryModal() {
     // Keep the side panel open so the reader can pick up where they left off
-    document.getElementById('commentaryModal').classList.add('active');
+    const modal = document.getElementById('commentaryModal');
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Always start the story at the top
+    const box = modal.querySelector('.commentary-modal');
+    if (box) box.scrollTop = 0;
+
+    if (!commentaryHistoryPushed) {
+        history.pushState({ commentaryOpen: true }, '');
+        commentaryHistoryPushed = true;
+    }
+}
+
+// Hide the pop-up without touching history (used by the back button handler)
+function hideCommentaryModal() {
+    document.getElementById('commentaryModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// User closed the pop-up (X, end button, outside tap, Escape):
+// hide it and drop the history entry we pushed when it opened.
+function dismissCommentary() {
+    if (!isCommentaryOpen()) return;
+    hideCommentaryModal();
+    if (commentaryHistoryPushed) {
+        commentaryHistoryPushed = false;
+        closingFromCode = true; // tell the popstate handler to ignore this one
+        history.back();
+    }
 }
 
 function closeCommentaryModal(event) {
     if (event.target === document.getElementById('commentaryModal')) {
-        document.getElementById('commentaryModal').classList.remove('active');
-        document.body.style.overflow = '';
+        dismissCommentary();
     }
 }
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        const modal = document.getElementById('commentaryModal');
-        if (modal && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+    if (e.key === 'Escape' && isCommentaryOpen()) {
+        dismissCommentary();
     }
 });
 
@@ -18733,23 +18756,8 @@ function onTouchTap(event) {
                 // Animation loop will handle sky bounce + panel open when rotation settles
                 if (isSwitching) {
                     closePanel();
-                    const lon = loc.coords[1];
-                    const lat = loc.coords[0];
-                    const lonRad = lon * (Math.PI / 180);
-                    let targetY = -lonRad - 1.56;
-                    // Normalize to shortest path (avoid wild multi-rotation spinning)
-                    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-                    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-                    targetRotationY = targetY;
-                    targetRotationX = lat * (Math.PI / 180);
-
-                    // Start bridge animation (soft cinematic bump)
-                    isBridging = true;
-                    bridgeStartTime = Date.now();
-                    bridgeStartZ = camera.position.z;
-
-                    // Set pending location - animation loop will trigger sky bounce + panel when settled
-                    pendingLocation = loc;
+                    // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+                    flyToLocation(loc);
                     stopBounce();
                     return; // Let animation loop handle the rest
                 }
@@ -18867,24 +18875,8 @@ function onClick(event) {
         // Animation loop will handle sky bounce + panel open when rotation settles
         if (isSwitching) {
             closePanel();
-            // Use base coords for rotation
-            const lon = loc.coords[1];
-            const lat = loc.coords[0];
-            const lonRad = lon * (Math.PI / 180);
-            let targetY = -lonRad - 1.56;
-            // Normalize to shortest path (avoid wild multi-rotation spinning)
-            while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-            while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-            targetRotationY = targetY;
-            targetRotationX = lat * (Math.PI / 180);
-
-            // Start bridge animation (soft cinematic bump)
-            isBridging = true;
-            bridgeStartTime = Date.now();
-            bridgeStartZ = camera.position.z;
-
-            // Set pending location - animation loop will trigger sky bounce + panel when settled
-            pendingLocation = loc;
+            // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+            flyToLocation(loc);
             stopBounce();
             return; // Let animation loop handle the rest
         }

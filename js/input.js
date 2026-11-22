@@ -156,23 +156,8 @@ function onTouchTap(event) {
                 // Animation loop will handle sky bounce + panel open when rotation settles
                 if (isSwitching) {
                     closePanel();
-                    const lon = loc.coords[1];
-                    const lat = loc.coords[0];
-                    const lonRad = lon * (Math.PI / 180);
-                    let targetY = -lonRad - 1.56;
-                    // Normalize to shortest path (avoid wild multi-rotation spinning)
-                    while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-                    while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-                    targetRotationY = targetY;
-                    targetRotationX = lat * (Math.PI / 180);
-
-                    // Start bridge animation (soft cinematic bump)
-                    isBridging = true;
-                    bridgeStartTime = Date.now();
-                    bridgeStartZ = camera.position.z;
-
-                    // Set pending location - animation loop will trigger sky bounce + panel when settled
-                    pendingLocation = loc;
+                    // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+                    flyToLocation(loc);
                     stopBounce();
                     return; // Let animation loop handle the rest
                 }
@@ -290,24 +275,8 @@ function onClick(event) {
         // Animation loop will handle sky bounce + panel open when rotation settles
         if (isSwitching) {
             closePanel();
-            // Use base coords for rotation
-            const lon = loc.coords[1];
-            const lat = loc.coords[0];
-            const lonRad = lon * (Math.PI / 180);
-            let targetY = -lonRad - 1.56;
-            // Normalize to shortest path (avoid wild multi-rotation spinning)
-            while (targetY - globe.rotation.y > Math.PI) targetY -= 2 * Math.PI;
-            while (targetY - globe.rotation.y < -Math.PI) targetY += 2 * Math.PI;
-            targetRotationY = targetY;
-            targetRotationX = lat * (Math.PI / 180);
-
-            // Start bridge animation (soft cinematic bump)
-            isBridging = true;
-            bridgeStartTime = Date.now();
-            bridgeStartZ = camera.position.z;
-
-            // Set pending location - animation loop will trigger sky bounce + panel when settled
-            pendingLocation = loc;
+            // Liftoff, cruise, land, then glow + open the panel (see animation.js)
+            flyToLocation(loc);
             stopBounce();
             return; // Let animation loop handle the rest
         }
