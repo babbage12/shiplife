@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T20:07:56.000Z
+// Shiplife Bundle - Generated 2026-11-22T20:08:20.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -16946,29 +16946,7 @@ function viewAllLocations() {
     }
 }
 
-// Lightbox functions
-function openLightbox(imgSrc, caption) {
-    document.getElementById('lightboxImg').src = imgSrc;
-    document.getElementById('lightboxCaption').textContent = caption || '';
-    document.getElementById('lightbox').classList.add('active');
-    document.body.style.overflow = 'hidden';
-}
-
-function closeLightbox(event) {
-    // Only close if clicking the background or close button, not the image
-    if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
-        document.getElementById('lightbox').classList.remove('active');
-        document.body.style.overflow = '';
-    }
-}
-
-// Close lightbox with Escape key
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-        document.getElementById('lightbox').classList.remove('active');
-        document.body.style.overflow = '';
-    }
-});
+// Lightbox open/close/navigation live in lightbox.js
 
 // Attach click handlers to story images when panel content changes
 function attachImageClickHandlers() {
