@@ -2461,7 +2461,7 @@ function createMarkers() {
 
         // Determine if this marker should be dimmed during guided mode
         const shouldDim = isGuidedMode && !loc.isDoor;
-        const dimOpacity = shouldDim ? 0.35 : 1.0;
+        const dimOpacity = shouldDim ? DIMMED_MARKER_OPACITY : 1.0;
 
         // Check if texture was pre-loaded (e.g., Toledo)
         if (USE_AI_PORTHOLES && locationTextures[loc.title]) {
@@ -2558,7 +2558,7 @@ function flareAllMarkers() {
 
 // Animate a single marker's opacity from dim to full
 function animateMarkerFlare(marker) {
-    const startOpacity = 0.35;
+    const startOpacity = DIMMED_MARKER_OPACITY;
     const endOpacity = 1.0;
     const duration = 800;
     const startTime = performance.now();

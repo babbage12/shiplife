@@ -9,6 +9,10 @@ const STORAGE_KEY = 'shiplife_progress';
 // Three narrative doors that must be visited
 const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
 
+// How visible the not-yet-unlocked ports are during the guided chapters
+// (1 = full brightness). Too low and they vanish over daylit land.
+const DIMMED_MARKER_OPACITY = 0.6;
+
 // Mediterranean coordinates for celebration spin (centered on Italy)
 const MED_COORDS = { lat: 41.0, lon: 19.0 };
 

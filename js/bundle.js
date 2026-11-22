@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T20:08:20.000Z
+// Shiplife Bundle - Generated 2026-11-22T20:09:56.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -17,6 +17,10 @@ const STORAGE_KEY = 'shiplife_progress';
 
 // Three narrative doors that must be visited
 const DOORS_REQUIRED = ['Toledo, Ohio', 'Darwin, Australia', 'Auckland, New Zealand'];
+
+// How visible the not-yet-unlocked ports are during the guided chapters
+// (1 = full brightness). Too low and they vanish over daylit land.
+const DIMMED_MARKER_OPACITY = 0.6;
 
 // Mediterranean coordinates for celebration spin (centered on Italy)
 const MED_COORDS = { lat: 41.0, lon: 19.0 };
@@ -16021,7 +16025,7 @@ function createMarkers() {
 
         // Determine if this marker should be dimmed during guided mode
         const shouldDim = isGuidedMode && !loc.isDoor;
-        const dimOpacity = shouldDim ? 0.35 : 1.0;
+        const dimOpacity = shouldDim ? DIMMED_MARKER_OPACITY : 1.0;
 
         // Check if texture was pre-loaded (e.g., Toledo)
         if (USE_AI_PORTHOLES && locationTextures[loc.title]) {
@@ -16118,7 +16122,7 @@ function flareAllMarkers() {
 
 // Animate a single marker's opacity from dim to full
 function animateMarkerFlare(marker) {
-    const startOpacity = 0.35;
+    const startOpacity = DIMMED_MARKER_OPACITY;
     const endOpacity = 1.0;
     const duration = 800;
     const startTime = performance.now();
