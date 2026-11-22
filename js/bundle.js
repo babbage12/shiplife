@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T21:05:03.000Z
+// Shiplife Bundle - Generated 2026-11-22T21:06:41.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -6298,7 +6298,7 @@ an original composition inspired by this place.
  </div>
 
  <div class="story-section-panel">
- <span class="section-tag-panel">The Seabourn Years</span>
+ <span class="section-tag-panel">World Heritage</span>
  <h3 class="section-title-panel">Beautiful and Terrifying</h3>
  <p>Working for Seabourn meant many of the ports we visited were World Heritage Sites, and the history in those places was as beautiful as it was terrifying. It was an education I never signed up for.</p>
  <p>Something had shifted in me during the Pacific years - a sadness I hadn't known before I went to sea. About the state of us. About the species. Now, standing in places where centuries of faith and war and toil had been pressed into stone, that feeling finally had somewhere to land. I felt myself getting smarter and smaller at the same time: the more I learned about a place, the more I understood how little I understood. It hardened something in me I'm still trying to name.</p>
