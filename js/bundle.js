@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T20:10:21.000Z
+// Shiplife Bundle - Generated 2026-11-22T20:10:58.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -16839,6 +16839,11 @@ function updateNextDoorButton(loc) {
         const nextDoor = doors[doorIndex + 1];
         const nextDoorNum = doorIndex + 2;
         nextDoorText.textContent = `Continue to Chapter ${nextDoorNum}`;
+        // Show the next chapter's porthole art
+        const nextDoorIcon = document.getElementById('nextDoorIcon');
+        if (nextDoorIcon && locationPortholeURLs[nextDoor.title]) {
+            nextDoorIcon.src = locationPortholeURLs[nextDoor.title];
+        }
         nextDoorHint.style.display = '';
         nextDoorHint.dataset.nextDoorId = nextDoor.id;
     } else {
@@ -18872,16 +18877,22 @@ function showDimmedMarkerMessage() {
 
     const toast = document.createElement('div');
     toast.className = 'dimmed-marker-toast';
+    // Show the porthole art of the next chapter still to visit
+    const visited = getProgress().doorsVisited || [];
+    const nextChapter = DOORS_REQUIRED.find(t => !visited.includes(t)) || DOORS_REQUIRED[0];
+    const iconUrl = locationPortholeURLs[nextChapter];
     toast.innerHTML = `
-        <span class="toast-icon">🚪</span>
-        <span class="toast-text">Complete the three doors first</span>
+        ${iconUrl ? `<img class="toast-icon" src="${iconUrl}" alt="" style="width:28px;height:28px;object-fit:contain;">` : ''}
+        <span class="toast-text">Finish the three chapters first</span>
     `;
     toast.style.cssText = `
         position: fixed;
         bottom: 20%;
         left: 50%;
         transform: translateX(-50%);
-        background: rgba(38, 42, 36, 0.95);
+        background: linear-gradient(135deg, rgba(16, 28, 50, 0.92), rgba(10, 22, 40, 0.95));
+        backdrop-filter: blur(14px) saturate(1.2);
+        -webkit-backdrop-filter: blur(14px) saturate(1.2);
         border: 1px solid rgba(212, 165, 116, 0.5);
         border-radius: 25px;
         padding: 0.75rem 1.5rem;

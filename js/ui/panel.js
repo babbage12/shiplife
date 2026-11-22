@@ -211,6 +211,11 @@ function updateNextDoorButton(loc) {
         const nextDoor = doors[doorIndex + 1];
         const nextDoorNum = doorIndex + 2;
         nextDoorText.textContent = `Continue to Chapter ${nextDoorNum}`;
+        // Show the next chapter's porthole art
+        const nextDoorIcon = document.getElementById('nextDoorIcon');
+        if (nextDoorIcon && locationPortholeURLs[nextDoor.title]) {
+            nextDoorIcon.src = locationPortholeURLs[nextDoor.title];
+        }
         nextDoorHint.style.display = '';
         nextDoorHint.dataset.nextDoorId = nextDoor.id;
     } else {
