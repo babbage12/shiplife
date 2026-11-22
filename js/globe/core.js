@@ -110,8 +110,12 @@ const textureLoadingPromises = {};
 
 // Lazy load a texture for a specific location when needed
 async function lazyLoadTexture(locationTitle, marker) {
-    // Already loaded?
+    // Already loaded? Still apply it - the texture may have finished
+    // downloading after this marker was built with the fallback icon.
     if (locationTextures[locationTitle]) {
+        if (marker && !marker.userData.textureLoaded) {
+            updateMarkerWithTexture(marker, locationTextures[locationTitle], locationTitle);
+        }
         return locationTextures[locationTitle];
     }
 
@@ -159,6 +163,13 @@ async function lazyLoadTexture(locationTitle, marker) {
 function updateMarkerWithTexture(marker, texture, locationTitle) {
     if (!marker || !texture) return;
 
+    // Don't swap mid-flare: the flare restores its snapshotted scale when it
+    // ends, which would undo the square AI-porthole scale set below.
+    if (marker.userData.isGlowing) {
+        setTimeout(() => updateMarkerWithTexture(marker, texture, locationTitle), 1000);
+        return;
+    }
+
     if (marker.material) {
         marker.material.map = texture;
         marker.material.needsUpdate = true;
@@ -175,13 +186,24 @@ function updateMarkerWithTexture(marker, texture, locationTitle) {
     console.log(`Applied texture to marker: ${locationTitle}`);
 }
 
+// Attach a loaded texture to its marker if the marker was already built
+// with the fallback icon (texture arrived after marker creation).
+function applyTextureToMarkerByTitle(locationTitle) {
+    const texture = locationTextures[locationTitle];
+    if (!texture) return;
+    const marker = markers.find(m => m.userData.title === locationTitle);
+    if (marker && !marker.userData.textureLoaded) {
+        updateMarkerWithTexture(marker, texture, locationTitle);
+    }
+}
+
 // Load image and make black pixels transparent (outside circular porthole)
 function loadTextureWithTransparentBlack(url, threshold = 60) {
     return new Promise((resolve) => {
         const timeout = setTimeout(() => {
             console.warn('Image load timeout:', url);
             resolve(null);
-        }, 10000);
+        }, 30000);
         
         const img = new Image();
         img.crossOrigin = 'anonymous';
@@ -275,23 +297,34 @@ async function init() {
 
         console.log(`Loading ${remainingLocations.length} remaining textures...`);
 
-        const remainingPromises = remainingLocations.map(async (name) => {
-            try {
-                const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
-                if (texture) {
-                    locationTextures[name] = texture;
+        // Limited concurrency: firing all ~130 requests at once makes them
+        // share bandwidth, so on a cold cache every image crawls and trips
+        // its own load timeout. Small batches keep each image fast.
+        const queue = [...remainingLocations];
+        const worker = async () => {
+            while (queue.length > 0) {
+                const name = queue.shift();
+                try {
+                    const texture = await loadTextureWithTransparentBlack(locationPortholeURLs[name], 65);
+                    if (texture) {
+                        locationTextures[name] = texture;
+                        // Markers may already exist by the time this resolves
+                        applyTextureToMarkerByTitle(name);
+                    }
+                } catch (e) {
+                    console.warn(`Failed to load ${name}:`, e.message);
                 }
-            } catch (e) {
-                console.warn(`Failed to load ${name}:`, e.message);
             }
-        });
+        };
+        const poolDone = Promise.all(Array.from({ length: 8 }, worker));
 
-        // Wait for all with 20s timeout
+        // Don't hold up the globe past 20s - late textures still attach
+        // via applyTextureToMarkerByTitle as they finish.
         await Promise.race([
-            Promise.all(remainingPromises),
+            poolDone,
             new Promise(resolve => setTimeout(resolve, 20000))
         ]);
-        console.log('All textures loaded (or timed out)');
+        console.log('All textures loaded (or still streaming in)');
 
     }
     
