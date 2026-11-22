@@ -4,3 +4,8 @@ node_modules/
 .env
 .env.local
 *.log
+
+# Local-only working files (photos live on Cloudinary; never commit these)
+images/
+icons/
+archive/
