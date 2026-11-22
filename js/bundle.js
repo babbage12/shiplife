@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T20:09:56.000Z
+// Shiplife Bundle - Generated 2026-11-22T20:10:21.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -16923,11 +16923,20 @@ function viewAllLocations() {
     const doors = locations.filter(l => l.isDoor);
     const isLastDoor = loc && loc.isDoor && doors.length && doors[doors.length - 1].id === loc.id;
 
+    // Mid-tour (Chapter 1 or 2), "View All Locations" means "explore freely":
+    // end the guided tour and unlock every port. Marking it complete before
+    // closePanel() also stops the "Continue to Chapter X" prompt from appearing.
+    const endingTourEarly = !isGuidedComplete() && !isLastDoor;
+    if (endingTourEarly) {
+        markGuidedComplete();
+    }
+
     closePanel();
 
-    // From the end of the final chapter, always celebrate with the spin to the
-    // Mediterranean (closePanel schedules it itself the first time guided mode completes)
-    if (isLastDoor && !celebrationInProgress) {
+    // From the end of the final chapter (or when ending the tour early), celebrate
+    // with the spin to the Mediterranean (closePanel schedules it itself the first
+    // time guided mode completes normally)
+    if ((isLastDoor || endingTourEarly) && !celebrationInProgress) {
         celebrationInProgress = true;
         setTimeout(() => triggerDoorsCompleteSequence(), 500);
     }
