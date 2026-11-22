@@ -47,31 +47,6 @@ const locationGalleries = {
         { src: "v1770080862/IMG_2770.jpg", caption: "Ocean kayaking around the city walls.", alt: "Ocean kayaking in Dubrovnik" }
     ],
 
-    // CORFU (21 images)
-    "corfu": [
-        { src: "shiplife/corfu/img_4711", caption: "Flowers, old stone, and the endless Ionian - Corfu at its most perfect.", alt: "Sea view from fortress" },
-        { src: "shiplife/corfu/img_4684", caption: "The moat between old and new fortress.", alt: "Fortress moat with boats" },
-        { src: "shiplife/corfu/img_4691", caption: "Inside the fortress walls.", alt: "Fortress interior" },
-        { src: "shiplife/corfu/img_4692", caption: "Venetian engineering built to withstand Ottoman sieges.", alt: "Fortress architecture" },
-        { src: "shiplife/corfu/img_4702", caption: "Clock tower and colorful buildings.", alt: "Town view with clock tower" },
-        { src: "shiplife/corfu/img_4705", caption: "Cannons still guard the ramparts.", alt: "Fortress cannons" },
-        { src: "shiplife/corfu/img_4679", caption: "The harbor spreads below the fortress.", alt: "Harbor view" },
-        { src: "shiplife/corfu/img_4686", caption: "Byzantine Collection of Corfu - museum entrance.", alt: "Museum sign" },
-        { src: "shiplife/corfu/img_4687", caption: "Byzantine frescoes and illuminated manuscripts.", alt: "Museum interior" },
-        { src: "shiplife/corfu/img_4694", caption: "Venetian arcades beneath the fortress rock.", alt: "Fortress arcades" },
-        { src: "shiplife/corfu/img_4696", caption: "Byzantine stone relief.", alt: "Stone medallion" },
-        { src: "shiplife/corfu/img_4697", caption: "Artifacts from a thousand years of faith.", alt: "Museum artifact" },
-        { src: "shiplife/corfu/img_4698", caption: "The Winged Lion of St. Mark - Venice's calling card.", alt: "Lion of St. Mark" },
-        { src: "shiplife/corfu/img_4699", caption: "Stone carvings from Byzantine churches.", alt: "Byzantine carvings" },
-        { src: "shiplife/corfu/img_4700", caption: "Historical Greek decree - the Ionian Islands join Greece.", alt: "Greek inscription" },
-        { src: "shiplife/corfu/img_4701", caption: "Treasures from Corfu's long history.", alt: "Museum piece" },
-        { src: "shiplife/corfu/img_4703", caption: "The clock tower against a brooding sky.", alt: "Clock tower" },
-        { src: "shiplife/corfu/img_4706", caption: "Walking the fortress grounds.", alt: "Fortress grounds" },
-        { src: "shiplife/corfu/img_4707", caption: "Venetian military architecture.", alt: "Fortress architecture" },
-        { src: "shiplife/corfu/img_4708", caption: "Centuries of defense against Ottoman siege.", alt: "Fortress view" },
-        { src: "shiplife/corfu/img_4709", caption: "The fortress that kept Corfu free.", alt: "Fortress panorama" }
-    ],
-
     // PHUKET (8 images)
     "phuket": [
         { src: "v1768865557/PANO_20131118_134025_qd3r7o.jpg", caption: "Phuket beach panorama.", alt: "Beach panorama" },
@@ -311,19 +286,6 @@ const locationGalleries = {
         { src: "shiplife/cairo/cairo-city-03", caption: "Cairo.", alt: "Cairo" }
     ],
 
-    // BUZIOS (9 images)
-    "buzios": [
-        { src: "v1770829346/shiplife/buzios/wsvhzaiog6hitekvhjdk.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829347/shiplife/buzios/bn0dln20zdk8dunq4qdt.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829348/shiplife/buzios/uzskswlpltybmibbttpq.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829349/shiplife/buzios/fwpr8trcgizfsj9ltdco.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829350/shiplife/buzios/guamsdhhpyalmwmlmyf0.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829351/shiplife/buzios/qbwdsgyzlko0zqg6zkmd.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829352/shiplife/buzios/vwh7lu6te1npks7n4uep.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829353/shiplife/buzios/xihise9pnuje7dpeposb.jpg", caption: "Búzios, Brazil", alt: "Búzios" },
-        { src: "v1770829355/shiplife/buzios/zebudkszfnih7ztms5sl.jpg", caption: "Búzios, Brazil", alt: "Búzios" }
-    ],
-
     // CESME (9 images)
     "cesme": [
         { src: "shiplife/cesme/img_20131008_121115", caption: "The castle watches over Çeşme, minarets against the Aegean sky.", alt: "Çeşme town with castle" },
@@ -350,8 +312,7 @@ const locationGalleries = {
         { src: "shiplife/christmas-island/IMG_0179.jpg", caption: "Surf and turf - worth the search.", alt: "Surf and turf" }
     ],
 
-    // CORFU (2 images)
-    // CORFU, GREECE (14 images)
+    // CORFU, GREECE (13 images)
     "corfu": [
         { src: "shiplife/corfu/IMG_4679", caption: "The Seabourn Odyssey in Corfu harbor.", alt: "Seabourn ship" },
         { src: "shiplife/corfu/IMG_4683", caption: "The Venetian moat - once defense, now a quiet marina.", alt: "Fortress moat" },
@@ -365,8 +326,7 @@ const locationGalleries = {
         { src: "shiplife/corfu/IMG_4705", caption: "Cannons on the ramparts overlooking the sea.", alt: "Fortress cannons" },
         { src: "shiplife/corfu/IMG_4708", caption: "Iron bars in the old fortress wall.", alt: "Fortress window" },
         { src: "shiplife/corfu/IMG_4711", caption: "Flowers, old stone, and the endless Ionian.", alt: "Sea view with flowers" },
-        { src: "shiplife/corfu/fortress_panorama.jpg", caption: "From the Old Fortress - Albania across the water.", alt: "Corfu fortress panorama" },
-        { src: "shiplife/corfu/seabourn_ship.jpg", caption: "The Seabourn Odyssey in the harbor.", alt: "Seabourn ship at Corfu" }
+        { src: "shiplife/corfu/fortress_panorama.jpg", caption: "From the Old Fortress - Albania across the water.", alt: "Corfu fortress panorama" }
     ],
 
     // DARWIN (33 images) - Title: "More Photos of Shiplife"
@@ -497,20 +457,6 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0736.jpg", caption: "Resort pool at Fiji Beach Resort", alt: "Fiji resort pool" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0745.jpg", caption: "Traditional Fijian architecture", alt: "Fijian interior" },
         { src: "w_400,q_auto,f_auto/shiplife/fiji/img_0747.jpg", caption: "Fiji Beach Resort & Spa entrance", alt: "Resort entrance" }
-    ],
-
-    // FLORENCE (10 images) - Title: "Photos from Florence"
-    "florence": [
-        { src: "v1771203420/shiplife/florence/ufgedwyqgznjp1lc9eqe.jpg", caption: "The Piazza del Duomo - Baptistery under restoration with Brunelleschi's dome beyond.", alt: "Florence Duomo piazza" },
-        { src: "v1771203420/shiplife/florence/loyudpbij2pkjbswt6ck.jpg", caption: "The Duomo facade - pink, green, and white marble in geometric patterns.", alt: "Florence Duomo facade" },
-        { src: "v1771203420/shiplife/florence/ivkqnq0u0hzydgzt3x8b.jpg", caption: "The crowds on Via dei Calzaiuoli - everyone drawn to the same masterpiece.", alt: "Crowded street view of Duomo" },
-        { src: "v1771203420/shiplife/florence/hsggthukftrjyjoua4ll.jpg", caption: "Looking up at the Duomo - Gothic architecture reaching for the sky.", alt: "Duomo from below" },
-        { src: "v1771203420/shiplife/florence/cmx8bmmxn1vxzx1a8pdu.jpg", caption: "Giotto's Campanile beside the cathedral - 414 steps to the top.", alt: "Campanile and Duomo side" },
-        { src: "v1771203420/shiplife/florence/cc0zgndlgc9kitvgnnod.jpg", caption: "Horse carriage in the piazza - timeless Florence.", alt: "Horse carriage at Duomo" },
-        { src: "v1771203420/shiplife/florence/xdb1cnzsejvwnfd2f8sh.jpg", caption: "Inside the Duomo - soaring vaults and stained glass.", alt: "Duomo interior" },
-        { src: "v1771203420/shiplife/florence/d9kt2wakaxiwn4zeqo5c.jpg", caption: "Renaissance sculpture - the masters are everywhere here.", alt: "Renaissance sculpture" },
-        { src: "v1771203420/shiplife/florence/xt5eedzzl9i6juwsfxuo.jpg", caption: "The marble floor - centuries of footsteps have polished these stones.", alt: "Duomo marble floor" },
-        { src: "v1771203420/shiplife/florence/cohm7qm99uwvlazfwqwu.jpg", caption: "Even the horses take a lunch break in Florence.", alt: "Horse feeding in piazza" }
     ],
 
     // FIORDLAND (7 images) - Title: "Photos from Fiordland"
@@ -1079,26 +1025,6 @@ const locationGalleries = {
         { src: "shiplife/monte-carlo/img_20140702_121634", caption: "Dessert - because Monaco.", alt: "Monaco dessert" }
     ],
 
-    // MYKONOS (16 images)
-    "mykonos": [
-        { src: "v1770826523/shiplife/mykonos/hbes6pcjphcgezt1xlvy.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826524/shiplife/mykonos/noaaofa01droopdivryk.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826524/shiplife/mykonos/hgpknqocxauhqv7i0tmq.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826525/shiplife/mykonos/camwa0mrjnw3hujzjlvq.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826526/shiplife/mykonos/ldotfzvypy129y6eapli.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826527/shiplife/mykonos/yi2cvhffwz3ohe5kalqt.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826528/shiplife/mykonos/ekcoagit6hcet3xpqdit.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826528/shiplife/mykonos/jzobjlt4sjp7ziokxcru.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826529/shiplife/mykonos/oclhdnh7geppbrgi9rdf.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826530/shiplife/mykonos/qqqxgklduflpjm7fb5cb.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826531/shiplife/mykonos/gmoptjdb2goobzz7ien5.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826532/shiplife/mykonos/psljuqbms4fkyco6prcd.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826533/shiplife/mykonos/t6nlzzbvcwgdmf9ueuce.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826535/shiplife/mykonos/bwygc3kz6tiu83l8b8vd.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826536/shiplife/mykonos/molo0nai9lchkeygcnz0.jpg", caption: "Mykonos, Greece", alt: "Mykonos" },
-        { src: "v1770826537/shiplife/mykonos/dybbjlw0vblxes7mxcdr.jpg", caption: "Mykonos, Greece", alt: "Mykonos" }
-    ],
-
     // NAFPLIO (6 images)
     "nafplio": [
         { src: "shiplife/nafplio/fortress_window_view.jpg", caption: "The view through ancient stone - 999 steps to this moment.", alt: "View through fortress window" },
@@ -1294,12 +1220,6 @@ const locationGalleries = {
         { src: "w_400,q_auto,f_auto/shiplife/marlborough/IMG_0464.jpg", caption: "Marlborough", alt: "Marlborough" },
         { src: "shiplife/marlborough/img_0447", caption: "Marlborough wine country", alt: "Marlborough" },
         { src: "shiplife/marlborough/img_0465", caption: "Marlborough vineyards", alt: "Marlborough" }
-    ],
-
-    // PIRAN (2 images)
-    "piran": [
-        { src: "v1768951532/Screenshot_20260120_141730_Facebook_kjfnuv.jpg", caption: "The Lipizzan horses performing classical dressage at Lipica.", alt: "Lipizzan horse performance" },
-        { src: "v1768951532/Screenshot_20260120_141721_Facebook_zyavdi.jpg", caption: "Lipica Stud Farm - home of the Lipizzan breed since 1580.", alt: "Lipica Stud Farm horse show" }
     ],
 
     // PONZA (49 images)
@@ -1655,23 +1575,6 @@ const locationGalleries = {
         { src: "shiplife/semarang/semarang-borobudur-temple-05", caption: "Tour guide explains the stupas at the upper levels.", alt: "Guide at stupas" },
         { src: "shiplife/semarang/semarang-borobudur-temple-06", caption: "Among the bell-shaped stupas - each containing a Buddha statue.", alt: "At the stupas" },
         { src: "shiplife/semarang/semarang-borobudur-temple-07", caption: "Gamelan musicians with wayang shadow puppets - Javanese culture on display.", alt: "Gamelan musicians" }
-    ],
-
-    // ŠIBENIK (13 images)
-    "sibenik": [
-        { src: "shiplife/sibenik/sibenik-hero", caption: "Medieval stone and centuries of stories.", alt: "Šibenik old town" },
-        { src: "shiplife/sibenik/sibenik-port-01", caption: "Walking from the port into town.", alt: "Port approach" },
-        { src: "shiplife/sibenik/sibenik-port-02", caption: "The harbor stretches along the coast.", alt: "Harbor view" },
-        { src: "shiplife/sibenik/sibenik-port-03", caption: "First glimpse of the old town rising above.", alt: "Old town from port" },
-        { src: "shiplife/sibenik/sibenik-port-04", caption: "Stone facades and Adriatic light.", alt: "Stone buildings" },
-        { src: "shiplife/sibenik/sibenik-oldtown-01", caption: "Into the medieval streets.", alt: "Old town street" },
-        { src: "shiplife/sibenik/sibenik-oldtown-02", caption: "Every corner a new discovery.", alt: "Old town corner" },
-        { src: "shiplife/sibenik/sibenik-oldtown-03", caption: "Stone worn smooth by centuries of footsteps.", alt: "Stone streets" },
-        { src: "shiplife/sibenik/sibenik-oldtown-04", caption: "The old town unfolds in layers.", alt: "Old town layers" },
-        { src: "shiplife/sibenik/sibenik-streets-01", caption: "Just how old were these streets?", alt: "Ancient streets" },
-        { src: "shiplife/sibenik/sibenik-streets-02", caption: "Knights and warriors once walked here.", alt: "Historic streets" },
-        { src: "shiplife/sibenik/sibenik-food-01", caption: "The search for food - always an adventure.", alt: "Food search" },
-        { src: "shiplife/sibenik/sibenik-food-02", caption: "Croatian cuisine to restore the spirit.", alt: "Croatian food" }
     ],
 
     // PORTOFERRAIO / ELBA (14 images)
@@ -2059,7 +1962,9 @@ const locationGalleries = {
         { src: "shiplife/mykonos/img_3135", caption: "The labyrinth opens to the sea - a glimpse of harbor between the walls.", alt: "Mykonos alley to harbor" },
         { src: "shiplife/mykonos/img_3137", caption: "Whitewashed steps leading nowhere and everywhere - the joy of getting lost.", alt: "Mykonos whitewashed steps" },
         { src: "shiplife/mykonos/img_3145", caption: "The windmill ridge at golden hour - thatch and stone against the sky.", alt: "Mykonos windmill ridge" },
-        { src: "shiplife/mykonos/img_3148", caption: "Harbor panorama with the windmills standing guard - the definitive Mykonos view.", alt: "Mykonos panorama with windmills" }
+        { src: "shiplife/mykonos/img_3148", caption: "Harbor panorama with the windmills standing guard - the definitive Mykonos view.", alt: "Mykonos panorama with windmills" },
+        { src: "v1770826529/shiplife/mykonos/oclhdnh7geppbrgi9rdf.jpg", caption: "Whitewashed steps climbing out of the lanes of Chora.", alt: "Whitewashed stairway" },
+        { src: "v1770826536/shiplife/mykonos/molo0nai9lchkeygcnz0.jpg", caption: "Bougainvillea over red doors in a Chora lane.", alt: "Bougainvillea lane" }
     ],
 
     // SYMI (2 images)
@@ -2189,7 +2094,12 @@ const locationGalleries = {
         { src: "shiplife/buzios/boats-schooner", caption: "Boats in the harbor with a schooner.", alt: "Boats and schooner" },
         { src: "shiplife/buzios/panoramic-hillside", caption: "Panoramic view of Búzios with hillside villas.", alt: "Búzios panorama" },
         { src: "shiplife/buzios/tropical-vegetation", caption: "Tropical vegetation among the homes.", alt: "Tropical homes" },
-        { src: "shiplife/buzios/seagull-beach", caption: "A seagull on the beach.", alt: "Seagull on beach" }
+        { src: "shiplife/buzios/seagull-beach", caption: "A seagull on the beach.", alt: "Seagull on beach" },
+        { src: "v1770829346/shiplife/buzios/wsvhzaiog6hitekvhjdk.jpg", caption: "Fishing boats at anchor, with the Seabourn Quest waiting offshore.", alt: "Boats and ship in Búzios bay" },
+        { src: "v1770829347/shiplife/buzios/bn0dln20zdk8dunq4qdt.jpg", caption: "A shady courtyard café off the main street.", alt: "Courtyard café" },
+        { src: "v1770829351/shiplife/buzios/qbwdsgyzlko0zqg6zkmd.jpg", caption: "Colorful sculptures crowning a shopfront in town.", alt: "Shopfront sculptures" },
+        { src: "v1770829352/shiplife/buzios/vwh7lu6te1npks7n4uep.jpg", caption: "Fishermen hauling in a net, the Seabourn Quest at anchor behind them.", alt: "Fishermen with net" },
+        { src: "v1770829353/shiplife/buzios/xihise9pnuje7dpeposb.jpg", caption: "Villas tucked into the tropical hillside.", alt: "Hillside villa" }
     ]
 };
 
