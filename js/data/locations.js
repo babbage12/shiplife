@@ -3871,7 +3871,7 @@ an original composition inspired by this place.
 
  ${generateGallery('malta')}
  `,
- fullDesc: "The next three years were an education I never signed up for - almost every port a World Heritage Site, the history as beautiful as it was terrifying.\n\nMalta gathered all of it into one place. I marched through Valletta to my own drumbeat, in opposition to all that order and certainty the whole time - trying, and mostly failing, to get quiet enough to just be a good musician.",
+ fullDesc: "Working for Seabourn meant many of the ports we visited were World Heritage Sites, and the history in those places was as beautiful as it was terrifying.\n\nMalta gathered all of it into one place. I marched through Valletta to my own drumbeat, in opposition to all that order and certainty the whole time - trying, and mostly failing, to get quiet enough to just be a good musician.",
  image: "https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767735863/IMG_1155_qtda7b.jpg"
  },
  {
