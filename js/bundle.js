@@ -1,4 +1,4 @@
-// Shiplife Bundle - Generated 2026-11-22T20:18:31.000Z
+// Shiplife Bundle - Generated 2026-11-22T20:39:56.000Z
 // This file combines all JS modules for faster loading.
 // Do not edit directly - modify source files and rebuild.
 
@@ -2849,13 +2849,27 @@ const locations = [
  <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1768530034/Screen_Shot_2026-01-15_at_9.21.22_PM_kazerc.png" class="story-image" data-caption="Cruise Director's Corner. Where do hands go? What are hands? Why do I have hands?" alt="TV show nervous" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
  <p class="photo-caption-inline">Where do hands go? What are hands? Why do I have hands?</p>
  </div>
+ 
+ <div class="story-section-panel">
+ <span class="section-tag-panel">A Day Off</span>
+ <h3 class="section-title-panel">Cairns</h3>
+ <p>Cairns sits at the top of Queensland, on the far northeast corner of Australia. It's the town everyone passes through on the way to the Great Barrier Reef, and it was a regular stop on our run. On a day off, a few of us rented bikes and rode along the waterfront.</p>
+ <p>A white ship was tied up in the harbor. Small. Sleek. Next to the Pacific Sun, it looked like it belonged to a different world.</p>
+ <p>Someone said, "That's Seabourn. Top cruise line in the world."</p>
+ <p>I watched it for a while. Then I rode a little closer and snapped a photo. I didn't know why. You don't always know why you take a picture.</p>
+ <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
+ <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. Working on the Pacific Sun, already dreaming about this strange, elegant ship.</p>
+ <p>Then I rode back to the Pacific Sun and went to work.</p>
+ </div>
 
  <div class="story-section-panel">
  <span class="section-tag-panel">Chapter 2</span>
  <h3 class="section-title-panel">The Chapter That Opened Everything</h3>
  <p>Darwin opened the door onto my future as a cruise ship musician. I spent the next three years cruising the South Pacific and Indonesia - braving the Tasman Sea, the winds of New South Wales, and the gracious, kind people of Australasia.</p>
  <p>Many of those stories live in their own respective panels around this globe. Others moved me enough to write music about them - and in time, those songs will begin to appear here too.</p>
- <p>What came next opened onto a world I couldn't have imagined - no matter how big a daydreamer I'd been as a kid.</p>
+ <p>And through all of it, that white ship from Cairns stayed with me. I thought about it a lot. What was so special about it? What was all the fuss about? What did it look like inside? What was the food like? Who was the crew? What were the venues like? Who were the passengers? How would it feel to be on it?</p>
+ <p>And where did it <em>go</em>?</p>
+ <p>What came next opened onto a world I couldn't have imagined, no matter how big a daydreamer I'd been as a kid.</p>
  </div>
 
  <div class="more-info-container" onclick="this.classList.toggle('active')">
@@ -2896,24 +2910,9 @@ const locations = [
  useRichContent: true,
  richContent: `
  <div class="story-section-panel">
- <span class="section-tag-panel">A Brief Digression</span>
- <h3 class="section-title-panel">Before We Continue...</h3>
- <p>Before we go any further, we need to go back to 2009. The first contract. A day off in Cairns.</p>
- </div>
- 
- <div class="story-section-panel">
- <span class="section-tag-panel">Seeing My Future</span>
- <h3 class="section-title-panel">Cairns, 2009</h3>
- <p>I was out riding bikes with shipmates when a white ship in the harbor caught my eye.</p>
- <p>Someone said, "That's Seabourn. Top cruise line in the world."</p>
- <p>I watched it for a while. Then I got a little closer and snapped a photo. I didn't know why. You don't always know why you take a picture.</p>
- <img src="https://res.cloudinary.com/de5jbyhxx/image/upload/w_1200,q_80,f_auto/v1767729026/IMG_0220_r8svvx.jpg" class="story-image" alt="Seabourn Odyssey in Cairns" onclick="openLightbox(this.src.replace('w_1200', 'w_1600'))" style="cursor:pointer">
- <p class="photo-caption-inline">The Seabourn Odyssey in Cairns. Working on the Pacific Sun, already dreaming about this strange, elegant ship.</p>
- </div>
- 
- <div class="story-section-panel">
- <span class="section-tag-panel section-tag-glow">Three Fun-Filled, Island-Hopping Years Later...</span>
+ <span class="section-tag-panel section-tag-glow">The Call</span>
  <h3 class="section-title-panel">Akaroa, New Zealand. November 2012.</h3>
+ <p>Three fun-filled, island-hopping years later, we pulled into Akaroa, a little French-settled harbor town on New Zealand's South Island.</p>
  <p>A note was slipped under my door.</p>
  <blockquote class="story-quote">Please contact your agent when ashore.</blockquote>
  <p>I knew instantly this could be the call - the one telling me my audition for the Seabourn soloist position had gone through.</p>
@@ -2931,7 +2930,7 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Embarkation</span>
  <h3 class="section-title-panel">Auckland, January 2013</h3>
- <p>That was nothing compared to the nervousness washing over me a few months later, when I found myself back in Auckland - the same port where I'd boarded my first P&O ship, the Pacific Sun, in 2009. Same Sky Tower watching from above. This time I was waiting to board the Seabourn Odyssey - the same ship I'd snapped a photo of back in Cairns in 2009.</p>
+ <p>That was nothing compared to the nervousness washing over me a few months later, when I found myself back in Auckland - the same port where I'd boarded my first P&O ship, the Pacific Sun, in 2009. Same Sky Tower watching from above. This time I was waiting to board the Seabourn Odyssey.</p>
  <p>Everything about my life as a cruise ship musician was about to ramp up by a factor of ten.</p>
  <p>Now <em>that</em> really made me want to throw up.</p>
  <p>I stood at the bottom of the gangway a moment longer than I needed to. Four years earlier I'd walked up one just like it carrying a guitar, a suitcase, and no idea whether I'd last two weeks. Now I was carrying the same guitar and an itinerary I had to read twice: Dubrovnik. The French Riviera. Antarctica.</p>
@@ -2989,7 +2988,7 @@ const locations = [
  <div class="story-section-panel">
  <span class="section-tag-panel">Chapter 3</span>
  <h3 class="section-title-panel">The Entire Globe</h3>
- <p>Three ships. Odyssey. Sojourn. Quest. The rest, I'll let the photos tell.</p>
+ <p>Where did it go? Three ships. Odyssey. Sojourn. Quest. The answer was everywhere. The rest, I'll let the photos tell.</p>
  </div>
  
  <div class="story-section-panel">
