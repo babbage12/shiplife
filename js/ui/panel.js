@@ -16,6 +16,13 @@ window.addEventListener('popstate', function(e) {
         closingFromCode = false;
         return;
     }
+    // Back button while Director's Commentary is open: close just the pop-up,
+    // leave the story panel open underneath
+    if (typeof isCommentaryOpen === 'function' && isCommentaryOpen()) {
+        commentaryHistoryPushed = false;
+        hideCommentaryModal();
+        return;
+    }
     if (sidePanel.classList.contains('open')) {
         // Back button pressed while panel is open
         panelHistoryPushed = false; // Already popped by back button

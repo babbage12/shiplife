@@ -174,7 +174,7 @@
     <!-- Director's Commentary Modal -->
     <div class="commentary-modal-overlay" id="commentaryModal" onclick="closeCommentaryModal(event)">
         <div class="commentary-modal" onclick="event.stopPropagation()">
-            <button class="commentary-modal-close" onclick="document.getElementById('commentaryModal').classList.remove('active'); document.body.style.overflow = '';">×</button>
+            <button class="commentary-modal-close" onclick="dismissCommentary()" aria-label="Close">×</button>
             <div class="commentary-header">
                 <span class="commentary-icon">🎬</span>
                 <span class="commentary-label">Director's Commentary</span>
@@ -199,6 +199,7 @@
             <p>I hung up.</p>
             <span class="rule-one">Rule #1: Do not call the bridge. Ever. Unless someone is actively dying - and even then, there's a chain of command for that.</span>
             <p class="kicker">I had been aboard for approximately forty-five minutes. But for one beautiful, horrifying moment, I was the guy who made the Captain answer the phone to help the new musician call his mom.</p>
+            <button class="commentary-done-btn" onclick="dismissCommentary()">Back to the story</button>
         </div>
     </div>
 

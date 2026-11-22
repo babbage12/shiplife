@@ -41,26 +41,58 @@ function closeIntroModalIfOpen() {
 // DIRECTOR'S COMMENTARY
 // ============================================
 
+// True while a history entry exists for the open commentary, so the
+// phone's back button closes the pop-up instead of leaving the site.
+let commentaryHistoryPushed = false;
+
+function isCommentaryOpen() {
+    const modal = document.getElementById('commentaryModal');
+    return !!(modal && modal.classList.contains('active'));
+}
+
 function openCommentaryModal() {
     // Keep the side panel open so the reader can pick up where they left off
-    document.getElementById('commentaryModal').classList.add('active');
+    const modal = document.getElementById('commentaryModal');
+    modal.classList.add('active');
     document.body.style.overflow = 'hidden';
+
+    // Always start the story at the top
+    const box = modal.querySelector('.commentary-modal');
+    if (box) box.scrollTop = 0;
+
+    if (!commentaryHistoryPushed) {
+        history.pushState({ commentaryOpen: true }, '');
+        commentaryHistoryPushed = true;
+    }
+}
+
+// Hide the pop-up without touching history (used by the back button handler)
+function hideCommentaryModal() {
+    document.getElementById('commentaryModal').classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// User closed the pop-up (X, end button, outside tap, Escape):
+// hide it and drop the history entry we pushed when it opened.
+function dismissCommentary() {
+    if (!isCommentaryOpen()) return;
+    hideCommentaryModal();
+    if (commentaryHistoryPushed) {
+        commentaryHistoryPushed = false;
+        closingFromCode = true; // tell the popstate handler to ignore this one
+        history.back();
+    }
 }
 
 function closeCommentaryModal(event) {
     if (event.target === document.getElementById('commentaryModal')) {
-        document.getElementById('commentaryModal').classList.remove('active');
-        document.body.style.overflow = '';
+        dismissCommentary();
     }
 }
 
 // Close modal on Escape key
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        const modal = document.getElementById('commentaryModal');
-        if (modal && modal.classList.contains('active')) {
-            modal.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+    if (e.key === 'Escape' && isCommentaryOpen()) {
+        dismissCommentary();
     }
 });
